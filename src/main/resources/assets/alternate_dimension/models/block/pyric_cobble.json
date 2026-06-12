@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/pyric_cobble",
+    "particle": "alternate_dimension:block/pyric_cobble"
+  },
+  "render_type": "solid"
+}

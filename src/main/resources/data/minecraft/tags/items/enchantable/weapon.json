@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:axes",
+    "#minecraft:swords",
+    "alternate_dimension:math_workbook",
+    "alternate_dimension:seed_gun",
+    "alternate_dimension:function_blaster",
+    "alternate_dimension:breadstick_launcher",
+    "alternate_dimension:rpg"
+  ]
+}

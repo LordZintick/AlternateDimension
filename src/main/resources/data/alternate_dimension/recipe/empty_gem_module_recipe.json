@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:uranium_plate"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_plate"
+    },
+    "c": {
+      "item": "alternate_dimension:hexagem_complex"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:empty_gem_module",
+    "count": 1
+  }
+}

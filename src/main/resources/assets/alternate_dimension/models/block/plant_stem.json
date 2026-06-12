@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/plant_stem_top",
+    "up": "alternate_dimension:block/plant_stem_top",
+    "north": "alternate_dimension:block/plant_stem_side",
+    "east": "alternate_dimension:block/plant_stem_side",
+    "south": "alternate_dimension:block/plant_stem_side",
+    "west": "alternate_dimension:block/plant_stem_side",
+    "particle": "alternate_dimension:block/plant_stem_top"
+  },
+  "render_type": "solid"
+}

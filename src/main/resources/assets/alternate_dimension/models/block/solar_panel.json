@@ -1,0 +1,11 @@
+{
+  "parent": "alternate_dimension:custom/quarter_block",
+  "textures": {
+    "all": "alternate_dimension:block/machine_side",
+    "particle": "alternate_dimension:block/machine_side",
+    "0": "alternate_dimension:block/solar_panel_top",
+    "1": "alternate_dimension:block/solar_panel_bottom",
+    "2": "alternate_dimension:block/solar_panel_side"
+  },
+  "render_type": "cutout"
+}

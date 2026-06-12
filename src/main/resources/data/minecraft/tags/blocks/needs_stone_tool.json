@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:evilstone_block",
+    "alternate_dimension:sulfur_ore",
+    "alternate_dimension:tin_block",
+    "alternate_dimension:tin_ore",
+    "alternate_dimension:quartz_ore"
+  ]
+}

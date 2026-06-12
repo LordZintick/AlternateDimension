@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alternate_dimension:candy_biome_biomes",
+  "features": "alternate_dimension:cookie_rock_feature",
+  "step": "top_layer_modification"
+}

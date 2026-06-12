@@ -1,0 +1,54 @@
+{
+  "_fv": 85,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "mana_bar.png",
+          "spritesCount": 19,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetManaBarState"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 4,
+          "y": 5,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mana",
+          "text": {
+            "fixedValue": "Mana"
+          },
+          "color": {
+            "value": -9669147,
+            "falpha": 0.0
+          },
+          "hasShadow": true,
+          "anchorPoint": "TOP_LEFT",
+          "x": 17,
+          "y": 5,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "CheckHoldingWand"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

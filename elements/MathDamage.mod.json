@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "when_caused_by_living_non_player",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s failed the math test",
+    "itemDeathMessage": "%1$s was caught cheating on %2$s's math test with %3$s",
+    "playerDeathMessage": "%1$s could not escape %2$s's mathematic judgement"
+  }
+}

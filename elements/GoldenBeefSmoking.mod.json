@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "golden_beef",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:GoldenBeef"
+      }
+    ],
+    "cookingBookCategory": "FOOD",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:GoldenBeef"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:GoldenSteak"
+    },
+    "name": "golden_beef_smoking",
+    "namespace": "mod"
+  }
+}

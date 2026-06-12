@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "alternate_dimension:blocks/imbunement_table",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:imbunement_table"
+        }
+      ]
+    }
+  ]
+}

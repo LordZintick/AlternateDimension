@@ -1,0 +1,14 @@
+{
+  "type": "alternate_dimension:nuclear_reactor_recipe_type",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:activated_charcoal",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:shale_bricks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:shale_bricks_slab",
+    "count": 6
+  }
+}

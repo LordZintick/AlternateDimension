@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "alternate_dimension:block/pyric_cobble",
+    "bottom": "alternate_dimension:block/pyric_cobble",
+    "top": "alternate_dimension:block/pyric_cobble",
+    "side": "alternate_dimension:block/pyric_cobble"
+  },
+  "render_type": "solid"
+}

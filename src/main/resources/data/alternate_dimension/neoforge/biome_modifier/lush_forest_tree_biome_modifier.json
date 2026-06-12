@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:thick_forest",
+  "features": "alternate_dimension:lush_forest_tree",
+  "step": "surface_structures"
+}

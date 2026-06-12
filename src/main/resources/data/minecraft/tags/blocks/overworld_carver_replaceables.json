@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:gelatin_block",
+    "alternate_dimension:frosting",
+    "minecraft:stone",
+    "minecraft:coarse_dirt",
+    "minecraft:dirt",
+    "alternate_dimension:waffle_block",
+    "minecraft:grass_block",
+    "alternate_dimension:cookie_block",
+    "alternate_dimension:ice_cream_block",
+    "minecraft:podzol",
+    "alternate_dimension:scorched_earth"
+  ]
+}

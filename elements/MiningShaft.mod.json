@@ -1,0 +1,61 @@
+{
+  "_fv": 85,
+  "_type": "structure",
+  "definition": {
+    "structure": "mining_shaft_entrance",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 10,
+    "separation": 5,
+    "restrictionBiomes": [
+      {
+        "value": "#mod:is_familiar_realm"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 7,
+    "maxDistanceFromCenter": 116,
+    "jigsawPools": [
+      {
+        "poolName": "main",
+        "fallbackPool": "alternate_dimension:mining_shaft_end",
+        "poolParts": [
+          {
+            "weight": 7,
+            "structure": "mining_shaft_piece",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "mining_shaft_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "end",
+        "fallbackPool": "alternate_dimension:mining_shaft_end",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "mining_shaft_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

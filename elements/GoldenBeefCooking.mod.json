@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "recipeRetstackSize": 1,
+    "group": "golden_beef",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:GoldenBeef"
+      }
+    ],
+    "cookingBookCategory": "FOOD",
+    "xpReward": 1.0,
+    "cookingTime": 600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:GoldenBeef"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:GoldenSteak"
+    },
+    "name": "golden_beef_cooking",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "alternate_dimension:block/redwood_planks",
+    "bottom": "alternate_dimension:block/redwood_planks",
+    "top": "alternate_dimension:block/redwood_planks",
+    "side": "alternate_dimension:block/redwood_planks"
+  },
+  "render_type": "solid"
+}

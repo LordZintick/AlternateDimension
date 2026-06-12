@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:highlands",
+  "features": "alternate_dimension:cloud_feature",
+  "step": "fluid_springs"
+}

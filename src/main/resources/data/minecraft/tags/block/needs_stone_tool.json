@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:veridium_quartz_ore",
+    "alternate_dimension:shale_phosphorus_ore",
+    "alternate_dimension:evilstone_block",
+    "alternate_dimension:veridium_aluminum_ore",
+    "alternate_dimension:mantle_aluminum_ore",
+    "alternate_dimension:veridium_sulfur_ore",
+    "alternate_dimension:mantle_sulfur_ore",
+    "alternate_dimension:mantle_quartz_ore",
+    "alternate_dimension:veridium_phosphorus_ore",
+    "alternate_dimension:shale_quartz_ore",
+    "alternate_dimension:shale_aluminum_ore",
+    "alternate_dimension:mantle_phosphorus_ore",
+    "alternate_dimension:shroomium_ore",
+    "alternate_dimension:shale_sulfur_ore",
+    "alternate_dimension:aluminum_block"
+  ]
+}

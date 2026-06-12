@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "alternate_dimension:block/corn_plant"
+    },
+    "half=lower": {
+      "model": "alternate_dimension:block/corn_plant_bottom"
+    }
+  }
+}

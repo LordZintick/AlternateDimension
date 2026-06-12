@@ -1,0 +1,190 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 411,
+    "height": 222,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_welcome_to_alternate_dimension",
+          "text": {
+            "fixedValue": "Welcome to Alternate Dimension!"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 139,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_alternate_dimension_places_you_i",
+          "text": {
+            "fixedValue": "Alternate Dimension places you in a new world filled with fantastical"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mobs_interesting_features_and",
+          "text": {
+            "fixedValue": "mobs, interesting features, and many new structures, blocks, and items."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_although_it_is_intended_to_start",
+          "text": {
+            "fixedValue": "Although it is intended to start inside the dimension from the beginning,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_as_there_are_ways_to_access_the",
+          "text": {
+            "fixedValue": "as there are ways to access the Overworld later in the game, you can"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_to_start_in_the_overworld",
+          "text": {
+            "fixedValue": "choose to start in the Overworld as well, in which case the dimension will"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_be_available_later_in_the_game_a",
+          "text": {
+            "fixedValue": "be available later in the game as well."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 14,
+          "y": 100,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_so_now_you_choose_where_would",
+          "text": {
+            "fixedValue": "So, now you choose, how would you like to start?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 95,
+          "y": 163,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_alternate_dimension",
+          "text": "Alternate Dimension",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectAltDim"
+          },
+          "width": 120,
+          "height": 20,
+          "x": 108,
+          "y": 202,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_vanilla",
+          "text": "Vanilla",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SelectVanilla"
+          },
+          "width": 60,
+          "height": 20,
+          "x": 248,
+          "y": 202,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

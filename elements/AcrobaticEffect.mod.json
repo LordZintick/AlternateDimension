@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Acrobatic",
+    "icon": "acrobatic_effect",
+    "color": {
+      "value": -16773442,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "STEP_HEIGHT"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

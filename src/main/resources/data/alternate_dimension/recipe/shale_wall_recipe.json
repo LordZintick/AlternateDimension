@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:shale"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:shale_wall",
+    "count": 6
+  }
+}

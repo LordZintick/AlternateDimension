@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:candy_cane"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:candy_cane_block",
+    "count": 1
+  }
+}

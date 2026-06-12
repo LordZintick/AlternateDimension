@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glow_berries",
+    "alternate_dimension:dried_berry",
+    "minecraft:sweet_berries"
+  ]
+}

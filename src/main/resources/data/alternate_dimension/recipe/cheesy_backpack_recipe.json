@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:cheese_block"
+    },
+    "b": {
+      "item": "alternate_dimension:parmesan_cheese_block"
+    },
+    "c": {
+      "item": "alternate_dimension:backpack"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:cheesy_backpack",
+    "count": 1
+  }
+}

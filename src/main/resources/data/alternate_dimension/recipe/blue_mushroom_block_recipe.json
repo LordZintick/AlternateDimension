@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:blue_mushroom"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:blue_mushroom_block",
+    "count": 1
+  }
+}

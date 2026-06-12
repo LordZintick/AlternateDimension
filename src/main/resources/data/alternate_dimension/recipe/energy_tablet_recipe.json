@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:phosphorus_torch"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "c": {
+      "item": "alternate_dimension:basic_circuit"
+    },
+    "d": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:energy_tablet",
+    "count": 1
+  }
+}

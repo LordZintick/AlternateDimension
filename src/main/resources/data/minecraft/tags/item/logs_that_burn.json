@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#alternate_dimension:azure_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:redwood_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:scorched_logs",
+      "required": false
+    }
+  ]
+}

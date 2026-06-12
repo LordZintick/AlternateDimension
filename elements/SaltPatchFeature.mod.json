@@ -1,0 +1,14 @@
+{
+  "_fv": 85,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "restrictionBiomes": [
+      {
+        "value": "#mod:is_familiar_realm"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"219\" y=\"108\"><value name=\"feature\"><block type=\"feature_disk_simple\"><field name=\"half_height\">1</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:SaltBlock</field></block></value><value name=\"target\"><block type=\"block_predicate_solid\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field></block></value><value name=\"radius\"><block type=\"int_provider_constant\"><field name=\"value\">8</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">25</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></xml>"
+  }
+}

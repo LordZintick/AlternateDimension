@@ -1,0 +1,8 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "alternate_dimension:block/redwood_planks",
+    "particle": "alternate_dimension:block/redwood_planks"
+  },
+  "render_type": "solid"
+}

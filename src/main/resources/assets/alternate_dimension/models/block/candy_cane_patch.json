@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "alternate_dimension:block/candy_cane",
+    "particle": "alternate_dimension:block/candy_cane"
+  },
+  "render_type": "cutout"
+}

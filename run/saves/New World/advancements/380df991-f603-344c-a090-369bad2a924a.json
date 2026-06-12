@@ -1,0 +1,63 @@
+{
+  "alternate_dimension:recipes/pyric_bricks_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:44 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_bricks_wall_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:44 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-06-08 20:14:33 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_bricks_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:41 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/chiseled_veridium_bricks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:41 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_bricks_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:44 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_bricks_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:41 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_bricks_wall_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:41 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-06-08 20:14:34 -0400"
+    },
+    "done": false
+  },
+  "alternate_dimension:recipes/chiseled_pyric_bricks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-06-08 20:19:44 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

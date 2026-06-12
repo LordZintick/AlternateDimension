@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a ",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:scorched_earth"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:scorched_earth_stairs",
+    "count": 4
+  }
+}

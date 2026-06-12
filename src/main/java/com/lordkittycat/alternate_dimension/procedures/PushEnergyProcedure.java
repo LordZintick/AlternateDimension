@@ -1,0 +1,69 @@
+package com.lordkittycat.alternate_dimension.procedures;
+
+import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+public class PushEnergyProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		double transferamnt = 0;
+		for (Direction directioniterator : Direction.values()) {
+			if (canReceiveEnergy(world, BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()), (directioniterator.getOpposite()))
+					&& getEnergyStored(world, BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()), null) < getMaxEnergyStored(world,
+							BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()), null)) {
+				transferamnt = extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000, directioniterator);
+				if (world instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), directioniterator);
+					if (_entityStorage != null)
+						_entityStorage.extractEnergy((int) transferamnt, false);
+				}
+				if (world instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x + directioniterator.getStepX(), y + directioniterator.getStepY(), z + directioniterator.getStepZ()),
+							(directioniterator.getOpposite()));
+					if (_entityStorage != null)
+						_entityStorage.receiveEnergy((int) transferamnt, false);
+				}
+			}
+		}
+	}
+
+	private static boolean canReceiveEnergy(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.canReceive();
+		}
+		return false;
+	}
+
+	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.getEnergyStored();
+		}
+		return 0;
+	}
+
+	public static int getMaxEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.getMaxEnergyStored();
+		}
+		return 0;
+	}
+
+	private static int extractEnergySimulate(LevelAccessor level, BlockPos pos, int amount, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.extractEnergy(amount, true);
+		}
+		return 0;
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "seed_gun",
+  "category": "equipment",
+  "pattern": [
+    "a  ",
+    " b ",
+    " cb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "b": {
+      "tag": "minecraft:logs"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:seed_gun",
+    "count": 1
+  }
+}

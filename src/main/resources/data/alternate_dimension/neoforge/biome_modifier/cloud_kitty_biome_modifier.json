@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "alternate_dimension:highlands",
+  "spawners": {
+    "type": "alternate_dimension:cloud_kitty",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

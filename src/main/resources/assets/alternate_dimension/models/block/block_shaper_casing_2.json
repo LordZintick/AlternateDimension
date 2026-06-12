@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/arrow_up",
+    "up": "alternate_dimension:block/arrow_down",
+    "north": "alternate_dimension:block/test_block_shaper_casing_selected",
+    "east": "alternate_dimension:block/test_block_shaper_casing_left",
+    "south": "alternate_dimension:block/test_block_shaper_casing_selected",
+    "west": "alternate_dimension:block/test_block_shaper_casing_right",
+    "particle": "alternate_dimension:block/arrow_up"
+  },
+  "render_type": "solid"
+}

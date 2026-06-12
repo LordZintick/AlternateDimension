@@ -1,0 +1,49 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EvilstoneBlock"
+    },
+    "name": "evilstone_block_compacting",
+    "namespace": "mod"
+  }
+}

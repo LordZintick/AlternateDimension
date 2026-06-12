@@ -1,0 +1,28 @@
+{
+  "name": "alternate_dimension:elven_tower_main",
+  "fallback": "alternate_dimension:elven_tower_top",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:elven_tower_segment",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:elven_tower_top",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

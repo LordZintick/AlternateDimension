@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:wooden_drill",
+    "alternate_dimension:iron_drill",
+    "alternate_dimension:durable_drill",
+    "alternate_dimension:laser_drill"
+  ]
+}

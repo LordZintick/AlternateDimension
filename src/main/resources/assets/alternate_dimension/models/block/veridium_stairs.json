@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "alternate_dimension:block/veridium",
+    "bottom": "alternate_dimension:block/veridium",
+    "top": "alternate_dimension:block/veridium",
+    "side": "alternate_dimension:block/veridium"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:cloud_block"
+    },
+    "b": {
+      "item": "alternate_dimension:magic_dust"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:cloud_charge",
+    "count": 4
+  }
+}

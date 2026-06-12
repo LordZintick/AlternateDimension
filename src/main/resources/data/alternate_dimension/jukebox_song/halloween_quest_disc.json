@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.alternate_dimension.halloween_quest_disc.desc"
+  },
+  "length_in_seconds": 60,
+  "sound_event": "alternate_dimension:boss_battle"
+}

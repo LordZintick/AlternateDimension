@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:pear",
+    "alternate_dimension:elderberry",
+    "alternate_dimension:lime",
+    "alternate_dimension:dried_berry",
+    "alternate_dimension:raspberry",
+    "alternate_dimension:blueberry",
+    "alternate_dimension:banana",
+    "alternate_dimension:lemon",
+    "alternate_dimension:strawberry",
+    "minecraft:apple",
+    "alternate_dimension:blackberry"
+  ]
+}

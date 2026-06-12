@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ShaleCobble"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      },
+      {
+        "value": "CUSTOM:ShaleCobble"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ShaleCobbleWall"
+    },
+    "name": "shale_cobble_wall_recipe",
+    "namespace": "mod"
+  }
+}

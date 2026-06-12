@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
+    "c": {
+      "item": "alternate_dimension:evilstone_block"
+    },
+    "d": {
+      "item": "alternate_dimension:evilstone_gear"
+    },
+    "e": {
+      "item": "alternate_dimension:evilstone_plate"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:corruptor",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Toggle Jetpack Hover",
+    "keyBindingCategoryKey": "alternate_dimension",
+    "onKeyPressed": {
+      "name": "ToggleJetpackHoverTrigger"
+    }
+  }
+}

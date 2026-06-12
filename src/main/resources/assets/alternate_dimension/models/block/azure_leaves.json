@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/azure_leaves",
+    "particle": "alternate_dimension:block/azure_leaves"
+  }
+}

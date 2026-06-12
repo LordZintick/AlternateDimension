@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ScorchedLog"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ScorchedLog"
+      },
+      {
+        "value": "CUSTOM:ScorchedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ScorchedLog"
+      },
+      {
+        "value": "CUSTOM:ScorchedLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ScorchedWood"
+    },
+    "name": "scorched_wood_recipe",
+    "namespace": "mod"
+  }
+}

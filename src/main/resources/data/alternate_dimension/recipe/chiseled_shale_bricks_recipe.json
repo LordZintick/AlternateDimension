@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:shale_bricks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:chiseled_shale_bricks",
+    "count": 4
+  }
+}

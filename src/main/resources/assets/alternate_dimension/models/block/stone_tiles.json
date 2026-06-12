@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/stone_tiles",
+    "particle": "alternate_dimension:block/stone_tiles"
+  },
+  "render_type": "solid"
+}

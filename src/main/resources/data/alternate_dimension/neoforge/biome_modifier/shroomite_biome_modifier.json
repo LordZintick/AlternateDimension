@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "alternate_dimension:mushroom_infection",
+  "spawners": {
+    "type": "alternate_dimension:shroomite",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

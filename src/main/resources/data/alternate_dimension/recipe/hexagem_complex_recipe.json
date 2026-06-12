@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "hexagem_complex",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "alternate_dimension:sapphire"
+    },
+    {
+      "item": "alternate_dimension:ruby"
+    },
+    {
+      "item": "alternate_dimension:topaz"
+    }
+  ],
+  "result": {
+    "id": "alternate_dimension:hexagem_complex",
+    "count": 1
+  }
+}

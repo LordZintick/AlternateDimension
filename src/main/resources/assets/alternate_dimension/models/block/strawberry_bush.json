@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "alternate_dimension:block/strawberry_bush",
+    "particle": "alternate_dimension:block/strawberry_bush"
+  },
+  "render_type": "cutout"
+}

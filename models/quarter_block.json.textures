@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "solar_panel_top",
+        "1": "solar_panel_bottom",
+        "2": "solar_panel_side"
+      },
+      "name": "default"
+    }
+  }
+}

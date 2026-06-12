@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:orichalcum_block",
+    "alternate_dimension:evilstone_ore",
+    "alternate_dimension:meteorite_block",
+    "alternate_dimension:deepslate_titanium_ore",
+    "alternate_dimension:titanium_block",
+    "alternate_dimension:titanium_ore"
+  ]
+}

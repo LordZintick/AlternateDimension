@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "alternate_dimension:block/pyre_mantle",
+    "bottom": "alternate_dimension:block/pyre_mantle",
+    "top": "alternate_dimension:block/pyre_mantle",
+    "side": "alternate_dimension:block/pyre_mantle"
+  },
+  "render_type": "solid"
+}

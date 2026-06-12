@@ -1,0 +1,146 @@
+{
+  "_fv": 85,
+  "_type": "biome",
+  "definition": {
+    "name": "Wasteland",
+    "groundBlock": {
+      "value": "CUSTOM:ScorchedEarth"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:ScorchedEarth"
+    },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "airColor": {
+      "value": -7517,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -7517,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -11846369,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -6056587,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -6056587,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -6056587,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "CUSTOM:wasteland_music"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "LAVA"
+    },
+    "particlesProbability": 0.19999999999999998,
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 0.25,
+      "max": 0.35
+    },
+    "genHumidity": {
+      "min": -0.35,
+      "max": -0.25
+    },
+    "genContinentalness": {
+      "min": 0.2,
+      "max": 0.25
+    },
+    "genErosion": {
+      "min": 0.25,
+      "max": 0.35
+    },
+    "genWeirdness": {
+      "min": -0.35,
+      "max": -0.25
+    },
+    "genDepth": {
+      "min": 0.2,
+      "max": 0.9
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 10,
+    "treeStem": {
+      "value": "CUSTOM:ScorchedLog"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:DriedFruit"
+    },
+    "defaultFeatures": [
+      "Caves"
+    ],
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "desert",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "DESERT",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityHusk"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 15,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

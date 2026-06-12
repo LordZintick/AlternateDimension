@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_nugget"
+    },
+    "b": {
+      "item": "alternate_dimension:sulfur"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:rocket",
+    "count": 4
+  }
+}

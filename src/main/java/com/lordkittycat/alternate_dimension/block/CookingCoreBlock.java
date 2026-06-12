@@ -1,0 +1,32 @@
+package com.lordkittycat.alternate_dimension.block;
+
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
+
+import com.lordkittycat.alternate_dimension.procedures.SpawnChefsProcedure;
+
+public class CookingCoreBlock extends Block {
+	public CookingCoreBlock() {
+		super(BlockBehaviour.Properties.of().strength(4f, 100f).randomTicks());
+	}
+
+	@Override
+	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.randomTick(blockstate, world, pos, random);
+		SpawnChefsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		SpawnChefsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
+	}
+}

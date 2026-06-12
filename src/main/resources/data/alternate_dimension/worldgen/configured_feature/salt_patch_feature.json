@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "radius": 8,
+    "half_height": 1,
+    "target": {
+      "type": "minecraft:solid"
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "alternate_dimension:salt_block"
+        }
+      },
+      "rules": []
+    }
+  }
+}

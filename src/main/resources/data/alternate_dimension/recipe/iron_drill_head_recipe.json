@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " aa",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_plate"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:iron_drill_head",
+    "count": 1
+  }
+}

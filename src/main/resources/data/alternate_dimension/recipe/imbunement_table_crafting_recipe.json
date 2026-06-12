@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:magic_dust"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "c": {
+      "item": "minecraft:crafting_table"
+    },
+    "d": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "e": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:imbunement_table",
+    "count": 1
+  }
+}

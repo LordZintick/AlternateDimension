@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "north=true,east=false,south=false,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_0"
+    },
+    "north=true,east=true,south=false,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_1"
+    },
+    "north=true,east=false,south=true,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_2"
+    },
+    "north=true,east=false,south=false,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_3"
+    },
+    "north=true,east=true,south=true,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_4"
+    },
+    "north=true,east=false,south=true,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_5"
+    },
+    "north=true,east=true,south=false,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_6"
+    },
+    "north=true,east=true,south=true,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_7"
+    },
+    "north=false,east=true,south=true,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_8"
+    },
+    "north=false,east=false,south=true,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_9"
+    },
+    "north=false,east=true,south=true,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_10"
+    },
+    "north=false,east=true,south=false,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_11"
+    },
+    "north=false,east=true,south=false,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_12"
+    },
+    "north=false,east=false,south=true,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing_13"
+    },
+    "north=false,east=false,south=false,west=true": {
+      "model": "alternate_dimension:block/block_shaper_casing_14"
+    },
+    "north=false,east=false,south=false,west=false": {
+      "model": "alternate_dimension:block/block_shaper_casing"
+    }
+  }
+}

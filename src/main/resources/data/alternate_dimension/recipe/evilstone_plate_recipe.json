@@ -1,0 +1,14 @@
+{
+  "type": "alternate_dimension:ingot_presser_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:evilstone_gem"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:evilstone_plate",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "feature": "alternate_dimension:cloud_feature",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "below_top": 135
+        },
+        "max_inclusive": {
+          "below_top": 120
+        }
+      }
+    }
+  ]
+}

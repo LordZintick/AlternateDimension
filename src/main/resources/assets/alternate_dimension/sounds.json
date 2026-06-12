@@ -1,0 +1,192 @@
+{
+  "drill_use": {
+    "subtitle": "subtitles.drill_use",
+    "sounds": [
+      {
+        "name": "alternate_dimension:drill_use_1",
+        "stream": false
+      },
+      {
+        "name": "alternate_dimension:drill_use_2",
+        "stream": false
+      }
+    ]
+  },
+  "magnetic_lord_intro": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:theme_song_8-bit_v1__opening_1",
+        "stream": true
+      }
+    ]
+  },
+  "magnetic_lord_music": {
+    "subtitle": "subtitles.magnetic_lord_music",
+    "sounds": [
+      {
+        "name": "alternate_dimension:theme_song_8-bit_v1__looping_1",
+        "stream": true
+      }
+    ]
+  },
+  "new_wasteland_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:a_path_c4_and_delayedchip_mix_extended",
+        "stream": true
+      }
+    ]
+  },
+  "new_forest_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:theforest",
+        "stream": true
+      }
+    ]
+  },
+  "new_candy_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:flowerbed_fields",
+        "stream": true
+      }
+    ]
+  },
+  "new_highlands_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:pulsar",
+        "stream": true
+      }
+    ]
+  },
+  "boss_battle": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:boss_battle",
+        "stream": true
+      }
+    ]
+  },
+  "candy_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:candy_biome",
+        "stream": true
+      }
+    ]
+  },
+  "credits": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:credits",
+        "stream": true
+      }
+    ]
+  },
+  "dark_realm": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:dark_realm",
+        "stream": true
+      }
+    ]
+  },
+  "fruity_gardens": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:fruity_gardens",
+        "stream": true
+      }
+    ]
+  },
+  "gelatin_swamp": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:gelatin_swamp",
+        "stream": true
+      }
+    ]
+  },
+  "ice_cream_hills": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:ice_cream_hills",
+        "stream": true
+      }
+    ]
+  },
+  "redwood_forest": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:redwood_forest",
+        "stream": true
+      }
+    ]
+  },
+  "wasteland_music": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:wasteland",
+        "stream": true
+      }
+    ]
+  },
+  "midlands": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:midlands",
+        "stream": true
+      }
+    ]
+  },
+  "redwood_forest_quiet": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:redwood_forest",
+        "stream": true
+      }
+    ]
+  },
+  "calm_ocean": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:exploration_theme",
+        "stream": true
+      }
+    ]
+  },
+  "enchanted_forest": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:eye_of_the_storm",
+        "stream": true
+      }
+    ]
+  },
+  "mushroom_cave": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:cleyton_rx_-_underwater",
+        "stream": true
+      }
+    ]
+  },
+  "frostbitten_plains": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:prelude_in_f_minor",
+        "stream": true
+      }
+    ]
+  },
+  "mushroom_infection": {
+    "sounds": [
+      {
+        "name": "alternate_dimension:spooky_wastes_no_beat",
+        "stream": true
+      }
+    ]
+  }
+}

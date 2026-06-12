@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:redwood_door",
+    "alternate_dimension:azure_door",
+    "alternate_dimension:scorched_door"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "aluminum",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "alternate_dimension:raw_aluminum"
+  },
+  "result": {
+    "id": "alternate_dimension:aluminum_ingot"
+  }
+}

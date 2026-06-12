@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Alternate Dimension Mobs",
+    "icon": {
+      "value": "CUSTOM:CorruptedElf.spawn_egg"
+    },
+    "showSearch": false
+  }
+}

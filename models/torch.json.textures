@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "minecraft:torch"
+      }
+    },
+    "phosphorus": {
+      "name": "phosphorus",
+      "map": {
+        "0": "phosphorus_torch"
+      }
+    },
+    "redstone": {
+      "name": "redstone",
+      "map": {
+        "0": "minecraft:redstone_torch"
+      }
+    },
+    "soul": {
+      "name": "soul",
+      "map": {
+        "0": "minecraft:soul_torch"
+      }
+    }
+  }
+}

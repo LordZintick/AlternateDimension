@@ -1,0 +1,24 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "nuclear_reactor_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:RawUranium"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "NuclearReactorRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:Plutonium"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

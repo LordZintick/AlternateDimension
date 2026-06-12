@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:stone_tiles",
+    "count": 4
+  }
+}

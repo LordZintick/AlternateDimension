@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/azure_log_top",
+    "up": "alternate_dimension:block/azure_log_top",
+    "north": "alternate_dimension:block/azure_log",
+    "east": "alternate_dimension:block/azure_log",
+    "south": "alternate_dimension:block/azure_log",
+    "west": "alternate_dimension:block/azure_log",
+    "particle": "alternate_dimension:block/azure_log"
+  },
+  "render_type": "solid"
+}

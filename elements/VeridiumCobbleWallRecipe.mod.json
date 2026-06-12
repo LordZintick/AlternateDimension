@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      },
+      {
+        "value": "CUSTOM:VeridiumCobble"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VeridiumCobbleWall"
+    },
+    "name": "veridium_cobble_wall_recipe",
+    "namespace": "mod"
+  }
+}

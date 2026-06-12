@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#alternate_dimension:drills",
+    "#minecraft:hoes",
+    "#minecraft:pickaxes",
+    "#minecraft:axes",
+    "#minecraft:shovels"
+  ]
+}

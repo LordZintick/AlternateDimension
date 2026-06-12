@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgh"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:life_essence"
+    },
+    "b": {
+      "item": "alternate_dimension:hallowed_essence"
+    },
+    "c": {
+      "item": "alternate_dimension:fire_essence"
+    },
+    "d": {
+      "item": "alternate_dimension:magic_dust"
+    },
+    "e": {
+      "item": "alternate_dimension:magic_dust_block"
+    },
+    "f": {
+      "item": "alternate_dimension:candy_essence"
+    },
+    "g": {
+      "item": "alternate_dimension:void_essence"
+    },
+    "h": {
+      "item": "alternate_dimension:ice_essence"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:omega_essence",
+    "count": 1
+  }
+}

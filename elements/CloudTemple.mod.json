@@ -1,0 +1,30 @@
+{
+  "_fv": 85,
+  "_type": "structure",
+  "definition": {
+    "structure": "cloud_temple",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 10,
+    "separation": 4,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Highlands"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "STRONGHOLDS",
+    "surfaceDetectionType": "MOTION_BLOCKING",
+    "useStartHeight": true,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 185,
+    "startHeightMax": 200,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

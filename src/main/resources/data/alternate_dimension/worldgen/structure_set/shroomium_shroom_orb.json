@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "alternate_dimension:shroomium_shroom_orb",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 9,
+    "separation": 5,
+    "salt": 587823044
+  }
+}

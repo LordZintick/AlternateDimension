@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_brick"
+    },
+    "b": {
+      "item": "alternate_dimension:meteorite_dust"
+    },
+    "c": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:item_incinerator",
+    "count": 1
+  }
+}

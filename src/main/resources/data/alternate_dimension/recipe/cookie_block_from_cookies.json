@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cookie"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:cookie_block",
+    "count": 1
+  }
+}

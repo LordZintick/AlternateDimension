@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:black_dye"
+    },
+    "b": {
+      "item": "alternate_dimension:math_workbook"
+    },
+    "c": {
+      "item": "alternate_dimension:variable"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:function_blaster",
+    "count": 1
+  }
+}

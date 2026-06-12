@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:plus_projectile",
+    "alternate_dimension:seed_projectile",
+    "alternate_dimension:var_projectile"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Alternate Dimension Utilities",
+    "icon": {
+      "value": "CUSTOM:AlloySmelter"
+    },
+    "showSearch": false
+  }
+}

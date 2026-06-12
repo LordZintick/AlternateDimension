@@ -1,0 +1,58 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_AZURE_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "AZURE_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_AZURE_CHEST_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "AZURE_CHEST_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_SCORCHED_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "SCORCHED_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_SCORCHED_CHEST_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "SCORCHED_CHEST_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_REDWOOD_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "REDWOOD_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_REDWOOD_CHEST_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "REDWOOD_CHEST_BOAT_TYPE"
+      }
+    }
+  ]
+}

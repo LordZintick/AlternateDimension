@@ -1,0 +1,30 @@
+{
+  "_fv": 85,
+  "_type": "structure",
+  "definition": {
+    "structure": "giant_clover",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 3,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ThickForest"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "VEGETAL_DECORATION",
+    "surfaceDetectionType": "OCEAN_FLOOR_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

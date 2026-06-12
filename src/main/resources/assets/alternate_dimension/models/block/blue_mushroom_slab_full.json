@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "alternate_dimension:block/blue_mushroom_block",
+    "bottom": "alternate_dimension:block/blue_mushroom_block",
+    "top": "alternate_dimension:block/blue_mushroom_block",
+    "side": "alternate_dimension:block/blue_mushroom_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:meteorite_dust"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:meteorite_block",
+    "count": 1
+  }
+}

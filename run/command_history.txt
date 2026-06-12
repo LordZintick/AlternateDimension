@@ -1,0 +1,50 @@
+/fill -512 72 -32
+/fill -512 72 -32 -503 76 -41 air replace alternate_dimension:scorched_earth
+/fill -512 72 -32 -503 76 -41 air replace lava
+/time set day
+/effect give Dev minecraft:night_vision infinite 255 true
+/locate biome alternate_dimension:highlands
+/tp @s -440 98 -528
+/effect clear Dev
+/time set day
+/locate biome alternate_dimension:thick_forest
+/tp @s -755 125 125
+/locate biome alternate_dimension:thick_forest
+/tp @s 175 127 778
+/effect give Dev minecraft:night_vision infinite 255 true
+/summon alternate_dimension:meteoroid
+/locate biome alternate_dimension:wasteland
+/tp @s 648 85 563
+/time set day
+/kill da621f7b-f2dd-41ff-a177-a4fb96b80943
+/give Dev alternate_dimension:runestone[alternate_dimension:spell={spellName:"fireball"}]
+/give Dev alternate_dimension:book_of_knowledge[alternate_dimension:spell={spellName:"fireball"}]
+/effect give Dev minecraft:night_vision infinite 255 true
+/locate biome alternate_dimension:frostbitten_plains
+/tp @s 134 83 -194
+/effect give Dev minecraft:night_vision infinite 255 true
+/kill fe7e512a-7411-4605-917f-6da36914432e
+/tp fe7e512a-7411-4605-917f-6da36914432e ~ ~120 ~
+/gamerule keepInventory true
+/clear Dev
+/effect clear Dev
+/time set day
+/gamerule doDaylightCycle false
+/fill -223 78 170
+/fill -223 78 170 -211 88 182
+/fill -223 78 170 -211 88 182 minecraft:structure_void replace air
+/fill -188 93 126
+/fill -188 93 126 -186 98 128
+/fill -188 93 126 -186 98 128 minecraft:structure_void replace air
+/fill -185 93 126
+/fill -185 93 126 -183 114 128 minecraft:structure_void replace air
+/fill -188 92 123
+/fill -188 92 123 -173 101 131 minecraft:structure_void replace air
+/locate biome alternate_dimension:mushroom_infection
+/tp @s -202 90 -137
+/effect give Dev minecraft:night_vision infinite 255 true
+/meteor
+/effect give Dev minecraft:night_vision infinite 255 true
+/effect clear Dev
+/meteor
+/effect give Dev minecraft:night_vision infinite 255 true

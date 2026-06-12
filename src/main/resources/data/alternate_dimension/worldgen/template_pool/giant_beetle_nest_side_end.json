@@ -1,0 +1,17 @@
+{
+  "name": "alternate_dimension:giant_beetle_nest_side_end",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:giant_beetle_nest_horizontal_end",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

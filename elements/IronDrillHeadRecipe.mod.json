@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AluminumPlate"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:IronDrillHead"
+    },
+    "name": "iron_drill_head_recipe",
+    "namespace": "mod"
+  }
+}

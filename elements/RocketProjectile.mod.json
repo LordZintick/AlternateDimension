@@ -1,0 +1,32 @@
+{
+  "_fv": 85,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Rocket"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.firework.shoot"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "disableDiscarding": false,
+    "power": 3.0,
+    "damage": 5.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "Explode"
+    },
+    "onHitsEntity": {
+      "name": "Explode"
+    },
+    "onFlyingTick": {
+      "name": "SpawnFlameParticle"
+    }
+  }
+}

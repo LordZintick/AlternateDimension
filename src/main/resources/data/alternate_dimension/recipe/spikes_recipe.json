@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "tag": "alternate_dimension:metal_nuggets"
+    },
+    "b": {
+      "item": "alternate_dimension:redwood_planks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:spikes",
+    "count": 4
+  }
+}

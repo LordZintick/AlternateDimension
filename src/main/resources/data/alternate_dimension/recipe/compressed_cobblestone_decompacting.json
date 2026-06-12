@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:compressed_cobblestone"
+    }
+  },
+  "result": {
+    "id": "minecraft:cobblestone",
+    "count": 9
+  }
+}

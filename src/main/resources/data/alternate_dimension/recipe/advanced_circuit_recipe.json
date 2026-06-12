@@ -1,0 +1,20 @@
+{
+  "type": "alternate_dimension:circuit_maker_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:evilstone_gem"
+    },
+    {
+      "item": "alternate_dimension:silicon"
+    },
+    {
+      "item": "alternate_dimension:titanium_ingot"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:advanced_circuit",
+      "count": 1
+    }
+  ]
+}

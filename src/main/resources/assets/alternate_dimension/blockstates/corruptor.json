@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "alternate_dimension:block/corruptor"
+    },
+    "facing=east": {
+      "model": "alternate_dimension:block/corruptor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "alternate_dimension:block/corruptor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alternate_dimension:block/corruptor",
+      "y": 270
+    }
+  }
+}

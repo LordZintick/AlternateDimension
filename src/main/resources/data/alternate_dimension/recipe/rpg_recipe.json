@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "abc",
+    "d  "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:planks"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "c": {
+      "item": "alternate_dimension:rocket"
+    },
+    "d": {
+      "item": "alternate_dimension:aluminum_nugget"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:rpg",
+    "count": 1
+  }
+}

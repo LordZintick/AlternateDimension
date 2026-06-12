@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "alternate_dimension:wasteland",
+    "desert"
+  ],
+  "features": "alternate_dimension:scorched_bush",
+  "step": "vegetal_decoration"
+}

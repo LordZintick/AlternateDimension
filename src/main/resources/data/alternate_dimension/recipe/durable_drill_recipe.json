@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    "aca",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:titanium_plate"
+    },
+    "b": {
+      "item": "alternate_dimension:durable_drill_head"
+    },
+    "c": {
+      "item": "alternate_dimension:titanium_gear"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:durable_drill",
+    "count": 1
+  }
+}

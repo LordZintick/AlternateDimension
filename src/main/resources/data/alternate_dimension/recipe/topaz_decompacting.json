@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:topaz_block"
+    }
+  ],
+  "result": {
+    "id": "alternate_dimension:topaz",
+    "count": 4
+  }
+}

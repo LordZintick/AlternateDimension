@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:ancient_dust"
+    },
+    "b": {
+      "item": "alternate_dimension:beetle_shell"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:reinforced_beetle_shell",
+    "count": 1
+  }
+}

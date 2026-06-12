@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:breadstick_launcher",
+    "alternate_dimension:function_blaster",
+    "alternate_dimension:rpg",
+    "alternate_dimension:seed_gun",
+    {
+      "id": "#minecraft:axes",
+      "required": false
+    },
+    {
+      "id": "#minecraft:swords",
+      "required": false
+    },
+    "alternate_dimension:math_workbook"
+  ]
+}

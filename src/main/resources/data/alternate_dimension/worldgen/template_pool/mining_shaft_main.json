@@ -1,0 +1,28 @@
+{
+  "name": "alternate_dimension:mining_shaft_main",
+  "fallback": "alternate_dimension:mining_shaft_end",
+  "elements": [
+    {
+      "weight": 7,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:mining_shaft_piece",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:mining_shaft_end",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

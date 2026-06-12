@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:titanium_block",
+    "alternate_dimension:tin_block",
+    "minecraft:coal_block",
+    "minecraft:copper_block",
+    "minecraft:redstone_block",
+    "minecraft:lapis_block",
+    "alternate_dimension:sugarium_block"
+  ]
+}

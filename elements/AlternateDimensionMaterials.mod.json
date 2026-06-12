@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Alternate Dimension Materials",
+    "icon": {
+      "value": "CUSTOM:HexagemComplex"
+    },
+    "showSearch": false
+  }
+}

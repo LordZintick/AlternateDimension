@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "alternate_dimension:block/cloud_bricks",
+    "bottom": "alternate_dimension:block/cloud_bricks",
+    "top": "alternate_dimension:block/cloud_bricks",
+    "side": "alternate_dimension:block/cloud_bricks"
+  },
+  "render_type": "solid"
+}

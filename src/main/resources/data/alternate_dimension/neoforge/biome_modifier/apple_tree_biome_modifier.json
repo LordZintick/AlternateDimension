@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:fruity_gardens",
+  "features": "alternate_dimension:apple_tree",
+  "step": "vegetal_decoration"
+}

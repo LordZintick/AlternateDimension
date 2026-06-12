@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:plus"
+    },
+    "b": {
+      "item": "minecraft:book"
+    },
+    "c": {
+      "item": "alternate_dimension:minus"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:math_workbook",
+    "count": 1
+  }
+}

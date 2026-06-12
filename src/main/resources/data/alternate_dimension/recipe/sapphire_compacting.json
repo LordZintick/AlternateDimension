@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:sapphire"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:sapphire_block",
+    "count": 1
+  }
+}

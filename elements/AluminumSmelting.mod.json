@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "aluminum",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:RawAluminum"
+      }
+    ],
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:RawAluminum"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:AluminumIngot"
+    },
+    "name": "aluminum_smelting",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:VeridiumBricks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VeridiumBricks"
+      },
+      {
+        "value": "CUSTOM:VeridiumBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VeridiumBricks"
+      },
+      {
+        "value": "CUSTOM:VeridiumBricks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChiseledVeridiumBricks"
+    },
+    "name": "chiseled_veridium_bricks_recipe",
+    "namespace": "mod"
+  }
+}

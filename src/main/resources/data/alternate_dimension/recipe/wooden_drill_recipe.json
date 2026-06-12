@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_drill",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    " b ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:wooden_drill_head"
+    },
+    "b": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:wooden_drill",
+    "count": 1
+  }
+}

@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Creative Commons Attribution-NonCommercial 3.0"
+
+[[mods]]
+modId="alternate_dimension"
+version="2.0.0dev"
+displayName="AlternateDimension"
+displayURL="https://modrinth.com/project/alternate-dimension"
+logoFile="logo.png"
+credits="Music by CC0 creators on OpenGameArt.org - HydroGene, Cleyton Kauffman, Centurion_of_War, celestialghost8, and Joth! Thank's for amazing music!"
+authors="LordZintick"
+description="Delve into a familiar yet different dimension, filled with many new challenges and rewards. Explore, fight, craft, build, and enjoy an entirely new Minecraft experience!"
+enumExtensions="META-INF/enumextensions.json"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[mixins]]
+    config = "alternate_dimension.mixins.json"
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.alternate_dimension]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.190,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.alternate_dimension]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.alternate_dimension]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

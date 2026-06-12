@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "cd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "b": {
+      "item": "alternate_dimension:salt"
+    },
+    "c": {
+      "item": "alternate_dimension:parmesan_cheese"
+    },
+    "d": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:chicken_parmesan",
+    "count": 1
+  }
+}

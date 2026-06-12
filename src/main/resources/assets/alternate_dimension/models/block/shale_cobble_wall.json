@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "alternate_dimension:block/shale_cobble",
+    "particle": "alternate_dimension:block/shale_cobble"
+  },
+  "render_type": "solid"
+}

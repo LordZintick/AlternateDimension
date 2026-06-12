@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AncientDust"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AncientDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AncientDust"
+      },
+      {
+        "value": "CUSTOM:BeetleShell"
+      },
+      {
+        "value": "CUSTOM:AncientDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AncientDust"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ReinforcedBeetleShell"
+    },
+    "name": "reinforced_beetle_shell_recipe",
+    "namespace": "mod"
+  }
+}

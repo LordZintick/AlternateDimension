@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/chiseled_veridium_bricks",
+    "particle": "alternate_dimension:block/chiseled_veridium_bricks"
+  },
+  "render_type": "solid"
+}

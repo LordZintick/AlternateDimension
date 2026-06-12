@@ -1,0 +1,55 @@
+{
+  "_fv": 85,
+  "_type": "structure",
+  "definition": {
+    "structure": "glowing_mushroom_supermega",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 3,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MushroomInfection"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "OCEAN_FLOOR_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 2,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "branch",
+        "fallbackPool": "alternate_dimension:supermega_glowing_mushroom_branch",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "glowing_mushroom_branch_basic",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "glowing_mushroom_branch_bulb",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "glowing_mushroom_branch_stem",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

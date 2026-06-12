@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pyric_cobble"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:pyric_cobble_wall",
+    "count": 6
+  }
+}

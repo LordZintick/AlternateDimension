@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:whipped_cream_block",
+    "alternate_dimension:ice_cream_block",
+    "alternate_dimension:magic_dust_block",
+    "alternate_dimension:frosting"
+  ]
+}

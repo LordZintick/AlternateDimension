@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:frosting"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:frosting"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:candy_cane_block"
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "radius": 2,
+      "offset": 4,
+      "height": 4
+    },
+    "trunk_placer": {
+      "type": "minecraft:fancy_trunk_placer",
+      "base_height": 10,
+      "height_rand_a": 5,
+      "height_rand_b": 3
+    },
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 0,
+      "lower_size": 0,
+      "upper_size": 0,
+      "min_clipped_height": 4
+    },
+    "decorators": [
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "alternate_dimension:cookie_block"
+          }
+        },
+        "probability": 0.14,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 2,
+        "directions": [
+          "down"
+        ]
+      }
+    ]
+  }
+}

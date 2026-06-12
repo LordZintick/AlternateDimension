@@ -1,0 +1,24 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "nuclear_reactor_recipe_type",
+    "ingredients": [
+      {
+        "value": "Items.COAL#1"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "NuclearReactorRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:ActivatedCharcoal"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

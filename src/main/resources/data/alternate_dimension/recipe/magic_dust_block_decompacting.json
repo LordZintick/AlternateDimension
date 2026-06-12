@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:magic_dust_block"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:magic_dust",
+    "count": 9
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_fv": 85,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Wasteland"
+      },
+      {
+        "value": "CUSTOM:ThickForest"
+      },
+      {
+        "value": "CUSTOM:CandyBiome"
+      },
+      {
+        "value": "CUSTOM:Highlands"
+      },
+      {
+        "value": "CUSTOM:CandyForest"
+      },
+      {
+        "value": "CUSTOM:IceCreamHills"
+      },
+      {
+        "value": "CUSTOM:RedwoodForest"
+      },
+      {
+        "value": "CUSTOM:FruityGardens"
+      },
+      {
+        "value": "CUSTOM:CalmOcean"
+      },
+      {
+        "value": "CUSTOM:EnchantedForest"
+      },
+      {
+        "value": "CUSTOM:FrostbittenPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomInfection"
+      }
+    ],
+    "biomesInDimensionCaves": [],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "seaLevel": 63,
+    "generateOreVeins": true,
+    "generateAquifers": true,
+    "horizontalNoiseSize": 1,
+    "verticalNoiseSize": 2,
+    "defaultEffects": "overworld",
+    "useCustomEffects": false,
+    "hasClouds": true,
+    "cloudHeight": 192,
+    "skyType": "NONE",
+    "sunHeightAffectsFog": false,
+    "canRespawnHere": false,
+    "hasFog": false,
+    "ambientLight": 0.0,
+    "doesWaterVaporize": false,
+    "hasFixedTime": false,
+    "fixedTimeValue": 0,
+    "coordinateScale": 1.0,
+    "infiniburnTag": "minecraft:infiniburn_overworld",
+    "bedWorks": true,
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "piglinSafe": false,
+    "hasRaids": true,
+    "minMonsterSpawnLightLimit": 0,
+    "maxMonsterSpawnLightLimit": 7,
+    "monsterSpawnBlockLightLimit": 0,
+    "portalFrame": {
+      "value": ""
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": true,
+    "igniterName": "Eleroth Portal Igniter",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}

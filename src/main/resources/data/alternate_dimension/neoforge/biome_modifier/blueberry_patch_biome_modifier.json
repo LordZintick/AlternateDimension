@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:fruity_gardens",
+  "features": "alternate_dimension:blueberry_patch",
+  "step": "vegetal_decoration"
+}

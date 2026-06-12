@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "alternate_dimension:block/veridium",
+    "particle": "alternate_dimension:block/veridium"
+  },
+  "render_type": "solid"
+}

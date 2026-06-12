@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:refined_meteorite_block",
+    "alternate_dimension:deepslate_uranium_ore",
+    "alternate_dimension:uranium_ore",
+    "alternate_dimension:sugarium_block",
+    "alternate_dimension:sugarium_ore"
+  ]
+}

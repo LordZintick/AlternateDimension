@@ -1,0 +1,23 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0999999999999996,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:RawTitanium"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:TitaniumIngot"
+    },
+    "name": "titanium_ore_smelting",
+    "namespace": "mod"
+  }
+}

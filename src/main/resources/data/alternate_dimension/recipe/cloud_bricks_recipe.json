@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:cloud_block"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:cloud_bricks",
+    "count": 4
+  }
+}

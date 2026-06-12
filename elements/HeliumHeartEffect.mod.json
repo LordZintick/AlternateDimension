@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Helium Heart",
+    "icon": "helium_heart_effect",
+    "color": {
+      "value": -7017985,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "ENTITY_GRAVITY"
+        },
+        "amount": -0.03,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:mushroom_infection",
+  "features": "alternate_dimension:glowing_mushroom_patch",
+  "step": "vegetal_decoration"
+}

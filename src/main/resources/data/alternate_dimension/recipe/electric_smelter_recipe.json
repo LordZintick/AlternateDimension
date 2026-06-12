@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
+    "c": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:electric_smelter",
+    "count": 1
+  }
+}

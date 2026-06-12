@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:parmesan_cheese"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:parmesan_cheese_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "feature": "alternate_dimension:cheese_geode",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 20
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -40
+        },
+        "max_inclusive": {
+          "absolute": 50
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "uniform",
+        "min_inclusive": -10,
+        "max_inclusive": 10
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

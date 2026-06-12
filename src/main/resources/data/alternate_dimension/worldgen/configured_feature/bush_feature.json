@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block_pile",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "alternate_dimension:bush_leaves"
+          },
+          "weight": 4
+        },
+        {
+          "data": {
+            "Name": "alternate_dimension:elderberry_leaves"
+          },
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

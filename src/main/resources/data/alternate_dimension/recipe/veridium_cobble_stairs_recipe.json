@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a ",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:veridium_cobble"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:veridium_cobble_stairs",
+    "count": 4
+  }
+}

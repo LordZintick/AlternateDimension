@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "alternate_dimension:thick_forest",
+  "spawners": {
+    "type": "alternate_dimension:corrupted_elf",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

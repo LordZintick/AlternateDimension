@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:candy_forest",
+  "features": "alternate_dimension:thick_candy_tree",
+  "step": "surface_structures"
+}

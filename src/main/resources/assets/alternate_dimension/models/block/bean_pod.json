@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/bean_pod_side",
+    "up": "alternate_dimension:block/bean_pod_top",
+    "north": "alternate_dimension:block/bean_pod_side",
+    "east": "alternate_dimension:block/bean_pod_side",
+    "south": "alternate_dimension:block/bean_pod_side",
+    "west": "alternate_dimension:block/bean_pod_side",
+    "particle": "alternate_dimension:block/bean_pod_side"
+  },
+  "render_type": "solid"
+}

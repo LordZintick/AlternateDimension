@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "alternate_dimension:blocks/block_shaper_casing",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:block_shaper_casing"
+        }
+      ]
+    }
+  ]
+}

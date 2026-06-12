@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "features": "alternate_dimension:mantle_quartz_ore",
+  "step": "underground_ores"
+}

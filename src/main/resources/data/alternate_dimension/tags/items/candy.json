@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:candy_cane",
+    "alternate_dimension:red_gummy_bear_item",
+    "alternate_dimension:blue_gummy_bear_item",
+    "alternate_dimension:orange_gummy_bear",
+    "alternate_dimension:yellow_gummy_bear",
+    "alternate_dimension:green_gummy_bear",
+    "alternate_dimension:light_blue_gummy_bear"
+  ]
+}

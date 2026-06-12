@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "alternate_dimension:block/shale_cobble",
+    "bottom": "alternate_dimension:block/shale_cobble",
+    "top": "alternate_dimension:block/shale_cobble",
+    "side": "alternate_dimension:block/shale_cobble"
+  },
+  "render_type": "solid"
+}

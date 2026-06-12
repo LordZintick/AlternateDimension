@@ -1,0 +1,145 @@
+{
+  "_fv": 85,
+  "_type": "structure",
+  "definition": {
+    "structure": "giant_beetle_nest_entrance",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 8,
+    "separation": 5,
+    "restrictionBiomes": [
+      {
+        "value": "#mod:wasteland_biomes"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 20,
+    "maxDistanceFromCenter": 116,
+    "jigsawPools": [
+      {
+        "poolName": "main",
+        "fallbackPool": "alternate_dimension:giant_beetle_nest_end",
+        "poolParts": [
+          {
+            "weight": 16,
+            "structure": "giant_beetle_nest_vertical_straight",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 14,
+            "structure": "giant_beetle_nest_vertical_one",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 12,
+            "structure": "giant_beetle_nest_vertical_two",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 10,
+            "structure": "giant_beetle_nest_vertical_three",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 8,
+            "structure": "giant_beetle_nest_vertical_four",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 2,
+            "structure": "giant_beetle_nest_vertical_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "side",
+        "fallbackPool": "alternate_dimension:giant_beetle_nest_side_end",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_horizontal_straight",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "end",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_vertical_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "features",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_feature_none",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 2,
+            "structure": "giant_beetle_nest_feature_loot",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "giant_beetle_nest_feature_nest",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 2,
+            "structure": "giant_beetle_nest_feature_restless_nest",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "giant_beetle_nest_feature_salt_pile",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "side_end",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_horizontal_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

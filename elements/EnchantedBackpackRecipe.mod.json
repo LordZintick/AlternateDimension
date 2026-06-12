@@ -1,0 +1,56 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:CheesyBackpack"
+      },
+      {
+        "value": "CUSTOM:MagicDustBlock"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      },
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      },
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      },
+      {
+        "value": "CUSTOM:MagicDustBlock"
+      },
+      {
+        "value": "CUSTOM:CheesyBackpack"
+      },
+      {
+        "value": "CUSTOM:MagicDustBlock"
+      },
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      },
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      },
+      {
+        "value": "CUSTOM:LembasBreadBite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnchantedBackpack"
+    },
+    "name": "enchanted_backpack_recipe",
+    "namespace": "mod"
+  }
+}

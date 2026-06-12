@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:podzol"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:pine_leaves"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:spruce_log"
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "foliage_placer": {
+      "type": "minecraft:spruce_foliage_placer",
+      "offset": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0,
+        "max_inclusive": 2
+      },
+      "radius": {
+        "type": "uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 16
+      },
+      "trunk_height": {
+        "type": "uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    },
+    "trunk_placer": {
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 25,
+      "height_rand_a": 10,
+      "height_rand_b": 5
+    },
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 2,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "decorators": [
+      {
+        "type": "minecraft:leave_vine",
+        "probability": 0.25
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/cookie_block",
+    "particle": "alternate_dimension:block/cookie_block"
+  },
+  "render_type": "solid"
+}

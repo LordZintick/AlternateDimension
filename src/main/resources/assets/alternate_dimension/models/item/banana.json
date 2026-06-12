@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "alternate_dimension:item/banana"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "alternate_dimension:banana_peeled": 1
+      },
+      "model": "alternate_dimension:item/banana_0"
+    }
+  ]
+}

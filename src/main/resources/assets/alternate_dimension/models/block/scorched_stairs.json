@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "alternate_dimension:block/scorched_planks",
+    "bottom": "alternate_dimension:block/scorched_planks",
+    "top": "alternate_dimension:block/scorched_planks",
+    "side": "alternate_dimension:block/scorched_planks"
+  },
+  "render_type": "solid"
+}

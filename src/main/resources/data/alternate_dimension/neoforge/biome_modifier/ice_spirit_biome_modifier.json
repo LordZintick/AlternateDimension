@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#alternate_dimension:highlands_biomes",
+  "spawners": {
+    "type": "alternate_dimension:ice_spirit",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

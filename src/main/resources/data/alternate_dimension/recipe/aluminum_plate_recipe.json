@@ -1,0 +1,14 @@
+{
+  "type": "alternate_dimension:ingot_presser_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:aluminum_ingot"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:aluminum_plate",
+      "count": 1
+    }
+  ]
+}

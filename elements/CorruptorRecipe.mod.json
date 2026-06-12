@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:EvilstoneBlock"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumGear"
+      },
+      {
+        "value": "CUSTOM:EvilstoneBlock"
+      },
+      {
+        "value": "CUSTOM:AluminumGear"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGear"
+      },
+      {
+        "value": "CUSTOM:EvilstonePlate"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGear"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Corruptor"
+    },
+    "name": "corruptor_recipe",
+    "namespace": "mod"
+  }
+}

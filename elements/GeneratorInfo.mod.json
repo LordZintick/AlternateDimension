@@ -1,0 +1,18 @@
+{
+  "_fv": 85,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Generator"
+      },
+      {
+        "value": "CUSTOM:SolarPanel"
+      }
+    ],
+    "information": [
+      "This is a generator block!",
+      "This block will generate power either passively or when you give it fuel."
+    ]
+  }
+}

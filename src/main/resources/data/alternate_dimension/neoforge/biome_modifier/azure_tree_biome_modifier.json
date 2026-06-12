@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:enchanted_forest",
+  "features": "alternate_dimension:azure_tree",
+  "step": "surface_structures"
+}

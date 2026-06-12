@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:ingot_presser"
+    },
+    "c": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
+    "d": {
+      "item": "alternate_dimension:aluminum_block"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:circuit_maker",
+    "count": 1
+  }
+}

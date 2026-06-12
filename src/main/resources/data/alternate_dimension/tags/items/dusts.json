@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:salt",
+    "alternate_dimension:ancient_dust",
+    "alternate_dimension:magic_dust",
+    "minecraft:redstone",
+    "minecraft:gunpowder",
+    "minecraft:glowstone_dust",
+    "minecraft:sugar",
+    "alternate_dimension:meteorite_dust"
+  ]
+}

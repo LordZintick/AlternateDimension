@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a ",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pyre_mantle"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:pyre_stairs",
+    "count": 4
+  }
+}

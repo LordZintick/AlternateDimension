@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:laser_drill",
+    "alternate_dimension:orichalcum_pickaxe",
+    "alternate_dimension:orichalcum_axe",
+    "alternate_dimension:orichalcum_sword",
+    "alternate_dimension:orichalcum_shovel",
+    "alternate_dimension:orichalcum_hoe"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:plant_stem"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:plant_matter",
+    "count": 2
+  }
+}

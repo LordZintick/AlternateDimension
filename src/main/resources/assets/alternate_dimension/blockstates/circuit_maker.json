@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "alternate_dimension:block/circuit_maker"
+    },
+    "facing=east": {
+      "model": "alternate_dimension:block/circuit_maker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "alternate_dimension:block/circuit_maker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alternate_dimension:block/circuit_maker",
+      "y": 270
+    }
+  }
+}
