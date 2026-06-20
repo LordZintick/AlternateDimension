@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:wasteland_music"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -104,43 +104,24 @@
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
-    "spawnMineshaftMesa": true,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "desert",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
-    "spawnDesertPyramid": true,
+    "spawnDesertPyramid": false,
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "spawnShipwreckBeached": true,
-    "spawnBuriedTreasure": true,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "DESERT",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityHusk"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

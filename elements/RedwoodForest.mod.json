@@ -4,13 +4,13 @@
   "definition": {
     "name": "Redwood Forest",
     "groundBlock": {
-      "value": "Blocks.DIRT#2"
+      "value": "CUSTOM:FrostedGrassBlock"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#1"
+      "value": "CUSTOM:RichDirt"
     },
     "underwaterBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": ""
     },
     "airColor": {
       "value": -16724839,
@@ -35,7 +35,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:redwood_forest"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -97,10 +97,10 @@
       "TaigaRocks"
     ],
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "taiga",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -115,98 +115,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "MOUNTAIN",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityWitch"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityStray"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/shale_cobble_compressed",
+    "up": "alternate_dimension:block/shale_cobble_compressed",
+    "north": "alternate_dimension:block/shale_furnace_lit",
+    "east": "alternate_dimension:block/shale_cobble_compressed",
+    "south": "alternate_dimension:block/shale_cobble_compressed",
+    "west": "alternate_dimension:block/shale_cobble_compressed",
+    "particle": "alternate_dimension:block/shale_cobble_compressed"
+  },
+  "render_type": "solid"
+}

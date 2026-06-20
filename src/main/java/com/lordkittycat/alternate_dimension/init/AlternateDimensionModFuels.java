@@ -20,5 +20,7 @@ public class AlternateDimensionModFuels {
 			event.setBurnTime(100);
 		else if (itemstack.getItem() == AlternateDimensionModItems.PLUTONIUM.get())
 			event.setBurnTime(400);
+		else if (itemstack.getItem() == AlternateDimensionModItems.PYROLITE_CHUNK.get())
+			event.setBurnTime(1600);
 	}
 }

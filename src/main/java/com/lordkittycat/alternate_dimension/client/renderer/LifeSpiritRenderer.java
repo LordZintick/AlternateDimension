@@ -19,6 +19,8 @@ public class LifeSpiritRenderer extends MobRenderer<LifeSpiritEntity, Modelspiri
 
 	@Override
 	public ResourceLocation getTextureLocation(LifeSpiritEntity entity) {
+		if (entity.getTexture() != "life_spirit_new")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

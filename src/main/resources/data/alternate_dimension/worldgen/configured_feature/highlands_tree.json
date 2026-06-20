@@ -4,7 +4,7 @@
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:podzol"
+        "Name": "alternate_dimension:frosted_grass_block"
       }
     },
     "foliage_provider": {
@@ -16,7 +16,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:spruce_log"
+        "Name": "alternate_dimension:pine_log"
       }
     },
     "force_dirt": false,

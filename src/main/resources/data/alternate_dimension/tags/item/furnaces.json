@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:veridium_furnace",
+    "alternate_dimension:mantle_furnace",
+    "alternate_dimension:shale_furnace"
+  ]
+}

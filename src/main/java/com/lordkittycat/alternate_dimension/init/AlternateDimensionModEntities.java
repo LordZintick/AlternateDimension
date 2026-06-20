@@ -128,6 +128,18 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<BeetleChaserEntity>of(BeetleChaserEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.4f, 0.3f));
+	public static final DeferredHolder<EntityType<?>, EntityType<HallowedOneEntity>> HALLOWED_ONE = register("hallowed_one",
+			EntityType.Builder.<HallowedOneEntity>of(HallowedOneEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RomanEntity>> ROMAN = register("roman",
+			EntityType.Builder.<RomanEntity>of(RomanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BeetleQueenEntity>> BEETLE_QUEEN = register("beetle_queen",
+			EntityType.Builder.<BeetleQueenEntity>of(BeetleQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.4f, 0.3f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -161,6 +173,9 @@ public class AlternateDimensionModEntities {
 		ShroomiteEntity.init(event);
 		BeetleBruteEntity.init(event);
 		BeetleChaserEntity.init(event);
+		HallowedOneEntity.init(event);
+		RomanEntity.init(event);
+		BeetleQueenEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -189,5 +204,8 @@ public class AlternateDimensionModEntities {
 		event.put(SHROOMITE.get(), ShroomiteEntity.createAttributes().build());
 		event.put(BEETLE_BRUTE.get(), BeetleBruteEntity.createAttributes().build());
 		event.put(BEETLE_CHASER.get(), BeetleChaserEntity.createAttributes().build());
+		event.put(HALLOWED_ONE.get(), HallowedOneEntity.createAttributes().build());
+		event.put(ROMAN.get(), RomanEntity.createAttributes().build());
+		event.put(BEETLE_QUEEN.get(), BeetleQueenEntity.createAttributes().build());
 	}
 }

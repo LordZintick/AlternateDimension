@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "Items.STRING"
+        "value": "CUSTOM:WeakThread"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -26,16 +26,16 @@
         "value": ""
       },
       {
-        "value": "Items.STRING"
+        "value": "CUSTOM:WeakThread"
       },
       {
-        "value": "Items.STRING"
+        "value": "CUSTOM:WeakThread"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.STRING"
+        "value": "CUSTOM:WeakThread"
       },
       {
         "value": ""

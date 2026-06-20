@@ -18,7 +18,7 @@ public class CloudKittyRenderer extends MobRenderer<CloudKittyEntity, Modelcat<C
 
 	@Override
 	protected void scale(CloudKittyEntity entity, PoseStack poseStack, float f) {
-		poseStack.scale(5f, 5f, 5f);
+		poseStack.scale(3f, 3f, 3f);
 	}
 
 	@Override

@@ -37,20 +37,6 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.SAPLING#0"
-            },
-            "weight": 3,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:LembasBreadBite"
             },
             "weight": 1,
@@ -66,20 +52,6 @@
             "type": "item",
             "item": {
               "value": "CUSTOM:HempSeeds"
-            },
-            "weight": 4,
-            "minCount": 2,
-            "maxCount": 4,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.WHEAT_SEEDS"
             },
             "weight": 4,
             "minCount": 2,

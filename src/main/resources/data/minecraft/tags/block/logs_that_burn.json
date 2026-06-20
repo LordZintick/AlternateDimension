@@ -12,6 +12,10 @@
     {
       "id": "#alternate_dimension:scorched_logs",
       "required": false
+    },
+    {
+      "id": "#alternate_dimension:pine_logs",
+      "required": false
     }
   ]
 }

@@ -4,10 +4,10 @@
   "definition": {
     "name": "Lush Forest",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:LushGrassBlock"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:RichDirt"
     },
     "underwaterBlock": {
       "value": ""
@@ -31,7 +31,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:new_forest_music"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -88,17 +88,13 @@
       "value": ""
     },
     "defaultFeatures": [
-      "Caves",
-      "ForestGrass",
-      "ForestFlowers",
-      "PlainsTallGrass",
-      "MeadowVegetation"
+      "Caves"
     ],
-    "spawnStronghold": true,
-    "spawnMineshaft": true,
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
-    "spawnPillagerOutpost": true,
-    "villageType": "plains",
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -113,89 +109,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityWitch"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 3,
-        "maxGroup": 8,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 3,
-        "maxGroup": 8,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 3,
-        "maxGroup": 8,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

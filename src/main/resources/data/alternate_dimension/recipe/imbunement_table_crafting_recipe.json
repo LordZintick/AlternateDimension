@@ -14,13 +14,13 @@
       "item": "alternate_dimension:aluminum_ingot"
     },
     "c": {
-      "item": "minecraft:crafting_table"
+      "tag": "alternate_dimension:crafting_tables"
     },
     "d": {
-      "item": "minecraft:amethyst_shard"
+      "tag": "alternate_dimension:gems"
     },
     "e": {
-      "item": "minecraft:amethyst_block"
+      "tag": "alternate_dimension:gem_blocks"
     }
   },
   "result": {

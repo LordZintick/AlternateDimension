@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -25,7 +29,7 @@
         "value": "CUSTOM:TitaniumIngot"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": ""
@@ -34,7 +38,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": ""

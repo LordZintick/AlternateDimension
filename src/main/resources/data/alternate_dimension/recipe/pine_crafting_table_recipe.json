@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pine_planks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:pine_crafting_table",
+    "count": 1
+  }
+}

@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "TAG:mod:fruit"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -34,7 +38,7 @@
         "value": "TAG:mod:fruit"
       },
       {
-        "value": "Items.BOWL"
+        "value": "TAG:mod:bowls"
       },
       {
         "value": ""

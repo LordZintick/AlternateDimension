@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:frostbitten_plains"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -100,9 +100,7 @@
       "value": ""
     },
     "defaultFeatures": [
-      "Caves",
-      "FrozenTopLayer",
-      "Icebergs"
+      "Caves"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -124,61 +122,6 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityWitch"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityPolarBear"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 10,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }

@@ -32,7 +32,7 @@ public class AlternateDimensionModBrewingRecipes implements IModPlugin {
 		ItemStack potion2 = new ItemStack(Items.POTION);
 		List<ItemStack> ingredientStack = new ArrayList<>();
 		List<ItemStack> inputStack = new ArrayList<>();
-		ingredientStack.add(new ItemStack(Items.QUARTZ));
+		ingredientStack.add(new ItemStack(AlternateDimensionModItems.RAW_QUARTZ.get()));
 		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.ACROBATIC_POTION.get())));
 		ingredientStack.clear();
@@ -40,7 +40,7 @@ public class AlternateDimensionModBrewingRecipes implements IModPlugin {
 		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.LIGHT_FOOTED_POTION.get())));
 		ingredientStack.clear();
-		ingredientStack.add(new ItemStack(Items.STICK));
+		ingredientStack.add(new ItemStack(AlternateDimensionModItems.TOOL_ROD.get()));
 		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.REACHING_POTION.get())));
 		ingredientStack.clear();

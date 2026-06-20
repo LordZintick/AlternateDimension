@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "CUSTOM:RedwoodPlanks"
+        "value": "TAG:mod:metal_nuggets"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -35,10 +35,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:RedwoodPlanks"
+        "value": "TAG:minecraft:planks"
       },
       {
-        "value": "CUSTOM:RedwoodPlanks"
+        "value": "TAG:minecraft:planks"
       },
       {
         "value": ""

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:azure_wall_sign",
+    "alternate_dimension:pine_wall_sign",
     "alternate_dimension:redwood_wall_sign",
     "alternate_dimension:scorched_wall_sign"
   ]

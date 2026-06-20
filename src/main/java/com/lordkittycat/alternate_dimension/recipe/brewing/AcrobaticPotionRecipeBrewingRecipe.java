@@ -35,7 +35,7 @@ public class AcrobaticPotionRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(Items.QUARTZ)).test(ingredient);
+		return Ingredient.of(new ItemStack(AlternateDimensionModItems.RAW_QUARTZ.get())).test(ingredient);
 	}
 
 	@Override

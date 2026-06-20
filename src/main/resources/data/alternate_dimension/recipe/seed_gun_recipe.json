@@ -9,13 +9,13 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:wheat_seeds"
+      "tag": "alternate_dimension:seeds"
     },
     "b": {
-      "tag": "minecraft:logs"
+      "tag": "alternate_dimension:altdim_logs"
     },
     "c": {
-      "tag": "minecraft:planks"
+      "tag": "alternate_dimension:altdim_planks"
     }
   },
   "result": {

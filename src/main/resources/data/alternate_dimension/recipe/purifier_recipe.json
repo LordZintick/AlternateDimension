@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
+    "c": {
+      "item": "alternate_dimension:holystone_block"
+    },
+    "d": {
+      "item": "alternate_dimension:holystone_gearbox"
+    },
+    "e": {
+      "item": "alternate_dimension:holystone_gear"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:purifier",
+    "count": 1
+  }
+}

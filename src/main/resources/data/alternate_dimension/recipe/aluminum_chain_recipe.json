@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:aluminum_nugget"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:aluminum_chain",
+    "count": 6
+  }
+}

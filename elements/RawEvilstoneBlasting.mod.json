@@ -5,7 +5,11 @@
     "recipeType": "Blasting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:RawEvilstone"
+      }
+    ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 100,

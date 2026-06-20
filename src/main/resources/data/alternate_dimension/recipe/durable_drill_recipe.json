@@ -4,7 +4,7 @@
   "pattern": [
     " ab",
     "aca",
-    "ca "
+    "da "
   ],
   "key": {
     "a": {
@@ -14,6 +14,9 @@
       "item": "alternate_dimension:durable_drill_head"
     },
     "c": {
+      "item": "alternate_dimension:titanium_gearbox"
+    },
+    "d": {
       "item": "alternate_dimension:titanium_gear"
     }
   },

@@ -1,0 +1,17 @@
+{
+  "name": "alternate_dimension:scorched_tower_top",
+  "fallback": "alternate_dimension:scorched_tower_top",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:scorched_tower_top",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

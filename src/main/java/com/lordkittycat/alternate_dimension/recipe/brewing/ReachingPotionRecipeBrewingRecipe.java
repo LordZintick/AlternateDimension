@@ -35,7 +35,7 @@ public class ReachingPotionRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(Items.STICK)).test(ingredient);
+		return Ingredient.of(new ItemStack(AlternateDimensionModItems.TOOL_ROD.get())).test(ingredient);
 	}
 
 	@Override

@@ -52,7 +52,13 @@
     "projectile": {
       "value": "CUSTOM:SeedProjectile"
     },
-    "projectileDisableAmmoCheck": false,
+    "projectileDisableAmmoCheck": true,
+    "onRangedItemUsed": {
+      "name": "ConsumeSeeds"
+    },
+    "rangedUseCondition": {
+      "name": "CheckForSeeds"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

@@ -42,7 +42,7 @@
     "bodyModelPart": "jetpack",
     "armsModelPartL": "armorLeftArm",
     "armsModelPartR": "armorRightArm",
-    "bodyModelTexture": "From armor",
+    "bodyModelTexture": "candy_jetpack_texture.png",
     "leggingsModelName": "Default",
     "leggingsModelPartL": "Leggings L",
     "leggingsModelPartR": "Leggings R",

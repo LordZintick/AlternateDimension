@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "Items.BOWL"
+        "value": "TAG:mod:bowls"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -29,7 +29,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": ""
@@ -38,7 +38,7 @@
         "value": ""
       },
       {
-        "value": "Items.BOWL"
+        "value": "TAG:mod:bowls"
       },
       {
         "value": ""

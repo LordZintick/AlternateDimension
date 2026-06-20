@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "alternate_dimension:scorched_earth",
+    "alternate_dimension:enchanted_grass_block",
+    "alternate_dimension:candied_grass_block",
+    "alternate_dimension:lush_grass_block",
+    "alternate_dimension:frosted_grass_block",
     "alternate_dimension:cloud_block",
     "alternate_dimension:glowing_mycelium"
   ]

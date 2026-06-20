@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:quartz",
+          "name": "alternate_dimension:raw_quartz",
           "weight": 1,
           "conditions": [
             {

@@ -29,19 +29,19 @@
         "value": "CUSTOM:AluminumIngot"
       },
       {
-        "value": "Blocks.CRAFTING_TABLE"
+        "value": "TAG:mod:crafting_tables"
       },
       {
         "value": "CUSTOM:AluminumIngot"
       },
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": "TAG:mod:gems"
       },
       {
-        "value": "Blocks.AMETHYST_BLOCK"
+        "value": "TAG:mod:gem_blocks"
       },
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": "TAG:mod:gems"
       }
     ],
     "recipeReturnStack": {

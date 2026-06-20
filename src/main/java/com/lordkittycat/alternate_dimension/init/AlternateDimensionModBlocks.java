@@ -66,7 +66,6 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> NUCLEAR_REACTOR;
 	public static final DeferredBlock<Block> CLOUD_PILLAR;
 	public static final DeferredBlock<Block> AERO_CORE;
-	public static final DeferredBlock<Block> PINE_LEAVES;
 	public static final DeferredBlock<Block> HOME_BLOCK;
 	public static final DeferredBlock<Block> ALLOY_SMELTER;
 	public static final DeferredBlock<Block> EVILSTONE_BLOCK;
@@ -224,6 +223,64 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> SHALE_PHOSPHORUS_ORE;
 	public static final DeferredBlock<Block> MANTLE_PHOSPHORUS_ORE;
 	public static final DeferredBlock<Block> PHOSPHORUS_TORCH;
+	public static final DeferredBlock<Block> SCORCHED_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> REDWOOD_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> AZURE_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> RICH_DIRT;
+	public static final DeferredBlock<Block> LUSH_GRASS_BLOCK;
+	public static final DeferredBlock<Block> CANDIED_GRASS_BLOCK;
+	public static final DeferredBlock<Block> FROSTED_GRASS_BLOCK;
+	public static final DeferredBlock<Block> PINE_LOG;
+	public static final DeferredBlock<Block> PINE_WOOD;
+	public static final DeferredBlock<Block> STRIPPED_PINE_LOG;
+	public static final DeferredBlock<Block> STRIPPED_PINE_WOOD;
+	public static final DeferredBlock<Block> PINE_PLANKS;
+	public static final DeferredBlock<Block> PINE_LEAVES;
+	public static final DeferredBlock<Block> PINE_STAIRS;
+	public static final DeferredBlock<Block> PINE_SLAB;
+	public static final DeferredBlock<Block> PINE_FENCE;
+	public static final DeferredBlock<Block> PINE_FENCE_GATE;
+	public static final DeferredBlock<Block> PINE_DOOR;
+	public static final DeferredBlock<Block> PINE_TRAPDOOR;
+	public static final DeferredBlock<Block> PINE_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> PINE_BUTTON;
+	public static final DeferredBlock<Block> PINE_SIGN;
+	public static final DeferredBlock<Block> PINE_WALL_SIGN;
+	public static final DeferredBlock<Block> PINE_HANGING_SIGN;
+	public static final DeferredBlock<Block> PINE_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> PINE_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> REDWOOD_LEAVES;
+	public static final DeferredBlock<Block> PLANTY_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> ENCHANTED_GRASS_BLOCK;
+	public static final DeferredBlock<Block> SHROOMY_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> CANDYBLOOM;
+	public static final DeferredBlock<Block> TALL_WILD_BUSH;
+	public static final DeferredBlock<Block> CANDY_CANE_CRAFTING_TABLE;
+	public static final DeferredBlock<Block> VERIDIUM_PYROLITE_ORE;
+	public static final DeferredBlock<Block> SHALE_PYROLITE_ORE;
+	public static final DeferredBlock<Block> MANTLE_PYROLITE_ORE;
+	public static final DeferredBlock<Block> SHALE_FURNACE;
+	public static final DeferredBlock<Block> MANTLE_FURNACE;
+	public static final DeferredBlock<Block> VERIDIUM_FURNACE;
+	public static final DeferredBlock<Block> COMPRESSED_SHALE_COBBLE;
+	public static final DeferredBlock<Block> COMPRESSED_MANTLE_COBBLE;
+	public static final DeferredBlock<Block> COMPRESSED_VERIDIUM_COBBLE;
+	public static final DeferredBlock<Block> PURIFIER;
+	public static final DeferredBlock<Block> VERIDIUM_HOLYSTONE_ORE;
+	public static final DeferredBlock<Block> SHALE_HOLYSTONE_ORE;
+	public static final DeferredBlock<Block> MANTLE_HOLYSTONE_ORE;
+	public static final DeferredBlock<Block> HOLYSTONE_BLOCK;
+	public static final DeferredBlock<Block> SCORCHED_GLASS;
+	public static final DeferredBlock<Block> CANDIED_GLASS;
+	public static final DeferredBlock<Block> FROSTED_GLASS;
+	public static final DeferredBlock<Block> SCORCHED_GLASS_PANE;
+	public static final DeferredBlock<Block> CANDIED_GLASS_PANE;
+	public static final DeferredBlock<Block> FROSTED_GLASS_PANE;
+	public static final DeferredBlock<Block> SUSPICIOUS_BEETLE_NEST;
+	public static final DeferredBlock<Block> LEVITATOR;
+	public static final DeferredBlock<Block> ALUMINUM_CHAIN;
+	public static final DeferredBlock<Block> SCORCHED_PLATFORM;
+	public static final DeferredBlock<Block> CLOUD_PLATFORM;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -269,7 +326,6 @@ public class AlternateDimensionModBlocks {
 		NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", NuclearReactorBlock::new);
 		CLOUD_PILLAR = REGISTRY.register("cloud_pillar", CloudPillarBlock::new);
 		AERO_CORE = REGISTRY.register("aero_core", AeroCoreBlock::new);
-		PINE_LEAVES = REGISTRY.register("pine_leaves", PineLeavesBlock::new);
 		HOME_BLOCK = REGISTRY.register("home_block", HomeBlockBlock::new);
 		ALLOY_SMELTER = REGISTRY.register("alloy_smelter", AlloySmelterBlock::new);
 		EVILSTONE_BLOCK = REGISTRY.register("evilstone_block", EvilstoneBlockBlock::new);
@@ -427,6 +483,64 @@ public class AlternateDimensionModBlocks {
 		SHALE_PHOSPHORUS_ORE = REGISTRY.register("shale_phosphorus_ore", ShalePhosphorusOreBlock::new);
 		MANTLE_PHOSPHORUS_ORE = REGISTRY.register("mantle_phosphorus_ore", MantlePhosphorusOreBlock::new);
 		PHOSPHORUS_TORCH = REGISTRY.register("phosphorus_torch", PhosphorusTorchBlock::new);
+		SCORCHED_CRAFTING_TABLE = REGISTRY.register("scorched_crafting_table", ScorchedCraftingTableBlock::new);
+		REDWOOD_CRAFTING_TABLE = REGISTRY.register("redwood_crafting_table", RedwoodCraftingTableBlock::new);
+		AZURE_CRAFTING_TABLE = REGISTRY.register("azure_crafting_table", AzureCraftingTableBlock::new);
+		RICH_DIRT = REGISTRY.register("rich_dirt", RichDirtBlock::new);
+		LUSH_GRASS_BLOCK = REGISTRY.register("lush_grass_block", LushGrassBlockBlock::new);
+		CANDIED_GRASS_BLOCK = REGISTRY.register("candied_grass_block", CandiedGrassBlockBlock::new);
+		FROSTED_GRASS_BLOCK = REGISTRY.register("frosted_grass_block", FrostedGrassBlockBlock::new);
+		PINE_LOG = REGISTRY.register("pine_log", PineLogBlock::new);
+		PINE_WOOD = REGISTRY.register("pine_wood", PineWoodBlock::new);
+		STRIPPED_PINE_LOG = REGISTRY.register("stripped_pine_log", StrippedPineLogBlock::new);
+		STRIPPED_PINE_WOOD = REGISTRY.register("stripped_pine_wood", StrippedPineWoodBlock::new);
+		PINE_PLANKS = REGISTRY.register("pine_planks", PinePlanksBlock::new);
+		PINE_LEAVES = REGISTRY.register("pine_leaves", PineLeavesBlock::new);
+		PINE_STAIRS = REGISTRY.register("pine_stairs", PineStairsBlock::new);
+		PINE_SLAB = REGISTRY.register("pine_slab", PineSlabBlock::new);
+		PINE_FENCE = REGISTRY.register("pine_fence", PineFenceBlock::new);
+		PINE_FENCE_GATE = REGISTRY.register("pine_fence_gate", PineFenceGateBlock::new);
+		PINE_DOOR = REGISTRY.register("pine_door", PineDoorBlock::new);
+		PINE_TRAPDOOR = REGISTRY.register("pine_trapdoor", PineTrapdoorBlock::new);
+		PINE_PRESSURE_PLATE = REGISTRY.register("pine_pressure_plate", PinePressurePlateBlock::new);
+		PINE_BUTTON = REGISTRY.register("pine_button", PineButtonBlock::new);
+		PINE_SIGN = REGISTRY.register("pine_sign", PineSignBlock::new);
+		PINE_WALL_SIGN = REGISTRY.register("pine_wall_sign", PineWallSignBlock::new);
+		PINE_HANGING_SIGN = REGISTRY.register("pine_hanging_sign", PineHangingSignBlock::new);
+		PINE_WALL_HANGING_SIGN = REGISTRY.register("pine_wall_hanging_sign", PineWallHangingSignBlock::new);
+		PINE_CRAFTING_TABLE = REGISTRY.register("pine_crafting_table", PineCraftingTableBlock::new);
+		REDWOOD_LEAVES = REGISTRY.register("redwood_leaves", RedwoodLeavesBlock::new);
+		PLANTY_CRAFTING_TABLE = REGISTRY.register("planty_crafting_table", PlantyCraftingTableBlock::new);
+		ENCHANTED_GRASS_BLOCK = REGISTRY.register("enchanted_grass_block", EnchantedGrassBlockBlock::new);
+		SHROOMY_CRAFTING_TABLE = REGISTRY.register("shroomy_crafting_table", ShroomyCraftingTableBlock::new);
+		CANDYBLOOM = REGISTRY.register("candybloom", CandybloomBlock::new);
+		TALL_WILD_BUSH = REGISTRY.register("tall_wild_bush", TallWildBushBlock::new);
+		CANDY_CANE_CRAFTING_TABLE = REGISTRY.register("candy_cane_crafting_table", CandyCaneCraftingTableBlock::new);
+		VERIDIUM_PYROLITE_ORE = REGISTRY.register("veridium_pyrolite_ore", VeridiumPyroliteOreBlock::new);
+		SHALE_PYROLITE_ORE = REGISTRY.register("shale_pyrolite_ore", ShalePyroliteOreBlock::new);
+		MANTLE_PYROLITE_ORE = REGISTRY.register("mantle_pyrolite_ore", MantlePyroliteOreBlock::new);
+		SHALE_FURNACE = REGISTRY.register("shale_furnace", ShaleFurnaceBlock::new);
+		MANTLE_FURNACE = REGISTRY.register("mantle_furnace", MantleFurnaceBlock::new);
+		VERIDIUM_FURNACE = REGISTRY.register("veridium_furnace", VeridiumFurnaceBlock::new);
+		COMPRESSED_SHALE_COBBLE = REGISTRY.register("compressed_shale_cobble", CompressedShaleCobbleBlock::new);
+		COMPRESSED_MANTLE_COBBLE = REGISTRY.register("compressed_mantle_cobble", CompressedMantleCobbleBlock::new);
+		COMPRESSED_VERIDIUM_COBBLE = REGISTRY.register("compressed_veridium_cobble", CompressedVeridiumCobbleBlock::new);
+		PURIFIER = REGISTRY.register("purifier", PurifierBlock::new);
+		VERIDIUM_HOLYSTONE_ORE = REGISTRY.register("veridium_holystone_ore", VeridiumHolystoneOreBlock::new);
+		SHALE_HOLYSTONE_ORE = REGISTRY.register("shale_holystone_ore", ShaleHolystoneOreBlock::new);
+		MANTLE_HOLYSTONE_ORE = REGISTRY.register("mantle_holystone_ore", MantleHolystoneOreBlock::new);
+		HOLYSTONE_BLOCK = REGISTRY.register("holystone_block", HolystoneBlockBlock::new);
+		SCORCHED_GLASS = REGISTRY.register("scorched_glass", ScorchedGlassBlock::new);
+		CANDIED_GLASS = REGISTRY.register("candied_glass", CandiedGlassBlock::new);
+		FROSTED_GLASS = REGISTRY.register("frosted_glass", FrostedGlassBlock::new);
+		SCORCHED_GLASS_PANE = REGISTRY.register("scorched_glass_pane", ScorchedGlassPaneBlock::new);
+		CANDIED_GLASS_PANE = REGISTRY.register("candied_glass_pane", CandiedGlassPaneBlock::new);
+		FROSTED_GLASS_PANE = REGISTRY.register("frosted_glass_pane", FrostedGlassPaneBlock::new);
+		SUSPICIOUS_BEETLE_NEST = REGISTRY.register("suspicious_beetle_nest", SuspiciousBeetleNestBlock::new);
+		LEVITATOR = REGISTRY.register("levitator", LevitatorBlock::new);
+		ALUMINUM_CHAIN = REGISTRY.register("aluminum_chain", AluminumChainBlock::new);
+		SCORCHED_PLATFORM = REGISTRY.register("scorched_platform", ScorchedPlatformBlock::new);
+		CLOUD_PLATFORM = REGISTRY.register("cloud_platform", CloudPlatformBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -438,13 +552,15 @@ public class AlternateDimensionModBlocks {
 			WildBushBlock.blockColorLoad(event);
 			BushLeavesBlock.blockColorLoad(event);
 			PineLeavesBlock.blockColorLoad(event);
+			RedwoodLeavesBlock.blockColorLoad(event);
+			TallWildBushBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent
 		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			WildBushBlock.itemColorLoad(event);
 			BushLeavesBlock.itemColorLoad(event);
-			PineLeavesBlock.itemColorLoad(event);
+			TallWildBushBlock.itemColorLoad(event);
 		}
 
 		@SubscribeEvent
@@ -455,6 +571,8 @@ public class AlternateDimensionModBlocks {
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.SCORCHED_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
@@ -466,5 +584,7 @@ public class AlternateDimensionModBlocks {
 		event.modify(BlockEntityType.HANGING_SIGN, SCORCHED_HANGING_SIGN.get(), SCORCHED_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, REDWOOD_SIGN.get(), REDWOOD_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, REDWOOD_HANGING_SIGN.get(), REDWOOD_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, PINE_SIGN.get(), PINE_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, PINE_HANGING_SIGN.get(), PINE_WALL_HANGING_SIGN.get());
 	}
 }

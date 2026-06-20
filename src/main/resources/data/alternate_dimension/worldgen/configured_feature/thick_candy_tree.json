@@ -4,7 +4,7 @@
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "alternate_dimension:frosting"
+        "Name": "alternate_dimension:candied_grass_block"
       }
     },
     "foliage_provider": {

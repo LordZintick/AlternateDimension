@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:redwooden_hoe",
     "alternate_dimension:titanium_hoe",
-    "alternate_dimension:aluminum_hoe"
+    "alternate_dimension:scorched_wooden_hoe",
+    "alternate_dimension:aluminum_hoe",
+    "alternate_dimension:phosphorium_hoe",
+    "alternate_dimension:pine_wooden_hoe",
+    "alternate_dimension:planty_hoe",
+    "alternate_dimension:mushy_hoe"
   ]
 }

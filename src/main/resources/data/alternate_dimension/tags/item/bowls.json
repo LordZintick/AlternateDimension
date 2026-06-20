@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:planty_bowl",
+    "alternate_dimension:azure_bowl",
+    "alternate_dimension:scorched_bowl",
+    "alternate_dimension:pine_bowl",
+    "alternate_dimension:redwood_bowl"
+  ]
+}

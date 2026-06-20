@@ -16,10 +16,10 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 5.0
+      "fixedValue": 3.0
     },
     "boundingBoxScale": {
-      "fixedValue": 5.0
+      "fixedValue": 3.0
     },
     "modelLayers": [],
     "animations": [],
@@ -65,16 +65,16 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
-    "attackKnockback": 2.0,
-    "knockbackResistance": 1.0,
-    "movementSpeed": 0.4,
+    "attackStrength": 4,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.5,
+    "movementSpeed": 0.25,
     "stepHeight": 0.6,
-    "armorBaseValue": 4.0,
+    "armorBaseValue": 2.0,
     "trackingRange": 64,
     "followRange": 32,
     "health": 40,
-    "xpAmount": 12,
+    "xpAmount": 5,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false

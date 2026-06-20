@@ -1,0 +1,55 @@
+{
+  "_fv": 85,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "roman_texture",
+    "customModelName": "roman_spear:default",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Roman Spear",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AlternateDimensionEquipment"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 1.4,
+    "enchantability": 10,
+    "damageVsEntity": 5.5,
+    "usageCount": 355,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "ENTITY_REACH"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "BLOCK_REACH"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

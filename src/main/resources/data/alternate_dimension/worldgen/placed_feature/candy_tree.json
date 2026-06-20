@@ -35,7 +35,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": "alternate_dimension:frosting",
+        "blocks": "alternate_dimension:candied_grass_block",
         "offset": [
           0,
           -1,

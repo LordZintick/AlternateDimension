@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "CUSTOM:EvilstoneBlock"
+        "value": "CUSTOM:EvilstoneGem"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -35,13 +35,13 @@
         "value": "CUSTOM:AluminumGear"
       },
       {
-        "value": "CUSTOM:EvilstoneGear"
-      },
-      {
-        "value": "CUSTOM:EvilstonePlate"
+        "value": "CUSTOM:EvilstoneGearbox"
       },
       {
         "value": "CUSTOM:EvilstoneGear"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGearbox"
       }
     ],
     "recipeReturnStack": {

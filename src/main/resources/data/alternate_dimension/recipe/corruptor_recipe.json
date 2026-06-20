@@ -17,10 +17,10 @@
       "item": "alternate_dimension:evilstone_block"
     },
     "d": {
-      "item": "alternate_dimension:evilstone_gear"
+      "item": "alternate_dimension:evilstone_gearbox"
     },
     "e": {
-      "item": "alternate_dimension:evilstone_plate"
+      "item": "alternate_dimension:evilstone_gear"
     }
   },
   "result": {

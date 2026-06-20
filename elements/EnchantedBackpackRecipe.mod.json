@@ -20,13 +20,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       },
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       },
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       },
       {
         "value": "CUSTOM:MagicDustBlock"
@@ -38,13 +38,13 @@
         "value": "CUSTOM:MagicDustBlock"
       },
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       },
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       },
       {
-        "value": "CUSTOM:LembasBreadBite"
+        "value": "CUSTOM:MagicDustBlock"
       }
     ],
     "recipeReturnStack": {

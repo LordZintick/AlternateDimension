@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:stripped_pine_log",
+    "alternate_dimension:pine_log",
+    "alternate_dimension:pine_wood",
+    "alternate_dimension:stripped_pine_wood"
+  ]
+}

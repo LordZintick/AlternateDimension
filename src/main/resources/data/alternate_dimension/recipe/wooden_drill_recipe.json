@@ -12,7 +12,7 @@
       "item": "alternate_dimension:wooden_drill_head"
     },
     "b": {
-      "tag": "minecraft:logs"
+      "tag": "alternate_dimension:altdim_logs"
     }
   },
   "result": {

@@ -8,10 +8,10 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:string"
+      "item": "alternate_dimension:strong_thread"
     },
     "b": {
-      "item": "minecraft:leather"
+      "item": "alternate_dimension:tattered_leather"
     },
     "c": {
       "item": "minecraft:chest"

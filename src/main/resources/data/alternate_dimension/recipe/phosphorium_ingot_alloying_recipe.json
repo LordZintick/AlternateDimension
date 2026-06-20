@@ -1,0 +1,20 @@
+{
+  "type": "alternate_dimension:alloy_smelter_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:phosphorus"
+    },
+    {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    {
+      "item": "alternate_dimension:pyrolite_chunk"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:phosphorium_ingot",
+      "count": 1
+    }
+  ]
+}

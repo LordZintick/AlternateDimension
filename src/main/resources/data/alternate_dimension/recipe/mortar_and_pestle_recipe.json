@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:stick"
+      "item": "alternate_dimension:tool_rod"
     },
     {
-      "item": "minecraft:bowl"
+      "tag": "alternate_dimension:bowls"
     }
   ],
   "result": {

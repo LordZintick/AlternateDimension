@@ -12,67 +12,10 @@
       }
     ]
   },
-  "magnetic_lord_intro": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:theme_song_8-bit_v1__opening_1",
-        "stream": true
-      }
-    ]
-  },
-  "magnetic_lord_music": {
-    "subtitle": "subtitles.magnetic_lord_music",
-    "sounds": [
-      {
-        "name": "alternate_dimension:theme_song_8-bit_v1__looping_1",
-        "stream": true
-      }
-    ]
-  },
-  "new_wasteland_music": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:a_path_c4_and_delayedchip_mix_extended",
-        "stream": true
-      }
-    ]
-  },
-  "new_forest_music": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:theforest",
-        "stream": true
-      }
-    ]
-  },
-  "new_candy_music": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:flowerbed_fields",
-        "stream": true
-      }
-    ]
-  },
-  "new_highlands_music": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:pulsar",
-        "stream": true
-      }
-    ]
-  },
   "boss_battle": {
     "sounds": [
       {
         "name": "alternate_dimension:boss_battle",
-        "stream": true
-      }
-    ]
-  },
-  "candy_music": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:candy_biome",
         "stream": true
       }
     ]
@@ -85,106 +28,57 @@
       }
     ]
   },
-  "dark_realm": {
+  "ethereal_laughing": {
+    "subtitle": "subtitles.ethereal_laughing",
     "sounds": [
       {
-        "name": "alternate_dimension:dark_realm",
-        "stream": true
+        "name": "alternate_dimension:allay_idle_with_item4_lowpitch",
+        "stream": false
+      },
+      {
+        "name": "alternate_dimension:allay_idle_without_item2_lowpitch",
+        "stream": false
       }
     ]
   },
-  "fruity_gardens": {
+  "ethereal_hurt": {
+    "subtitle": "subtitles.ethereal_hurt",
     "sounds": [
       {
-        "name": "alternate_dimension:fruity_gardens",
-        "stream": true
+        "name": "alternate_dimension:allay_hurt1_lowpitch",
+        "stream": false
       }
     ]
   },
-  "gelatin_swamp": {
+  "ethereal_death": {
+    "subtitle": "subtitles.ethereal_death",
     "sounds": [
       {
-        "name": "alternate_dimension:gelatin_swamp",
-        "stream": true
+        "name": "alternate_dimension:allay_death2_lowpitch",
+        "stream": false
       }
     ]
   },
-  "ice_cream_hills": {
+  "alternate_dimension_music": {
     "sounds": [
       {
-        "name": "alternate_dimension:ice_cream_hills",
+        "name": "alternate_dimension:fading_away",
         "stream": true
-      }
-    ]
-  },
-  "redwood_forest": {
-    "sounds": [
+      },
       {
-        "name": "alternate_dimension:redwood_forest",
+        "name": "alternate_dimension:fallen_hero",
         "stream": true
-      }
-    ]
-  },
-  "wasteland_music": {
-    "sounds": [
+      },
       {
-        "name": "alternate_dimension:wasteland",
+        "name": "alternate_dimension:lost_ruins",
         "stream": true
-      }
-    ]
-  },
-  "midlands": {
-    "sounds": [
+      },
       {
-        "name": "alternate_dimension:midlands",
+        "name": "alternate_dimension:outcast",
         "stream": true
-      }
-    ]
-  },
-  "redwood_forest_quiet": {
-    "sounds": [
+      },
       {
-        "name": "alternate_dimension:redwood_forest",
-        "stream": true
-      }
-    ]
-  },
-  "calm_ocean": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:exploration_theme",
-        "stream": true
-      }
-    ]
-  },
-  "enchanted_forest": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:eye_of_the_storm",
-        "stream": true
-      }
-    ]
-  },
-  "mushroom_cave": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:cleyton_rx_-_underwater",
-        "stream": true
-      }
-    ]
-  },
-  "frostbitten_plains": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:prelude_in_f_minor",
-        "stream": true
-      }
-    ]
-  },
-  "mushroom_infection": {
-    "sounds": [
-      {
-        "name": "alternate_dimension:spooky_wastes_no_beat",
+        "name": "alternate_dimension:final_struggle",
         "stream": true
       }
     ]

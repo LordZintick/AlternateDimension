@@ -1,0 +1,92 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 160,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -2,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ingot_presser",
+          "text": {
+            "fixedValue": "Purifier"
+          },
+          "color": {
+            "value": -8620544,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 191,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_press",
+          "text": "Purify",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PurifyItem"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 226,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_energy_display",
+          "text": {
+            "fixedValue": "",
+            "name": "EnergyDisplay"
+          },
+          "color": {
+            "value": -16711799,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 104,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

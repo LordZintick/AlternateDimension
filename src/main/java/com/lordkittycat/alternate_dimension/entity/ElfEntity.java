@@ -48,10 +48,11 @@ public class ElfEntity extends Monster implements RangedAttackMob {
 			}
 		});
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, CorruptedElfEntity.class, true, true));
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(7, new FloatGoal(this));
 		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 30, 1f) {
 			@Override
 			public boolean canContinueToUse() {

@@ -91,7 +91,7 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:AlternateDimensionMaterials"
+        "value": "CUSTOM:AlternateDimensionUtilities"
       }
     ],
     "destroyTool": "pickaxe",

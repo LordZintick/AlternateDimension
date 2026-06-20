@@ -58,9 +58,6 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:AlternateDimensionDecor"
-      },
-      {
         "value": "CUSTOM:AlternateDimensionUtilities"
       }
     ],

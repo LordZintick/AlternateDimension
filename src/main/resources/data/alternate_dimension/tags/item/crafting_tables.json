@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:planty_crafting_table",
+    "alternate_dimension:azure_crafting_table",
+    "alternate_dimension:scorched_crafting_table",
+    "alternate_dimension:redwood_crafting_table",
+    "alternate_dimension:shroomy_crafting_table",
+    "alternate_dimension:pine_crafting_table",
+    "alternate_dimension:candy_cane_crafting_table"
+  ]
+}

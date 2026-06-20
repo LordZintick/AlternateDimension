@@ -3,17 +3,14 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "bcb",
+    "aba",
     "aaa"
   ],
   "key": {
     "a": {
-      "item": "alternate_dimension:lembas_bread_bite"
-    },
-    "b": {
       "item": "alternate_dimension:magic_dust_block"
     },
-    "c": {
+    "b": {
       "item": "alternate_dimension:cheesy_backpack"
     }
   },

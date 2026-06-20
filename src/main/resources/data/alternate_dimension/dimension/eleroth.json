@@ -801,17 +801,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:lush_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:dirt"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -829,7 +826,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }
@@ -876,14 +873,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "alternate_dimension:frosting"
+                              "Name": "alternate_dimension:candied_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "alternate_dimension:cookie_block"
+                            "Name": "alternate_dimension:frosting"
                           }
                         }
                       ]
@@ -901,7 +898,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "alternate_dimension:cookie_block"
+                        "Name": "alternate_dimension:frosting"
                       }
                     }
                   }
@@ -948,17 +945,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:frosted_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:mud"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -976,7 +970,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:coarse_dirt"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }
@@ -1023,10 +1017,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:lush_grass_block"
                             }
                           }
                         },
@@ -1170,17 +1161,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:frosted_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -1198,7 +1186,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:coarse_dirt"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }
@@ -1245,17 +1233,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:lush_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:dirt"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -1273,7 +1258,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }
@@ -1392,17 +1377,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "alternate_dimension:enchanted_grass_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:dirt"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -1420,7 +1402,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }

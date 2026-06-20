@@ -29,6 +29,7 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.ENCHANTED_BACKPACK_GUI.get(), EnchantedBackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.CRYSTAL_CHEST_GUI.get(), CrystalChestGUIScreen::new);
 		event.register(AlternateDimensionModMenus.INTRO_SCREEN.get(), IntroScreenScreen::new);
+		event.register(AlternateDimensionModMenus.PURIFIER_GUI.get(), PurifierGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

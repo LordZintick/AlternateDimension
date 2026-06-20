@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:BasicCircuit"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:CloudCharge"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:BasicCircuit"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminumGearbox"
+      },
+      {
+        "value": "CUSTOM:AluminumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Levitator"
+    },
+    "name": "levitator_recipe",
+    "namespace": "mod"
+  }
+}

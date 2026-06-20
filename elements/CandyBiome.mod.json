@@ -4,10 +4,10 @@
   "definition": {
     "name": "Candied Plain",
     "groundBlock": {
-      "value": "CUSTOM:Frosting"
+      "value": "CUSTOM:CandiedGrassBlock"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:CookieBlock"
+      "value": "CUSTOM:Frosting"
     },
     "underwaterBlock": {
       "value": ""
@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:new_candy_music"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -102,8 +102,8 @@
     "defaultFeatures": [
       "Caves"
     ],
-    "spawnStronghold": true,
-    "spawnMineshaft": true,
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -121,7 +121,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
+    "spawnRuinedPortal": "NONE",
     "spawnEntries": []
   }
 }

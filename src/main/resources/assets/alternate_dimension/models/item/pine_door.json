@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "alternate_dimension:item/pine_door_item"
+  },
+  "render_type": "translucent"
+}

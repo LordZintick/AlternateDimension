@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_sign",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PinePlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": "CUSTOM:PinePlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ToolRod"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PineSign"
+    },
+    "name": "pine_sign_recipe",
+    "namespace": "mod"
+  }
+}

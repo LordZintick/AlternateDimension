@@ -13,4 +13,6 @@ public class AlternateDimensionModWoodTypes {
 	public static final WoodType SCORCHED_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:scorched_hanging_sign", BlockSetType.OAK));
 	public static final WoodType REDWOOD_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:redwood_sign", BlockSetType.OAK));
 	public static final WoodType REDWOOD_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:redwood_hanging_sign", BlockSetType.OAK));
+	public static final WoodType PINE_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:pine_sign", BlockSetType.OAK));
+	public static final WoodType PINE_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:pine_hanging_sign", BlockSetType.OAK));
 }

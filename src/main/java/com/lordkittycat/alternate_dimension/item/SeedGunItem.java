@@ -16,6 +16,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
+import com.lordkittycat.alternate_dimension.procedures.ConsumeSeedsProcedure;
+import com.lordkittycat.alternate_dimension.procedures.CheckForSeedsProcedure;
 import com.lordkittycat.alternate_dimension.entity.SeedProjectileEntity;
 
 public class SeedGunItem extends Item {
@@ -43,10 +45,11 @@ public class SeedGunItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
-		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-			ar = InteractionResultHolder.consume(entity.getItemInHand(hand));
-			entity.startUsingItem(hand);
-		}
+		if (CheckForSeedsProcedure.execute(world, entity))
+			if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+				ar = InteractionResultHolder.consume(entity.getItemInHand(hand));
+				entity.startUsingItem(hand);
+			}
 		return ar;
 	}
 
@@ -70,21 +73,12 @@ public class SeedGunItem extends Item {
 						stack.shrink(1);
 					}
 				}
+				ConsumeSeedsProcedure.execute(world, entity);
 			}
 		}
 	}
 
 	private ItemStack findAmmo(Player player) {
-		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == SeedProjectileEntity.PROJECTILE_ITEM.getItem());
-		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == SeedProjectileEntity.PROJECTILE_ITEM.getItem()) {
-					stack = teststack;
-					break;
-				}
-			}
-		}
-		return stack;
+		return new ItemStack(SeedProjectileEntity.PROJECTILE_ITEM.getItem());
 	}
 }

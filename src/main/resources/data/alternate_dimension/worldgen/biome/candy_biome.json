@@ -4,7 +4,7 @@
   "downfall": 0,
   "effects": {
     "music": {
-      "sound": "alternate_dimension:new_candy_music",
+      "sound": "alternate_dimension:alternate_dimension_music",
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": true

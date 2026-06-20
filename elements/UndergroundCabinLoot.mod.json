@@ -111,7 +111,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.PLANKS#0"
+              "value": "CUSTOM:PinePlanks"
             },
             "weight": 2,
             "minCount": 2,
@@ -125,11 +125,48 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.LOG#0"
+              "value": "CUSTOM:PineLog"
             },
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          }
+        ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:StrongThread"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 2,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:WeakThread"
+            },
+            "weight": 3,
+            "minCount": 2,
+            "maxCount": 5,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

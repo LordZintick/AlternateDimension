@@ -51,7 +51,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.AMETHYST_SHARD"
+              "value": "CUSTOM:RawQuartz"
             },
             "weight": 3,
             "minCount": 2,
@@ -65,7 +65,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.ECHO_SHARD"
+              "value": "CUSTOM:EvilstoneGem"
             },
             "weight": 1,
             "minCount": 1,
@@ -79,7 +79,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.EXPERIENCE_BOTTLE"
+              "value": "CUSTOM:AluminumIngot"
             },
             "weight": 2,
             "minCount": 1,
@@ -102,11 +102,25 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.ROTTEN_FLESH"
+              "value": "CUSTOM:WeakThread"
             },
-            "weight": 1,
+            "weight": 3,
             "minCount": 2,
             "maxCount": 4,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": true,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:StrongThread"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": true,
@@ -125,21 +139,21 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.BOW"
+              "value": "CUSTOM:PhosphoriumIngot"
             },
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 2,
-            "affectedByFortune": false,
+            "affectedByFortune": true,
             "explosionDecay": false,
             "silkTouchMode": 0
           },
           {
             "type": "item",
             "item": {
-              "value": "Items.REDSTONE"
+              "value": "CUSTOM:Phosphorus"
             },
             "weight": 5,
             "minCount": 3,

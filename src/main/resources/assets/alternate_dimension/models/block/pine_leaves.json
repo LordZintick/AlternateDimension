@@ -1,8 +1,7 @@
 {
   "parent": "block/leaves",
   "textures": {
-    "all": "minecraft:block/spruce_leaves",
-    "particle": "minecraft:block/spruce_leaves"
-  },
-  "render_type": "solid"
+    "all": "alternate_dimension:block/pine_leaves",
+    "particle": "alternate_dimension:block/pine_leaves"
+  }
 }

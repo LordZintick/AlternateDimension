@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PermafrostBlock"
+      }
+    ],
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:PermafrostBlock"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:FrostedGlass"
+    },
+    "name": "frosted_glass_recipe",
+    "namespace": "mod"
+  }
+}

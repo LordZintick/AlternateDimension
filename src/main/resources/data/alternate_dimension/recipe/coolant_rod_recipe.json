@@ -11,7 +11,7 @@
       "item": "alternate_dimension:aluminum_plate"
     },
     "b": {
-      "item": "minecraft:water_bucket"
+      "item": "alternate_dimension:aluminum_water_bucket"
     }
   },
   "result": {

@@ -38,7 +38,7 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "Charge right-click for four seconds to warp back to your home point and creates a portal to return to where you were.",
+        "Charge right-click for four seconds to warp back to your home point and create a portal to return to where you were.",
         "Shift-right-click on one of your portals to remove the portal"
       ]
     },

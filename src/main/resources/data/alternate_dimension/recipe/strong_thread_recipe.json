@@ -3,13 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:string"
+      "item": "alternate_dimension:weak_thread"
     },
     {
-      "item": "minecraft:string"
+      "item": "alternate_dimension:weak_thread"
     },
     {
-      "item": "minecraft:string"
+      "item": "alternate_dimension:weak_thread"
     }
   ],
   "result": {

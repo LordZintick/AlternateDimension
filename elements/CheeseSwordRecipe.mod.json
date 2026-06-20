@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Cheese"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -34,7 +38,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": ""

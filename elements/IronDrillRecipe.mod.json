@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "CUSTOM:IronDrillHead"
+        "value": "CUSTOM:AluminumIngot"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -20,25 +20,25 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:AluminumPlate"
       },
       {
         "value": "CUSTOM:IronDrillHead"
       },
       {
-        "value": "CUSTOM:AluminumIngot"
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": "CUSTOM:AluminumGearbox"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
       },
       {
         "value": "CUSTOM:AluminumGear"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumGear"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
+        "value": "CUSTOM:AluminumPlate"
       },
       {
         "value": ""

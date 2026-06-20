@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:UraniumIngot"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -25,7 +29,7 @@
         "value": "CUSTOM:UraniumIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AluminumNugget"
       },
       {
         "value": "CUSTOM:UraniumIngot"

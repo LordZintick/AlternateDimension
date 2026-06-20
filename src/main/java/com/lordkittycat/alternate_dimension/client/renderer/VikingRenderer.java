@@ -20,6 +20,8 @@ public class VikingRenderer extends MobRenderer<VikingEntity, Modelviking<Viking
 
 	@Override
 	public ResourceLocation getTextureLocation(VikingEntity entity) {
+		if (entity.getTexture() != "viking_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

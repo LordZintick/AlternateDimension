@@ -19,6 +19,8 @@ public class FireSpiritRenderer extends MobRenderer<FireSpiritEntity, Modelspiri
 
 	@Override
 	public ResourceLocation getTextureLocation(FireSpiritEntity entity) {
+		if (entity.getTexture() != "fire_spirit_new")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

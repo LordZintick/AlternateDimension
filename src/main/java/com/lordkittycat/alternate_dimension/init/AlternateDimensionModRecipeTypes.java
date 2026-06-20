@@ -36,6 +36,8 @@ public class AlternateDimensionModRecipeTypes {
 			SERIALIZERS.register("nuclear_reactor_recipe_type", () -> NuclearReactorRecipeTypeRecipe.Serializer.INSTANCE);
 			RECIPE_TYPES.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.Serializer.INSTANCE);
 		});
 	}
 }

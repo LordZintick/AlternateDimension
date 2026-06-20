@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:furnace"
+            "items": "#alternate_dimension:furnaces"
           }
         ]
       },

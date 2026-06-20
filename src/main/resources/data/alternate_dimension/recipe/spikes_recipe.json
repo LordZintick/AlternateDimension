@@ -10,7 +10,7 @@
       "tag": "alternate_dimension:metal_nuggets"
     },
     "b": {
-      "item": "alternate_dimension:redwood_planks"
+      "tag": "minecraft:planks"
     }
   },
   "result": {

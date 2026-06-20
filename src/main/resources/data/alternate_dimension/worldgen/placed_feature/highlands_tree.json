@@ -35,7 +35,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:podzol",
+        "blocks": "alternate_dimension:frosted_grass_block",
         "offset": [
           0,
           -1,

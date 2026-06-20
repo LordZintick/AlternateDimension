@@ -22,17 +22,55 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class GingerbreadWarriorEntity extends Monster {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(GingerbreadWarriorEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(GingerbreadWarriorEntity.class, EntityDataSerializers.INT);
 	public final AnimationState animationState0 = new AnimationState();
 
 	public GingerbreadWarriorEntity(EntityType<GingerbreadWarriorEntity> type, Level world) {
 		super(type, world);
 		xpReward = 5;
 		setNoAi(false);
+	}
+
+	@Override
+	public void onSyncedDataUpdated(EntityDataAccessor<?> data) {
+		if (ANIM.equals(data)) {
+			switch (this.entityData.get(ANIM)) {
+				case -1 :
+					this.animationState0.stop();
+					break;
+				case 0 :
+					this.animationState0.start(this.tickCount);
+					break;
+			}
+		}
+		super.onSyncedDataUpdated(data);
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "gingerbread_warrior_texture_new");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -61,10 +99,23 @@ public class GingerbreadWarriorEntity extends Monster {
 	}
 
 	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(true, this.tickCount);
+			this.animationState0.animateWhen(AlwaysProcedure.execute(), this.tickCount);
 		}
 	}
 

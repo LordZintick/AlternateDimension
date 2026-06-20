@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:redwood_button",
+    "alternate_dimension:pine_button",
     "alternate_dimension:scorched_button",
     "alternate_dimension:azure_button"
   ]

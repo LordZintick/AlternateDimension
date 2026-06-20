@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PyroliteChunk"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -13,31 +17,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "CUSTOM:MeteoriteDust"
+        "value": ""
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       },
       {
-        "value": "Blocks.NETHERRACK"
+        "value": "CUSTOM:PyroliteChunk"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:Pyrobricks"
       }
     ],
     "recipeReturnStack": {

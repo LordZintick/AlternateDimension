@@ -17,13 +17,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.CHAIN"
+        "value": "CUSTOM:AluminumChain"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.CHAIN"
+        "value": "CUSTOM:AluminumChain"
       },
       {
         "value": "CUSTOM:StrippedAzureLog"

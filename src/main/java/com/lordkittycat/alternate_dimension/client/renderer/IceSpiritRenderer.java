@@ -19,6 +19,8 @@ public class IceSpiritRenderer extends MobRenderer<IceSpiritEntity, Modelspirit<
 
 	@Override
 	public ResourceLocation getTextureLocation(IceSpiritEntity entity) {
+		if (entity.getTexture() != "ice_spirit_new")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

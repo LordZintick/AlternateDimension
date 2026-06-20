@@ -19,6 +19,8 @@ public class GingerbreadWarriorRenderer extends MobRenderer<GingerbreadWarriorEn
 
 	@Override
 	public ResourceLocation getTextureLocation(GingerbreadWarriorEntity entity) {
+		if (entity.getTexture() != "gingerbread_warrior_texture_new")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

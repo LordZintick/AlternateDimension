@@ -8,16 +8,16 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:saplings"
+      "tag": "alternate_dimension:altdim_logs"
     },
     "b": {
       "item": "alternate_dimension:aluminum_ingot"
     },
     "c": {
-      "item": "minecraft:compass"
+      "item": "alternate_dimension:magic_dust"
     },
     "d": {
-      "item": "minecraft:glass_pane"
+      "tag": "alternate_dimension:glass_panes"
     }
   },
   "result": {

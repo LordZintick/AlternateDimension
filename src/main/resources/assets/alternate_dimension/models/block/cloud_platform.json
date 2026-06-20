@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/empty",
+    "up": "alternate_dimension:block/cloud_platform_top",
+    "north": "alternate_dimension:block/cloud_platform_side",
+    "east": "alternate_dimension:block/cloud_platform_side",
+    "south": "alternate_dimension:block/cloud_platform_side",
+    "west": "alternate_dimension:block/cloud_platform_side",
+    "particle": "alternate_dimension:block/empty"
+  },
+  "render_type": "cutout"
+}

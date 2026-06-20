@@ -1,0 +1,56 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AluminumGear"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      },
+      {
+        "value": "CUSTOM:AluminumGear"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumGear"
+      },
+      {
+        "value": "CUSTOM:AluminumPlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AluminumGearbox"
+    },
+    "name": "aluminum_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

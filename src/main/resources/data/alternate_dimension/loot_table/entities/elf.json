@@ -6,20 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bread",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "alternate_dimension:gingerbread",
           "weight": 2,
           "functions": [
@@ -62,7 +48,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 0,
+                "min": 1,
                 "max": 2
               }
             }
@@ -82,6 +68,25 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:weak_thread",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
                 "max": 2
               }
             }

@@ -19,7 +19,7 @@
       "value": ""
     },
     "music": {
-      "value": "CUSTOM:calm_ocean"
+      "value": "CUSTOM:alternate_dimension_music"
     },
     "moodSound": {
       "value": ""
@@ -86,8 +86,8 @@
     "spawnDesertPyramid": false,
     "spawnSwampHut": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": true,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",

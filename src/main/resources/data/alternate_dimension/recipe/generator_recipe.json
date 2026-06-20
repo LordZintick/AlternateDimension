@@ -11,7 +11,7 @@
       "item": "alternate_dimension:aluminum_ingot"
     },
     "b": {
-      "item": "minecraft:furnace"
+      "tag": "alternate_dimension:furnaces"
     }
   },
   "result": {

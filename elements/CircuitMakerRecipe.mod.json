@@ -35,13 +35,13 @@
         "value": "CUSTOM:AluminumIngot"
       },
       {
-        "value": "CUSTOM:AluminumGear"
+        "value": "CUSTOM:AluminumGearbox"
       },
       {
         "value": "CUSTOM:AluminumBlock"
       },
       {
-        "value": "CUSTOM:AluminumGear"
+        "value": "CUSTOM:AluminumGearbox"
       }
     ],
     "recipeReturnStack": {

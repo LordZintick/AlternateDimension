@@ -19,6 +19,7 @@ public class AlternateDimensionModModels {
 		event.registerLayerDefinition(Modelcrystal_chest.LAYER_LOCATION, Modelcrystal_chest::createBodyLayer);
 		event.registerLayerDefinition(Modelplayer_model.LAYER_LOCATION, Modelplayer_model::createBodyLayer);
 		event.registerLayerDefinition(Modelturtle.LAYER_LOCATION, Modelturtle::createBodyLayer);
+		event.registerLayerDefinition(Modelroman.LAYER_LOCATION, Modelroman::createBodyLayer);
 		event.registerLayerDefinition(Modelviking.LAYER_LOCATION, Modelviking::createBodyLayer);
 		event.registerLayerDefinition(Modelcat.LAYER_LOCATION, Modelcat::createBodyLayer);
 		event.registerLayerDefinition(Modelwolf.LAYER_LOCATION, Modelwolf::createBodyLayer);

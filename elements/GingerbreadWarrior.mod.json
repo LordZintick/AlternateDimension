@@ -28,6 +28,9 @@
           "value": "CUSTOM:gingerbread_warriorAnimation.idle"
         },
         "speed": 1.0,
+        "condition": {
+          "name": "Always"
+        },
         "walking": false,
         "amplitude": 1.0
       },

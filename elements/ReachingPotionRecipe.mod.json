@@ -15,7 +15,7 @@
       "value": "POTION:AWKWARD"
     },
     "brewingIngredientStack": {
-      "value": "Items.STICK"
+      "value": "CUSTOM:ToolRod"
     },
     "brewingReturnStack": {
       "value": "CUSTOM:ReachingPotion"

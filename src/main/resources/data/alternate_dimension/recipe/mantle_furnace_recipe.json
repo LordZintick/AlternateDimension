@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pyric_cobble"
+    },
+    "b": {
+      "item": "alternate_dimension:compressed_mantle_cobble"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:mantle_furnace",
+    "count": 1
+  }
+}

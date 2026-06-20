@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "alternate_dimension:block/wild_bush_extension",
+    "particle": "alternate_dimension:block/wild_bush"
+  },
+  "render_type": "cutout"
+}

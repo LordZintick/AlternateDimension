@@ -4,7 +4,7 @@
   "downfall": 1,
   "effects": {
     "music": {
-      "sound": "alternate_dimension:frostbitten_plains",
+      "sound": "alternate_dimension:alternate_dimension_music",
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": true
@@ -23,46 +23,8 @@
     "water_fog_color": -16447585
   },
   "spawners": {
-    "monster": [
-      {
-        "type": "zombie",
-        "weight": 20,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "skeleton",
-        "weight": 15,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "spider",
-        "weight": 15,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "creeper",
-        "weight": 15,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "witch",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 2
-      }
-    ],
-    "creature": [
-      {
-        "type": "polar_bear",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 2
-      }
-    ],
+    "monster": [],
+    "creature": [],
     "ambient": [],
     "axolotls": [],
     "underground_water_creature": [],
@@ -83,10 +45,6 @@
     [
       "minecraft:lake_lava_underground"
     ],
-    [
-      "minecraft:iceberg_packed",
-      "minecraft:iceberg_blue"
-    ],
     [],
     [],
     [],
@@ -94,8 +52,7 @@
     [],
     [],
     [],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    [],
+    []
   ]
 }

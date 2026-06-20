@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:phosphorium_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:tool_rod"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:phosphorium_sword",
+    "count": 1
+  }
+}

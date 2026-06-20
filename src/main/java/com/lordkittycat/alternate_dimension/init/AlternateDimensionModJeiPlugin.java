@@ -26,6 +26,7 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 	public static mezz.jei.api.recipe.RecipeType<CorruptorRecipeTypeRecipe> CorruptorRecipeType_Type = new mezz.jei.api.recipe.RecipeType<>(CorruptorRecipeTypeRecipeCategory.UID, CorruptorRecipeTypeRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<NuclearReactorRecipeTypeRecipe> NuclearReactorRecipeType_Type = new mezz.jei.api.recipe.RecipeType<>(NuclearReactorRecipeTypeRecipeCategory.UID, NuclearReactorRecipeTypeRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<AlloySmelterRecipeTypeRecipe> AlloySmelterRecipeType_Type = new mezz.jei.api.recipe.RecipeType<>(AlloySmelterRecipeTypeRecipeCategory.UID, AlloySmelterRecipeTypeRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<PurifierRecipeTypeRecipe> PurifierRecipeType_Type = new mezz.jei.api.recipe.RecipeType<>(PurifierRecipeTypeRecipeCategory.UID, PurifierRecipeTypeRecipe.class);
 
 	@Override
 	public ResourceLocation getPluginUid() {
@@ -40,6 +41,7 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addRecipeCategories(new CorruptorRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new NuclearReactorRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new AlloySmelterRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new PurifierRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 	}
 
 	@Override
@@ -57,6 +59,8 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addRecipes(NuclearReactorRecipeType_Type, NuclearReactorRecipeTypeRecipes);
 		List<AlloySmelterRecipeTypeRecipe> AlloySmelterRecipeTypeRecipes = recipeManager.getAllRecipesFor(AlloySmelterRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(AlloySmelterRecipeType_Type, AlloySmelterRecipeTypeRecipes);
+		List<PurifierRecipeTypeRecipe> PurifierRecipeTypeRecipes = recipeManager.getAllRecipesFor(PurifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(PurifierRecipeType_Type, PurifierRecipeTypeRecipes);
 	}
 
 	@Override
@@ -68,5 +72,6 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addRecipeCatalyst(new ItemStack(AlternateDimensionModBlocks.COOLANT_RODS.get().asItem()), NuclearReactorRecipeType_Type);
 		registration.addRecipeCatalyst(new ItemStack(AlternateDimensionModBlocks.NUCLEAR_REACTOR.get().asItem()), NuclearReactorRecipeType_Type);
 		registration.addRecipeCatalyst(new ItemStack(AlternateDimensionModBlocks.ALLOY_SMELTER.get().asItem()), AlloySmelterRecipeType_Type);
+		registration.addRecipeCatalyst(new ItemStack(AlternateDimensionModBlocks.PURIFIER.get().asItem()), PurifierRecipeType_Type);
 	}
 }

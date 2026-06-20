@@ -1,0 +1,14 @@
+{
+  "type": "alternate_dimension:purifier_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:evilstone_gem"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:holystone_gem",
+      "count": 1
+    }
+  ]
+}

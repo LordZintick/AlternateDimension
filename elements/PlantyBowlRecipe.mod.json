@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bowl",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PlantMatter"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PlantMatter"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PlantMatter"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PlantMatter"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PlantyBowl"
+    },
+    "name": "planty_bowl_recipe",
+    "namespace": "mod"
+  }
+}

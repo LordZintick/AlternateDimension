@@ -74,6 +74,6 @@ public class CircuitMakerRecipeTypeRecipeCategory implements IRecipeCategory<Cir
 		builder.addSlot(RecipeIngredientRole.INPUT, 38, 21).addIngredients(recipe.getIngredients().get(0));
 		builder.addSlot(RecipeIngredientRole.INPUT, 38, 41).addIngredients(recipe.getIngredients().get(1));
 		builder.addSlot(RecipeIngredientRole.INPUT, 38, 61).addIngredients(recipe.getIngredients().get(2));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 111, 41).addItemStack(actualOutputs.get(3));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 111, 41).addItemStack(actualOutputs.get(0));
 	}
 }

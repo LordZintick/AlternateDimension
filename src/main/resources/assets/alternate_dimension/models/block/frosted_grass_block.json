@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "alternate_dimension:block/rich_dirt",
+    "top": "alternate_dimension:block/frosted_grass_block_top",
+    "side": "alternate_dimension:block/rich_dirt",
+    "overlay": "alternate_dimension:block/frosted_grass_block_side",
+    "particle": "alternate_dimension:block/rich_dirt"
+  },
+  "render_type": "cutout_mipped"
+}

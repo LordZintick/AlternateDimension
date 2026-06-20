@@ -19,6 +19,8 @@ public class ShroomiteRenderer extends MobRenderer<ShroomiteEntity, Modelshroomi
 
 	@Override
 	public ResourceLocation getTextureLocation(ShroomiteEntity entity) {
+		if (entity.getTexture() != "shroomite_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

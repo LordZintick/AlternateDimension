@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alternate_dimension:lush_forest_biomes",
+  "features": "alternate_dimension:tall_wild_bush",
+  "step": "vegetal_decoration"
+}

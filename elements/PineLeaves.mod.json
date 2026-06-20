@@ -2,7 +2,7 @@
   "_fv": 85,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:spruce_leaves",
+    "texture": "pine_leaves",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -18,10 +18,11 @@
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Leaves",
     "blockSetType": "OAK",
     "leavesParticleChance": 0.0,
-    "tintType": "Spruce foliage",
-    "isItemTinted": true,
+    "tintType": "Foliage",
+    "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -42,8 +43,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.5,
-    "resistance": 0.0,
+    "hardness": 0.2,
+    "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
@@ -55,19 +56,19 @@
         "value": "CUSTOM:AlternateDimensionWorld"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "hoe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "hasCustomOpacity": true,
+    "hasCustomOpacity": false,
     "lightOpacity": 15,
     "tickRate": 0,
     "tickRandomly": false,
@@ -86,18 +87,18 @@
     "strippingResult": {
       "value": ""
     },
-    "ignitedByLava": false,
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "ignitedByLava": true,
+    "flammability": 60,
+    "fireSpreadSpeed": 30,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "VINE"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""
@@ -128,7 +129,7 @@
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],

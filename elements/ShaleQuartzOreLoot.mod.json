@@ -28,7 +28,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.QUARTZ"
+              "value": "CUSTOM:RawQuartz"
             },
             "weight": 1,
             "minCount": 1,

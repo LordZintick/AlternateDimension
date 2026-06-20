@@ -11,13 +11,13 @@
           "dirt_provider": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:podzol"
+              "Name": "alternate_dimension:frosted_grass_block"
             }
           },
           "foliage_provider": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "alternate_dimension:pine_leaves"
+              "Name": "minecraft:spruce_leaves"
             }
           },
           "trunk_provider": {
@@ -37,13 +37,13 @@
             "trunk_offset_y": 12,
             "mangrove_root_placement": {
               "can_grow_through": [
-                "minecraft:podzol",
-                "minecraft:coarse_dirt",
+                "alternate_dimension:frosted_grass_block",
+                "alternate_dimension:rich_dirt",
                 "minecraft:air"
               ],
               "muddy_roots_in": [
-                "minecraft:podzol",
-                "minecraft:coarse_dirt"
+                "alternate_dimension:frosted_grass_block",
+                "alternate_dimension:rich_dirt"
               ],
               "muddy_roots_provider": {
                 "type": "minecraft:simple_state_provider",

@@ -19,6 +19,8 @@ public class CandySpiritRenderer extends MobRenderer<CandySpiritEntity, Modelspi
 
 	@Override
 	public ResourceLocation getTextureLocation(CandySpiritEntity entity) {
+		if (entity.getTexture() != "candy_spirit_new")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 

@@ -113,7 +113,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "#minecraft:is_overworld"
+        "value": "#mod:is_familiar_realm"
       }
     ],
     "generationType": "Flower",

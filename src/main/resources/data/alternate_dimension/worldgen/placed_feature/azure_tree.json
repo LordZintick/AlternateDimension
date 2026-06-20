@@ -31,7 +31,7 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:grass_block",
+        "blocks": "alternate_dimension:enchanted_grass_block",
         "offset": [
           0,
           -1,

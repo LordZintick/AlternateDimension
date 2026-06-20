@@ -29,7 +29,7 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 public class CloudKittyEntity extends Monster {
 	public CloudKittyEntity(EntityType<CloudKittyEntity> type, Level world) {
 		super(type, world);
-		xpReward = 10;
+		xpReward = 5;
 		setNoAi(false);
 		refreshDimensions();
 	}
@@ -93,7 +93,7 @@ public class CloudKittyEntity extends Monster {
 
 	@Override
 	public EntityDimensions getDefaultDimensions(Pose pose) {
-		return super.getDefaultDimensions(pose).scale(5f);
+		return super.getDefaultDimensions(pose).scale(3f);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
@@ -107,14 +107,13 @@ public class CloudKittyEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 30);
 		builder = builder.add(Attributes.ARMOR, 1);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
-		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.9);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 3);
+		builder = builder.add(Attributes.STEP_HEIGHT, 1);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.8);
 		return builder;
 	}
 }

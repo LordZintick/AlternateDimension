@@ -5,7 +5,11 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      {
+        "value": "TAG:mod:altdim_planks"
+      }
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -16,25 +20,25 @@
         "value": ""
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:altdim_planks"
       },
       {
         "value": ""

@@ -38,6 +38,7 @@ public class AlternateDimensionModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<EnchantedBackpackGUIMenu>> ENCHANTED_BACKPACK_GUI = REGISTRY.register("enchanted_backpack_gui", () -> IMenuTypeExtension.create(EnchantedBackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CrystalChestGUIMenu>> CRYSTAL_CHEST_GUI = REGISTRY.register("crystal_chest_gui", () -> IMenuTypeExtension.create(CrystalChestGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<IntroScreenMenu>> INTRO_SCREEN = REGISTRY.register("intro_screen", () -> IMenuTypeExtension.create(IntroScreenMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<PurifierGUIMenu>> PURIFIER_GUI = REGISTRY.register("purifier_gui", () -> IMenuTypeExtension.create(PurifierGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

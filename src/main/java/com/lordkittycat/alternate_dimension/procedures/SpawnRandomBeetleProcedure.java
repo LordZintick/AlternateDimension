@@ -13,7 +13,7 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 public class SpawnRandomBeetleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double rand = 0;
-		rand = Mth.nextDouble(RandomSource.create(), 0, 4);
+		rand = Math.round(Mth.nextDouble(RandomSource.create(), 0, 4));
 		if (rand == 0) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = AlternateDimensionModEntities.BEETLE_BRUTE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);

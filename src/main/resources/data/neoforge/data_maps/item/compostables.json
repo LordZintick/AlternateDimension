@@ -2,6 +2,12 @@
   "values": {
     "alternate_dimension:azure_leaves": {
       "chance": 0.3
+    },
+    "alternate_dimension:pine_leaves": {
+      "chance": 0.3
+    },
+    "alternate_dimension:redwood_leaves": {
+      "chance": 0.3
     }
   }
 }

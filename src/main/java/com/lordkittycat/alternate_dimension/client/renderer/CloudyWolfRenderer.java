@@ -18,7 +18,7 @@ public class CloudyWolfRenderer extends MobRenderer<CloudyWolfEntity, Modelwolf<
 
 	@Override
 	protected void scale(CloudyWolfEntity entity, PoseStack poseStack, float f) {
-		poseStack.scale(5f, 5f, 5f);
+		poseStack.scale(3f, 3f, 3f);
 	}
 
 	@Override

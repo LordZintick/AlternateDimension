@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stick",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "tag": "alternate_dimension:altdim_planks"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:tool_rod",
+    "count": 6
+  }
+}

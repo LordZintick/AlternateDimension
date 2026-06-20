@@ -9,8 +9,8 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "Beetle Sword",
-    "rarity": "COMMON",
+    "name": "Beetle Blade",
+    "rarity": "UNCOMMON",
     "specialInformation": {
       "fixedValue": [
         "Has a chance to summon a friendly beetle on hit"
@@ -24,7 +24,7 @@
     "efficiency": 8.0,
     "attackSpeed": 1.6,
     "enchantability": 10,
-    "damageVsEntity": 8.5,
+    "damageVsEntity": 6.5,
     "usageCount": 2000,
     "glowCondition": {
       "fixedValue": false

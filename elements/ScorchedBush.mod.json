@@ -116,10 +116,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Wasteland"
-      },
-      {
-        "value": "desert"
+        "value": "#mod:wasteland_biomes"
       }
     ],
     "generationType": "Flower",

@@ -1,0 +1,15 @@
+{
+  "_fv": 85,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Pine Boat",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AlternateDimensionEquipment"
+      }
+    ],
+    "entityTexture": "pine_boat",
+    "itemTexture": "pine_boat"
+  }
+}

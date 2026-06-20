@@ -3,18 +3,15 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
-    "aca"
+    "a a",
+    "aba"
   ],
   "key": {
     "a": {
-      "item": "minecraft:nether_brick"
+      "item": "alternate_dimension:pyrobricks"
     },
     "b": {
-      "item": "alternate_dimension:meteorite_dust"
-    },
-    "c": {
-      "item": "minecraft:netherrack"
+      "item": "alternate_dimension:pyrolite_chunk"
     }
   },
   "result": {

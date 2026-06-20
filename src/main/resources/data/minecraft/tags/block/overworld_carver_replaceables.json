@@ -5,16 +5,21 @@
     "alternate_dimension:scorched_earth",
     "minecraft:grass_block",
     "minecraft:dirt",
+    "alternate_dimension:candied_grass_block",
     "minecraft:coarse_dirt",
     "minecraft:rooted_dirt",
     "minecraft:stone",
+    "alternate_dimension:lush_grass_block",
     "alternate_dimension:frosting",
     "alternate_dimension:permafrost_block",
     "alternate_dimension:glowing_mycelium",
     "alternate_dimension:ice_cream_block",
     "alternate_dimension:waffle_block",
     "alternate_dimension:cookie_block",
+    "alternate_dimension:enchanted_grass_block",
     "alternate_dimension:rooted_stone",
+    "alternate_dimension:rich_dirt",
+    "alternate_dimension:frosted_grass_block",
     "minecraft:sand"
   ]
 }

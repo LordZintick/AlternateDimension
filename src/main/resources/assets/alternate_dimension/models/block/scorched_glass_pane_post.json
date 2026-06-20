@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "alternate_dimension:block/scorched_glass",
+    "pane": "alternate_dimension:block/scorched_glass",
+    "edge": "alternate_dimension:block/scorched_glass"
+  },
+  "render_type": "cutout"
+}

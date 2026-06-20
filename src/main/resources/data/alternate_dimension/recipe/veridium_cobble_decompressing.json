@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:compressed_veridium_cobble"
+    }
+  ],
+  "result": {
+    "id": "alternate_dimension:veridium_cobble",
+    "count": 9
+  }
+}

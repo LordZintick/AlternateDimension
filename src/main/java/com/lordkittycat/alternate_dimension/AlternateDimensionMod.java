@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import java.util.function.Consumer;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
 import java.util.PriorityQueue;
@@ -58,6 +59,32 @@ public class AlternateDimensionMod {
 	}
 
 	// Start of user code block mod methods
+	private static final Map<Runnable, Long> scheduledTasks = new HashMap<>();
+
+	public static void scheduleTask(Runnable task, int delay) {
+		long targetTick = System.currentTimeMillis() + (delay * 50L);
+		scheduledTasks.put(task, targetTick);
+	}
+
+	public static void scheduleRepeatedTask(Consumer<Integer> task, int delay, int times) {
+		for (int i = 0; i < times; i++) {
+			int finalI = i;
+			scheduleTask(() -> task.accept(finalI), delay);
+		}
+	}
+
+	@SubscribeEvent
+	public void serverTick(ServerTickEvent.Post event) {
+		long time = System.currentTimeMillis();
+		scheduledTasks.entrySet().removeIf(entry -> {
+			if (time >= entry.getValue()) {
+				entry.getKey().run();
+				return true;
+			}
+			return false;
+		});
+	}
+
 	// End of user code block mod methods
 	private static boolean networkingRegistered = false;
 	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();

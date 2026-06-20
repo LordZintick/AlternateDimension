@@ -1,0 +1,24 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "purifier_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:EvilstoneGem"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "PurifierRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:HolystoneGem"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

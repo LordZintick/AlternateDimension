@@ -18,8 +18,15 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.HurtEntityProcedure;
 
 public class SpikesBlock extends Block {
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 5, 16);
+
 	public SpikesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(3f, 0f).noOcclusion().pushReaction(PushReaction.PUSH_ONLY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(3f, 0f).noCollission().pushReaction(PushReaction.PUSH_ONLY).isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
 	}
 
 	@Override

@@ -1,0 +1,56 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:HolystoneGear"
+      },
+      {
+        "value": "CUSTOM:HolystonePlate"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HolystonePlate"
+      },
+      {
+        "value": "CUSTOM:HolystoneGear"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HolystoneGear"
+      },
+      {
+        "value": "CUSTOM:HolystonePlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HolystoneGearbox"
+    },
+    "name": "holystone_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

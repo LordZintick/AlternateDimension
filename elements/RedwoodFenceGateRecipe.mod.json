@@ -26,22 +26,22 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": "CUSTOM:RedwoodPlanks"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       },
       {
         "value": "CUSTOM:RedwoodPlanks"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:ToolRod"
       }
     ],
     "recipeReturnStack": {

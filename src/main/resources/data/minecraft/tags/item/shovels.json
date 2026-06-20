@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:phosphorium_shovel",
+    "alternate_dimension:scorched_wooden_shovel",
+    "alternate_dimension:pine_wooden_shovel",
+    "alternate_dimension:mushy_shovel",
     "alternate_dimension:titanium_shovel",
-    "alternate_dimension:aluminum_shovel"
+    "alternate_dimension:planty_shovel",
+    "alternate_dimension:aluminum_shovel",
+    "alternate_dimension:redwooden_shovel"
   ]
 }
