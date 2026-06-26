@@ -1,5 +1,5 @@
 {
-  "parent": "alternate_dimension:custom/candy_jetpack",
+  "parent": "alternate_dimension:custom/candy_jetpack_item",
   "textures": {
     "0": "alternate_dimension:block/candy_jetpack_texture",
     "particle": "alternate_dimension:item/candy_jetpack_texture"

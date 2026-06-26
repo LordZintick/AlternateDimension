@@ -35,8 +35,8 @@ public class RomanRenderer extends MobRenderer<RomanEntity, Modelroman<RomanEnti
 			@Override
 			public void setupAnim(RomanEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, romanAnimation.idle, ageInTicks, 1f);
-				this.animateWalk(romanAnimation.walk, limbSwing, limbSwingAmount, 1f, 5f);
+				this.animate(entity.animationState0, romanAnimation.idle, ageInTicks, 100f);
+				this.animateWalk(romanAnimation.walk, limbSwing, limbSwingAmount, 100f, 1f);
 			}
 		};
 

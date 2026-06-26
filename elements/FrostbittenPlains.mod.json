@@ -54,8 +54,8 @@
       "value": "SNOWFLAKE"
     },
     "particlesProbability": 0.5,
-    "rainingPossibility": 1.0,
-    "temperature": 0.0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.16,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,

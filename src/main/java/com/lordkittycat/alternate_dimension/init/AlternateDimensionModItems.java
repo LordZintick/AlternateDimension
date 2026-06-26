@@ -20,6 +20,8 @@ import net.minecraft.world.item.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
+import com.lordkittycat.alternate_dimension.procedures.GetBowPullingStateProcedure;
+import com.lordkittycat.alternate_dimension.procedures.GetBowPullingAmountProcedure;
 import com.lordkittycat.alternate_dimension.procedures.GetBananaPeeledStateProcedure;
 import com.lordkittycat.alternate_dimension.item.inventory.ItemIncineratorInventoryCapability;
 import com.lordkittycat.alternate_dimension.item.inventory.EnchantedBackpackInventoryCapability;
@@ -96,7 +98,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> BUSH_LEAVES;
 	public static final DeferredItem<Item> STONE_TILES;
 	public static final DeferredItem<Item> WAITER_SPAWN_EGG;
-	public static final DeferredItem<Item> MAIN_ICON;
 	public static final DeferredItem<Item> BEETLE_SWORD;
 	public static final DeferredItem<Item> PARMESAN_CHEESE_BLOCK;
 	public static final DeferredItem<Item> PARMESAN_CHEESE;
@@ -105,7 +106,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CHEF_SPAWN_EGG;
 	public static final DeferredItem<Item> HEMP_SEEDS;
 	public static final DeferredItem<Item> HEMP;
-	public static final DeferredItem<Item> SUGAR_BLOCK;
 	public static final DeferredItem<Item> CHICKEN_PARMESAN;
 	public static final DeferredItem<Item> CHLORINE_RAPIER;
 	public static final DeferredItem<Item> SODIUM_RAPIER;
@@ -139,7 +139,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CLOUDY_WOLF_SPAWN_EGG;
 	public static final DeferredItem<Item> LIGHT_ESSENCE;
 	public static final DeferredItem<Item> BIOME_LOCATOR;
-	public static final DeferredItem<Item> CHOCOLATE_BAR;
 	public static final DeferredItem<Item> IMBUNEMENT_TABLE;
 	public static final DeferredItem<Item> MAGIC_DUST;
 	public static final DeferredItem<Item> ITEM_INCINERATOR;
@@ -515,6 +514,14 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> ALUMINUM_CHAIN;
 	public static final DeferredItem<Item> SCORCHED_PLATFORM;
 	public static final DeferredItem<Item> CLOUD_PLATFORM;
+	public static final DeferredItem<Item> SHROOMIUM_PICKAXE;
+	public static final DeferredItem<Item> SHROOMIUM_AXE;
+	public static final DeferredItem<Item> SHROOMIUM_SHOVEL;
+	public static final DeferredItem<Item> SHROOMIUM_SWORD;
+	public static final DeferredItem<Item> SHROOMIUM_HOE;
+	public static final DeferredItem<Item> PLANET_CORE;
+	public static final DeferredItem<Item> GRAPHITE_ROD;
+	public static final DeferredItem<Item> SCORCHED_BOW;
 	static {
 		TITANIUM_INGOT = REGISTRY.register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -581,7 +588,6 @@ public class AlternateDimensionModItems {
 		BUSH_LEAVES = block(AlternateDimensionModBlocks.BUSH_LEAVES);
 		STONE_TILES = block(AlternateDimensionModBlocks.STONE_TILES);
 		WAITER_SPAWN_EGG = REGISTRY.register("waiter_spawn_egg", () -> new DeferredSpawnEggItem(AlternateDimensionModEntities.WAITER, -16777216, -1, new Item.Properties()));
-		MAIN_ICON = REGISTRY.register("main_icon", MainIconItem::new);
 		BEETLE_SWORD = REGISTRY.register("beetle_sword", BeetleSwordItem::new);
 		PARMESAN_CHEESE_BLOCK = block(AlternateDimensionModBlocks.PARMESAN_CHEESE_BLOCK);
 		PARMESAN_CHEESE = REGISTRY.register("parmesan_cheese", ParmesanCheeseItem::new);
@@ -590,7 +596,6 @@ public class AlternateDimensionModItems {
 		CHEF_SPAWN_EGG = REGISTRY.register("chef_spawn_egg", () -> new DeferredSpawnEggItem(AlternateDimensionModEntities.CHEF, -3355444, -1, new Item.Properties()));
 		HEMP_SEEDS = REGISTRY.register("hemp_seeds", HempSeedsItem::new);
 		HEMP = REGISTRY.register("hemp", HempItem::new);
-		SUGAR_BLOCK = block(AlternateDimensionModBlocks.SUGAR_BLOCK);
 		CHICKEN_PARMESAN = REGISTRY.register("chicken_parmesan", ChickenParmesanItem::new);
 		CHLORINE_RAPIER = REGISTRY.register("chlorine_rapier", ChlorineRapierItem::new);
 		SODIUM_RAPIER = REGISTRY.register("sodium_rapier", SodiumRapierItem::new);
@@ -624,7 +629,6 @@ public class AlternateDimensionModItems {
 		CLOUDY_WOLF_SPAWN_EGG = REGISTRY.register("cloudy_wolf_spawn_egg", () -> new DeferredSpawnEggItem(AlternateDimensionModEntities.CLOUDY_WOLF, -1, -13108, new Item.Properties()));
 		LIGHT_ESSENCE = REGISTRY.register("light_essence", LightEssenceItem::new);
 		BIOME_LOCATOR = REGISTRY.register("biome_locator", BiomeLocatorItem::new);
-		CHOCOLATE_BAR = REGISTRY.register("chocolate_bar", ChocolateBarItem::new);
 		IMBUNEMENT_TABLE = block(AlternateDimensionModBlocks.IMBUNEMENT_TABLE);
 		MAGIC_DUST = REGISTRY.register("magic_dust", MagicDustItem::new);
 		ITEM_INCINERATOR = REGISTRY.register("item_incinerator", ItemIncineratorItem::new);
@@ -1000,6 +1004,14 @@ public class AlternateDimensionModItems {
 		ALUMINUM_CHAIN = block(AlternateDimensionModBlocks.ALUMINUM_CHAIN);
 		SCORCHED_PLATFORM = block(AlternateDimensionModBlocks.SCORCHED_PLATFORM);
 		CLOUD_PLATFORM = block(AlternateDimensionModBlocks.CLOUD_PLATFORM);
+		SHROOMIUM_PICKAXE = REGISTRY.register("shroomium_pickaxe", ShroomiumPickaxeItem::new);
+		SHROOMIUM_AXE = REGISTRY.register("shroomium_axe", ShroomiumAxeItem::new);
+		SHROOMIUM_SHOVEL = REGISTRY.register("shroomium_shovel", ShroomiumShovelItem::new);
+		SHROOMIUM_SWORD = REGISTRY.register("shroomium_sword", ShroomiumSwordItem::new);
+		SHROOMIUM_HOE = REGISTRY.register("shroomium_hoe", ShroomiumHoeItem::new);
+		PLANET_CORE = block(AlternateDimensionModBlocks.PLANET_CORE, new Item.Properties().rarity(Rarity.EPIC).fireResistant());
+		GRAPHITE_ROD = REGISTRY.register("graphite_rod", GraphiteRodItem::new);
+		SCORCHED_BOW = REGISTRY.register("scorched_bow", ScorchedBowItem::new);
 	}
 
 	// Start of user code block custom items
@@ -1051,6 +1063,10 @@ public class AlternateDimensionModItems {
 		public static void clientLoad(FMLClientSetupEvent event) {
 			event.enqueueWork(() -> {
 				ItemProperties.register(BANANA.get(), ResourceLocation.parse("alternate_dimension:banana_peeled"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GetBananaPeeledStateProcedure.execute(itemStackToRender));
+				ItemProperties.register(SCORCHED_BOW.get(), ResourceLocation.parse("alternate_dimension:scorched_bow_pull"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GetBowPullingAmountProcedure.execute(entity, itemStackToRender));
+				ItemProperties.register(SCORCHED_BOW.get(), ResourceLocation.parse("alternate_dimension:scorched_bow_pulling"),
+						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GetBowPullingStateProcedure.execute(entity, itemStackToRender));
 			});
 		}
 	}

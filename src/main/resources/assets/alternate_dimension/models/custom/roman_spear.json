@@ -19,7 +19,7 @@
         9
       ],
       "rotation": {
-        "angle": 180,
+        "angle": 0,
         "axis": "x",
         "origin": [
           8,
@@ -248,21 +248,21 @@
       "rotation": [
         0,
         0,
-        180
+        0
       ]
     },
     "thirdperson_lefthand": {
       "rotation": [
         0,
         0,
-        180
+        0
       ]
     },
     "firstperson_righthand": {
       "rotation": [
         -75.48,
         -1.96,
-        180
+        0
       ],
       "translation": [
         2.25,
@@ -274,7 +274,7 @@
       "rotation": [
         -75.48,
         -1.96,
-        180
+        0
       ],
       "translation": [
         2.25,
@@ -286,7 +286,7 @@
       "rotation": [
         25.89,
         -8.13,
-        180
+        0
       ],
       "translation": [
         0,
@@ -315,7 +315,7 @@
       "rotation": [
         -46,
         0,
-        180
+        0
       ],
       "translation": [
         0,
@@ -327,7 +327,7 @@
       "rotation": [
         0,
         0,
-        180
+        0
       ],
       "scale": [
         0.5,
@@ -338,8 +338,8 @@
     "on_shelf": {
       "rotation": [
         0,
-        -180,
-        180
+        0,
+        0
       ]
     }
   },

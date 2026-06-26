@@ -1,7 +1,7 @@
 {
-  "has_precipitation": true,
-  "temperature": 0,
-  "downfall": 1,
+  "has_precipitation": false,
+  "temperature": 0.16,
+  "downfall": 0,
   "effects": {
     "music": {
       "sound": "alternate_dimension:alternate_dimension_music",

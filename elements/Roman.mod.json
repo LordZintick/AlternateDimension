@@ -27,7 +27,7 @@
         "animation": {
           "value": "CUSTOM:romanAnimation.idle"
         },
-        "speed": 1.0,
+        "speed": 100.0,
         "condition": {
           "name": "Always"
         },
@@ -38,9 +38,9 @@
         "animation": {
           "value": "CUSTOM:romanAnimation.walk"
         },
-        "speed": 1.0,
+        "speed": 100.0,
         "walking": true,
-        "amplitude": 5.0
+        "amplitude": 1.0
       }
     ],
     "modelWidth": 0.6,

@@ -1,9 +1,3 @@
-/effect give Dev minecraft:night_vision infinite 255 true
-/meteor
-/effect give Dev minecraft:night_vision infinite 255 true
-/effect clear Dev
-/meteor
-/effect give Dev minecraft:night_vision infinite 255 true
 /locate biome alternate_dimension:highlands
 /tp @s -753 73 -1028
 /effect give Dev minecraft:night_vision infinite 255 true
@@ -48,3 +42,9 @@
 /locate biome alternate_dimension:highlands
 /tp @s 10526 120 441
 /meteor
+/effect clear Dev
+/locate biome alternate_dimension:wasteland
+/tp @s 9835 78 728
+/locate structure alternate_dimension:scorched_tower
+/tp @s 9600 ~ 592
+/data merge entity ee411ce5-c9aa-47bb-9bd2-8663f2192e1e {NoAI:1b}

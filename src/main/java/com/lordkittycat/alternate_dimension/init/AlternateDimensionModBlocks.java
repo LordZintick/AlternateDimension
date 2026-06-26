@@ -45,7 +45,6 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> STONE_TILES;
 	public static final DeferredBlock<Block> PARMESAN_CHEESE_BLOCK;
 	public static final DeferredBlock<Block> HEMP_PLANT;
-	public static final DeferredBlock<Block> SUGAR_BLOCK;
 	public static final DeferredBlock<Block> SERVER_STATION;
 	public static final DeferredBlock<Block> COOKING_CORE;
 	public static final DeferredBlock<Block> SKY_STONE;
@@ -281,6 +280,7 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> ALUMINUM_CHAIN;
 	public static final DeferredBlock<Block> SCORCHED_PLATFORM;
 	public static final DeferredBlock<Block> CLOUD_PLATFORM;
+	public static final DeferredBlock<Block> PLANET_CORE;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -305,7 +305,6 @@ public class AlternateDimensionModBlocks {
 		STONE_TILES = REGISTRY.register("stone_tiles", StoneTilesBlock::new);
 		PARMESAN_CHEESE_BLOCK = REGISTRY.register("parmesan_cheese_block", ParmesanCheeseBlockBlock::new);
 		HEMP_PLANT = REGISTRY.register("hemp_plant", HempPlantBlock::new);
-		SUGAR_BLOCK = REGISTRY.register("sugar_block", SugarBlockBlock::new);
 		SERVER_STATION = REGISTRY.register("server_station", ServerStationBlock::new);
 		COOKING_CORE = REGISTRY.register("cooking_core", CookingCoreBlock::new);
 		SKY_STONE = REGISTRY.register("sky_stone", SkyStoneBlock::new);
@@ -541,6 +540,7 @@ public class AlternateDimensionModBlocks {
 		ALUMINUM_CHAIN = REGISTRY.register("aluminum_chain", AluminumChainBlock::new);
 		SCORCHED_PLATFORM = REGISTRY.register("scorched_platform", ScorchedPlatformBlock::new);
 		CLOUD_PLATFORM = REGISTRY.register("cloud_platform", CloudPlatformBlock::new);
+		PLANET_CORE = REGISTRY.register("planet_core", PlanetCoreBlock::new);
 	}
 
 	// Start of user code block custom blocks

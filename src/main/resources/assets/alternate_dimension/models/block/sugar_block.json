@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "alternate_dimension:block/sugar_block",
-    "particle": "alternate_dimension:block/sugar_block"
-  },
-  "render_type": "solid"
-}

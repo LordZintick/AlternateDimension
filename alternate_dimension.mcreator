@@ -2910,21 +2910,6 @@
       "path": "~/BiomeContent/CandiedPlain"
     },
     {
-      "name": "CandyTree",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "candy_tree",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/candy_tree.json",
-          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/candy_tree.json",
-          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/candy_tree_biome_modifier.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain/CandyForest"
-    },
-    {
       "name": "BushLeaves",
       "type": "block",
       "compiles": true,
@@ -2971,20 +2956,6 @@
         ]
       },
       "path": "~/GeneralFeatures/PastaMall"
-    },
-    {
-      "name": "MainIcon",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_icon",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/item/MainIconItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/main_icon.json"
-        ]
-      },
-      "path": "~/Global"
     },
     {
       "name": "StoneTilesRecipe",
@@ -3517,35 +3488,6 @@
         ]
       },
       "path": "~/GeneralFeatures/Growables/Hemp"
-    },
-    {
-      "name": "SugarBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sugar_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/block/sugar_block.json",
-          "src/main/resources/assets/alternate_dimension/blockstates/sugar_block.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/block/SugarBlockBlock.java",
-          "src/main/resources/assets/alternate_dimension/models/item/sugar_block.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain"
-    },
-    {
-      "name": "SugarBlockLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sugar_block_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/loot_table/blocks/sugar_block.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain"
     },
     {
       "name": "ApplyRegeneration",
@@ -4731,21 +4673,6 @@
       "path": "~/BiomeContent/CandiedPlain"
     },
     {
-      "name": "SugarBlockUndergroundPatch",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sugar_block_underground_patch",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/sugar_block_underground_patch.json",
-          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/sugar_block_underground_patch.json",
-          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/sugar_block_underground_patch_biome_modifier.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain"
-    },
-    {
       "name": "SkyStoneRockFeature",
       "type": "feature",
       "compiles": true,
@@ -5510,20 +5437,6 @@
         ]
       },
       "path": "~/GeneralFeatures/Effects"
-    },
-    {
-      "name": "ChocolateBar",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chocolate_bar",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/item/ChocolateBarItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/chocolate_bar.json"
-        ]
-      },
-      "path": "~/BiomeContent/LushForest"
     },
     {
       "name": "CandyCaneBlockToCandyCanes",
@@ -8403,19 +8316,6 @@
       "path": "~/GeneralFeatures/Ores/Uranium"
     },
     {
-      "name": "CandyForest",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "candy_forest",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/worldgen/biome/candy_forest.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain/CandyForest"
-    },
-    {
       "name": "ChillEntity",
       "type": "procedure",
       "compiles": true,
@@ -8449,35 +8349,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/blocks/ice_cream_block.json"
         ]
       },
-      "path": "~/BiomeContent/CandiedPlain/IceCreamHills"
-    },
-    {
-      "name": "IceCreamHills",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_cream_hills",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/worldgen/biome/ice_cream_hills.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain/IceCreamHills"
-    },
-    {
-      "name": "ThickCandyTree",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thick_candy_tree",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/thick_candy_tree.json",
-          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/thick_candy_tree.json",
-          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/thick_candy_tree_biome_modifier.json"
-        ]
-      },
-      "path": "~/BiomeContent/CandiedPlain/CandyForest"
+      "path": "~/BiomeContent/CandiedPlain"
     },
     {
       "name": "ThawEntity",
@@ -13522,7 +13394,7 @@
       "name": "Eleroth",
       "type": "dimension",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "eleroth",
       "metadata": {
         "files": [
@@ -20290,6 +20162,262 @@
         ]
       },
       "path": "~/BiomeContent/Wasteland"
+    },
+    {
+      "name": "RequiresMushyTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "requires_mushy_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/RequiresMushyToolProcedure.java"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumPickaxeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/shroomium_pickaxe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/shroomium_axe.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumAxeItem.java"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/shroomium_shovel.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumShovelItem.java"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/shroomium_sword.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumSwordItem.java"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumHoeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/shroomium_hoe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/shroomium_pickaxe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_axe_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/shroomium_axe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/shroomium_shovel_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_shovel_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/shroomium_sword_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_sword_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "ShroomiumHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shroomium_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/shroomium_hoe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_hoe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "PlanetCore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planet_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/planet_core.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/PlanetCoreBlock.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/planet_core.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/planet_core.json",
+          "src/main/resources/assets/alternate_dimension/models/item/planet_core.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "GraphiteRod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphite_rod",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/GraphiteRodItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/graphite_rod.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Graphite"
+    },
+    {
+      "name": "GetBowPullingState",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_bow_pulling_state",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/GetBowPullingStateProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "GetBowPullingAmount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_bow_pulling_amount",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/GetBowPullingAmountProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "ScorchedBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/scorched_bow_0.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedBowItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/scorched_bow.json",
+          "src/main/resources/assets/alternate_dimension/models/item/scorched_bow_2.json",
+          "src/main/resources/assets/alternate_dimension/models/item/scorched_bow_1.json"
+        ]
+      },
+      "path": "~/BiomeContent/Wasteland/ScorchedWood"
     }
   ],
   "variable_elements": [
@@ -20547,6 +20675,7 @@
       "CUSTOM:MeteoriteDust"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:ScorchedBow",
       "~CUSTOM:MortarAndPestle",
       "~CUSTOM:RPG",
       "~CUSTOM:ItemIncinerator",
@@ -20649,10 +20778,10 @@
       "~CUSTOM:ShaleAluminumOre",
       "~CUSTOM:VeridiumAluminumOre",
       "~CUSTOM:AluminumBlock",
-      "~CUSTOM:ShroomiumOre",
       "~CUSTOM:EvilstoneBlock"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:ShroomiumAxe",
       "~CUSTOM:PhosphoriumAxe",
       "~CUSTOM:MushyAxe",
       "~CUSTOM:PlantyAxe",
@@ -20862,7 +20991,6 @@
       "~CUSTOM:SkyStone",
       "~CUSTOM:CookingCore",
       "~CUSTOM:ServerStation",
-      "~CUSTOM:SugarBlock",
       "~CUSTOM:ParmesanCheeseBlock",
       "~CUSTOM:StoneTiles",
       "~CUSTOM:LightningBlock",
@@ -20880,9 +21008,7 @@
       "~CUSTOM:TitaniumBlock"
     ],
     "BIOMES:mod:candy_biome_biomes": [
-      "CUSTOM:CandyBiome",
-      "CUSTOM:CandyForest",
-      "CUSTOM:IceCreamHills"
+      "CUSTOM:CandyBiome"
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:AluminumArmor.boots",
@@ -20899,6 +21025,7 @@
       "CUSTOM:ScorchedEarth"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CUSTOM:ShroomiumHoe",
       "~CUSTOM:PhosphoriumHoe",
       "~CUSTOM:MushyHoe",
       "~CUSTOM:PlantyHoe",
@@ -20911,7 +21038,6 @@
     "BIOMES:mod:highlands_biomes": [
       "CUSTOM:Highlands",
       "CUSTOM:Tundra",
-      "CUSTOM:IceCreamHills",
       "CUSTOM:RedwoodForest"
     ],
     "BLOCKS:minecraft:slabs": [
@@ -20940,6 +21066,7 @@
       "CUSTOM:RawUranium"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:ShroomiumSword",
       "~CUSTOM:PhosphoriumSword",
       "~CUSTOM:MushySword",
       "~CUSTOM:PlantySword",
@@ -20960,8 +21087,6 @@
       "CUSTOM:ThickForest",
       "CUSTOM:CandyBiome",
       "CUSTOM:Highlands",
-      "CUSTOM:CandyForest",
-      "CUSTOM:IceCreamHills",
       "CUSTOM:RedwoodForest",
       "CUSTOM:FruityGardens",
       "CUSTOM:CalmOcean",
@@ -20978,10 +21103,10 @@
       "CUSTOM:DurableDrill"
     ],
     "BIOMES:mod:wasteland_biomes": [
-      "CUSTOM:Wasteland",
-      "CUSTOM:IceCreamHills"
+      "CUSTOM:Wasteland"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:ShroomiumPickaxe",
       "~CUSTOM:PhosphoriumPickaxe",
       "~CUSTOM:MushyPickaxe",
       "~CUSTOM:PlantyPickaxe",
@@ -21121,6 +21246,7 @@
       "CUSTOM:CandiedGrassBlock"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CUSTOM:ShroomiumShovel",
       "~CUSTOM:PhosphoriumShovel",
       "~CUSTOM:MushyShovel",
       "~CUSTOM:PlantyShovel",
@@ -21186,7 +21312,6 @@
       "CUSTOM:CandyCaneBlock",
       "CUSTOM:WaffleBlock",
       "CUSTOM:CookieBlock",
-      "CUSTOM:SugarBlock",
       "CUSTOM:IceCreamBlock",
       "CUSTOM:WhippedCreamBlock",
       "CUSTOM:CandiedGrassBlock"
@@ -21442,6 +21567,13 @@
       "CUSTOM:RedwoodBowl",
       "CUSTOM:PlantyBowl",
       "CUSTOM:AzureBowl"
+    ],
+    "ITEMS:mod:mushy_tools": [
+      "CUSTOM:MushyPickaxe",
+      "CUSTOM:MushyAxe",
+      "CUSTOM:MushyShovel",
+      "CUSTOM:MushySword",
+      "CUSTOM:MushyHoe"
     ]
   },
   "tab_element_order": {
@@ -21636,7 +21768,6 @@
       "MeteoriteDust",
       "CloudCharge",
       "LightEssence",
-      "ChocolateBar",
       "LembasBreadBite",
       "MagicDust",
       "MagicDustBlock",
@@ -21671,7 +21802,8 @@
       "Phosphorus",
       "PhosphoriumIngot",
       "PhosphorusTorch",
-      "HalloweenQuestDisc"
+      "HalloweenQuestDisc",
+      "GraphiteRod"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
       "ScorchedWoodenPickaxe",
@@ -21699,6 +21831,11 @@
       "MushyShovel",
       "MushySword",
       "MushyHoe",
+      "ShroomiumPickaxe",
+      "ShroomiumAxe",
+      "ShroomiumShovel",
+      "ShroomiumSword",
+      "ShroomiumHoe",
       "WoodenDrill",
       "AluminumPickaxe",
       "AluminumAxe",
@@ -21759,7 +21896,8 @@
       "ImmunityPotion",
       "ImmunityPotion2",
       "ImmunityPotion3",
-      "JumpyPotion"
+      "JumpyPotion",
+      "ScorchedBow"
     ],
     "CUSTOM:AlternateDimensionWorld": [
       "ScorchedEarth",
@@ -21781,7 +21919,6 @@
       "CookieBlock",
       "IceCreamBlock",
       "WhippedCreamBlock",
-      "SugarBlock",
       "StoneTiles",
       "ServerStation",
       "CookingCore",
@@ -21877,7 +22014,8 @@
       "PermafrostBlock",
       "IcyShards",
       "LightningBlock",
-      "Meteoroid"
+      "Meteoroid",
+      "PlanetCore"
     ],
     "CUSTOM:AlternateDimensionUtilities": [
       "BasicEnergyCable",
@@ -21978,7 +22116,6 @@
       "item.alternate_dimension.titanium_armor_leggings": "Titanium Leggings",
       "item.alternate_dimension.portal_wand": "Portal Wand",
       "item.alternate_dimension.jumpy_potion": "Potion of Jumping",
-      "item.alternate_dimension.main_icon": "Main Icon",
       "item.alternate_dimension.fuzzy_armor_boots": "Fuzzy Socks",
       "item.alternate_dimension.dark_wolf_spawn_egg": "Dark Wolf Spawn Egg",
       "item.alternate_dimension.halloween_quest_disc.desc": "Halloween Quest - Zane Little Music",
@@ -21996,7 +22133,6 @@
       "item.alternate_dimension.light_essence": "Light Essence",
       "block.alternate_dimension.sky_stone": "Sky Stone",
       "item.alternate_dimension.pasta": "Pasta",
-      "biome.alternate_dimension.ice_cream_hills": "Ice Cream Hills",
       "block.alternate_dimension.server_station": "Server Station",
       "item.alternate_dimension.iron_drill": "Aluminum Drill",
       "gui.alternate_dimension.jetpack_overlay.label_engine": "ENGINE:",
@@ -22015,7 +22151,6 @@
       "gui.alternate_dimension.nuclear_reactor_gui.label_coolant": "Coolant",
       "item.alternate_dimension.fruit_salad": "Fruit Salad",
       "item.alternate_dimension.titanium_gear": "Titanium Gear",
-      "biome.alternate_dimension.candy_forest": "Candy Forest",
       "item.alternate_dimension.cheese": "Cheese",
       "item.alternate_dimension.beetle_sword": "Beetle Blade",
       "item.alternate_dimension.durable_drill": "Durable Drill",
@@ -22140,7 +22275,6 @@
       "subtitles.ice_cream_hills": "",
       "item.alternate_dimension.light_footed_potion": "Potion of Light Feet",
       "block.alternate_dimension.imbunement_table": "Imbunement Table",
-      "item.alternate_dimension.chocolate_bar": "Chocolate Bar",
       "item.alternate_dimension.plutonium": "Plutonium",
       "item.alternate_dimension.beetle_armor_helmet": "Beetle Clypeus",
       "key.alternate_dimension.jetpack_activate_key": "Jetpack Activate",
@@ -22201,7 +22335,6 @@
       "block.alternate_dimension.magic_dust_block": "Block of Magic Dust",
       "item.alternate_dimension.candy_armor_chestplate.description_0": "A special chestplate that lets you fly!",
       "item.alternate_dimension.candy_armor_chestplate.description_1": "Uses Candy Canes as fuel.",
-      "block.alternate_dimension.sugar_block": "Sugar Block",
       "key.categories.alternate_dimension": "AlternateDimension",
       "item.alternate_dimension.plus": "Plus",
       "gui.alternate_dimension.electric_smelter_gui.label_electric_smelter": "Electric Smelter",
@@ -22612,7 +22745,15 @@
       "item.alternate_dimension.raw_quartz": "Raw Quartz",
       "block.alternate_dimension.aluminum_chain": "Aluminum Chain",
       "block.alternate_dimension.scorched_platform": "Scorched Platform",
-      "block.alternate_dimension.cloud_platform": "Cloud Platform"
+      "block.alternate_dimension.cloud_platform": "Cloud Platform",
+      "item.alternate_dimension.shroomium_pickaxe": "Shroomium Pickaxe",
+      "item.alternate_dimension.shroomium_axe": "Shroomium Axe",
+      "item.alternate_dimension.shroomium_shovel": "Shroomium Shovel",
+      "item.alternate_dimension.shroomium_sword": "Shroomium Sword",
+      "item.alternate_dimension.shroomium_hoe": "Shroomium Hoe",
+      "block.alternate_dimension.planet_core": "Planet Core",
+      "item.alternate_dimension.graphite_rod": "Graphite Rod",
+      "item.alternate_dimension.scorched_bow": "Scorched Bow"
     }
   },
   "metadata": {
@@ -22674,16 +22815,7 @@
           },
           {
             "name": "CandiedPlain",
-            "children": [
-              {
-                "name": "CandyForest",
-                "children": []
-              },
-              {
-                "name": "IceCreamHills",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "name": "Highlands",
@@ -23004,7 +23136,7 @@
   "workspaceSettings": {
     "modid": "alternate_dimension",
     "modName": "AlternateDimension",
-    "version": "2.0.0dev",
+    "version": "2.0.0dev2",
     "description": "Delve into a familiar yet different dimension, filled with many new challenges and rewards. Explore, fight, craft, build, and enjoy an entirely new Minecraft experience!",
     "author": "LordZintick",
     "websiteURL": "https://modrinth.com/project/alternate-dimension",

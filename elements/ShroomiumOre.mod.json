@@ -118,7 +118,10 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
+    "additionalHarvestCondition": {
+      "name": "RequiresMushyTool"
+    },
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

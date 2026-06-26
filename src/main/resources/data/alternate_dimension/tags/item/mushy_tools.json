@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:mushy_sword",
+    "alternate_dimension:mushy_axe",
+    "alternate_dimension:mushy_shovel",
+    "alternate_dimension:mushy_pickaxe",
+    "alternate_dimension:mushy_hoe"
+  ]
+}

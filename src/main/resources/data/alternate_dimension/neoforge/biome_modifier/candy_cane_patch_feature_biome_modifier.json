@@ -1,9 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": [
-    "alternate_dimension:candy_biome",
-    "alternate_dimension:ice_cream_hills"
-  ],
+  "biomes": "alternate_dimension:candy_biome",
   "features": "alternate_dimension:candy_cane_patch_feature",
   "step": "vegetal_decoration"
 }

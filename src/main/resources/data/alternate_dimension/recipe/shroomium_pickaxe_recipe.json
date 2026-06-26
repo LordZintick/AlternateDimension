@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:shroomium_chunk"
+    },
+    "b": {
+      "item": "alternate_dimension:mushy_pickaxe"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:shroomium_pickaxe",
+    "count": 1
+  }
+}

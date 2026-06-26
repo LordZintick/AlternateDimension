@@ -54,7 +54,7 @@
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",
     "bodyItemRenderType": 1,
-    "bodyItemCustomModelName": "candy_jetpack:default",
+    "bodyItemCustomModelName": "candy_jetpack_item:default",
     "leggingsItemRenderType": 0,
     "leggingsItemCustomModelName": "Normal",
     "bootsItemRenderType": 0,

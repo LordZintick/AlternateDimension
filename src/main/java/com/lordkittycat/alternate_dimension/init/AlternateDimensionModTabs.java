@@ -208,7 +208,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.METEORITE_DUST.get());
 				tabData.accept(AlternateDimensionModItems.CLOUD_CHARGE.get());
 				tabData.accept(AlternateDimensionModItems.LIGHT_ESSENCE.get());
-				tabData.accept(AlternateDimensionModItems.CHOCOLATE_BAR.get());
 				tabData.accept(AlternateDimensionModItems.LEMBAS_BREAD_BITE.get());
 				tabData.accept(AlternateDimensionModItems.MAGIC_DUST.get());
 				tabData.accept(AlternateDimensionModBlocks.MAGIC_DUST_BLOCK.get().asItem());
@@ -244,6 +243,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
+				tabData.accept(AlternateDimensionModItems.GRAPHITE_ROD.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_DECOR.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.SODIUM_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -272,6 +272,11 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.MUSHY_SHOVEL.get());
 				tabData.accept(AlternateDimensionModItems.MUSHY_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.MUSHY_HOE.get());
+				tabData.accept(AlternateDimensionModItems.SHROOMIUM_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.SHROOMIUM_AXE.get());
+				tabData.accept(AlternateDimensionModItems.SHROOMIUM_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.SHROOMIUM_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.SHROOMIUM_HOE.get());
 				tabData.accept(AlternateDimensionModItems.WOODEN_DRILL.get());
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_PICKAXE.get());
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_AXE.get());
@@ -342,6 +347,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_2.get());
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_3.get());
 				tabData.accept(AlternateDimensionModItems.JUMPY_POTION.get());
+				tabData.accept(AlternateDimensionModItems.SCORCHED_BOW.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_MATERIALS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_WORLD = REGISTRY.register("alternate_dimension_world",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_world")).icon(() -> new ItemStack(AlternateDimensionModBlocks.COOKIE_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -364,7 +370,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.COOKIE_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.ICE_CREAM_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.WHIPPED_CREAM_BLOCK.get().asItem());
-				tabData.accept(AlternateDimensionModBlocks.SUGAR_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.STONE_TILES.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SERVER_STATION.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.COOKING_CORE.get().asItem());
@@ -461,6 +466,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ICY_SHARDS.get());
 				tabData.accept(AlternateDimensionModBlocks.LIGHTNING_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModItems.METEOROID_SPAWN_EGG.get());
+				tabData.accept(AlternateDimensionModBlocks.PLANET_CORE.get().asItem());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_UTILITIES = REGISTRY.register("alternate_dimension_utilities", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_utilities")).icon(() -> new ItemStack(AlternateDimensionModBlocks.ALLOY_SMELTER.get())).displayItems((parameters, tabData) -> {
