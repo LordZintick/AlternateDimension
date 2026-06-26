@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:mythril_armor_leggings",
+    "alternate_dimension:phosphorium_armor_leggings",
     "alternate_dimension:titanium_armor_leggings",
     "alternate_dimension:beetle_armor_leggings",
     "alternate_dimension:aluminum_armor_leggings"

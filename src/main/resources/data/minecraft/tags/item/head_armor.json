@@ -1,8 +1,10 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:phosphorium_armor_helmet",
     "alternate_dimension:beetle_armor_helmet",
     "alternate_dimension:aluminum_armor_helmet",
-    "alternate_dimension:titanium_armor_helmet"
+    "alternate_dimension:titanium_armor_helmet",
+    "alternate_dimension:mythril_armor_helmet"
   ]
 }

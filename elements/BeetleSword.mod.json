@@ -9,11 +9,13 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "Beetle Blade",
-    "rarity": "UNCOMMON",
+    "name": "The Beetle Blade",
+    "rarity": "RARE",
     "specialInformation": {
       "fixedValue": [
-        "Has a chance to summon a friendly beetle on hit"
+        "A powerful relic created by a mythril sword swallowed by the beetle queen, infusing it with beetle power.",
+        "Grants the wielder increased speed, agility, and armor.",
+        "Has a chance to summon a friendly beetle on hit."
       ]
     },
     "creativeTabs": [
@@ -24,8 +26,8 @@
     "efficiency": 8.0,
     "attackSpeed": 1.6,
     "enchantability": 10,
-    "damageVsEntity": 6.5,
-    "usageCount": 2000,
+    "damageVsEntity": 7.5,
+    "usageCount": 2256,
     "glowCondition": {
       "fixedValue": false
     },
@@ -34,10 +36,35 @@
         "value": "CUSTOM:BeetleShell"
       }
     ],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
-    "attributeModifiers": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": 4.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.03,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

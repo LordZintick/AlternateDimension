@@ -4,139 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="">
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added Beetle Queen loot and upgraded Beetle Sword to a unique drop of her.&#10;- Added Mythril (ores, ingot, nugget, etc.) and a multi-step creation process for it.&#10;- Added Mythril and Phosphorium tools/armor.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/CandyForest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ChocolateBar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IceCreamHills.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MainIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/Roman.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/Roman.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/SugarBlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_161918" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_165449" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_165519" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_170219" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_170519" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_170819" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_171319" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_171849" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_172319" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260620_172549" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/tool_rod.png.imgmeta" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/tool_rod.png.imgmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BeetleSword.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BeetleSword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BeetleSwordRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_141618" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_141718" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_143119" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_143419" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_145519" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_145601" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_150548" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260625_150618" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260626_061038" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/workspaceBackups/alternate_dimension.mcreator-backup_20260626_061208" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AdvancedCircuitRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/AdvancedCircuitRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyArmor.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CandyArmor.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyCanePatch.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CandyCanePatch.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyCanePatchFeature.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CandyCanePatchFeature.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyForest.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyTree.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ChocolateBar.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/Eleroth.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Eleroth.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/FrostbittenPlains.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/FrostbittenPlains.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IceCreamHills.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MainIcon.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/Roman.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Roman.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumOre.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumOre.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/SugarBlock.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/SugarBlockLoot.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/SugarBlockUndergroundPatch.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ThickCandyTree.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateBlockShaperCasing.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateBlockShaperCasing.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/candy_jetpack.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/candy_jetpack.json.textures" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/candy_jetpack_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/candy_jetpack_item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/candy_jetpack_item.json.textures" beforeDir="false" afterPath="$PROJECT_DIR$/models/candy_jetpack_item.json.textures" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mojmap-1.20.x/Modelcandy_jetpack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/roman_spear.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/roman_spear.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2026-06-20-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2026-06-20-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-06-20-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.19.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.19.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.19.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.19.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.20.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.20.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.20.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/entities/r.20.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.18.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.18.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.19.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.19.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.19.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.19.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.20.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/poi/r.20.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.18.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.18.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.19.2.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.20.2.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.21.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.21.1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.21.2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/dimensions/alternate_dimension/eleroth/region/r.21.2.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/ShroomiumOreBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/ShroomiumOreBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/SugarBlockBlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/model/Modelcandy_jetpack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/model/Modelcandy_jetpack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/renderer/RomanRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/renderer/RomanRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BeetleSword.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BeetleSword.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BeetleSwordRecipe.mod.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ChocolateBarItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MainIconItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateBlockShaperCasingProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateBlockShaperCasingProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/sugar_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BeetleSwordItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BeetleSwordItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/candy_cane_patch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/candy_cane_patch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/sugar_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/custom/candy_jetpack_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/custom/candy_jetpack_item.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/custom/roman_spear.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/custom/roman_spear.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candy_armor_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candy_armor_chestplate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/chocolate_bar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/main_icon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/sugar_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/dimension/eleroth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/dimension/eleroth.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/sugar_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/candy_cane_patch_feature_biome_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/candy_cane_patch_feature_biome_modifier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/candy_tree_biome_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/sugar_block_underground_patch_biome_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/thick_candy_tree_biome_modifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/advanced_circuit_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/advanced_circuit_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/candy_blocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/candy_blocks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/candy_biome_biomes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/candy_biome_biomes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/highlands_biomes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/highlands_biomes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/is_familiar_realm.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/is_familiar_realm.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/wasteland_biomes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/worldgen/biome/wasteland_biomes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/biome/candy_forest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/biome/frostbitten_plains.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/biome/frostbitten_plains.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/biome/ice_cream_hills.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/candy_tree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/sugar_block_underground_patch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/thick_candy_tree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/candy_cane_patch_feature.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/candy_cane_patch_feature.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/candy_tree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/sugar_block_underground_patch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/thick_candy_tree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_sword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/beetle_sword_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/beetle_sword_recipe.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/needs_stone_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/needs_stone_tool.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/axes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/axes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/chest_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/chest_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/foot_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/foot_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/head_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/head_armor.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/hoes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/hoes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/leg_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/leg_armor.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/shovels.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/shovels.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" afterDir="false" />
@@ -210,21 +111,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.crazycraft [createMcpToSrg].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev01",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Development/MCreatorWorkspaces/alternate_dimension/src/main/resources/assets/alternate_dimension/textures/item",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.crazycraft [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev01&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Development/MCreatorWorkspaces/alternate_dimension/src/main/resources/assets/alternate_dimension/textures/item&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\item" />
@@ -285,11 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1781991173438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Deleted Ice Cream Hills &amp; Candy Forest Biomes&#10;- Deleted Sugar Blocks and Chocolate Bar&#10;- Somewhat fixed the candy jetpack&#10;- Made some changes to worldgen&#10;- Fixed the Roman Spear&#10;- Added Shroomium Tools and made Shroomium Ore only breakable with mushy tools.&#10;- Added Graphite Rod.&#10;- Added Bow Utility procedures.&#10;- Added Planet Core.&#10;- Various minor changes and fixes.">
+      <option name="closed" value="true" />
+      <created>1782468961417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782468961417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Finished implementing Hallowed one and made Void and Hallowed mobs attack each other.&#10;- Added some new Hallowed items.&#10;- Removed vanilla mobs &amp; structures from biome spawn lists.&#10;- Made Elves and Corrupted Elves attack each other.&#10;- Added the first five AltDim OST tracks: Fallen Hero, Lost Ruins, Outcast, Fading Away, and Final Struggle.&#10;- Converted more vanilla blocks/items to custom versions.&#10;- Added &amp; fixed custom crafting tables for different woods.&#10;- Added Romans, Vikings, their drops, and their reputation mechanic.&#10;- Added wooden tools for all wood types.&#10;- Added Phosphorium and Phosphorium Tools.&#10;- Rebalanced ore generation.&#10;- Added custom furnaces for each strata type.&#10;- Migrated glass and bowls over to custom ones.&#10;- Added new mobs and structures.&#10;- Tweaked recipes and loot tables to further migrate away from vanilla blocks and items.&#10;- Added more custom alternatives for vanilla stuff.&#10;- Added (buggy) aluminum buckets.&#10;- Added decorative platform blocks.&#10;- Added Beetle Queen and beetle variants, as well as the Scorched Tower.&#10;- Fixed many bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Finished implementing Hallowed one and made Void and Hallowed mobs attack each other.&#10;- Added some new Hallowed items.&#10;- Removed vanilla mobs &amp; structures from biome spawn lists.&#10;- Made Elves and Corrupted Elves attack each other.&#10;- Added the first five AltDim OST tracks: Fallen Hero, Lost Ruins, Outcast, Fading Away, and Final Struggle.&#10;- Converted more vanilla blocks/items to custom versions.&#10;- Added &amp; fixed custom crafting tables for different woods.&#10;- Added Romans, Vikings, their drops, and their reputation mechanic.&#10;- Added wooden tools for all wood types.&#10;- Added Phosphorium and Phosphorium Tools.&#10;- Rebalanced ore generation.&#10;- Added custom furnaces for each strata type.&#10;- Migrated glass and bowls over to custom ones.&#10;- Added new mobs and structures.&#10;- Tweaked recipes and loot tables to further migrate away from vanilla blocks and items.&#10;- Added more custom alternatives for vanilla stuff.&#10;- Added (buggy) aluminum buckets.&#10;- Added decorative platform blocks.&#10;- Added Beetle Queen and beetle variants, as well as the Scorched Tower.&#10;- Fixed many bugs" />
+    <MESSAGE value="- Deleted Ice Cream Hills &amp; Candy Forest Biomes&#10;- Deleted Sugar Blocks and Chocolate Bar&#10;- Somewhat fixed the candy jetpack&#10;- Made some changes to worldgen&#10;- Fixed the Roman Spear&#10;- Added Shroomium Tools and made Shroomium Ore only breakable with mushy tools.&#10;- Added Graphite Rod.&#10;- Added Bow Utility procedures.&#10;- Added Planet Core.&#10;- Various minor changes and fixes." />
+    <MESSAGE value="- Added Beetle Queen loot and upgraded Beetle Sword to a unique drop of her.&#10;- Added Mythril (ores, ingot, nugget, etc.) and a multi-step creation process for it.&#10;- Added Mythril and Phosphorium tools/armor." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added Beetle Queen loot and upgraded Beetle Sword to a unique drop of her.&#10;- Added Mythril (ores, ingot, nugget, etc.) and a multi-step creation process for it.&#10;- Added Mythril and Phosphorium tools/armor." />
   </component>
 </project>

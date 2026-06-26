@@ -522,6 +522,27 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> PLANET_CORE;
 	public static final DeferredItem<Item> GRAPHITE_ROD;
 	public static final DeferredItem<Item> SCORCHED_BOW;
+	public static final DeferredItem<Item> VERIDIUM_MYTHRIL_ORE;
+	public static final DeferredItem<Item> SHALE_MYTHRIL_ORE;
+	public static final DeferredItem<Item> MANTLE_MYTHRIL_ORE;
+	public static final DeferredItem<Item> MYTHRIL_SHARDS;
+	public static final DeferredItem<Item> MYTHRIL_INGOT;
+	public static final DeferredItem<Item> FORMED_MYTHRIL_SHARDS;
+	public static final DeferredItem<Item> FIRED_MYTHRIL_INGOT;
+	public static final DeferredItem<Item> MYTHRIL_PICKAXE;
+	public static final DeferredItem<Item> MYTHRIL_AXE;
+	public static final DeferredItem<Item> MYTHRIL_SHOVEL;
+	public static final DeferredItem<Item> MYTHRIL_SWORD;
+	public static final DeferredItem<Item> MYTHRIL_HOE;
+	public static final DeferredItem<Item> MYTHRIL_NUGGET;
+	public static final DeferredItem<Item> PHOSPHORIUM_ARMOR_HELMET;
+	public static final DeferredItem<Item> PHOSPHORIUM_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> PHOSPHORIUM_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> PHOSPHORIUM_ARMOR_BOOTS;
+	public static final DeferredItem<Item> MYTHRIL_ARMOR_HELMET;
+	public static final DeferredItem<Item> MYTHRIL_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> MYTHRIL_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> MYTHRIL_ARMOR_BOOTS;
 	static {
 		TITANIUM_INGOT = REGISTRY.register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1012,6 +1033,27 @@ public class AlternateDimensionModItems {
 		PLANET_CORE = block(AlternateDimensionModBlocks.PLANET_CORE, new Item.Properties().rarity(Rarity.EPIC).fireResistant());
 		GRAPHITE_ROD = REGISTRY.register("graphite_rod", GraphiteRodItem::new);
 		SCORCHED_BOW = REGISTRY.register("scorched_bow", ScorchedBowItem::new);
+		VERIDIUM_MYTHRIL_ORE = block(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE);
+		SHALE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE);
+		MANTLE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE);
+		MYTHRIL_SHARDS = REGISTRY.register("mythril_shards", MythrilShardsItem::new);
+		MYTHRIL_INGOT = REGISTRY.register("mythril_ingot", MythrilIngotItem::new);
+		FORMED_MYTHRIL_SHARDS = REGISTRY.register("formed_mythril_shards", FormedMythrilShardsItem::new);
+		FIRED_MYTHRIL_INGOT = REGISTRY.register("fired_mythril_ingot", FiredMythrilIngotItem::new);
+		MYTHRIL_PICKAXE = REGISTRY.register("mythril_pickaxe", MythrilPickaxeItem::new);
+		MYTHRIL_AXE = REGISTRY.register("mythril_axe", MythrilAxeItem::new);
+		MYTHRIL_SHOVEL = REGISTRY.register("mythril_shovel", MythrilShovelItem::new);
+		MYTHRIL_SWORD = REGISTRY.register("mythril_sword", MythrilSwordItem::new);
+		MYTHRIL_HOE = REGISTRY.register("mythril_hoe", MythrilHoeItem::new);
+		MYTHRIL_NUGGET = REGISTRY.register("mythril_nugget", MythrilNuggetItem::new);
+		PHOSPHORIUM_ARMOR_HELMET = REGISTRY.register("phosphorium_armor_helmet", PhosphoriumArmorItem.Helmet::new);
+		PHOSPHORIUM_ARMOR_CHESTPLATE = REGISTRY.register("phosphorium_armor_chestplate", PhosphoriumArmorItem.Chestplate::new);
+		PHOSPHORIUM_ARMOR_LEGGINGS = REGISTRY.register("phosphorium_armor_leggings", PhosphoriumArmorItem.Leggings::new);
+		PHOSPHORIUM_ARMOR_BOOTS = REGISTRY.register("phosphorium_armor_boots", PhosphoriumArmorItem.Boots::new);
+		MYTHRIL_ARMOR_HELMET = REGISTRY.register("mythril_armor_helmet", MythrilArmorItem.Helmet::new);
+		MYTHRIL_ARMOR_CHESTPLATE = REGISTRY.register("mythril_armor_chestplate", MythrilArmorItem.Chestplate::new);
+		MYTHRIL_ARMOR_LEGGINGS = REGISTRY.register("mythril_armor_leggings", MythrilArmorItem.Leggings::new);
+		MYTHRIL_ARMOR_BOOTS = REGISTRY.register("mythril_armor_boots", MythrilArmorItem.Boots::new);
 	}
 
 	// Start of user code block custom items

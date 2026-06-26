@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_ingot",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:mythril_shards"
+    },
+    "b": {
+      "item": "alternate_dimension:aluminum_ingot"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:formed_mythril_shards",
+    "count": 1
+  }
+}

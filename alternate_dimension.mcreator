@@ -4618,20 +4618,6 @@
       "path": "~/BiomeContent/Wasteland/Beetles"
     },
     {
-      "name": "BeetleSwordRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetle_sword_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/beetle_sword_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/beetle_sword_recipe.json"
-        ]
-      },
-      "path": "~/BiomeContent/Wasteland/Beetles"
-    },
-    {
       "name": "GiantBeetleNestGeneralLoot",
       "type": "loottable",
       "compiles": true,
@@ -20418,6 +20404,561 @@
         ]
       },
       "path": "~/BiomeContent/Wasteland/ScorchedWood"
+    },
+    {
+      "name": "BeetleQueenLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beetle_queen_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/entities/beetle_queen.json"
+        ]
+      },
+      "path": "~/BiomeContent/Wasteland/Beetles"
+    },
+    {
+      "name": "CheckForTitaniumTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_for_titanium_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/CheckForTitaniumToolProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "VeridiumMythrilOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veridium_mythril_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/veridium_mythril_ore.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/veridium_mythril_ore.json",
+          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/veridium_mythril_ore.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/VeridiumMythrilOreBlock.java",
+          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/veridium_mythril_ore.json",
+          "src/main/resources/assets/alternate_dimension/models/item/veridium_mythril_ore.json",
+          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/veridium_mythril_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "ShaleMythrilOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shale_mythril_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/shale_mythril_ore_biome_modifier.json",
+          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/shale_mythril_ore.json",
+          "src/main/resources/assets/alternate_dimension/models/block/shale_mythril_ore.json",
+          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/shale_mythril_ore.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/shale_mythril_ore.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/ShaleMythrilOreBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/item/shale_mythril_ore.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MantleMythrilOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mantle_mythril_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/placed_feature/mantle_mythril_ore.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/MantleMythrilOreBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/block/mantle_mythril_ore.json",
+          "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/mantle_mythril_ore_biome_modifier.json",
+          "src/main/resources/assets/alternate_dimension/models/item/mantle_mythril_ore.json",
+          "src/main/resources/data/alternate_dimension/worldgen/configured_feature/mantle_mythril_ore.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/mantle_mythril_ore.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilShards",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_shards",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilShardsItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_shards.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "VeridiumMythrilOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veridium_mythril_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/veridium_mythril_ore.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "ShaleMythrilOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shale_mythril_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/shale_mythril_ore.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MantleMythrilOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mantle_mythril_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/mantle_mythril_ore.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_ingot.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilIngotItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "FormedMythrilShards",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "formed_mythril_shards",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/FormedMythrilShardsItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/formed_mythril_shards.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "FiredMythrilIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_mythril_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/fired_mythril_ingot.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/FiredMythrilIngotItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "FormedMythrilShardsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "formed_mythril_shards_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/formed_mythril_shards_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/formed_mythril_shards_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "FiredMythrilIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_mythril_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/fired_mythril_ingot_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/fired_mythril_ingot_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_ingot_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_ingot_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilPickaxeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_pickaxe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilAxeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_axe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilShovelItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_shovel.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_sword.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilSwordItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilHoeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_hoe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_pickaxe_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_axe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_axe_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_shovel_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_shovel_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_sword_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_sword_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_nugget",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilNuggetItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_nugget.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilNuggetCompacting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_nugget_compacting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_nugget_compacting.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_nugget_compacting.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilNuggetDecompacting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_nugget_decompacting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_nugget_decompacting.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_nugget_decompacting.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_hoe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_hoe_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "PhosphoriumArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorium_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumArmorItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/phosphorium_armor_helmet.json",
+          "src/main/resources/assets/alternate_dimension/models/item/phosphorium_armor_leggings.json",
+          "src/main/resources/assets/alternate_dimension/models/item/phosphorium_armor_boots.json",
+          "src/main/resources/assets/alternate_dimension/models/item/phosphorium_armor_chestplate.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "PhosphoriumHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorium_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_helmet_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/phosphorium_helmet_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "PhosphoriumChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorium_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_chestplate_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/phosphorium_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "PhosphoriumLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorium_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_leggings_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/phosphorium_leggings_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "PhosphoriumBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorium_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/phosphorium_boots_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_boots_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "MythrilArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_armor_leggings.json",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_armor_chestplate.json",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_armor_boots.json",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_armor_helmet.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilArmorItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_helmet_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_helmet_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_chestplate_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_leggings_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_leggings_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_boots_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_boots_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
     }
   ],
   "variable_elements": [
@@ -20659,6 +21200,8 @@
       "CUSTOM:Elf"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MythrilArmor.body",
+      "~CUSTOM:PhosphoriumArmor.body",
       "~CUSTOM:AluminumArmor.body",
       "~CUSTOM:CandyArmor.body",
       "~CUSTOM:BeetleArmor.body",
@@ -20781,6 +21324,7 @@
       "~CUSTOM:EvilstoneBlock"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:MythrilAxe",
       "~CUSTOM:ShroomiumAxe",
       "~CUSTOM:PhosphoriumAxe",
       "~CUSTOM:MushyAxe",
@@ -20813,6 +21357,8 @@
       "~CUSTOM:ScorchedBrickStairs"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MythrilArmor.helmet",
+      "~CUSTOM:PhosphoriumArmor.helmet",
       "~CUSTOM:AluminumArmor.helmet",
       "~CUSTOM:BeetleArmor.helmet",
       "~CUSTOM:TitaniumArmor.helmet"
@@ -20870,6 +21416,9 @@
       "CUSTOM:EnchantedGrassBlock"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MantleMythrilOre",
+      "~CUSTOM:ShaleMythrilOre",
+      "~CUSTOM:VeridiumMythrilOre",
       "~CUSTOM:CloudPlatform",
       "~CUSTOM:ScorchedPlatform",
       "~CUSTOM:AluminumChain",
@@ -21011,6 +21560,8 @@
       "CUSTOM:CandyBiome"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MythrilArmor.boots",
+      "~CUSTOM:PhosphoriumArmor.boots",
       "~CUSTOM:AluminumArmor.boots",
       "~CUSTOM:BeetleArmor.boots",
       "~CUSTOM:FuzzyArmor.boots",
@@ -21025,6 +21576,7 @@
       "CUSTOM:ScorchedEarth"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CUSTOM:MythrilHoe",
       "~CUSTOM:ShroomiumHoe",
       "~CUSTOM:PhosphoriumHoe",
       "~CUSTOM:MushyHoe",
@@ -21066,6 +21618,7 @@
       "CUSTOM:RawUranium"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:MythrilSword",
       "~CUSTOM:ShroomiumSword",
       "~CUSTOM:PhosphoriumSword",
       "~CUSTOM:MushySword",
@@ -21106,6 +21659,7 @@
       "CUSTOM:Wasteland"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MythrilPickaxe",
       "~CUSTOM:ShroomiumPickaxe",
       "~CUSTOM:PhosphoriumPickaxe",
       "~CUSTOM:MushyPickaxe",
@@ -21246,6 +21800,7 @@
       "CUSTOM:CandiedGrassBlock"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CUSTOM:MythrilShovel",
       "~CUSTOM:ShroomiumShovel",
       "~CUSTOM:PhosphoriumShovel",
       "~CUSTOM:MushyShovel",
@@ -21264,6 +21819,8 @@
       "Blocks.LAPIS_BLOCK"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MythrilArmor.legs",
+      "~CUSTOM:PhosphoriumArmor.legs",
       "~CUSTOM:AluminumArmor.legs",
       "~CUSTOM:BeetleArmor.legs",
       "~CUSTOM:TitaniumArmor.legs"
@@ -21723,6 +22280,11 @@
       "UraniumGearbox",
       "CoolantRod",
       "Plutonium",
+      "MythrilShards",
+      "MythrilIngot",
+      "FormedMythrilShards",
+      "FiredMythrilIngot",
+      "MythrilNugget",
       "RawQuartz",
       "Silicon",
       "BasicCircuit",
@@ -21786,10 +22348,11 @@
       "HexagemComplex",
       "CapacityGemModule",
       "EmptyGemModule",
-      "Graphite",
-      "CompressedCoal",
-      "SupercompressedCarbon",
       "ActivatedCharcoal",
+      "SupercompressedCarbon",
+      "CompressedCoal",
+      "Graphite",
+      "GraphiteRod",
       "ShroomiumChunk",
       "LifeEssence",
       "FireEssence",
@@ -21802,8 +22365,7 @@
       "Phosphorus",
       "PhosphoriumIngot",
       "PhosphorusTorch",
-      "HalloweenQuestDisc",
-      "GraphiteRod"
+      "HalloweenQuestDisc"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
       "ScorchedWoodenPickaxe",
@@ -21811,6 +22373,7 @@
       "ScorchedWoodenShovel",
       "ScorchedWoodenSword",
       "ScorchedWoodenHoe",
+      "ScorchedBow",
       "PineWoodenPickaxe",
       "PineWoodenAxe",
       "PineWoodenShovel",
@@ -21843,12 +22406,13 @@
       "AluminumSword",
       "AluminumHoe",
       "IronDrill",
+      "AluminumArmor",
       "PhosphoriumPickaxe",
       "PhosphoriumAxe",
       "PhosphoriumShovel",
       "PhosphoriumSword",
       "PhosphoriumHoe",
-      "AluminumArmor",
+      "PhosphoriumArmor",
       "TitaniumPickaxe",
       "TitaniumAxe",
       "TitaniumBattleaxe",
@@ -21857,6 +22421,12 @@
       "TitaniumHoe",
       "DurableDrill",
       "TitaniumArmor",
+      "MythrilPickaxe",
+      "MythrilAxe",
+      "MythrilShovel",
+      "MythrilSword",
+      "MythrilHoe",
+      "MythrilArmor",
       "MathWorkbook",
       "FunctionBlaster",
       "SigmaNotator",
@@ -21896,8 +22466,7 @@
       "ImmunityPotion",
       "ImmunityPotion2",
       "ImmunityPotion3",
-      "JumpyPotion",
-      "ScorchedBow"
+      "JumpyPotion"
     ],
     "CUSTOM:AlternateDimensionWorld": [
       "ScorchedEarth",
@@ -21984,6 +22553,7 @@
       "ShaleUraniumOre",
       "ShalePhosphorusOre",
       "ShalePyroliteOre",
+      "ShaleMythrilOre",
       "PyreMantle",
       "PyricCobble",
       "MantleAluminumOre",
@@ -21995,6 +22565,7 @@
       "MantleUraniumOre",
       "MantlePhosphorusOre",
       "MantlePyroliteOre",
+      "MantleMythrilOre",
       "Veridium",
       "VeridiumCobble",
       "VeridiumAluminumOre",
@@ -22006,6 +22577,7 @@
       "VeridiumUraniumOre",
       "VeridiumPhosphorusOre",
       "VeridiumPyroliteOre",
+      "VeridiumMythrilOre",
       "RichDirt",
       "LushGrassBlock",
       "CandiedGrassBlock",
@@ -22152,7 +22724,7 @@
       "item.alternate_dimension.fruit_salad": "Fruit Salad",
       "item.alternate_dimension.titanium_gear": "Titanium Gear",
       "item.alternate_dimension.cheese": "Cheese",
-      "item.alternate_dimension.beetle_sword": "Beetle Blade",
+      "item.alternate_dimension.beetle_sword": "The Beetle Blade",
       "item.alternate_dimension.durable_drill": "Durable Drill",
       "gui.alternate_dimension.biome_selector.label_biome_locator": "Biome Locator",
       "item.alternate_dimension.titanium_plate": "Titanium Plate",
@@ -22340,7 +22912,7 @@
       "gui.alternate_dimension.electric_smelter_gui.label_electric_smelter": "Electric Smelter",
       "item.alternate_dimension.titanium_shovel": "Titanium Shovel",
       "item.alternate_dimension.titanium_armor_boots": "Titanium Boots",
-      "item.alternate_dimension.beetle_sword.description_0": "Has a chance to summon a friendly beetle on hit",
+      "item.alternate_dimension.beetle_sword.description_0": "A powerful relic created by a mythril sword swallowed by the beetle queen, infusing it with beetle power.",
       "item.alternate_dimension.chef_spawn_egg": "Chef Spawn Egg",
       "item.alternate_dimension.wooden_drill_head": "Wooden Drill Head",
       "key.alternate_dimension.toggle_jetpack_engine": "Toggle Jetpack Engine",
@@ -22753,7 +23325,30 @@
       "item.alternate_dimension.shroomium_hoe": "Shroomium Hoe",
       "block.alternate_dimension.planet_core": "Planet Core",
       "item.alternate_dimension.graphite_rod": "Graphite Rod",
-      "item.alternate_dimension.scorched_bow": "Scorched Bow"
+      "item.alternate_dimension.scorched_bow": "Scorched Bow",
+      "item.alternate_dimension.beetle_sword.description_2": "Has a chance to summon a friendly beetle on hit.",
+      "item.alternate_dimension.beetle_sword.description_1": "Grants the wielder increased speed, agility, and armor.",
+      "block.alternate_dimension.veridium_mythril_ore": "Veridium Mythril Ore",
+      "block.alternate_dimension.shale_mythril_ore": "Shale Mythril Ore",
+      "block.alternate_dimension.mantle_mythril_ore": "Mantle Mythril Ore",
+      "item.alternate_dimension.mythril_shards": "Mythril Shards",
+      "item.alternate_dimension.mythril_ingot": "Mythril Ingot",
+      "item.alternate_dimension.formed_mythril_shards": "Formed Mythril Shards",
+      "item.alternate_dimension.fired_mythril_ingot": "Fired Mythril Ingot",
+      "item.alternate_dimension.mythril_pickaxe": "Mythril Pickaxe",
+      "item.alternate_dimension.mythril_axe": "Mythril Axe",
+      "item.alternate_dimension.mythril_shovel": "Mythril Shovel",
+      "item.alternate_dimension.mythril_sword": "Mythril Sword",
+      "item.alternate_dimension.mythril_hoe": "Mythril Hoe",
+      "item.alternate_dimension.mythril_nugget": "Mythril Nugget",
+      "item.alternate_dimension.phosphorium_armor_chestplate": "Phosphorium Chestplate",
+      "item.alternate_dimension.phosphorium_armor_leggings": "Phosphorium Leggings",
+      "item.alternate_dimension.phosphorium_armor_boots": "Phosphorium Boots",
+      "item.alternate_dimension.phosphorium_armor_helmet": "Phosphorium Helmet",
+      "item.alternate_dimension.mythril_armor_helmet": "Mythril Helmet",
+      "item.alternate_dimension.mythril_armor_leggings": "Mythril Leggings",
+      "item.alternate_dimension.mythril_armor_boots": "Mythril Boots",
+      "item.alternate_dimension.mythril_armor_chestplate": "Mythril Chestplate"
     }
   },
   "metadata": {
@@ -22962,6 +23557,10 @@
               },
               {
                 "name": "Holystone",
+                "children": []
+              },
+              {
+                "name": "Mythril",
                 "children": []
               }
             ]

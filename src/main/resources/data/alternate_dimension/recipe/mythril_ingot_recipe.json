@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mythril_ingot",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:permafrost_block"
+    },
+    "b": {
+      "item": "alternate_dimension:fired_mythril_ingot"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:mythril_ingot",
+    "count": 1
+  }
+}

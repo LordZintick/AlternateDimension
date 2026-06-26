@@ -281,6 +281,9 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> SCORCHED_PLATFORM;
 	public static final DeferredBlock<Block> CLOUD_PLATFORM;
 	public static final DeferredBlock<Block> PLANET_CORE;
+	public static final DeferredBlock<Block> VERIDIUM_MYTHRIL_ORE;
+	public static final DeferredBlock<Block> SHALE_MYTHRIL_ORE;
+	public static final DeferredBlock<Block> MANTLE_MYTHRIL_ORE;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -541,6 +544,9 @@ public class AlternateDimensionModBlocks {
 		SCORCHED_PLATFORM = REGISTRY.register("scorched_platform", ScorchedPlatformBlock::new);
 		CLOUD_PLATFORM = REGISTRY.register("cloud_platform", CloudPlatformBlock::new);
 		PLANET_CORE = REGISTRY.register("planet_core", PlanetCoreBlock::new);
+		VERIDIUM_MYTHRIL_ORE = REGISTRY.register("veridium_mythril_ore", VeridiumMythrilOreBlock::new);
+		SHALE_MYTHRIL_ORE = REGISTRY.register("shale_mythril_ore", ShaleMythrilOreBlock::new);
+		MANTLE_MYTHRIL_ORE = REGISTRY.register("mantle_mythril_ore", MantleMythrilOreBlock::new);
 	}
 
 	// Start of user code block custom blocks

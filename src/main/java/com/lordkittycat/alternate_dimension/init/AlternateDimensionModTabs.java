@@ -244,6 +244,11 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
 				tabData.accept(AlternateDimensionModItems.GRAPHITE_ROD.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHARDS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_INGOT.get());
+				tabData.accept(AlternateDimensionModItems.FORMED_MYTHRIL_SHARDS.get());
+				tabData.accept(AlternateDimensionModItems.FIRED_MYTHRIL_INGOT.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_NUGGET.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_DECOR.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.SODIUM_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -348,6 +353,19 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_3.get());
 				tabData.accept(AlternateDimensionModItems.JUMPY_POTION.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_BOW.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_AXE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_HOE.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_HELMET.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_CHESTPLATE.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_LEGGINGS.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_BOOTS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_HELMET.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_CHESTPLATE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_LEGGINGS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_BOOTS.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_MATERIALS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_WORLD = REGISTRY.register("alternate_dimension_world",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_world")).icon(() -> new ItemStack(AlternateDimensionModBlocks.COOKIE_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -467,6 +485,9 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.LIGHTNING_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModItems.METEOROID_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModBlocks.PLANET_CORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE.get().asItem());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_UTILITIES = REGISTRY.register("alternate_dimension_utilities", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_utilities")).icon(() -> new ItemStack(AlternateDimensionModBlocks.ALLOY_SMELTER.get())).displayItems((parameters, tabData) -> {
