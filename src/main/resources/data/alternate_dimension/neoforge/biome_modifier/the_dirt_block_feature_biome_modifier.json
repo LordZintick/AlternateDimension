@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "alternate_dimension:the_dirt_block_feature",
+  "step": "surface_structures"
+}
