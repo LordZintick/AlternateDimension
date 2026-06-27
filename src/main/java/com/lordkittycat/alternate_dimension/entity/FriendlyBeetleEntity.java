@@ -32,17 +32,40 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class FriendlyBeetleEntity extends TamableAnimal {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(FriendlyBeetleEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(FriendlyBeetleEntity.class, EntityDataSerializers.INT);
+
 	public FriendlyBeetleEntity(EntityType<FriendlyBeetleEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
 		refreshDimensions();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "friendly_beetle");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -95,6 +118,19 @@ public class FriendlyBeetleEntity extends TamableAnimal {
 		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override

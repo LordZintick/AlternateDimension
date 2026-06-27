@@ -43,6 +43,8 @@ public class DarkWolfRenderer extends MobRenderer<DarkWolfEntity, Modelwolf<Dark
 
 	@Override
 	public ResourceLocation getTextureLocation(DarkWolfEntity entity) {
+		if (entity.getTexture() != "dark_wolf_glowing_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

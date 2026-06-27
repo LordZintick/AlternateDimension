@@ -24,6 +24,8 @@ public class BeetleChaserRenderer extends MobRenderer<BeetleChaserEntity, Silver
 
 	@Override
 	public ResourceLocation getTextureLocation(BeetleChaserEntity entity) {
+		if (entity.getTexture() != "beetle")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

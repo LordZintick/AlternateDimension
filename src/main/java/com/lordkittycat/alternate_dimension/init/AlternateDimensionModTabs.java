@@ -163,6 +163,11 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.URANIUM_GEARBOX.get());
 				tabData.accept(AlternateDimensionModItems.COOLANT_ROD.get());
 				tabData.accept(AlternateDimensionModItems.PLUTONIUM.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHARDS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_INGOT.get());
+				tabData.accept(AlternateDimensionModItems.FORMED_MYTHRIL_SHARDS.get());
+				tabData.accept(AlternateDimensionModItems.FIRED_MYTHRIL_INGOT.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_NUGGET.get());
 				tabData.accept(AlternateDimensionModItems.RAW_QUARTZ.get());
 				tabData.accept(AlternateDimensionModItems.SILICON.get());
 				tabData.accept(AlternateDimensionModItems.BASIC_CIRCUIT.get());
@@ -191,6 +196,8 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.AZURE_BOWL.get());
 				tabData.accept(AlternateDimensionModItems.WOODEN_DRILL_HEAD.get());
 				tabData.accept(AlternateDimensionModItems.HEMP.get());
+				tabData.accept(AlternateDimensionModItems.BARLEY.get());
+				tabData.accept(AlternateDimensionModItems.BARLEY_BREAD.get());
 				tabData.accept(AlternateDimensionModItems.RED_GUMMY_BEAR_ITEM.get());
 				tabData.accept(AlternateDimensionModItems.BLUE_GUMMY_BEAR_ITEM.get());
 				tabData.accept(AlternateDimensionModItems.ORANGE_GUMMY_BEAR.get());
@@ -226,10 +233,11 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.HEXAGEM_COMPLEX.get());
 				tabData.accept(AlternateDimensionModItems.CAPACITY_GEM_MODULE.get());
 				tabData.accept(AlternateDimensionModItems.EMPTY_GEM_MODULE.get());
-				tabData.accept(AlternateDimensionModItems.GRAPHITE.get());
-				tabData.accept(AlternateDimensionModItems.COMPRESSED_COAL.get());
-				tabData.accept(AlternateDimensionModItems.SUPERCOMPRESSED_CARBON.get());
 				tabData.accept(AlternateDimensionModItems.ACTIVATED_CHARCOAL.get());
+				tabData.accept(AlternateDimensionModItems.SUPERCOMPRESSED_CARBON.get());
+				tabData.accept(AlternateDimensionModItems.COMPRESSED_COAL.get());
+				tabData.accept(AlternateDimensionModItems.GRAPHITE.get());
+				tabData.accept(AlternateDimensionModItems.GRAPHITE_ROD.get());
 				tabData.accept(AlternateDimensionModItems.SHROOMIUM_CHUNK.get());
 				tabData.accept(AlternateDimensionModItems.LIFE_ESSENCE.get());
 				tabData.accept(AlternateDimensionModItems.FIRE_ESSENCE.get());
@@ -243,12 +251,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
-				tabData.accept(AlternateDimensionModItems.GRAPHITE_ROD.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHARDS.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_INGOT.get());
-				tabData.accept(AlternateDimensionModItems.FORMED_MYTHRIL_SHARDS.get());
-				tabData.accept(AlternateDimensionModItems.FIRED_MYTHRIL_INGOT.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_NUGGET.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_DECOR.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.SODIUM_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -257,6 +259,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_SHOVEL.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_HOE.get());
+				tabData.accept(AlternateDimensionModItems.SCORCHED_BOW.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_PICKAXE.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_AXE.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_SHOVEL.get());
@@ -289,15 +292,19 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_HOE.get());
 				tabData.accept(AlternateDimensionModItems.IRON_DRILL.get());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_HELMET.get());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_CHESTPLATE.get());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_LEGGINGS.get());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_BOOTS.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_PICKAXE.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_AXE.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_SHOVEL.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_HOE.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_HELMET.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_CHESTPLATE.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_LEGGINGS.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_ARMOR_BOOTS.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_HELMET.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_CHESTPLATE.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_LEGGINGS.get());
+				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_BOOTS.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_PICKAXE.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_AXE.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_BATTLEAXE.get());
@@ -309,10 +316,22 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.TITANIUM_ARMOR_CHESTPLATE.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_ARMOR_LEGGINGS.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_ARMOR_BOOTS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_AXE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_HOE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_HELMET.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_CHESTPLATE.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_LEGGINGS.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_BOOTS.get());
 				tabData.accept(AlternateDimensionModItems.MATH_WORKBOOK.get());
 				tabData.accept(AlternateDimensionModItems.FUNCTION_BLASTER.get());
 				tabData.accept(AlternateDimensionModItems.SIGMA_NOTATOR.get());
 				tabData.accept(AlternateDimensionModItems.RPG.get());
+				tabData.accept(AlternateDimensionModItems.MINERS_PET.get());
+				tabData.accept(AlternateDimensionModItems.ADVENTURERS_PET.get());
+				tabData.accept(AlternateDimensionModItems.WARRIORS_PET.get());
 				tabData.accept(AlternateDimensionModItems.CHEESE_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.SEED_GUN.get());
 				tabData.accept(AlternateDimensionModItems.BEETLE_SWORD.get());
@@ -352,20 +371,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_2.get());
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_3.get());
 				tabData.accept(AlternateDimensionModItems.JUMPY_POTION.get());
-				tabData.accept(AlternateDimensionModItems.SCORCHED_BOW.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_PICKAXE.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_AXE.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_SHOVEL.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_SWORD.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_HOE.get());
-				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_HELMET.get());
-				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_CHESTPLATE.get());
-				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_LEGGINGS.get());
-				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_ARMOR_BOOTS.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_HELMET.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_CHESTPLATE.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_LEGGINGS.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_ARMOR_BOOTS.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_MATERIALS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_WORLD = REGISTRY.register("alternate_dimension_world",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_world")).icon(() -> new ItemStack(AlternateDimensionModBlocks.COOKIE_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -398,6 +403,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.AERO_CORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.BUSH_LEAVES.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HEMP_SEEDS.get());
+				tabData.accept(AlternateDimensionModItems.BARLEY_SEEDS.get());
 				tabData.accept(AlternateDimensionModItems.STRAWBERRY.get());
 				tabData.accept(AlternateDimensionModItems.RASPBERRY.get());
 				tabData.accept(AlternateDimensionModItems.BLUEBERRY.get());
@@ -453,6 +459,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.SHALE_URANIUM_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SHALE_PHOSPHORUS_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SHALE_PYROLITE_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PYRE_MANTLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PYRIC_COBBLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.MANTLE_ALUMINUM_ORE.get().asItem());
@@ -464,6 +471,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.MANTLE_URANIUM_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.MANTLE_PHOSPHORUS_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.MANTLE_PYROLITE_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_COBBLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_ALUMINUM_ORE.get().asItem());
@@ -475,6 +483,8 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_URANIUM_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_PHOSPHORUS_ORE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_PYROLITE_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.RICH_FARMLAND.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.RICH_DIRT.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.LUSH_GRASS_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.CANDIED_GRASS_BLOCK.get().asItem());
@@ -485,9 +495,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.LIGHTNING_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModItems.METEOROID_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModBlocks.PLANET_CORE.get().asItem());
-				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE.get().asItem());
-				tabData.accept(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE.get().asItem());
-				tabData.accept(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE.get().asItem());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_UTILITIES = REGISTRY.register("alternate_dimension_utilities", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_utilities")).icon(() -> new ItemStack(AlternateDimensionModBlocks.ALLOY_SMELTER.get())).displayItems((parameters, tabData) -> {
@@ -509,6 +516,8 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PORTAL_WAND.get());
 				tabData.accept(AlternateDimensionModBlocks.SPIKES.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.CRYSTAL_CHEST.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.THE_DIRT_BLOCK.get().asItem());
+				tabData.accept(AlternateDimensionModItems.INSTATUNNEL.get());
 				tabData.accept(AlternateDimensionModBlocks.IMBUNEMENT_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SCORCHED_CRAFTING_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.REDWOOD_CRAFTING_TABLE.get().asItem());

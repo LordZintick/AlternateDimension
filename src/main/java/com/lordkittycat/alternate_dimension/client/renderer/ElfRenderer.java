@@ -23,6 +23,8 @@ public class ElfRenderer extends MobRenderer<ElfEntity, Modelplayer_model<ElfEnt
 
 	@Override
 	public ResourceLocation getTextureLocation(ElfEntity entity) {
+		if (entity.getTexture() != "elf")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

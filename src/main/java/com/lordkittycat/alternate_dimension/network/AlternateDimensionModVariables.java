@@ -17,7 +17,6 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -46,38 +45,26 @@ public class AlternateDimensionModVariables {
 
 	@SubscribeEvent
 	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-		if (event.getEntity() instanceof ServerPlayer player) {
-			for (Entity entityiterator : player.level().players())
-				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
-					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
-		}
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-		if (event.getEntity() instanceof ServerPlayer player) {
-			for (Entity entityiterator : player.level().players())
-				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
-					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
-		}
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-		if (event.getEntity() instanceof ServerPlayer player) {
-			for (Entity entityiterator : player.level().players())
-				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
-					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
-		}
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
 		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
@@ -120,8 +107,8 @@ public class AlternateDimensionModVariables {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData mapdata = MapVariables.get(event.getEntity().level());
-			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			SavedData mapdata = MapVariables.get(player.level());
+			SavedData worlddata = WorldVariables.get(player.level());
 			if (mapdata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
 			if (worlddata != null)
@@ -132,7 +119,7 @@ public class AlternateDimensionModVariables {
 	@SubscribeEvent
 	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(player.level());
 			if (worlddata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
 		}
@@ -364,16 +351,14 @@ public class AlternateDimensionModVariables {
 		}
 	}
 
-	public record PlayerVariablesSyncMessage(PlayerVariables data, int player) implements CustomPacketPayload {
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
 		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "player_variables_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
-			buffer.writeInt(message.player());
-			buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess()));
-		}, (RegistryFriendlyByteBuf buffer) -> {
-			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables(), buffer.readInt());
-			message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
-			return message;
-		});
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
+				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
+					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+					return message;
+				});
 
 		@Override
 		public Type<PlayerVariablesSyncMessage> type() {
@@ -382,12 +367,7 @@ public class AlternateDimensionModVariables {
 
 		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> {
-					Entity player = context.player().level().getEntity(message.player);
-					if (player == null)
-						return;
-					player.getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()));
-				}).exceptionally(e -> {
+				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});

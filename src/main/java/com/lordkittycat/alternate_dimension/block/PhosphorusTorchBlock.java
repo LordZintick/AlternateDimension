@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -17,7 +15,7 @@ public class PhosphorusTorchBlock extends Block {
 	private static final VoxelShape SHAPE = box(7, 0, 7, 9, 10, 9);
 
 	public PhosphorusTorchBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).instabreak().lightLevel(s -> 15).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).instabreak().lightLevel(blockstate -> 15).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

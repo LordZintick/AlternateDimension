@@ -16,6 +16,8 @@ public class ChefRenderer extends MobRenderer<ChefEntity, Modelplayer_model<Chef
 
 	@Override
 	public ResourceLocation getTextureLocation(ChefEntity entity) {
+		if (entity.getTexture() != "chef_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

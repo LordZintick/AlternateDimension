@@ -27,16 +27,39 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
 public class ChefEntity extends Monster implements RangedAttackMob {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ChefEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(ChefEntity.class, EntityDataSerializers.INT);
+
 	public ChefEntity(EntityType<ChefEntity> type, Level world) {
 		super(type, world);
 		xpReward = 5;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AlternateDimensionModItems.BREADSTICK_LAUNCHER.get()));
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "chef_texture");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -80,6 +103,19 @@ public class ChefEntity extends Monster implements RangedAttackMob {
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override

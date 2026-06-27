@@ -25,6 +25,8 @@ public class FriendlyBeetleRenderer extends MobRenderer<FriendlyBeetleEntity, Si
 
 	@Override
 	public ResourceLocation getTextureLocation(FriendlyBeetleEntity entity) {
+		if (entity.getTexture() != "friendly_beetle")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

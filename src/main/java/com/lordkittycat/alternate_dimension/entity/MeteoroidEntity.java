@@ -19,17 +19,40 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 
 import com.lordkittycat.alternate_dimension.procedures.NeverProcedure;
 import com.lordkittycat.alternate_dimension.procedures.MeteoroidSpawnMeteoriteProcedure;
 import com.lordkittycat.alternate_dimension.procedures.MeteoroidParticlesProcedure;
 
 public class MeteoroidEntity extends Monster {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(MeteoroidEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(MeteoroidEntity.class, EntityDataSerializers.INT);
+
 	public MeteoroidEntity(EntityType<MeteoroidEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "meteoroid_texture");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -97,6 +120,19 @@ public class MeteoroidEntity extends Monster {
 	@Override
 	public boolean ignoreExplosion(Explosion explosion) {
 		return true;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override

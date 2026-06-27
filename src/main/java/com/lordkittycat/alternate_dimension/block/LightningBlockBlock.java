@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
@@ -28,7 +26,7 @@ public class LightningBlockBlock extends Block {
 				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact"))))
-				.strength(3f, 100f).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+				.strength(3f, 100f).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,7 +15,7 @@ import com.lordkittycat.alternate_dimension.procedures.SpawnCloudMobsProcedure;
 
 public class AeroCoreBlock extends Block {
 	public AeroCoreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SNOW).strength(5f, 100f).lightLevel(s -> 15).requiresCorrectToolForDrops().randomTicks());
+		super(BlockBehaviour.Properties.of().sound(SoundType.SNOW).strength(5f, 100f).lightLevel(blockstate -> 15).requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override

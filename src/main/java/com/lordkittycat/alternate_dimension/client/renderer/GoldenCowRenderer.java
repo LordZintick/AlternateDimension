@@ -16,6 +16,8 @@ public class GoldenCowRenderer extends MobRenderer<GoldenCowEntity, Modelcow_fix
 
 	@Override
 	public ResourceLocation getTextureLocation(GoldenCowEntity entity) {
+		if (entity.getTexture() != "golden_cow")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

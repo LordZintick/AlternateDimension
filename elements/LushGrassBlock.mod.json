@@ -141,6 +141,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TillIntoFarmland"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

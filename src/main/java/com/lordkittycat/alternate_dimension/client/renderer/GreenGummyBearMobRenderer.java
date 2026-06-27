@@ -16,6 +16,8 @@ public class GreenGummyBearMobRenderer extends MobRenderer<GreenGummyBearMobEnti
 
 	@Override
 	public ResourceLocation getTextureLocation(GreenGummyBearMobEntity entity) {
+		if (entity.getTexture() != "gummy_bear_texture_green")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

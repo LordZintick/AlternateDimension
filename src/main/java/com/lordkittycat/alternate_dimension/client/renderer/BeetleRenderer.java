@@ -24,6 +24,8 @@ public class BeetleRenderer extends MobRenderer<BeetleEntity, SilverfishModel<Be
 
 	@Override
 	public ResourceLocation getTextureLocation(BeetleEntity entity) {
+		if (entity.getTexture() != "beetle")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

@@ -543,6 +543,15 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> MYTHRIL_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> MYTHRIL_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> MYTHRIL_ARMOR_BOOTS;
+	public static final DeferredItem<Item> THE_DIRT_BLOCK;
+	public static final DeferredItem<Item> MINERS_PET;
+	public static final DeferredItem<Item> ADVENTURERS_PET;
+	public static final DeferredItem<Item> WARRIORS_PET;
+	public static final DeferredItem<Item> RICH_FARMLAND;
+	public static final DeferredItem<Item> BARLEY_SEEDS;
+	public static final DeferredItem<Item> BARLEY;
+	public static final DeferredItem<Item> BARLEY_BREAD;
+	public static final DeferredItem<Item> INSTATUNNEL;
 	static {
 		TITANIUM_INGOT = REGISTRY.register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1054,6 +1063,15 @@ public class AlternateDimensionModItems {
 		MYTHRIL_ARMOR_CHESTPLATE = REGISTRY.register("mythril_armor_chestplate", MythrilArmorItem.Chestplate::new);
 		MYTHRIL_ARMOR_LEGGINGS = REGISTRY.register("mythril_armor_leggings", MythrilArmorItem.Leggings::new);
 		MYTHRIL_ARMOR_BOOTS = REGISTRY.register("mythril_armor_boots", MythrilArmorItem.Boots::new);
+		THE_DIRT_BLOCK = block(AlternateDimensionModBlocks.THE_DIRT_BLOCK, new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant());
+		MINERS_PET = REGISTRY.register("miners_pet", MinersPetItem::new);
+		ADVENTURERS_PET = REGISTRY.register("adventurers_pet", AdventurersPetItem::new);
+		WARRIORS_PET = REGISTRY.register("warriors_pet", WarriorsPetItem::new);
+		RICH_FARMLAND = block(AlternateDimensionModBlocks.RICH_FARMLAND);
+		BARLEY_SEEDS = REGISTRY.register("barley_seeds", BarleySeedsItem::new);
+		BARLEY = REGISTRY.register("barley", BarleyItem::new);
+		BARLEY_BREAD = REGISTRY.register("barley_bread", BarleyBreadItem::new);
+		INSTATUNNEL = REGISTRY.register("instatunnel", InstatunnelItem::new);
 	}
 
 	// Start of user code block custom items

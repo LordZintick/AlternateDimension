@@ -5,6 +5,6 @@
     "file": "Alternate Dimension Main Config",
     "configType": 0,
     "config": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"config_start\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "defining": true
+    "defining": false
   }
 }

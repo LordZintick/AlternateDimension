@@ -16,6 +16,8 @@ public class CorruptedElfRenderer extends MobRenderer<CorruptedElfEntity, Modelp
 
 	@Override
 	public ResourceLocation getTextureLocation(CorruptedElfEntity entity) {
+		if (entity.getTexture() != "corrupted-elf")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

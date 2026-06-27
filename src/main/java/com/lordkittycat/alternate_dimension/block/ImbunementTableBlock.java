@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -36,7 +34,7 @@ public class ImbunementTableBlock extends Block implements EntityBlock {
 	public static final BooleanProperty RUNNING = BooleanProperty.create("running");
 
 	public ImbunementTableBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(2f, 10f).lightLevel(s -> 10).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(2f, 10f).lightLevel(blockstate -> 10).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(RUNNING, false));
 	}
 
