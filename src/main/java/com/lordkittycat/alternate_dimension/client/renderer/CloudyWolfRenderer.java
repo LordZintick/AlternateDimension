@@ -23,6 +23,8 @@ public class CloudyWolfRenderer extends MobRenderer<CloudyWolfEntity, Modelwolf<
 
 	@Override
 	public ResourceLocation getTextureLocation(CloudyWolfEntity entity) {
+		if (entity.getTexture() != "cloudy_wolf_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

@@ -1,16 +1,3 @@
-/locate biome alternate_dimension:highlands
-/tp @s -753 73 -1028
-/effect give Dev minecraft:night_vision infinite 255 true
-/meteor
-/gamerule keepInventory true
-/effect clear Dev
-/time set day
-/effect give Dev minecraft:night_vision infinite 255 true
-/time set night
-/effect give Dev minecraft:night_vision infinite 255 true
-/summon minecraft:lightning_bolt
-/playsound alternate_dimension:alternate_dimension_music music Dev
-/give Dev alternate_dimension:enchanted_backpack
 /effect clear Dev
 /give Dev alternate_dimension:phosphorus_torch 128
 /effect give Dev minecraft:night_vision infinite 255 true
@@ -48,3 +35,16 @@
 /locate structure alternate_dimension:scorched_tower
 /tp @s 9600 ~ 592
 /data merge entity ee411ce5-c9aa-47bb-9bd2-8663f2192e1e {NoAI:1b}
+/effect give Dev minecraft:night_vision infinite 255 true
+/give Dev alternate_dimension:titanium_pickaxe
+/clear Dev
+/recipe take Dev *
+/gamerule keepInventory true
+/locate biome alternate_dimension:fruity_gardens
+/tp @s 158 85 -65
+/time set day
+/give Dev alternate_dimension:home_block
+/data get block -30 80 -14
+/weather thunder
+/effect give Dev minecraft:night_vision infinite 255 true
+/data get block 60 74 39

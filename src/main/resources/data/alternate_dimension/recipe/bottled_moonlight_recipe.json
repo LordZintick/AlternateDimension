@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:imbunement_table_recipe",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:umberflower"
+    },
+    {
+      "item": "alternate_dimension:big_bottle"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:bottled_moonlight",
+      "count": 1
+    }
+  ]
+}

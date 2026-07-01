@@ -1,0 +1,87 @@
+{
+  "_fv": 85,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "starcaller_scepter",
+    "customModelName": "Tool",
+    "guiTexture": "",
+    "customProperties": {},
+    "states": [],
+    "animations": [],
+    "name": "Starcaller Scepter",
+    "rarity": "RARE",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AlternateDimensionEquipment"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 40,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 4.0,
+    "attackSpeed": 1.2,
+    "specialInformation": {
+      "fixedValue": [
+        "A magical staff powered by lightning energy that wields the ability to summon the power of the heavens unto thine enemy.",
+        "Right-Click to summon a long line of lightning strikes.",
+        "Grants the ability to fly while it is thundering.",
+        "Prevents lightning damage while held."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 99,
+    "onRightClickedInAir": {
+      "name": "StarcallerScepterRightclicked"
+    },
+    "onItemInUseTick": {
+      "name": "AllowFlightInThunderstorm"
+    },
+    "onFinishUsingItem": {
+      "name": "SummonLightningLine"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:PlusProjectile"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
+  }
+}

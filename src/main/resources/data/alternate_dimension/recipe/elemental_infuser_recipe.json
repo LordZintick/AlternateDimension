@@ -1,0 +1,24 @@
+{
+  "type": "alternate_dimension:refinery_recipe_type",
+  "ingredients": [
+    {
+      "tag": "alternate_dimension:crafting_tables"
+    },
+    {
+      "item": "alternate_dimension:elementium_ingot"
+    }
+  ],
+  "integers": [
+    4,
+    1
+  ],
+  "strings": [
+    "5"
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:elemental_inscriber",
+      "count": 1
+    }
+  ]
+}

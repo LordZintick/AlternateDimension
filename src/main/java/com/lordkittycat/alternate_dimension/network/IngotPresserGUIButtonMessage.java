@@ -49,7 +49,7 @@ public record IngotPresserGUIButtonMessage(int buttonID, int x, int y, int z) im
 			return;
 		if (buttonID == 0) {
 
-			PressIngotProcedure.execute(world, x, y, z, entity);
+			PressIngotProcedure.execute(world, x, y, z);
 		}
 	}
 

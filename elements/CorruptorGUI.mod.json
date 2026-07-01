@@ -23,7 +23,7 @@
           },
           "hasShadow": false,
           "x": 191,
-          "y": 45,
+          "y": 43,
           "locked": false
         }
       },
@@ -41,24 +41,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 205,
-          "y": 73,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_press",
-          "text": "Corrupt",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "CorruptItem"
-          },
-          "width": 56,
-          "height": 20,
-          "x": 226,
-          "y": 72,
+          "x": 172,
+          "y": 65,
           "locked": false
         }
       },
@@ -77,6 +61,47 @@
           "hasShadow": false,
           "x": 132,
           "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red_right_arrow.png",
+          "use1Xscale": false,
+          "x": 207,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 239,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_progress_display",
+          "text": {
+            "fixedValue": "",
+            "name": "ProgressDisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 93,
           "locked": false
         }
       }

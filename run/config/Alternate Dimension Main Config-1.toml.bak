@@ -1,3 +1,5 @@
 [magic]
+	#Spell Powers
 	spell_powers = ["fireball:1"]
+	#Spell Mana Costs
 	spell_mana_costs = ["fireball:10"]

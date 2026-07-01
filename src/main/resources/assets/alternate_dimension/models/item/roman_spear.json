@@ -1,7 +1,7 @@
 {
   "parent": "alternate_dimension:custom/roman_spear",
   "textures": {
-    "1": "alternate_dimension:block/roman_texture",
+    "2": "alternate_dimension:block/roman_texture",
     "particle": "alternate_dimension:item/roman_texture"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "alternate_dimension:block/barley_plant_4",
+    "particle": "alternate_dimension:block/barley_plant_1"
+  },
+  "render_type": "cutout"
+}

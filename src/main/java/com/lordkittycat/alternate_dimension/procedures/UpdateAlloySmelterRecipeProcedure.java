@@ -150,7 +150,9 @@ public class UpdateAlloySmelterRecipeProcedure {
 				}
 			}.getResult()).copy();
 		}
-		if (!(result.getItem() == ItemStack.EMPTY.getItem()) && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500) {
+		if (!(result.getItem() == ItemStack.EMPTY.getItem()) && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500
+				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == ItemStack.EMPTY.getItem() || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == result.getItem()
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() <= (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getMaxStackSize() - result.getCount())) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);

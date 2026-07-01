@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:titanium_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:titanium_plate"
+    },
+    "c": {
+      "item": "alternate_dimension:advanced_machine_casing"
+    },
+    "d": {
+      "item": "alternate_dimension:phosphorus"
+    },
+    "e": {
+      "item": "alternate_dimension:ingot_presser"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:advanced_ingot_presser",
+    "count": 1
+  }
+}

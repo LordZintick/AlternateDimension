@@ -40,7 +40,7 @@ public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<Imbu
 
 	@Override
 	public Component getTitle() {
-		return Component.literal("Imbunement");
+		return Component.literal("Mystic Imbunement");
 	}
 
 	@Override
@@ -56,6 +56,11 @@ public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<Imbu
 	@Override
 	public int getHeight() {
 		return this.background.getHeight();
+	}
+
+	@Override
+	public boolean needsRecipeBorder() {
+		return false;
 	}
 
 	@Override

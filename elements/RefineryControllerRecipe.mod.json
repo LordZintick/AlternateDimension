@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "refinery",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ShroomiumChunk"
+      },
+      {
+        "value": "CUSTOM:LightningBottle"
+      },
+      {
+        "value": "CUSTOM:ShroomiumChunk"
+      },
+      {
+        "value": "CUSTOM:TitaniumGearbox"
+      },
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      },
+      {
+        "value": "CUSTOM:TitaniumGearbox"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:OmegaEssence"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RefineryController"
+    },
+    "name": "refinery_controller_recipe",
+    "namespace": "mod"
+  }
+}

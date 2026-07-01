@@ -1,5 +1,7 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.energy.IEnergyStorage;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -11,8 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -24,13 +25,11 @@ import java.util.stream.Collectors;
 import java.util.List;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.IngotPresserRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.init.AlternateDimensionModMenus;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 public class PressIngotProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack result = ItemStack.EMPTY;
 		result = (new Object() {
 			public ItemStack getResult() {
@@ -39,7 +38,7 @@ public class PressIngotProcedure {
 					List<IngotPresserRecipeTypeRecipe> recipes = rm.getAllRecipesFor(IngotPresserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 					for (IngotPresserRecipeTypeRecipe recipe : recipes) {
 						NonNullList<Ingredient> ingredients = recipe.getIngredients();
-						if (!ingredients.get(0).test((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof AlternateDimensionModMenus.MenuAccessor _menu0 ? _menu0.getSlots().get(0).getItem() : ItemStack.EMPTY)))
+						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 							continue;
 						return recipe.getResultItems().get(0).copy();
 					}
@@ -47,8 +46,10 @@ public class PressIngotProcedure {
 				return ItemStack.EMPTY;
 			}
 		}.getResult()).copy();
-		if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 50
-				* (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof AlternateDimensionModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(0).getItem() : ItemStack.EMPTY).getCount()) {
+		if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 50 * (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount()
+				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("alternate_dimension:basic_ingot_presser_whitelist")))
+						|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == AlternateDimensionModBlocks.ADVANCED_INGOT_PRESSER.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == ItemStack.EMPTY.getItem())) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
@@ -81,8 +82,7 @@ public class PressIngotProcedure {
 				if (world instanceof ILevelExtension _ext) {
 					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
 					if (_entityStorage != null)
-						_entityStorage.extractEnergy(
-								50 * (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof AlternateDimensionModMenus.MenuAccessor _menu12 ? _menu12.getSlots().get(0).getItem() : ItemStack.EMPTY).getCount(), false);
+						_entityStorage.extractEnergy(50 * (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount(), false);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -91,15 +91,22 @@ public class PressIngotProcedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.land")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
-				if (entity instanceof Player _player && _player.containerMenu instanceof AlternateDimensionModMenus.MenuAccessor _menu) {
-					ItemStack _setstack19 = result.copy();
-					_setstack19.setCount(
-							result.getCount() * (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof AlternateDimensionModMenus.MenuAccessor _menu17 ? _menu17.getSlots().get(0).getItem() : ItemStack.EMPTY).getCount());
-					_menu.getSlots().get(0).set(_setstack19);
-					_player.containerMenu.broadcastChanges();
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					ItemStack _setstack = result.copy();
+					_setstack.setCount(result.getCount() * (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount());
+					_itemHandlerModifiable.setStackInSlot(0, _setstack);
 				}
 			}
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
 	}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {

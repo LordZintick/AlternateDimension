@@ -16,8 +16,8 @@
     "enableCraftingtable": true,
     "enableIntList": false,
     "enableStringList": false,
-    "disableJeiBorder": false,
-    "title": "Imbunement",
+    "disableJeiBorder": true,
+    "title": "Mystic Imbunement",
     "slotList": [
       {
         "type": "INPUT",

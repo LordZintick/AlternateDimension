@@ -16,6 +16,8 @@ public class WaiterRenderer extends MobRenderer<WaiterEntity, Modelplayer_model<
 
 	@Override
 	public ResourceLocation getTextureLocation(WaiterEntity entity) {
+		if (entity.getTexture() != "waiter")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

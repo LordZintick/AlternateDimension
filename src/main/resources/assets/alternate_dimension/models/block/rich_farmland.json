@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/rich_dirt",
+    "up": "alternate_dimension:block/rich_farmland",
+    "north": "alternate_dimension:block/rich_dirt",
+    "east": "alternate_dimension:block/rich_dirt",
+    "south": "alternate_dimension:block/rich_dirt",
+    "west": "alternate_dimension:block/rich_dirt",
+    "particle": "alternate_dimension:block/rich_farmland"
+  },
+  "render_type": "solid"
+}

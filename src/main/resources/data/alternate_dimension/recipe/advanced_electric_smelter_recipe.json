@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pyrobricks"
+    },
+    "b": {
+      "item": "alternate_dimension:titanium_plate"
+    },
+    "c": {
+      "item": "alternate_dimension:advanced_machine_casing"
+    },
+    "d": {
+      "item": "alternate_dimension:pyrolite_chunk"
+    },
+    "e": {
+      "item": "alternate_dimension:electric_smelter"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:advanced_electric_smelter",
+    "count": 1
+  }
+}

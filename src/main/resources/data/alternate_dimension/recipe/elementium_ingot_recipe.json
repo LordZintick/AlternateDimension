@@ -1,0 +1,28 @@
+{
+  "type": "alternate_dimension:refinery_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:elementium_fragment"
+    },
+    {
+      "item": "alternate_dimension:omega_essence"
+    }
+  ],
+  "integers": [
+    16,
+    64
+  ],
+  "strings": [
+    "10"
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:elementium_ingot",
+      "count": 1
+    },
+    {
+      "id": "alternate_dimension:omega_essence",
+      "count": 1
+    }
+  ]
+}

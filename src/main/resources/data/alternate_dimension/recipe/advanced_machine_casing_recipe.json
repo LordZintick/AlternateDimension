@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:titanium_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:titanium_plate"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:advanced_machine_casing",
+    "count": 1
+  }
+}

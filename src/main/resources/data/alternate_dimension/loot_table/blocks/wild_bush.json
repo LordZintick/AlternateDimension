@@ -45,6 +45,20 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:barley_seeds",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
         }
       ]
     }

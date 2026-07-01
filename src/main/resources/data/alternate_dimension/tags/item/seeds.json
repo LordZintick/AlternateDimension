@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:hemp_seeds"
+    "alternate_dimension:hemp_seeds",
+    "alternate_dimension:barley_seeds"
   ]
 }

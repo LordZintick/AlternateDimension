@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": "alternate_dimension:ingot_presser"
+            "items": "alternate_dimension:simple_machine_casing"
           }
         ]
       },

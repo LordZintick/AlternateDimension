@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "TAG:mod:metal_nuggets"
+        "value": "TAG:mod:altdim_planks"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -35,10 +35,10 @@
         "value": ""
       },
       {
-        "value": "TAG:minecraft:planks"
+        "value": "TAG:mod:altdim_planks"
       },
       {
-        "value": "TAG:minecraft:planks"
+        "value": "TAG:mod:altdim_planks"
       },
       {
         "value": ""

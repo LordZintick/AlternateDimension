@@ -4,31 +4,34 @@
   "definition": {
     "textureSelector": "corruptor_recipe_gui.png",
     "width": 176,
-    "height": 185,
+    "height": 80,
     "icon": {
       "value": "CUSTOM:Corruptor"
     },
     "craftingtables": [
       {
         "value": "CUSTOM:Corruptor"
+      },
+      {
+        "value": "CUSTOM:AdvancedCorruptor"
       }
     ],
     "enableCraftingtable": true,
     "enableIntList": false,
     "enableStringList": false,
-    "disableJeiBorder": false,
+    "disableJeiBorder": true,
     "title": "Corruption",
     "slotList": [
       {
         "type": "INPUT",
-        "x": 58,
-        "y": 47,
+        "x": 46,
+        "y": 25,
         "slotid": 0
       },
       {
         "type": "OUTPUT",
-        "x": 82,
-        "y": 47,
+        "x": 113,
+        "y": 25,
         "slotid": 0
       }
     ],

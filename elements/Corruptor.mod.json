@@ -128,11 +128,13 @@
     "hasInventory": true,
     "guiBoundTo": "CorruptorGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 1,
+    "inventorySize": 2,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      1
+    ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
@@ -142,6 +144,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "UpdateCorruptorRecipe"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

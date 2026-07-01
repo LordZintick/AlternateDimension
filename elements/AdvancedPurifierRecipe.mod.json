@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumGear"
+      },
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      },
+      {
+        "value": "CUSTOM:TitaniumGear"
+      },
+      {
+        "value": "CUSTOM:HolystoneGearbox"
+      },
+      {
+        "value": "CUSTOM:Purifier"
+      },
+      {
+        "value": "CUSTOM:HolystoneGearbox"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedPurifier"
+    },
+    "name": "advanced_purifier_recipe",
+    "namespace": "mod"
+  }
+}

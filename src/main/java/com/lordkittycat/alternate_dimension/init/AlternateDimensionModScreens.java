@@ -20,7 +20,6 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.BIOME_SELECTOR.get(), BiomeSelectorScreen::new);
 		event.register(AlternateDimensionModMenus.IMBUNEMENT_GUI.get(), ImbunementGUIScreen::new);
 		event.register(AlternateDimensionModMenus.INCINERATOR_GUI.get(), IncineratorGUIScreen::new);
-		event.register(AlternateDimensionModMenus.CORRUPTOR_GUI.get(), CorruptorGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ELECTRIC_SMELTER_GUI.get(), ElectricSmelterGUIScreen::new);
 		event.register(AlternateDimensionModMenus.NUCLEAR_REACTOR_GUI.get(), NuclearReactorGUIScreen::new);
 		event.register(AlternateDimensionModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
@@ -30,6 +29,11 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.CRYSTAL_CHEST_GUI.get(), CrystalChestGUIScreen::new);
 		event.register(AlternateDimensionModMenus.INTRO_SCREEN.get(), IntroScreenScreen::new);
 		event.register(AlternateDimensionModMenus.PURIFIER_GUI.get(), PurifierGUIScreen::new);
+		event.register(AlternateDimensionModMenus.CORRUPTOR_GUI.get(), CorruptorGUIScreen::new);
+		event.register(AlternateDimensionModMenus.REFINERY_GUI.get(), RefineryGUIScreen::new);
+		event.register(AlternateDimensionModMenus.ELEMENTAL_INSCRIBER_GUI.get(), ElementalInscriberGUIScreen::new);
+		event.register(AlternateDimensionModMenus.HINT_BOOK_GUI.get(), HintBookGUIScreen::new);
+		event.register(AlternateDimensionModMenus.WOODEN_BOX_GUI.get(), WoodenBoxGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

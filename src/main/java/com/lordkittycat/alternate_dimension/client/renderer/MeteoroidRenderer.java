@@ -16,6 +16,8 @@ public class MeteoroidRenderer extends MobRenderer<MeteoroidEntity, Modelmeteoro
 
 	@Override
 	public ResourceLocation getTextureLocation(MeteoroidEntity entity) {
+		if (entity.getTexture() != "meteoroid_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

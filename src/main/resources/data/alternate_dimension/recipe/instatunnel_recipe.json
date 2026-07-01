@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:phosphorus"
+    },
+    "b": {
+      "tag": "minecraft:pickaxes"
+    },
+    "c": {
+      "item": "alternate_dimension:miners_pet"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:instatunnel",
+    "count": 1
+  }
+}

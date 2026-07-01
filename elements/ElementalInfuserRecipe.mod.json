@@ -1,0 +1,32 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "refinery_recipe_type",
+    "ingredients": [
+      {
+        "value": "TAG:mod:crafting_tables"
+      },
+      {
+        "value": "CUSTOM:ElementiumIngot"
+      }
+    ],
+    "integers": [
+      4,
+      1
+    ],
+    "strings": [
+      "5"
+    ],
+    "recipetype": "RefineryRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:ElementalInscriber"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

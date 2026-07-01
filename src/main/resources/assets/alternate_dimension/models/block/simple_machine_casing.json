@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/machine_top",
+    "up": "alternate_dimension:block/machine_top",
+    "north": "alternate_dimension:block/aluminum_ore_block",
+    "east": "alternate_dimension:block/aluminum_ore_block",
+    "south": "alternate_dimension:block/aluminum_ore_block",
+    "west": "alternate_dimension:block/aluminum_ore_block",
+    "particle": "alternate_dimension:block/machine_top"
+  },
+  "render_type": "solid"
+}

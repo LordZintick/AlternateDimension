@@ -11,7 +11,7 @@
       "inner_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:netherrack"
+          "Name": "alternate_dimension:pyre_mantle"
         }
       },
       "alternate_inner_layer_provider": {
@@ -23,13 +23,13 @@
       "middle_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:smooth_basalt"
+          "Name": "alternate_dimension:pyric_cobble"
         }
       },
       "outer_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:netherrack"
+          "Name": "alternate_dimension:pyre_mantle"
         }
       },
       "inner_placements": [

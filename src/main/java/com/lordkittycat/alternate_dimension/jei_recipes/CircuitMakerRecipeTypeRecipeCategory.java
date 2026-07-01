@@ -40,7 +40,7 @@ public class CircuitMakerRecipeTypeRecipeCategory implements IRecipeCategory<Cir
 
 	@Override
 	public Component getTitle() {
-		return Component.literal("Circuit Making");
+		return Component.literal("Circuit Sandwiching");
 	}
 
 	@Override

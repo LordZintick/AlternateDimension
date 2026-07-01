@@ -23,6 +23,8 @@ public class CloudKittyRenderer extends MobRenderer<CloudKittyEntity, Modelcat<C
 
 	@Override
 	public ResourceLocation getTextureLocation(CloudKittyEntity entity) {
+		if (entity.getTexture() != "cloud_kitty_texture")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

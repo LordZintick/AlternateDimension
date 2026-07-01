@@ -11,6 +11,9 @@
     "craftingtables": [
       {
         "value": "CUSTOM:IngotPresser"
+      },
+      {
+        "value": "CUSTOM:AdvancedIngotPresser"
       }
     ],
     "enableCraftingtable": true,

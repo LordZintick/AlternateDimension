@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,7 +21,7 @@ import com.lordkittycat.alternate_dimension.block.entity.PortalBlockBlockEntity;
 
 public class PortalBlockBlock extends Block implements EntityBlock {
 	public PortalBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

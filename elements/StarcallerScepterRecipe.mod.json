@@ -1,0 +1,42 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "elemental_infuser_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:PortalWand"
+      },
+      {
+        "value": "CUSTOM:FireEssence"
+      },
+      {
+        "value": "CUSTOM:LifeEssence"
+      },
+      {
+        "value": "CUSTOM:LightningBottle"
+      },
+      {
+        "value": "CUSTOM:CandyEssence"
+      }
+    ],
+    "integers": [
+      1,
+      8,
+      16,
+      16,
+      4
+    ],
+    "strings": [],
+    "recipetype": "ElementalInfuserRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:StarcallerScepter"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

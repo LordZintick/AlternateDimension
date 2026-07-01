@@ -29,18 +29,41 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class SkyTurtleEntity extends Monster {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SkyTurtleEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(SkyTurtleEntity.class, EntityDataSerializers.INT);
+
 	public SkyTurtleEntity(EntityType<SkyTurtleEntity> type, Level world) {
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 		refreshDimensions();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "cloud_turtle");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -97,6 +120,19 @@ public class SkyTurtleEntity extends Monster {
 		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override

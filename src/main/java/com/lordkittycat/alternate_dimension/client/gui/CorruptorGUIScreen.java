@@ -1,21 +1,18 @@
 package com.lordkittycat.alternate_dimension.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
 import com.lordkittycat.alternate_dimension.world.inventory.CorruptorGUIMenu;
+import com.lordkittycat.alternate_dimension.procedures.ProgressDisplayProcedure;
 import com.lordkittycat.alternate_dimension.procedures.EnergyDisplayProcedure;
-import com.lordkittycat.alternate_dimension.network.CorruptorGUIButtonMessage;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModScreens;
 
 public class CorruptorGUIScreen extends AbstractContainerScreen<CorruptorGUIMenu> implements AlternateDimensionModScreens.ScreenAccessor {
@@ -23,8 +20,8 @@ public class CorruptorGUIScreen extends AbstractContainerScreen<CorruptorGUIMenu
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	private Button button_press;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("alternate_dimension:textures/screens/corruptor_gui.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("alternate_dimension:textures/screens/red_right_arrow.png");
 
 	public CorruptorGUIScreen(CorruptorGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -55,6 +52,7 @@ public class CorruptorGUIScreen extends AbstractContainerScreen<CorruptorGUIMenu
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 81, this.topPos + 25, 0, 0, 16, 16, 16, 16);
 		RenderSystem.disableBlend();
 	}
 
@@ -69,21 +67,13 @@ public class CorruptorGUIScreen extends AbstractContainerScreen<CorruptorGUIMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.alternate_dimension.corruptor_gui.label_ingot_presser"), 65, 5, -8650752, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.alternate_dimension.corruptor_gui.label_ingot_presser"), 65, 3, -8650752, false);
 		guiGraphics.drawString(this.font, EnergyDisplayProcedure.execute(world, x, y, z), 6, 64, -16711799, false);
+		guiGraphics.drawString(this.font, ProgressDisplayProcedure.execute(world, x, y, z), 6, 53, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_press = Button.builder(Component.translatable("gui.alternate_dimension.corruptor_gui.button_press"), e -> {
-			int x = CorruptorGUIScreen.this.x;
-			int y = CorruptorGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new CorruptorGUIButtonMessage(0, x, y, z));
-				CorruptorGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 100, this.topPos + 32, 56, 20).build();
-		this.addRenderableWidget(button_press);
 	}
 }

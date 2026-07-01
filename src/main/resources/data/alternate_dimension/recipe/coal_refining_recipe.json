@@ -1,0 +1,28 @@
+{
+  "type": "alternate_dimension:refinery_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:umberflower"
+    },
+    {
+      "item": "alternate_dimension:pyrolite_chunk"
+    }
+  ],
+  "integers": [
+    2,
+    4
+  ],
+  "strings": [
+    "2"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:coal",
+      "count": 2
+    },
+    {
+      "id": "minecraft:charcoal",
+      "count": 1
+    }
+  ]
+}

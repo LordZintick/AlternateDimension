@@ -23,6 +23,8 @@ public class SkyTurtleRenderer extends MobRenderer<SkyTurtleEntity, Modelturtle<
 
 	@Override
 	public ResourceLocation getTextureLocation(SkyTurtleEntity entity) {
+		if (entity.getTexture() != "cloud_turtle")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

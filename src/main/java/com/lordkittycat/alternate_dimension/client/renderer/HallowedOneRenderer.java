@@ -16,6 +16,8 @@ public class HallowedOneRenderer extends MobRenderer<HallowedOneEntity, Modelpla
 
 	@Override
 	public ResourceLocation getTextureLocation(HallowedOneEntity entity) {
+		if (entity.getTexture() != "hallowed_one")
+			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:rooted_stone",
+    "alternate_dimension:shale",
+    "minecraft:stone",
+    "alternate_dimension:veridium",
+    "alternate_dimension:pyre_mantle"
+  ]
+}

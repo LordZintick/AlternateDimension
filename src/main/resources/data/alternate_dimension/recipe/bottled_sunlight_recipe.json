@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:imbunement_table_recipe",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:light_essence"
+    },
+    {
+      "item": "alternate_dimension:big_bottle"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:bottled_sunlight",
+      "count": 1
+    }
+  ]
+}

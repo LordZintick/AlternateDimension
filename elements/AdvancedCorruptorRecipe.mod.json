@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumGear"
+      },
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      },
+      {
+        "value": "CUSTOM:TitaniumGear"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGearbox"
+      },
+      {
+        "value": "CUSTOM:Corruptor"
+      },
+      {
+        "value": "CUSTOM:EvilstoneGearbox"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedCorruptor"
+    },
+    "name": "advanced_corruptor_recipe",
+    "namespace": "mod"
+  }
+}

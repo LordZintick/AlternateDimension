@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "refinery",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BasicCircuit"
+      },
+      {
+        "value": "CUSTOM:AdvancedCircuit"
+      },
+      {
+        "value": "CUSTOM:BasicCircuit"
+      },
+      {
+        "value": "CUSTOM:BasicCircuit"
+      },
+      {
+        "value": "CUSTOM:AdvancedMachineCasing"
+      },
+      {
+        "value": "CUSTOM:BasicCircuit"
+      },
+      {
+        "value": "CUSTOM:MeteoriteDust"
+      },
+      {
+        "value": "CUSTOM:MeteoriteDust"
+      },
+      {
+        "value": "CUSTOM:MeteoriteDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RefineryBase"
+    },
+    "name": "refinery_base_recipe",
+    "namespace": "mod"
+  }
+}

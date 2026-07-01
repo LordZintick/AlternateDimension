@@ -29,7 +29,7 @@ public class CorruptorRecipeTypeRecipeCategory implements IRecipeCategory<Corrup
 	private final Minecraft mc = Minecraft.getInstance();
 
 	public CorruptorRecipeTypeRecipeCategory(IGuiHelper helper) {
-		this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 185);
+		this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 80);
 		this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(AlternateDimensionModBlocks.CORRUPTOR.get().asItem()));
 	}
 
@@ -59,6 +59,11 @@ public class CorruptorRecipeTypeRecipeCategory implements IRecipeCategory<Corrup
 	}
 
 	@Override
+	public boolean needsRecipeBorder() {
+		return false;
+	}
+
+	@Override
 	public void draw(CorruptorRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
 		this.background.draw(guiGraphics);
 
@@ -71,7 +76,7 @@ public class CorruptorRecipeTypeRecipeCategory implements IRecipeCategory<Corrup
 		for (int i = 0; i < recipeOutputs.size(); i++) {
 			actualOutputs.set(i, recipeOutputs.get(i));
 		}
-		builder.addSlot(RecipeIngredientRole.INPUT, 58, 47).addIngredients(recipe.getIngredients().get(0));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 82, 47).addItemStack(actualOutputs.get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 46, 25).addIngredients(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 113, 25).addItemStack(actualOutputs.get(0));
 	}
 }

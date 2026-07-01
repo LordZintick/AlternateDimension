@@ -21,6 +21,10 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -28,11 +32,30 @@ import com.lordkittycat.alternate_dimension.procedures.TargetPlayersAndHallowedM
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class DarkWolfEntity extends Monster {
+
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(DarkWolfEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(DarkWolfEntity.class, EntityDataSerializers.INT);
+
 	public DarkWolfEntity(EntityType<DarkWolfEntity> type, Level world) {
 		super(type, world);
 		xpReward = 5;
 		setNoAi(false);
 		refreshDimensions();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "dark_wolf_glowing_texture");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -87,6 +110,19 @@ public class DarkWolfEntity extends Monster {
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override

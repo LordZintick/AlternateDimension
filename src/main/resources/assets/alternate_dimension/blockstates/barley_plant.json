@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "blockstate=1": {
+      "model": "alternate_dimension:block/barley_plant_0"
+    },
+    "blockstate=2": {
+      "model": "alternate_dimension:block/barley_plant_1"
+    },
+    "blockstate=3": {
+      "model": "alternate_dimension:block/barley_plant_2"
+    },
+    "blockstate=4": {
+      "model": "alternate_dimension:block/barley_plant_3"
+    },
+    "blockstate=0": {
+      "model": "alternate_dimension:block/barley_plant"
+    }
+  }
+}
