@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedMachineCasing"
+    },
+    "name": "advanced_machine_casing_recipe",
+    "namespace": "mod"
+  }
+}

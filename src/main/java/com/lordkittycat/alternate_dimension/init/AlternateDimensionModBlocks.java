@@ -287,6 +287,20 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> THE_DIRT_BLOCK;
 	public static final DeferredBlock<Block> RICH_FARMLAND;
 	public static final DeferredBlock<Block> BARLEY_PLANT;
+	public static final DeferredBlock<Block> ADVANCED_CORRUPTOR;
+	public static final DeferredBlock<Block> SIMPLE_MACHINE_CASING;
+	public static final DeferredBlock<Block> ADVANCED_MACHINE_CASING;
+	public static final DeferredBlock<Block> ADVANCED_PURIFIER;
+	public static final DeferredBlock<Block> ADVANCED_INGOT_PRESSER;
+	public static final DeferredBlock<Block> ADVANCED_ELECTRIC_SMELTER;
+	public static final DeferredBlock<Block> REFINERY_BASE;
+	public static final DeferredBlock<Block> REFINERY_CONTROLLER;
+	public static final DeferredBlock<Block> UMBERFLOWER;
+	public static final DeferredBlock<Block> ELEMENTAL_INSCRIBER;
+	public static final DeferredBlock<Block> SCORCHED_BOX;
+	public static final DeferredBlock<Block> PINE_BOX;
+	public static final DeferredBlock<Block> REDWOOD_BOX;
+	public static final DeferredBlock<Block> AZURE_BOX;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -553,6 +567,20 @@ public class AlternateDimensionModBlocks {
 		THE_DIRT_BLOCK = REGISTRY.register("the_dirt_block", TheDirtBlockBlock::new);
 		RICH_FARMLAND = REGISTRY.register("rich_farmland", RichFarmlandBlock::new);
 		BARLEY_PLANT = REGISTRY.register("barley_plant", BarleyPlantBlock::new);
+		ADVANCED_CORRUPTOR = REGISTRY.register("advanced_corruptor", AdvancedCorruptorBlock::new);
+		SIMPLE_MACHINE_CASING = REGISTRY.register("simple_machine_casing", SimpleMachineCasingBlock::new);
+		ADVANCED_MACHINE_CASING = REGISTRY.register("advanced_machine_casing", AdvancedMachineCasingBlock::new);
+		ADVANCED_PURIFIER = REGISTRY.register("advanced_purifier", AdvancedPurifierBlock::new);
+		ADVANCED_INGOT_PRESSER = REGISTRY.register("advanced_ingot_presser", AdvancedIngotPresserBlock::new);
+		ADVANCED_ELECTRIC_SMELTER = REGISTRY.register("advanced_electric_smelter", AdvancedElectricSmelterBlock::new);
+		REFINERY_BASE = REGISTRY.register("refinery_base", RefineryBaseBlock::new);
+		REFINERY_CONTROLLER = REGISTRY.register("refinery_controller", RefineryControllerBlock::new);
+		UMBERFLOWER = REGISTRY.register("umberflower", UmberflowerBlock::new);
+		ELEMENTAL_INSCRIBER = REGISTRY.register("elemental_inscriber", ElementalInscriberBlock::new);
+		SCORCHED_BOX = REGISTRY.register("scorched_box", ScorchedBoxBlock::new);
+		PINE_BOX = REGISTRY.register("pine_box", PineBoxBlock::new);
+		REDWOOD_BOX = REGISTRY.register("redwood_box", RedwoodBoxBlock::new);
+		AZURE_BOX = REGISTRY.register("azure_box", AzureBoxBlock::new);
 	}
 
 	// Start of user code block custom blocks

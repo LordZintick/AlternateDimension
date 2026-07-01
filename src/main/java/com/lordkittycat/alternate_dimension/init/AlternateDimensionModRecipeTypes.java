@@ -38,6 +38,10 @@ public class AlternateDimensionModRecipeTypes {
 			SERIALIZERS.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Serializer.INSTANCE);
 			RECIPE_TYPES.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("refinery_recipe_type", () -> RefineryRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("refinery_recipe_type", () -> RefineryRecipeTypeRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.Serializer.INSTANCE);
 		});
 	}
 }

@@ -20,7 +20,16 @@ import net.minecraft.core.BlockPos;
 public class UpdateElectricSmelterRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level1 && _level1.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())), _level1).isPresent()
-				&& getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 250) {
+				&& getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 250
+				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == ItemStack.EMPTY.getItem() || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())
+						.getItem() == (world instanceof Level _lvlSmeltResult
+								? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())), _lvlSmeltResult)
+										.map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy()).orElse(ItemStack.EMPTY)
+								: ItemStack.EMPTY).getItem()
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() <= (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getMaxStackSize() - (world instanceof Level _lvlSmeltResult
+								? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())), _lvlSmeltResult)
+										.map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy()).orElse(ItemStack.EMPTY)
+								: ItemStack.EMPTY).getCount())) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);

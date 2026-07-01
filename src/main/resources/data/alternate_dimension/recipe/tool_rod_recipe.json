@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stick",
+  "group": "tool_rod",
   "category": "misc",
   "pattern": [
     "a",

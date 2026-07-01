@@ -1,0 +1,30 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "circuit_maker_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:MythrilPlate"
+      },
+      {
+        "value": "CUSTOM:AdvancedCircuit"
+      },
+      {
+        "value": "CUSTOM:OmegaEssence"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "CircuitMakerRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:MythricalCircuit"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

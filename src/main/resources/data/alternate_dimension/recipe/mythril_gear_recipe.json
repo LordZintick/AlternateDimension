@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:mythril_ingot"
+    },
+    "b": {
+      "item": "alternate_dimension:titanium_nugget"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:mythril_gear",
+    "count": 1
+  }
+}

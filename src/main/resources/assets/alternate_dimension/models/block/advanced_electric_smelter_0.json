@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/advanced_machine_top",
+    "up": "alternate_dimension:block/advanced_machine_top",
+    "north": "alternate_dimension:block/advanced_electric_smelter_front_lit",
+    "east": "alternate_dimension:block/advanced_machine_side",
+    "south": "alternate_dimension:block/advanced_machine_side",
+    "west": "alternate_dimension:block/advanced_machine_side",
+    "particle": "alternate_dimension:block/advanced_machine_top"
+  },
+  "render_type": "solid"
+}

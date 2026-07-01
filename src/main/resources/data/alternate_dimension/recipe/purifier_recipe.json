@@ -2,24 +2,27 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "bcb",
-    "ded"
+    "aba",
+    "cdc",
+    "efe"
   ],
   "key": {
     "a": {
       "item": "alternate_dimension:aluminum_ingot"
     },
     "b": {
-      "item": "alternate_dimension:aluminum_gear"
-    },
-    "c": {
       "item": "alternate_dimension:holystone_block"
     },
+    "c": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
     "d": {
-      "item": "alternate_dimension:holystone_gearbox"
+      "item": "alternate_dimension:simple_machine_casing"
     },
     "e": {
+      "item": "alternate_dimension:holystone_gearbox"
+    },
+    "f": {
       "item": "alternate_dimension:holystone_gear"
     }
   },

@@ -1,5 +1,4 @@
-[magic]
-	#Spell Powers
-	spell_powers = ["fireball:1"]
-	#Spell Mana Costs
-	spell_mana_costs = ["fireball:10"]
+#The hints shown by the hint book
+hints = ["""
+The refinery requires two blocks to function:
+ the base and the controller."""]

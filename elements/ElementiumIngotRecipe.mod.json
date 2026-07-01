@@ -1,0 +1,36 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "refinery_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:ElementiumFragment"
+      },
+      {
+        "value": "CUSTOM:OmegaEssence"
+      }
+    ],
+    "integers": [
+      16,
+      64
+    ],
+    "strings": [
+      "10"
+    ],
+    "recipetype": "RefineryRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:ElementiumIngot"
+      },
+      {
+        "value": "CUSTOM:OmegaEssence"
+      }
+    ],
+    "resultCounts": [
+      1,
+      1
+    ],
+    "count": 0
+  }
+}

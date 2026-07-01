@@ -29,7 +29,7 @@ import com.lordkittycat.alternate_dimension.world.inventory.CorruptorGUIMenu;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class CorruptorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(1, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(2, ItemStack.EMPTY);
 
 	public CorruptorBlockEntity(BlockPos position, BlockState state) {
 		super(AlternateDimensionModBlockEntities.CORRUPTOR.get(), position, state);
@@ -109,6 +109,8 @@ public class CorruptorBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 1)
+			return false;
 		return true;
 	}
 

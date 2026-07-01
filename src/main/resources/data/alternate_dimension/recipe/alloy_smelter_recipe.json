@@ -2,24 +2,27 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "aaa",
-    "bcb",
-    "ded"
+    "aba",
+    "cdc",
+    "efe"
   ],
   "key": {
     "a": {
       "item": "alternate_dimension:aluminum_plate"
     },
     "b": {
-      "item": "alternate_dimension:aluminum_gear"
-    },
-    "c": {
       "item": "alternate_dimension:basic_circuit"
     },
+    "c": {
+      "item": "alternate_dimension:aluminum_gear"
+    },
     "d": {
-      "item": "alternate_dimension:aluminum_ingot"
+      "item": "alternate_dimension:simple_machine_casing"
     },
     "e": {
+      "item": "alternate_dimension:aluminum_ingot"
+    },
+    "f": {
       "item": "alternate_dimension:pyrolite_chunk"
     }
   },

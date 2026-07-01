@@ -711,10 +711,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2454,7 +2450,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/LightningBottleItem.java"
         ]
       },
-      "path": "~/GeneralFeatures/LightningBottle"
+      "path": "~/GeneralFeatures/Elemental/Lightning"
     },
     {
       "name": "ElectricParticleEffect",
@@ -2485,7 +2481,7 @@
           }
         ]
       },
-      "path": "~/GeneralFeatures/LightningBottle"
+      "path": "~/GeneralFeatures/Elemental/Lightning"
     },
     {
       "name": "LightningBlock",
@@ -2502,7 +2498,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/lightning_block.json"
         ]
       },
-      "path": "~/GeneralFeatures/LightningBottle"
+      "path": "~/GeneralFeatures/Elemental/Lightning"
     },
     {
       "name": "LightningBlockCreate",
@@ -2572,7 +2568,7 @@
           }
         ]
       },
-      "path": "~/GeneralFeatures/LightningBottle"
+      "path": "~/GeneralFeatures/Elemental/Lightning"
     },
     {
       "name": "FuzzySocksRecipe",
@@ -2892,7 +2888,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/GeneralFeatures/LightningBottle"
+      "path": "~/GeneralFeatures/Elemental/Lightning"
     },
     {
       "name": "GiantCandyCane",
@@ -5990,21 +5986,6 @@
       "path": "~/BiomeContent/LushForest/Elves"
     },
     {
-      "name": "CorruptorGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "corruptor_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/CorruptorGUIMenu.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/CorruptorGUIScreen.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/network/CorruptorGUIButtonMessage.java"
-        ]
-      },
-      "path": "~/Machinery/T0"
-    },
-    {
       "name": "Corruptor",
       "type": "block",
       "compiles": true,
@@ -6032,41 +6013,6 @@
         "files": [
           "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/CorruptorRecipeTypeRecipe.java",
           "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/CorruptorRecipeTypeRecipeCategory.java"
-        ]
-      },
-      "path": "~/Machinery/T0"
-    },
-    {
-      "name": "CorruptItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "corrupt_item",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/CorruptItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Machinery/T0"
@@ -7178,7 +7124,7 @@
           "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/corrupted_elf_biome_modifier.json"
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "SkyTurtleLoot",
@@ -7204,7 +7150,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/corrupted_elf.json"
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "CorruptElf",
@@ -7244,7 +7190,7 @@
           }
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "BackpackGUI",
@@ -8442,7 +8388,7 @@
           "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/dark_wolf_biome_modifier.json"
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "LifeSpiritLoot",
@@ -8455,7 +8401,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/life_spirit.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Life"
     },
     {
       "name": "FireSpiritLoot",
@@ -8468,7 +8414,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/fire_spirit.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Fire"
     },
     {
       "name": "IceSpiritLoot",
@@ -8481,7 +8427,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/ice_spirit.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Ice"
     },
     {
       "name": "CandySpiritLoot",
@@ -8494,7 +8440,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/candy_spirit.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Candy"
     },
     {
       "name": "DarkWolfLoot",
@@ -8507,7 +8453,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/dark_wolf.json"
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "ConsumeItem",
@@ -9114,7 +9060,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/entity/LifeSpiritEntity.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Life"
     },
     {
       "name": "FireSpirit",
@@ -9130,7 +9076,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/fire_spirit_spawn_egg.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Fire"
     },
     {
       "name": "IceSpirit",
@@ -9146,7 +9092,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/ice_spirit_spawn_egg.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Ice"
     },
     {
       "name": "CandySpirit",
@@ -9162,7 +9108,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/entity/CandySpiritEntity.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Candy"
     },
     {
       "name": "CandyArmor",
@@ -14975,7 +14921,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/life_essence.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Life"
     },
     {
       "name": "FireEssence",
@@ -14989,7 +14935,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/FireEssenceItem.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Fire"
     },
     {
       "name": "CandyEssence",
@@ -15003,7 +14949,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/CandyEssenceItem.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Candy"
     },
     {
       "name": "IceEssence",
@@ -15017,7 +14963,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/IceEssenceItem.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Ice"
     },
     {
       "name": "VoidEssence",
@@ -15031,7 +14977,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/VoidEssenceItem.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "HallowedEssence",
@@ -15045,7 +14991,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/hallowed_essence.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental/Hallowed"
     },
     {
       "name": "OmegaEssence",
@@ -15059,7 +15005,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/OmegaEssenceItem.java"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental"
     },
     {
       "name": "OmegaEssenceRecipe",
@@ -15073,7 +15019,7 @@
           "src/main/resources/data/alternate_dimension/recipe/omega_essence_recipe.json"
         ]
       },
-      "path": "~/BiomeContent/Elemental"
+      "path": "~/GeneralFeatures/Elemental"
     },
     {
       "name": "AluminumGear",
@@ -16423,7 +16369,7 @@
           "src/main/resources/data/alternate_dimension/neoforge/biome_modifier/hallowed_one_biome_modifier.json"
         ]
       },
-      "path": "~/GeneralFeatures/Hallowed"
+      "path": "~/GeneralFeatures/Elemental/Hallowed"
     },
     {
       "name": "TargetPlayersAndVoidMobs",
@@ -16458,7 +16404,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/TargetPlayersAndVoidMobsProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Hallowed"
+      "path": "~/GeneralFeatures/Elemental/Hallowed"
     },
     {
       "name": "TargetPlayersAndHallowedMobs",
@@ -16493,7 +16439,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/TargetPlayersAndHallowedMobsProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Void"
+      "path": "~/GeneralFeatures/Elemental/Void"
     },
     {
       "name": "ApplyBlindingLight",
@@ -16526,7 +16472,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/blessed_flesh.json"
         ]
       },
-      "path": "~/GeneralFeatures/Hallowed"
+      "path": "~/GeneralFeatures/Elemental/Hallowed"
     },
     {
       "name": "HallowedOneLoot",
@@ -16539,7 +16485,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/entities/hallowed_one.json"
         ]
       },
-      "path": "~/GeneralFeatures/Hallowed"
+      "path": "~/GeneralFeatures/Elemental/Hallowed"
     },
     {
       "name": "ToolRod",
@@ -19057,43 +19003,7 @@
       "metadata": {
         "files": [
           "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/PurifierGUIMenu.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/PurifierGUIScreen.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/network/PurifierGUIButtonMessage.java"
-        ]
-      },
-      "path": "~/Machinery/T0"
-    },
-    {
-      "name": "PurifyItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purify_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/PurifyItemProcedure.java"
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/PurifierGUIScreen.java"
         ]
       },
       "path": "~/Machinery/T0"
@@ -20052,7 +19962,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/item/RawQuartzItem.java"
         ]
       },
-      "path": "~/Machinery/Misc/Silicon"
+      "path": "~/GeneralFeatures/Ores/Quartz"
     },
     {
       "name": "AluminumChain",
@@ -20586,20 +20496,6 @@
         "files": [
           "src/main/java/com/lordkittycat/alternate_dimension/item/FiredMythrilIngotItem.java",
           "src/main/resources/assets/alternate_dimension/models/item/fired_mythril_ingot.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Ores/Mythril"
-    },
-    {
-      "name": "FormedMythrilShardsRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "formed_mythril_shards_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/formed_mythril_shards_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/formed_mythril_shards_recipe.json"
         ]
       },
       "path": "~/GeneralFeatures/Ores/Mythril"
@@ -21402,6 +21298,1758 @@
         ]
       },
       "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "MythrilPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_plate.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilPlateItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilGear",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_gear",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilGearItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_gear.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilGearbox",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_gearbox",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythril_gearbox.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilGearboxItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilPlateRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_plate_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "TitaniumNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_nugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/titanium_nugget.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumNuggetItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Titanium"
+    },
+    {
+      "name": "TitaniumNuggetCompacting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_nugget_compacting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/titanium_nugget_compacting.json",
+          "src/main/resources/data/alternate_dimension/recipe/titanium_nugget_compacting.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Titanium"
+    },
+    {
+      "name": "TitaniumNuggetDecompacting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_nugget_decompacting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/titanium_nugget_decompacting.json",
+          "src/main/resources/data/alternate_dimension/recipe/titanium_nugget_decompacting.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Titanium"
+    },
+    {
+      "name": "MythrilGearRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_gear_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythril_gear_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_gear_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "MythrilGearboxRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_gearbox_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_gearbox_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/mythril_gearbox_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "UpdatePurifierRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_purifier_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePurifierRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T0"
+    },
+    {
+      "name": "CorruptorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/CorruptorGUIMenu.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/CorruptorGUIScreen.java"
+        ]
+      },
+      "path": "~/Machinery/T0"
+    },
+    {
+      "name": "UpdateCorruptorRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_corruptor_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCorruptorRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T0"
+    },
+    {
+      "name": "AdvancedCorruptor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_corruptor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_corruptor.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/advanced_corruptor.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AdvancedCorruptorBlock.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/advanced_corruptor.json",
+          "src/main/resources/assets/alternate_dimension/models/item/advanced_corruptor.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/AdvancedCorruptorBlockEntity.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "UpdateAdvancedCorruptorRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_advanced_corruptor_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateAdvancedCorruptorRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "SimpleMachineCasing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_machine_casing",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/block/SimpleMachineCasingBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/block/simple_machine_casing.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/simple_machine_casing.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/simple_machine_casing.json",
+          "src/main/resources/assets/alternate_dimension/models/item/simple_machine_casing.json"
+        ]
+      },
+      "path": "~/Machinery/T0"
+    },
+    {
+      "name": "SimpleMachineCasingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_machine_casing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/simple_machine_casing_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/simple_machine_casing_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T0"
+    },
+    {
+      "name": "AdvancedMachineCasing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_machine_casing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_machine_casing.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/advanced_machine_casing.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/advanced_machine_casing.json",
+          "src/main/resources/assets/alternate_dimension/models/item/advanced_machine_casing.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AdvancedMachineCasingBlock.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedMachineCasingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_machine_casing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/advanced_machine_casing_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/advanced_machine_casing_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedCorruptorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_corruptor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/advanced_corruptor_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/advanced_corruptor_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedPurifier",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_purifier",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/advanced_purifier.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/advanced_purifier.json",
+          "src/main/resources/assets/alternate_dimension/models/item/advanced_purifier.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AdvancedPurifierBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_purifier.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/AdvancedPurifierBlockEntity.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "UpdateAdvancedPurifierRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_advanced_purifier_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateAdvancedPurifierRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedPurifierRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_purifier_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/advanced_purifier_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/advanced_purifier_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedIngotPresser",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_ingot_presser",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AdvancedIngotPresserBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/item/advanced_ingot_presser.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/AdvancedIngotPresserBlockEntity.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/advanced_ingot_presser.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/advanced_ingot_presser.json",
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_ingot_presser.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedIngotPresserRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_ingot_presser_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/advanced_ingot_presser_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/advanced_ingot_presser_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedElectricSmelter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_electric_smelter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/advanced_electric_smelter.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/advanced_electric_smelter.json",
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_electric_smelter_0.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AdvancedElectricSmelterBlock.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/AdvancedElectricSmelterBlockEntity.java",
+          "src/main/resources/assets/alternate_dimension/blockstates/advanced_electric_smelter.json",
+          "src/main/resources/assets/alternate_dimension/models/block/advanced_electric_smelter.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "UpdateAdvancedElectricSmelterRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_advanced_electric_smelter_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateAdvancedElectricSmelterRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "AdvancedElectricSmelterRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_electric_smelter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/advanced_electric_smelter_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/advanced_electric_smelter_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T1/AdvancedT0"
+    },
+    {
+      "name": "MythricalCircuit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythrical_circuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/mythrical_circuit.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MythricalCircuitItem.java"
+        ]
+      },
+      "path": "~/Machinery/T2"
+    },
+    {
+      "name": "MythricalCircuitRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythrical_circuit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/mythrical_circuit_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T2"
+    },
+    {
+      "name": "RefineryBase",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_base",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/block/RefineryBaseBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/block/refinery_base.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/refinery_base.json",
+          "src/main/resources/assets/alternate_dimension/models/item/refinery_base.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/refinery_base.json"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "RefineryGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/RefineryGUIScreen.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/RefineryGUIMenu.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "OpenRefineryGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_refinery_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenRefineryGUIProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "UpdateRefineryRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_refinery_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateRefineryRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "RefineryController",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/RefineryControllerBlockEntity.java",
+          "src/main/resources/assets/alternate_dimension/models/block/refinery_controller_0.json",
+          "src/main/resources/assets/alternate_dimension/models/block/refinery_controller.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/refinery_controller.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/RefineryControllerBlock.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/refinery_controller.json",
+          "src/main/resources/assets/alternate_dimension/models/item/refinery_controller.json"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "RefineryRecipeType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_recipe_type",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/RefineryRecipeTypeRecipe.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/RefineryRecipeTypeRecipeCategory.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "RefineryBaseRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_base_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/refinery_base_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/refinery_base_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "RefineryControllerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refinery_controller_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/refinery_controller_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/refinery_controller_recipe.json"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "FormedMythrilShardsRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "formed_mythril_shards_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/formed_mythril_shards_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Ores/Mythril"
+    },
+    {
+      "name": "Umberflower",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umberflower",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/umberflower.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/umberflower.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/umberflower.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/UmberflowerBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/item/umberflower.json"
+        ]
+      },
+      "path": "~/Decor/Foliage"
+    },
+    {
+      "name": "CoalRefiningRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_refining_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/coal_refining_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Graphite"
+    },
+    {
+      "name": "ElementiumFragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elementium_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ElementiumFragmentItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/elementium_fragment.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementiumFragmentRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elementium_fragment_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/elementium_fragment_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elementium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/elementium_ingot.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ElementiumIngotItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementiumIngotRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elementium_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/elementium_ingot_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementalInscriberGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_inscriber_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/ElementalInscriberGUIMenu.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/ElementalInscriberGUIScreen.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "GenericBurnTimeDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generic_burn_time_display",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/GenericBurnTimeDisplayProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/BaseProcedures"
+    },
+    {
+      "name": "UpdateElementalInscriberRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_elemental_inscriber_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateElementalInscriberRecipeProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementalInscriber",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_inscriber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/elemental_inscriber.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/ElementalInscriberBlock.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/elemental_inscriber.json",
+          "src/main/resources/assets/alternate_dimension/models/block/elemental_inscriber.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/ElementalInscriberBlockEntity.java",
+          "src/main/resources/assets/alternate_dimension/blockstates/elemental_inscriber.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "TickProgressIfRunning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick_progress_if_running",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/TickProgressIfRunningProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/BaseProcedures"
+    },
+    {
+      "name": "ElementalInfuserRecipeType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_infuser_recipe_type",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/ElementalInfuserRecipeTypeRecipeCategory.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/ElementalInfuserRecipeTypeRecipe.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "ElementalInfuserRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_infuser_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/elemental_infuser_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Elementium"
+    },
+    {
+      "name": "AllowFlightInThunderstorm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allow_flight_in_thunderstorm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/AllowFlightInThunderstormProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Lightning"
+    },
+    {
+      "name": "SummonLightningLine",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_lightning_line",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/SummonLightningLineProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Lightning"
+    },
+    {
+      "name": "StarcallerScepterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starcaller_scepter_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/StarcallerScepterRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Lightning"
+    },
+    {
+      "name": "StarcallerScepter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starcaller_scepter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/starcaller_scepter.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/StarcallerScepterItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Lightning"
+    },
+    {
+      "name": "StarcallerScepterRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starcaller_scepter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/starcaller_scepter_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Elemental/Lightning"
+    },
+    {
+      "name": "EntityStruckByLightning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_struck_by_lightning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/EntityStruckByLightningProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/GlobalTriggers"
+    },
+    {
+      "name": "ApplyNightVision",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_night_vision",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/ApplyNightVisionProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "NightVisionArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/NightVisionArmorItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/night_vision_armor_helmet.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "NightVisionHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/night_vision_helmet_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/night_vision_helmet_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "UpdateRefineryParams",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_refinery_params",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateRefineryParamsProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "LoadRefineryGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_refinery_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/LoadRefineryGUIProcedure.java"
+        ]
+      },
+      "path": "~/Machinery/T2/Refinery"
+    },
+    {
+      "name": "OpenHintBookGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_hint_book_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenHintBookGUIProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "HintBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hint_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/hint_book.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/HintBookItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "HintBookGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hint_book_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/HintBookGUIScreen.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/HintBookGUIMenu.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "CurrentHintDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_hint_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/CurrentHintDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "SwitchToDayTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_to_day_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/SwitchToDayTimeProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BottledSunlight",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_sunlight",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/BottledSunlightItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/bottled_sunlight.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "SwitchToNightTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_to_night_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/SwitchToNightTimeProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BottledMoonlight",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_moonlight",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/BottledMoonlightItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/bottled_moonlight.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BigBottle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_bottle",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/BigBottleItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/big_bottle.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BigBottleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_bottle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/big_bottle_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/big_bottle_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BottledSunlightRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_sunlight_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/bottled_sunlight_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BottledMoonlightRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_moonlight_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/bottled_moonlight_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "WoodenBoxGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_box_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/WoodenBoxGUIScreen.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/WoodenBoxGUIMenu.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "GetBlockName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_block_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/GetBlockNameProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "ScorchedBox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/scorched_box.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/scorched_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/ScorchedBoxBlockEntity.java",
+          "src/main/resources/assets/alternate_dimension/models/item/scorched_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/ScorchedBoxBlock.java",
+          "src/main/resources/assets/alternate_dimension/blockstates/scorched_box.json"
+        ]
+      },
+      "path": "~/BiomeContent/Wasteland/ScorchedWood"
+    },
+    {
+      "name": "ScorchedBoxRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorched_box_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/scorched_box_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/scorched_box_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/Wasteland/ScorchedWood"
+    },
+    {
+      "name": "PineBox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/pine_box.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/pine_box.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/pine_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/PineBoxBlock.java",
+          "src/main/resources/assets/alternate_dimension/models/block/pine_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/PineBoxBlockEntity.java"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands"
+    },
+    {
+      "name": "PineBoxRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_box_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/pine_box_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/pine_box_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands"
+    },
+    {
+      "name": "RedwoodBox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redwood_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/block/redwood_box.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/redwood_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/RedwoodBoxBlockEntity.java",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/redwood_box.json",
+          "src/main/resources/assets/alternate_dimension/models/item/redwood_box.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/RedwoodBoxBlock.java"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands/RedwoodForest"
+    },
+    {
+      "name": "RedwoodBoxRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redwood_box_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/redwood_box_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/redwood_box_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands/RedwoodForest"
+    },
+    {
+      "name": "AzureBox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_box",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/block/AzureBoxBlock.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/block/entity/AzureBoxBlockEntity.java",
+          "src/main/resources/assets/alternate_dimension/models/block/azure_box.json",
+          "src/main/resources/data/alternate_dimension/loot_table/blocks/azure_box.json",
+          "src/main/resources/assets/alternate_dimension/blockstates/azure_box.json",
+          "src/main/resources/assets/alternate_dimension/models/item/azure_box.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "ToolRodSmallerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tool_rod_smaller_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/tool_rod_smaller_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/tool_rod_smaller_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "AzurePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AzurePickaxeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/azure_pickaxe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureBoxRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_box_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_box_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/azure_box_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/azure_axe.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AzureAxeItem.java"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/azure_shovel.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AzureShovelItem.java"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AzureSwordItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/azure_sword.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AzureHoeItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/azure_hoe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzurePickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_pickaxe_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/azure_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/azure_axe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_axe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_shovel_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/azure_shovel_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_sword_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/azure_sword_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
+    },
+    {
+      "name": "AzureHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "azure_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/azure_hoe_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/azure_hoe_recipe.json"
+        ]
+      },
+      "path": "~/BiomeContent/EnchantedForest"
     }
   ],
   "variable_elements": [
@@ -21751,6 +23399,7 @@
       "CUSTOM:DurableDrill"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:ElementalInscriber",
       "~CUSTOM:MantlePhosphorusOre",
       "~CUSTOM:ShalePhosphorusOre",
       "~CUSTOM:VeridiumPhosphorusOre",
@@ -21767,6 +23416,7 @@
       "~CUSTOM:EvilstoneBlock"
     ],
     "ITEMS:minecraft:axes": [
+      "~CUSTOM:AzureAxe",
       "~CUSTOM:MythrilAxe",
       "~CUSTOM:ShroomiumAxe",
       "~CUSTOM:PhosphoriumAxe",
@@ -21800,6 +23450,7 @@
       "~CUSTOM:ScorchedBrickStairs"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:NightVisionArmor.helmet",
       "~CUSTOM:MythrilArmor.helmet",
       "~CUSTOM:PhosphoriumArmor.helmet",
       "~CUSTOM:AluminumArmor.helmet",
@@ -21827,7 +23478,6 @@
     "ITEMS:mod:jetpacks": [
       "CUSTOM:CandyArmor.body"
     ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [],
     "BLOCKS:minecraft:dirt": [
       "CUSTOM:ScorchedEarth",
       "CUSTOM:CloudBlock",
@@ -21838,6 +23488,15 @@
       "CUSTOM:EnchantedGrassBlock"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ElementalInscriber",
+      "~CUSTOM:RefineryController",
+      "~CUSTOM:RefineryBase",
+      "~CUSTOM:AdvancedElectricSmelter",
+      "~CUSTOM:AdvancedIngotPresser",
+      "~CUSTOM:AdvancedPurifier",
+      "~CUSTOM:AdvancedMachineCasing",
+      "~CUSTOM:SimpleMachineCasing",
+      "~CUSTOM:AdvancedCorruptor",
       "~CUSTOM:MantleMythrilOre",
       "~CUSTOM:ShaleMythrilOre",
       "~CUSTOM:VeridiumMythrilOre",
@@ -21992,6 +23651,7 @@
       "CUSTOM:ScorchedEarth"
     ],
     "ITEMS:minecraft:hoes": [
+      "~CUSTOM:AzureHoe",
       "~CUSTOM:MythrilHoe",
       "~CUSTOM:ShroomiumHoe",
       "~CUSTOM:PhosphoriumHoe",
@@ -22034,6 +23694,7 @@
       "CUSTOM:RawUranium"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:AzureSword",
       "~CUSTOM:MythrilSword",
       "~CUSTOM:ShroomiumSword",
       "~CUSTOM:PhosphoriumSword",
@@ -22076,6 +23737,7 @@
       "CUSTOM:Wasteland"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:AzurePickaxe",
       "~CUSTOM:MythrilPickaxe",
       "~CUSTOM:ShroomiumPickaxe",
       "~CUSTOM:PhosphoriumPickaxe",
@@ -22103,6 +23765,10 @@
       "Items.WATER_BUCKET"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AzureBox",
+      "~CUSTOM:RedwoodBox",
+      "~CUSTOM:PineBox",
+      "~CUSTOM:ScorchedBox",
       "~CUSTOM:PineHangingSign",
       "~CUSTOM:PineHangingSign.wall",
       "~CUSTOM:PineSign",
@@ -22213,6 +23879,7 @@
       "CUSTOM:CandiedGrassBlock"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AzureShovel",
       "~CUSTOM:MythrilShovel",
       "~CUSTOM:ShroomiumShovel",
       "~CUSTOM:PhosphoriumShovel",
@@ -22311,12 +23978,6 @@
       "TAG:mod:redwood_logs",
       "TAG:mod:pine_logs"
     ],
-    "BLOCKS:minecraft:planks": [
-      "CUSTOM:AzurePlanks",
-      "CUSTOM:ScorchedPlanks",
-      "CUSTOM:RedwoodPlanks",
-      "CUSTOM:PinePlanks"
-    ],
     "ITEMS:mod:azure_logs": [
       "CUSTOM:AzureLog",
       "CUSTOM:AzureWood",
@@ -22328,12 +23989,6 @@
       "TAG:mod:scorched_logs",
       "TAG:mod:redwood_logs",
       "TAG:mod:pine_logs"
-    ],
-    "ITEMS:minecraft:planks": [
-      "CUSTOM:AzurePlanks",
-      "CUSTOM:ScorchedPlanks",
-      "CUSTOM:RedwoodPlanks",
-      "CUSTOM:PinePlanks"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:RedwoodLeaves",
@@ -22484,7 +24139,8 @@
       "CUSTOM:EnchantedGrassBlock"
     ],
     "ITEMS:mod:seeds": [
-      "CUSTOM:HempSeeds"
+      "CUSTOM:HempSeeds",
+      "CUSTOM:BarleySeeds"
     ],
     "ENTITIES:mod:romans": [
       "CUSTOM:Roman"
@@ -22561,6 +24217,27 @@
       "CUSTOM:MythrilShovel",
       "CUSTOM:MythrilSword",
       "CUSTOM:MythrilHoe"
+    ],
+    "ITEMS:mod:basic_ingot_presser_whitelist": [
+      "CUSTOM:EvilstoneGem",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:HolystoneGem",
+      "CUSTOM:TitaniumIngot"
+    ],
+    "ITEMS:mod:refinery_junk": [
+      "CUSTOM:MagicDust",
+      "CUSTOM:Corn",
+      "CUSTOM:FruitPaste",
+      "CUSTOM:WeakThread"
+    ],
+    "ITEMS:mod:prevents_lightning_damage": [
+      "CUSTOM:StarcallerScepter"
+    ],
+    "ITEMS:mod:altdim_glass_blocks": [
+      "CUSTOM:ScorchedGlass",
+      "CUSTOM:CandiedGlass",
+      "CUSTOM:FrostedGlass"
     ]
   },
   "tab_element_order": {
@@ -22686,6 +24363,7 @@
       "AluminumLavaBucket",
       "RawTitanium",
       "TitaniumIngot",
+      "TitaniumNugget",
       "TitaniumBlock",
       "TitaniumGear",
       "TitaniumPlate",
@@ -22711,13 +24389,20 @@
       "CoolantRod",
       "Plutonium",
       "MythrilShards",
-      "MythrilIngot",
       "FormedMythrilShards",
       "FiredMythrilIngot",
+      "MythrilIngot",
       "MythrilNugget",
+      "MythrilPlate",
+      "MythrilGear",
+      "MythrilGearbox",
       "RawQuartz",
       "Silicon",
+      "ElementiumFragment",
+      "ElementiumIngot",
       "BasicCircuit",
+      "AdvancedCircuit",
+      "MythricalCircuit",
       "Breadstick",
       "Pasta",
       "Cheese",
@@ -22729,6 +24414,7 @@
       "Minus",
       "Variable",
       "Salt",
+      "BigBottle",
       "LightningBottle",
       "WeakThread",
       "StrongThread",
@@ -22767,7 +24453,6 @@
       "MagicDustBlock",
       "FruitPaste",
       "Rocket",
-      "AdvancedCircuit",
       "Term",
       "GoldenBeef",
       "GoldenSteak",
@@ -22821,6 +24506,11 @@
       "PlantyShovel",
       "PlantySword",
       "PlantyHoe",
+      "AzurePickaxe",
+      "AzureAxe",
+      "AzureShovel",
+      "AzureSword",
+      "AzureHoe",
       "MushyPickaxe",
       "MushyAxe",
       "MushyShovel",
@@ -22863,6 +24553,7 @@
       "FunctionBlaster",
       "SigmaNotator",
       "RPG",
+      "StarcallerScepter",
       "MinersPet",
       "AdventurersPet",
       "WarriorsPet",
@@ -22876,6 +24567,7 @@
       "SodiumRapier",
       "RomanSpear",
       "FuzzyArmor",
+      "NightVisionArmor",
       "ItemIncinerator",
       "EnergyTablet",
       "BiomeLocator",
@@ -22915,6 +24607,7 @@
       "TallWildBush",
       "ScorchedBush",
       "Candybloom",
+      "Umberflower",
       "SaltBlock",
       "Frosting",
       "CandyCaneBlock",
@@ -23032,8 +24725,9 @@
     ],
     "CUSTOM:AlternateDimensionUtilities": [
       "BasicEnergyCable",
-      "Generator",
       "SolarPanel",
+      "SimpleMachineCasing",
+      "Generator",
       "ElectricSmelter",
       "AlloySmelter",
       "CircuitMaker",
@@ -23041,10 +24735,19 @@
       "Corruptor",
       "Purifier",
       "Levitator",
+      "AdvancedMachineCasing",
+      "AdvancedCorruptor",
+      "AdvancedPurifier",
+      "AdvancedIngotPresser",
+      "AdvancedElectricSmelter",
       "NuclearReactor",
       "CoolantRods",
+      "RefineryBase",
+      "RefineryController",
       "EnergyTablet",
       "BiomeLocator",
+      "BottledSunlight",
+      "BottledMoonlight",
       "HomeBlock",
       "PortalWand",
       "Spikes",
@@ -23052,17 +24755,23 @@
       "TheDirtBlock",
       "Instatunnel",
       "ImbunementTable",
+      "ElementalInscriber",
+      "ScorchedBox",
+      "PineBox",
+      "RedwoodBox",
+      "AzureBox",
       "ScorchedCraftingTable",
+      "PineCraftingTable",
       "RedwoodCraftingTable",
       "AzureCraftingTable",
-      "PineCraftingTable",
       "PlantyCraftingTable",
       "ShroomyCraftingTable",
       "CandyCaneCraftingTable",
       "ShaleFurnace",
       "MantleFurnace",
       "VeridiumFurnace",
-      "BlockShaperCasing"
+      "BlockShaperCasing",
+      "HintBook"
     ],
     "CUSTOM:AlternateDimensionMobs": [
       "Beetle",
@@ -23241,9 +24950,7 @@
       "block.alternate_dimension.meteorite_block": "Meteorite Block",
       "item.alternate_dimension.function_blaster": "Function Blaster",
       "gui.alternate_dimension.biome_selector.biome_input": "Biome name",
-      "gui.alternate_dimension.corruptor_gui.label_ingot_presser": "Corruptor",
       "jei.alternate_dimension.lightning_bottle_info": "Use an empty bottle on a lightning block (spawns when lightning strikes during a thunderstorm) to get a bottle of lightning!\nThis is a crafting ingredient used to make lightning-related things.",
-      "gui.alternate_dimension.corruptor_gui.button_press": "Corrupt",
       "block.alternate_dimension.whipped_cream_block": "Whipped Cream Block",
       "item.alternate_dimension.blessed_potion": "Potion of Blessing",
       "item.alternate_dimension.lightning_bottle": "Lightning in a Bottle",
@@ -23812,7 +25519,62 @@
       "item.alternate_dimension.barley_bread": "Barley Bread",
       "item.alternate_dimension.instatunnel": "Instatunnel",
       "item.alternate_dimension.instatunnel.description_0": "Blows out a huge sideways tunnel whilst keeping all the ores.",
-      "item.alternate_dimension.instatunnel.description_1": "Extremely useful for beginner and veteran miners alike!"
+      "item.alternate_dimension.instatunnel.description_1": "Extremely useful for beginner and veteran miners alike!",
+      "item.alternate_dimension.mythril_plate": "Mythril Plate",
+      "item.alternate_dimension.mythril_gear": "Mythril Gear",
+      "item.alternate_dimension.mythril_gearbox": "Mythril Gearbox",
+      "item.alternate_dimension.titanium_nugget": "Titanium Nugget",
+      "gui.alternate_dimension.corruptor_gui.label_ingot_presser": "Corruptor",
+      "block.alternate_dimension.advanced_corruptor": "Advanced Corruptor",
+      "block.alternate_dimension.simple_machine_casing": "Simple Machine Casing",
+      "block.alternate_dimension.advanced_machine_casing": "Advanced Machine Casing",
+      "block.alternate_dimension.advanced_purifier": "Advanced Purifier",
+      "block.alternate_dimension.advanced_ingot_presser": "Advanced Ingot Presser",
+      "block.alternate_dimension.advanced_electric_smelter": "Advanced Electric Smelter",
+      "item.alternate_dimension.mythrical_circuit": "Mythrical Circuit",
+      "block.alternate_dimension.refinery_base": "Refinery Base",
+      "gui.alternate_dimension.refinery_gui.power_suffix": " RPU",
+      "gui.alternate_dimension.refinery_gui.power_prefix": "Refinery Power: ",
+      "gui.alternate_dimension.refinery_gui.onoff_switch": "ON/OFF",
+      "gui.alternate_dimension.refinery_gui.label_refinery": "Refinery",
+      "block.alternate_dimension.refinery_controller": "Refinery Controller",
+      "block.alternate_dimension.umberflower": "Umberflower",
+      "item.alternate_dimension.elementium_fragment": "Elementium Fragment",
+      "item.alternate_dimension.elementium_ingot": "Elementium Ingot",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_insc": "Insc",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_elem": "Elem",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_riber": "riber",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_rgy": "rgy:",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_ele": "Elem",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_mental": "ental",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_ental": "ental",
+      "gui.alternate_dimension.elemental_inscriber_gui.label_ene": "Ene",
+      "block.alternate_dimension.elemental_inscriber": "Elemental Inscriber",
+      "item.alternate_dimension.starcaller_scepter.description_3": "Prevents lightning damage while held.",
+      "item.alternate_dimension.starcaller_scepter": "Starcaller Scepter",
+      "item.alternate_dimension.starcaller_scepter.description_1": "Right-Click to summon a long line of lightning strikes.",
+      "item.alternate_dimension.starcaller_scepter.description_2": "Grants the ability to fly while it is thundering.",
+      "item.alternate_dimension.starcaller_scepter.description_0": "A magical staff powered by lightning energy that wields the ability to summon the power of the heavens unto thine enemy.",
+      "item.alternate_dimension.night_vision_armor_helmet": "Night Vision Helmet",
+      "alternate_dimension.configuration.hints": "Hints",
+      "item.alternate_dimension.hint_book.description_0": "A helpful tome that provides a random hint or tip about the mod whenever it is opened.",
+      "item.alternate_dimension.hint_book": "Hint Book",
+      "gui.alternate_dimension.hint_book_gui.label_hint_book": "Hint Book",
+      "item.alternate_dimension.bottled_sunlight": "Bottled Sunlight",
+      "item.alternate_dimension.bottled_sunlight.description_0": "Use to change the time to day.",
+      "item.alternate_dimension.bottled_moonlight": "Bottled Moonlight",
+      "item.alternate_dimension.bottled_moonlight.description_0": "Use to change the time to night.",
+      "item.alternate_dimension.big_bottle": "Big Bottle",
+      "gui.alternate_dimension.wooden_box_gui.label_block_name_here": "Block Name Here",
+      "block.alternate_dimension.scorched_box": "Scorched Box",
+      "block.alternate_dimension.pine_box": "Pine Box",
+      "block.alternate_dimension.redwood_box": "Redwood Box",
+      "block.alternate_dimension.azure_box": "Azure Box",
+      "item.alternate_dimension.azure_pickaxe": "Azure Pickaxe",
+      "item.alternate_dimension.azure_axe": "Azure Axe",
+      "item.alternate_dimension.azure_shovel": "Azure Shovel",
+      "item.alternate_dimension.azure_sword": "Azure Sword",
+      "item.alternate_dimension.azure_hoe": "Azure Hoe"
     }
   },
   "metadata": {
@@ -23914,10 +25676,6 @@
             "children": []
           },
           {
-            "name": "Elemental",
-            "children": []
-          },
-          {
             "name": "EnchantedForest",
             "children": []
           },
@@ -23974,10 +25732,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "LightningBottle",
-            "children": []
           },
           {
             "name": "Jetpack",
@@ -24060,14 +25814,6 @@
             ]
           },
           {
-            "name": "Void",
-            "children": []
-          },
-          {
-            "name": "Hallowed",
-            "children": []
-          },
-          {
             "name": "Backpacks",
             "children": []
           },
@@ -24130,6 +25876,43 @@
           {
             "name": "Pets",
             "children": []
+          },
+          {
+            "name": "Elemental",
+            "children": [
+              {
+                "name": "Life",
+                "children": []
+              },
+              {
+                "name": "Fire",
+                "children": []
+              },
+              {
+                "name": "Ice",
+                "children": []
+              },
+              {
+                "name": "Candy",
+                "children": []
+              },
+              {
+                "name": "Void",
+                "children": []
+              },
+              {
+                "name": "Hallowed",
+                "children": []
+              },
+              {
+                "name": "Lightning",
+                "children": []
+              },
+              {
+                "name": "Elementium",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -24142,13 +25925,22 @@
           },
           {
             "name": "T1",
-            "children": []
+            "children": [
+              {
+                "name": "AdvancedT0",
+                "children": []
+              }
+            ]
           },
           {
             "name": "T2",
             "children": [
               {
                 "name": "NuclearReactor",
+                "children": []
+              },
+              {
+                "name": "Refinery",
                 "children": []
               }
             ]
@@ -24172,6 +25964,10 @@
           },
           {
             "name": "BaseProcedures",
+            "children": []
+          },
+          {
+            "name": "T3",
             "children": []
           }
         ]

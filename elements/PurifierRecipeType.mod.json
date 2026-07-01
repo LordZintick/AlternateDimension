@@ -4,31 +4,34 @@
   "definition": {
     "textureSelector": "purifier_recipe_gui.png",
     "width": 176,
-    "height": 185,
+    "height": 80,
     "icon": {
       "value": "CUSTOM:Purifier"
     },
     "craftingtables": [
       {
         "value": "CUSTOM:Purifier"
+      },
+      {
+        "value": "CUSTOM:AdvancedPurifier"
       }
     ],
     "enableCraftingtable": true,
     "enableIntList": false,
     "enableStringList": false,
-    "disableJeiBorder": false,
+    "disableJeiBorder": true,
     "title": "Purification",
     "slotList": [
       {
         "type": "INPUT",
-        "x": 58,
-        "y": 47,
+        "x": 46,
+        "y": 25,
         "slotid": 0
       },
       {
         "type": "OUTPUT",
-        "x": 82,
-        "y": 47,
+        "x": 113,
+        "y": 25,
         "slotid": 0
       }
     ],

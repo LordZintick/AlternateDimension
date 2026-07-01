@@ -32,7 +32,7 @@ public class PurifierGUIMenu extends AbstractContainerMenu implements AlternateD
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 4)
+			if (!this.containsKey(key) && this.size() >= 6)
 				return null;
 			return super.put(key, value);
 		}
@@ -52,7 +52,7 @@ public class PurifierGUIMenu extends AbstractContainerMenu implements AlternateD
 		super(AlternateDimensionModMenus.PURIFIER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -89,10 +89,20 @@ public class PurifierGUIMenu extends AbstractContainerMenu implements AlternateD
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 80, 34) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 47, 26) {
 			private final int slot = 0;
 			private int x = PurifierGUIMenu.this.x;
 			private int y = PurifierGUIMenu.this.y;
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 114, 26) {
+			private final int slot = 1;
+			private int x = PurifierGUIMenu.this.x;
+			private int y = PurifierGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -121,16 +131,16 @@ public class PurifierGUIMenu extends AbstractContainerMenu implements AlternateD
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 2) {
+				if (!this.moveItemStackTo(itemstack1, 2, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 2, false)) {
+				if (index < 2 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 2 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 2, 2 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

@@ -6,11 +6,9 @@ import net.neoforged.neoforge.energy.IEnergyStorage;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.RecipeHolder;
@@ -27,49 +25,32 @@ import java.util.stream.Collectors;
 import java.util.List;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.CircuitMakerRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 public class UpdateCircuitMakerRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack result = ItemStack.EMPTY;
-		if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500
-				&& !(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "running") instanceof BooleanProperty _getbp2 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp2)) && (!((new Object() {
-					public ItemStack getResult() {
-						if (world instanceof Level _lvl) {
-							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-							List<CircuitMakerRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CircuitMakerRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-							for (CircuitMakerRecipeTypeRecipe recipe : recipes) {
-								NonNullList<Ingredient> ingredients = recipe.getIngredients();
-								if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-									continue;
-								if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-									continue;
-								if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
-									continue;
-								return recipe.getResultItems().get(0).copy();
-							}
-						}
-						return ItemStack.EMPTY;
+		result = (new Object() {
+			public ItemStack getResult() {
+				if (world instanceof Level _lvl) {
+					net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
+					List<CircuitMakerRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CircuitMakerRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+					for (CircuitMakerRecipeTypeRecipe recipe : recipes) {
+						NonNullList<Ingredient> ingredients = recipe.getIngredients();
+						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+							continue;
+						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+							continue;
+						if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
+							continue;
+						return recipe.getResultItems().get(0).copy();
 					}
-				}.getResult()).getItem() == ItemStack.EMPTY.getItem()) || !((new Object() {
-					public ItemStack getResult() {
-						if (world instanceof Level _lvl) {
-							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-							List<CircuitMakerRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CircuitMakerRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-							for (CircuitMakerRecipeTypeRecipe recipe : recipes) {
-								NonNullList<Ingredient> ingredients = recipe.getIngredients();
-								if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-									continue;
-								if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-									continue;
-								if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
-									continue;
-								return recipe.getResultItems().get(0).copy();
-							}
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getResult()).getItem() == Blocks.AIR.asItem()))) {
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getResult()).copy();
+		if (!(result.getItem() == ItemStack.EMPTY.getItem()) && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500
+				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == ItemStack.EMPTY.getItem() || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == result.getItem()
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getCount() <= (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getMaxStackSize() - result.getCount())) {
 			if (world instanceof ILevelExtension _ext) {
 				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
 				if (_entityStorage != null)
@@ -80,7 +61,7 @@ public class UpdateCircuitMakerRecipeProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putDouble("progress", 0);
+					_blockEntity.getPersistentData().putDouble("progress", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "progress") + 1));
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
@@ -91,46 +72,26 @@ public class UpdateCircuitMakerRecipeProcedure {
 				if (_bs.getBlock().getStateDefinition().getProperty("running") instanceof BooleanProperty _booleanProp)
 					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 			}
-			AlternateDimensionMod.queueServerWork(100, () -> {
+			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "progress") >= 100) {
+				{
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("running") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("progress", 0);
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-					ItemStack _setstack = (new Object() {
-						public ItemStack getResult() {
-							if (world instanceof Level _lvl) {
-								net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-								List<CircuitMakerRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CircuitMakerRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-								for (CircuitMakerRecipeTypeRecipe recipe : recipes) {
-									NonNullList<Ingredient> ingredients = recipe.getIngredients();
-									if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-										continue;
-									if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-										continue;
-									if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
-										continue;
-									return recipe.getResultItems().get(0).copy();
-								}
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getResult()).copy();
-					_setstack.setCount((new Object() {
-						public ItemStack getResult() {
-							if (world instanceof Level _lvl) {
-								net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-								List<CircuitMakerRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CircuitMakerRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-								for (CircuitMakerRecipeTypeRecipe recipe : recipes) {
-									NonNullList<Ingredient> ingredients = recipe.getIngredients();
-									if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-										continue;
-									if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-										continue;
-									if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
-										continue;
-									return recipe.getResultItems().get(0).copy();
-								}
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getResult()).getCount());
+					ItemStack _setstack = result.copy();
+					_setstack.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getCount() + result.getCount());
 					_itemHandlerModifiable.setStackInSlot(3, _setstack);
 				}
 				if (world instanceof Level _level) {
@@ -158,44 +119,8 @@ public class UpdateCircuitMakerRecipeProcedure {
 					_stk.shrink(1);
 					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 				}
-				{
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("running") instanceof BooleanProperty _booleanProp)
-						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
-				}
-			});
-		}
-		if (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "running") instanceof BooleanProperty _getbp34 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp34)) {
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putDouble("progress", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "progress") + 1));
-				}
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
-	}
-
-	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
-		if (level instanceof ILevelExtension levelExtension) {
-			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
-			if (energyStorage != null)
-				return energyStorage.getEnergyStored();
-		}
-		return 0;
-	}
-
-	private static Property<?> getPropertyByName(BlockState state, String name) {
-		for (Property<?> property : state.getProperties()) {
-			if (property.getName().equals(name)) {
-				return property;
-			}
-		}
-		return null;
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
@@ -205,6 +130,15 @@ public class UpdateCircuitMakerRecipeProcedure {
 				return itemHandler.getStackInSlot(slot);
 		}
 		return ItemStack.EMPTY;
+	}
+
+	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.getEnergyStored();
+		}
+		return 0;
 	}
 
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {

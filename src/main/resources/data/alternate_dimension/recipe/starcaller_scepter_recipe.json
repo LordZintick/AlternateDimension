@@ -1,0 +1,33 @@
+{
+  "type": "alternate_dimension:elemental_infuser_recipe_type",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:portal_wand"
+    },
+    {
+      "item": "alternate_dimension:fire_essence"
+    },
+    {
+      "item": "alternate_dimension:life_essence"
+    },
+    {
+      "item": "alternate_dimension:lightning_bottle"
+    },
+    {
+      "item": "alternate_dimension:candy_essence"
+    }
+  ],
+  "integers": [
+    1,
+    8,
+    16,
+    16,
+    4
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:starcaller_scepter",
+      "count": 1
+    }
+  ]
+}

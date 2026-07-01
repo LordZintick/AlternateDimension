@@ -1,6 +1,9 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
 public class SelectAltDimProcedure {
 	public static void execute(Entity entity) {
@@ -27,6 +31,11 @@ public class SelectAltDimProcedure {
 			_vars.currentPlanet = "eleroth";
 			_vars.vanilla = false;
 			_vars.markSyncDirty();
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = new ItemStack(AlternateDimensionModItems.HINT_BOOK.get()).copy();
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
 			_player.getAbilities().invulnerable = false;

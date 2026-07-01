@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
-    "group": "stick",
+    "group": "tool_rod",
     "unlockingItems": [
       {
         "value": "TAG:mod:altdim_planks"

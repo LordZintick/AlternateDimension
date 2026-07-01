@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "CUSTOM:IngotPresser"
+        "value": "CUSTOM:SimpleMachineCasing"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -38,7 +38,7 @@
         "value": "CUSTOM:AluminumGearbox"
       },
       {
-        "value": "CUSTOM:AluminumBlock"
+        "value": "CUSTOM:SimpleMachineCasing"
       },
       {
         "value": "CUSTOM:AluminumGearbox"

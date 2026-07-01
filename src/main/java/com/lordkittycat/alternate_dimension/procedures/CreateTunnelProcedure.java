@@ -21,12 +21,12 @@ public class CreateTunnelProcedure {
 		double yoff = 0;
 		double zoff = 0;
 		BlockState current = Blocks.AIR.defaultBlockState();
-		if (!(direction == Direction.NORTH) && !(direction == Direction.EAST) && !(direction == Direction.SOUTH) && !(direction == Direction.WEST)) {
+		if (!(direction == Direction.UP) || !(direction == Direction.DOWN)) {
 			return;
 		}
-		xoff = (direction.getOpposite()).getStepX() == 1 ? 0 : -1;
+		xoff = Math.abs((direction.getOpposite()).getStepX()) == 1 ? 0 : (direction.getOpposite()).getStepZ() * (-1);
 		yoff = -1;
-		zoff = (direction.getOpposite()).getStepZ() == 1 ? 0 : -1;
+		zoff = Math.abs((direction.getOpposite()).getStepZ()) == 1 ? 0 : (direction.getOpposite()).getStepX() * (-1);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.dragon_fireball.explode")), SoundSource.PLAYERS, 1, 1);
@@ -46,24 +46,24 @@ public class CreateTunnelProcedure {
 							world.destroyBlock(_pos, false);
 						}
 					}
-					if ((direction.getOpposite()).getStepZ() == 1) {
-						zoff = zoff + 1;
+					if (Math.abs((direction.getOpposite()).getStepZ()) == 1) {
+						zoff = zoff + (direction.getOpposite()).getStepZ();
 					} else {
-						xoff = xoff + 1;
+						xoff = xoff + (direction.getOpposite()).getStepX();
 					}
 				}
 				yoff = yoff + 1;
-				if ((direction.getOpposite()).getStepZ() == 1) {
-					zoff = -1;
+				if (Math.abs((direction.getOpposite()).getStepZ()) == 1) {
+					zoff = 0;
 				} else {
-					xoff = -1;
+					xoff = 0;
 				}
 			}
 			yoff = -1;
-			if ((direction.getOpposite()).getStepX() == 1) {
-				zoff = zoff + 1;
+			if (Math.abs((direction.getOpposite()).getStepX()) == 1) {
+				zoff = zoff + (direction.getOpposite()).getStepX();
 			} else {
-				xoff = xoff + 1;
+				xoff = xoff + (direction.getOpposite()).getStepZ();
 			}
 		}
 	}

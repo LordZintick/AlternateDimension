@@ -1,0 +1,75 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "refinery_recipe_gui.png",
+    "width": 176,
+    "height": 104,
+    "icon": {
+      "value": "CUSTOM:RefineryController"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:RefineryController"
+      },
+      {
+        "value": "CUSTOM:RefineryBase"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": true,
+    "enableStringList": true,
+    "disableJeiBorder": true,
+    "title": "Electrolytic Refining",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 25,
+        "y": 19,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 43,
+        "y": 19,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 87,
+        "y": 19,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 105,
+        "y": 19,
+        "slotid": 1
+      }
+    ],
+    "components": [
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 1,
+          "sprite": "red_right_arrow.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 192,
+          "y": 118,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

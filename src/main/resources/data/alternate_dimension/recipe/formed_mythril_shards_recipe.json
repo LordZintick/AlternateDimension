@@ -1,22 +1,28 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "mythril_ingot",
-  "category": "misc",
-  "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
-  ],
-  "key": {
-    "a": {
-      "item": "alternate_dimension:mythril_shards"
-    },
-    "b": {
+  "type": "alternate_dimension:refinery_recipe_type",
+  "ingredients": [
+    {
       "item": "alternate_dimension:aluminum_ingot"
+    },
+    {
+      "item": "alternate_dimension:mythril_shards"
     }
-  },
-  "result": {
-    "id": "alternate_dimension:formed_mythril_shards",
-    "count": 1
-  }
+  ],
+  "integers": [
+    1,
+    9
+  ],
+  "strings": [
+    "6"
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:formed_mythril_shards",
+      "count": 1
+    },
+    {
+      "id": "alternate_dimension:aluminum_nugget",
+      "count": 2
+    }
+  ]
 }
