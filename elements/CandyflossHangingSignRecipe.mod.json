@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "hanging_sign",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminumChain"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumChain"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CandyflossHangingSign"
+    },
+    "name": "candyfloss_hanging_sign_recipe",
+    "namespace": "mod"
+  }
+}

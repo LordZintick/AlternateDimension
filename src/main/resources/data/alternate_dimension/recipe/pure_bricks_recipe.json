@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "alternate_dimension:bricks"
+    },
+    "b": {
+      "item": "alternate_dimension:hallowed_essence"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:pure_bricks",
+    "count": 8
+  }
+}

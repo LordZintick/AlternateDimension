@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/pure_bricks",
+    "particle": "alternate_dimension:block/pure_bricks"
+  },
+  "render_type": "solid"
+}

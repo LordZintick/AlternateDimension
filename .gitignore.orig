@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+||||||| (empty tree)
+=======
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+/.mcreator/workspaceBackups/
+/.mcreator/generatorGradleCache
+>>>>>>> ade9634 (- Refactored git repo to remove broken large files)

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/corrupt_lantern",
+    "particle": "alternate_dimension:block/corrupt_lantern"
+  },
+  "render_type": "solid"
+}

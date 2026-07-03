@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:pure_bricks"
+    },
+    "b": {
+      "item": "alternate_dimension:phosphorus"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:pure_lantern",
+    "count": 4
+  }
+}

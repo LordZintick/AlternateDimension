@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "wooden_trapdoor",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CandyflossTrapdoor"
+    },
+    "name": "candyfloss_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

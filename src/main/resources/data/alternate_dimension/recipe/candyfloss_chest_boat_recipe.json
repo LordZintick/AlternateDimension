@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "chest_boat",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:candyfloss_boat"
+    },
+    {
+      "tag": "alternate_dimension:boxes"
+    }
+  ],
+  "result": {
+    "id": "alternate_dimension:candyfloss_chest_boat",
+    "count": 1
+  }
+}

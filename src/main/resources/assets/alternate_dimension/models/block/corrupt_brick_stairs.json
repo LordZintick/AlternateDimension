@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "alternate_dimension:block/corrupted_bricks",
+    "bottom": "alternate_dimension:block/corrupted_bricks",
+    "top": "alternate_dimension:block/corrupted_bricks",
+    "side": "alternate_dimension:block/corrupted_bricks"
+  },
+  "render_type": "solid"
+}

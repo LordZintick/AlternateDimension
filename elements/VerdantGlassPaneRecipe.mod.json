@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 16,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:VerdantGlass"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      },
+      {
+        "value": "CUSTOM:VerdantGlass"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VerdantGlassPane"
+    },
+    "name": "verdant_glass_pane_recipe",
+    "namespace": "mod"
+  }
+}

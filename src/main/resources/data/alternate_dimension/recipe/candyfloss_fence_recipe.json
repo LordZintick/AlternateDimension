@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:candyfloss_planks"
+    },
+    "b": {
+      "item": "alternate_dimension:tool_rod"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:candyfloss_fence",
+    "count": 3
+  }
+}

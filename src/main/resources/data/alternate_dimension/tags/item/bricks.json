@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:shale_bricks",
+    "alternate_dimension:pyric_bricks",
+    "alternate_dimension:veridium_bricks"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:frosting"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:candyfloss_planks",
+    "count": 4
+  }
+}

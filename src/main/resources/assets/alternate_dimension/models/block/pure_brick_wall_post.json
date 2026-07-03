@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "alternate_dimension:block/pure_bricks",
+    "particle": "alternate_dimension:block/pure_bricks"
+  },
+  "render_type": "solid"
+}

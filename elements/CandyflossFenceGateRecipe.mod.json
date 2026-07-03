@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "wooden_fence_gate",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ToolRod"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:ToolRod"
+      },
+      {
+        "value": "CUSTOM:ToolRod"
+      },
+      {
+        "value": "CUSTOM:CandyflossPlanks"
+      },
+      {
+        "value": "CUSTOM:ToolRod"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CandyflossFenceGate"
+    },
+    "name": "candyfloss_fence_gate_recipe",
+    "namespace": "mod"
+  }
+}

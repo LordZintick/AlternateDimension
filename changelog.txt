@@ -1,0 +1,6 @@
+- Added Greenwood Box.
+- Added Candyfloss wood.
+- Added Pure and Corrupt bricks, variants, and doors.
+- Added Verdant, Pure, and Corrupt lanterns.
+- Accidentally messed up the structures, but fixed many of them.
+- Made some various minor fixes and changes.
