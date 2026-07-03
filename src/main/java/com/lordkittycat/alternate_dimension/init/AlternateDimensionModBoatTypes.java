@@ -30,4 +30,8 @@ public class AlternateDimensionModBoatTypes {
 			(Supplier<Item>) () -> Items.STICK, false);
 	public static final EnumProxy<Boat.Type> PINE_CHEST_BOAT_TYPE = new EnumProxy<>(Boat.Type.class, (Supplier<Block>) () -> Blocks.OAK_PLANKS, "alternate_dimension:pine_chest_boat", (Supplier<Item>) () -> Items.AIR,
 			AlternateDimensionModItems.PINE_CHEST_BOAT, (Supplier<Item>) () -> Items.STICK, false);
+	public static final EnumProxy<Boat.Type> GREENWOOD_BOAT_TYPE = new EnumProxy<>(Boat.Type.class, (Supplier<Block>) () -> Blocks.OAK_PLANKS, "alternate_dimension:greenwood_boat", AlternateDimensionModItems.GREENWOOD_BOAT,
+			(Supplier<Item>) () -> Items.AIR, (Supplier<Item>) () -> Items.STICK, false);
+	public static final EnumProxy<Boat.Type> GREENWOOD_CHEST_BOAT_TYPE = new EnumProxy<>(Boat.Type.class, (Supplier<Block>) () -> Blocks.OAK_PLANKS, "alternate_dimension:greenwood_chest_boat", (Supplier<Item>) () -> Items.AIR,
+			AlternateDimensionModItems.GREENWOOD_CHEST_BOAT, (Supplier<Item>) () -> Items.STICK, false);
 }

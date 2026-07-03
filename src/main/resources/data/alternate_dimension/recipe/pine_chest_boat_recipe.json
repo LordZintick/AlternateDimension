@@ -7,7 +7,7 @@
       "item": "alternate_dimension:pine_boat"
     },
     {
-      "item": "minecraft:chest"
+      "tag": "alternate_dimension:boxes"
     }
   ],
   "result": {

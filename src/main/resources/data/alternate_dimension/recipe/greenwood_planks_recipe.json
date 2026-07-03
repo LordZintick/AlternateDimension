@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:plant_matter"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:greenwood_planks",
+    "count": 4
+  }
+}

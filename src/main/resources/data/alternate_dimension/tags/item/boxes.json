@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:pine_box",
+    "alternate_dimension:redwood_box",
+    "alternate_dimension:azure_box",
+    "alternate_dimension:scorched_box"
+  ]
+}

@@ -109,9 +109,13 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 5,
-    "generateFeature": false,
-    "restrictionBiomes": [],
+    "frequencyOnChunks": 1,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#mod:is_familiar_realm"
+      }
+    ],
     "generationType": "Flower",
     "patchSize": 64,
     "generateAtAnyHeight": false

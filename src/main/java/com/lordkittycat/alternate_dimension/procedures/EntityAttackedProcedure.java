@@ -17,6 +17,7 @@ import net.minecraft.core.BlockPos;
 import javax.annotation.Nullable;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModMobEffects;
+import com.lordkittycat.alternate_dimension.entity.PossessedArmorEntity;
 
 @EventBusSubscriber
 public class EntityAttackedProcedure {
@@ -42,6 +43,10 @@ public class EntityAttackedProcedure {
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 				_level.addFreshEntity(entityToSpawn);
 			}
+		}
+		if (sourceentity instanceof PossessedArmorEntity _ent3) {
+			_ent3.getEntityData().set(PossessedArmorEntity.ANIM, 1000);
+			_ent3.getEntityData().set(PossessedArmorEntity.ANIM, 2);
 		}
 	}
 }

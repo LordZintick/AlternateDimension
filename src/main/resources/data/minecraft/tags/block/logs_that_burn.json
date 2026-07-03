@@ -6,6 +6,10 @@
       "required": false
     },
     {
+      "id": "#alternate_dimension:greenwood_logs",
+      "required": false
+    },
+    {
       "id": "#alternate_dimension:redwood_logs",
       "required": false
     },

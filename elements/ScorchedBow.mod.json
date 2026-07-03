@@ -17,7 +17,7 @@
     "states": [
       {
         "renderType": 0,
-        "texture": "scorched_bow",
+        "texture": "scorched_bow_pulling_0",
         "customModelName": "Ranged item",
         "stateMap": [
           {
@@ -33,7 +33,7 @@
       },
       {
         "renderType": 0,
-        "texture": "scorched_bow",
+        "texture": "scorched_bow_pulling_1",
         "customModelName": "Ranged item",
         "stateMap": [
           {
@@ -58,7 +58,7 @@
       },
       {
         "renderType": 0,
-        "texture": "scorched_bow",
+        "texture": "scorched_bow_pulling_2",
         "customModelName": "Ranged item",
         "stateMap": [
           {
@@ -101,18 +101,16 @@
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
-    ],
+    "repairItems": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Currently nonfunctional, for testing only."
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -124,7 +122,7 @@
     "inventoryStackSize": 99,
     "enableRanged": true,
     "shootConstantly": false,
-    "rangedItemChargesPower": false,
+    "rangedItemChargesPower": true,
     "projectile": {
       "value": "CUSTOM:PlusProjectile"
     },

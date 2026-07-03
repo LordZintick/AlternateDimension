@@ -1,205 +1,505 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2026-06-29 17:57:03 -0400"
+      "unlock_right_away": "2026-07-01 10:02:43 -0400"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:forest": "2026-06-29 17:57:04 -0400"
+      "minecraft:old_growth_birch_forest": "2026-07-01 10:02:44 -0400"
     },
     "done": false
   },
-  "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/bamboo_raft": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2026-06-29 17:58:21 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_cobble_decompressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_cobble_wall_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_furnace_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/pyric_bricks_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/pyric_cobble_stairs_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/pyric_cobble_slab_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_cobble_slab_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/pyric_cobble_wall_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mantle_furnace_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mantle_cobble_decompressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_cobble_stairs_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mantle_cobble_compressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_cobble_compressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/veridium_bricks_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:44 -0400"
-    },
-    "done": true
-  },
   "alternate_dimension:recipes/shale_cobble_slab_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_cobble_compressing": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_bricks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_cobble_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_cobble_stairs_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_cobble_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_cobble_decompressing": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_furnace_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pyric_cobble_wall_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_cobble_wall_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/mantle_furnace_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/shale_bricks_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 17:59:46 -0400"
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/mantle_cobble_decompressing": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/mantle_cobble_compressing": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:14:59 -0400"
     },
     "done": true
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2026-06-29 18:04:52 -0400"
+      "has_lots_of_items": "2026-07-01 14:15:04 -0400"
     },
     "done": true
   },
-  "alternate_dimension:recipes/blue_mushroom_block_recipe": {
+  "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
-      "has_ingredient_0": "2026-06-29 18:04:54 -0400"
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-07-01 14:15:05 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_cobble_decompressing": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_cobble_wall_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_furnace_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_cobble_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_cobble_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_cobble_compressing": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/veridium_bricks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 14:15:12 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/biome_locator_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/plant_matter_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:14 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/seed_gun_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_shovel_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_sword_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/magic_dust_block_compacting": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_fence_gate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_trapdoor_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/wooden_drill_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/imbunement_table_crafting_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_bowl_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_fence_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_hoe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/evilstone_gear_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/strong_thread_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:02:51 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_crafting_table_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_pickaxe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/phosphorus_torch_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:07 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_sign_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wooden_axe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/evilstone_block_decompacting": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/magic_dust_block_decompacting": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/nuggets_to_aluminum": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:01:52 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/evilstone_block_compacting": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/portal_wand_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wooden_hoe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/instatunnel_recipe": {
+    "criteria": {
+      "has_ingredient_1": "2026-07-01 16:05:07 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_bowl_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/ingot_presser_recipe": {
+    "criteria": {
+      "has_ingredient_1": "2026-07-01 16:05:07 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/spikes_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-07-01 16:07:02 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_door_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wood_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:02 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_button_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wooden_sword_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_axe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wooden_pickaxe_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_pressure_plate_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/wooden_drill_head_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-07-01 16:01:49 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_stairs_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_slab_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_planks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:02 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_box_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/plant_stem_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:18 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_boat_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/tool_rod_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/planty_crafting_table_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:03:14 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/tool_rod_smaller_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/cloud_charge_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:05:06 -0400"
+    },
+    "done": true
+  },
+  "alternate_dimension:recipes/pine_wooden_shovel_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-07-01 16:07:08 -0400"
     },
     "done": true
   },

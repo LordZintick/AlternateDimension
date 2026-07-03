@@ -2,16 +2,19 @@
   "replace": false,
   "values": [
     "alternate_dimension:redwooden_axe",
-    "alternate_dimension:scorched_wooden_axe",
+    "alternate_dimension:shale_axe",
     "alternate_dimension:titanium_axe",
+    "alternate_dimension:mantle_axe",
+    "alternate_dimension:azure_axe",
+    "alternate_dimension:shroomium_axe",
+    "alternate_dimension:planty_axe",
+    "alternate_dimension:scorched_wooden_axe",
     "alternate_dimension:aluminum_axe",
+    "alternate_dimension:veridium_axe",
     "alternate_dimension:phosphorium_axe",
     "alternate_dimension:mushy_axe",
     "alternate_dimension:titanium_battleaxe",
-    "alternate_dimension:azure_axe",
-    "alternate_dimension:shroomium_axe",
     "alternate_dimension:pine_wooden_axe",
-    "alternate_dimension:planty_axe",
     "alternate_dimension:mythril_axe"
   ]
 }

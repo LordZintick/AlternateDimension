@@ -14,7 +14,7 @@
       "item": "alternate_dimension:tattered_leather"
     },
     "c": {
-      "item": "minecraft:chest"
+      "tag": "alternate_dimension:boxes"
     }
   },
   "result": {

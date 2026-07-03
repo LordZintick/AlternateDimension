@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:phosphorus"
+    },
+    "b": {
+      "tag": "minecraft:shovels"
+    },
+    "c": {
+      "item": "alternate_dimension:miners_pet"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:instavator",
+    "count": 1
+  }
+}

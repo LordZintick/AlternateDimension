@@ -5,14 +5,19 @@ package com.lordkittycat.alternate_dimension.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
+@EventBusSubscriber
 public class AlternateDimensionModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AlternateDimensionMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_DECOR = REGISTRY.register("alternate_dimension_decor",
@@ -259,6 +264,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
+				tabData.accept(AlternateDimensionModItems.CLOTH.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_DECOR.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.SODIUM_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -386,6 +392,21 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_2.get());
 				tabData.accept(AlternateDimensionModItems.IMMUNITY_POTION_3.get());
 				tabData.accept(AlternateDimensionModItems.JUMPY_POTION.get());
+				tabData.accept(AlternateDimensionModItems.VERIDIUM_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.VERIDIUM_AXE.get());
+				tabData.accept(AlternateDimensionModItems.VERIDIUM_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.VERIDIUM_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.VERIDIUM_HOE.get());
+				tabData.accept(AlternateDimensionModItems.SHALE_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.SHALE_AXE.get());
+				tabData.accept(AlternateDimensionModItems.SHALE_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.SHALE_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.SHALE_HOE.get());
+				tabData.accept(AlternateDimensionModItems.MANTLE_PICKAXE.get());
+				tabData.accept(AlternateDimensionModItems.MANTLE_AXE.get());
+				tabData.accept(AlternateDimensionModItems.MANTLE_SHOVEL.get());
+				tabData.accept(AlternateDimensionModItems.MANTLE_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.MANTLE_HOE.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_MATERIALS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_WORLD = REGISTRY.register("alternate_dimension_world",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_world")).icon(() -> new ItemStack(AlternateDimensionModBlocks.COOKIE_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -544,6 +565,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.CRYSTAL_CHEST.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.THE_DIRT_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModItems.INSTATUNNEL.get());
+				tabData.accept(AlternateDimensionModItems.INSTAVATOR.get());
 				tabData.accept(AlternateDimensionModBlocks.IMBUNEMENT_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.ELEMENTAL_INSCRIBER.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SCORCHED_BOX.get().asItem());
@@ -590,5 +612,27 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ROMAN_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.SHROOMITE_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.HALLOWED_ONE_SPAWN_EGG.get());
+				tabData.accept(AlternateDimensionModItems.POSSESSED_ARMOR_SPAWN_EGG.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_UTILITIES.getId()).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_PLANKS.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_STAIRS.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_SLAB.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_FENCE.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_FENCE_GATE.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_DOOR.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_TRAPDOOR.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_PRESSURE_PLATE.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_BUTTON.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_SIGN.get().asItem());
+			tabData.accept(AlternateDimensionModBlocks.GREENWOOD_HANGING_SIGN.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(AlternateDimensionModItems.GREENWOOD_BOAT.get());
+			tabData.accept(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get());
+		}
+	}
 }

@@ -123,7 +123,7 @@ public class BlueGummyBearEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.24);
 		builder = builder.add(Attributes.MAX_HEALTH, 75);
 		builder = builder.add(Attributes.ARMOR, 6.5);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.STEP_HEIGHT, 1);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.8);

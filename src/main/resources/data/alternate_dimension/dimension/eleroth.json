@@ -1107,14 +1107,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:sand"
+                              "Name": "alternate_dimension:rich_dirt"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "alternate_dimension:rich_dirt"
                           }
                         }
                       ]
@@ -1132,7 +1132,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:sand"
+                        "Name": "alternate_dimension:rich_dirt"
                       }
                     }
                   }

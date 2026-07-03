@@ -17,8 +17,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -75,17 +73,7 @@ public class PlayerTickProcedure {
 			if (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.FLYING_SPEED))
 				_livingEntity11.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.1);
 		}
-		if (AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown > 0) {
-			AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown = AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown - 1;
-			AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
-		} else {
-			if (Mth.nextDouble(RandomSource.create(), 0, 1000) == 10 && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-				SpawnMeteorProcedure.execute(world, x + Mth.nextInt(RandomSource.create(), -128, 128), y, z + Mth.nextInt(RandomSource.create(), -128, 128), entity);
-				AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown = 2400;
-				AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
-			}
-		}
-		if ((entity.level().dimension()) == Level.OVERWORLD && (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).chosenPlanet).equals("") && !(entity instanceof Player _plr19 && _plr19.containerMenu instanceof IntroScreenMenu)) {
+		if ((entity.level().dimension()) == Level.OVERWORLD && (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).chosenPlanet).equals("") && !(entity instanceof Player _plr15 && _plr15.containerMenu instanceof IntroScreenMenu)) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				_ent.openMenu(new MenuProvider() {

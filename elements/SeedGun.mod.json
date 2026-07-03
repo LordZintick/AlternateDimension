@@ -35,7 +35,7 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "Requires Wheat Seeds"
+        "Requires Alternate Dimension seeds as ammo"
       ]
     },
     "glowCondition": {

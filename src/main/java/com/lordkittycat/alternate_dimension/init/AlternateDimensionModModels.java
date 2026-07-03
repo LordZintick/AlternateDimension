@@ -28,5 +28,6 @@ public class AlternateDimensionModModels {
 		event.registerLayerDefinition(Modelspirit.LAYER_LOCATION, Modelspirit::createBodyLayer);
 		event.registerLayerDefinition(Modelshroomite.LAYER_LOCATION, Modelshroomite::createBodyLayer);
 		event.registerLayerDefinition(Modelpolar_bear.LAYER_LOCATION, Modelpolar_bear::createBodyLayer);
+		event.registerLayerDefinition(Modelpossessed_armor.LAYER_LOCATION, Modelpossessed_armor::createBodyLayer);
 	}
 }

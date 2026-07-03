@@ -6,13 +6,10 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -33,7 +30,7 @@ import com.lordkittycat.alternate_dimension.procedures.CorruptElfProcedure;
 import com.lordkittycat.alternate_dimension.procedures.CheckForLushForestAboveProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
-public class ElfEntity extends Monster implements RangedAttackMob {
+public class ElfEntity extends Monster {
 
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ElfEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(ElfEntity.class, EntityDataSerializers.INT);
@@ -76,12 +73,6 @@ public class ElfEntity extends Monster implements RangedAttackMob {
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 30, 1f) {
-			@Override
-			public boolean canContinueToUse() {
-				return this.canUse();
-			}
-		});
 	}
 
 	@Override
@@ -124,16 +115,6 @@ public class ElfEntity extends Monster implements RangedAttackMob {
 		super.readAdditionalSaveData(compound);
 		if (compound.contains("Texture"))
 			this.setTexture(compound.getString("Texture"));
-	}
-
-	@Override
-	public void performRangedAttack(LivingEntity target, float flval) {
-		Arrow entityarrow = new Arrow(this.level(), this, new ItemStack(Items.ARROW), null);
-		double d0 = target.getY() + target.getEyeHeight() - 1.1;
-		double d1 = target.getX() - this.getX();
-		double d3 = target.getZ() - this.getZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-		this.level().addFreshEntity(entityarrow);
 	}
 
 	@Override

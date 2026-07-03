@@ -18,14 +18,13 @@
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Leaves",
     "blockSetType": "OAK",
-    "leavesParticleChance": 0.01,
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {

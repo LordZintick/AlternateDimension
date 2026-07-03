@@ -61,14 +61,19 @@ public class PortalWandItem extends Item {
 	}
 
 	@Override
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		FinishPortalWandEffectsProcedure.execute(world, x, y, z, entity);
+		return retval;
+	}
+
+	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
 		RemovePortalProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()), context.getPlayer());
 		return InteractionResult.SUCCESS;
-	}
-
-	@Override
-	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		FinishPortalWandEffectsProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, time);
 	}
 }

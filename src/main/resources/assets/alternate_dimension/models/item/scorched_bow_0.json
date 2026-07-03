@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "alternate_dimension:item/scorched_bow"
+    "layer0": "alternate_dimension:item/scorched_bow_pulling_0"
   },
   "display": {
     "thirdperson_righthand": {

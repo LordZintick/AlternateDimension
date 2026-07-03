@@ -8,6 +8,9 @@
     "unlockingItems": [
       {
         "value": "CUSTOM:TatteredLeather"
+      },
+      {
+        "value": "TAG:mod:boxes"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -29,7 +32,7 @@
         "value": "CUSTOM:TatteredLeather"
       },
       {
-        "value": "Blocks.CHEST"
+        "value": "TAG:mod:boxes"
       },
       {
         "value": "CUSTOM:TatteredLeather"

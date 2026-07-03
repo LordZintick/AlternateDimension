@@ -5,7 +5,6 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
@@ -13,6 +12,7 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -29,7 +29,7 @@ import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
-public class GoldenCowEntity extends Monster {
+public class GoldenCowEntity extends PathfinderMob {
 
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(GoldenCowEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(GoldenCowEntity.class, EntityDataSerializers.INT);

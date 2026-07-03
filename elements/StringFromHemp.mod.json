@@ -45,7 +45,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.STRING"
+      "value": "CUSTOM:WeakThread"
     },
     "name": "string_from_hemp",
     "namespace": "mod"

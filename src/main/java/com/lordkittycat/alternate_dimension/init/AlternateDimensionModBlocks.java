@@ -301,6 +301,19 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> PINE_BOX;
 	public static final DeferredBlock<Block> REDWOOD_BOX;
 	public static final DeferredBlock<Block> AZURE_BOX;
+	public static final DeferredBlock<Block> GREENWOOD_PLANKS;
+	public static final DeferredBlock<Block> GREENWOOD_STAIRS;
+	public static final DeferredBlock<Block> GREENWOOD_SLAB;
+	public static final DeferredBlock<Block> GREENWOOD_FENCE;
+	public static final DeferredBlock<Block> GREENWOOD_FENCE_GATE;
+	public static final DeferredBlock<Block> GREENWOOD_DOOR;
+	public static final DeferredBlock<Block> GREENWOOD_TRAPDOOR;
+	public static final DeferredBlock<Block> GREENWOOD_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> GREENWOOD_BUTTON;
+	public static final DeferredBlock<Block> GREENWOOD_SIGN;
+	public static final DeferredBlock<Block> GREENWOOD_WALL_SIGN;
+	public static final DeferredBlock<Block> GREENWOOD_HANGING_SIGN;
+	public static final DeferredBlock<Block> GREENWOOD_WALL_HANGING_SIGN;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -581,6 +594,19 @@ public class AlternateDimensionModBlocks {
 		PINE_BOX = REGISTRY.register("pine_box", PineBoxBlock::new);
 		REDWOOD_BOX = REGISTRY.register("redwood_box", RedwoodBoxBlock::new);
 		AZURE_BOX = REGISTRY.register("azure_box", AzureBoxBlock::new);
+		GREENWOOD_PLANKS = REGISTRY.register("greenwood_planks", GreenwoodPlanksBlock::new);
+		GREENWOOD_STAIRS = REGISTRY.register("greenwood_stairs", GreenwoodStairsBlock::new);
+		GREENWOOD_SLAB = REGISTRY.register("greenwood_slab", GreenwoodSlabBlock::new);
+		GREENWOOD_FENCE = REGISTRY.register("greenwood_fence", GreenwoodFenceBlock::new);
+		GREENWOOD_FENCE_GATE = REGISTRY.register("greenwood_fence_gate", GreenwoodFenceGateBlock::new);
+		GREENWOOD_DOOR = REGISTRY.register("greenwood_door", GreenwoodDoorBlock::new);
+		GREENWOOD_TRAPDOOR = REGISTRY.register("greenwood_trapdoor", GreenwoodTrapdoorBlock::new);
+		GREENWOOD_PRESSURE_PLATE = REGISTRY.register("greenwood_pressure_plate", GreenwoodPressurePlateBlock::new);
+		GREENWOOD_BUTTON = REGISTRY.register("greenwood_button", GreenwoodButtonBlock::new);
+		GREENWOOD_SIGN = REGISTRY.register("greenwood_sign", GreenwoodSignBlock::new);
+		GREENWOOD_WALL_SIGN = REGISTRY.register("greenwood_wall_sign", GreenwoodWallSignBlock::new);
+		GREENWOOD_HANGING_SIGN = REGISTRY.register("greenwood_hanging_sign", GreenwoodHangingSignBlock::new);
+		GREENWOOD_WALL_HANGING_SIGN = REGISTRY.register("greenwood_wall_hanging_sign", GreenwoodWallHangingSignBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -613,6 +639,8 @@ public class AlternateDimensionModBlocks {
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
@@ -626,5 +654,7 @@ public class AlternateDimensionModBlocks {
 		event.modify(BlockEntityType.HANGING_SIGN, REDWOOD_HANGING_SIGN.get(), REDWOOD_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, PINE_SIGN.get(), PINE_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, PINE_HANGING_SIGN.get(), PINE_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, GREENWOOD_SIGN.get(), GREENWOOD_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, GREENWOOD_HANGING_SIGN.get(), GREENWOOD_WALL_HANGING_SIGN.get());
 	}
 }

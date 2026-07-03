@@ -49,5 +49,6 @@ public class AlternateDimensionModEntityRenderers {
 		event.registerEntityRenderer(AlternateDimensionModEntities.HALLOWED_ONE.get(), HallowedOneRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.ROMAN.get(), RomanRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.BEETLE_QUEEN.get(), BeetleQueenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.POSSESSED_ARMOR.get(), PossessedArmorRenderer::new);
 	}
 }

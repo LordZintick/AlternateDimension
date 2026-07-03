@@ -140,6 +140,10 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<BeetleQueenEntity>of(BeetleQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.4f, 0.3f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PossessedArmorEntity>> POSSESSED_ARMOR = register("possessed_armor",
+			EntityType.Builder.<PossessedArmorEntity>of(PossessedArmorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -176,6 +180,7 @@ public class AlternateDimensionModEntities {
 		HallowedOneEntity.init(event);
 		RomanEntity.init(event);
 		BeetleQueenEntity.init(event);
+		PossessedArmorEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -207,5 +212,6 @@ public class AlternateDimensionModEntities {
 		event.put(HALLOWED_ONE.get(), HallowedOneEntity.createAttributes().build());
 		event.put(ROMAN.get(), RomanEntity.createAttributes().build());
 		event.put(BEETLE_QUEEN.get(), BeetleQueenEntity.createAttributes().build());
+		event.put(POSSESSED_ARMOR.get(), PossessedArmorEntity.createAttributes().build());
 	}
 }

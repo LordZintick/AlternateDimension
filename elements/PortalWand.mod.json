@@ -56,7 +56,7 @@
     "onRightClickedOnBlock": {
       "name": "RemovePortal"
     },
-    "onStoppedUsing": {
+    "onFinishUsingItem": {
       "name": "FinishPortalWandEffects"
     },
     "enableRanged": false,

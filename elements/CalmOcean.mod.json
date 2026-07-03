@@ -4,13 +4,13 @@
   "definition": {
     "name": "Calm Ocean",
     "groundBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "CUSTOM:RichDirt"
     },
     "undergroundBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "CUSTOM:RichDirt"
     },
     "underwaterBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": ""
     },
     "ambientSound": {
       "value": ""

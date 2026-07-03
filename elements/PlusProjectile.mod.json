@@ -13,7 +13,7 @@
     "disableGravity": false,
     "disableDiscarding": false,
     "power": 1.0,
-    "damage": 0.0,
+    "damage": 2.0,
     "knockback": 5,
     "entityModel": "Default",
     "customModelTexture": "",

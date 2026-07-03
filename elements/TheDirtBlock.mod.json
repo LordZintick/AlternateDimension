@@ -61,7 +61,7 @@
     ],
     "destroyTool": "shovel",
     "customDrop": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "dropAmount": 1,
     "xpAmountMin": 0,

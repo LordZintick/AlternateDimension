@@ -15,7 +15,7 @@ import com.lordkittycat.alternate_dimension.procedures.SetHomePointProcedure;
 
 public class HomeBlockBlock extends Block {
 	public HomeBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(5f, 36000000f).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(3f, 36000000f).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

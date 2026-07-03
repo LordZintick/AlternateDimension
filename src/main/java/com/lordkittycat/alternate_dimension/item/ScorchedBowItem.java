@@ -1,11 +1,10 @@
 package com.lordkittycat.alternate_dimension.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.ProjectileWeaponItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,8 +12,10 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 
-import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
+import java.util.List;
+
 import com.lordkittycat.alternate_dimension.entity.PlusProjectileEntity;
 
 public class ScorchedBowItem extends Item {
@@ -38,8 +39,10 @@ public class ScorchedBowItem extends Item {
 	}
 
 	@Override
-	public boolean isValidRepairItem(ItemStack itemstack, ItemStack repairitem) {
-		return Ingredient.of(new ItemStack(AlternateDimensionModBlocks.SCORCHED_PLANKS.get())).test(repairitem);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("item.alternate_dimension.scorched_bow.description_0"));
 	}
 
 	@Override
@@ -55,9 +58,12 @@ public class ScorchedBowItem extends Item {
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
+			float pullingPower = BowItem.getPowerForTime(this.getUseDuration(itemstack, player) - time);
+			if (pullingPower < 0.1)
+				return;
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-				PlusProjectileEntity projectile = PlusProjectileEntity.shoot(world, entity, world.getRandom());
+				PlusProjectileEntity projectile = PlusProjectileEntity.shoot(world, entity, world.getRandom(), pullingPower);
 				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
 				if (player.getAbilities().instabuild) {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:cloth"
+    },
+    "b": {
+      "item": "alternate_dimension:lush_grass_block"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:home_block",
+    "count": 1
+  }
+}

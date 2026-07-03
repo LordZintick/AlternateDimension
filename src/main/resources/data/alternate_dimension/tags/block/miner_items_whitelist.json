@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    {
+      "id": "#minecraft:dirt",
+      "required": false
+    },
     "alternate_dimension:rooted_stone",
     "alternate_dimension:shale",
     "minecraft:stone",

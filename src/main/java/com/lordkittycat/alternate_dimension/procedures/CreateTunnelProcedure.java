@@ -21,7 +21,7 @@ public class CreateTunnelProcedure {
 		double yoff = 0;
 		double zoff = 0;
 		BlockState current = Blocks.AIR.defaultBlockState();
-		if (!(direction == Direction.UP) || !(direction == Direction.DOWN)) {
+		if (direction == Direction.UP || direction == Direction.DOWN) {
 			return;
 		}
 		xoff = Math.abs((direction.getOpposite()).getStepX()) == 1 ? 0 : (direction.getOpposite()).getStepZ() * (-1);

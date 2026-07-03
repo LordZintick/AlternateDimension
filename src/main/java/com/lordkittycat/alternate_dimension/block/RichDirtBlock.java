@@ -28,7 +28,7 @@ public class RichDirtBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		TillIntoFarmlandProcedure.execute(world, x, y, z, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = TillIntoFarmlandProcedure.execute(world, x, y, z, entity);
+		return result;
 	}
 }

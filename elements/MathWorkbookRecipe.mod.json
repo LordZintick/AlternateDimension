@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       {
-        "value": "Items.BOOK"
+        "value": "Items.DYE#16"
       }
     ],
     "cookingBookCategory": "MISC",
@@ -29,7 +29,7 @@
         "value": ""
       },
       {
-        "value": "Items.BOOK"
+        "value": "CUSTOM:Cloth"
       },
       {
         "value": ""

@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "hanging_sign",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminumChain"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminumChain"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      },
+      {
+        "value": "CUSTOM:GreenwoodPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GreenwoodHangingSign"
+    },
+    "name": "greenwood_hanging_sign_recipe",
+    "namespace": "mod"
+  }
+}
