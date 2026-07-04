@@ -42,8 +42,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.5,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
@@ -57,12 +57,12 @@
     ],
     "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:RichDirt"
     },
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

@@ -1,6 +1,13 @@
-- Added Greenwood Box.
-- Added Candyfloss wood.
-- Added Pure and Corrupt bricks, variants, and doors.
-- Added Verdant, Pure, and Corrupt lanterns.
-- Accidentally messed up the structures, but fixed many of them.
-- Made some various minor fixes and changes.
+2.0.0 Dev version 5
+
+- Deleted Pasta Mall because NBTExplorer messed it up really badly. Will reimplement later.
+- Fixed the last of the structures.
+- Reordered creative tabs.
+- Tweaked Frostbitten Tundra biome generation to fix it generating very frequently.
+- Added more complexity to Giant Beetle Nests.
+- Added a recipe for the Lush Grass Block, finally making Home Blocks obtainable!
+- Added recipes for Frosted and Enchanted grass blocks.
+- Added Rings! Wooden, Aluminum, Titanium, and Mythril, with a Swiftness ring type to test them out.
+- Added recipes for the pets for people who can't find them.
+- Added more utilities to the /meteor command and reimplemented meteor spawning.
+- Various other minor changes and fixes.

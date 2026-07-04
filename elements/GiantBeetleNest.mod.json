@@ -73,8 +73,20 @@
         "fallbackPool": "alternate_dimension:giant_beetle_nest_side_end",
         "poolParts": [
           {
-            "weight": 1,
+            "weight": 2,
             "structure": "giant_beetle_nest_horizontal_straight",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_turn_up",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "giant_beetle_nest_turn_down",
             "projection": "rigid",
             "ignoredBlocks": []
           }

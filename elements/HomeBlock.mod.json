@@ -55,7 +55,7 @@
         "value": "CUSTOM:AlternateDimensionUtilities"
       }
     ],
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },

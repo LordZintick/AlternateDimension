@@ -89,6 +89,24 @@
         "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
         "field": "GREENWOOD_CHEST_BOAT_TYPE"
       }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_CANDYFLOSS_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "CANDYFLOSS_BOAT_TYPE"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/entity/vehicle/Boat$Type",
+      "name": "ALTERNATE_DIMENSION_CANDYFLOSS_CHEST_BOAT",
+      "constructor": "(Ljava/util/function/Supplier;Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V",
+      "parameters": {
+        "class": "com/lordkittycat/alternate_dimension/init/AlternateDimensionModBoatTypes",
+        "field": "CANDYFLOSS_CHEST_BOAT_TYPE"
+      }
     }
   ]
 }

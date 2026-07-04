@@ -55,7 +55,7 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "TRANSPORTATION"
+        "value": "CUSTOM:AlternateDimensionDecor"
       }
     ],
     "destroyTool": "axe",

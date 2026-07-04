@@ -13,7 +13,7 @@ import net.minecraft.world.phys.BlockHitResult;
 
 public class ShroomyCraftingTableBlock extends Block {
 	public ShroomyCraftingTableBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(2f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(1f));
 	}
 
 	@Override

@@ -25,6 +25,8 @@ public class AlternateDimensionModDispenseBehaviors {
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.PINE_CHEST_BOAT_TYPE.getValue(), true));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.GREENWOOD_BOAT_TYPE.getValue()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.GREENWOOD_CHEST_BOAT_TYPE.getValue(), true));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.CANDYFLOSS_BOAT_TYPE.getValue()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.CANDYFLOSS_CHEST_BOAT_TYPE.getValue(), true));
 		});
 	}
 }

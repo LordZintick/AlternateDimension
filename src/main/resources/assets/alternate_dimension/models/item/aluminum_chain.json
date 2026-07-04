@@ -1,22 +1,7 @@
 {
-  "parent": "alternate_dimension:block/aluminum_chain",
-  "display": {
-    "thirdperson": {
-      "rotation": [
-        10,
-        -45,
-        170
-      ],
-      "translation": [
-        0,
-        1.5,
-        -2.75
-      ],
-      "scale": [
-        0.375,
-        0.375,
-        0.375
-      ]
-    }
-  }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "alternate_dimension:item/aluminum_chain"
+  },
+  "render_type": "translucent"
 }

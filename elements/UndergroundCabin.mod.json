@@ -9,14 +9,14 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 5,
+    "spacing": 2,
     "separation": 1,
     "restrictionBiomes": [
       {
         "value": "#mod:is_familiar_realm"
       }
     ],
-    "terrainAdaptation": "bury",
+    "terrainAdaptation": "none",
     "generationStep": "UNDERGROUND_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "useStartHeight": true,

@@ -6,7 +6,7 @@
     "name": "Greenwood Boat",
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:AlternateDimensionEquipment"
       }
     ],
     "entityTexture": "greenwood_boat",

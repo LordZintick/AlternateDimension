@@ -3,10 +3,13 @@
   "values": [
     "alternate_dimension:greenwood_stairs",
     "alternate_dimension:blue_mushroom_stairs",
+    "alternate_dimension:corrupt_brick_stairs",
     "alternate_dimension:pyric_cobble_stairs",
+    "alternate_dimension:candyfloss_stairs",
     "alternate_dimension:veridium_bricks_stairs",
     "alternate_dimension:shale_bricks_stairs",
     "alternate_dimension:scorched_brick_stairs",
+    "alternate_dimension:pure_brick_stairs",
     "alternate_dimension:shale_cobble_stairs",
     "alternate_dimension:veridium_cobble_stairs",
     "alternate_dimension:pine_stairs",

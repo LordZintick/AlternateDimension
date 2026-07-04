@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:frosted_glass_pane",
+    "alternate_dimension:verdant_glass_pane",
     "alternate_dimension:scorched_glass_pane",
     "alternate_dimension:candied_glass_pane"
   ]

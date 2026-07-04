@@ -1,20 +1,44 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "alternate_dimension:blocks/enchanted_grass_block",
   "pools": [
     {
-      "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alternate_dimension:rich_dirt"
+          "name": "alternate_dimension:rich_dirt",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:magic_dust",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "alternate_dimension:blocks/enchanted_grass_block"
 }

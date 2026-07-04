@@ -177,17 +177,17 @@
       },
       {
         "minrolls": 1,
-        "maxrolls": 2,
-        "minbonusrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 0,
         "maxbonusrolls": 1,
-        "hasbonusrolls": false,
+        "hasbonusrolls": true,
         "entries": [
           {
             "type": "item",
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 3,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

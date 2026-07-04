@@ -20,6 +20,10 @@
     {
       "id": "#alternate_dimension:pine_logs",
       "required": false
+    },
+    {
+      "id": "#alternate_dimension:candyfloss_logs",
+      "required": false
     }
   ]
 }

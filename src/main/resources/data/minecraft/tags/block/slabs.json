@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:pyric_cobble_slab",
+    "alternate_dimension:candyfloss_slab",
     "alternate_dimension:shale_slab",
     "alternate_dimension:compressed_cobblestone_slab",
     "alternate_dimension:shale_cobble_slab",
@@ -18,6 +19,8 @@
     "alternate_dimension:greenwood_slab",
     "alternate_dimension:pyric_bricks_slab",
     "alternate_dimension:scorched_brick_slab",
+    "alternate_dimension:pure_brick_slab",
+    "alternate_dimension:corrupt_brick_slab",
     "alternate_dimension:veridium_bricks_slab",
     "alternate_dimension:blue_mushroom_slab"
   ]

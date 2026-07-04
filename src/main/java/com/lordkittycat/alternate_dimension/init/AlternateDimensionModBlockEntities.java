@@ -50,6 +50,8 @@ public class AlternateDimensionModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineBoxBlockEntity>> PINE_BOX = register("pine_box", AlternateDimensionModBlocks.PINE_BOX, PineBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RedwoodBoxBlockEntity>> REDWOOD_BOX = register("redwood_box", AlternateDimensionModBlocks.REDWOOD_BOX, RedwoodBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AzureBoxBlockEntity>> AZURE_BOX = register("azure_box", AlternateDimensionModBlocks.AZURE_BOX, AzureBoxBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GreenwoodBoxBlockEntity>> GREENWOOD_BOX = register("greenwood_box", AlternateDimensionModBlocks.GREENWOOD_BOX, GreenwoodBoxBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CandyflossBoxBlockEntity>> CANDYFLOSS_BOX = register("candyfloss_box", AlternateDimensionModBlocks.CANDYFLOSS_BOX, CandyflossBoxBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -100,5 +102,7 @@ public class AlternateDimensionModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PINE_BOX.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, REDWOOD_BOX.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, AZURE_BOX.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GREENWOOD_BOX.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CANDYFLOSS_BOX.get(), SidedInvWrapper::new);
 	}
 }

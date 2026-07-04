@@ -1,50 +1,50 @@
-/effect give Dev minecraft:night_vision infinite 255 true
-/tp Dev -243 67 300
-/data get block -490 63 203
-/locate biome alternate_dimension:wasteland
-/tp @s -308 93 -422
-/tp Dev ~ ~ ~1000
-/locate biome alter
-/locate biome alternate_dimension:wasteland
-/tp @s -322 77 -424
-/tp Dev ~10000 ~ ~
-/time set day
 /gamerule doDaylightCycle false
-/meteor
-/fill 9929 119 -480
-/fill 9929 119 -480 9925 119 -466 alternate_dimension:scorched_bricks
-/fill 9920 119 -471 alternate_dimension:scorched_bricks
-/fill 9920 119 -471 9934 119 -475 alternate_dimension:scorched_bricks
-/kill @e[type=alternate_dimension:beetle]
-/gamemode creative
-/setblock ~ ~ ~ chest{LootTable:"alternate_dimension:chests/scorched_tower_loot"} replace
-/kill 64c43289-d773-48b8-81d8-2c7ebab3ad55
-/time set day
-/gamerule doDaylightCycle false
-/gamerule doWeatherCycle false
-/weather clear
-/kill @e[type=alternate_dimension:beetle]
-/locate biome alternate_dimension:highlands
-/tp @s 10526 120 441
-/meteor
-/effect clear Dev
-/locate biome alternate_dimension:wasteland
-/tp @s 9835 78 728
-/locate structure alternate_dimension:scorched_tower
-/tp @s 9600 ~ 592
-/data merge entity ee411ce5-c9aa-47bb-9bd2-8663f2192e1e {NoAI:1b}
+/fill 173 71 344 alternate_dimension:pine_planks replace alternate_dimension:pine_crafting_table
+/fill 173 71 344 177 75 348 alternate_dimension:pine_planks replace alternate_dimension:pine_crafting_table
+/setblock 174 72 345 alternate_dimension:pine_box{LootTable:"alternate_dimension:chests/small_underground_cabin_loot"}
+/locate biome alternate_dimension:enchanted_forest
+/tp @s -1162 81 2414
 /effect give Dev minecraft:night_vision infinite 255 true
-/give Dev alternate_dimension:titanium_pickaxe
-/clear Dev
-/recipe take Dev *
+/locate structure alternate_dimension:long_underground_cabin
+/tp @s -896 ~ 2240
+/fill -944 93 2468
+/fill -944 93 2468 -936 101 2476
+/fill -944 93 2468 -936 101 2476 alternate_dimension:plant_stem replace alternate_dimension:pine_crafting_table
+/fill -944 93 2468 -936 101 2476 alternate_dimension:plant_stem replace minecraft:oak_log
+/kill @e[type=alternate_dimension:elf]
+/fill -946 94 2466 alternate_dimension:plant_stem replace minecraft:oak_log
+/fill -946 94 2466 -953 101 2459 alternate_dimension:plant_stem replace minecraft:oak_log
+/fill -946 94 2466 -953 101 2459 alternate_dimension:greenwood_planks replace alternate_dimension:pine_crafting_table
+/fill 4 72 115
+/fill 4 72 115 4 76 119 alternate_dimension:pure_bricks replace alternate_dimension:pine_crafting_table
 /gamerule keepInventory true
-/locate biome alternate_dimension:fruity_gardens
-/tp @s 158 85 -65
+/data get block 1 68 180
+/gamemode survival
+/gamemode creative
+/fill 19 69 -142
+/fill 19 69 -142 27 76 -134 air replace alternate_dimension:pine_crafting_table
+/fill 19 69 -142 27 76 -134 alternate_dimension:plant_stem replace minecraft:oak_log
 /time set day
-/give Dev alternate_dimension:home_block
-/data get block -30 80 -14
-/weather thunder
+/gamerule doDaylightCycle false
+/gamerule keepInventory true
+/meteor
+/locate structure alternate_dimension:pasta_mall
+/tp @s 208 ~ -640
+/locate biome alternate_dimension:wasteland
+/tp @s 1788 79 -1275
+/locate biome alternate_dimension:wasteland
+/tp @s 181 70 -312
 /effect give Dev minecraft:night_vision infinite 255 true
-/data get block 60 74 39
+/meteor cooldown
+/meteor cooldown get
+/meteor pos
+/meteor spawn
+/meteor pos
+/meteor cooldown get
+/tp Dev 162 ~ -290
+/meteor cooldown
+/meteor cooldown get
+/setblock 158 65 -516 alternate_dimension:candyfloss_box{LootTable:"alternate_dimension:chests/waffle_house_loot"}
+/effect give Dev minecraft:night_vision infinite 255 true
+/effect clear Dev
 /time set day
-/kill bd87397b-1653-4cbc-a2c9-0b610d9197ff

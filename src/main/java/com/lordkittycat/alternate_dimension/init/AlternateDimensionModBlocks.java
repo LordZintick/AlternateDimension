@@ -42,7 +42,6 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> CHEESE_BLOCK;
 	public static final DeferredBlock<Block> LIGHTNING_BLOCK;
 	public static final DeferredBlock<Block> BUSH_LEAVES;
-	public static final DeferredBlock<Block> STONE_TILES;
 	public static final DeferredBlock<Block> PARMESAN_CHEESE_BLOCK;
 	public static final DeferredBlock<Block> HEMP_PLANT;
 	public static final DeferredBlock<Block> SERVER_STATION;
@@ -314,6 +313,36 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> GREENWOOD_WALL_SIGN;
 	public static final DeferredBlock<Block> GREENWOOD_HANGING_SIGN;
 	public static final DeferredBlock<Block> GREENWOOD_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> GREENWOOD_BOX;
+	public static final DeferredBlock<Block> PURE_BRICKS;
+	public static final DeferredBlock<Block> PURE_BRICK_SLAB;
+	public static final DeferredBlock<Block> PURE_BRICK_STAIRS;
+	public static final DeferredBlock<Block> PURE_BRICK_WALL;
+	public static final DeferredBlock<Block> CORRUPT_BRICKS;
+	public static final DeferredBlock<Block> CORRUPT_BRICK_SLAB;
+	public static final DeferredBlock<Block> CORRUPT_BRICK_STAIRS;
+	public static final DeferredBlock<Block> CORRUPT_BRICK_WALL;
+	public static final DeferredBlock<Block> VERDANT_GLASS;
+	public static final DeferredBlock<Block> VERDANT_GLASS_PANE;
+	public static final DeferredBlock<Block> VERDANT_LANTERN;
+	public static final DeferredBlock<Block> PURE_LANTERN;
+	public static final DeferredBlock<Block> CORRUPT_LANTERN;
+	public static final DeferredBlock<Block> CANDYFLOSS_PLANKS;
+	public static final DeferredBlock<Block> CANDYFLOSS_STAIRS;
+	public static final DeferredBlock<Block> CANDYFLOSS_SLAB;
+	public static final DeferredBlock<Block> CANDYFLOSS_FENCE;
+	public static final DeferredBlock<Block> CANDYFLOSS_FENCE_GATE;
+	public static final DeferredBlock<Block> CANDYFLOSS_DOOR;
+	public static final DeferredBlock<Block> CANDYFLOSS_TRAPDOOR;
+	public static final DeferredBlock<Block> CANDYFLOSS_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> CANDYFLOSS_BUTTON;
+	public static final DeferredBlock<Block> CANDYFLOSS_SIGN;
+	public static final DeferredBlock<Block> CANDYFLOSS_WALL_SIGN;
+	public static final DeferredBlock<Block> CANDYFLOSS_HANGING_SIGN;
+	public static final DeferredBlock<Block> CANDYFLOSS_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> PURE_DOOR;
+	public static final DeferredBlock<Block> CORRUPT_DOOR;
+	public static final DeferredBlock<Block> CANDYFLOSS_BOX;
 	static {
 		TITANIUM_BLOCK = REGISTRY.register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = REGISTRY.register("scorched_earth", ScorchedEarthBlock::new);
@@ -335,7 +364,6 @@ public class AlternateDimensionModBlocks {
 		CHEESE_BLOCK = REGISTRY.register("cheese_block", CheeseBlockBlock::new);
 		LIGHTNING_BLOCK = REGISTRY.register("lightning_block", LightningBlockBlock::new);
 		BUSH_LEAVES = REGISTRY.register("bush_leaves", BushLeavesBlock::new);
-		STONE_TILES = REGISTRY.register("stone_tiles", StoneTilesBlock::new);
 		PARMESAN_CHEESE_BLOCK = REGISTRY.register("parmesan_cheese_block", ParmesanCheeseBlockBlock::new);
 		HEMP_PLANT = REGISTRY.register("hemp_plant", HempPlantBlock::new);
 		SERVER_STATION = REGISTRY.register("server_station", ServerStationBlock::new);
@@ -607,6 +635,36 @@ public class AlternateDimensionModBlocks {
 		GREENWOOD_WALL_SIGN = REGISTRY.register("greenwood_wall_sign", GreenwoodWallSignBlock::new);
 		GREENWOOD_HANGING_SIGN = REGISTRY.register("greenwood_hanging_sign", GreenwoodHangingSignBlock::new);
 		GREENWOOD_WALL_HANGING_SIGN = REGISTRY.register("greenwood_wall_hanging_sign", GreenwoodWallHangingSignBlock::new);
+		GREENWOOD_BOX = REGISTRY.register("greenwood_box", GreenwoodBoxBlock::new);
+		PURE_BRICKS = REGISTRY.register("pure_bricks", PureBricksBlock::new);
+		PURE_BRICK_SLAB = REGISTRY.register("pure_brick_slab", PureBrickSlabBlock::new);
+		PURE_BRICK_STAIRS = REGISTRY.register("pure_brick_stairs", PureBrickStairsBlock::new);
+		PURE_BRICK_WALL = REGISTRY.register("pure_brick_wall", PureBrickWallBlock::new);
+		CORRUPT_BRICKS = REGISTRY.register("corrupt_bricks", CorruptBricksBlock::new);
+		CORRUPT_BRICK_SLAB = REGISTRY.register("corrupt_brick_slab", CorruptBrickSlabBlock::new);
+		CORRUPT_BRICK_STAIRS = REGISTRY.register("corrupt_brick_stairs", CorruptBrickStairsBlock::new);
+		CORRUPT_BRICK_WALL = REGISTRY.register("corrupt_brick_wall", CorruptBrickWallBlock::new);
+		VERDANT_GLASS = REGISTRY.register("verdant_glass", VerdantGlassBlock::new);
+		VERDANT_GLASS_PANE = REGISTRY.register("verdant_glass_pane", VerdantGlassPaneBlock::new);
+		VERDANT_LANTERN = REGISTRY.register("verdant_lantern", VerdantLanternBlock::new);
+		PURE_LANTERN = REGISTRY.register("pure_lantern", PureLanternBlock::new);
+		CORRUPT_LANTERN = REGISTRY.register("corrupt_lantern", CorruptLanternBlock::new);
+		CANDYFLOSS_PLANKS = REGISTRY.register("candyfloss_planks", CandyflossPlanksBlock::new);
+		CANDYFLOSS_STAIRS = REGISTRY.register("candyfloss_stairs", CandyflossStairsBlock::new);
+		CANDYFLOSS_SLAB = REGISTRY.register("candyfloss_slab", CandyflossSlabBlock::new);
+		CANDYFLOSS_FENCE = REGISTRY.register("candyfloss_fence", CandyflossFenceBlock::new);
+		CANDYFLOSS_FENCE_GATE = REGISTRY.register("candyfloss_fence_gate", CandyflossFenceGateBlock::new);
+		CANDYFLOSS_DOOR = REGISTRY.register("candyfloss_door", CandyflossDoorBlock::new);
+		CANDYFLOSS_TRAPDOOR = REGISTRY.register("candyfloss_trapdoor", CandyflossTrapdoorBlock::new);
+		CANDYFLOSS_PRESSURE_PLATE = REGISTRY.register("candyfloss_pressure_plate", CandyflossPressurePlateBlock::new);
+		CANDYFLOSS_BUTTON = REGISTRY.register("candyfloss_button", CandyflossButtonBlock::new);
+		CANDYFLOSS_SIGN = REGISTRY.register("candyfloss_sign", CandyflossSignBlock::new);
+		CANDYFLOSS_WALL_SIGN = REGISTRY.register("candyfloss_wall_sign", CandyflossWallSignBlock::new);
+		CANDYFLOSS_HANGING_SIGN = REGISTRY.register("candyfloss_hanging_sign", CandyflossHangingSignBlock::new);
+		CANDYFLOSS_WALL_HANGING_SIGN = REGISTRY.register("candyfloss_wall_hanging_sign", CandyflossWallHangingSignBlock::new);
+		PURE_DOOR = REGISTRY.register("pure_door", PureDoorBlock::new);
+		CORRUPT_DOOR = REGISTRY.register("corrupt_door", CorruptDoorBlock::new);
+		CANDYFLOSS_BOX = REGISTRY.register("candyfloss_box", CandyflossBoxBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -641,6 +699,8 @@ public class AlternateDimensionModBlocks {
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
@@ -656,5 +716,7 @@ public class AlternateDimensionModBlocks {
 		event.modify(BlockEntityType.HANGING_SIGN, PINE_HANGING_SIGN.get(), PINE_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, GREENWOOD_SIGN.get(), GREENWOOD_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, GREENWOOD_HANGING_SIGN.get(), GREENWOOD_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, CANDYFLOSS_SIGN.get(), CANDYFLOSS_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, CANDYFLOSS_HANGING_SIGN.get(), CANDYFLOSS_WALL_HANGING_SIGN.get());
 	}
 }

@@ -17,4 +17,6 @@ public class AlternateDimensionModWoodTypes {
 	public static final WoodType PINE_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:pine_hanging_sign", BlockSetType.OAK));
 	public static final WoodType GREENWOOD_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:greenwood_sign", BlockSetType.OAK));
 	public static final WoodType GREENWOOD_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:greenwood_hanging_sign", BlockSetType.OAK));
+	public static final WoodType CANDYFLOSS_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:candyfloss_sign", BlockSetType.OAK));
+	public static final WoodType CANDYFLOSS_HANGING_SIGN_WOOD_TYPE = WoodType.register(new WoodType("alternate_dimension:candyfloss_hanging_sign", BlockSetType.OAK));
 }

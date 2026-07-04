@@ -6,6 +6,6 @@ import net.minecraft.world.level.block.Block;
 
 public class GlowingMyceliumBlock extends Block {
 	public GlowingMyceliumBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ROOTED_DIRT).strength(1f, 10f).lightLevel(blockstate -> 5));
+		super(BlockBehaviour.Properties.of().sound(SoundType.ROOTED_DIRT).strength(0.5f, 1f).lightLevel(blockstate -> 5));
 	}
 }

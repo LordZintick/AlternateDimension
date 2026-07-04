@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +18,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -44,6 +47,8 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double meteorX = 0;
+		double meteorZ = 0;
 		if (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).jetpackHover && entity.getDeltaMovement().y() < 0
 				&& (hasEntityInInventory(entity, new ItemStack(AlternateDimensionModItems.CANDY_CANE.get())) || entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).burnTime > 0)
 				&& entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).jetpackEngine
@@ -100,6 +105,13 @@ public class PlayerTickProcedure {
 				_vars.mana = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).mana + 0.5;
 				_vars.markSyncDirty();
 			}
+		}
+		if ((entity.position()).distanceTo(AlternateDimensionModVariables.WorldVariables.get(world).lastMeteorPos) >= 200 && AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown <= 0) {
+			meteorX = x + Mth.nextInt(RandomSource.create(), -32, 32);
+			meteorZ = z + Mth.nextInt(RandomSource.create(), -32, 32);
+			AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown = 6000;
+			AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
+			SpawnMeteorProcedure.execute(world, meteorX, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) meteorX, (int) meteorZ), meteorZ);
 		}
 	}
 

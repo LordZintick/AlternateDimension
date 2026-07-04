@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Block;
 
 public class VeridiumPyroliteOreBlock extends Block {
 	public VeridiumPyroliteOreBlock() {
-		super(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().strength(2.3f, 2f).requiresCorrectToolForDrops());
 	}
 }
