@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:imbunement_table_recipe",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:magic_dust_block"
+    },
+    {
+      "tag": "minecraft:swords"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:warriors_pet",
+      "count": 1
+    }
+  ]
+}

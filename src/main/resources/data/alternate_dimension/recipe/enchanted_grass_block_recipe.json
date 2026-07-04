@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "alternate_dimension:magic_dust"
+    },
+    "b": {
+      "item": "alternate_dimension:rich_dirt"
+    }
+  },
+  "result": {
+    "id": "alternate_dimension:enchanted_grass_block",
+    "count": 1
+  }
+}

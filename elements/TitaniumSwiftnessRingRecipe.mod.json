@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "imbunement_table_recipe",
+    "ingredients": [
+      {
+        "value": "CUSTOM:LightBlueGummyBear"
+      },
+      {
+        "value": "CUSTOM:TitaniumRing"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "ImbunementTableRecipe",
+    "results": [
+      {
+        "value": "CUSTOM:TitaniumRingOfSwiftness"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:imbunement_table_recipe",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:magic_dust_block"
+    },
+    {
+      "item": "alternate_dimension:light_blue_gummy_bear"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:adventurers_pet",
+      "count": 1
+    }
+  ]
+}

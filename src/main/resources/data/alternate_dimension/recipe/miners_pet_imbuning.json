@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:imbunement_table_recipe",
+  "ingredients": [
+    {
+      "item": "alternate_dimension:magic_dust_block"
+    },
+    {
+      "tag": "minecraft:pickaxes"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:miners_pet",
+      "count": 1
+    }
+  ]
+}

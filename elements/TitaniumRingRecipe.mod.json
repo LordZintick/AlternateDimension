@@ -1,0 +1,53 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumNugget"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumNugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TitaniumNugget"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      },
+      {
+        "value": "CUSTOM:TitaniumNugget"
+      },
+      {
+        "value": "CUSTOM:TitaniumPlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TitaniumRing"
+    },
+    "name": "titanium_ring_recipe",
+    "namespace": "mod"
+  }
+}
