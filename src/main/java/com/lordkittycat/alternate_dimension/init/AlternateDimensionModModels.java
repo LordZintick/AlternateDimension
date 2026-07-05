@@ -17,6 +17,7 @@ public class AlternateDimensionModModels {
 		event.registerLayerDefinition(Modelmeteoroid.LAYER_LOCATION, Modelmeteoroid::createBodyLayer);
 		event.registerLayerDefinition(Modelgingerbread_warrior.LAYER_LOCATION, Modelgingerbread_warrior::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_chest.LAYER_LOCATION, Modelcrystal_chest::createBodyLayer);
+		event.registerLayerDefinition(Modelspore_spreader.LAYER_LOCATION, Modelspore_spreader::createBodyLayer);
 		event.registerLayerDefinition(Modelplayer_model.LAYER_LOCATION, Modelplayer_model::createBodyLayer);
 		event.registerLayerDefinition(Modelturtle.LAYER_LOCATION, Modelturtle::createBodyLayer);
 		event.registerLayerDefinition(Modelroman.LAYER_LOCATION, Modelroman::createBodyLayer);

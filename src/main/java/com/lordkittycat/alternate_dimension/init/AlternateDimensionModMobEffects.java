@@ -27,4 +27,5 @@ public class AlternateDimensionModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> IMMUNITY = REGISTRY.register("immunity", () -> new ImmunityMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> JUMPY = REGISTRY.register("jumpy", () -> new JumpyMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLINDING_LIGHT = REGISTRY.register("blinding_light", () -> new BlindingLightMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SHROOMY_INFECTION = REGISTRY.register("shroomy_infection", () -> new ShroomyInfectionMobEffect());
 }

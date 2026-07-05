@@ -219,6 +219,10 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.REDWOOD_BOWL.get());
 				tabData.accept(AlternateDimensionModItems.PLANTY_BOWL.get());
 				tabData.accept(AlternateDimensionModItems.AZURE_BOWL.get());
+				tabData.accept(AlternateDimensionModItems.WOODEN_RING.get());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_RING.get());
+				tabData.accept(AlternateDimensionModItems.TITANIUM_RING.get());
+				tabData.accept(AlternateDimensionModItems.MYTHRIL_RING.get());
 				tabData.accept(AlternateDimensionModItems.WOODEN_DRILL_HEAD.get());
 				tabData.accept(AlternateDimensionModItems.HEMP.get());
 				tabData.accept(AlternateDimensionModItems.BARLEY.get());
@@ -275,14 +279,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
-				tabData.accept(AlternateDimensionModItems.WOODEN_RING.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_RING.get());
-				tabData.accept(AlternateDimensionModItems.TITANIUM_RING.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_RING.get());
-				tabData.accept(AlternateDimensionModItems.WOODEN_RING_OF_SWIFTNESS.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_RING_OF_SWIFTNESS.get());
-				tabData.accept(AlternateDimensionModItems.TITANIUM_RING_OF_SWIFTNESS.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_RING_OF_SWIFTNESS.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_WORLD.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment", () -> CreativeModeTab.builder()
 			.title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.SODIUM_RAPIER.get())).displayItems((parameters, tabData) -> {
@@ -470,6 +466,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.REDWOOD_BOX.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.AZURE_BOX.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.GREENWOOD_BOX.get().asItem());
+				tabData.accept(AlternateDimensionModBlocks.CANDYFLOSS_BOX.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SCORCHED_CRAFTING_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PINE_CRAFTING_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.REDWOOD_CRAFTING_TABLE.get().asItem());
@@ -482,7 +479,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_FURNACE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HINT_BOOK.get());
-				tabData.accept(AlternateDimensionModBlocks.CANDYFLOSS_BOX.get().asItem());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_DECOR = REGISTRY.register("alternate_dimension_decor",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_decor")).icon(() -> new ItemStack(AlternateDimensionModBlocks.CLOUD_BRICKS.get())).displayItems((parameters, tabData) -> {
@@ -656,6 +652,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.VIKING_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.ROMAN_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.SHROOMITE_SPAWN_EGG.get());
+				tabData.accept(AlternateDimensionModItems.SPORE_SPREADER_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.HALLOWED_ONE_SPAWN_EGG.get());
 				tabData.accept(AlternateDimensionModItems.POSSESSED_ARMOR_SPAWN_EGG.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_DECOR.getId()).build());

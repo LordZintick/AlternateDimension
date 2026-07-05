@@ -1,301 +1,55 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2026-07-04 09:06:36 -0400"
+      "unlock_right_away": "2026-07-05 10:53:27 -0400"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:swamp": "2026-07-04 09:06:37 -0400"
+      "minecraft:taiga": "2026-07-05 10:53:28 -0400"
     },
     "done": false
   },
-  "minecraft:recipes/transportation/cherry_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/bamboo_raft": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2026-07-04 09:07:22 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/golden_beef_smelting": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:36:48 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_cobble_slab_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_cobble_compressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_shovel_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/semi_wood_blocks_to_tool_rods": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:21:31 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mushy_pickaxe_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shroomium_ore_blasting": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:24:38 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/golden_beef_smoking": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:36:48 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_pickaxe_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2026-07-04 09:36:00 -0400"
+      "has_lots_of_items": "2026-07-05 11:24:41 -0400"
     },
     "done": true
   },
-  "alternate_dimension:recipes/mushy_hoe_recipe": {
+  "alternate_dimension:recipes/strong_thread_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
+      "has_ingredient_0": "2026-07-05 11:25:09 -0400"
     },
     "done": true
   },
-  "alternate_dimension:recipes/mushy_shovel_recipe": {
+  "alternate_dimension:recipes/nuggets_to_aluminum": {
     "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/aluminum_smelting": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:35:11 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/golden_beef_cooking": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:36:48 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_axe_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/blue_mushroom_block_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:07 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/candy_cane_sword_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:21:27 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shroomy_crafting_table_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mushy_sword_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/blue_mushroom_slab_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/candy_cane_crafting_table_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:21:27 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shroomium_ore_smelting": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:24:38 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/candied_glass_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:21:27 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_cobble_stairs_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_cobble_decompressing": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/blue_mushroom_stairs_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_furnace_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/item_incinerator_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:33:40 -0400"
+      "has_ingredient_0": "2026-07-05 11:24:41 -0400"
     },
     "done": true
   },
   "alternate_dimension:recipes/backpack_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-07-04 09:36:48 -0400"
+      "has_ingredient_0": "2026-07-05 11:25:09 -0400"
     },
     "done": true
   },
-  "alternate_dimension:recipes/candy_cane_block_to_candy_canes": {
+  "alternate_dimension:recipes/home_block_recipe": {
     "criteria": {
-      "has_ingredient_0": "2026-07-04 09:21:27 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_cobble_wall_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
+      "has_ingredient_0": "2026-07-05 11:27:41 -0400"
     },
     "done": true
   },
   "minecraft:adventure/root": {
     "criteria": {
-      "killed_something": "2026-07-04 09:36:47 -0400"
+      "killed_something": "2026-07-05 11:24:35 -0400"
     },
     "done": true
   },
-  "alternate_dimension:recipes/shale_hoe_recipe": {
+  "alternate_dimension:recipes/cloth_from_thread": {
     "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_bricks_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/mushy_axe_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:28:17 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/shale_sword_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:33 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/black_dye_from_umberflower": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:32:23 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/aluminum_blasting": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:35:11 -0400"
-    },
-    "done": true
-  },
-  "alternate_dimension:recipes/pyrobrick_recipe": {
-    "criteria": {
-      "has_ingredient_0": "2026-07-04 09:33:40 -0400"
+      "has_ingredient_0": "2026-07-05 11:25:09 -0400"
     },
     "done": true
   },

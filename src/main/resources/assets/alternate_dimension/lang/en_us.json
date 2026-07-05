@@ -839,9 +839,8 @@
   "item.alternate_dimension.aluminum_ring": "Aluminum Ring",
   "item.alternate_dimension.titanium_ring": "Titanium Ring",
   "item.alternate_dimension.mythril_ring": "Mythril Ring",
-  "item.alternate_dimension.wooden_ring_of_swiftness": "Wooden Ring of Swiftness",
-  "item.alternate_dimension.aluminum_ring_of_swiftness": "Aluminum Ring of Swiftness",
-  "item.alternate_dimension.titanium_ring_of_swiftness": "Titanium Ring of Swiftness",
-  "item.alternate_dimension.mythril_ring_of_swiftness": "Mythril Ring of Swiftness",
-  "block.alternate_dimension.candyfloss_box": "Candyfloss Box"
+  "block.alternate_dimension.candyfloss_box": "Candyfloss Box",
+  "effect.alternate_dimension.shroomy_infection": "Shroomy Infection",
+  "item.alternate_dimension.spore_spreader_spawn_egg": "Spore Spreader Spawn Egg",
+  "entity.alternate_dimension.spore_spreader": "Spore Spreader"
 }

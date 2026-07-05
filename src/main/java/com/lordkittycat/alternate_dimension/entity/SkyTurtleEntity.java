@@ -10,7 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -38,7 +37,7 @@ import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
-public class SkyTurtleEntity extends Monster {
+public class SkyTurtleEntity extends PathfinderMob {
 
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SkyTurtleEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(SkyTurtleEntity.class, EntityDataSerializers.INT);

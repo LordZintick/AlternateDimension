@@ -61,11 +61,11 @@ public class AlternateDimensionModEntities {
 
 			.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CloudKittyEntity>> CLOUD_KITTY = register("cloud_kitty",
-			EntityType.Builder.<CloudKittyEntity>of(CloudKittyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+			EntityType.Builder.<CloudKittyEntity>of(CloudKittyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 0.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CloudyWolfEntity>> CLOUDY_WOLF = register("cloudy_wolf",
-			EntityType.Builder.<CloudyWolfEntity>of(CloudyWolfEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+			EntityType.Builder.<CloudyWolfEntity>of(CloudyWolfEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<RocketProjectileEntity>> ROCKET_PROJECTILE = register("rocket_projectile",
@@ -144,6 +144,10 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<PossessedArmorEntity>of(PossessedArmorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SporeSpreaderEntity>> SPORE_SPREADER = register("spore_spreader",
+			EntityType.Builder.<SporeSpreaderEntity>of(SporeSpreaderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.9f, 1.2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -181,6 +185,7 @@ public class AlternateDimensionModEntities {
 		RomanEntity.init(event);
 		BeetleQueenEntity.init(event);
 		PossessedArmorEntity.init(event);
+		SporeSpreaderEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -213,5 +218,6 @@ public class AlternateDimensionModEntities {
 		event.put(ROMAN.get(), RomanEntity.createAttributes().build());
 		event.put(BEETLE_QUEEN.get(), BeetleQueenEntity.createAttributes().build());
 		event.put(POSSESSED_ARMOR.get(), PossessedArmorEntity.createAttributes().build());
+		event.put(SPORE_SPREADER.get(), SporeSpreaderEntity.createAttributes().build());
 	}
 }

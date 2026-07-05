@@ -38,6 +38,11 @@ public abstract class AbilityGoal extends Goal {
     }
 
     @Override
+    public boolean requiresUpdateEveryTick() {
+        return true;
+    }
+
+    @Override
     public void tick() {
         if (remainingCooldown > 0) remainingCooldown--;
     }

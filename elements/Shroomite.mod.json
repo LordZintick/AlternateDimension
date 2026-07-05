@@ -39,6 +39,9 @@
           "value": "CUSTOM:shroomiteAnimation.walk"
         },
         "speed": 1.0,
+        "condition": {
+          "name": "Always"
+        },
         "walking": true,
         "amplitude": 1.0
       }
@@ -83,7 +86,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,

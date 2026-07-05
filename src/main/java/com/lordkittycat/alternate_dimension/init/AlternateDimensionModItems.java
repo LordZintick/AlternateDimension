@@ -647,11 +647,8 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> ALUMINUM_RING;
 	public static final DeferredItem<Item> TITANIUM_RING;
 	public static final DeferredItem<Item> MYTHRIL_RING;
-	public static final DeferredItem<Item> WOODEN_RING_OF_SWIFTNESS;
-	public static final DeferredItem<Item> ALUMINUM_RING_OF_SWIFTNESS;
-	public static final DeferredItem<Item> TITANIUM_RING_OF_SWIFTNESS;
-	public static final DeferredItem<Item> MYTHRIL_RING_OF_SWIFTNESS;
 	public static final DeferredItem<Item> CANDYFLOSS_BOX;
+	public static final DeferredItem<Item> SPORE_SPREADER_SPAWN_EGG;
 	static {
 		TITANIUM_INGOT = REGISTRY.register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1267,11 +1264,8 @@ public class AlternateDimensionModItems {
 		ALUMINUM_RING = REGISTRY.register("aluminum_ring", AluminumRingItem::new);
 		TITANIUM_RING = REGISTRY.register("titanium_ring", TitaniumRingItem::new);
 		MYTHRIL_RING = REGISTRY.register("mythril_ring", MythrilRingItem::new);
-		WOODEN_RING_OF_SWIFTNESS = REGISTRY.register("wooden_ring_of_swiftness", WoodenRingOfSwiftnessItem::new);
-		ALUMINUM_RING_OF_SWIFTNESS = REGISTRY.register("aluminum_ring_of_swiftness", AluminumRingOfSwiftnessItem::new);
-		TITANIUM_RING_OF_SWIFTNESS = REGISTRY.register("titanium_ring_of_swiftness", TitaniumRingOfSwiftnessItem::new);
-		MYTHRIL_RING_OF_SWIFTNESS = REGISTRY.register("mythril_ring_of_swiftness", MythrilRingOfSwiftnessItem::new);
 		CANDYFLOSS_BOX = block(AlternateDimensionModBlocks.CANDYFLOSS_BOX);
+		SPORE_SPREADER_SPAWN_EGG = REGISTRY.register("spore_spreader_spawn_egg", () -> new DeferredSpawnEggItem(AlternateDimensionModEntities.SPORE_SPREADER, -16777114, -1, new Item.Properties()));
 	}
 
 	// Start of user code block custom items

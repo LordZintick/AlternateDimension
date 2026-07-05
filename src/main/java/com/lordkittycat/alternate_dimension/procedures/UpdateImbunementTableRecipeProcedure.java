@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -26,6 +27,10 @@ import java.util.List;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.ImbunementTableRecipeRecipe;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
+
+import com.github.lordzintick.item.ring.RingItem;
+import com.github.lordzintick.item.ring.RingEffectComponent;
+import com.github.lordzintick.init.AlternateDimensionModComponents;
 
 public class UpdateImbunementTableRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -144,7 +149,62 @@ public class UpdateImbunementTableRecipeProcedure {
 				}
 			});
 		}
-		if (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "running") instanceof BooleanProperty _getbp27 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp27)) {
+		if (!(getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "running") instanceof BooleanProperty _getbp27 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp27))
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("alternate_dimension:rings")))
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("alternate_dimension:ring_ingredients")))
+				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem())) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putDouble("progress", 0);
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("running") instanceof BooleanProperty _booleanProp)
+					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
+			}
+			AlternateDimensionMod.queueServerWork(100, () -> {
+				ItemStack ring = itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy();
+				ring.set(AlternateDimensionModComponents.RING_EFFECT, new RingEffectComponent(RingItem.RING_INGREDIENTS.get(BuiltInRegistries.ITEM.getKey(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getItem()))));
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+                    ring.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getCount() + 1);
+					_itemHandlerModifiable.setStackInSlot(2, ring);
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 1, false);
+					}
+				}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 0;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 1;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+				{
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("running") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				}
+			});
+		}
+		if (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "running") instanceof BooleanProperty _getbp49 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp49)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:wooden_ring",
+    "alternate_dimension:titanium_ring",
+    "alternate_dimension:aluminum_ring",
+    "alternate_dimension:mythril_ring"
+  ]
+}
