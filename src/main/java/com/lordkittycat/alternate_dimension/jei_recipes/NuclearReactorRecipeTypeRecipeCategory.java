@@ -1,12 +1,13 @@
 package com.lordkittycat.alternate_dimension.jei_recipes;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.NonNullList;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.Minecraft;
 
+import mezz.jei.api.recipe.types.IRecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.IFocusGroup;
@@ -22,10 +23,11 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class NuclearReactorRecipeTypeRecipeCategory implements IRecipeCategory<NuclearReactorRecipeTypeRecipe> {
-	public final static ResourceLocation UID = ResourceLocation.parse("alternate_dimension:nuclear_reactor_recipe_type");
-	public final static ResourceLocation TEXTURE = ResourceLocation.parse("alternate_dimension:textures/screens/nuclear_reactor_recipe_gui.png");
+	public final static Identifier UID = Identifier.parse("alternate_dimension:nuclear_reactor_recipe_type");
+	public final static Identifier TEXTURE = Identifier.parse("alternate_dimension:textures/screens/nuclear_reactor_recipe_gui.png");
 	private final IDrawable background;
 	private final IDrawable icon;
+
 	private final Minecraft mc = Minecraft.getInstance();
 
 	public NuclearReactorRecipeTypeRecipeCategory(IGuiHelper helper) {
@@ -34,7 +36,7 @@ public class NuclearReactorRecipeTypeRecipeCategory implements IRecipeCategory<N
 	}
 
 	@Override
-	public mezz.jei.api.recipe.RecipeType<NuclearReactorRecipeTypeRecipe> getRecipeType() {
+	public IRecipeType<NuclearReactorRecipeTypeRecipe> getRecipeType() {
 		return AlternateDimensionModJeiPlugin.NuclearReactorRecipeType_Type;
 	}
 
@@ -59,9 +61,8 @@ public class NuclearReactorRecipeTypeRecipeCategory implements IRecipeCategory<N
 	}
 
 	@Override
-	public void draw(NuclearReactorRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+	public void draw(NuclearReactorRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphicsExtractor guiGraphics, double mouseX, double mouseY) {
 		this.background.draw(guiGraphics);
-
 	}
 
 	@Override
@@ -71,7 +72,7 @@ public class NuclearReactorRecipeTypeRecipeCategory implements IRecipeCategory<N
 		for (int i = 0; i < recipeOutputs.size(); i++) {
 			actualOutputs.set(i, recipeOutputs.get(i));
 		}
-		builder.addSlot(RecipeIngredientRole.INPUT, 58, 47).addIngredients(recipe.getIngredients().get(0));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 82, 47).addItemStack(actualOutputs.get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 58, 47).add(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 82, 47).add(actualOutputs.get(0));
 	}
 }

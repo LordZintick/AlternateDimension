@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/candyfloss_planks",
     "particle": "alternate_dimension:block/candyfloss_planks"
-  },
-  "render_type": "solid"
+  }
 }

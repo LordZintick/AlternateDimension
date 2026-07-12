@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/cloud_bricks",
     "top": "alternate_dimension:block/cloud_bricks",
     "side": "alternate_dimension:block/cloud_bricks"
-  },
-  "render_type": "solid"
+  }
 }

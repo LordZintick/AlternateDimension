@@ -1,71 +1,48 @@
 package com.lordkittycat.alternate_dimension.item;
 
-import net.neoforged.neoforge.registries.RegisterEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.equipment.EquipmentAssets;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.Holder;
-import net.minecraft.Util;
 
-import java.util.List;
-import java.util.EnumMap;
+import java.util.Map;
 
-import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
+public abstract class MythrilArmorItem extends Item {
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(42, Map.of(ArmorType.BOOTS, 3, ArmorType.LEGGINGS, 7, ArmorType.CHESTPLATE, 8, ArmorType.HELMET, 4, ArmorType.BODY, 8), 23,
+			DeferredHolder.create(Registries.SOUND_EVENT, Identifier.parse("item.armor.equip_diamond")), 2f, 0f, TagKey.create(Registries.ITEM, Identifier.parse("alternate_dimension:mythril_armor_repair_items")),
+			ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.parse("alternate_dimension:mythril_armor")));
 
-@EventBusSubscriber
-public abstract class MythrilArmorItem extends ArmorItem {
-	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
-
-	@SubscribeEvent
-	public static void registerArmorMaterial(RegisterEvent event) {
-		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
-			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-				map.put(ArmorItem.Type.BOOTS, 3);
-				map.put(ArmorItem.Type.LEGGINGS, 7);
-				map.put(ArmorItem.Type.CHESTPLATE, 8);
-				map.put(ArmorItem.Type.HELMET, 4);
-				map.put(ArmorItem.Type.BODY, 8);
-			}), 23, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(AlternateDimensionModItems.MYTHRIL_INGOT.get())),
-					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("alternate_dimension:mythril"))), 2f, 0f);
-			registerHelper.register(ResourceLocation.parse("alternate_dimension:mythril_armor"), armorMaterial);
-			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
-		});
-	}
-
-	public MythrilArmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(ARMOR_MATERIAL, type, properties);
+	private MythrilArmorItem(Item.Properties properties) {
+		super(properties);
 	}
 
 	public static class Helmet extends MythrilArmorItem {
-		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(42)));
+		public Helmet(Item.Properties properties) {
+			super(properties.humanoidArmor(ARMOR_MATERIAL, ArmorType.HELMET));
 		}
 	}
 
 	public static class Chestplate extends MythrilArmorItem {
-		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(42)));
+		public Chestplate(Item.Properties properties) {
+			super(properties.humanoidArmor(ARMOR_MATERIAL, ArmorType.CHESTPLATE));
 		}
 	}
 
 	public static class Leggings extends MythrilArmorItem {
-		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(42)));
+		public Leggings(Item.Properties properties) {
+			super(properties.humanoidArmor(ARMOR_MATERIAL, ArmorType.LEGGINGS));
 		}
 	}
 
 	public static class Boots extends MythrilArmorItem {
-		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(42)));
+		public Boots(Item.Properties properties) {
+			super(properties.humanoidArmor(ARMOR_MATERIAL, ArmorType.BOOTS));
 		}
 	}
 }

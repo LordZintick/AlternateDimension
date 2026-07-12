@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MagicDust"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Gingerbread"
-            },
+            "item": "CUSTOM:Gingerbread",
             "weight": 2,
             "minCount": 2,
             "maxCount": 4,
@@ -50,9 +46,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyCane"
-            },
+            "item": "CUSTOM:CandyCane",
             "weight": 2,
             "minCount": 2,
             "maxCount": 4,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RedGummyBearItem"
-            },
+            "item": "CUSTOM:RedGummyBearItem",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BlueGummyBearItem"
-            },
+            "item": "CUSTOM:BlueGummyBearItem",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:OrangeGummyBear"
-            },
+            "item": "CUSTOM:OrangeGummyBear",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -106,9 +94,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:YellowGummyBear"
-            },
+            "item": "CUSTOM:YellowGummyBear",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -120,9 +106,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GreenGummyBear"
-            },
+            "item": "CUSTOM:GreenGummyBear",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -134,9 +118,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LightBlueGummyBear"
-            },
+            "item": "CUSTOM:LightBlueGummyBear",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -157,9 +139,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyEssence"
-            },
+            "item": "CUSTOM:CandyEssence",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,

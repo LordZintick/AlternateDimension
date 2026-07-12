@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:frosted_glass"
-    }
+    "a": "alternate_dimension:frosted_glass"
   },
   "result": {
     "id": "alternate_dimension:frosted_glass_pane",

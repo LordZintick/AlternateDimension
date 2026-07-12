@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:refinery_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:umberflower"
-    },
-    {
-      "item": "alternate_dimension:pyrolite_chunk"
-    }
+    "alternate_dimension:umberflower",
+    "alternate_dimension:pyrolite_chunk"
   ],
   "integers": [
     2,

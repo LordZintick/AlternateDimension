@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:BasicCircuit"
-      }
+      "CUSTOM:BasicCircuit"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PhosphorusTorch"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:BasicCircuit"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "TAG:mod:glass_panes"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "",
+      "CUSTOM:PhosphorusTorch",
+      "",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:BasicCircuit",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "TAG:mod:glass_panes",
+      "CUSTOM:AluminumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnergyTablet"
-    },
+    "recipeReturnStack": "CUSTOM:EnergyTablet",
     "name": "energy_tablet_recipe",
     "namespace": "mod"
   }

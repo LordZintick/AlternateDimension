@@ -1,6 +1,9 @@
 package com.lordkittycat.alternate_dimension.block.entity;
 
 import com.github.lordzintick.block.entity.CustomFurnaceBlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -24,7 +27,7 @@ import java.util.stream.IntStream;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class ShaleFurnaceBlockEntity extends CustomFurnaceBlockEntity {
-	public ShaleFurnaceBlockEntity(BlockPos position, BlockState state) {
-		super(AlternateDimensionModBlockEntities.SHALE_FURNACE.get(), position, state);
+	public ShaleFurnaceBlockEntity(BlockPos pos, BlockState state) {
+		super(AlternateDimensionModBlockEntities.SHALE_FURNACE.get(), pos, state);
 	}
 }

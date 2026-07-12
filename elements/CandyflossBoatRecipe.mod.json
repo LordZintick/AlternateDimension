@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "boat",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      }
+      "CUSTOM:CandyflossPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      },
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      },
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      },
-      {
-        "value": "CUSTOM:CandyflossPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:CandyflossPlanks",
+      "",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CandyflossBoat"
-    },
+    "recipeReturnStack": "CUSTOM:CandyflossBoat",
     "name": "candyfloss_boat_recipe",
     "namespace": "mod"
   }

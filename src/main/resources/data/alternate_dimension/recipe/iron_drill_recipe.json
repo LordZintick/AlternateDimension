@@ -7,18 +7,10 @@
     "da "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:iron_drill_head"
-    },
-    "c": {
-      "item": "alternate_dimension:aluminum_gearbox"
-    },
-    "d": {
-      "item": "alternate_dimension:aluminum_gear"
-    }
+    "a": "alternate_dimension:aluminum_plate",
+    "b": "alternate_dimension:iron_drill_head",
+    "c": "alternate_dimension:aluminum_gearbox",
+    "d": "alternate_dimension:aluminum_gear"
   },
   "result": {
     "id": "alternate_dimension:iron_drill",

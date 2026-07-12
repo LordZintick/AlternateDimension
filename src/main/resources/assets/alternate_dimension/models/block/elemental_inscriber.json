@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/elemental_inscriber_back",
     "west": "alternate_dimension:block/elemental_inscriber_right",
     "particle": "alternate_dimension:block/elemental_inscriber_top"
-  },
-  "render_type": "solid"
+  }
 }

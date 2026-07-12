@@ -8,12 +8,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_chain"
-    },
-    "b": {
-      "item": "alternate_dimension:stripped_pine_log"
-    }
+    "a": "alternate_dimension:aluminum_chain",
+    "b": "alternate_dimension:stripped_pine_log"
   },
   "result": {
     "id": "alternate_dimension:pine_hanging_sign",

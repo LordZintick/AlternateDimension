@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "alternate_dimension:candyfloss_planks"
-    }
+    "alternate_dimension:candyfloss_planks"
   ],
   "result": {
     "id": "alternate_dimension:candyfloss_button",

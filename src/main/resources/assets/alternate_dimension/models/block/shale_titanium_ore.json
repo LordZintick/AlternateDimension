@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/shale_titanium_ore",
     "particle": "alternate_dimension:block/shale_titanium_ore"
-  },
-  "render_type": "solid"
+  }
 }

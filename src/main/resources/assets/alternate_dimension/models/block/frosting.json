@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/frosting",
     "particle": "alternate_dimension:block/frosting"
-  },
-  "render_type": "solid"
+  }
 }

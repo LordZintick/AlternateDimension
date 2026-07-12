@@ -1,0 +1,65 @@
+{
+  "model": {
+    "type": "alternate_dimension:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "alternate_dimension:scorched_bow/pulling"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "alternate_dimension:item/scorched_bow_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "alternate_dimension:scorched_bow/pull"
+            },
+            "value": 0.65
+          },
+          {
+            "property": {
+              "property": "alternate_dimension:scorched_bow/pulling"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "alternate_dimension:item/scorched_bow_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "alternate_dimension:scorched_bow/pull"
+            },
+            "value": 0.9
+          },
+          {
+            "property": {
+              "property": "alternate_dimension:scorched_bow/pulling"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "alternate_dimension:item/scorched_bow_2"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "alternate_dimension:item/scorched_bow"
+    }
+  }
+}

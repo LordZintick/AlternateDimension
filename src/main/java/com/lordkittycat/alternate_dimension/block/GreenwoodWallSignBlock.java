@@ -9,8 +9,8 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class GreenwoodWallSignBlock extends WallSignBlock {
-	public GreenwoodWallSignBlock() {
-		super(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE,
-				BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn().dropsLike(AlternateDimensionModBlocks.GREENWOOD_SIGN.get()));
+	public GreenwoodWallSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE, properties.sound(SoundType.WOOD).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn()
+				.overrideLootTable(AlternateDimensionModBlocks.GREENWOOD_SIGN.get().getLootTable()).overrideDescription(AlternateDimensionModBlocks.GREENWOOD_SIGN.get().getDescriptionId()));
 	}
 }

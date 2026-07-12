@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StrongThread"
-            },
+            "item": "CUSTOM:StrongThread",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WeakThread"
-            },
+            "item": "CUSTOM:WeakThread",
             "weight": 3,
             "minCount": 1,
             "maxCount": 5,
@@ -50,9 +46,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AncientDust"
-            },
+            "item": "CUSTOM:AncientDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -73,9 +67,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RomanSpear"
-            },
+            "item": "CUSTOM:RomanSpear",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -87,9 +79,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 7,
             "minCount": 1,
             "maxCount": 1,

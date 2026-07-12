@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.CeilingHangingSignBlock;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 
 public class PineHangingSignBlock extends CeilingHangingSignBlock {
-	public PineHangingSignBlock() {
-		super(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE, BlockBehaviour.Properties.of().sound(SoundType.HANGING_SIGN).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+	public PineHangingSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE, properties.sound(SoundType.HANGING_SIGN).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 }

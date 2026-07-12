@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -15,9 +15,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "efficiency": 7.0,
     "attackSpeed": 0.8,
@@ -28,9 +26,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:ShroomiumChunk"
-      }
+      "CUSTOM:ShroomiumChunk"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",

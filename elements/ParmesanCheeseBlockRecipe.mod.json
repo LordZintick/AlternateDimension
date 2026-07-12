@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ParmesanCheese"
-      }
+      "CUSTOM:ParmesanCheese"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ParmesanCheese"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheese"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ParmesanCheese"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheese"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ParmesanCheese",
+      "CUSTOM:ParmesanCheese",
+      "",
+      "CUSTOM:ParmesanCheese",
+      "CUSTOM:ParmesanCheese",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ParmesanCheeseBlock"
-    },
+    "recipeReturnStack": "CUSTOM:ParmesanCheeseBlock",
     "name": "parmesan_cheese_block_recipe",
     "namespace": "mod"
   }

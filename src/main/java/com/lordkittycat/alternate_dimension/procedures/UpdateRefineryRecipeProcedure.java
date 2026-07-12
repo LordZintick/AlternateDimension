@@ -1,10 +1,10 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.transfer.transaction.Transaction;
+import net.neoforged.neoforge.transfer.item.ItemUtil;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.energy.EnergyHandler;
+import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
@@ -16,12 +16,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.Container;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -30,6 +30,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.RefineryRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModRecipeTypes;
 
 public class UpdateRefineryRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -46,17 +47,19 @@ public class UpdateRefineryRecipeProcedure {
 		ingredient2 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).copy();
 		resultTest = (new Object() {
 			public ItemStack getResult() {
-				if (world instanceof Level _lvl) {
-					net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-					List<RefineryRecipeTypeRecipe> recipes = rm.getAllRecipesFor(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-					for (RefineryRecipeTypeRecipe recipe : recipes) {
-						NonNullList<Ingredient> ingredients = recipe.getIngredients();
-						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-							continue;
-						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-							continue;
-						return recipe.getResultItems().get(0).copy();
-					}
+				List<RefineryRecipeTypeRecipe> recipes = null;
+				if (world instanceof ServerLevel _lvl) {
+					recipes = _lvl.recipeAccess().recipeMap().byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				} else {
+					recipes = AlternateDimensionModRecipeTypes.recipes.byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				}
+				for (RefineryRecipeTypeRecipe recipe : recipes) {
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						continue;
+					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+						continue;
+					return recipe.getResultItems().get(0).copy();
 				}
 				return ItemStack.EMPTY;
 			}
@@ -66,17 +69,19 @@ public class UpdateRefineryRecipeProcedure {
 			ingredient2 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).copy();
 			resultTest = (new Object() {
 				public ItemStack getResult() {
-					if (world instanceof Level _lvl) {
-						net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-						List<RefineryRecipeTypeRecipe> recipes = rm.getAllRecipesFor(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-						for (RefineryRecipeTypeRecipe recipe : recipes) {
-							NonNullList<Ingredient> ingredients = recipe.getIngredients();
-							if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
-								continue;
-							if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-								continue;
-							return recipe.getResultItems().get(0).copy();
-						}
+					List<RefineryRecipeTypeRecipe> recipes = null;
+					if (world instanceof ServerLevel _lvl) {
+						recipes = _lvl.recipeAccess().recipeMap().byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+					} else {
+						recipes = AlternateDimensionModRecipeTypes.recipes.byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+					}
+					for (RefineryRecipeTypeRecipe recipe : recipes) {
+						List<Ingredient> ingredients = recipe.getIngredients();
+						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+							continue;
+						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+							continue;
+						return recipe.getResultItems().get(0).copy();
 					}
 					return ItemStack.EMPTY;
 				}
@@ -84,9 +89,33 @@ public class UpdateRefineryRecipeProcedure {
 		}
 		if (!(resultTest.getItem() == ItemStack.EMPTY.getItem())) {
 			{
-				if (world instanceof Level _lvl) {
-					net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-					List<RefineryRecipeTypeRecipe> recipes = rm.getAllRecipesFor(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				List<RefineryRecipeTypeRecipe> recipes = null;
+				if (world instanceof ServerLevel _lvl) {
+					recipes = _lvl.recipeAccess().recipeMap().byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				} else {
+					recipes = AlternateDimensionModRecipeTypes.recipes.byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				}
+				for (RefineryRecipeTypeRecipe recipe : recipes) {
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test(ingredient1))
+						continue;
+					if (!ingredients.get(1).test(ingredient2))
+						continue;
+					List<ItemStack> reciperesult = recipe.getResultItems();
+					result = reciperesult;
+					break;
+				}
+			}
+			check = getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500 && getBlockNBTLogic(world, BlockPos.containing(x, y, z), "on");
+			if (check) {
+				i = 0;
+				{
+					List<RefineryRecipeTypeRecipe> recipes = null;
+					if (world instanceof ServerLevel _lvl) {
+						recipes = _lvl.recipeAccess().recipeMap().byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+					} else {
+						recipes = AlternateDimensionModRecipeTypes.recipes.byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+					}
 					for (RefineryRecipeTypeRecipe recipe : recipes) {
 						List<Ingredient> ingredients = recipe.getIngredients();
 						if (!ingredients.get(0).test(ingredient1))
@@ -94,40 +123,20 @@ public class UpdateRefineryRecipeProcedure {
 						if (!ingredients.get(1).test(ingredient2))
 							continue;
 						List<ItemStack> reciperesult = recipe.getResultItems();
-						result = reciperesult;
-						break;
-					}
-				}
-			}
-			check = getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500 && getBlockNBTLogic(world, BlockPos.containing(x, y, z), "on");
-			if (check) {
-				i = 0;
-				{
-					if (world instanceof Level _lvl) {
-						net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-						List<RefineryRecipeTypeRecipe> recipes = rm.getAllRecipesFor(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-						for (RefineryRecipeTypeRecipe recipe : recipes) {
-							List<Ingredient> ingredients = recipe.getIngredients();
-							if (!ingredients.get(0).test(ingredient1))
-								continue;
-							if (!ingredients.get(1).test(ingredient2))
-								continue;
-							List<ItemStack> reciperesult = recipe.getResultItems();
-							for (int num : recipe.integers()) {
-								double numberiterator = (double) num;
-								if (i == 0) {
-									count0 = numberiterator;
-								} else if (i == 1) {
-									count1 = numberiterator;
-								}
-								if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getCount() < numberiterator) {
-									check = false;
-									break;
-								}
-								i = i + 1;
+						for (int num : recipe.integers()) {
+							double numberiterator = (double) num;
+							if (i == 0) {
+								count0 = numberiterator;
+							} else if (i == 1) {
+								count1 = numberiterator;
 							}
-							break;
+							if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getCount() < numberiterator) {
+								check = false;
+								break;
+							}
+							i = i + 1;
 						}
+						break;
 					}
 				}
 			}
@@ -164,9 +173,12 @@ public class UpdateRefineryRecipeProcedure {
 				}
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "progress") > 100 && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 500) {
 					if (world instanceof ILevelExtension _ext) {
-						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
-						if (_entityStorage != null)
-							_entityStorage.extractEnergy(500, false);
+						if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
+							try (var _tx = Transaction.openRoot()) {
+								_energyHandler.extract(500, _tx);
+								_tx.commit();
+							}
+						}
 					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
@@ -186,74 +198,71 @@ public class UpdateRefineryRecipeProcedure {
 					}
 					powerCheck = true;
 					{
-						if (world instanceof Level _lvl) {
-							net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-							List<RefineryRecipeTypeRecipe> recipes = rm.getAllRecipesFor(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-							for (RefineryRecipeTypeRecipe recipe : recipes) {
-								List<Ingredient> ingredients = recipe.getIngredients();
-								if (!ingredients.get(0).test(ingredient1))
-									continue;
-								if (!ingredients.get(1).test(ingredient2))
-									continue;
-								List<ItemStack> reciperesult = recipe.getResultItems();
-								for (String stringiterator : recipe.strings()) {
-									if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rpu") != new Object() {
-										double convert(String s) {
-											try {
-												return Double.parseDouble(s.trim());
-											} catch (Exception e) {
-											}
-											return 0;
-										}
-									}.convert(stringiterator)) {
-										powerCheck = false;
-										break;
-									}
+						List<RefineryRecipeTypeRecipe> recipes = null;
+						if (world instanceof ServerLevel _lvl) {
+							recipes = _lvl.recipeAccess().recipeMap().byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+						} else {
+							recipes = AlternateDimensionModRecipeTypes.recipes.byType(RefineryRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+						}
+						for (RefineryRecipeTypeRecipe recipe : recipes) {
+							List<Ingredient> ingredients = recipe.getIngredients();
+							if (!ingredients.get(0).test(ingredient1))
+								continue;
+							if (!ingredients.get(1).test(ingredient2))
+								continue;
+							List<ItemStack> reciperesult = recipe.getResultItems();
+							for (String stringiterator : recipe.strings()) {
+								if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rpu") != parseDouble(stringiterator)) {
+									powerCheck = false;
+									break;
 								}
-								break;
 							}
+							break;
 						}
 					}
 					if (powerCheck) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.redstone_torch.burnout")), SoundSource.BLOCKS, 1, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.redstone_torch.burnout")), SoundSource.BLOCKS, 1, 1);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.redstone_torch.burnout")), SoundSource.BLOCKS, 1, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.redstone_torch.burnout")), SoundSource.BLOCKS, 1, 1, false);
 							}
 						}
 						i = 2;
 						for (ItemStack itemstack : result) {
 							ItemStack itemstackiterator = itemstack.copy();
-							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-								ItemStack _setstack = itemstackiterator.copy();
-								_setstack.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getCount() + itemstackiterator.getCount());
-								_itemHandlerModifiable.setStackInSlot((int) i, _setstack);
+							if (world instanceof ServerLevel _serverLevel) {
+								BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+								if (_be instanceof Container _container) {
+									ItemStack _setstack = itemstackiterator.copy();
+									_setstack.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getCount() + itemstackiterator.getCount());
+									_container.setItem((int) i, _setstack);
+								}
 							}
 							i = i + 1;
 						}
 					} else {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.dragon_fireball.explode")), SoundSource.BLOCKS, 1, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.dragon_fireball.explode")), SoundSource.BLOCKS, 1, 1);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.dragon_fireball.explode")), SoundSource.BLOCKS, 1, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.dragon_fireball.explode")), SoundSource.BLOCKS, 1, 1, false);
 							}
 						}
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 15, 0, 0, 0, 1);
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						int _slotid = 0;
-						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-						_stk.shrink((int) count0);
-						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					if (world instanceof ServerLevel _serverLevel) {
+						BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_be instanceof Container _container) {
+							_container.getItem(0).shrink((int) count0);
+						}
 					}
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						int _slotid = 1;
-						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-						_stk.shrink((int) count1);
-						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					if (world instanceof ServerLevel _serverLevel) {
+						BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_be instanceof Container _container) {
+							_container.getItem(1).shrink((int) count1);
+						}
 					}
 				}
 			} else {
@@ -279,18 +288,17 @@ public class UpdateRefineryRecipeProcedure {
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
 		if (world instanceof ILevelExtension ext) {
-			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
 			if (itemHandler != null)
-				return itemHandler.getStackInSlot(slot);
+				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
 	}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
 		if (level instanceof ILevelExtension levelExtension) {
-			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
-			if (energyStorage != null)
-				return energyStorage.getEnergyStored();
+			if (levelExtension.getCapability(Capabilities.Energy.BLOCK, pos, direction) instanceof EnergyHandler energyHandler)
+				return energyHandler.getAmountAsInt();
 		}
 		return 0;
 	}
@@ -298,14 +306,22 @@ public class UpdateRefineryRecipeProcedure {
 	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getBoolean(tag);
+			return blockEntity.getPersistentData().getBooleanOr(tag, false);
 		return false;
 	}
 
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
+	}
+
+	private static double parseDouble(String s) {
+		try {
+			return Double.parseDouble(s.trim());
+		} catch (Exception e) {
+			return 0;
+		}
 	}
 }

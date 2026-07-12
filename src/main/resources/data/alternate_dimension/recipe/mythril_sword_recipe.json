@@ -7,15 +7,9 @@
     " c "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:mythril_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:mythril_nugget"
-    },
-    "c": {
-      "item": "alternate_dimension:graphite_rod"
-    }
+    "a": "alternate_dimension:mythril_ingot",
+    "b": "alternate_dimension:mythril_nugget",
+    "c": "alternate_dimension:graphite_rod"
   },
   "result": {
     "id": "alternate_dimension:mythril_sword",

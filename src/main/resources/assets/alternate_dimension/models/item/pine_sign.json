@@ -2,6 +2,5 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "alternate_dimension:item/pine_sign"
-  },
-  "render_type": "translucent"
+  }
 }

@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "boat",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PinePlanks"
-      }
+      "CUSTOM:PinePlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PinePlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PinePlanks"
-      },
-      {
-        "value": "CUSTOM:PinePlanks"
-      },
-      {
-        "value": "CUSTOM:PinePlanks"
-      },
-      {
-        "value": "CUSTOM:PinePlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:PinePlanks",
+      "",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:PinePlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PineBoat"
-    },
+    "recipeReturnStack": "CUSTOM:PineBoat",
     "name": "pine_boat_recipe",
     "namespace": "mod"
   }

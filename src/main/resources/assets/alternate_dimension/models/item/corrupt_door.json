@@ -2,6 +2,5 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "alternate_dimension:item/corrupt_door"
-  },
-  "render_type": "translucent"
+  }
 }

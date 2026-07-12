@@ -16,8 +16,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class ScorchedBushBlock extends FlowerBlock {
-	public ScorchedBushBlock() {
-		super(MobEffects.CONFUSION, 10000, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public ScorchedBushBlock(BlockBehaviour.Properties properties) {
+		super(MobEffects.NAUSEA, 10000, properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollision().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

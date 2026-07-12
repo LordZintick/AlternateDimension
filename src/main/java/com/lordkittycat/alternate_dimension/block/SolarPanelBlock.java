@@ -16,6 +16,7 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.procedures.SolarPanelUpdateProcedure;
@@ -24,8 +25,8 @@ import com.lordkittycat.alternate_dimension.block.entity.SolarPanelBlockEntity;
 public class SolarPanelBlock extends Block implements EntityBlock {
 	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 4, 16);
 
-	public SolarPanelBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public SolarPanelBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -70,15 +71,8 @@ public class SolarPanelBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof SolarPanelBlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
+	protected void affectNeighborsAfterRemoval(BlockState blockstate, ServerLevel world, BlockPos blockpos, boolean flag) {
+		Containers.updateNeighboursAfterDestroy(blockstate, world, blockpos);
 	}
 
 	@Override
@@ -87,7 +81,7 @@ public class SolarPanelBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos, Direction direction) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
 		if (tileentity instanceof SolarPanelBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);

@@ -1,20 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "ingot_presser_recipe_gui.png",
     "width": 176,
     "height": 185,
-    "icon": {
-      "value": "CUSTOM:IngotPresser"
-    },
+    "icon": "CUSTOM:IngotPresser",
     "craftingtables": [
-      {
-        "value": "CUSTOM:IngotPresser"
-      },
-      {
-        "value": "CUSTOM:AdvancedIngotPresser"
-      }
+      "CUSTOM:IngotPresser",
+      "CUSTOM:AdvancedIngotPresser"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

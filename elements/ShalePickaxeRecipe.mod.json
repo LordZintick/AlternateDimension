@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ShaleCobble"
-      }
+      "CUSTOM:ShaleCobble"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ShaleCobble"
-      },
-      {
-        "value": "CUSTOM:ShaleCobble"
-      },
-      {
-        "value": "CUSTOM:ShaleCobble"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:ShaleCobble",
+      "CUSTOM:ShaleCobble",
+      "CUSTOM:ShaleCobble",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ShalePickaxe"
-    },
+    "recipeReturnStack": "CUSTOM:ShalePickaxe",
     "name": "shale_pickaxe_recipe",
     "namespace": "mod"
   }

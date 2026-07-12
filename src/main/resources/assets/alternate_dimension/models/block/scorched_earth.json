@@ -3,6 +3,5 @@
   "textures": {
     "all": "minecraft:block/sandstone_bottom",
     "particle": "minecraft:block/sandstone_bottom"
-  },
-  "render_type": "solid"
+  }
 }

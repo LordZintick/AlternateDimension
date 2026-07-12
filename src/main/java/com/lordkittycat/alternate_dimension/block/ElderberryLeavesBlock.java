@@ -11,17 +11,17 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class ElderberryLeavesBlock extends Block {
-	public ElderberryLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.5f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public ElderberryLeavesBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GRASS).strength(0.5f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightDampening(BlockState state) {
 		return 0;
 	}
 

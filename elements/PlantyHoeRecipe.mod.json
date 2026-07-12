@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PlantMatter"
-      }
+      "CUSTOM:PlantMatter"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PlantMatter"
-      },
-      {
-        "value": "CUSTOM:PlantMatter"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:PlantMatter",
+      "CUSTOM:PlantMatter",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PlantyHoe"
-    },
+    "recipeReturnStack": "CUSTOM:PlantyHoe",
     "name": "planty_hoe_recipe",
     "namespace": "mod"
   }

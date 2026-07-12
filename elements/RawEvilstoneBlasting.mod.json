@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RawEvilstone"
-      }
+      "CUSTOM:RawEvilstone"
     ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RawEvilstone"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:EvilstoneGem"
-    },
+    "blastingInputStack": "CUSTOM:RawEvilstone",
+    "blastingReturnStack": "CUSTOM:EvilstoneGem",
     "name": "raw_evilstone_blasting",
     "namespace": "mod"
   }

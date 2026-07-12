@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -22,7 +20,7 @@ public class CollectLightningBottleProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(AlternateDimensionModItems.LIGHTNING_BOTTLE.get()).copy();
 				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				_player.getInventory().placeItemBackInInventory(_setstack);
 			}
 		}
 	}

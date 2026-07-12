@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MagicDust"
-      }
+      "CUSTOM:MagicDust"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:CloudBlock",
+      "",
+      "CUSTOM:CloudBlock",
+      "CUSTOM:MagicDust",
+      "CUSTOM:CloudBlock",
+      "",
+      "CUSTOM:CloudBlock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CloudCharge"
-    },
+    "recipeReturnStack": "CUSTOM:CloudCharge",
     "name": "cloud_charge_recipe",
     "namespace": "mod"
   }

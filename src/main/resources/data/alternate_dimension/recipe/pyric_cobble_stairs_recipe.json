@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyric_cobble"
-    }
+    "a": "alternate_dimension:pyric_cobble"
   },
   "result": {
     "id": "alternate_dimension:pyric_cobble_stairs",

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Shroomite",
@@ -24,24 +24,16 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:shroomiteAnimation.idle"
-        },
+        "animation": "CUSTOM:shroomiteAnimation.idle",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:shroomiteAnimation.walk"
-        },
+        "animation": "CUSTOM:shroomiteAnimation.walk",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": true,
         "amplitude": 1.0
       }
@@ -61,31 +53,17 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMobs"
-      }
+      "CUSTOM:AlternateDimensionMobs"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
@@ -125,24 +103,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": ""
-    },
-    "hurtSound": {
-      "value": "block.shroomlight.break"
-    },
-    "deathSound": {
-      "value": "entity.axolotl.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "",
+    "hurtSound": "block.shroomlight.break",
+    "deathSound": "entity.axolotl.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -151,9 +117,7 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
@@ -164,9 +128,7 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:MushroomInfection"
-      }
+      "CUSTOM:MushroomInfection"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/meteorite_block",
     "particle": "alternate_dimension:block/meteorite_block"
-  },
-  "render_type": "solid"
+  }
 }

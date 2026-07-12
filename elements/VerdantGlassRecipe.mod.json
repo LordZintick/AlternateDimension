@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PlantMatter"
-      }
+      "CUSTOM:PlantMatter"
     ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:PlantMatter"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:VerdantGlass"
-    },
+    "smeltingInputStack": "CUSTOM:PlantMatter",
+    "smeltingReturnStack": "CUSTOM:VerdantGlass",
     "name": "verdant_glass_recipe",
     "namespace": "mod"
   }

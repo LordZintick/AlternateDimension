@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 public class ChiseledScorchedBricksBlock extends Block {
-	public ChiseledScorchedBricksBlock() {
-		super(BlockBehaviour.Properties.of().strength(1f, 2f).requiresCorrectToolForDrops());
+	public ChiseledScorchedBricksBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(1f, 2f).requiresCorrectToolForDrops());
 	}
 }

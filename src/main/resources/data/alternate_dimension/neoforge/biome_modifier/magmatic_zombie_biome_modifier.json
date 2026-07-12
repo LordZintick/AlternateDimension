@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "alternate_dimension:wasteland",
+  "spawners": {
+    "type": "alternate_dimension:magmatic_zombie",
+    "weight": 12,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

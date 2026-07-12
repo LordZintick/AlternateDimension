@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
@@ -15,17 +16,22 @@ import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemInstance;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.RecipeManager;
-import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.SingleRecipeInput;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.FuelValues;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.TagValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import net.neoforged.neoforge.common.CommonHooks;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Objects;
 
 public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyContainer {
     private final RecipeManager.CachedCheck<SingleRecipeInput, SmeltingRecipe> quickCheck =
@@ -128,7 +134,7 @@ public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyCont
     @Override
     public boolean canPlaceItem(int slot, ItemStack stack) {
         if (slot == 2) return false;
-        if (slot == 1) return stack.getBurnTime(null) > 0;
+        if (slot == 1 && level != null) return stack.getBurnTime(null, level.fuelValues()) > 0;
         return true;
     }
 
@@ -140,25 +146,24 @@ public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyCont
     @Override
     public void clearContent() { this.items.clear(); }
 
-    // --- Data Serialization ---
     @Override
-    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
-        super.loadAdditional(tag, registries);
-        ContainerHelper.loadAllItems(tag, this.items, registries);
-        this.litTime = tag.getInt("BurnTime");
-        this.cookingProgress = tag.getInt("CookTime");
-        this.cookingTotalTime = tag.getInt("CookTimeTotal");
-        this.litDuration = tag.getInt("LitDuration");
+    protected void loadAdditional(ValueInput input) {
+        super.loadAdditional(input);
+        ContainerHelper.loadAllItems(input, this.items);
+        this.litTime = input.getIntOr("BurnTime", 0);
+        this.cookingProgress = input.getIntOr("CookTime", 0);
+        this.cookingTotalTime = input.getIntOr("CookTimeTotal", 0);
+        this.litDuration = input.getIntOr("LitDuration", 0);
     }
 
     @Override
-    protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
-        super.saveAdditional(tag, registries);
-        ContainerHelper.saveAllItems(tag, this.items, registries);
-        tag.putInt("BurnTime", this.litTime);
-        tag.putInt("CookTime", this.cookingProgress);
-        tag.putInt("CookTimeTotal", this.cookingTotalTime);
-        tag.putInt("LitDuration", this.litDuration);
+    protected void saveAdditional(ValueOutput output) {
+        super.saveAdditional(output);
+        ContainerHelper.saveAllItems(output, this.items);
+        output.putInt("BurnTime", this.litTime);
+        output.putInt("CookTime", this.cookingProgress);
+        output.putInt("CookTimeTotal", this.cookingTotalTime);
+        output.putInt("LitDuration", this.litDuration);
     }
 
     @Override
@@ -168,12 +173,10 @@ public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyCont
 
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
-        CompoundTag tag = new CompoundTag();
-        saveAdditional(tag, registries);
-        return tag;
+        return this.saveWithFullMetadata(registries);
     }
 
-    public static void serverTick(Level level, BlockPos pos, BlockState state, CustomFurnaceBlockEntity furnace) {
+    public static void serverTick(ServerLevel level, BlockPos pos, BlockState state, CustomFurnaceBlockEntity furnace) {
         boolean wasLit = furnace.litTime > 0;
         boolean changed = false;
 
@@ -193,29 +196,29 @@ public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyCont
         SingleRecipeInput recipeInput = new SingleRecipeInput(inputStack);
 
         // Query the recipe system for a valid result
-        var optionalRecipe = hasInput ? furnace.quickCheck.getRecipeFor(recipeInput, level) : java.util.Optional.<net.minecraft.world.item.crafting.RecipeHolder<SmeltingRecipe>>empty();
+        var optionalRecipe = hasInput ? furnace.quickCheck.getRecipeFor(recipeInput, level) : java.util.Optional.<RecipeHolder<SmeltingRecipe>>empty();
 
         if (furnace.litTime > 0 || (hasFuel && optionalRecipe.isPresent())) {
             if (optionalRecipe.isPresent()) {
                 SmeltingRecipe recipe = optionalRecipe.get().value();
-                ItemStack recipeResult = recipe.getResultItem(level.registryAccess());
+                ItemStack recipeResult = recipe.assemble(recipeInput);
 
                 // Check if the recipe output can safely merge into our output slot (Slot 2)
                 if (canSmelt(recipeResult, furnace.getItem(2), furnace.getMaxStackSize())) {
 
                     // If furnace is not lit but has fuel, consume fuel to ignite it
                     if (furnace.litTime <= 0) {
-                        furnace.litTime = fuelStack.getBurnTime(null);
+                        furnace.litTime = fuelStack.getBurnTime(null, level.fuelValues());
                         furnace.litDuration = furnace.litTime;
 
                         if (furnace.litTime > 0) {
                             changed = true;
                             if (hasFuel) {
                                 // Safely shrink the fuel item or turn lava buckets into empty buckets
-                                net.minecraft.world.item.Item item = fuelStack.getItem();
+                                Item item = fuelStack.getItem();
                                 fuelStack.shrink(1);
                                 if (fuelStack.isEmpty()) {
-                                    furnace.setItem(1, item.getCraftingRemainingItem() != null ? new ItemStack(item.getCraftingRemainingItem()) : ItemStack.EMPTY);
+                                    furnace.setItem(1, item.getCraftingRemainder(item.getDefaultInstance()) != null ? Objects.requireNonNull(item.getCraftingRemainder(item.getDefaultInstance())).create() : ItemStack.EMPTY);
                                 }
                             }
                         }
@@ -223,14 +226,14 @@ public class CustomFurnaceBlockEntity extends BlockEntity implements WorldlyCont
 
                     // If it's now successfully burning, progress the cook progress bar
                     if (furnace.litTime > 0 && state.getBlock() instanceof CustomFurnaceBlock furnaceBlock) {
-                        furnace.cookingTotalTime = recipe.getCookingTime();
+                        furnace.cookingTotalTime = recipe.cookingTime();
                         furnace.cookingProgress = (int) Math.floor(Math.min(furnace.cookingProgress + furnaceBlock.getSmeltSpeed(), furnace.cookingTotalTime));
 
                         // If cooking finishes, output the item
                         if (furnace.cookingProgress >= furnace.cookingTotalTime) {
                             furnace.cookingProgress = 0;
                             smeltItem(furnace, inputStack, furnace.getItem(2), recipeResult);
-                            grantXP(level, pos, recipe.getExperience());
+                            grantXP(level, pos, recipe.experience());
                             changed = true;
                         }
                     }

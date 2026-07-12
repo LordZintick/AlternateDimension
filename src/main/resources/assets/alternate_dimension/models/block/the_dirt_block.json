@@ -3,6 +3,5 @@
   "textures": {
     "all": "minecraft:block/dirt",
     "particle": "minecraft:block/dirt"
-  },
-  "render_type": "solid"
+  }
 }

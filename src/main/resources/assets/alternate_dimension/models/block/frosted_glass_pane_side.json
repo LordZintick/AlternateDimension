@@ -4,6 +4,5 @@
     "particle": "alternate_dimension:block/frosted_glass",
     "pane": "alternate_dimension:block/frosted_glass",
     "edge": "alternate_dimension:block/frosted_glass"
-  },
-  "render_type": "translucent"
+  }
 }

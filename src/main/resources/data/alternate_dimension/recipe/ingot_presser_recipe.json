@@ -7,12 +7,8 @@
     "bab"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:phosphorus"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:phosphorus"
   },
   "result": {
     "id": "alternate_dimension:ingot_presser",

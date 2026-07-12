@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "nuclear_reactor_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:SaltBlock"
-      }
+      "CUSTOM:SaltBlock"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "NuclearReactorRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:SodiumRapier"
-      }
+      "CUSTOM:SodiumRapier"
     ],
     "resultCounts": [
       1

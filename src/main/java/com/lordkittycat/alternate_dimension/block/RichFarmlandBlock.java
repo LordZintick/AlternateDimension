@@ -16,8 +16,8 @@ import com.lordkittycat.alternate_dimension.procedures.RichFarmlandUpdateWetStat
 public class RichFarmlandBlock extends Block {
 	public static final BooleanProperty WET = BooleanProperty.create("wet");
 
-	public RichFarmlandBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f).randomTicks());
+	public RichFarmlandBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GRAVEL).strength(1f).randomTicks());
 		this.registerDefaultState(this.stateDefinition.any().setValue(WET, false));
 	}
 
@@ -29,7 +29,10 @@ public class RichFarmlandBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(WET, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(WET, false);
 	}
 
 	@Override

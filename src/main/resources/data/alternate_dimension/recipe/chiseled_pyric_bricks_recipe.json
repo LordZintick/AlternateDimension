@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyric_bricks"
-    }
+    "a": "alternate_dimension:pyric_bricks"
   },
   "result": {
     "id": "alternate_dimension:chiseled_pyric_bricks",

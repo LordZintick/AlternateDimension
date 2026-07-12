@@ -2,6 +2,8 @@ package com.lordkittycat.alternate_dimension.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -19,11 +21,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.lordkittycat.alternate_dimension.procedures.TargetPlayersAndVoidMobsProcedure;
@@ -32,7 +33,6 @@ import com.lordkittycat.alternate_dimension.procedures.ApplyBlindingLightProcedu
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class HallowedOneEntity extends Monster {
-
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(HallowedOneEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(HallowedOneEntity.class, EntityDataSerializers.INT);
 
@@ -74,30 +74,29 @@ public class HallowedOneEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("alternate_dimension:ethereal_laughing"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("alternate_dimension:ethereal_laughing"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("alternate_dimension:ethereal_hurt"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("alternate_dimension:ethereal_hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("alternate_dimension:ethereal_death"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("alternate_dimension:ethereal_death"));
 	}
 
 	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
-		super.addAdditionalSaveData(compound);
-		compound.putString("Texture", this.getTexture());
+	public void addAdditionalSaveData(ValueOutput valueOutput) {
+		super.addAdditionalSaveData(valueOutput);
+		valueOutput.putString("Texture", this.getTexture());
 	}
 
 	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
-		super.readAdditionalSaveData(compound);
-		if (compound.contains("Texture"))
-			this.setTexture(compound.getString("Texture"));
+	public void readAdditionalSaveData(ValueInput valueInput) {
+		super.readAdditionalSaveData(valueInput);
+		this.setTexture(valueInput.getStringOr("Texture", "hallowed_one"));
 	}
 
 	@Override

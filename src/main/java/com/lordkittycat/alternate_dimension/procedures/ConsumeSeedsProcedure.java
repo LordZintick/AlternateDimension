@@ -1,23 +1,31 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import com.mojang.blaze3d.resource.ResourceHandle;
+import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.transfer.IndexModifier;
+import net.neoforged.neoforge.transfer.ResourceHandler;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.transaction.Transaction;
+import net.neoforged.neoforge.transfer.transaction.TransactionContext;
 
 public class ConsumeSeedsProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
-			for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
-				ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
-				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("alternate_dimension:seeds")))) {
-					_modHandlerIter.setStackInSlot(_idx, itemstackiterator.copyWithCount(itemstackiterator.getCount() - 1));
+		if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> resourceHandler) {
+			for (int i = 0; i < resourceHandler.size(); i++) {
+				ItemStack seed = resourceHandler.getResource(i).toStack().copy();
+				if (seed.is(ItemTags.create(Identifier.parse("alternate_dimension:seeds")))) {
+					try (Transaction action = Transaction.openRoot()) {
+						resourceHandler.extract(i, ItemResource.of(seed), 1, action);
+						action.commit();
+					}
 					break;
 				}
 			}

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/cooking_core",
     "particle": "alternate_dimension:block/cooking_core"
-  },
-  "render_type": "solid"
+  }
 }

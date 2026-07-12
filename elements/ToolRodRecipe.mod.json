@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "tool_rod",
     "unlockingItems": [
-      {
-        "value": "TAG:mod:altdim_planks"
-      }
+      "TAG:mod:altdim_planks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_planks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_planks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_planks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "TAG:mod:altdim_planks",
+      "",
+      "",
+      "TAG:mod:altdim_planks",
+      "",
+      "",
+      "TAG:mod:altdim_planks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ToolRod"
-    },
+    "recipeReturnStack": "CUSTOM:ToolRod",
     "name": "tool_rod_recipe",
     "namespace": "mod"
   }

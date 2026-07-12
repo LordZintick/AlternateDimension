@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:mythril_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:mythril_gear"
-    }
+    "a": "alternate_dimension:mythril_plate",
+    "b": "alternate_dimension:mythril_gear"
   },
   "result": {
     "id": "alternate_dimension:mythril_gearbox",

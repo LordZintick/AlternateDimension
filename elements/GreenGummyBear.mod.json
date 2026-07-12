@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,18 +12,14 @@
     "name": "Green Gummy Bear",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMaterials"
-      }
+      "CUSTOM:AlternateDimensionMaterials"
     ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 15,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -44,29 +40,21 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "ApplyJumpBoost"
-    },
+    "onFinishUsingItem": "ApplyJumpBoost",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:PlusProjectile"
-    },
+    "projectile": "CUSTOM:PlusProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 1,
     "saturation": 0.0,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

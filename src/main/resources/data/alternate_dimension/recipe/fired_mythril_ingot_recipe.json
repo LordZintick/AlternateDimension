@@ -4,9 +4,7 @@
   "category": "misc",
   "experience": 2,
   "cookingtime": 400,
-  "ingredient": {
-    "item": "alternate_dimension:formed_mythril_shards"
-  },
+  "ingredient": "alternate_dimension:formed_mythril_shards",
   "result": {
     "id": "alternate_dimension:fired_mythril_ingot"
   }

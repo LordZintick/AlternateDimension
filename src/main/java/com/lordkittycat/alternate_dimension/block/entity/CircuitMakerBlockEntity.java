@@ -1,7 +1,9 @@
 package com.lordkittycat.alternate_dimension.block.entity;
 
-import net.neoforged.neoforge.energy.EnergyStorage;
+import net.neoforged.neoforge.transfer.energy.SimpleEnergyHandler;
 
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -12,7 +14,6 @@ import net.minecraft.world.ContainerHelper;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.nbt.IntTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.HolderLookup;
@@ -36,22 +37,20 @@ public class CircuitMakerBlockEntity extends RandomizableContainerBlockEntity im
 	}
 
 	@Override
-	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
-		super.loadAdditional(compound, lookupProvider);
-		if (!this.tryLoadLootTable(compound))
+	public void loadAdditional(ValueInput valueInput) {
+		super.loadAdditional(valueInput);
+		if (!this.tryLoadLootTable(valueInput))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-		ContainerHelper.loadAllItems(compound, this.stacks, lookupProvider);
-		if (compound.get("energyStorage") instanceof IntTag intTag)
-			energyStorage.deserializeNBT(lookupProvider, intTag);
+		ContainerHelper.loadAllItems(valueInput, this.stacks);
+		valueInput.child("energyStorage").ifPresent(input -> energyStorage.deserialize(input));
 	}
 
 	@Override
-	public void saveAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
-		super.saveAdditional(compound, lookupProvider);
-		if (!this.trySaveLootTable(compound)) {
-			ContainerHelper.saveAllItems(compound, this.stacks, lookupProvider);
-		}
-		compound.put("energyStorage", energyStorage.serializeNBT(lookupProvider));
+	public void saveAdditional(ValueOutput valueOutput) {
+		super.saveAdditional(valueOutput);
+		if (!this.trySaveLootTable(valueOutput))
+			ContainerHelper.saveAllItems(valueOutput, this.stacks);
+		energyStorage.serialize(valueOutput.child("energyStorage"));
 	}
 
 	@Override
@@ -129,29 +128,15 @@ public class CircuitMakerBlockEntity extends RandomizableContainerBlockEntity im
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(20000, 400, 400, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(20000, 400, 400, 0) {
 		@Override
-		public int receiveEnergy(int maxReceive, boolean simulate) {
-			int retval = super.receiveEnergy(maxReceive, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
-		}
-
-		@Override
-		public int extractEnergy(int maxExtract, boolean simulate) {
-			int retval = super.extractEnergy(maxExtract, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
+		protected void onEnergyChanged(int previousAmount) {
+			setChanged();
+			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
 		}
 	};
 
-	public EnergyStorage getEnergyStorage() {
+	public SimpleEnergyHandler getEnergyStorage() {
 		return energyStorage;
 	}
 }

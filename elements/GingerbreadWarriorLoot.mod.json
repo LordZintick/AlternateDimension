@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Gingerbread"
-            },
+            "item": "CUSTOM:Gingerbread",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyEssence"
-            },
+            "item": "CUSTOM:CandyEssence",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

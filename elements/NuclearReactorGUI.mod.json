@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -200,9 +200,7 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "displayCondition": {
-            "name": "CheckActive"
-          },
+          "displayCondition": "CheckActive",
           "x": 219,
           "y": 85,
           "locked": false

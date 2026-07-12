@@ -1,15 +1,9 @@
 {
   "type": "alternate_dimension:circuit_maker_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:mythril_plate"
-    },
-    {
-      "item": "alternate_dimension:advanced_circuit"
-    },
-    {
-      "item": "alternate_dimension:omega_essence"
-    }
+    "alternate_dimension:mythril_plate",
+    "alternate_dimension:advanced_circuit",
+    "alternate_dimension:omega_essence"
   ],
   "outputs": [
     {

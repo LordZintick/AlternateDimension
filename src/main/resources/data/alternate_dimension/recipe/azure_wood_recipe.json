@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:azure_log"
-    }
+    "a": "alternate_dimension:azure_log"
   },
   "result": {
     "id": "alternate_dimension:azure_wood",

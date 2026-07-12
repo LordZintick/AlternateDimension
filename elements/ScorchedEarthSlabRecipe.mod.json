@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      }
+      "CUSTOM:ScorchedEarth"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ScorchedEarth",
+      "CUSTOM:ScorchedEarth",
+      "CUSTOM:ScorchedEarth",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedEarthSlab"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedEarthSlab",
     "name": "scorched_earth_slab_recipe",
     "namespace": "mod"
   }

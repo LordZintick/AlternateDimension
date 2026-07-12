@@ -15,8 +15,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class CornPlantBlock extends DoublePlantBlock {
-	public CornPlantBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public CornPlantBlock(BlockBehaviour.Properties properties) {
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollision().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

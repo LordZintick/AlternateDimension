@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/coolant_rods_side",
     "west": "alternate_dimension:block/coolant_rods_side",
     "particle": "alternate_dimension:block/flat_top"
-  },
-  "render_type": "solid"
+  }
 }

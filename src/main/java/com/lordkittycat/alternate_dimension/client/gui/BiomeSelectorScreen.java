@@ -1,19 +1,20 @@
 package com.lordkittycat.alternate_dimension.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 
-import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import com.lordkittycat.alternate_dimension.world.inventory.BiomeSelectorMenu;
 import com.lordkittycat.alternate_dimension.network.BiomeSelectorButtonMessage;
@@ -26,17 +27,15 @@ public class BiomeSelectorScreen extends AbstractContainerScreen<BiomeSelectorMe
 	private boolean menuStateUpdateActive = false;
 	private EditBox biome_input;
 	private Button button_confirm;
-	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("alternate_dimension:textures/screens/biome_selector.png");
+	private static final Identifier BACKGROUND = Identifier.parse("alternate_dimension:textures/screens/biome_selector.png");
 
 	public BiomeSelectorScreen(BiomeSelectorMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text);
+		super(container, inventory, text, 138, 70);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 138;
-		this.imageHeight = 70;
 	}
 
 	@Override
@@ -50,48 +49,45 @@ public class BiomeSelectorScreen extends AbstractContainerScreen<BiomeSelectorMe
 	}
 
 	@Override
-	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		biome_input.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+	public void extractRenderState(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		super.extractRenderState(guiGraphics, mouseX, mouseY, partialTicks);
+		biome_input.extractWidgetRenderState(guiGraphics, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.disableBlend();
+	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 	}
 
 	@Override
-	public boolean keyPressed(int key, int b, int c) {
+	public boolean keyPressed(KeyEvent event) {
+		int key = InputConstants.getKey(event).getValue();
 		if (key == 256) {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
 		if (biome_input.isFocused())
-			return biome_input.keyPressed(key, b, c);
-		return super.keyPressed(key, b, c);
+			return biome_input.keyPressed(event);
+		return super.keyPressed(event);
 	}
 
 	@Override
-	public void resize(Minecraft minecraft, int width, int height) {
+	public void resize(int width, int height) {
 		String biome_inputValue = biome_input.getValue();
-		super.resize(minecraft, width, height);
+		super.resize(width, height);
 		biome_input.setValue(biome_inputValue);
 	}
 
 	@Override
-	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.alternate_dimension.biome_selector.label_biome_locator"), 33, 5, -12829636, false);
+	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.text(this.font, Component.translatable("gui.alternate_dimension.biome_selector.label_biome_locator"), 33, 5, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		biome_input = new EditBox(this.font, this.leftPos + 12, this.topPos + 19, 118, 18, Component.translatable("gui.alternate_dimension.biome_selector.biome_input"));
+		biome_input = new EditBox(this.font, this.leftPos + 11, this.topPos + 18, 120, 20, Component.translatable("gui.alternate_dimension.biome_selector.biome_input"));
 		biome_input.setMaxLength(8192);
 		biome_input.setResponder(content -> {
 			if (!menuStateUpdateActive)
@@ -103,7 +99,7 @@ public class BiomeSelectorScreen extends AbstractContainerScreen<BiomeSelectorMe
 			int x = BiomeSelectorScreen.this.x;
 			int y = BiomeSelectorScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new BiomeSelectorButtonMessage(0, x, y, z));
+				ClientPacketDistributor.sendToServer(new BiomeSelectorButtonMessage(0, x, y, z));
 				BiomeSelectorButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 36, this.topPos + 43, 61, 20).build();

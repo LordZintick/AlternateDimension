@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/redwood_trapdoor",
     "particle": "alternate_dimension:block/redwood_trapdoor"
-  },
-  "render_type": "solid"
+  }
 }

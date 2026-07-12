@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "bark",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AzureLog"
-      }
+      "CUSTOM:AzureLog"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AzureLog"
-      },
-      {
-        "value": "CUSTOM:AzureLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AzureLog"
-      },
-      {
-        "value": "CUSTOM:AzureLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:AzureLog",
+      "CUSTOM:AzureLog",
+      "",
+      "CUSTOM:AzureLog",
+      "CUSTOM:AzureLog",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AzureWood"
-    },
+    "recipeReturnStack": "CUSTOM:AzureWood",
     "name": "azure_wood_recipe",
     "namespace": "mod"
   }

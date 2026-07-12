@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GoldenBeef"
-            },
+            "item": "CUSTOM:GoldenBeef",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TatteredLeather"
-            },
+            "item": "CUSTOM:TatteredLeather",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

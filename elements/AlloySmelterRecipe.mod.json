@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:BasicCircuit"
-      }
+      "CUSTOM:BasicCircuit"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:BasicCircuit"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumGear"
-      },
-      {
-        "value": "CUSTOM:SimpleMachineCasing"
-      },
-      {
-        "value": "CUSTOM:AluminumGear"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:PyroliteChunk"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:BasicCircuit",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:AluminumGear",
+      "CUSTOM:SimpleMachineCasing",
+      "CUSTOM:AluminumGear",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:PyroliteChunk",
+      "CUSTOM:AluminumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AlloySmelter"
-    },
+    "recipeReturnStack": "CUSTOM:AlloySmelter",
     "name": "alloy_smelter_recipe",
     "namespace": "mod"
   }

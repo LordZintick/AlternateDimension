@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "lightning_block",
@@ -51,14 +51,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionWorld"
-      }
+      "CUSTOM:AlternateDimensionWorld"
     ],
     "destroyTool": "pickaxe",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -78,14 +74,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "strippingResult": {
-      "value": ""
-    },
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -95,25 +87,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "GROUND",
     "isCustomSoundType": true,
-    "soundOnStep": {
-      "value": "GROUND"
-    },
-    "breakSound": {
-      "value": "entity.lightning.impact"
-    },
-    "fallSound": {
-      "value": "entity.lightning.impact"
-    },
-    "hitSound": {
-      "value": "entity.lightning.thunder"
-    },
-    "placeSound": {
-      "value": "entity.lightning.impact"
-    },
-    "stepSound": {
-      "value": "entity.lightning.thunder"
-    },
+    "breakSound": "entity.lightning.impact",
+    "fallSound": "entity.lightning.impact",
+    "hitSound": "entity.lightning.thunder",
+    "placeSound": "entity.lightning.impact",
+    "stepSound": "entity.lightning.thunder",
     "luminance": {
       "fixedValue": 15.0
     },
@@ -141,18 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "CollectLightningBottle"
-    },
-    "onRandomUpdateEvent": {
-      "name": "ElectricParticleEffect"
-    },
+    "onRightClicked": "CollectLightningBottle",
+    "onRandomUpdateEvent": "ElectricParticleEffect",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

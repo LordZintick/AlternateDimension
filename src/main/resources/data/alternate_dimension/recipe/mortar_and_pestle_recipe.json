@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:tool_rod"
-    },
-    {
-      "tag": "alternate_dimension:bowls"
-    }
+    "alternate_dimension:tool_rod",
+    "#alternate_dimension:bowls"
   ],
   "result": {
     "id": "alternate_dimension:mortar_and_pestle",

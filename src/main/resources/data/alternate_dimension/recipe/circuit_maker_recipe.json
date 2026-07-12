@@ -7,18 +7,10 @@
     "cdc"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:ingot_presser"
-    },
-    "c": {
-      "item": "alternate_dimension:aluminum_gearbox"
-    },
-    "d": {
-      "item": "alternate_dimension:simple_machine_casing"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:ingot_presser",
+    "c": "alternate_dimension:aluminum_gearbox",
+    "d": "alternate_dimension:simple_machine_casing"
   },
   "result": {
     "id": "alternate_dimension:circuit_maker",

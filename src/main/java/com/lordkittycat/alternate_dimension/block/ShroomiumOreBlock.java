@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.RequiresMushyToolProcedure;
 
 public class ShroomiumOreBlock extends Block {
-	public ShroomiumOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(3f, 10f).requiresCorrectToolForDrops());
+	public ShroomiumOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.SHROOMLIGHT).strength(3f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

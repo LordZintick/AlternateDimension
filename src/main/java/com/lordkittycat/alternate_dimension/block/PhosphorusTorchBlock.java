@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 public class PhosphorusTorchBlock extends Block {
 	private static final VoxelShape SHAPE = box(7, 0, 7, 9, 10, 9);
 
-	public PhosphorusTorchBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).instabreak().lightLevel(blockstate -> 15).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+	public PhosphorusTorchBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOD).instabreak().lightLevel(blockstate -> 15).noCollision().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -24,12 +24,12 @@ public class PhosphorusTorchBlock extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightDampening(BlockState state) {
 		return 0;
 	}
 

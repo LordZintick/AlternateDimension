@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:umberflower"
-    }
+    "alternate_dimension:umberflower"
   ],
   "result": {
     "id": "minecraft:black_dye",

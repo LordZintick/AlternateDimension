@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 public class ChiseledVeridiumBricksBlock extends Block {
-	public ChiseledVeridiumBricksBlock() {
-		super(BlockBehaviour.Properties.of().strength(1.5f, 4f).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public ChiseledVeridiumBricksBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(1.5f, 4f).requiresCorrectToolForDrops().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 }

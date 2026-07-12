@@ -1,9 +1,7 @@
 {
   "type": "alternate_dimension:purifier_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:evilstone_gem"
-    }
+    "alternate_dimension:evilstone_gem"
   ],
   "outputs": [
     {

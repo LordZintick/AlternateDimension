@@ -12,7 +12,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class ScorchedPlatformBlock extends PlatformBlock {
-	public ScorchedPlatformBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 2f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public ScorchedPlatformBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.CHAIN).strength(1f, 2f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 }

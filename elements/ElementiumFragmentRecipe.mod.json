@@ -1,15 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "refinery_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:OmegaEssence"
-      },
-      {
-        "value": "CUSTOM:MythrilIngot"
-      }
+      "CUSTOM:OmegaEssence",
+      "CUSTOM:MythrilIngot"
     ],
     "integers": [
       32,
@@ -20,12 +16,8 @@
     ],
     "recipetype": "RefineryRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:ElementiumFragment"
-      },
-      {
-        "value": "CUSTOM:OmegaEssence"
-      }
+      "CUSTOM:ElementiumFragment",
+      "CUSTOM:OmegaEssence"
     ],
     "resultCounts": [
       1,

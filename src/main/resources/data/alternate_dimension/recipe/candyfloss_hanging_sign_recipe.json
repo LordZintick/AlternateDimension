@@ -8,12 +8,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_chain"
-    },
-    "b": {
-      "item": "alternate_dimension:candyfloss_planks"
-    }
+    "a": "alternate_dimension:aluminum_chain",
+    "b": "alternate_dimension:candyfloss_planks"
   },
   "result": {
     "id": "alternate_dimension:candyfloss_hanging_sign",

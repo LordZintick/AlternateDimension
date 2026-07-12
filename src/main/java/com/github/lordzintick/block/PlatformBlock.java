@@ -18,12 +18,12 @@ public class PlatformBlock extends Block {
     }
 
     @Override
-    public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+    protected boolean propagatesSkylightDown(BlockState state) {
         return true;
     }
 
     @Override
-    public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+    protected int getLightDampening(BlockState state) {
         return 0;
     }
 
@@ -40,7 +40,7 @@ public class PlatformBlock extends Block {
                 boolean above = entity.getY() >= pos.getY() + 1;
                 boolean falling = entity.getDeltaMovement().y <= 0.005;
 
-                if (above && falling) return shape;
+                if (above && falling && !entity.isShiftKeyDown()) return shape;
             }
         }
         return Shapes.empty();

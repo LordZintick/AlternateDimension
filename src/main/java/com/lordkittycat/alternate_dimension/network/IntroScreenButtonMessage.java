@@ -7,7 +7,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
@@ -21,7 +21,7 @@ import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 @EventBusSubscriber
 public record IntroScreenButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-	public static final Type<IntroScreenButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "intro_screen_buttons"));
+	public static final Type<IntroScreenButtonMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "intro_screen_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, IntroScreenButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, IntroScreenButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

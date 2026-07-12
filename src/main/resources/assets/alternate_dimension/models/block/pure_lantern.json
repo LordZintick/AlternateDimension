@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/pure_lantern",
     "particle": "alternate_dimension:block/pure_lantern"
-  },
-  "render_type": "solid"
+  }
 }

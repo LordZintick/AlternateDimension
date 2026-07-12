@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/rich_dirt",
     "west": "alternate_dimension:block/rich_dirt",
     "particle": "alternate_dimension:block/rich_farmland_wet"
-  },
-  "render_type": "solid"
+  }
 }

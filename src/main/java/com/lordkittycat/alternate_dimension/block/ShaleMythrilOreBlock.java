@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.CheckForTitaniumToolProcedure;
 
 public class ShaleMythrilOreBlock extends Block {
-	public ShaleMythrilOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(5f, 15f).requiresCorrectToolForDrops());
+	public ShaleMythrilOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.BASALT).strength(5f, 15f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:CloudBlock",
+      "",
+      "",
+      "CUSTOM:CloudBlock",
+      "",
+      "",
+      "CUSTOM:CloudBlock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CloudPillar"
-    },
+    "recipeReturnStack": "CUSTOM:CloudPillar",
     "name": "cloud_pillar_recipe",
     "namespace": "mod"
   }

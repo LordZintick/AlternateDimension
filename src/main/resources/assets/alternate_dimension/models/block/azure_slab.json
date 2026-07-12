@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/azure_planks",
     "top": "alternate_dimension:block/azure_planks",
     "side": "alternate_dimension:block/azure_planks"
-  },
-  "render_type": "solid"
+  }
 }

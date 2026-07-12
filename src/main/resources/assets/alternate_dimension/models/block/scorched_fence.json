@@ -3,6 +3,5 @@
   "textures": {
     "texture": "alternate_dimension:block/scorched_planks",
     "particle": "alternate_dimension:block/scorched_planks"
-  },
-  "render_type": "solid"
+  }
 }

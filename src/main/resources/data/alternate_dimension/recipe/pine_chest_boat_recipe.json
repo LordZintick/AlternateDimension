@@ -3,12 +3,8 @@
   "group": "chest_boat",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:pine_boat"
-    },
-    {
-      "tag": "alternate_dimension:boxes"
-    }
+    "alternate_dimension:pine_boat",
+    "#alternate_dimension:boxes"
   ],
   "result": {
     "id": "alternate_dimension:pine_chest_boat",

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/crystal_chest",
     "particle": "alternate_dimension:block/crystal_chest"
-  },
-  "render_type": "cutout"
+  }
 }

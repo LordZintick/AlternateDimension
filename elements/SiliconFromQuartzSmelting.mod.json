@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RawQuartz"
-      }
+      "CUSTOM:RawQuartz"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 1.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:RawQuartz"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:Silicon"
-    },
+    "smeltingInputStack": "CUSTOM:RawQuartz",
+    "smeltingReturnStack": "CUSTOM:Silicon",
     "name": "silicon_from_quartz_smelting",
     "namespace": "mod"
   }

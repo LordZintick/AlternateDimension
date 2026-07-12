@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/aluminum_ore_block",
     "particle": "alternate_dimension:block/aluminum_ore_block"
-  },
-  "render_type": "solid"
+  }
 }

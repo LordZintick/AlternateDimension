@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "wooden_drill",
     "unlockingItems": [
-      {
-        "value": "TAG:mod:altdim_planks"
-      }
+      "TAG:mod:altdim_planks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WoodenDrillHead"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_logs"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_logs"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "CUSTOM:WoodenDrillHead",
+      "",
+      "TAG:mod:altdim_logs",
+      "",
+      "TAG:mod:altdim_logs",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WoodenDrill"
-    },
+    "recipeReturnStack": "CUSTOM:WoodenDrill",
     "name": "wooden_drill_recipe",
     "namespace": "mod"
   }

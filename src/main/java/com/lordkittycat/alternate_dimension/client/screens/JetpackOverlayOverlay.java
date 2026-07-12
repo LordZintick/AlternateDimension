@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.client.screens;
 
-import org.checkerframework.checker.units.qual.h;
-
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -35,12 +33,12 @@ public class JetpackOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (CheckForJetpackProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.jetpack_overlay.label_engine"), w / 2 + -204, h / 2 + -111, -1, true);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.jetpack_overlay.label_hover"), w / 2 + -199, h / 2 + -95, -1, true);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+			event.getGuiGraphics().text(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.jetpack_overlay.label_engine"), w / 2 + -204, h / 2 + -111, -1, true);
+			event.getGuiGraphics().text(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.jetpack_overlay.label_hover"), w / 2 + -199, h / 2 + -95, -1, true);
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					JetpackEngineOnProviderProcedure.execute(entity), w / 2 + -165, h / 2 + -111, -1, true);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					JetpackHoverOnProviderProcedure.execute(entity), w / 2 + -166, h / 2 + -95, -1, true);
 		}

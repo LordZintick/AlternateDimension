@@ -5,9 +5,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:black_dye"
-    }
+    "a": "minecraft:black_dye"
   },
   "result": {
     "id": "alternate_dimension:minus",

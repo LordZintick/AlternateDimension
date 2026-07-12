@@ -7,21 +7,11 @@
     "ded"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:titanium_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:titanium_gear"
-    },
-    "c": {
-      "item": "alternate_dimension:advanced_machine_casing"
-    },
-    "d": {
-      "item": "alternate_dimension:evilstone_gearbox"
-    },
-    "e": {
-      "item": "alternate_dimension:corruptor"
-    }
+    "a": "alternate_dimension:titanium_ingot",
+    "b": "alternate_dimension:titanium_gear",
+    "c": "alternate_dimension:advanced_machine_casing",
+    "d": "alternate_dimension:evilstone_gearbox",
+    "e": "alternate_dimension:corruptor"
   },
   "result": {
     "id": "alternate_dimension:advanced_corruptor",

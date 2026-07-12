@@ -7,12 +7,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:plant_matter"
-    },
-    "b": {
-      "item": "alternate_dimension:tool_rod"
-    }
+    "a": "alternate_dimension:plant_matter",
+    "b": "alternate_dimension:tool_rod"
   },
   "result": {
     "id": "alternate_dimension:planty_hoe",

@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:TatteredLeather"
-      },
-      {
-        "value": "TAG:mod:boxes"
-      }
+      "CUSTOM:TatteredLeather",
+      "TAG:mod:boxes"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -19,37 +15,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:StrongThread"
-      },
-      {
-        "value": "CUSTOM:TatteredLeather"
-      },
-      {
-        "value": "CUSTOM:StrongThread"
-      },
-      {
-        "value": "CUSTOM:TatteredLeather"
-      },
-      {
-        "value": "TAG:mod:boxes"
-      },
-      {
-        "value": "CUSTOM:TatteredLeather"
-      },
-      {
-        "value": "CUSTOM:StrongThread"
-      },
-      {
-        "value": "CUSTOM:TatteredLeather"
-      },
-      {
-        "value": "CUSTOM:StrongThread"
-      }
+      "CUSTOM:StrongThread",
+      "CUSTOM:TatteredLeather",
+      "CUSTOM:StrongThread",
+      "CUSTOM:TatteredLeather",
+      "TAG:mod:boxes",
+      "CUSTOM:TatteredLeather",
+      "CUSTOM:StrongThread",
+      "CUSTOM:TatteredLeather",
+      "CUSTOM:StrongThread"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Backpack"
-    },
+    "recipeReturnStack": "CUSTOM:Backpack",
     "name": "backpack_recipe",
     "namespace": "mod"
   }

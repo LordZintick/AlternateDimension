@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:salt"
-    }
+    "a": "alternate_dimension:salt"
   },
   "result": {
     "id": "alternate_dimension:salt_block",

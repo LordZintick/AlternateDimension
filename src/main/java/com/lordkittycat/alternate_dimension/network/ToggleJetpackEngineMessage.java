@@ -7,7 +7,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
@@ -20,7 +20,7 @@ import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 @EventBusSubscriber
 public record ToggleJetpackEngineMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<ToggleJetpackEngineMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "key_toggle_jetpack_engine"));
+	public static final Type<ToggleJetpackEngineMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "key_toggle_jetpack_engine"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, ToggleJetpackEngineMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ToggleJetpackEngineMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

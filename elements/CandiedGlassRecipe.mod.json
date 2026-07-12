@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "TAG:mod:candy_blocks"
-      }
+      "TAG:mod:candy_blocks"
     ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "TAG:mod:candy_blocks"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:CandiedGlass"
-    },
+    "smeltingInputStack": "TAG:mod:candy_blocks",
+    "smeltingReturnStack": "CUSTOM:CandiedGlass",
     "name": "candied_glass_recipe",
     "namespace": "mod"
   }

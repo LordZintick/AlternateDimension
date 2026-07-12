@@ -6,6 +6,5 @@
     "0": "alternate_dimension:block/solar_panel_top",
     "1": "alternate_dimension:block/solar_panel_bottom",
     "2": "alternate_dimension:block/solar_panel_side"
-  },
-  "render_type": "cutout"
+  }
 }

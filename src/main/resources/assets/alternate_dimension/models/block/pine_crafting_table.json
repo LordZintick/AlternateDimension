@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/pine_crafting_table_side",
     "west": "alternate_dimension:block/pine_crafting_table_side",
     "particle": "alternate_dimension:block/pine_planks"
-  },
-  "render_type": "solid"
+  }
 }

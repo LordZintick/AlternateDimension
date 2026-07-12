@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -9,14 +7,16 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
 import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
 import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+
+import java.util.Set;
 
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
@@ -35,7 +35,7 @@ public class SelectAltDimProcedure {
 		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(AlternateDimensionModItems.HINT_BOOK.get()).copy();
 			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			_player.getInventory().placeItemBackInInventory(_setstack);
 		}
 		if (entity instanceof Player _player) {
 			_player.getAbilities().invulnerable = false;
@@ -43,14 +43,14 @@ public class SelectAltDimProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("alternate_dimension:eleroth"));
+		if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _serverLevel) {
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth"));
 			if (_player.level().dimension() == destinationType)
 				return;
-			ServerLevel nextLevel = _player.server.getLevel(destinationType);
+			ServerLevel nextLevel = _serverLevel.getServer().getLevel(destinationType);
 			if (nextLevel != null) {
 				_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-				_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+				_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), Set.of(), _player.getYRot(), _player.getXRot(), true);
 				_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 				for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 					_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance, false));

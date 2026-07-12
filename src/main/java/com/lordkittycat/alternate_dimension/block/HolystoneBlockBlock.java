@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class HolystoneBlockBlock extends Block {
-	public HolystoneBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f, 10f).requiresCorrectToolForDrops());
+	public HolystoneBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(4f, 10f).requiresCorrectToolForDrops());
 	}
 }

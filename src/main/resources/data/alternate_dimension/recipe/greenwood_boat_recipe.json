@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:greenwood_planks"
-    }
+    "a": "alternate_dimension:greenwood_planks"
   },
   "result": {
     "id": "alternate_dimension:greenwood_boat",

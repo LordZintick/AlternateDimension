@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:greenwood_chest_boat",
+    "alternate_dimension:pine_chest_boat",
+    "alternate_dimension:azure_chest_boat",
+    "alternate_dimension:scorched_chest_boat",
+    "alternate_dimension:candyfloss_chest_boat",
+    "alternate_dimension:redwood_chest_boat"
+  ]
+}

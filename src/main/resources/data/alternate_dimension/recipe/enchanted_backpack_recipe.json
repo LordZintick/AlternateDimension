@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:magic_dust_block"
-    },
-    "b": {
-      "item": "alternate_dimension:cheesy_backpack"
-    }
+    "a": "alternate_dimension:magic_dust_block",
+    "b": "alternate_dimension:cheesy_backpack"
   },
   "result": {
     "id": "alternate_dimension:enchanted_backpack",

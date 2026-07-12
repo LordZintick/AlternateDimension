@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:titanium_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:titanium_nugget"
-    }
+    "a": "alternate_dimension:titanium_plate",
+    "b": "alternate_dimension:titanium_nugget"
   },
   "result": {
     "id": "alternate_dimension:titanium_ring",

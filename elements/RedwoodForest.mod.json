@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Redwood Forest",
-    "groundBlock": {
-      "value": "CUSTOM:FrostedGrassBlock"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:RichDirt"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:FrostedGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "airColor": {
       "value": -16724839,
       "falpha": 0.0
@@ -28,23 +22,13 @@
       "value": -16724890,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:alternate_dimension_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "SNOWFLAKE"
-    },
+    "particleToSpawn": "SNOWFLAKE",
     "particlesProbability": 0.1,
     "rainingPossibility": 0.30000000000000004,
     "temperature": 0.5,
@@ -79,18 +63,10 @@
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Caves",
       "TaigaLargeFerns",

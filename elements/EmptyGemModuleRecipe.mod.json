@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:HexagemComplex"
-      }
+      "CUSTOM:HexagemComplex"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UraniumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:UraniumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:UraniumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:UraniumPlate"
-      }
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:UraniumPlate"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EmptyGemModule"
-    },
+    "recipeReturnStack": "CUSTOM:EmptyGemModule",
     "name": "empty_gem_module_recipe",
     "namespace": "mod"
   }

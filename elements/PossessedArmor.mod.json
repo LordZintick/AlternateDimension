@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Possessed Armor",
@@ -24,31 +24,21 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:possessed_armorAnimation.idle"
-        },
+        "animation": "CUSTOM:possessed_armorAnimation.idle",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:possessed_armorAnimation.walk"
-        },
+        "animation": "CUSTOM:possessed_armorAnimation.walk",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": true,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:possessed_armorAnimation.attack"
-        },
+        "animation": "CUSTOM:possessed_armorAnimation.attack",
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
@@ -69,31 +59,17 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMobs"
-      }
+      "CUSTOM:AlternateDimensionMobs"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
@@ -133,24 +109,12 @@
     "immuneToAnvil": false,
     "immuneToWither": true,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "item.armor.equip_diamond"
-    },
-    "hurtSound": {
-      "value": "block.copper_grate.break"
-    },
-    "deathSound": {
-      "value": "item.armor.unequip_wolf"
-    },
-    "stepSound": {
-      "value": "item.armor.equip_chain"
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "item.armor.equip_diamond",
+    "hurtSound": "block.copper_grate.break",
+    "deathSound": "item.armor.unequip_wolf",
+    "stepSound": "item.armor.equip_chain",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -159,9 +123,7 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
@@ -172,9 +134,7 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
-      {
-        "value": "#mod:is_familiar_realm"
-      }
+      "#mod:is_familiar_realm"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

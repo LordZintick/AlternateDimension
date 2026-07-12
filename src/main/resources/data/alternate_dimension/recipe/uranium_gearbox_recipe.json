@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:uranium_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:uranium_gear"
-    }
+    "a": "alternate_dimension:uranium_plate",
+    "b": "alternate_dimension:uranium_gear"
   },
   "result": {
     "id": "alternate_dimension:uranium_gearbox",

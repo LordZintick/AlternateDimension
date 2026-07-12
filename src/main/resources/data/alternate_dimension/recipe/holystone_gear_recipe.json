@@ -7,12 +7,8 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:holystone_gem"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_nugget"
-    }
+    "a": "alternate_dimension:holystone_gem",
+    "b": "alternate_dimension:aluminum_nugget"
   },
   "result": {
     "id": "alternate_dimension:holystone_gear",

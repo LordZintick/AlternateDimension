@@ -4,6 +4,5 @@
     "particle": "alternate_dimension:block/scorched_glass",
     "pane": "alternate_dimension:block/scorched_glass",
     "edge": "alternate_dimension:block/scorched_glass"
-  },
-  "render_type": "cutout"
+  }
 }

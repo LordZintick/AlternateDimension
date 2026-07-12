@@ -6,12 +6,8 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:cloth"
-    },
-    "b": {
-      "item": "alternate_dimension:lightning_bottle"
-    }
+    "a": "alternate_dimension:cloth",
+    "b": "alternate_dimension:lightning_bottle"
   },
   "result": {
     "id": "alternate_dimension:fuzzy_armor_boots",

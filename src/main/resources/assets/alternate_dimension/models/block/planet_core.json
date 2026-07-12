@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/planet_core",
     "particle": "alternate_dimension:block/planet_core"
-  },
-  "render_type": "solid"
+  }
 }

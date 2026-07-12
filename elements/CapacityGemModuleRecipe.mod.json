@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:EmptyGemModule"
-      }
+      "CUSTOM:EmptyGemModule"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": "CUSTOM:EmptyGemModule"
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Blocks.CHEST",
+      "",
+      "Blocks.CHEST",
+      "CUSTOM:EmptyGemModule",
+      "Blocks.CHEST",
+      "",
+      "Blocks.CHEST",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CapacityGemModule"
-    },
+    "recipeReturnStack": "CUSTOM:CapacityGemModule",
     "name": "capacity_gem_module_recipe",
     "namespace": "mod"
   }

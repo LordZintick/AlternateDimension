@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "beetle_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "armorTextureFile": "beetle_armor",
     "helmetName": "Beetle Clypeus",
@@ -96,14 +94,11 @@
     "enchantability": 7,
     "toughness": 0.2,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "entity.silverfish.step"
-    },
+    "equipSound": "entity.silverfish.step",
     "repairItems": [
-      {
-        "value": "CUSTOM:BeetleShell"
-      }
+      "CUSTOM:BeetleShell"
     ],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

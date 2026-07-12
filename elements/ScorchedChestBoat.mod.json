@@ -1,13 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "specialentity",
   "definition": {
     "entityType": "ChestBoat",
     "name": "Scorched Boat with Chest",
+    "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "entityTexture": "scorched_chest_boat",
     "itemTexture": "scorched_chest_boat"

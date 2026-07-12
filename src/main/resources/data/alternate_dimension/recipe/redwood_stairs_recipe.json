@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:redwood_planks"
-    }
+    "a": "alternate_dimension:redwood_planks"
   },
   "result": {
     "id": "alternate_dimension:redwood_stairs",

@@ -8,12 +8,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:permafrost_block"
-    },
-    "b": {
-      "item": "alternate_dimension:fired_mythril_ingot"
-    }
+    "a": "alternate_dimension:permafrost_block",
+    "b": "alternate_dimension:fired_mythril_ingot"
   },
   "result": {
     "id": "alternate_dimension:mythril_ingot",

@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_gear"
-    }
+    "a": "alternate_dimension:aluminum_plate",
+    "b": "alternate_dimension:aluminum_gear"
   },
   "result": {
     "id": "alternate_dimension:aluminum_gearbox",

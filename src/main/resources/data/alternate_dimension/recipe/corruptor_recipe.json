@@ -7,24 +7,12 @@
     "efe"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:evilstone_block"
-    },
-    "c": {
-      "item": "alternate_dimension:aluminum_gear"
-    },
-    "d": {
-      "item": "alternate_dimension:simple_machine_casing"
-    },
-    "e": {
-      "item": "alternate_dimension:evilstone_gearbox"
-    },
-    "f": {
-      "item": "alternate_dimension:evilstone_gear"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:evilstone_block",
+    "c": "alternate_dimension:aluminum_gear",
+    "d": "alternate_dimension:simple_machine_casing",
+    "e": "alternate_dimension:evilstone_gearbox",
+    "f": "alternate_dimension:evilstone_gear"
   },
   "result": {
     "id": "alternate_dimension:corruptor",

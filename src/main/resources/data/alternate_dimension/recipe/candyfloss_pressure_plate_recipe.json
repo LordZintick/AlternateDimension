@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:candyfloss_planks"
-    }
+    "a": "alternate_dimension:candyfloss_planks"
   },
   "result": {
     "id": "alternate_dimension:candyfloss_pressure_plate",

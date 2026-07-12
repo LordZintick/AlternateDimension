@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:weak_thread"
-    }
+    "a": "alternate_dimension:weak_thread"
   },
   "result": {
     "id": "alternate_dimension:cloth",

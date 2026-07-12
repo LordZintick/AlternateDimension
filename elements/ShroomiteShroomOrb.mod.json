@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "shroom_orb_shroomite",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 9,
     "separation": 5,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:MushroomInfection"
-      }
+      "CUSTOM:MushroomInfection"
     ],
     "terrainAdaptation": "none",
     "generationStep": "SURFACE_STRUCTURES",

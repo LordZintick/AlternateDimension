@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class RefineryBaseBlock extends Block {
-	public RefineryBaseBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f).requiresCorrectToolForDrops());
+	public RefineryBaseBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(3f).requiresCorrectToolForDrops());
 	}
 }

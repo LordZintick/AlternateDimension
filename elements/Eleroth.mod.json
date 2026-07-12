@@ -1,47 +1,23 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
-      {
-        "value": "CUSTOM:Wasteland"
-      },
-      {
-        "value": "CUSTOM:ThickForest"
-      },
-      {
-        "value": "CUSTOM:CandyBiome"
-      },
-      {
-        "value": "CUSTOM:Highlands"
-      },
-      {
-        "value": "CUSTOM:RedwoodForest"
-      },
-      {
-        "value": "CUSTOM:FruityGardens"
-      },
-      {
-        "value": "CUSTOM:CalmOcean"
-      },
-      {
-        "value": "CUSTOM:EnchantedForest"
-      },
-      {
-        "value": "CUSTOM:FrostbittenPlains"
-      },
-      {
-        "value": "CUSTOM:MushroomInfection"
-      }
+      "CUSTOM:Wasteland",
+      "CUSTOM:ThickForest",
+      "CUSTOM:CandyBiome",
+      "CUSTOM:Highlands",
+      "CUSTOM:RedwoodForest",
+      "CUSTOM:FruityGardens",
+      "CUSTOM:CalmOcean",
+      "CUSTOM:EnchantedForest",
+      "CUSTOM:FrostbittenPlains",
+      "CUSTOM:MushroomInfection"
     ],
     "biomesInDimensionCaves": [],
     "worldGenType": "Normal world gen",
-    "mainFillerBlock": {
-      "value": "Blocks.STONE#0"
-    },
-    "fluidBlock": {
-      "value": "Blocks.WATER"
-    },
+    "mainFillerBlock": "Blocks.STONE#0",
+    "fluidBlock": "Blocks.WATER",
     "seaLevel": 63,
     "generateOreVeins": true,
     "generateAquifers": true,
@@ -61,6 +37,8 @@
     "fixedTimeValue": 0,
     "coordinateScale": 1.0,
     "infiniburnTag": "minecraft:infiniburn_overworld",
+    "enableCustomSkyboxTextures": false,
+    "enableCustomSunMoonTextures": false,
     "bedWorks": true,
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
@@ -69,16 +47,10 @@
     "minMonsterSpawnLightLimit": 0,
     "maxMonsterSpawnLightLimit": 7,
     "monsterSpawnBlockLightLimit": 0,
-    "portalFrame": {
-      "value": ""
-    },
-    "portalParticles": {
-      "value": "PORTAL"
-    },
+    "portalFrame": "",
+    "portalParticles": "PORTAL",
     "portalLuminance": 0,
-    "portalSound": {
-      "value": "block.portal.ambient"
-    },
+    "portalSound": "block.portal.ambient",
     "enableIgniter": true,
     "igniterName": "Eleroth Portal Igniter",
     "igniterRarity": "COMMON",
@@ -86,9 +58,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "TOOLS"
-      }
+      "TOOLS"
     ],
     "texture": "",
     "portalTexture": "",

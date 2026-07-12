@@ -8,18 +8,10 @@
     "ddd"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:basic_circuit"
-    },
-    "b": {
-      "item": "alternate_dimension:advanced_circuit"
-    },
-    "c": {
-      "item": "alternate_dimension:advanced_machine_casing"
-    },
-    "d": {
-      "item": "alternate_dimension:meteorite_dust"
-    }
+    "a": "alternate_dimension:basic_circuit",
+    "b": "alternate_dimension:advanced_circuit",
+    "c": "alternate_dimension:advanced_machine_casing",
+    "d": "alternate_dimension:meteorite_dust"
   },
   "result": {
     "id": "alternate_dimension:refinery_base",

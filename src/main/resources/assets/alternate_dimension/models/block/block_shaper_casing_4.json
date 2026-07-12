@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/test_block_shaper_casing_selected",
     "west": "alternate_dimension:block/test_block_shaper_casing_right",
     "particle": "alternate_dimension:block/arrow_up"
-  },
-  "render_type": "solid"
+  }
 }

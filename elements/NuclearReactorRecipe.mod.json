@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AdvancedCircuit"
-      }
+      "CUSTOM:AdvancedCircuit"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UraniumGear"
-      },
-      {
-        "value": "CUSTOM:CoolantRod"
-      },
-      {
-        "value": "CUSTOM:UraniumGear"
-      },
-      {
-        "value": "CUSTOM:AdvancedCircuit"
-      },
-      {
-        "value": "CUSTOM:UraniumBlock"
-      },
-      {
-        "value": "CUSTOM:AdvancedCircuit"
-      },
-      {
-        "value": "CUSTOM:EvilstonePlate"
-      },
-      {
-        "value": "CUSTOM:UraniumPlate"
-      },
-      {
-        "value": "CUSTOM:EvilstonePlate"
-      }
+      "CUSTOM:UraniumGear",
+      "CUSTOM:CoolantRod",
+      "CUSTOM:UraniumGear",
+      "CUSTOM:AdvancedCircuit",
+      "CUSTOM:UraniumBlock",
+      "CUSTOM:AdvancedCircuit",
+      "CUSTOM:EvilstonePlate",
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:EvilstonePlate"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:NuclearReactor"
-    },
+    "recipeReturnStack": "CUSTOM:NuclearReactor",
     "name": "nuclear_reactor_recipe",
     "namespace": "mod"
   }

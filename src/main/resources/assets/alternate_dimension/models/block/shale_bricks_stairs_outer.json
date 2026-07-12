@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/shale_bricks",
     "top": "alternate_dimension:block/shale_bricks",
     "side": "alternate_dimension:block/shale_bricks"
-  },
-  "render_type": "solid"
+  }
 }

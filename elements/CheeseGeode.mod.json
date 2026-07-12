@@ -1,13 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "UNDERGROUND_ORES",
     "restrictionBiomes": [
-      {
-        "value": "#mod:is_familiar_realm"
-      }
+      "#mod:is_familiar_realm"
     ],
     "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"192\" y=\"109\"><value name=\"feature\"><block type=\"feature_geode_simple\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"/><field name=\"size\">0.8</field><field name=\"cannot_replace_tag\">features_cannot_replace</field><field name=\"invalid_blocks_count\">1</field><field name=\"invalid_blocks_tag\">geode_invalid_blocks</field><value name=\"filling\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">Blocks.CAVE_AIR</field></block></value><value name=\"inner_layer\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:CheeseBlock</field></block></value><value name=\"alternate_inner_layer\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:CheeseBlock</field></block></value><value name=\"middle_layer\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">Blocks.TUFF</field></block></value><value name=\"outer_layer\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">Blocks.MOSS_BLOCK</field></block></value><value name=\"crystal0\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:CheeseBlock</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">20</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_triangular\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">-40</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">50</field></block></value><next><block type=\"placement_offset\"><value name=\"xz\"><block type=\"int_provider_constant\"><field name=\"value\">0</field></block></value><value name=\"y\"><block type=\"int_provider_uniform\"><field name=\"min\">-10</field><field name=\"max\">10</field></block></value><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></next></block></xml>"
   }

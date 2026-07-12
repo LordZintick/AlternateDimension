@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
     "recipeRetstackSize": 1,
     "group": "aluminum",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RawAluminum"
-      }
+      "CUSTOM:RawAluminum"
     ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RawAluminum"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:AluminumIngot"
-    },
+    "blastingInputStack": "CUSTOM:RawAluminum",
+    "blastingReturnStack": "CUSTOM:AluminumIngot",
     "name": "aluminum_blasting",
     "namespace": "mod"
   }

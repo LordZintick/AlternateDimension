@@ -1,12 +1,13 @@
 package com.lordkittycat.alternate_dimension.jei_recipes;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.NonNullList;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.Minecraft;
 
+import mezz.jei.api.recipe.types.IRecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.IFocusGroup;
@@ -22,10 +23,11 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class AlloySmelterRecipeTypeRecipeCategory implements IRecipeCategory<AlloySmelterRecipeTypeRecipe> {
-	public final static ResourceLocation UID = ResourceLocation.parse("alternate_dimension:alloy_smelter_recipe_type");
-	public final static ResourceLocation TEXTURE = ResourceLocation.parse("alternate_dimension:textures/screens/alloy_smelter_recipe_gui.png");
+	public final static Identifier UID = Identifier.parse("alternate_dimension:alloy_smelter_recipe_type");
+	public final static Identifier TEXTURE = Identifier.parse("alternate_dimension:textures/screens/alloy_smelter_recipe_gui.png");
 	private final IDrawable background;
 	private final IDrawable icon;
+
 	private final Minecraft mc = Minecraft.getInstance();
 
 	public AlloySmelterRecipeTypeRecipeCategory(IGuiHelper helper) {
@@ -34,7 +36,7 @@ public class AlloySmelterRecipeTypeRecipeCategory implements IRecipeCategory<All
 	}
 
 	@Override
-	public mezz.jei.api.recipe.RecipeType<AlloySmelterRecipeTypeRecipe> getRecipeType() {
+	public IRecipeType<AlloySmelterRecipeTypeRecipe> getRecipeType() {
 		return AlternateDimensionModJeiPlugin.AlloySmelterRecipeType_Type;
 	}
 
@@ -59,9 +61,8 @@ public class AlloySmelterRecipeTypeRecipeCategory implements IRecipeCategory<All
 	}
 
 	@Override
-	public void draw(AlloySmelterRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+	public void draw(AlloySmelterRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphicsExtractor guiGraphics, double mouseX, double mouseY) {
 		this.background.draw(guiGraphics);
-
 	}
 
 	@Override
@@ -71,9 +72,9 @@ public class AlloySmelterRecipeTypeRecipeCategory implements IRecipeCategory<All
 		for (int i = 0; i < recipeOutputs.size(); i++) {
 			actualOutputs.set(i, recipeOutputs.get(i));
 		}
-		builder.addSlot(RecipeIngredientRole.INPUT, 56, 19).addIngredients(recipe.getIngredients().get(0));
-		builder.addSlot(RecipeIngredientRole.INPUT, 81, 19).addIngredients(recipe.getIngredients().get(1));
-		builder.addSlot(RecipeIngredientRole.INPUT, 106, 19).addIngredients(recipe.getIngredients().get(2));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 81, 56).addItemStack(actualOutputs.get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 56, 19).add(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 81, 19).add(recipe.getIngredients().get(1));
+		builder.addSlot(RecipeIngredientRole.INPUT, 106, 19).add(recipe.getIngredients().get(2));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 81, 56).add(actualOutputs.get(0));
 	}
 }

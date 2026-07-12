@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ShroomiumOre"
-      }
+      "CUSTOM:ShroomiumOre"
     ],
     "cookingBookCategory": "BLOCKS",
     "xpReward": 1.0,
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:ShroomiumOre"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:ShroomiumChunk"
-    },
+    "blastingInputStack": "CUSTOM:ShroomiumOre",
+    "blastingReturnStack": "CUSTOM:ShroomiumChunk",
     "name": "shroomium_ore_blasting",
     "namespace": "mod"
   }

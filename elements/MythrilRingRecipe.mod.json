@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MythrilIngot"
-      }
+      "CUSTOM:MythrilIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:MythrilPlate"
-      },
-      {
-        "value": "CUSTOM:MythrilNugget"
-      },
-      {
-        "value": "CUSTOM:MythrilPlate"
-      },
-      {
-        "value": "CUSTOM:MythrilNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MythrilNugget"
-      },
-      {
-        "value": "CUSTOM:MythrilPlate"
-      },
-      {
-        "value": "CUSTOM:MythrilNugget"
-      },
-      {
-        "value": "CUSTOM:MythrilPlate"
-      }
+      "CUSTOM:MythrilPlate",
+      "CUSTOM:MythrilNugget",
+      "CUSTOM:MythrilPlate",
+      "CUSTOM:MythrilNugget",
+      "",
+      "CUSTOM:MythrilNugget",
+      "CUSTOM:MythrilPlate",
+      "CUSTOM:MythrilNugget",
+      "CUSTOM:MythrilPlate"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MythrilRing"
-    },
+    "recipeReturnStack": "CUSTOM:MythrilRing",
     "name": "mythril_ring_recipe",
     "namespace": "mod"
   }

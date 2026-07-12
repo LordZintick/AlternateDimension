@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "alternate_dimension:redwood_logs"
-    }
+    "#alternate_dimension:redwood_logs"
   ],
   "result": {
     "id": "alternate_dimension:redwood_planks",

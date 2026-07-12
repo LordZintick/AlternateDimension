@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:refinery_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:elementium_fragment"
-    },
-    {
-      "item": "alternate_dimension:omega_essence"
-    }
+    "alternate_dimension:elementium_fragment",
+    "alternate_dimension:omega_essence"
   ],
   "integers": [
     16,

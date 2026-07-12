@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "CUSTOM:AluminumIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:AluminumNugget",
+      "",
+      "",
+      "CUSTOM:AluminumIngot",
+      "",
+      "",
+      "CUSTOM:AluminumNugget",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AluminumChain"
-    },
+    "recipeReturnStack": "CUSTOM:AluminumChain",
     "name": "aluminum_chain_recipe",
     "namespace": "mod"
   }

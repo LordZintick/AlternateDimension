@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 public class OpenCraftingTableGUIProcedure {
 	public static InteractionResult execute(Level world, Player player, BlockPos pos, Block block) {
-		if (world.isClientSide) {
+		if (world.isClientSide()) {
 			return InteractionResult.SUCCESS;
 		} else {
 			player.openMenu(new SimpleMenuProvider((windowId, inventory, p) ->

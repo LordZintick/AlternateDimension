@@ -7,18 +7,10 @@
     "ada"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:cloud_charge"
-    },
-    "c": {
-      "item": "alternate_dimension:basic_circuit"
-    },
-    "d": {
-      "item": "alternate_dimension:aluminum_gearbox"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:cloud_charge",
+    "c": "alternate_dimension:basic_circuit",
+    "d": "alternate_dimension:aluminum_gearbox"
   },
   "result": {
     "id": "alternate_dimension:levitator",

@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure;
 
 public class RichDirtBlock extends Block {
-	public RichDirtBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f));
+	public RichDirtBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GRAVEL).strength(1f));
 	}
 
 	@Override

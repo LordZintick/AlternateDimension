@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/aluminum_ore_block",
     "west": "alternate_dimension:block/aluminum_ore_block",
     "particle": "alternate_dimension:block/machine_top"
-  },
-  "render_type": "solid"
+  }
 }

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/topaz_block",
     "particle": "alternate_dimension:block/topaz_block"
-  },
-  "render_type": "solid"
+  }
 }

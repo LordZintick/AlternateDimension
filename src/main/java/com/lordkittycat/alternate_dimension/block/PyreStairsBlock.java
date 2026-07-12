@@ -5,8 +5,8 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.Blocks;
 
 public class PyreStairsBlock extends StairBlock {
-	public PyreStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().strength(2f, 10f).requiresCorrectToolForDrops());
+	public PyreStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.strength(2f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

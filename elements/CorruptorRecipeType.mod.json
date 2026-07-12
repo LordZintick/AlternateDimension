@@ -1,20 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "corruptor_recipe_gui.png",
     "width": 176,
     "height": 80,
-    "icon": {
-      "value": "CUSTOM:Corruptor"
-    },
+    "icon": "CUSTOM:Corruptor",
     "craftingtables": [
-      {
-        "value": "CUSTOM:Corruptor"
-      },
-      {
-        "value": "CUSTOM:AdvancedCorruptor"
-      }
+      "CUSTOM:Corruptor",
+      "CUSTOM:AdvancedCorruptor"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

@@ -5,13 +5,15 @@ import net.neoforged.neoforge.client.gui.widget.ExtendedSlider;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.input.KeyEvent;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Checkbox;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 
-import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.platform.InputConstants;
 
 import com.lordkittycat.alternate_dimension.world.inventory.RefineryGUIMenu;
 import com.lordkittycat.alternate_dimension.procedures.ProgressDisplayProcedure;
@@ -24,19 +26,17 @@ public class RefineryGUIScreen extends AbstractContainerScreen<RefineryGUIMenu> 
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private Checkbox onoff_switch;
-	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("alternate_dimension:textures/screens/refinery_gui.png");
-	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("alternate_dimension:textures/screens/red_right_arrow.png");
 	private ExtendedSlider power;
+	private static final Identifier BACKGROUND = Identifier.parse("alternate_dimension:textures/screens/refinery_gui.png");
+	private static final Identifier IMAGE_0 = Identifier.parse("alternate_dimension:textures/screens/red_right_arrow.png");
 
 	public RefineryGUIScreen(RefineryGUIMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text);
+		super(container, inventory, text, 176, 185);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 185;
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class RefineryGUIScreen extends AbstractContainerScreen<RefineryGUIMenu> 
 		if (elementType == 1 && elementState instanceof Boolean logicState) {
 			if (name.equals("onoff_switch")) {
 				if (onoff_switch.selected() != logicState)
-					onoff_switch.onPress();
+					onoff_switch.onPress(null);
 			}
 		}
 		if (elementType == 2 && elementState instanceof Number n) {
@@ -56,40 +56,32 @@ public class RefineryGUIScreen extends AbstractContainerScreen<RefineryGUIMenu> 
 	}
 
 	@Override
-	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+	public void extractRenderState(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		super.extractRenderState(guiGraphics, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(IMAGE_0, this.leftPos + 65, this.topPos + 20, 0, 0, 16, 16, 16, 16);
-		RenderSystem.disableBlend();
+	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, IMAGE_0, this.leftPos + 65, this.topPos + 20, 0, 0, 16, 16, 16, 16);
 	}
 
 	@Override
-	public boolean keyPressed(int key, int b, int c) {
+	public boolean keyPressed(KeyEvent event) {
+		int key = InputConstants.getKey(event).getValue();
 		if (key == 256) {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		return super.keyPressed(key, b, c);
+		return super.keyPressed(event);
 	}
 
 	@Override
-	public boolean mouseDragged(double mouseX, double mouseY, int button, double dragX, double dragY) {
-		return (this.getFocused() != null && this.isDragging() && button == 0) ? this.getFocused().mouseDragged(mouseX, mouseY, button, dragX, dragY) : super.mouseDragged(mouseX, mouseY, button, dragX, dragY);
-	}
-
-	@Override
-	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.alternate_dimension.refinery_gui.label_refinery"), 66, 5, -12829636, false);
-		guiGraphics.drawString(this.font, EnergyDisplayProcedure.execute(world, x, y, z), 7, 90, -10944596, false);
-		guiGraphics.drawString(this.font, ProgressDisplayProcedure.execute(world, x, y, z), 7, 80, -12829636, false);
+	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.text(this.font, Component.translatable("gui.alternate_dimension.refinery_gui.label_refinery"), 66, 5, -12829636, false);
+		guiGraphics.text(this.font, EnergyDisplayProcedure.execute(world, x, y, z), 7, 90, -10944596, false);
+		guiGraphics.text(this.font, ProgressDisplayProcedure.execute(world, x, y, z), 7, 80, -12829636, false);
 	}
 
 	@Override

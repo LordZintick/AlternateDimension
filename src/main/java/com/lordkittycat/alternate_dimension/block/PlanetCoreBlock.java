@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class PlanetCoreBlock extends Block {
-	public PlanetCoreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_BRICKS).strength(-1, 3600000).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public PlanetCoreBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.NETHER_BRICKS).strength(-1, 3600000).lightLevel(blockstate -> 15).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 }

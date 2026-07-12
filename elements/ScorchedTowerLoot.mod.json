@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AncientDust"
-            },
+            "item": "CUSTOM:AncientDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Salt"
-            },
+            "item": "CUSTOM:Salt",
             "weight": 1,
             "minCount": 2,
             "maxCount": 6,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Rations"
-            },
+            "item": "CUSTOM:Rations",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BeetleShell"
-            },
+            "item": "CUSTOM:BeetleShell",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ReinforcedBeetleShell"
-            },
+            "item": "CUSTOM:ReinforcedBeetleShell",
             "weight": 2,
             "minCount": 1,
             "maxCount": 2,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HardenedBeetleShell"
-            },
+            "item": "CUSTOM:HardenedBeetleShell",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -115,9 +103,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WeakThread"
-            },
+            "item": "CUSTOM:WeakThread",
             "weight": 8,
             "minCount": 2,
             "maxCount": 6,
@@ -129,9 +115,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MeteoriteDust"
-            },
+            "item": "CUSTOM:MeteoriteDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -143,9 +127,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PyroliteChunk"
-            },
+            "item": "CUSTOM:PyroliteChunk",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,

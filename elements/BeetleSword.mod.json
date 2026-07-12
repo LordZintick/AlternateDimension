@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -19,9 +19,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "efficiency": 8.0,
     "attackSpeed": 1.6,
@@ -32,9 +30,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:BeetleShell"
-      }
+      "CUSTOM:BeetleShell"
     ],
     "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
@@ -42,33 +38,25 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "ARMOR"
-        },
+        "attribute": "ARMOR",
         "amount": 2.0,
         "operation": "ADD_VALUE"
       },
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "MAX_HEALTH"
-        },
+        "attribute": "MAX_HEALTH",
         "amount": 4.0,
         "operation": "ADD_VALUE"
       },
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "MOVEMENT_SPEED"
-        },
+        "attribute": "MOVEMENT_SPEED",
         "amount": 0.03,
         "operation": "ADD_VALUE"
       }
     ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "BeetleSwordAbility"
-    }
+    "onEntityHitWith": "BeetleSwordAbility"
   }
 }

@@ -5,9 +5,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:scorched_earth"
-    }
+    "a": "alternate_dimension:scorched_earth"
   },
   "result": {
     "id": "alternate_dimension:scorched_earth_slab",

@@ -12,7 +12,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class CloudPlatformBlock extends PlatformBlock {
-	public CloudPlatformBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 2f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public CloudPlatformBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOL).strength(1f, 2f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 }

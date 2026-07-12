@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SlabBlock;
 
 public class ShaleBricksSlabBlock extends SlabBlock {
-	public ShaleBricksSlabBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(2f).requiresCorrectToolForDrops());
+	public ShaleBricksSlabBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.BASALT).strength(2f).requiresCorrectToolForDrops());
 	}
 }

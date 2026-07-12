@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:ruby_block"
-    }
+    "alternate_dimension:ruby_block"
   ],
   "result": {
     "id": "alternate_dimension:ruby",

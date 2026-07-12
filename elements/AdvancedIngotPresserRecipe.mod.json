@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AdvancedMachineCasing"
-      }
+      "CUSTOM:AdvancedMachineCasing"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:TitaniumPlate"
-      },
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:AdvancedMachineCasing"
-      },
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:IngotPresser"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      }
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:TitaniumPlate",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:AdvancedMachineCasing",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:IngotPresser",
+      "CUSTOM:Phosphorus"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AdvancedIngotPresser"
-    },
+    "recipeReturnStack": "CUSTOM:AdvancedIngotPresser",
     "name": "advanced_ingot_presser_recipe",
     "namespace": "mod"
   }

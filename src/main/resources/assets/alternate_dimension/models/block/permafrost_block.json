@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/permafrost_block",
     "particle": "alternate_dimension:block/permafrost_block"
-  },
-  "render_type": "solid"
+  }
 }

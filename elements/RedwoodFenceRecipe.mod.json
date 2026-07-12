@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "wooden_fence",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      }
+      "CUSTOM:RedwoodPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:RedwoodPlanks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedwoodFence"
-    },
+    "recipeReturnStack": "CUSTOM:RedwoodFence",
     "name": "redwood_fence_recipe",
     "namespace": "mod"
   }

@@ -1,14 +1,14 @@
 package com.lordkittycat.alternate_dimension.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -16,13 +16,13 @@ import net.minecraft.server.level.ServerLevel;
 import com.lordkittycat.alternate_dimension.entity.VarProjectileEntity;
 
 public class FunctionBlasterItem extends Item {
-	public FunctionBlasterItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+	public FunctionBlasterItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.UNCOMMON).stacksTo(1));
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
+	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
+		return ItemUseAnimation.BOW;
 	}
 
 	@Override
@@ -31,10 +31,10 @@ public class FunctionBlasterItem extends Item {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		InteractionResult ar = InteractionResult.FAIL;
 		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-			ar = InteractionResultHolder.consume(entity.getItemInHand(hand));
+			ar = InteractionResult.CONSUME;
 			entity.startUsingItem(hand);
 		}
 		return ar;
@@ -64,5 +64,9 @@ public class FunctionBlasterItem extends Item {
 
 	private ItemStack findAmmo(Player player) {
 		return new ItemStack(VarProjectileEntity.PROJECTILE_ITEM.getItem());
+	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

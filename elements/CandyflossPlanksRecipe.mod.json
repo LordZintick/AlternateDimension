@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Frosting"
-      }
+      "CUSTOM:Frosting"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Frosting"
-      },
-      {
-        "value": "CUSTOM:Frosting"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Frosting"
-      },
-      {
-        "value": "CUSTOM:Frosting"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:Frosting",
+      "CUSTOM:Frosting",
+      "",
+      "CUSTOM:Frosting",
+      "CUSTOM:Frosting"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CandyflossPlanks"
-    },
+    "recipeReturnStack": "CUSTOM:CandyflossPlanks",
     "name": "candyfloss_planks_recipe",
     "namespace": "mod"
   }

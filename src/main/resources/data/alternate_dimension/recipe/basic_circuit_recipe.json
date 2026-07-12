@@ -1,15 +1,9 @@
 {
   "type": "alternate_dimension:circuit_maker_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:aluminum_plate"
-    },
-    {
-      "item": "alternate_dimension:silicon"
-    },
-    {
-      "item": "alternate_dimension:phosphorus"
-    }
+    "alternate_dimension:aluminum_plate",
+    "alternate_dimension:silicon",
+    "alternate_dimension:phosphorus"
   ],
   "outputs": [
     {

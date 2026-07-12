@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "boat",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      }
+      "CUSTOM:RedwoodPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:RedwoodPlanks",
+      "",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedwoodBoat"
-    },
+    "recipeReturnStack": "CUSTOM:RedwoodBoat",
     "name": "redwood_boat_recipe",
     "namespace": "mod"
   }

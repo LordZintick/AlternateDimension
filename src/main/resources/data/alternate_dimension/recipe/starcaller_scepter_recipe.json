@@ -1,21 +1,11 @@
 {
   "type": "alternate_dimension:elemental_infuser_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:portal_wand"
-    },
-    {
-      "item": "alternate_dimension:fire_essence"
-    },
-    {
-      "item": "alternate_dimension:life_essence"
-    },
-    {
-      "item": "alternate_dimension:lightning_bottle"
-    },
-    {
-      "item": "alternate_dimension:candy_essence"
-    }
+    "alternate_dimension:portal_wand",
+    "alternate_dimension:fire_essence",
+    "alternate_dimension:life_essence",
+    "alternate_dimension:lightning_bottle",
+    "alternate_dimension:candy_essence"
   ],
   "integers": [
     1,

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/shale_cobble_compressed",
     "particle": "alternate_dimension:block/shale_cobble_compressed"
-  },
-  "render_type": "solid"
+  }
 }

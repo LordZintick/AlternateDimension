@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "tag": "alternate_dimension:altdim_glass_blocks"
-    }
+    "a": "#alternate_dimension:altdim_glass_blocks"
   },
   "result": {
     "id": "alternate_dimension:big_bottle",

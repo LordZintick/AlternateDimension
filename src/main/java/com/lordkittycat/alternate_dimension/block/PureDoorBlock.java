@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.DoorBlock;
 
 public class PureDoorBlock extends DoorBlock {
-	public PureDoorBlock() {
-		super(BlockSetType.STONE, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+	public PureDoorBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.STONE, properties.strength(3f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 }

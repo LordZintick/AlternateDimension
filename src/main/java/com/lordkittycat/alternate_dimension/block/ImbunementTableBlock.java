@@ -22,6 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import io.netty.buffer.Unpooled;
@@ -33,8 +34,8 @@ import com.lordkittycat.alternate_dimension.block.entity.ImbunementTableBlockEnt
 public class ImbunementTableBlock extends Block implements EntityBlock {
 	public static final BooleanProperty RUNNING = BooleanProperty.create("running");
 
-	public ImbunementTableBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(2f, 10f).lightLevel(blockstate -> 10).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public ImbunementTableBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.AMETHYST).strength(2f, 10f).lightLevel(blockstate -> 10).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(RUNNING, false));
 	}
 
@@ -46,7 +47,10 @@ public class ImbunementTableBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(RUNNING, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(RUNNING, false);
 	}
 
 	@Override
@@ -100,15 +104,8 @@ public class ImbunementTableBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof ImbunementTableBlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
+	protected void affectNeighborsAfterRemoval(BlockState blockstate, ServerLevel world, BlockPos blockpos, boolean flag) {
+		Containers.updateNeighboursAfterDestroy(blockstate, world, blockpos);
 	}
 
 	@Override
@@ -117,7 +114,7 @@ public class ImbunementTableBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos, Direction direction) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
 		if (tileentity instanceof ImbunementTableBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);

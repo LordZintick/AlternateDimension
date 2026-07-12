@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "imbunement_jei_gui.png",
     "width": 176,
     "height": 163,
-    "icon": {
-      "value": "CUSTOM:ImbunementTable"
-    },
+    "icon": "CUSTOM:ImbunementTable",
     "craftingtables": [
-      {
-        "value": "CUSTOM:ImbunementTable"
-      }
+      "CUSTOM:ImbunementTable"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

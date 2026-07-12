@@ -7,15 +7,9 @@
     "c"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:plus"
-    },
-    "b": {
-      "item": "alternate_dimension:cloth"
-    },
-    "c": {
-      "item": "alternate_dimension:minus"
-    }
+    "a": "alternate_dimension:plus",
+    "b": "alternate_dimension:cloth",
+    "c": "alternate_dimension:minus"
   },
   "result": {
     "id": "alternate_dimension:math_workbook",

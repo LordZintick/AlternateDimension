@@ -7,30 +7,14 @@
     "fgh"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:life_essence"
-    },
-    "b": {
-      "item": "alternate_dimension:hallowed_essence"
-    },
-    "c": {
-      "item": "alternate_dimension:fire_essence"
-    },
-    "d": {
-      "item": "alternate_dimension:magic_dust"
-    },
-    "e": {
-      "item": "alternate_dimension:magic_dust_block"
-    },
-    "f": {
-      "item": "alternate_dimension:candy_essence"
-    },
-    "g": {
-      "item": "alternate_dimension:void_essence"
-    },
-    "h": {
-      "item": "alternate_dimension:ice_essence"
-    }
+    "a": "alternate_dimension:life_essence",
+    "b": "alternate_dimension:hallowed_essence",
+    "c": "alternate_dimension:fire_essence",
+    "d": "alternate_dimension:magic_dust",
+    "e": "alternate_dimension:magic_dust_block",
+    "f": "alternate_dimension:candy_essence",
+    "g": "alternate_dimension:void_essence",
+    "h": "alternate_dimension:ice_essence"
   },
   "result": {
     "id": "alternate_dimension:omega_essence",

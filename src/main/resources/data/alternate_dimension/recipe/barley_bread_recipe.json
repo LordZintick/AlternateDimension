@@ -5,9 +5,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:barley"
-    }
+    "a": "alternate_dimension:barley"
   },
   "result": {
     "id": "alternate_dimension:barley_bread",

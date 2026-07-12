@@ -8,12 +8,8 @@
     " b "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:greenwood_planks"
-    },
-    "b": {
-      "item": "alternate_dimension:tool_rod"
-    }
+    "a": "alternate_dimension:greenwood_planks",
+    "b": "alternate_dimension:tool_rod"
   },
   "result": {
     "id": "alternate_dimension:greenwood_sign",

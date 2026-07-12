@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/veridium",
     "top": "alternate_dimension:block/veridium",
     "side": "alternate_dimension:block/veridium"
-  },
-  "render_type": "solid"
+  }
 }

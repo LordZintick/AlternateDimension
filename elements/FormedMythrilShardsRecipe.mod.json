@@ -1,15 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "refinery_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:MythrilShards"
-      }
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:MythrilShards"
     ],
     "integers": [
       1,
@@ -20,12 +16,8 @@
     ],
     "recipetype": "RefineryRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:FormedMythrilShards"
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      }
+      "CUSTOM:FormedMythrilShards",
+      "CUSTOM:AluminumNugget"
     ],
     "resultCounts": [
       1,

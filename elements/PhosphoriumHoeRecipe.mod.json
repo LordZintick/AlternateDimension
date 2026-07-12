@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PhosphoriumIngot"
-      }
+      "CUSTOM:PhosphoriumIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PhosphoriumIngot"
-      },
-      {
-        "value": "CUSTOM:PhosphoriumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:PhosphoriumIngot",
+      "CUSTOM:PhosphoriumIngot",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PhosphoriumHoe"
-    },
+    "recipeReturnStack": "CUSTOM:PhosphoriumHoe",
     "name": "phosphorium_hoe_recipe",
     "namespace": "mod"
   }

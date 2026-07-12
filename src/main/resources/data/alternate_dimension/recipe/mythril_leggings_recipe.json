@@ -7,9 +7,7 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:mythril_ingot"
-    }
+    "a": "alternate_dimension:mythril_ingot"
   },
   "result": {
     "id": "alternate_dimension:mythril_armor_leggings",

@@ -1,8 +1,6 @@
 package com.lordkittycat.alternate_dimension.block;
 
 import net.neoforged.neoforge.common.util.DeferredSoundType;
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.util.RandomSource;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -21,16 +19,14 @@ import com.lordkittycat.alternate_dimension.procedures.ElectricParticleEffectPro
 import com.lordkittycat.alternate_dimension.procedures.CollectLightningBottleProcedure;
 
 public class LightningBlockBlock extends Block {
-	public LightningBlockBlock() {
-		super(BlockBehaviour.Properties.of()
-				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.lightning_bolt.impact"))))
-				.strength(3f, 100f).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public LightningBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.lightning_bolt.impact")),
+				() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.lightning_bolt.impact")),
+				() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.lightning_bolt.thunder")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.lightning_bolt.impact")))).strength(3f, 100f)
+				.lightLevel(blockstate -> 15).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
 		ElectricParticleEffectProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());

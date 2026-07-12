@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WeakThread"
-            },
+            "item": "CUSTOM:WeakThread",
             "weight": 2,
             "minCount": 1,
             "maxCount": 3,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StrongThread"
-            },
+            "item": "CUSTOM:StrongThread",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MagicDust"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 4,
             "minCount": 1,
             "maxCount": 1,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MinersPet"
-            },
+            "item": "CUSTOM:MinersPet",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AdventurersPet"
-            },
+            "item": "CUSTOM:AdventurersPet",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -106,9 +94,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WarriorsPet"
-            },
+            "item": "CUSTOM:WarriorsPet",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

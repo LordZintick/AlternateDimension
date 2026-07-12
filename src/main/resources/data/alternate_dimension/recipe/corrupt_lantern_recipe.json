@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:corrupt_bricks"
-    },
-    "b": {
-      "item": "alternate_dimension:phosphorus"
-    }
+    "a": "alternate_dimension:corrupt_bricks",
+    "b": "alternate_dimension:phosphorus"
   },
   "result": {
     "id": "alternate_dimension:corrupt_lantern",

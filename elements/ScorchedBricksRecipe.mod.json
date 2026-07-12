@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": "CUSTOM:ScorchedEarth"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ScorchedEarth",
+      "CUSTOM:ScorchedEarth",
+      "",
+      "CUSTOM:ScorchedEarth",
+      "CUSTOM:ScorchedEarth",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedBricks"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedBricks",
     "name": "scorched_bricks_recipe",
     "namespace": "mod"
   }

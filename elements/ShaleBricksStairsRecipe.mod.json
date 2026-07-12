@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ShaleBricks"
-      }
+      "CUSTOM:ShaleBricks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ShaleBricks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ShaleBricks"
-      },
-      {
-        "value": "CUSTOM:ShaleBricks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ShaleBricks",
+      "",
+      "",
+      "CUSTOM:ShaleBricks",
+      "CUSTOM:ShaleBricks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ShaleBricksStairs"
-    },
+    "recipeReturnStack": "CUSTOM:ShaleBricksStairs",
     "name": "shale_bricks_stairs_recipe",
     "namespace": "mod"
   }

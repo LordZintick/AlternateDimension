@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:mythril_nugget"
-    }
+    "a": "alternate_dimension:mythril_nugget"
   },
   "result": {
     "id": "alternate_dimension:mythril_ingot",

@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/planty_crafting_table_side",
     "west": "alternate_dimension:block/planty_crafting_table_side",
     "particle": "alternate_dimension:block/plant_stem_top"
-  },
-  "render_type": "solid"
+  }
 }

@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
@@ -12,6 +13,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.FurnaceMenu;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -21,13 +23,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class CustomFurnaceBlock extends BaseEntityBlock {
     // Relying on vanilla LIT state to dictate our running status
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
     public CustomFurnaceBlock(BlockBehaviour.Properties properties) {
@@ -63,7 +66,7 @@ public abstract class CustomFurnaceBlock extends BaseEntityBlock {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (!level.isClientSide) {
+        if (!level.isClientSide()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity instanceof CustomFurnaceBlockEntity customFurnace) {
                 if (player instanceof ServerPlayer serverPlayer) {
@@ -90,23 +93,20 @@ public abstract class CustomFurnaceBlock extends BaseEntityBlock {
     @Nullable
     public <T extends BlockEntity> net.minecraft.world.level.block.entity.BlockEntityTicker<T> getTicker(Level level, BlockState state, net.minecraft.world.level.block.entity.BlockEntityType<T> type) {
         // Only run execution loops on the logical server side to prevent container sync issues
-        return level.isClientSide ? null : (lvl, pos, st, be) -> {
-            if (be instanceof CustomFurnaceBlockEntity furnace) {
-                CustomFurnaceBlockEntity.serverTick(lvl, pos, st, furnace);
+        return level.isClientSide() ? null : (lvl, pos, st, be) -> {
+            if (be instanceof CustomFurnaceBlockEntity furnace && lvl instanceof ServerLevel serverLevel) {
+                CustomFurnaceBlockEntity.serverTick(serverLevel, pos, st, furnace);
             }
         };
     }
 
-    // Drop inventory handling
     @Override
-    protected void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
-        if (!state.is(newState.getBlock())) {
-            BlockEntity blockentity = level.getBlockEntity(pos);
-            if (blockentity instanceof CustomFurnaceBlockEntity customFurnace) {
-                net.minecraft.world.Containers.dropContents(level, pos, customFurnace);
-                level.updateNeighbourForOutputSignal(pos, this);
-            }
-            super.onRemove(state, level, pos, newState, isMoving);
+    public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, ItemStack toolStack, boolean willHarvest, FluidState fluid) {
+        BlockEntity blockentity = level.getBlockEntity(pos);
+        if (blockentity instanceof CustomFurnaceBlockEntity customFurnace) {
+            net.minecraft.world.Containers.dropContents(level, pos, customFurnace);
+            level.updateNeighbourForOutputSignal(pos, this);
         }
+        return super.onDestroyedByPlayer(state, level, pos, player, toolStack, willHarvest, fluid);
     }
 }

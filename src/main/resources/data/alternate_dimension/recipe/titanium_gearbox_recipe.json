@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:titanium_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:titanium_gear"
-    }
+    "a": "alternate_dimension:titanium_plate",
+    "b": "alternate_dimension:titanium_gear"
   },
   "result": {
     "id": "alternate_dimension:titanium_gearbox",

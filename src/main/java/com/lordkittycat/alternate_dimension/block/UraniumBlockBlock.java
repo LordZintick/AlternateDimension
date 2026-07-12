@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.BurnEntityProcedure;
 
 public class UraniumBlockBlock extends Block {
-	public UraniumBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f, 10f).lightLevel(blockstate -> 10).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public UraniumBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(4f, 10f).lightLevel(blockstate -> 10).requiresCorrectToolForDrops().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

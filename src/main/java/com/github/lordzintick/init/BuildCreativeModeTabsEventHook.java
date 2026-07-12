@@ -13,7 +13,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 public class BuildCreativeModeTabsEventHook {
     @SubscribeEvent
     public static void buildTabContents(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey().location().getPath() == "alternate_dimension_equipment") {
+        if (event.getTabKey().identifier().getPath().equals("alternate_dimension_equipment")) {
             BuiltInRegistries.MOB_EFFECT.forEach(effect -> {
                 ItemStack wooden = AlternateDimensionModItems.WOODEN_RING.toStack();
                 wooden.set(AlternateDimensionModComponents.RING_EFFECT, new RingEffectComponent(BuiltInRegistries.MOB_EFFECT.wrapAsHolder(effect)));

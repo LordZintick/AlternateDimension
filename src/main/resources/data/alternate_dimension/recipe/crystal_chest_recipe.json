@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:hexagem_complex"
-    },
-    "b": {
-      "item": "minecraft:chest"
-    }
+    "a": "alternate_dimension:hexagem_complex",
+    "b": "minecraft:chest"
   },
   "result": {
     "id": "alternate_dimension:crystal_chest",

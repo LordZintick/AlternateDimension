@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "elemental_inscriber_recipe_gui.png",
-    "width": 220,
-    "height": 136,
-    "icon": {
-      "value": "CUSTOM:ElementalInscriber"
-    },
+    "width": 101,
+    "height": 72,
+    "icon": "CUSTOM:ElementalInscriber",
     "craftingtables": [
-      {
-        "value": "CUSTOM:ElementalInscriber"
-      }
+      "CUSTOM:ElementalInscriber"
     ],
     "enableCraftingtable": true,
     "enableIntList": true,
@@ -21,58 +17,42 @@
     "slotList": [
       {
         "type": "INPUT",
-        "x": 101,
-        "y": 39,
+        "x": 43,
+        "y": 8,
         "slotid": 0
       },
       {
         "type": "INPUT",
-        "x": 29,
-        "y": 57,
+        "x": 7,
+        "y": 27,
         "slotid": 1
       },
       {
         "type": "INPUT",
-        "x": 65,
-        "y": 57,
+        "x": 25,
+        "y": 27,
         "slotid": 2
       },
       {
         "type": "INPUT",
-        "x": 137,
-        "y": 57,
+        "x": 61,
+        "y": 27,
         "slotid": 3
       },
       {
         "type": "INPUT",
-        "x": 173,
-        "y": 57,
+        "x": 79,
+        "y": 27,
         "slotid": 4
       },
       {
         "type": "OUTPUT",
-        "x": 101,
-        "y": 100,
+        "x": 43,
+        "y": 48,
         "slotid": 0
       }
     ],
-    "components": [
-      {
-        "type": "jei_sprite",
-        "data": {
-          "updateInterval": 10,
-          "sprite": "elemental_arrow.png",
-          "spritesCount": 1,
-          "spriteIndex": {
-            "fixedValue": 0.0,
-            "name": ""
-          },
-          "x": 141,
-          "y": 141,
-          "locked": false
-        }
-      }
-    ],
+    "components": [],
     "gridSettings": {
       "sx": 18,
       "sy": 18,

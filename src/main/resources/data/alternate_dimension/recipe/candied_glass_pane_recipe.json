@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:candied_glass"
-    }
+    "a": "alternate_dimension:candied_glass"
   },
   "result": {
     "id": "alternate_dimension:candied_glass_pane",

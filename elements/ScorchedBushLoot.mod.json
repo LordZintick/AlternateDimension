@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HempSeeds"
-            },
+            "item": "CUSTOM:HempSeeds",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DriedBerry"
-            },
+            "item": "CUSTOM:DriedBerry",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MagicDust"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WeakThread"
-            },
+            "item": "CUSTOM:WeakThread",
             "weight": 2,
             "minCount": 1,
             "maxCount": 1,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BarleySeeds"
-            },
+            "item": "CUSTOM:BarleySeeds",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,

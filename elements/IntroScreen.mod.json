@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -152,9 +152,7 @@
           "name": "button_alternate_dimension",
           "text": "Alternate Dimension",
           "isUndecorated": false,
-          "onClick": {
-            "name": "SelectAltDim"
-          },
+          "onClick": "SelectAltDim",
           "width": 120,
           "height": 20,
           "x": 108,
@@ -168,9 +166,7 @@
           "name": "button_vanilla",
           "text": "Vanilla",
           "isUndecorated": false,
-          "onClick": {
-            "name": "SelectVanilla"
-          },
+          "onClick": "SelectVanilla",
           "width": 60,
           "height": 20,
           "x": 248,

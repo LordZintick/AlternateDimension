@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MagicDust"
-      }
+      "CUSTOM:MagicDust"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:altdim_logs"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "TAG:mod:glass_panes"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "",
+      "TAG:mod:altdim_logs",
+      "",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:MagicDust",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "TAG:mod:glass_panes",
+      "CUSTOM:AluminumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BiomeLocator"
-    },
+    "recipeReturnStack": "CUSTOM:BiomeLocator",
     "name": "biome_locator_recipe",
     "namespace": "mod"
   }

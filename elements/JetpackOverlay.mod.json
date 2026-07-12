@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -81,9 +81,7 @@
     ],
     "baseTexture": "",
     "overlayTarget": "Ingame",
-    "displayCondition": {
-      "name": "CheckForJetpack"
-    },
+    "displayCondition": "CheckForJetpack",
     "gridSettings": {
       "sx": 16,
       "sy": 16,

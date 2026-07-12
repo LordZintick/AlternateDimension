@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Lush Forest",
-    "groundBlock": {
-      "value": "CUSTOM:LushGrassBlock"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:RichDirt"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:LushGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "airColor": {
       "value": -8126502,
       "falpha": 0.0
@@ -24,23 +18,13 @@
       "value": -16711936,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:alternate_dimension_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "SPORE_BLOSSOM_AIR"
-    },
+    "particleToSpawn": "SPORE_BLOSSOM_AIR",
     "particlesProbability": 1.0,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
@@ -75,18 +59,10 @@
     "vanillaTreeType": "Savanna trees",
     "treeType": 0,
     "minHeight": 10,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Caves"
     ],

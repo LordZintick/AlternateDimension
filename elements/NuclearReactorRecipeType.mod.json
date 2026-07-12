@@ -1,20 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "nuclear_reactor_recipe_gui.png",
     "width": 176,
     "height": 185,
-    "icon": {
-      "value": "CUSTOM:NuclearReactor"
-    },
+    "icon": "CUSTOM:NuclearReactor",
     "craftingtables": [
-      {
-        "value": "CUSTOM:CoolantRods"
-      },
-      {
-        "value": "CUSTOM:NuclearReactor"
-      }
+      "CUSTOM:CoolantRods",
+      "CUSTOM:NuclearReactor"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

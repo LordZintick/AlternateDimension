@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/azure_crafting_table_side",
     "west": "alternate_dimension:block/azure_crafting_table_side",
     "particle": "alternate_dimension:block/azure_planks"
-  },
-  "render_type": "solid"
+  }
 }

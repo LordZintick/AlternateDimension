@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "beetle_nest_suspicious",
@@ -42,7 +42,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 10.0,
+    "hardness": 4.0,
     "resistance": 3.6E7,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -51,14 +51,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionWorld"
-      }
+      "CUSTOM:AlternateDimensionWorld"
     ],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": "Blocks.AIR"
-    },
+    "customDrop": "Blocks.AIR",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -78,14 +74,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "strippingResult": {
-      "value": ""
-    },
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -95,25 +87,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "GROUND",
     "isCustomSoundType": true,
-    "soundOnStep": {
-      "value": "GROUND"
-    },
-    "breakSound": {
-      "value": "entity.generic.explode"
-    },
-    "fallSound": {
-      "value": "block.rooted_dirt.fall"
-    },
-    "hitSound": {
-      "value": "block.rooted_dirt.hit"
-    },
-    "placeSound": {
-      "value": "block.rooted_dirt.place"
-    },
-    "stepSound": {
-      "value": "block.rooted_dirt.step"
-    },
+    "breakSound": "entity.generic.explode",
+    "fallSound": "block.rooted_dirt.fall",
+    "hitSound": "block.rooted_dirt.hit",
+    "placeSound": "block.rooted_dirt.place",
+    "stepSound": "block.rooted_dirt.step",
     "luminance": {
       "fixedValue": 0.0
     },
@@ -141,15 +121,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "SummonBeetleQueen"
-    },
+    "onDestroyedByPlayer": "SummonBeetleQueen",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

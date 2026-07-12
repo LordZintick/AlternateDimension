@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DriedBerry"
-            },
+            "item": "CUSTOM:DriedBerry",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DriedFruit"
-            },
+            "item": "CUSTOM:DriedFruit",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

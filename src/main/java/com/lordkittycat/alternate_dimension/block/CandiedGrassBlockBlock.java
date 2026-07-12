@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure;
 
 public class CandiedGrassBlockBlock extends Block {
-	public CandiedGrassBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f));
+	public CandiedGrassBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.MOSS).strength(1f));
 	}
 
 	@Override

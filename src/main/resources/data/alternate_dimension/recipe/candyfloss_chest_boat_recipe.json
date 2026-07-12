@@ -3,12 +3,8 @@
   "group": "chest_boat",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:candyfloss_boat"
-    },
-    {
-      "tag": "alternate_dimension:boxes"
-    }
+    "alternate_dimension:candyfloss_boat",
+    "#alternate_dimension:boxes"
   ],
   "result": {
     "id": "alternate_dimension:candyfloss_chest_boat",

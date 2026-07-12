@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/greenwood_planks",
     "top": "alternate_dimension:block/greenwood_planks",
     "side": "alternate_dimension:block/greenwood_planks"
-  },
-  "render_type": "solid"
+  }
 }

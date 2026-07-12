@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.ApplyLevitationProcedure;
 
 public class LevitatorBlock extends Block {
-	public LevitatorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f, 10f).requiresCorrectToolForDrops());
+	public LevitatorBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(3f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

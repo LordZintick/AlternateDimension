@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:parmesan_cheese"
-    }
+    "a": "alternate_dimension:parmesan_cheese"
   },
   "result": {
     "id": "alternate_dimension:parmesan_cheese_block",

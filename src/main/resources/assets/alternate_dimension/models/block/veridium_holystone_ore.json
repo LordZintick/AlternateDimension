@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/veridium_holystone_ore",
     "particle": "alternate_dimension:block/veridium_holystone_ore"
-  },
-  "render_type": "solid"
+  }
 }

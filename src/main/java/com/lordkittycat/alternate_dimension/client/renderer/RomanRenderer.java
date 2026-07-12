@@ -1,54 +1,85 @@
 package com.lordkittycat.alternate_dimension.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.util.context.ContextKey;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HierarchicalModel;
+import net.minecraft.client.animation.KeyframeAnimation;
+import net.minecraft.client.animation.AnimationDefinition;
+
+import java.util.Map;
 
 import com.lordkittycat.alternate_dimension.entity.RomanEntity;
 import com.lordkittycat.alternate_dimension.client.model.animations.romanAnimation;
 import com.lordkittycat.alternate_dimension.client.model.Modelroman;
 
-public class RomanRenderer extends MobRenderer<RomanEntity, Modelroman<RomanEntity>> {
-	private final ResourceLocation entityTexture = ResourceLocation.parse("alternate_dimension:textures/entities/roman_texture.png");
+public class RomanRenderer extends MobRenderer<RomanEntity, LivingEntityRenderState, Modelroman> {
+	private final Identifier entityTexture = Identifier.parse("alternate_dimension:textures/entities/roman_texture.png");
 
 	public RomanRenderer(EntityRendererProvider.Context context) {
 		super(context, new AnimatedModel(context.bakeLayer(Modelroman.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(RomanEntity entity) {
-		if (entity.getTexture() != "roman_texture")
-			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
+	public LivingEntityRenderState createRenderState() {
+		return new LivingEntityRenderState();
+	}
+
+	@Override
+	public void extractRenderState(RomanEntity entity, LivingEntityRenderState state, float partialTicks) {
+		super.extractRenderState(entity, state, partialTicks);
+	}
+
+	@Override
+	public Identifier getTextureLocation(LivingEntityRenderState state) {
+		RomanEntity entity = (RomanEntity) state.getRenderData(ENTITY_KEY);
+		if (entity != null && entity.getTexture() != "roman_texture")
+			return Identifier.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 
-	private static final class AnimatedModel extends Modelroman<RomanEntity> {
-		private final ModelPart root;
-		private final HierarchicalModel animator = new HierarchicalModel<RomanEntity>() {
-			@Override
-			public ModelPart root() {
-				return root;
-			}
-
-			@Override
-			public void setupAnim(RomanEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, romanAnimation.idle, ageInTicks, 100f);
-				this.animateWalk(romanAnimation.walk, limbSwing, limbSwingAmount, 100f, 1f);
-			}
-		};
+	private static final class AnimatedModel extends Modelroman {
+		private final KeyframeAnimation keyframeAnimation0;
+		private final KeyframeAnimation keyframeAnimation1;
 
 		public AnimatedModel(ModelPart root) {
 			super(root);
-			this.root = root;
+			this.keyframeAnimation0 = safeBake(romanAnimation.idle);
+			this.keyframeAnimation1 = safeBake(romanAnimation.walk);
+		}
+
+		private KeyframeAnimation safeBake(AnimationDefinition source) {
+			try {
+				return source.bake(root);
+			} catch (IllegalArgumentException e) {
+				return new AnimationDefinition(0, false, Map.of()).bake(root);
+			}
 		}
 
 		@Override
-		public void setupAnim(RomanEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			animator.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
-			super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
+		public void setupAnim(LivingEntityRenderState state) {
+			this.root().getAllParts().forEach(ModelPart::resetPose);
+			RomanEntity entity = state.getRenderData(ENTITY_KEY);
+			this.keyframeAnimation0.apply(entity.animationState0, state.ageInTicks, 100f);
+			this.keyframeAnimation1.applyWalk(state.walkAnimationPos, state.walkAnimationSpeed, 100f, 1f);
+			super.setupAnim(state);
+		}
+	}
+
+	public static final ContextKey<RomanEntity> ENTITY_KEY = new ContextKey<>(Identifier.parse("alternate_dimension:roman_entity"));
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class EntityStateAdder {
+		@SubscribeEvent
+		private static void registerRenderStateModifiersEvent(RegisterRenderStateModifiersEvent event) {
+			event.registerEntityModifier(RomanRenderer.class, (entity, state) -> state.setRenderData(ENTITY_KEY, entity));
 		}
 	}
 }

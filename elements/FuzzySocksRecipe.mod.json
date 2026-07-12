@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:LightningBottle"
-      }
+      "CUSTOM:LightningBottle"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:LightningBottle"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:Cloth",
+      "CUSTOM:LightningBottle",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "",
+      "CUSTOM:Cloth"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FuzzyArmor.boots"
-    },
+    "recipeReturnStack": "CUSTOM:FuzzyArmor.boots",
     "name": "fuzzy_socks_recipe",
     "namespace": "mod"
   }

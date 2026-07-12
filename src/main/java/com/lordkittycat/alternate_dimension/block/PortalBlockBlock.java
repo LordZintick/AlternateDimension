@@ -20,12 +20,12 @@ import com.lordkittycat.alternate_dimension.procedures.WarpPlayerProcedure;
 import com.lordkittycat.alternate_dimension.block.entity.PortalBlockBlockEntity;
 
 public class PortalBlockBlock extends Block implements EntityBlock {
-	public PortalBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(blockstate -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public PortalBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(blockstate -> 15).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
 		return ItemStack.EMPTY;
 	}
 

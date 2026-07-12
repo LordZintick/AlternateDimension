@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Spore Spreader",
@@ -24,31 +24,21 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:spore_spreaderAnimation.idle"
-        },
+        "animation": "CUSTOM:spore_spreaderAnimation.idle",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:spore_spreaderAnimation.walk"
-        },
+        "animation": "CUSTOM:spore_spreaderAnimation.walk",
         "speed": 1.0,
-        "condition": {
-          "name": "Always"
-        },
+        "condition": "Always",
         "walking": true,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:spore_spreaderAnimation.attack"
-        },
+        "animation": "CUSTOM:spore_spreaderAnimation.attack",
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
@@ -69,31 +59,17 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMobs"
-      }
+      "CUSTOM:AlternateDimensionMobs"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
@@ -133,24 +109,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": ""
-    },
-    "hurtSound": {
-      "value": "block.shroomlight.break"
-    },
-    "deathSound": {
-      "value": "entity.vex.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "",
+    "hurtSound": "block.shroomlight.break",
+    "deathSound": "entity.vex.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -159,22 +123,19 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": "Always",
     "spawningProbability": 15,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:MushroomInfection"
-      }
+      "CUSTOM:MushroomInfection"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

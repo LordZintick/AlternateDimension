@@ -1,7 +1,7 @@
 package com.lordkittycat.alternate_dimension.client.model;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -12,16 +12,13 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.EntityModel;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 // Made with Blockbench 5.1.4
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class Modelcandy_jetpack<T extends Entity> extends EntityModel<T> {
+public class Modelcandy_jetpack extends EntityModel<LivingEntityRenderState> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("alternate_dimension", "modelcandy_jetpack"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(Identifier.fromNamespaceAndPath("alternate_dimension", "modelcandy_jetpack"), "main");
 	public final ModelPart bipedHead;
 	public final ModelPart armorHead;
 	public final ModelPart bipedBody;
@@ -39,6 +36,7 @@ public class Modelcandy_jetpack<T extends Entity> extends EntityModel<T> {
 	public final ModelPart armorRightBoot;
 
 	public Modelcandy_jetpack(ModelPart root) {
+		super(root);
 		this.bipedHead = root.getChild("bipedHead");
 		this.armorHead = this.bipedHead.getChild("armorHead");
 		this.bipedBody = root.getChild("bipedBody");
@@ -81,16 +79,12 @@ public class Modelcandy_jetpack<T extends Entity> extends EntityModel<T> {
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
-	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
-		bipedHead.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		bipedBody.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		bipedRightArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		bipedLeftArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		bipedLeftLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		bipedRightLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-	}
+	public void setupAnim(LivingEntityRenderState state) {
+		float limbSwing = state.walkAnimationPos;
+		float limbSwingAmount = state.walkAnimationSpeed;
+		float ageInTicks = state.ageInTicks;
+		float netHeadYaw = state.yRot;
+		float headPitch = state.xRot;
 
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 	}
 }

@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure;
 
 public class LushGrassBlockBlock extends Block {
-	public LushGrassBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f));
+	public LushGrassBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WET_GRASS).strength(1f));
 	}
 
 	@Override

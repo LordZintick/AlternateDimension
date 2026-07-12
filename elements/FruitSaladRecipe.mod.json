@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "TAG:mod:fruit"
-      }
+      "TAG:mod:fruit"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:fruit"
-      },
-      {
-        "value": "TAG:mod:fruit"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:fruit"
-      },
-      {
-        "value": "TAG:mod:bowls"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "TAG:mod:fruit",
+      "TAG:mod:fruit",
+      "",
+      "TAG:mod:fruit",
+      "TAG:mod:bowls",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FruitSalad"
-    },
+    "recipeReturnStack": "CUSTOM:FruitSalad",
     "name": "fruit_salad_recipe",
     "namespace": "mod"
   }

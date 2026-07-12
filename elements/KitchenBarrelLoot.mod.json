@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Breadstick"
-            },
+            "item": "CUSTOM:Breadstick",
             "weight": 1,
             "minCount": 4,
             "maxCount": 8,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Pasta"
-            },
+            "item": "CUSTOM:Pasta",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -50,9 +46,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.WHEAT"
-            },
+            "item": "Blocks.WHEAT",
             "weight": 12,
             "minCount": 2,
             "maxCount": 4,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.POTATO"
-            },
+            "item": "Items.POTATO",
             "weight": 10,
             "minCount": 2,
             "maxCount": 5,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.BAKED_POTATO"
-            },
+            "item": "Items.BAKED_POTATO",
             "weight": 7,
             "minCount": 1,
             "maxCount": 2,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_CARROT"
-            },
+            "item": "Items.GOLDEN_CARROT",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -106,9 +94,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CARROT"
-            },
+            "item": "Items.CARROT",
             "weight": 10,
             "minCount": 2,
             "maxCount": 5,
@@ -129,9 +115,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.APPLE"
-            },
+            "item": "Items.APPLE",
             "weight": 15,
             "minCount": 2,
             "maxCount": 3,
@@ -143,9 +127,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_APPLE#0"
-            },
+            "item": "Items.GOLDEN_APPLE#0",
             "weight": 5,
             "minCount": 0,
             "maxCount": 2,
@@ -157,9 +139,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_APPLE#1"
-            },
+            "item": "Items.GOLDEN_APPLE#1",
             "weight": 1,
             "minCount": 0,
             "maxCount": 1,
@@ -180,9 +160,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Cheese"
-            },
+            "item": "CUSTOM:Cheese",
             "weight": 10,
             "minCount": 2,
             "maxCount": 5,
@@ -194,9 +172,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CheeseSword"
-            },
+            "item": "CUSTOM:CheeseSword",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

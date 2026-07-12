@@ -4,6 +4,5 @@
     "particle": "alternate_dimension:block/scorched_door_bottom",
     "bottom": "alternate_dimension:block/scorched_door_bottom",
     "top": "alternate_dimension:block/scorched_door_top"
-  },
-  "render_type": "cutout"
+  }
 }

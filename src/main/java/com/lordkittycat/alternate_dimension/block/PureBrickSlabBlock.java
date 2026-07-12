@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SlabBlock;
 
 public class PureBrickSlabBlock extends SlabBlock {
-	public PureBrickSlabBlock() {
-		super(BlockBehaviour.Properties.of().strength(2f, 5f).requiresCorrectToolForDrops());
+	public PureBrickSlabBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(2f, 5f).requiresCorrectToolForDrops());
 	}
 }

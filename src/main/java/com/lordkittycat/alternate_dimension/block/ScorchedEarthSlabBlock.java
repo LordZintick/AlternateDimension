@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SlabBlock;
 
 public class ScorchedEarthSlabBlock extends SlabBlock {
-	public ScorchedEarthSlabBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.TUFF).strength(1f, 2f).requiresCorrectToolForDrops());
+	public ScorchedEarthSlabBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.TUFF).strength(1f, 2f).requiresCorrectToolForDrops());
 	}
 }

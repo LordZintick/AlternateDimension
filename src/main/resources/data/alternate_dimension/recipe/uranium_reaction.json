@@ -1,9 +1,7 @@
 {
   "type": "alternate_dimension:nuclear_reactor_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:raw_uranium"
-    }
+    "alternate_dimension:raw_uranium"
   ],
   "outputs": [
     {

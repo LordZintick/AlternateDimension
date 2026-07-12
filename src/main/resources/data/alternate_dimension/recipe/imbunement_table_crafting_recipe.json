@@ -7,21 +7,11 @@
     "ded"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:magic_dust"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "c": {
-      "tag": "alternate_dimension:crafting_tables"
-    },
-    "d": {
-      "tag": "alternate_dimension:gems"
-    },
-    "e": {
-      "tag": "alternate_dimension:gem_blocks"
-    }
+    "a": "alternate_dimension:magic_dust",
+    "b": "alternate_dimension:aluminum_ingot",
+    "c": "#alternate_dimension:crafting_tables",
+    "d": "#alternate_dimension:gems",
+    "e": "#alternate_dimension:gem_blocks"
   },
   "result": {
     "id": "alternate_dimension:imbunement_table",

@@ -4,14 +4,13 @@ license="Creative Commons Attribution Share Alike 4.0"
 
 [[mods]]
 modId="alternate_dimension"
-version="2.0.0dev5"
+version="2.0.0dev6"
 displayName="AlternateDimension"
 displayURL="https://modrinth.com/project/alternate-dimension"
 logoFile="logo.png"
 credits="Music is all original by me, textures and models are either custom-made or modified vanilla textures and models."
 authors="LordZintick"
 description="A fun, in-progress mod."
-enumExtensions="META-INF/enumextensions.json"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -25,14 +24,14 @@ enumExtensions="META-INF/enumextensions.json"
 [[dependencies.alternate_dimension]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.190,)"
+    versionRange="[26.1.2.71,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.alternate_dimension]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.1]"
+    versionRange="[26.1.2]"
     ordering="AFTER"
     side="BOTH"
 

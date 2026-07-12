@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:candy_cane_block"
-    }
+    "a": "alternate_dimension:candy_cane_block"
   },
   "result": {
     "id": "alternate_dimension:candy_cane_crafting_table",

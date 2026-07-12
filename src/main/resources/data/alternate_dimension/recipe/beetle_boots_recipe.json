@@ -6,12 +6,8 @@
     "b b"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:ancient_dust"
-    },
-    "b": {
-      "item": "alternate_dimension:hardened_beetle_shell"
-    }
+    "a": "alternate_dimension:ancient_dust",
+    "b": "alternate_dimension:hardened_beetle_shell"
   },
   "result": {
     "id": "alternate_dimension:beetle_armor_boots",

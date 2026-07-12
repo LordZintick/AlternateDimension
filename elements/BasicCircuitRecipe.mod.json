@@ -1,26 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "circuit_maker_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:Silicon"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      }
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:Silicon",
+      "CUSTOM:Phosphorus"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "CircuitMakerRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:BasicCircuit"
-      }
+      "CUSTOM:BasicCircuit"
     ],
     "resultCounts": [
       1

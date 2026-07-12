@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -28,9 +28,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "UpdateModules"
-          },
+          "onSlotChanged": "UpdateModules",
           "x": 273,
           "y": 167,
           "locked": false
@@ -54,9 +52,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "UpdateModules"
-          },
+          "onSlotChanged": "UpdateModules",
           "x": 298,
           "y": 167,
           "locked": false
@@ -114,9 +110,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "UpdateModules"
-          },
+          "onSlotChanged": "UpdateModules",
           "x": 273,
           "y": 185,
           "locked": false
@@ -140,9 +134,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "UpdateModules"
-          },
+          "onSlotChanged": "UpdateModules",
           "x": 298,
           "y": 185,
           "locked": false
@@ -1893,9 +1885,7 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity6"
-          },
+          "displayCondition": "CheckCapacity6",
           "x": 106,
           "y": 22,
           "locked": false
@@ -1906,9 +1896,7 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity5"
-          },
+          "displayCondition": "CheckCapacity5",
           "x": 106,
           "y": 40,
           "locked": false
@@ -1919,9 +1907,7 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity4"
-          },
+          "displayCondition": "CheckCapacity4",
           "x": 106,
           "y": 58,
           "locked": false
@@ -1932,9 +1918,7 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity3"
-          },
+          "displayCondition": "CheckCapacity3",
           "x": 106,
           "y": 76,
           "locked": false
@@ -1945,9 +1929,7 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity2"
-          },
+          "displayCondition": "CheckCapacity2",
           "x": 106,
           "y": 94,
           "locked": false
@@ -1958,21 +1940,15 @@
         "data": {
           "image": "slot_cover.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "CheckCapacity1"
-          },
+          "displayCondition": "CheckCapacity1",
           "x": 106,
           "y": 112,
           "locked": false
         }
       }
     ],
-    "onTick": {
-      "name": "UpdateModules"
-    },
-    "onClosed": {
-      "name": "CloseChest"
-    },
+    "onTick": "UpdateModules",
+    "onClosed": "CloseChest",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

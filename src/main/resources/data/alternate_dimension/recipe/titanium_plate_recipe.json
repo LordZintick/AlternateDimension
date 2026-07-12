@@ -1,9 +1,7 @@
 {
   "type": "alternate_dimension:ingot_presser_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:titanium_ingot"
-    }
+    "alternate_dimension:titanium_ingot"
   ],
   "outputs": [
     {

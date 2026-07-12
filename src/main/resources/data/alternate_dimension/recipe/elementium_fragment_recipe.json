@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:refinery_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:omega_essence"
-    },
-    {
-      "item": "alternate_dimension:mythril_ingot"
-    }
+    "alternate_dimension:omega_essence",
+    "alternate_dimension:mythril_ingot"
   ],
   "integers": [
     32,

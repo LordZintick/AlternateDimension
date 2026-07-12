@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "underground_cabin",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 2,
     "separation": 1,
     "restrictionBiomes": [
-      {
-        "value": "#mod:is_familiar_realm"
-      }
+      "#mod:is_familiar_realm"
     ],
     "terrainAdaptation": "none",
     "generationStep": "UNDERGROUND_STRUCTURES",

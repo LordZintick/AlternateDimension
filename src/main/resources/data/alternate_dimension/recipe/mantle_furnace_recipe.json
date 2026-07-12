@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyric_cobble"
-    },
-    "b": {
-      "item": "alternate_dimension:compressed_mantle_cobble"
-    }
+    "a": "alternate_dimension:pyric_cobble",
+    "b": "alternate_dimension:compressed_mantle_cobble"
   },
   "result": {
     "id": "alternate_dimension:mantle_furnace",

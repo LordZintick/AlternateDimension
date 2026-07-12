@@ -6,12 +6,8 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:light_essence"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:light_essence"
   },
   "result": {
     "id": "alternate_dimension:night_vision_armor_helmet",

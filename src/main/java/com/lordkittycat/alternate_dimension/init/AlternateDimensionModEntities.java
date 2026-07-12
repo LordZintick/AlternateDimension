@@ -13,6 +13,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import com.lordkittycat.alternate_dimension.entity.*;
@@ -108,6 +110,18 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<MeteoroidEntity>of(MeteoroidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(5f, 5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AzureBoatEntity>> AZURE_BOAT = register("azure_boat",
+			EntityType.Builder.<AzureBoatEntity>of(AzureBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<AzureChestBoatEntity>> AZURE_CHEST_BOAT = register("azure_chest_boat",
+			EntityType.Builder.<AzureChestBoatEntity>of(AzureChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<ScorchedBoatEntity>> SCORCHED_BOAT = register("scorched_boat",
+			EntityType.Builder.<ScorchedBoatEntity>of(ScorchedBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<ScorchedChestBoatEntity>> SCORCHED_CHEST_BOAT = register("scorched_chest_boat",
+			EntityType.Builder.<ScorchedChestBoatEntity>of(ScorchedChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<RedwoodBoatEntity>> REDWOOD_BOAT = register("redwood_boat",
+			EntityType.Builder.<RedwoodBoatEntity>of(RedwoodBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<RedwoodChestBoatEntity>> REDWOOD_CHEST_BOAT = register("redwood_chest_boat",
+			EntityType.Builder.<RedwoodChestBoatEntity>of(RedwoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<GoldenCowEntity>> GOLDEN_COW = register("golden_cow",
 			EntityType.Builder.<GoldenCowEntity>of(GoldenCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
@@ -132,6 +146,10 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<HallowedOneEntity>of(HallowedOneEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PineBoatEntity>> PINE_BOAT = register("pine_boat",
+			EntityType.Builder.<PineBoatEntity>of(PineBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<PineChestBoatEntity>> PINE_CHEST_BOAT = register("pine_chest_boat",
+			EntityType.Builder.<PineChestBoatEntity>of(PineChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<RomanEntity>> ROMAN = register("roman",
 			EntityType.Builder.<RomanEntity>of(RomanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -144,15 +162,63 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<PossessedArmorEntity>of(PossessedArmorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GreenwoodBoatEntity>> GREENWOOD_BOAT = register("greenwood_boat",
+			EntityType.Builder.<GreenwoodBoatEntity>of(GreenwoodBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<GreenwoodChestBoatEntity>> GREENWOOD_CHEST_BOAT = register("greenwood_chest_boat",
+			EntityType.Builder.<GreenwoodChestBoatEntity>of(GreenwoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<CandyflossBoatEntity>> CANDYFLOSS_BOAT = register("candyfloss_boat",
+			EntityType.Builder.<CandyflossBoatEntity>of(CandyflossBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<CandyflossChestBoatEntity>> CANDYFLOSS_CHEST_BOAT = register("candyfloss_chest_boat",
+			EntityType.Builder.<CandyflossChestBoatEntity>of(CandyflossChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<SporeSpreaderEntity>> SPORE_SPREADER = register("spore_spreader",
 			EntityType.Builder.<SporeSpreaderEntity>of(SporeSpreaderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.9f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<FrostyZombieEntity>> FROSTY_ZOMBIE = register("frosty_zombie",
+			EntityType.Builder.<FrostyZombieEntity>of(FrostyZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<OvergrownZombieEntity>> OVERGROWN_ZOMBIE = register("overgrown_zombie",
+			EntityType.Builder.<OvergrownZombieEntity>of(OvergrownZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CorruptedZombieEntity>> CORRUPTED_ZOMBIE = register("corrupted_zombie",
+			EntityType.Builder.<CorruptedZombieEntity>of(CorruptedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CalcifiedZombieEntity>> CALCIFIED_ZOMBIE = register("calcified_zombie",
+			EntityType.Builder.<CalcifiedZombieEntity>of(CalcifiedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CactusZombieEntity>> CACTUS_ZOMBIE = register("cactus_zombie",
+			EntityType.Builder.<CactusZombieEntity>of(CactusZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BloodZombieEntity>> BLOOD_ZOMBIE = register("blood_zombie",
+			EntityType.Builder.<BloodZombieEntity>of(BloodZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PumpkinZombieEntity>> PUMPKIN_ZOMBIE = register("pumpkin_zombie",
+			EntityType.Builder.<PumpkinZombieEntity>of(PumpkinZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SpectralZombieEntity>> SPECTRAL_ZOMBIE = register("spectral_zombie",
+			EntityType.Builder.<SpectralZombieEntity>of(SpectralZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EnchantedZombieEntity>> ENCHANTED_ZOMBIE = register("enchanted_zombie",
+			EntityType.Builder.<EnchantedZombieEntity>of(EnchantedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<MagmaticZombieEntity>> MAGMATIC_ZOMBIE = register("magmatic_zombie",
+			EntityType.Builder.<MagmaticZombieEntity>of(MagmaticZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
-		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
+		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, registryname))));
 	}
 
 	@SubscribeEvent
@@ -186,6 +252,16 @@ public class AlternateDimensionModEntities {
 		BeetleQueenEntity.init(event);
 		PossessedArmorEntity.init(event);
 		SporeSpreaderEntity.init(event);
+		FrostyZombieEntity.init(event);
+		OvergrownZombieEntity.init(event);
+		CorruptedZombieEntity.init(event);
+		CalcifiedZombieEntity.init(event);
+		CactusZombieEntity.init(event);
+		BloodZombieEntity.init(event);
+		PumpkinZombieEntity.init(event);
+		SpectralZombieEntity.init(event);
+		EnchantedZombieEntity.init(event);
+		MagmaticZombieEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -219,5 +295,15 @@ public class AlternateDimensionModEntities {
 		event.put(BEETLE_QUEEN.get(), BeetleQueenEntity.createAttributes().build());
 		event.put(POSSESSED_ARMOR.get(), PossessedArmorEntity.createAttributes().build());
 		event.put(SPORE_SPREADER.get(), SporeSpreaderEntity.createAttributes().build());
+		event.put(FROSTY_ZOMBIE.get(), FrostyZombieEntity.createAttributes().build());
+		event.put(OVERGROWN_ZOMBIE.get(), OvergrownZombieEntity.createAttributes().build());
+		event.put(CORRUPTED_ZOMBIE.get(), CorruptedZombieEntity.createAttributes().build());
+		event.put(CALCIFIED_ZOMBIE.get(), CalcifiedZombieEntity.createAttributes().build());
+		event.put(CACTUS_ZOMBIE.get(), CactusZombieEntity.createAttributes().build());
+		event.put(BLOOD_ZOMBIE.get(), BloodZombieEntity.createAttributes().build());
+		event.put(PUMPKIN_ZOMBIE.get(), PumpkinZombieEntity.createAttributes().build());
+		event.put(SPECTRAL_ZOMBIE.get(), SpectralZombieEntity.createAttributes().build());
+		event.put(ENCHANTED_ZOMBIE.get(), EnchantedZombieEntity.createAttributes().build());
+		event.put(MAGMATIC_ZOMBIE.get(), MagmaticZombieEntity.createAttributes().build());
 	}
 }

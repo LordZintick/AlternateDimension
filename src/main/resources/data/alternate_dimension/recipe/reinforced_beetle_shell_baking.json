@@ -3,9 +3,7 @@
   "category": "misc",
   "experience": 1,
   "cookingtime": 100,
-  "ingredient": {
-    "item": "alternate_dimension:reinforced_beetle_shell"
-  },
+  "ingredient": "alternate_dimension:reinforced_beetle_shell",
   "result": {
     "id": "alternate_dimension:hardened_beetle_shell"
   }

@@ -3,12 +3,8 @@
   "group": "chest_boat",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:greenwood_boat"
-    },
-    {
-      "tag": "alternate_dimension:boxes"
-    }
+    "alternate_dimension:greenwood_boat",
+    "#alternate_dimension:boxes"
   ],
   "result": {
     "id": "alternate_dimension:greenwood_chest_boat",

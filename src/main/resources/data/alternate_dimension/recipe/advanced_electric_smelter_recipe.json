@@ -7,21 +7,11 @@
     "ded"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyrobricks"
-    },
-    "b": {
-      "item": "alternate_dimension:titanium_plate"
-    },
-    "c": {
-      "item": "alternate_dimension:advanced_machine_casing"
-    },
-    "d": {
-      "item": "alternate_dimension:pyrolite_chunk"
-    },
-    "e": {
-      "item": "alternate_dimension:electric_smelter"
-    }
+    "a": "alternate_dimension:pyrobricks",
+    "b": "alternate_dimension:titanium_plate",
+    "c": "alternate_dimension:advanced_machine_casing",
+    "d": "alternate_dimension:pyrolite_chunk",
+    "e": "alternate_dimension:electric_smelter"
   },
   "result": {
     "id": "alternate_dimension:advanced_electric_smelter",

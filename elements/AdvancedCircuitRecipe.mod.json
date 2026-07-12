@@ -1,26 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "circuit_maker_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      },
-      {
-        "value": "CUSTOM:BasicCircuit"
-      },
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      }
+      "CUSTOM:EvilstoneGem",
+      "CUSTOM:BasicCircuit",
+      "CUSTOM:TitaniumIngot"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "CircuitMakerRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:AdvancedCircuit"
-      }
+      "CUSTOM:AdvancedCircuit"
     ],
     "resultCounts": [
       1

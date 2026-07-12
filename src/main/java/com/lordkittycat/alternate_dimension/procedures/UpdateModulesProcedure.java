@@ -1,6 +1,8 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.transfer.item.ItemUtil;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
@@ -26,7 +28,7 @@ public class UpdateModulesProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		for (int index0 = 0; index0 < 4; index0++) {
+		for (int index9 = 0; index9 < 4; index9++) {
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getItem() == AlternateDimensionModItems.CAPACITY_GEM_MODULE.get()) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -45,9 +47,9 @@ public class UpdateModulesProcedure {
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
 		if (world instanceof ILevelExtension ext) {
-			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
 			if (itemHandler != null)
-				return itemHandler.getStackInSlot(slot);
+				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
 	}
@@ -55,7 +57,7 @@ public class UpdateModulesProcedure {
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
 	}
 }

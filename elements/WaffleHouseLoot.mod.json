@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyCane"
-            },
+            "item": "CUSTOM:CandyCane",
             "weight": 10,
             "minCount": 3,
             "maxCount": 8,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyCaneSword"
-            },
+            "item": "CUSTOM:CandyCaneSword",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CandyCaneBlock"
-            },
+            "item": "CUSTOM:CandyCaneBlock",
             "weight": 6,
             "minCount": 1,
             "maxCount": 3,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WaffleBlock"
-            },
+            "item": "CUSTOM:WaffleBlock",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,

@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:magic_dust"
-    }
+    "a": "alternate_dimension:magic_dust"
   },
   "result": {
     "id": "alternate_dimension:magic_dust_block",

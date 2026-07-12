@@ -6,16 +6,17 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.gamerules.GameRules;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GameRules;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -41,7 +42,7 @@ public class EntityDiesProcedure {
 		if (entity == null)
 			return;
 		if ((BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).equals("minecraft:player")) {
-			if (world.getLevelData().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)) {
+			if (world instanceof ServerLevel _serverLevelGR1 && _serverLevelGR1.getGameRules().get(GameRules.KEEP_INVENTORY)) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
 				if (entity instanceof LivingEntity _entity)
@@ -51,19 +52,20 @@ public class EntityDiesProcedure {
 				}
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY,
-							entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ);
+					double _tx = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX;
+					double _ty = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY;
+					double _tz = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ;
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY,
-								entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY,
-								entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("particle.soul_escape")), SoundSource.PLAYERS, 1, 1);
+								entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("particle.soul_escape")), SoundSource.PLAYERS, 1, 1);
 					} else {
 						_level.playLocalSound(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY,
-								entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("particle.soul_escape")), SoundSource.PLAYERS, 1, 1, false);
+								entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("particle.soul_escape")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 				if (entity instanceof Player _player)

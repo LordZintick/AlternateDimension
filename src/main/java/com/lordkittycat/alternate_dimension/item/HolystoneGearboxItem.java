@@ -1,9 +1,14 @@
 package com.lordkittycat.alternate_dimension.item;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class HolystoneGearboxItem extends Item {
-	public HolystoneGearboxItem() {
-		super(new Item.Properties());
+	public HolystoneGearboxItem(Item.Properties properties) {
+		super(properties);
+	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

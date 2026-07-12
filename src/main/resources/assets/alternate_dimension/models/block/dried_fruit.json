@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/dried_fruit",
     "particle": "alternate_dimension:block/dried_fruit"
-  },
-  "render_type": "solid"
+  }
 }

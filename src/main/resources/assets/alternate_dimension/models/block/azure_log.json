@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/azure_log",
     "west": "alternate_dimension:block/azure_log",
     "particle": "alternate_dimension:block/azure_log"
-  },
-  "render_type": "solid"
+  }
 }

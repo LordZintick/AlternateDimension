@@ -5,8 +5,8 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.Blocks;
 
 public class ScorchedBrickStairsBlock extends StairBlock {
-	public ScorchedBrickStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().strength(1f, 2f).requiresCorrectToolForDrops());
+	public ScorchedBrickStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.strength(1f, 2f).requiresCorrectToolForDrops());
 	}
 
 	@Override

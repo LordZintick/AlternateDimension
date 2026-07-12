@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/scorched_glass",
     "particle": "alternate_dimension:block/scorched_glass"
-  },
-  "render_type": "cutout"
+  }
 }

@@ -10,7 +10,7 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.util.RandomSource;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -28,7 +28,7 @@ public class WastelandFruitDecorator extends CocoaDecorator {
 
 	@SubscribeEvent
 	public static void registerTreeDecorator(RegisterEvent event) {
-		event.register(Registries.TREE_DECORATOR_TYPE, ResourceLocation.parse("alternate_dimension:wasteland_tree_fruit_decorator"), () -> DECORATOR_TYPE);
+		event.register(Registries.TREE_DECORATOR_TYPE, Identifier.parse("alternate_dimension:wasteland_tree_fruit_decorator"), () -> DECORATOR_TYPE);
 	}
 
 	public WastelandFruitDecorator() {
@@ -42,21 +42,23 @@ public class WastelandFruitDecorator extends CocoaDecorator {
 
 	@Override
 	public void place(TreeDecorator.Context context) {
-		RandomSource randomsource = context.random();
-		if (!(randomsource.nextFloat() >= 0.2F)) {
-			List<BlockPos> list = context.logs();
-			int i = list.get(0).getY();
-			list.stream().filter(p_69980_ -> p_69980_.getY() - i <= 2).forEach(p_226026_ -> {
-				for (Direction direction : Direction.Plane.HORIZONTAL) {
-					if (randomsource.nextFloat() <= 0.25F) {
-						Direction direction1 = direction.getOpposite();
-						BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
-						if (context.isAir(blockpos)) {
-							context.setBlock(blockpos, oriented(AlternateDimensionModBlocks.DRIED_FRUIT.get().defaultBlockState(), direction1));
+		RandomSource random = context.random();
+		if (!(random.nextFloat() >= 0.2F)) {
+			List<BlockPos> logs = context.logs();
+			if (!logs.isEmpty()) {
+				int treeY = logs.getFirst().getY();
+				logs.stream().filter(pos -> pos.getY() - treeY <= 2).forEach(pos -> {
+					for (Direction direction : Direction.Plane.HORIZONTAL) {
+						if (random.nextFloat() <= 0.25F) {
+							Direction opposite = direction.getOpposite();
+							BlockPos cocoaPos = pos.offset(opposite.getStepX(), 0, opposite.getStepZ());
+							if (context.isAir(cocoaPos)) {
+								context.setBlock(cocoaPos, oriented(AlternateDimensionModBlocks.DRIED_FRUIT.get().defaultBlockState(), opposite));
+							}
 						}
 					}
-				}
-			});
+				});
+			}
 		}
 	}
 

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:magmatic_zombie",
+    "alternate_dimension:frosty_zombie",
+    "alternate_dimension:overgrown_zombie",
+    "alternate_dimension:cactus_zombie",
+    "alternate_dimension:pumpkin_zombie",
+    "alternate_dimension:spectral_zombie",
+    "alternate_dimension:corrupted_zombie",
+    "alternate_dimension:blood_zombie",
+    "alternate_dimension:enchanted_zombie",
+    "alternate_dimension:calcified_zombie"
+  ]
+}

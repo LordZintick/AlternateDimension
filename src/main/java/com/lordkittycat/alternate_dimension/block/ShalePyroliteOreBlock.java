@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class ShalePyroliteOreBlock extends Block {
-	public ShalePyroliteOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(2.3f, 2f).requiresCorrectToolForDrops());
+	public ShalePyroliteOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.BASALT).strength(2.3f, 2f).requiresCorrectToolForDrops());
 	}
 }

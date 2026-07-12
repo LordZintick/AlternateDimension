@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/cloud_platform_side",
     "west": "alternate_dimension:block/cloud_platform_side",
     "particle": "alternate_dimension:block/empty"
-  },
-  "render_type": "cutout"
+  }
 }

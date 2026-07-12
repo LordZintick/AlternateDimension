@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "bark",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PineLog"
-      }
+      "CUSTOM:PineLog"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PineLog"
-      },
-      {
-        "value": "CUSTOM:PineLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PineLog"
-      },
-      {
-        "value": "CUSTOM:PineLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:PineLog",
+      "CUSTOM:PineLog",
+      "",
+      "CUSTOM:PineLog",
+      "CUSTOM:PineLog",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PineWood"
-    },
+    "recipeReturnStack": "CUSTOM:PineWood",
     "name": "pine_wood_recipe",
     "namespace": "mod"
   }

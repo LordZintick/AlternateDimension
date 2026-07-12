@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Cloth"
-      }
+      "CUSTOM:Cloth"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:LushGrassBlock"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      },
-      {
-        "value": "CUSTOM:Cloth"
-      }
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:LushGrassBlock",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HomeBlock"
-    },
+    "recipeReturnStack": "CUSTOM:HomeBlock",
     "name": "home_block_recipe",
     "namespace": "mod"
   }

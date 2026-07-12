@@ -12,8 +12,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class VerdantGlassBlock extends Block {
-	public VerdantGlassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(1f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public VerdantGlassBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GLASS).strength(1f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -22,12 +22,12 @@ public class VerdantGlassBlock extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightDampening(BlockState state) {
 		return 0;
 	}
 

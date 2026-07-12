@@ -1,0 +1,25 @@
+{
+  "model": {
+    "type": "alternate_dimension:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "alternate_dimension:banana/peeled"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "alternate_dimension:item/banana_0"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "alternate_dimension:item/banana"
+    }
+  }
+}

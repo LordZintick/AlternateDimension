@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MagicDust"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawEvilstone"
-            },
+            "item": "CUSTOM:RawEvilstone",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -50,9 +46,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawQuartz"
-            },
+            "item": "CUSTOM:RawQuartz",
             "weight": 3,
             "minCount": 2,
             "maxCount": 5,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:EvilstoneGem"
-            },
+            "item": "CUSTOM:EvilstoneGem",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumIngot"
-            },
+            "item": "CUSTOM:AluminumIngot",
             "weight": 2,
             "minCount": 1,
             "maxCount": 2,
@@ -101,9 +91,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WeakThread"
-            },
+            "item": "CUSTOM:WeakThread",
             "weight": 3,
             "minCount": 2,
             "maxCount": 4,
@@ -115,9 +103,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StrongThread"
-            },
+            "item": "CUSTOM:StrongThread",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -138,9 +124,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhosphoriumIngot"
-            },
+            "item": "CUSTOM:PhosphoriumIngot",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -152,9 +136,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Phosphorus"
-            },
+            "item": "CUSTOM:Phosphorus",
             "weight": 5,
             "minCount": 3,
             "maxCount": 6,
@@ -175,9 +157,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HalloweenQuestDisc"
-            },
+            "item": "CUSTOM:HalloweenQuestDisc",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -189,9 +169,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 15,
             "minCount": 1,
             "maxCount": 1,
@@ -212,9 +190,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:VoidEssence"
-            },
+            "item": "CUSTOM:VoidEssence",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,

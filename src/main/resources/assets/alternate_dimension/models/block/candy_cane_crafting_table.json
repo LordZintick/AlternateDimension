@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/candy_cane_crafting_table_side",
     "west": "alternate_dimension:block/candy_cane_crafting_table_side",
     "particle": "alternate_dimension:block/candy_cane_block"
-  },
-  "render_type": "solid"
+  }
 }

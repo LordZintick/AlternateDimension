@@ -19,7 +19,7 @@ public class BarleyPlantLootProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else {
-			for (int index0 = 0; index0 < 2; index0++) {
+			for (int index12 = 0; index12 < 2; index12++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(AlternateDimensionModItems.BARLEY_SEEDS.get()));
 					entityToSpawn.setPickUpDelay(10);

@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/mycelium_side",
     "west": "alternate_dimension:block/mycelium_side",
     "particle": "minecraft:block/dirt"
-  },
-  "render_type": "solid"
+  }
 }

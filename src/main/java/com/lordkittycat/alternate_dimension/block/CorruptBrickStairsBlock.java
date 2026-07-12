@@ -5,8 +5,8 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.Blocks;
 
 public class CorruptBrickStairsBlock extends StairBlock {
-	public CorruptBrickStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().strength(2f, 5f).requiresCorrectToolForDrops());
+	public CorruptBrickStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.strength(2f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -165,12 +165,8 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "LoadRefineryGUI"
-    },
-    "onTick": {
-      "name": "UpdateRefineryParams"
-    },
+    "onOpen": "LoadRefineryGUI",
+    "onTick": "UpdateRefineryParams",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

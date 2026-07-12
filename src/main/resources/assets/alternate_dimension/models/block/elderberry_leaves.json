@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/elderberry_leaves",
     "particle": "alternate_dimension:block/elderberry_leaves"
-  },
-  "render_type": "cutout"
+  }
 }

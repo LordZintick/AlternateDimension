@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "ingot_presser_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:HolystoneGem"
-      }
+      "CUSTOM:HolystoneGem"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "IngotPresserRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:HolystonePlate"
-      }
+      "CUSTOM:HolystonePlate"
     ],
     "resultCounts": [
       1

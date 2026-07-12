@@ -9,8 +9,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class DriedFruitBlock extends Block {
-	public DriedFruitBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.HONEY_BLOCK).instabreak());
+	public DriedFruitBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.HONEY_BLOCK).instabreak());
 	}
 
 	@Override

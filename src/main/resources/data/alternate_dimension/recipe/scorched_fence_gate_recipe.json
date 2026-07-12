@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:tool_rod"
-    },
-    "b": {
-      "item": "alternate_dimension:scorched_planks"
-    }
+    "a": "alternate_dimension:tool_rod",
+    "b": "alternate_dimension:scorched_planks"
   },
   "result": {
     "id": "alternate_dimension:scorched_fence_gate",

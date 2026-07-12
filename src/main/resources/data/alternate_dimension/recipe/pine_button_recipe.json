@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "alternate_dimension:pine_planks"
-    }
+    "alternate_dimension:pine_planks"
   ],
   "result": {
     "id": "alternate_dimension:pine_button",

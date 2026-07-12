@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:plant_matter"
-    }
+    "a": "alternate_dimension:plant_matter"
   },
   "result": {
     "id": "alternate_dimension:greenwood_planks",

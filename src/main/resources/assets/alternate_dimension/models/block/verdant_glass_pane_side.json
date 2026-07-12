@@ -4,6 +4,5 @@
     "particle": "alternate_dimension:block/verdant_glass",
     "pane": "alternate_dimension:block/verdant_glass",
     "edge": "alternate_dimension:block/verdant_glass"
-  },
-  "render_type": "cutout"
+  }
 }

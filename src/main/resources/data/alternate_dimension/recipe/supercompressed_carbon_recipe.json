@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:compressed_coal"
-    }
+    "a": "alternate_dimension:compressed_coal"
   },
   "result": {
     "id": "alternate_dimension:supercompressed_carbon",

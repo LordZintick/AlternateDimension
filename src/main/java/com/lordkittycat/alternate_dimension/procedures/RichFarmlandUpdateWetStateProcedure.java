@@ -12,8 +12,8 @@ public class RichFarmlandUpdateWetStateProcedure {
 		double zoff = 0;
 		xoff = -7;
 		zoff = -7;
-		for (int index0 = 0; index0 < 15; index0++) {
-			for (int index1 = 0; index1 < 15; index1++) {
+		for (int index10 = 0; index10 < 15; index10++) {
+			for (int index11 = 0; index11 < 15; index11++) {
 				if ((world.getFluidState(BlockPos.containing(x + xoff, y, z + zoff)).createLegacyBlock()).getBlock() == Blocks.WATER) {
 					{
 						BlockPos _pos = BlockPos.containing(x, y, z);

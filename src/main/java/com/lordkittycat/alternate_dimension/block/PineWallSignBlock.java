@@ -9,8 +9,8 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class PineWallSignBlock extends WallSignBlock {
-	public PineWallSignBlock() {
-		super(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE,
-				BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn().dropsLike(AlternateDimensionModBlocks.PINE_SIGN.get()));
+	public PineWallSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE, properties.sound(SoundType.WOOD).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn()
+				.overrideLootTable(AlternateDimensionModBlocks.PINE_SIGN.get().getLootTable()).overrideDescription(AlternateDimensionModBlocks.PINE_SIGN.get().getDescriptionId()));
 	}
 }

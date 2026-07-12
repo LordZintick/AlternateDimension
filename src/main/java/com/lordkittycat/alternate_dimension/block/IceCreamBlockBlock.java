@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.ChillEntityProcedure;
 
 public class IceCreamBlockBlock extends Block {
-	public IceCreamBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SOIL).strength(0.5f).friction(0.8f).speedFactor(1.1f));
+	public IceCreamBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.SOUL_SOIL).strength(0.5f).friction(0.8f).speedFactor(1.1f));
 	}
 
 	@Override

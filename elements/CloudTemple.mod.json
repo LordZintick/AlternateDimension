@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "cloud_temple",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 10,
     "separation": 4,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Highlands"
-      }
+      "CUSTOM:Highlands"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "STRONGHOLDS",

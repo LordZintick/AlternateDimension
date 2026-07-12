@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Topaz"
-      }
+      "CUSTOM:Topaz"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Topaz"
-      },
-      {
-        "value": "CUSTOM:Topaz"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Topaz"
-      },
-      {
-        "value": "CUSTOM:Topaz"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:Topaz",
+      "CUSTOM:Topaz",
+      "",
+      "CUSTOM:Topaz",
+      "CUSTOM:Topaz",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TopazBlock"
-    },
+    "recipeReturnStack": "CUSTOM:TopazBlock",
     "name": "topaz_compacting",
     "namespace": "mod"
   }

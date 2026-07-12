@@ -3,6 +3,5 @@
   "textures": {
     "wall": "alternate_dimension:block/corrupted_bricks",
     "particle": "alternate_dimension:block/corrupted_bricks"
-  },
-  "render_type": "solid"
+  }
 }

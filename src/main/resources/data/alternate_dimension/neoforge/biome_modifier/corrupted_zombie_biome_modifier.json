@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "spawners": {
+    "type": "alternate_dimension:corrupted_zombie",
+    "weight": 15,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "TAG:mod:furnaces"
-      }
+      "TAG:mod:furnaces"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "TAG:mod:furnaces"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "TAG:mod:furnaces",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Generator"
-    },
+    "recipeReturnStack": "CUSTOM:Generator",
     "name": "generator_recipe",
     "namespace": "mod"
   }

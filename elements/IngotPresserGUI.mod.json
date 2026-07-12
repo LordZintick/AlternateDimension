@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -80,9 +80,7 @@
           "name": "button_press",
           "text": "Press!",
           "isUndecorated": false,
-          "onClick": {
-            "name": "PressIngot"
-          },
+          "onClick": "PressIngot",
           "width": 56,
           "height": 20,
           "x": 226,

@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/scorched_bricks",
     "top": "alternate_dimension:block/scorched_bricks",
     "side": "alternate_dimension:block/scorched_bricks"
-  },
-  "render_type": "solid"
+  }
 }

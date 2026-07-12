@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "bark",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RedwoodLog"
-      }
+      "CUSTOM:RedwoodLog"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RedwoodLog"
-      },
-      {
-        "value": "CUSTOM:RedwoodLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedwoodLog"
-      },
-      {
-        "value": "CUSTOM:RedwoodLog"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:RedwoodLog",
+      "CUSTOM:RedwoodLog",
+      "",
+      "CUSTOM:RedwoodLog",
+      "CUSTOM:RedwoodLog",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedwoodWood"
-    },
+    "recipeReturnStack": "CUSTOM:RedwoodWood",
     "name": "redwood_wood_recipe",
     "namespace": "mod"
   }

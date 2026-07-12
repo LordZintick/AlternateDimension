@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Sulfur"
-      }
+      "CUSTOM:Sulfur"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": "CUSTOM:Sulfur"
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:AluminumNugget",
+      "",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:Sulfur",
+      "CUSTOM:AluminumNugget",
+      "",
+      "CUSTOM:AluminumNugget",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Rocket"
-    },
+    "recipeReturnStack": "CUSTOM:Rocket",
     "name": "rocket_recipe",
     "namespace": "mod"
   }

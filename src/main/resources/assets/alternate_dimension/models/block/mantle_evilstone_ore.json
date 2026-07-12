@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/mantle_evilstone_ore",
     "particle": "alternate_dimension:block/mantle_evilstone_ore"
-  },
-  "render_type": "solid"
+  }
 }

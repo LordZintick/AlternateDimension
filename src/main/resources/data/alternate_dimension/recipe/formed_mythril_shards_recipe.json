@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:refinery_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    {
-      "item": "alternate_dimension:mythril_shards"
-    }
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:mythril_shards"
   ],
   "integers": [
     1,

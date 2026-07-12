@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ShaleCobble"
-            },
+            "item": "CUSTOM:ShaleCobble",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PyricCobble"
-            },
+            "item": "CUSTOM:PyricCobble",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:VeridiumCobble"
-            },
+            "item": "CUSTOM:VeridiumCobble",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Shale"
-            },
+            "item": "CUSTOM:Shale",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PyreMantle"
-            },
+            "item": "CUSTOM:PyreMantle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -92,9 +82,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Veridium"
-            },
+            "item": "CUSTOM:Veridium",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

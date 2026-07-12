@@ -1,0 +1,10 @@
+{
+  "_fv": 89,
+  "_type": "command",
+  "definition": {
+    "commandName": "event",
+    "type": "STANDARD",
+    "permissionLevel": "2",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"123\" y=\"94\"><next><block type=\"literal\"><field name=\"name\">time</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">get</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">DisplayEventTime</field></block></statement></block></statement><next><block type=\"literal\"><field name=\"name\">type</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">get</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">DisplayEventType</field></block></statement></block></statement><next><block type=\"literal\"><field name=\"name\">start</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">type</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">time</field><field name=\"min\">1</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">StartEvent</field></block></statement></block></statement></block></statement></block></next></block></next></block></next></block></xml>"
+  }
+}

@@ -3,6 +3,5 @@
   "textures": {
     "crop": "alternate_dimension:block/barley_plant_1",
     "particle": "alternate_dimension:block/barley_plant_1"
-  },
-  "render_type": "cutout"
+  }
 }

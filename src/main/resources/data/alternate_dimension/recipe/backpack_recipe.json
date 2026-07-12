@@ -7,15 +7,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:strong_thread"
-    },
-    "b": {
-      "item": "alternate_dimension:tattered_leather"
-    },
-    "c": {
-      "tag": "alternate_dimension:boxes"
-    }
+    "a": "alternate_dimension:strong_thread",
+    "b": "alternate_dimension:tattered_leather",
+    "c": "#alternate_dimension:boxes"
   },
   "result": {
     "id": "alternate_dimension:backpack",

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "crystal_chest",
@@ -17,22 +17,14 @@
     "states": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:crystal_chestAnimation.open"
-        },
+        "animation": "CUSTOM:crystal_chestAnimation.open",
         "speed": 1.0,
-        "condition": {
-          "name": "CheckOpen"
-        }
+        "condition": "CheckOpen"
       },
       {
-        "animation": {
-          "value": "CUSTOM:crystal_chestAnimation.close"
-        },
+        "animation": "CUSTOM:crystal_chestAnimation.close",
         "speed": 1.0,
-        "condition": {
-          "name": "CheckClosed"
-        }
+        "condition": "CheckClosed"
       }
     ],
     "itemTexture": "crystal_chest_img",
@@ -70,14 +62,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionUtilities"
-      }
+      "CUSTOM:AlternateDimensionUtilities"
     ],
     "destroyTool": "pickaxe",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -97,14 +85,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "strippingResult": {
-      "value": ""
-    },
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -114,25 +98,13 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "BLOCK",
     "isNotColidable": false,
+    "soundOnStep": "GLASS",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "GLASS"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 0.0
     },
@@ -339,15 +311,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "OpenChest"
-    },
+    "onRightClicked": "OpenChest",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

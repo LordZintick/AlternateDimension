@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/verdant_lantern",
     "particle": "alternate_dimension:block/verdant_lantern"
-  },
-  "render_type": "solid"
+  }
 }

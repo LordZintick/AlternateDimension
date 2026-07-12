@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyrobricks"
-    },
-    "b": {
-      "item": "alternate_dimension:pyrolite_chunk"
-    }
+    "a": "alternate_dimension:pyrobricks",
+    "b": "alternate_dimension:pyrolite_chunk"
   },
   "result": {
     "id": "alternate_dimension:item_incinerator",

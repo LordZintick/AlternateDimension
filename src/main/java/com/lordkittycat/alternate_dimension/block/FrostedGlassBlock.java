@@ -9,17 +9,17 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.BlockAndLightGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class FrostedGlassBlock extends Block {
-	public FrostedGlassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(1f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public FrostedGlassBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GLASS).strength(1f, 0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
-	public boolean shouldDisplayFluidOverlay(BlockState state, BlockAndTintGetter world, BlockPos pos, FluidState fluidstate) {
+	public boolean shouldDisplayFluidOverlay(BlockState state, BlockAndLightGetter world, BlockPos pos, FluidState fluidstate) {
 		return true;
 	}
 

@@ -3,6 +3,5 @@
   "textures": {
     "texture": "alternate_dimension:block/pine_planks",
     "particle": "alternate_dimension:block/pine_planks"
-  },
-  "render_type": "solid"
+  }
 }

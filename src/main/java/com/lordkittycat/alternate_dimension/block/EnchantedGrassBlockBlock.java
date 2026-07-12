@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure;
 
 public class EnchantedGrassBlockBlock extends Block {
-	public EnchantedGrassBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f));
+	public EnchantedGrassBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WET_GRASS).strength(1f));
 	}
 
 	@Override

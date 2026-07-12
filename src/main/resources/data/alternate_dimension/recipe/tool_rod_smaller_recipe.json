@@ -7,9 +7,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "tag": "alternate_dimension:altdim_planks"
-    }
+    "a": "#alternate_dimension:altdim_planks"
   },
   "result": {
     "id": "alternate_dimension:tool_rod",

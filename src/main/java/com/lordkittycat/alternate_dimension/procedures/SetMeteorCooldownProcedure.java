@@ -1,8 +1,8 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 
@@ -19,7 +19,7 @@ public class SetMeteorCooldownProcedure {
 		old = AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown;
 		AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown = DoubleArgumentType.getDouble(arguments, "newTime");
 		AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Changed meteor cooldown from " + old + " to " + AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown + ".")), false);
+		if (entity instanceof ServerPlayer _player)
+			_player.sendSystemMessage(Component.literal(("Changed meteor cooldown from " + old + " to " + AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown + ".")), false);
 	}
 }

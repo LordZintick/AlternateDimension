@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,12 +7,8 @@
     "customModelName": "Ranged item",
     "guiTexture": "",
     "customProperties": {
-      "pull": {
-        "name": "GetBowPullingAmount"
-      },
-      "pulling": {
-        "name": "GetBowPullingState"
-      }
+      "pull": "GetBowPullingAmount",
+      "pulling": "GetBowPullingState"
     },
     "states": [
       {
@@ -86,18 +82,14 @@
     "name": "Scorched Bow",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "stackSize": 1,
     "enchantability": 12,
     "useDuration": 72000,
     "toolType": 1.0,
     "damageCount": 244,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -123,23 +115,17 @@
     "enableRanged": true,
     "shootConstantly": false,
     "rangedItemChargesPower": true,
-    "projectile": {
-      "value": "CUSTOM:PlusProjectile"
-    },
+    "projectile": "CUSTOM:PlusProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "bow",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

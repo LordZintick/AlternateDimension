@@ -8,24 +8,12 @@
     "efe"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:shroomium_chunk"
-    },
-    "b": {
-      "item": "alternate_dimension:lightning_bottle"
-    },
-    "c": {
-      "item": "alternate_dimension:titanium_gearbox"
-    },
-    "d": {
-      "item": "alternate_dimension:advanced_machine_casing"
-    },
-    "e": {
-      "item": "alternate_dimension:titanium_ingot"
-    },
-    "f": {
-      "item": "alternate_dimension:omega_essence"
-    }
+    "a": "alternate_dimension:shroomium_chunk",
+    "b": "alternate_dimension:lightning_bottle",
+    "c": "alternate_dimension:titanium_gearbox",
+    "d": "alternate_dimension:advanced_machine_casing",
+    "e": "alternate_dimension:titanium_ingot",
+    "f": "alternate_dimension:omega_essence"
   },
   "result": {
     "id": "alternate_dimension:refinery_controller",

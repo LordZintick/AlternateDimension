@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class PlantMatterBlock extends Block {
-	public PlantMatterBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f, 5f));
+	public PlantMatterBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.MOSS).strength(1f, 5f));
 	}
 }

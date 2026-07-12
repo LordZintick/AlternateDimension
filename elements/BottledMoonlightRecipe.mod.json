@@ -1,23 +1,17 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "imbunement_table_recipe",
     "ingredients": [
-      {
-        "value": "CUSTOM:Umberflower"
-      },
-      {
-        "value": "CUSTOM:BigBottle"
-      }
+      "CUSTOM:Umberflower",
+      "CUSTOM:BigBottle"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "ImbunementTableRecipe",
     "results": [
-      {
-        "value": "CUSTOM:BottledMoonlight"
-      }
+      "CUSTOM:BottledMoonlight"
     ],
     "resultCounts": [
       1

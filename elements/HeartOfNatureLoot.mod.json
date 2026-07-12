@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BarleySeeds"
-            },
+            "item": "CUSTOM:BarleySeeds",
             "weight": 2,
             "minCount": 2,
             "maxCount": 4,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LembasBreadBite"
-            },
+            "item": "CUSTOM:LembasBreadBite",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HempSeeds"
-            },
+            "item": "CUSTOM:HempSeeds",
             "weight": 2,
             "minCount": 2,
             "maxCount": 4,

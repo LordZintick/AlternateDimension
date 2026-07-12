@@ -1,23 +1,17 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "imbunement_table_recipe",
     "ingredients": [
-      {
-        "value": "CUSTOM:MagicDustBlock"
-      },
-      {
-        "value": "CUSTOM:LightBlueGummyBear"
-      }
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:LightBlueGummyBear"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "ImbunementTableRecipe",
     "results": [
-      {
-        "value": "CUSTOM:AdventurersPet"
-      }
+      "CUSTOM:AdventurersPet"
     ],
     "resultCounts": [
       1

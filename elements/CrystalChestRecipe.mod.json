@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:HexagemComplex"
-      }
+      "CUSTOM:HexagemComplex"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      },
-      {
-        "value": "CUSTOM:HexagemComplex"
-      }
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex",
+      "Blocks.CHEST",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex",
+      "CUSTOM:HexagemComplex"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CrystalChest"
-    },
+    "recipeReturnStack": "CUSTOM:CrystalChest",
     "name": "crystal_chest_recipe",
     "namespace": "mod"
   }

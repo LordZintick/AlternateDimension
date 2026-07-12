@@ -72,27 +72,5 @@
         1
       ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "alternate_dimension:scorched_bow_pulling": 1
-      },
-      "model": "alternate_dimension:item/scorched_bow_0"
-    },
-    {
-      "predicate": {
-        "alternate_dimension:scorched_bow_pull": 0.65,
-        "alternate_dimension:scorched_bow_pulling": 1
-      },
-      "model": "alternate_dimension:item/scorched_bow_1"
-    },
-    {
-      "predicate": {
-        "alternate_dimension:scorched_bow_pull": 0.9,
-        "alternate_dimension:scorched_bow_pulling": 1
-      },
-      "model": "alternate_dimension:item/scorched_bow_2"
-    }
-  ]
+  }
 }

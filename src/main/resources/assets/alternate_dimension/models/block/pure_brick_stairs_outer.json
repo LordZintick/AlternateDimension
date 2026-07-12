@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/pure_bricks",
     "top": "alternate_dimension:block/pure_bricks",
     "side": "alternate_dimension:block/pure_bricks"
-  },
-  "render_type": "solid"
+  }
 }

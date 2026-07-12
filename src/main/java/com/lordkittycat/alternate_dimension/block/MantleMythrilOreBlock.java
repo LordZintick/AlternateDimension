@@ -10,8 +10,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.CheckForTitaniumToolProcedure;
 
 public class MantleMythrilOreBlock extends Block {
-	public MantleMythrilOreBlock() {
-		super(BlockBehaviour.Properties.of().strength(5f, 15f).requiresCorrectToolForDrops());
+	public MantleMythrilOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(5f, 15f).requiresCorrectToolForDrops());
 	}
 
 	@Override

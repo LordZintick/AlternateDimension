@@ -14,9 +14,9 @@ public class RemoveNegativeEffectsProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.UNLUCK);
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(MobEffects.CONFUSION);
+				_entity.removeEffect(MobEffects.NAUSEA);
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(MobEffects.DIG_SLOWDOWN);
+				_entity.removeEffect(MobEffects.MINING_FATIGUE);
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.HUNGER);
 		}
@@ -26,7 +26,7 @@ public class RemoveNegativeEffectsProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.POISON);
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
+				_entity.removeEffect(MobEffects.SLOWNESS);
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.WEAKNESS);
 			if (entity instanceof LivingEntity _entity)

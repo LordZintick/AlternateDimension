@@ -1,20 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "purifier_recipe_gui.png",
     "width": 176,
     "height": 80,
-    "icon": {
-      "value": "CUSTOM:Purifier"
-    },
+    "icon": "CUSTOM:Purifier",
     "craftingtables": [
-      {
-        "value": "CUSTOM:Purifier"
-      },
-      {
-        "value": "CUSTOM:AdvancedPurifier"
-      }
+      "CUSTOM:Purifier",
+      "CUSTOM:AdvancedPurifier"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

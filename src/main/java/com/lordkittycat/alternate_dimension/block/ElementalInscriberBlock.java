@@ -21,6 +21,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import io.netty.buffer.Unpooled;
@@ -32,8 +33,8 @@ import com.lordkittycat.alternate_dimension.block.entity.ElementalInscriberBlock
 public class ElementalInscriberBlock extends Block implements EntityBlock {
 	public static final BooleanProperty RUNNING = BooleanProperty.create("running");
 
-	public ElementalInscriberBlock() {
-		super(BlockBehaviour.Properties.of().strength(3f).lightLevel(blockstate -> 8).requiresCorrectToolForDrops());
+	public ElementalInscriberBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(3f).lightLevel(blockstate -> 8).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(RUNNING, false));
 	}
 
@@ -45,7 +46,10 @@ public class ElementalInscriberBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(RUNNING, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(RUNNING, false);
 	}
 
 	@Override
@@ -99,15 +103,8 @@ public class ElementalInscriberBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof ElementalInscriberBlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
+	protected void affectNeighborsAfterRemoval(BlockState blockstate, ServerLevel world, BlockPos blockpos, boolean flag) {
+		Containers.updateNeighboursAfterDestroy(blockstate, world, blockpos);
 	}
 
 	@Override
@@ -116,7 +113,7 @@ public class ElementalInscriberBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos, Direction direction) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
 		if (tileentity instanceof ElementalInscriberBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);

@@ -1,23 +1,17 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "imbunement_table_recipe",
     "ingredients": [
-      {
-        "value": "CUSTOM:MagicDustBlock"
-      },
-      {
-        "value": "TAG:minecraft:pickaxes"
-      }
+      "CUSTOM:MagicDustBlock",
+      "TAG:minecraft:pickaxes"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "ImbunementTableRecipe",
     "results": [
-      {
-        "value": "CUSTOM:MinersPet"
-      }
+      "CUSTOM:MinersPet"
     ],
     "resultCounts": [
       1

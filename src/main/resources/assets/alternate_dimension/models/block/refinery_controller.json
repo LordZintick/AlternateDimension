@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/advanced_machine_side",
     "west": "alternate_dimension:block/advanced_machine_side",
     "particle": "alternate_dimension:block/machine_wires"
-  },
-  "render_type": "solid"
+  }
 }

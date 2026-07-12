@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:titanium_nugget"
-    }
+    "a": "alternate_dimension:titanium_nugget"
   },
   "result": {
     "id": "alternate_dimension:titanium_ingot",

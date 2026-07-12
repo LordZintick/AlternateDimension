@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "cloth",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:WeakThread"
-      }
+      "CUSTOM:WeakThread"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WeakThread"
-      },
-      {
-        "value": "CUSTOM:WeakThread"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WeakThread"
-      },
-      {
-        "value": "CUSTOM:WeakThread"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:WeakThread",
+      "CUSTOM:WeakThread",
+      "",
+      "CUSTOM:WeakThread",
+      "CUSTOM:WeakThread"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Cloth"
-    },
+    "recipeReturnStack": "CUSTOM:Cloth",
     "name": "cloth_from_thread",
     "namespace": "mod"
   }

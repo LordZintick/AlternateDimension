@@ -9,12 +9,9 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.client.multiplayer.PlayerInfo;
-import net.minecraft.client.Minecraft;
 
 import java.util.Comparator;
 
@@ -26,12 +23,12 @@ public class TargetPlayersAndHallowedMobsProcedure {
 			final Vec3 _center = new Vec3(x, y, z);
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityiterator.getType()).toString()).equals("minecraft:player")) {
-					if (getEntityGameType(entityiterator) == GameType.SURVIVAL) {
+					if (entityiterator instanceof Player _plr1 && _plr1.gameMode() == GameType.SURVIVAL) {
 						if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) {
 							if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
 								_entity.setTarget(_ent);
 						} else {
-							if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("alternate_dimension:hallowed_mobs")))) {
+							if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:hallowed_mobs")))) {
 								if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
 									_entity.setTarget(_ent);
 							} else if ((entity.position()).distanceTo((entityiterator.position())) <= (entity.position()).distanceTo(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).position()))) {
@@ -40,7 +37,7 @@ public class TargetPlayersAndHallowedMobsProcedure {
 							}
 						}
 					}
-				} else if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("alternate_dimension:hallowed_mobs")))) {
+				} else if (entityiterator.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:hallowed_mobs")))) {
 					if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) {
 						if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
 							_entity.setTarget(_ent);
@@ -51,16 +48,5 @@ public class TargetPlayersAndHallowedMobsProcedure {
 				}
 			}
 		}
-	}
-
-	private static GameType getEntityGameType(Entity entity) {
-		if (entity instanceof ServerPlayer serverPlayer) {
-			return serverPlayer.gameMode.getGameModeForPlayer();
-		} else if (entity instanceof Player player && player.level().isClientSide()) {
-			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
-			if (playerInfo != null)
-				return playerInfo.getGameMode();
-		}
-		return null;
 	}
 }

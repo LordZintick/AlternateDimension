@@ -3,9 +3,9 @@ package com.lordkittycat.alternate_dimension.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -18,8 +18,8 @@ public class RandomBadProcedure {
 			return;
 		if (Mth.nextInt(RandomSource.create(), 0, 100) == 0) {
 			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
+				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
@@ -31,9 +31,9 @@ public class RandomBadProcedure {
 			entity.push((Mth.nextInt(RandomSource.create(), -10, 10) / 10), (Mth.nextInt(RandomSource.create(), -10, 10) / 10), (Mth.nextInt(RandomSource.create(), -10, 10) / 10));
 		}
 		if (Mth.nextInt(RandomSource.create(), 0, 175) == 0) {
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 3, 7); index0++) {
+			for (int index5 = 0; index5 < Mth.nextInt(RandomSource.create(), 3, 7); index5++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -50, 50) / 10, y + 3, z + Mth.nextInt(RandomSource.create(), -50, 50) / 10), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -50, 50) / 10, y + 3, z + Mth.nextInt(RandomSource.create(), -50, 50) / 10), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}

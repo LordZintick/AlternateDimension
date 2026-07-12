@@ -1,8 +1,6 @@
 package com.lordkittycat.alternate_dimension.block;
 
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -12,18 +10,19 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.color.block.BlockTintSources;
+
+import java.util.List;
 
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class BushLeavesBlock extends Block {
-	public BushLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public BushLeavesBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WET_GRASS).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -32,12 +31,12 @@ public class BushLeavesBlock extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightDampening(BlockState state) {
 		return 0;
 	}
 
@@ -56,17 +55,7 @@ public class BushLeavesBlock extends Block {
 		return PathType.LEAVES;
 	}
 
-	@OnlyIn(Dist.CLIENT)
-	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-		event.getBlockColors().register((bs, world, pos, index) -> {
-			return world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor();
-		}, AlternateDimensionModBlocks.BUSH_LEAVES.get());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
-		event.getItemColors().register((stack, index) -> {
-			return FoliageColor.getDefaultColor();
-		}, AlternateDimensionModBlocks.BUSH_LEAVES.get());
+	public static void blockColorLoad(RegisterColorHandlersEvent.BlockTintSources event) {
+		event.getBlockColors().register(List.of(BlockTintSources.foliage()), AlternateDimensionModBlocks.BUSH_LEAVES.get());
 	}
 }

@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:imbunement_table_recipe",
   "ingredients": [
-    {
-      "item": "alternate_dimension:magic_dust_block"
-    },
-    {
-      "tag": "minecraft:swords"
-    }
+    "alternate_dimension:magic_dust_block",
+    "#minecraft:swords"
   ],
   "outputs": [
     {

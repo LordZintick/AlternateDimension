@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:FunctionBlaster"
-      }
+      "CUSTOM:FunctionBlaster"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:FunctionBlaster"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:FunctionBlaster"
-      },
-      {
-        "value": "CUSTOM:FunctionBlaster"
-      },
-      {
-        "value": "CUSTOM:Term"
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:FunctionBlaster"
-      },
-      {
-        "value": ""
-      }
+      "Items.DYE#16",
+      "CUSTOM:FunctionBlaster",
+      "",
+      "CUSTOM:FunctionBlaster",
+      "CUSTOM:FunctionBlaster",
+      "CUSTOM:Term",
+      "Items.DYE#16",
+      "CUSTOM:FunctionBlaster",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SigmaNotator"
-    },
+    "recipeReturnStack": "CUSTOM:SigmaNotator",
     "name": "sigma_notator_recipe",
     "namespace": "mod"
   }

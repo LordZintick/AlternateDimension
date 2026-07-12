@@ -1,6 +1,7 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.transfer.transaction.Transaction;
+import net.neoforged.neoforge.transfer.energy.EnergyHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
@@ -32,9 +33,12 @@ public class GeneratorTickProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (world instanceof ILevelExtension _ext) {
-				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
-				if (_entityStorage != null)
-					_entityStorage.receiveEnergy(10, false);
+				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
+					try (var _tx = Transaction.openRoot()) {
+						_energyHandler.insert(10, _tx);
+						_tx.commit();
+					}
+				}
 			}
 			PushEnergyProcedure.execute(world, x, y, z);
 		} else {
@@ -50,7 +54,7 @@ public class GeneratorTickProcedure {
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
 	}
 }

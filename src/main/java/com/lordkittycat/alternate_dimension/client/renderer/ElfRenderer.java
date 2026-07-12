@@ -1,6 +1,13 @@
 package com.lordkittycat.alternate_dimension.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.util.context.ContextKey;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
@@ -9,22 +16,43 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.lordkittycat.alternate_dimension.entity.ElfEntity;
 import com.lordkittycat.alternate_dimension.client.model.Modelplayer_model;
 
-public class ElfRenderer extends MobRenderer<ElfEntity, Modelplayer_model<ElfEntity>> {
-	private final ResourceLocation entityTexture = ResourceLocation.parse("alternate_dimension:textures/entities/elf.png");
+public class ElfRenderer extends MobRenderer<ElfEntity, LivingEntityRenderState, Modelplayer_model> {
+	private final Identifier entityTexture = Identifier.parse("alternate_dimension:textures/entities/elf.png");
 
 	public ElfRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelplayer_model<ElfEntity>(context.bakeLayer(Modelplayer_model.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelplayer_model(context.bakeLayer(Modelplayer_model.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	protected void scale(ElfEntity entity, PoseStack poseStack, float f) {
+	public LivingEntityRenderState createRenderState() {
+		return new LivingEntityRenderState();
+	}
+
+	@Override
+	public void extractRenderState(ElfEntity entity, LivingEntityRenderState state, float partialTicks) {
+		super.extractRenderState(entity, state, partialTicks);
+	}
+
+	@Override
+	public Identifier getTextureLocation(LivingEntityRenderState state) {
+		ElfEntity entity = (ElfEntity) state.getRenderData(ENTITY_KEY);
+		if (entity != null && entity.getTexture() != "elf")
+			return Identifier.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
+		return entityTexture;
+	}
+
+	@Override
+	protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
 		poseStack.scale(1.2f, 1.2f, 1.2f);
 	}
 
-	@Override
-	public ResourceLocation getTextureLocation(ElfEntity entity) {
-		if (entity.getTexture() != "elf")
-			return ResourceLocation.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
-		return entityTexture;
+	public static final ContextKey<ElfEntity> ENTITY_KEY = new ContextKey<>(Identifier.parse("alternate_dimension:elf_entity"));
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class EntityStateAdder {
+		@SubscribeEvent
+		private static void registerRenderStateModifiersEvent(RegisterRenderStateModifiersEvent event) {
+			event.registerEntityModifier(ElfRenderer.class, (entity, state) -> state.setRenderData(ENTITY_KEY, entity));
+		}
 	}
 }

@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MinersPet"
-      }
+      "CUSTOM:MinersPet"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "TAG:minecraft:shovels"
-      },
-      {
-        "value": "CUSTOM:MinersPet"
-      },
-      {
-        "value": "TAG:minecraft:shovels"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      }
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "TAG:minecraft:shovels",
+      "CUSTOM:MinersPet",
+      "TAG:minecraft:shovels",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Instavator"
-    },
+    "recipeReturnStack": "CUSTOM:Instavator",
     "name": "instavator_recipe",
     "namespace": "mod"
   }

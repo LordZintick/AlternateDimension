@@ -10,8 +10,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.CheckForTitaniumToolProcedure;
 
 public class VeridiumMythrilOreBlock extends Block {
-	public VeridiumMythrilOreBlock() {
-		super(BlockBehaviour.Properties.of().strength(5f, 15f).requiresCorrectToolForDrops());
+	public VeridiumMythrilOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(5f, 15f).requiresCorrectToolForDrops());
 	}
 
 	@Override

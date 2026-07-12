@@ -1,20 +1,14 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "refinery_recipe_gui.png",
-    "width": 176,
-    "height": 104,
-    "icon": {
-      "value": "CUSTOM:RefineryController"
-    },
+    "width": 108,
+    "height": 28,
+    "icon": "CUSTOM:RefineryController",
     "craftingtables": [
-      {
-        "value": "CUSTOM:RefineryController"
-      },
-      {
-        "value": "CUSTOM:RefineryBase"
-      }
+      "CUSTOM:RefineryController",
+      "CUSTOM:RefineryBase"
     ],
     "enableCraftingtable": true,
     "enableIntList": true,
@@ -24,26 +18,26 @@
     "slotList": [
       {
         "type": "INPUT",
-        "x": 25,
-        "y": 19,
+        "x": 5,
+        "y": 5,
         "slotid": 0
       },
       {
         "type": "INPUT",
-        "x": 43,
-        "y": 19,
+        "x": 23,
+        "y": 5,
         "slotid": 1
       },
       {
         "type": "OUTPUT",
-        "x": 87,
-        "y": 19,
+        "x": 67,
+        "y": 5,
         "slotid": 0
       },
       {
         "type": "OUTPUT",
-        "x": 105,
-        "y": 19,
+        "x": 85,
+        "y": 5,
         "slotid": 1
       }
     ],
@@ -58,8 +52,8 @@
             "fixedValue": 0.0,
             "name": ""
           },
-          "x": 192,
-          "y": 118,
+          "x": 206,
+          "y": 141,
           "locked": false
         }
       }

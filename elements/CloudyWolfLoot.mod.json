@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CloudBlock"
-            },
+            "item": "CUSTOM:CloudBlock",
             "weight": 3,
             "minCount": 3,
             "maxCount": 6,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LightEssence"
-            },
+            "item": "CUSTOM:LightEssence",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CloudCharge"
-            },
+            "item": "CUSTOM:CloudCharge",
             "weight": 2,
             "minCount": 1,
             "maxCount": 3,

@@ -21,8 +21,11 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
@@ -106,7 +109,8 @@ public class PlayerTickProcedure {
 				_vars.markSyncDirty();
 			}
 		}
-		if ((entity.position()).distanceTo(AlternateDimensionModVariables.WorldVariables.get(world).lastMeteorPos) >= 200 && AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown <= 0) {
+		if ((entity.position()).distanceTo(AlternateDimensionModVariables.WorldVariables.get(world).lastMeteorPos) >= 200 && AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown <= 0
+				&& (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth"))) {
 			meteorX = x + Mth.nextInt(RandomSource.create(), -32, 32);
 			meteorZ = z + Mth.nextInt(RandomSource.create(), -32, 32);
 			AlternateDimensionModVariables.WorldVariables.get(world).meteorCooldown = 6000;

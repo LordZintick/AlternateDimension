@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "tag": "alternate_dimension:fruit"
-    },
-    {
-      "tag": "alternate_dimension:fruit"
-    },
-    {
-      "tag": "alternate_dimension:fruit"
-    },
-    {
-      "tag": "alternate_dimension:bowls"
-    }
+    "#alternate_dimension:fruit",
+    "#alternate_dimension:fruit",
+    "#alternate_dimension:fruit",
+    "#alternate_dimension:bowls"
   ],
   "result": {
     "id": "alternate_dimension:fruit_salad",

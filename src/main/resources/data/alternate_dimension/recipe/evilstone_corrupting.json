@@ -1,9 +1,7 @@
 {
   "type": "alternate_dimension:corruptor_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:holystone_gem"
-    }
+    "alternate_dimension:holystone_gem"
   ],
   "outputs": [
     {

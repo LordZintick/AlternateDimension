@@ -1,26 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "alloy_smelter_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:PyroliteChunk"
-      }
+      "CUSTOM:Phosphorus",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:PyroliteChunk"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "AlloySmelterRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:PhosphoriumIngot"
-      }
+      "CUSTOM:PhosphoriumIngot"
     ],
     "resultCounts": [
       1

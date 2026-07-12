@@ -1,9 +1,14 @@
 package com.lordkittycat.alternate_dimension.item;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class ClothItem extends Item {
-	public ClothItem() {
-		super(new Item.Properties());
+	public ClothItem(Item.Properties properties) {
+		super(properties);
+	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

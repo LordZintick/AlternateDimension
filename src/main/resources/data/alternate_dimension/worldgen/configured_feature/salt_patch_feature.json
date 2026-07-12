@@ -7,13 +7,10 @@
       "type": "minecraft:solid"
     },
     "state_provider": {
-      "fallback": {
-        "type": "minecraft:simple_state_provider",
-        "state": {
-          "Name": "alternate_dimension:salt_block"
-        }
-      },
-      "rules": []
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:salt_block"
+      }
     }
   }
 }

@@ -19,15 +19,15 @@ public class DaggerEffectSodiumProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == AlternateDimensionModItems.CHLORINE_RAPIER.get()
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == AlternateDimensionModItems.SODIUM_RAPIER.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60, 2));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 60, 2));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 0));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 0));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 60, 1));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 2));
+				_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 60, 2));
 			world.addParticle(ParticleTypes.DRIPPING_OBSIDIAN_TEAR, (x + Mth.nextInt(RandomSource.create(), -5, 5) / 10), y, (z + Mth.nextInt(RandomSource.create(), -5, 5) / 10), 0, 1, 0);
 		}
 	}

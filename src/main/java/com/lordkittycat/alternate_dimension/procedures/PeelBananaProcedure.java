@@ -11,7 +11,7 @@ public class PeelBananaProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("peeled") != 1) {
+		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDoubleOr("peeled", 0) != 1) {
 			{
 				final String _tagName = "peeled";
 				final double _tagValue = 1;

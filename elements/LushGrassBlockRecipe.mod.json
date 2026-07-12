@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RichDirt"
-      },
-      {
-        "value": "TAG:mod:seeds"
-      }
+      "CUSTOM:RichDirt",
+      "TAG:mod:seeds"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -19,37 +15,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:seeds"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RichDirt"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "TAG:mod:seeds",
+      "",
+      "",
+      "CUSTOM:RichDirt",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LushGrassBlock"
-    },
+    "recipeReturnStack": "CUSTOM:LushGrassBlock",
     "name": "lush_grass_block_recipe",
     "namespace": "mod"
   }

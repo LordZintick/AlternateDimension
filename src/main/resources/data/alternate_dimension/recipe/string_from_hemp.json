@@ -5,9 +5,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:hemp"
-    }
+    "a": "alternate_dimension:hemp"
   },
   "result": {
     "id": "alternate_dimension:weak_thread",

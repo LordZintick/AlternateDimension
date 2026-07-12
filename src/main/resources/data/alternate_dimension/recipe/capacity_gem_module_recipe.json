@@ -7,12 +7,8 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:chest"
-    },
-    "b": {
-      "item": "alternate_dimension:empty_gem_module"
-    }
+    "a": "minecraft:chest",
+    "b": "alternate_dimension:empty_gem_module"
   },
   "result": {
     "id": "alternate_dimension:capacity_gem_module",

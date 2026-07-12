@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Frostbitten Tundra",
-    "groundBlock": {
-      "value": "CUSTOM:PermafrostBlock"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:PermafrostBlock"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:PermafrostBlock",
+    "undergroundBlock": "CUSTOM:PermafrostBlock",
+    "underwaterBlock": "",
     "airColor": {
       "value": -14919315,
       "falpha": 0.0
@@ -36,23 +30,13 @@
       "value": -16447585,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:alternate_dimension_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "SNOWFLAKE"
-    },
+    "particleToSpawn": "SNOWFLAKE",
     "particlesProbability": 0.5,
     "rainingPossibility": 0.0,
     "temperature": 0.16,
@@ -87,18 +71,10 @@
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Caves"
     ],

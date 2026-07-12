@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CandyCane"
-      },
-      {
-        "value": "CUSTOM:CandyCane"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CandyCane"
-      },
-      {
-        "value": "CUSTOM:CandyCane"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:CandyCane",
+      "CUSTOM:CandyCane",
+      "",
+      "CUSTOM:CandyCane",
+      "CUSTOM:CandyCane"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CandyCaneBlock"
-    },
+    "recipeReturnStack": "CUSTOM:CandyCaneBlock",
     "name": "candy_cane_block_from_candy_canes",
     "namespace": "mod"
   }

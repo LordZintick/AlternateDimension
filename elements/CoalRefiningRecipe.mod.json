@@ -1,15 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "refinery_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:Umberflower"
-      },
-      {
-        "value": "CUSTOM:PyroliteChunk"
-      }
+      "CUSTOM:Umberflower",
+      "CUSTOM:PyroliteChunk"
     ],
     "integers": [
       2,
@@ -20,12 +16,8 @@
     ],
     "recipetype": "RefineryRecipeType",
     "results": [
-      {
-        "value": "Items.COAL#0"
-      },
-      {
-        "value": "Items.COAL#1"
-      }
+      "Items.COAL#0",
+      "Items.COAL#1"
     ],
     "resultCounts": [
       2,

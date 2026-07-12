@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/shroomy_crafting_table_side",
     "west": "alternate_dimension:block/shroomy_crafting_table_side",
     "particle": "alternate_dimension:block/blue_mushroom_block"
-  },
-  "render_type": "solid"
+  }
 }

@@ -7,15 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:phosphorus"
-    },
-    "b": {
-      "tag": "minecraft:shovels"
-    },
-    "c": {
-      "item": "alternate_dimension:miners_pet"
-    }
+    "a": "alternate_dimension:phosphorus",
+    "b": "#minecraft:shovels",
+    "c": "alternate_dimension:miners_pet"
   },
   "result": {
     "id": "alternate_dimension:instavator",

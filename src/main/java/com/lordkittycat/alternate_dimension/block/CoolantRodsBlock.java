@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class CoolantRodsBlock extends Block {
-	public CoolantRodsBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 3f).lightLevel(blockstate -> 5).requiresCorrectToolForDrops());
+	public CoolantRodsBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(2f, 3f).lightLevel(blockstate -> 5).requiresCorrectToolForDrops());
 	}
 }

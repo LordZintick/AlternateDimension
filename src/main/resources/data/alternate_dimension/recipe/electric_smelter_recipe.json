@@ -7,18 +7,10 @@
     "cdc"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "b": {
-      "item": "alternate_dimension:simple_machine_casing"
-    },
-    "c": {
-      "item": "alternate_dimension:aluminum_gear"
-    },
-    "d": {
-      "item": "alternate_dimension:pyrolite_chunk"
-    }
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:simple_machine_casing",
+    "c": "alternate_dimension:aluminum_gear",
+    "d": "alternate_dimension:pyrolite_chunk"
   },
   "result": {
     "id": "alternate_dimension:electric_smelter",

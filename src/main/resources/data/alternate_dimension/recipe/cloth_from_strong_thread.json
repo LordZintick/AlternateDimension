@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:strong_thread"
-    }
+    "a": "alternate_dimension:strong_thread"
   },
   "result": {
     "id": "alternate_dimension:cloth",

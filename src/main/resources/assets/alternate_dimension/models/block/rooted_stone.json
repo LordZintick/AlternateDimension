@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/rooted_stone",
     "particle": "alternate_dimension:block/rooted_stone"
-  },
-  "render_type": "solid"
+  }
 }

@@ -12,11 +12,13 @@ import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.core.Holder;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -26,8 +28,8 @@ import java.util.List;
 @JeiPlugin
 public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
     @Override
-    public ResourceLocation getPluginUid() {
-        return ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "dynamic_recipes_plugin");
+    public Identifier getPluginUid() {
+        return Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "dynamic_recipes_plugin");
     }
 
     @Override
@@ -36,13 +38,13 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
         final List<DeferredItem<Item>> rings = List.of(AlternateDimensionModItems.WOODEN_RING, AlternateDimensionModItems.ALUMINUM_RING, AlternateDimensionModItems.TITANIUM_RING, AlternateDimensionModItems.MYTHRIL_RING);
 
         rings.forEach(ring -> RingItem.RING_INGREDIENTS.forEach((ingredientID, effect) -> {
-            ItemStack ingredientItem = BuiltInRegistries.ITEM.getOrThrow(ResourceKey.create(BuiltInRegistries.ITEM.key(), ingredientID)).getDefaultInstance();
+            Item ingredientItem = BuiltInRegistries.ITEM.getOrThrow(ResourceKey.create(BuiltInRegistries.ITEM.key(), ingredientID)).value();
             ItemStack outputRing = ring.toStack();
             outputRing.set(AlternateDimensionModComponents.RING_EFFECT, new RingEffectComponent(effect));
-            ringRecipes.add(new ImbunementTableRecipeRecipe(List.of(outputRing), NonNullList.of(
-                    Ingredient.EMPTY,
+            ringRecipes.add(new ImbunementTableRecipeRecipe(List.of(new ItemStackTemplate(outputRing.getItem())), NonNullList.of(
+                    Ingredient.of(),
                     Ingredient.of(ingredientItem),
-                    Ingredient.of(ring.get().getDefaultInstance())
+                    Ingredient.of(ring.get())
             )));
         }));
 

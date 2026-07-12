@@ -7,15 +7,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:uranium_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_plate"
-    },
-    "c": {
-      "item": "alternate_dimension:hexagem_complex"
-    }
+    "a": "alternate_dimension:uranium_plate",
+    "b": "alternate_dimension:aluminum_plate",
+    "c": "alternate_dimension:hexagem_complex"
   },
   "result": {
     "id": "alternate_dimension:empty_gem_module",

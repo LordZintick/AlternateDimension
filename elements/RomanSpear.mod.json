@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -15,9 +15,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "efficiency": 6.0,
     "attackSpeed": 1.4,
@@ -34,17 +32,13 @@
     "attributeModifiers": [
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "ENTITY_REACH"
-        },
+        "attribute": "ENTITY_REACH",
         "amount": 2.0,
         "operation": "ADD_VALUE"
       },
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "BLOCK_REACH"
-        },
+        "attribute": "BLOCK_REACH",
         "amount": 2.0,
         "operation": "ADD_VALUE"
       }

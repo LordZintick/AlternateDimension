@@ -14,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure;
 
 public class FrostedGrassBlockBlock extends Block {
-	public FrostedGrassBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f));
+	public FrostedGrassBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WET_GRASS).strength(1f));
 	}
 
 	@Override

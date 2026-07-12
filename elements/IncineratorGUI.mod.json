@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -33,9 +33,7 @@
           "name": "button_incinerate",
           "text": "Incinerate",
           "isUndecorated": false,
-          "onClick": {
-            "name": "IncinerateItems"
-          },
+          "onClick": "IncinerateItems",
           "width": 77,
           "height": 20,
           "x": 176,

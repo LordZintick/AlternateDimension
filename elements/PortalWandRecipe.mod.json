@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MagicDust"
-      }
+      "CUSTOM:MagicDust"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MagicDustBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ToolRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "CUSTOM:MagicDustBlock",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PortalWand"
-    },
+    "recipeReturnStack": "CUSTOM:PortalWand",
     "name": "portal_wand_recipe",
     "namespace": "mod"
   }

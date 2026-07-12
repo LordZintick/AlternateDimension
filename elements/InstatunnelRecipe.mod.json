@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:MinersPet"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      }
+      "CUSTOM:MinersPet",
+      "CUSTOM:Phosphorus"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -19,37 +15,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "TAG:minecraft:pickaxes"
-      },
-      {
-        "value": "CUSTOM:MinersPet"
-      },
-      {
-        "value": "TAG:minecraft:pickaxes"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      },
-      {
-        "value": "CUSTOM:Phosphorus"
-      }
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "TAG:minecraft:pickaxes",
+      "CUSTOM:MinersPet",
+      "TAG:minecraft:pickaxes",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Instatunnel"
-    },
+    "recipeReturnStack": "CUSTOM:Instatunnel",
     "name": "instatunnel_recipe",
     "namespace": "mod"
   }

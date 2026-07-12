@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/frosted_glass",
     "particle": "alternate_dimension:block/frosted_glass"
-  },
-  "render_type": "translucent"
+  }
 }

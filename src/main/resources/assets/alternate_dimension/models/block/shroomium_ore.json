@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/shroomium_ore",
     "particle": "alternate_dimension:block/shroomium_ore"
-  },
-  "render_type": "solid"
+  }
 }

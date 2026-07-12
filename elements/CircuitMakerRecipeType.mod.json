@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "circuit_maker_recipe_gui.png",
     "width": 176,
     "height": 97,
-    "icon": {
-      "value": "CUSTOM:CircuitMaker"
-    },
+    "icon": "CUSTOM:CircuitMaker",
     "craftingtables": [
-      {
-        "value": "CUSTOM:CircuitMaker"
-      }
+      "CUSTOM:CircuitMaker"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

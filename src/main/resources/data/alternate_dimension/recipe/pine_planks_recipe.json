@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "alternate_dimension:pine_logs"
-    }
+    "#alternate_dimension:pine_logs"
   ],
   "result": {
     "id": "alternate_dimension:pine_planks",

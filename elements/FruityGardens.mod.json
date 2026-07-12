@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Fruity Gardens",
-    "groundBlock": {
-      "value": "CUSTOM:LushGrassBlock"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:RichDirt"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:LushGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "grassColor": {
       "value": -16724992,
       "falpha": 0.0
@@ -20,23 +14,13 @@
       "value": -16724992,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:alternate_dimension_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
+    "particleToSpawn": "EXPLOSION_NORMAL",
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
@@ -71,18 +55,10 @@
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 7,
-    "treeStem": {
-      "value": "CUSTOM:PlantStem"
-    },
-    "treeBranch": {
-      "value": "CUSTOM:PlantMatter"
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "CUSTOM:PlantStem",
+    "treeBranch": "CUSTOM:PlantMatter",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Caves"
     ],

@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,13 +10,9 @@
     "textureLeggings": "",
     "enableBoots": true,
     "textureBoots": "fuzzy_socks",
-    "onBootsTick": {
-      "name": "ChargeBuildup"
-    },
+    "onBootsTick": "ChargeBuildup",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "armorTextureFile": "fuzzy_socks",
     "helmetName": "Fuzzy Armor Helmet",
@@ -101,10 +97,9 @@
     "enchantability": 7,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "block.cloth.place"
-    },
+    "equipSound": "block.cloth.place",
     "repairItems": [],
-    "rarity": "COMMON"
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

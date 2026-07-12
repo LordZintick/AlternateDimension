@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:IcyShards"
-      }
+      "CUSTOM:IcyShards"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:IcyShards"
-      },
-      {
-        "value": "CUSTOM:IcyShards"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:IcyShards"
-      },
-      {
-        "value": "CUSTOM:IcyShards"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:IcyShards",
+      "CUSTOM:IcyShards",
+      "",
+      "CUSTOM:IcyShards",
+      "CUSTOM:IcyShards",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PermafrostBlock"
-    },
+    "recipeReturnStack": "CUSTOM:PermafrostBlock",
     "name": "icy_shards_compacting",
     "namespace": "mod"
   }

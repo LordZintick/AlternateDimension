@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:evilstone_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:evilstone_gear"
-    }
+    "a": "alternate_dimension:evilstone_plate",
+    "b": "alternate_dimension:evilstone_gear"
   },
   "result": {
     "id": "alternate_dimension:evilstone_gearbox",

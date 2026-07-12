@@ -1,31 +1,3 @@
-/locate biome alternate_dimension:enchanted_forest
-/tp @s -1162 81 2414
-/effect give Dev minecraft:night_vision infinite 255 true
-/locate structure alternate_dimension:long_underground_cabin
-/tp @s -896 ~ 2240
-/fill -944 93 2468
-/fill -944 93 2468 -936 101 2476
-/fill -944 93 2468 -936 101 2476 alternate_dimension:plant_stem replace alternate_dimension:pine_crafting_table
-/fill -944 93 2468 -936 101 2476 alternate_dimension:plant_stem replace minecraft:oak_log
-/kill @e[type=alternate_dimension:elf]
-/fill -946 94 2466 alternate_dimension:plant_stem replace minecraft:oak_log
-/fill -946 94 2466 -953 101 2459 alternate_dimension:plant_stem replace minecraft:oak_log
-/fill -946 94 2466 -953 101 2459 alternate_dimension:greenwood_planks replace alternate_dimension:pine_crafting_table
-/fill 4 72 115
-/fill 4 72 115 4 76 119 alternate_dimension:pure_bricks replace alternate_dimension:pine_crafting_table
-/gamerule keepInventory true
-/data get block 1 68 180
-/gamemode survival
-/gamemode creative
-/fill 19 69 -142
-/fill 19 69 -142 27 76 -134 air replace alternate_dimension:pine_crafting_table
-/fill 19 69 -142 27 76 -134 alternate_dimension:plant_stem replace minecraft:oak_log
-/time set day
-/gamerule doDaylightCycle false
-/gamerule keepInventory true
-/meteor
-/locate structure alternate_dimension:pasta_mall
-/tp @s 208 ~ -640
 /locate biome alternate_dimension:wasteland
 /tp @s 1788 79 -1275
 /locate biome alternate_dimension:wasteland
@@ -48,3 +20,31 @@
 /gamemode creative
 /summon alternate_dimension:spore_spreader
 /time set day
+/effect give Dev minecraft:night_vision infinite 255 true
+/time set 11000
+/execute in alternate_dimension:eleroth run time set 11000t
+/time query time
+/time of minecraft:overworld query
+/gamerule keep_inventory true
+/time query
+/time query time
+/time query gametime
+/time set minecraft:day
+/time set minecraft:midnight
+/time set minecraft:day
+/event time get
+/event type get
+/event start blood_moon 12000
+/time set minecraft:midnight
+/event time get
+/event start 1
+/event start e 1
+/event time get
+/event type get
+/data get entity Dev
+/time set day
+/time set 1000
+/time set minecraft:midnight
+/kill @e[type=!minecraft:player]
+/spawnpoint Dev ~ ~ ~
+/effect give Dev minecraft:saturation 20

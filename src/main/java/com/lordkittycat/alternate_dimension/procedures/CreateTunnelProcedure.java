@@ -8,7 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -29,17 +29,17 @@ public class CreateTunnelProcedure {
 		zoff = Math.abs((direction.getOpposite()).getStepZ()) == 1 ? 0 : (direction.getOpposite()).getStepX() * (-1);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.dragon_fireball.explode")), SoundSource.PLAYERS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.dragon_fireball.explode")), SoundSource.PLAYERS, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.dragon_fireball.explode")), SoundSource.PLAYERS, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.dragon_fireball.explode")), SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
 		itemstack.shrink(1);
-		for (int index0 = 0; index0 < 3; index0++) {
-			for (int index1 = 0; index1 < 3; index1++) {
-				for (int index2 = 0; index2 < 64; index2++) {
+		for (int index13 = 0; index13 < 3; index13++) {
+			for (int index14 = 0; index14 < 3; index14++) {
+				for (int index15 = 0; index15 < 64; index15++) {
 					current = (world.getBlockState(BlockPos.containing(x + xoff, y + yoff, z + zoff)));
-					if (current.is(BlockTags.create(ResourceLocation.parse("alternate_dimension:miner_items_whitelist")))) {
+					if (current.is(BlockTags.create(Identifier.parse("alternate_dimension:miner_items_whitelist")))) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xoff, y + yoff, z + zoff);
 							Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);

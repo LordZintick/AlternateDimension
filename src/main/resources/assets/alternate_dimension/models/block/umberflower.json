@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/umberflower",
     "particle": "alternate_dimension:block/umberflower"
-  },
-  "render_type": "cutout"
+  }
 }

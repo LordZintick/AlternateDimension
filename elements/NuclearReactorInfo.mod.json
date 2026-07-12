@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeiinformation",
   "definition": {
     "items": [
-      {
-        "value": "CUSTOM:CoolantRods"
-      },
-      {
-        "value": "CUSTOM:NuclearReactor"
-      }
+      "CUSTOM:CoolantRods",
+      "CUSTOM:NuclearReactor"
     ],
     "information": [
       "The nuclear reactor is a powerful source of large amounts of energy.",

@@ -1,31 +1,40 @@
 package com.lordkittycat.alternate_dimension.jei_recipes;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.RecipeInput;
-import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.NonNullList;
-import net.minecraft.core.HolderLookup;
 
 import java.util.List;
+import java.util.ArrayList;
 
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.DataResult;
 
-public class ImbunementTableRecipeRecipe implements Recipe<RecipeInput> {
-	private final List<ItemStack> output;
-	private final NonNullList<Ingredient> recipeItems;
+public record ImbunementTableRecipeRecipe(List<ItemStackTemplate> outputs, List<Ingredient> recipeItems) implements Recipe<RecipeInput> {
+	public static final MapCodec<ImbunementTableRecipeRecipe> MAP_CODEC = RecordCodecBuilder.mapCodec(builder -> builder
+			.group(ItemStackTemplate.CODEC.listOf().optionalFieldOf("outputs", List.of()).forGetter(ImbunementTableRecipeRecipe::outputs), Ingredient.CODEC.listOf().fieldOf("ingredients").forGetter(ImbunementTableRecipeRecipe::recipeItems))
+			.apply(builder, ImbunementTableRecipeRecipe::new));
+	public static final StreamCodec<RegistryFriendlyByteBuf, ImbunementTableRecipeRecipe> STREAM_CODEC = StreamCodec.of(ImbunementTableRecipeRecipe::toNetwork, ImbunementTableRecipeRecipe::fromNetwork);
+	public static final RecipeSerializer<ImbunementTableRecipeRecipe> SERIALIZER = new RecipeSerializer<>(MAP_CODEC, STREAM_CODEC);
 
-	public ImbunementTableRecipeRecipe(List<ItemStack> output, NonNullList<Ingredient> recipeItems) {
-		this.output = output;
+	public ImbunementTableRecipeRecipe(List<ItemStackTemplate> outputs, List<Ingredient> recipeItems) {
+		this.outputs = outputs;
 		this.recipeItems = recipeItems;
+	}
+
+	@Override
+	public RecipeBookCategory recipeBookCategory() {
+		return RecipeBookCategories.CRAFTING_MISC;
+	}
+
+	@Override
+	public PlacementInfo placementInfo() {
+		return PlacementInfo.create(this.recipeItems);
 	}
 
 	@Override
@@ -37,37 +46,36 @@ public class ImbunementTableRecipeRecipe implements Recipe<RecipeInput> {
 	}
 
 	@Override
-	public NonNullList<Ingredient> getIngredients() {
+	public final String group() {
+		return "";
+	}
+
+	@Override
+	public boolean showNotification() {
+		return false;
+	}
+
+	public List<Ingredient> getIngredients() {
 		return recipeItems;
 	}
 
 	@Override
-	public ItemStack assemble(RecipeInput input, HolderLookup.Provider holder) {
-		return ItemStack.EMPTY;
-	}
-
-	@Override
-	public boolean canCraftInDimensions(int pWidth, int pHeight) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getResultItem(HolderLookup.Provider provider) {
+	public ItemStack assemble(RecipeInput input) {
 		return ItemStack.EMPTY;
 	}
 
 	public List<ItemStack> getResultItems() {
-		return output;
+		return this.outputs.stream().map(ItemStackTemplate::create).toList();
 	}
 
 	@Override
-	public RecipeType<?> getType() {
+	public RecipeType<? extends Recipe<RecipeInput>> getType() {
 		return Type.INSTANCE;
 	}
 
 	@Override
-	public RecipeSerializer<?> getSerializer() {
-		return Serializer.INSTANCE;
+	public RecipeSerializer<ImbunementTableRecipeRecipe> getSerializer() {
+		return SERIALIZER;
 	}
 
 	public static class Type implements RecipeType<ImbunementTableRecipeRecipe> {
@@ -77,49 +85,28 @@ public class ImbunementTableRecipeRecipe implements Recipe<RecipeInput> {
 		public static final RecipeType<ImbunementTableRecipeRecipe> INSTANCE = new Type();
 	}
 
-	public static class Serializer implements RecipeSerializer<ImbunementTableRecipeRecipe> {
-		public static final Serializer INSTANCE = new Serializer();
-		private static final MapCodec<ImbunementTableRecipeRecipe> CODEC = RecordCodecBuilder
-				.mapCodec(builder -> builder.group(ItemStack.OPTIONAL_CODEC.listOf().fieldOf("outputs").forGetter(recipe -> recipe.output), Ingredient.CODEC_NONEMPTY.listOf().fieldOf("ingredients").flatXmap(ingredients -> {
-					Ingredient[] aingredient = ingredients.toArray(Ingredient[]::new); // Skip the empty check and create the array.
-					if (aingredient.length == 0) {
-						return DataResult.error(() -> "No ingredients found in custom recipe");
-					} else {
-						return DataResult.success(NonNullList.of(Ingredient.EMPTY, aingredient));
-					}
-				}, DataResult::success).forGetter(recipe -> recipe.recipeItems)).apply(builder, ImbunementTableRecipeRecipe::new));
-		public static final StreamCodec<RegistryFriendlyByteBuf, ImbunementTableRecipeRecipe> STREAM_CODEC = StreamCodec.of(Serializer::toNetwork, Serializer::fromNetwork);
-
-		@Override
-		public MapCodec<ImbunementTableRecipeRecipe> codec() {
-			return CODEC;
+	private static ImbunementTableRecipeRecipe fromNetwork(RegistryFriendlyByteBuf buf) {
+		List<Ingredient> inputs = NonNullList.withSize(buf.readVarInt(), EmptyIngredient.create());
+		inputs.replaceAll(ingredients -> Ingredient.CONTENTS_STREAM_CODEC.decode(buf));
+		int outputCount = buf.readVarInt();
+		List<ItemStackTemplate> outputs = new ArrayList<>(outputCount);
+		for (int i = 0; i < outputCount; i++) {
+			outputs.add(ItemStackTemplate.STREAM_CODEC.decode(buf));
 		}
+		return new ImbunementTableRecipeRecipe(outputs, inputs);
+	}
 
-		@Override
-		public StreamCodec<RegistryFriendlyByteBuf, ImbunementTableRecipeRecipe> streamCodec() {
-			return STREAM_CODEC;
+	private static void toNetwork(RegistryFriendlyByteBuf buf, ImbunementTableRecipeRecipe recipe) {
+		buf.writeVarInt(recipe.getIngredients().size());
+		for (Ingredient ing : recipe.getIngredients()) {
+			if (ing.items().findFirst().get().value() == Items.AIR)
+				Ingredient.CONTENTS_STREAM_CODEC.encode(buf, EmptyIngredient.create());
+			else
+				Ingredient.CONTENTS_STREAM_CODEC.encode(buf, ing);
 		}
-
-		private static ImbunementTableRecipeRecipe fromNetwork(RegistryFriendlyByteBuf buf) {
-			NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readVarInt(), Ingredient.EMPTY);
-			inputs.replaceAll(ingredients -> Ingredient.CONTENTS_STREAM_CODEC.decode(buf));
-			List<ItemStack> outputs = NonNullList.withSize(buf.readVarInt(), ItemStack.EMPTY);
-			outputs.replaceAll(results -> ItemStack.STREAM_CODEC.decode(buf));
-			return new ImbunementTableRecipeRecipe(outputs, inputs);
-		}
-
-		private static void toNetwork(RegistryFriendlyByteBuf buf, ImbunementTableRecipeRecipe recipe) {
-			buf.writeVarInt(recipe.getIngredients().size());
-			for (Ingredient ing : recipe.getIngredients()) {
-				if (ing.getItems()[0].getItem() == Items.AIR)
-					Ingredient.CONTENTS_STREAM_CODEC.encode(buf, Ingredient.EMPTY);
-				else
-					Ingredient.CONTENTS_STREAM_CODEC.encode(buf, ing);
-			}
-			buf.writeVarInt(recipe.getResultItems().size());
-			for (ItemStack itemstack : recipe.getResultItems()) {
-				ItemStack.STREAM_CODEC.encode(buf, itemstack);
-			}
+		buf.writeVarInt(recipe.getResultItems().size());
+		for (ItemStackTemplate template : recipe.outputs) {
+			ItemStackTemplate.STREAM_CODEC.encode(buf, template);
 		}
 	}
 }

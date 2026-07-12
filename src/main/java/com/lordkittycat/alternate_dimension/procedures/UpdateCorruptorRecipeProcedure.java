@@ -1,8 +1,10 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.transfer.transaction.Transaction;
+import net.neoforged.neoforge.transfer.item.ItemUtil;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.energy.EnergyHandler;
+import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
@@ -13,7 +15,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.NonNullList;
+import net.minecraft.world.Container;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -21,21 +24,24 @@ import java.util.stream.Collectors;
 import java.util.List;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.CorruptorRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModRecipeTypes;
 
 public class UpdateCorruptorRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack result = ItemStack.EMPTY;
 		result = (new Object() {
 			public ItemStack getResult() {
-				if (world instanceof Level _lvl) {
-					net.minecraft.world.item.crafting.RecipeManager rm = _lvl.getRecipeManager();
-					List<CorruptorRecipeTypeRecipe> recipes = rm.getAllRecipesFor(CorruptorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
-					for (CorruptorRecipeTypeRecipe recipe : recipes) {
-						NonNullList<Ingredient> ingredients = recipe.getIngredients();
-						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
-							continue;
-						return recipe.getResultItems().get(0).copy();
-					}
+				List<CorruptorRecipeTypeRecipe> recipes = null;
+				if (world instanceof ServerLevel _lvl) {
+					recipes = _lvl.recipeAccess().recipeMap().byType(CorruptorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				} else {
+					recipes = AlternateDimensionModRecipeTypes.recipes.byType(CorruptorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				}
+				for (CorruptorRecipeTypeRecipe recipe : recipes) {
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						continue;
+					return recipe.getResultItems().get(0).copy();
 				}
 				return ItemStack.EMPTY;
 			}
@@ -55,9 +61,12 @@ public class UpdateCorruptorRecipeProcedure {
 			}
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "progress") > 100 && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 100) {
 				if (world instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
-					if (_entityStorage != null)
-						_entityStorage.extractEnergy(100, false);
+					if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
+						try (var _tx = Transaction.openRoot()) {
+							_energyHandler.extract(100, _tx);
+							_tx.commit();
+						}
+					}
 				}
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -69,16 +78,19 @@ public class UpdateCorruptorRecipeProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-					ItemStack _setstack = result.copy();
-					_setstack.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() + result.getCount());
-					_itemHandlerModifiable.setStackInSlot(1, _setstack);
+				if (world instanceof ServerLevel _serverLevel) {
+					BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+					if (_be instanceof Container _container) {
+						ItemStack _setstack = result.copy();
+						_setstack.setCount((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() + result.getCount());
+						_container.setItem(1, _setstack);
+					}
 				}
-				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-					int _slotid = 0;
-					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-					_stk.shrink(1);
-					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				if (world instanceof ServerLevel _serverLevel) {
+					BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+					if (_be instanceof Container _container) {
+						_container.getItem(0).shrink(1);
+					}
 				}
 			}
 		} else {
@@ -97,18 +109,17 @@ public class UpdateCorruptorRecipeProcedure {
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
 		if (world instanceof ILevelExtension ext) {
-			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
 			if (itemHandler != null)
-				return itemHandler.getStackInSlot(slot);
+				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
 	}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
 		if (level instanceof ILevelExtension levelExtension) {
-			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
-			if (energyStorage != null)
-				return energyStorage.getEnergyStored();
+			if (levelExtension.getCapability(Capabilities.Energy.BLOCK, pos, direction) instanceof EnergyHandler energyHandler)
+				return energyHandler.getAmountAsInt();
 		}
 		return 0;
 	}
@@ -116,7 +127,7 @@ public class UpdateCorruptorRecipeProcedure {
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
 	}
 }

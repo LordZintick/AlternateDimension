@@ -7,12 +7,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:shale_cobble"
-    },
-    "b": {
-      "item": "alternate_dimension:tool_rod"
-    }
+    "a": "alternate_dimension:shale_cobble",
+    "b": "alternate_dimension:tool_rod"
   },
   "result": {
     "id": "alternate_dimension:shale_axe",

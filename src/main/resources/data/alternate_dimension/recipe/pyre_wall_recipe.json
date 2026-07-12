@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:pyre_mantle"
-    }
+    "a": "alternate_dimension:pyre_mantle"
   },
   "result": {
     "id": "alternate_dimension:pyre_wall",

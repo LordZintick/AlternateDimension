@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/veridium_cobble",
     "top": "alternate_dimension:block/veridium_cobble",
     "side": "alternate_dimension:block/veridium_cobble"
-  },
-  "render_type": "solid"
+  }
 }

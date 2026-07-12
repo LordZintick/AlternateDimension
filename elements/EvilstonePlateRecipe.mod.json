@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
     "category": "ingot_presser_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      }
+      "CUSTOM:EvilstoneGem"
     ],
     "integers": [],
     "strings": [],
     "recipetype": "IngotPresserRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:EvilstonePlate"
-      }
+      "CUSTOM:EvilstonePlate"
     ],
     "resultCounts": [
       1

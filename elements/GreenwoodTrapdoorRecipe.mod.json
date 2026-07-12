@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 2,
     "group": "wooden_trapdoor",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      }
+      "CUSTOM:GreenwoodPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "REDSTONE",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:GreenwoodPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:GreenwoodPlanks",
+      "CUSTOM:GreenwoodPlanks",
+      "CUSTOM:GreenwoodPlanks",
+      "CUSTOM:GreenwoodPlanks",
+      "CUSTOM:GreenwoodPlanks",
+      "CUSTOM:GreenwoodPlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GreenwoodTrapdoor"
-    },
+    "recipeReturnStack": "CUSTOM:GreenwoodTrapdoor",
     "name": "greenwood_trapdoor_recipe",
     "namespace": "mod"
   }

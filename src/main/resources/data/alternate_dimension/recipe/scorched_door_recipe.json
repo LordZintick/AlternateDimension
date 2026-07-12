@@ -8,9 +8,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:scorched_planks"
-    }
+    "a": "alternate_dimension:scorched_planks"
   },
   "result": {
     "id": "alternate_dimension:scorched_door",

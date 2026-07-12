@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/rich_dirt",
     "particle": "alternate_dimension:block/rich_dirt"
-  },
-  "render_type": "solid"
+  }
 }

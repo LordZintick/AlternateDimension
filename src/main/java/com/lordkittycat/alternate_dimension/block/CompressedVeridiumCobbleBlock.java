@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class CompressedVeridiumCobbleBlock extends Block {
-	public CompressedVeridiumCobbleBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(4f, 35f).requiresCorrectToolForDrops());
+	public CompressedVeridiumCobbleBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.NETHERITE_BLOCK).strength(4f, 35f).requiresCorrectToolForDrops());
 	}
 }

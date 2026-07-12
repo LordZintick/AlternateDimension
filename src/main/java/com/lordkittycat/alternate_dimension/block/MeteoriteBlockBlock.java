@@ -11,8 +11,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.BurnEntityProcedure;
 
 public class MeteoriteBlockBlock extends Block {
-	public MeteoriteBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ANCIENT_DEBRIS).strength(5f, 100f).lightLevel(blockstate -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public MeteoriteBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.ANCIENT_DEBRIS).strength(5f, 100f).lightLevel(blockstate -> 15).requiresCorrectToolForDrops().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

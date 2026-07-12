@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:uranium_ingot"
-    }
+    "a": "alternate_dimension:uranium_ingot"
   },
   "result": {
     "id": "alternate_dimension:uranium_block",

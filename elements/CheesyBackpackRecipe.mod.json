@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Backpack"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheeseBlock"
-      }
+      "CUSTOM:Backpack",
+      "CUSTOM:ParmesanCheeseBlock"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -19,37 +15,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CheeseBlock"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:CheeseBlock"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:Backpack"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:CheeseBlock"
-      },
-      {
-        "value": "CUSTOM:ParmesanCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:CheeseBlock"
-      }
+      "CUSTOM:CheeseBlock",
+      "CUSTOM:ParmesanCheeseBlock",
+      "CUSTOM:CheeseBlock",
+      "CUSTOM:ParmesanCheeseBlock",
+      "CUSTOM:Backpack",
+      "CUSTOM:ParmesanCheeseBlock",
+      "CUSTOM:CheeseBlock",
+      "CUSTOM:ParmesanCheeseBlock",
+      "CUSTOM:CheeseBlock"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CheesyBackpack"
-    },
+    "recipeReturnStack": "CUSTOM:CheesyBackpack",
     "name": "cheesy_backpack_recipe",
     "namespace": "mod"
   }

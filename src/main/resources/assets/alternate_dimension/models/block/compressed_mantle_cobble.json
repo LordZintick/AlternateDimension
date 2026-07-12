@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/pyric_cobble_compressed",
     "particle": "alternate_dimension:block/pyric_cobble_compressed"
-  },
-  "render_type": "solid"
+  }
 }

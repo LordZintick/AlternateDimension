@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PyroliteChunk"
-      }
+      "CUSTOM:PyroliteChunk"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      },
-      {
-        "value": "CUSTOM:PyroliteChunk"
-      },
-      {
-        "value": "CUSTOM:Pyrobricks"
-      }
+      "CUSTOM:Pyrobricks",
+      "CUSTOM:Pyrobricks",
+      "CUSTOM:Pyrobricks",
+      "CUSTOM:Pyrobricks",
+      "",
+      "CUSTOM:Pyrobricks",
+      "CUSTOM:Pyrobricks",
+      "CUSTOM:PyroliteChunk",
+      "CUSTOM:Pyrobricks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ItemIncinerator"
-    },
+    "recipeReturnStack": "CUSTOM:ItemIncinerator",
     "name": "item_incinerator_recipe",
     "namespace": "mod"
   }

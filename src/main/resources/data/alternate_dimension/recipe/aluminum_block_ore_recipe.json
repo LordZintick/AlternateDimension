@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:aluminum_block"
-    }
+    "alternate_dimension:aluminum_block"
   ],
   "result": {
     "id": "alternate_dimension:aluminum_ingot",

@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/banana_bushel",
     "particle": "alternate_dimension:block/banana_bushel"
-  },
-  "render_type": "cutout"
+  }
 }

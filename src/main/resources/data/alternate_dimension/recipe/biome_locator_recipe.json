@@ -7,18 +7,10 @@
     "bdb"
   ],
   "key": {
-    "a": {
-      "tag": "alternate_dimension:altdim_logs"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "c": {
-      "item": "alternate_dimension:magic_dust"
-    },
-    "d": {
-      "tag": "alternate_dimension:glass_panes"
-    }
+    "a": "#alternate_dimension:altdim_logs",
+    "b": "alternate_dimension:aluminum_ingot",
+    "c": "alternate_dimension:magic_dust",
+    "d": "#alternate_dimension:glass_panes"
   },
   "result": {
     "id": "alternate_dimension:biome_locator",

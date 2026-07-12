@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class CorruptLanternBlock extends Block {
-	public CorruptLanternBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(2f, 1f).lightLevel(blockstate -> 15).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public CorruptLanternBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GLASS).strength(2f, 1f).lightLevel(blockstate -> 15).requiresCorrectToolForDrops().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 }

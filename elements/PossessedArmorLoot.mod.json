@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TitaniumArmor.helmet"
-            },
+            "item": "CUSTOM:TitaniumArmor.helmet",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TitaniumArmor.body"
-            },
+            "item": "CUSTOM:TitaniumArmor.body",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TitaniumArmor.legs"
-            },
+            "item": "CUSTOM:TitaniumArmor.legs",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TitaniumArmor.boots"
-            },
+            "item": "CUSTOM:TitaniumArmor.boots",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumArmor.helmet"
-            },
+            "item": "CUSTOM:AluminumArmor.helmet",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumArmor.body"
-            },
+            "item": "CUSTOM:AluminumArmor.body",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumArmor.legs"
-            },
+            "item": "CUSTOM:AluminumArmor.legs",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -111,9 +97,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumArmor.boots"
-            },
+            "item": "CUSTOM:AluminumArmor.boots",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -125,9 +109,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhosphoriumArmor.helmet"
-            },
+            "item": "CUSTOM:PhosphoriumArmor.helmet",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -139,9 +121,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhosphoriumArmor.body"
-            },
+            "item": "CUSTOM:PhosphoriumArmor.body",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -153,9 +133,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhosphoriumArmor.legs"
-            },
+            "item": "CUSTOM:PhosphoriumArmor.legs",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -167,9 +145,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhosphoriumArmor.boots"
-            },
+            "item": "CUSTOM:PhosphoriumArmor.boots",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -190,9 +166,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AluminumNugget"
-            },
+            "item": "CUSTOM:AluminumNugget",
             "weight": 4,
             "minCount": 3,
             "maxCount": 9,
@@ -204,9 +178,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TitaniumNugget"
-            },
+            "item": "CUSTOM:TitaniumNugget",
             "weight": 1,
             "minCount": 1,
             "maxCount": 4,

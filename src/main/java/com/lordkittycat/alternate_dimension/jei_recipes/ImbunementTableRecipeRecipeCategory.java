@@ -1,12 +1,13 @@
 package com.lordkittycat.alternate_dimension.jei_recipes;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.NonNullList;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.Minecraft;
 
+import mezz.jei.api.recipe.types.IRecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.IFocusGroup;
@@ -22,10 +23,11 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<ImbunementTableRecipeRecipe> {
-	public final static ResourceLocation UID = ResourceLocation.parse("alternate_dimension:imbunement_table_recipe");
-	public final static ResourceLocation TEXTURE = ResourceLocation.parse("alternate_dimension:textures/screens/imbunement_jei_gui.png");
+	public final static Identifier UID = Identifier.parse("alternate_dimension:imbunement_table_recipe");
+	public final static Identifier TEXTURE = Identifier.parse("alternate_dimension:textures/screens/imbunement_jei_gui.png");
 	private final IDrawable background;
 	private final IDrawable icon;
+
 	private final Minecraft mc = Minecraft.getInstance();
 
 	public ImbunementTableRecipeRecipeCategory(IGuiHelper helper) {
@@ -34,7 +36,7 @@ public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<Imbu
 	}
 
 	@Override
-	public mezz.jei.api.recipe.RecipeType<ImbunementTableRecipeRecipe> getRecipeType() {
+	public IRecipeType<ImbunementTableRecipeRecipe> getRecipeType() {
 		return AlternateDimensionModJeiPlugin.ImbunementTableRecipe_Type;
 	}
 
@@ -64,9 +66,8 @@ public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<Imbu
 	}
 
 	@Override
-	public void draw(ImbunementTableRecipeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+	public void draw(ImbunementTableRecipeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphicsExtractor guiGraphics, double mouseX, double mouseY) {
 		this.background.draw(guiGraphics);
-
 	}
 
 	@Override
@@ -76,8 +77,8 @@ public class ImbunementTableRecipeRecipeCategory implements IRecipeCategory<Imbu
 		for (int i = 0; i < recipeOutputs.size(); i++) {
 			actualOutputs.set(i, recipeOutputs.get(i));
 		}
-		builder.addSlot(RecipeIngredientRole.INPUT, 48, 22).addIngredients(recipe.getIngredients().get(0));
-		builder.addSlot(RecipeIngredientRole.INPUT, 48, 58).addIngredients(recipe.getIngredients().get(1));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 122, 41).addItemStack(actualOutputs.get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 48, 22).add(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 48, 58).add(recipe.getIngredients().get(1));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 122, 41).add(actualOutputs.get(0));
 	}
 }

@@ -7,15 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:phosphorus"
-    },
-    "b": {
-      "tag": "minecraft:pickaxes"
-    },
-    "c": {
-      "item": "alternate_dimension:miners_pet"
-    }
+    "a": "alternate_dimension:phosphorus",
+    "b": "#minecraft:pickaxes",
+    "c": "alternate_dimension:miners_pet"
   },
   "result": {
     "id": "alternate_dimension:instatunnel",

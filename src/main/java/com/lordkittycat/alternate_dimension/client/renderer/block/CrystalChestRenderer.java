@@ -5,16 +5,24 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.state.level.CameraRenderState;
+import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
+import net.minecraft.client.renderer.blockentity.state.BlockEntityRenderState;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HierarchicalModel;
+import net.minecraft.client.animation.KeyframeAnimation;
+import net.minecraft.client.animation.AnimationDefinition;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
+import java.util.Map;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 
 import com.lordkittycat.alternate_dimension.procedures.CheckOpenProcedure;
@@ -25,31 +33,39 @@ import com.lordkittycat.alternate_dimension.client.model.Modelcrystal_chest;
 import com.lordkittycat.alternate_dimension.block.entity.CrystalChestBlockEntity;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class CrystalChestRenderer implements BlockEntityRenderer<CrystalChestBlockEntity> {
+public class CrystalChestRenderer implements BlockEntityRenderer<CrystalChestBlockEntity, CrystalChestRenderer.CustomRenderState> {
 	private final CustomHierarchicalModel model;
-	private final ResourceLocation texture;
+	private final Identifier texture;
 
 	CrystalChestRenderer(BlockEntityRendererProvider.Context context) {
 		this.model = new CustomHierarchicalModel(context.bakeLayer(Modelcrystal_chest.LAYER_LOCATION));
-		this.texture = ResourceLocation.parse("alternate_dimension:textures/block/crystal_chest.png");
+		this.texture = Identifier.parse("alternate_dimension:textures/block/crystal_chest.png");
 	}
 
-	private void updateRenderState(CrystalChestBlockEntity blockEntity) {
+	@Override
+	public CustomRenderState createRenderState() {
+		return new CustomRenderState();
+	}
+
+	@Override
+	public void extractRenderState(CrystalChestBlockEntity blockEntity, CustomRenderState state, float partialTicks, Vec3 cameraPosition, ModelFeatureRenderer.CrumblingOverlay breakProgress) {
+		BlockEntityRenderState.extractBase(blockEntity, state, breakProgress);
+		state.blockEntity = blockEntity;
+		state.blockState = blockEntity.getBlockState();
 		int tickCount = (int) blockEntity.getLevel().getGameTime();
+		state.entityRenderState.ageInTicks = tickCount + partialTicks;
 		blockEntity.animationState0.animateWhen(CheckOpenProcedure.execute(blockEntity.getLevel(), blockEntity.getBlockPos().getX(), blockEntity.getBlockPos().getY(), blockEntity.getBlockPos().getZ()), tickCount);
 		blockEntity.animationState1.animateWhen(CheckClosedProcedure.execute(blockEntity.getLevel(), blockEntity.getBlockPos().getX(), blockEntity.getBlockPos().getY(), blockEntity.getBlockPos().getZ()), tickCount);
 	}
 
 	@Override
-	public void render(CrystalChestBlockEntity blockEntity, float partialTick, PoseStack poseStack, MultiBufferSource renderer, int light, int overlayLight) {
-		updateRenderState(blockEntity);
+	public void submit(CustomRenderState renderState, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, CameraRenderState cameraRenderState) {
 		poseStack.pushPose();
 		poseStack.scale(-1, -1, 1);
 		poseStack.translate(-0.5, -0.5, 0.5);
 		poseStack.translate(0, -1, 0);
-		VertexConsumer builder = renderer.getBuffer(RenderType.entityCutout(texture));
-		model.setupBlockEntityAnim(blockEntity, blockEntity.getLevel().getGameTime() + partialTick);
-		model.renderToBuffer(poseStack, builder, light, overlayLight);
+		model.setupBlockEntityAnim(renderState.blockEntity, renderState.entityRenderState);
+		submitNodeCollector.submitModel(this.model, renderState.entityRenderState, poseStack, RenderTypes.entityCutout(texture), renderState.lightCoords, OverlayTexture.NO_OVERLAY, 0, null);
 		poseStack.popPose();
 	}
 
@@ -58,35 +74,35 @@ public class CrystalChestRenderer implements BlockEntityRenderer<CrystalChestBlo
 		event.registerBlockEntityRenderer(AlternateDimensionModBlockEntities.CRYSTAL_CHEST.get(), CrystalChestRenderer::new);
 	}
 
+	public static class CustomRenderState extends BlockEntityRenderState {
+		protected final LivingEntityRenderState entityRenderState = new LivingEntityRenderState();
+		protected CrystalChestBlockEntity blockEntity;
+		protected BlockState blockState;
+	}
+
 	private static final class CustomHierarchicalModel extends Modelcrystal_chest {
-		private final ModelPart root;
-		private final BlockEntityHierarchicalModel animator = new BlockEntityHierarchicalModel();
+		private final KeyframeAnimation keyframeAnimation0;
+		private final KeyframeAnimation keyframeAnimation1;
 
 		public CustomHierarchicalModel(ModelPart root) {
 			super(root);
-			this.root = root;
+			this.keyframeAnimation0 = safeBake(crystal_chestAnimation.open);
+			this.keyframeAnimation1 = safeBake(crystal_chestAnimation.close);
 		}
 
-		public void setupBlockEntityAnim(CrystalChestBlockEntity blockEntity, float ageInTicks) {
-			animator.setupBlockEntityAnim(blockEntity, ageInTicks);
-			super.setupAnim(null, 0, 0, ageInTicks, 0, 0);
+		private KeyframeAnimation safeBake(AnimationDefinition source) {
+			try {
+				return source.bake(root);
+			} catch (IllegalArgumentException e) {
+				return new AnimationDefinition(0, false, Map.of()).bake(root);
+			}
 		}
 
-		private class BlockEntityHierarchicalModel extends HierarchicalModel<Entity> {
-			@Override
-			public ModelPart root() {
-				return root;
-			}
-
-			@Override
-			public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			}
-
-			public void setupBlockEntityAnim(CrystalChestBlockEntity blockEntity, float ageInTicks) {
-				animator.root().getAllParts().forEach(ModelPart::resetPose);
-				animator.animate(blockEntity.animationState0, crystal_chestAnimation.open, ageInTicks, 1f);
-				animator.animate(blockEntity.animationState1, crystal_chestAnimation.close, ageInTicks, 1f);
-			}
+		public void setupBlockEntityAnim(CrystalChestBlockEntity blockEntity, LivingEntityRenderState state) {
+			this.root().getAllParts().forEach(ModelPart::resetPose);
+			this.keyframeAnimation0.apply(blockEntity.animationState0, state.ageInTicks, 1f);
+			this.keyframeAnimation1.apply(blockEntity.animationState1, state.ageInTicks, 1f);
+			super.setupAnim(state);
 		}
 	}
 }

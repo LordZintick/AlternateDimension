@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.client.screens;
 
-import org.checkerframework.checker.units.qual.h;
-
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -33,7 +31,7 @@ public class FuzzySocksChargeOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (CheckForFuzzySocksProcedure.execute(entity)) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ChargeDisplayProcedure.execute(entity), w / 2 + -206, h / 2 + 102, -11877643, false);
 		}

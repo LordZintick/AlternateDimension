@@ -1,7 +1,8 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.transfer.item.ItemUtil;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
@@ -11,12 +12,14 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.Container;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class GeneratorRefuelProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double previousRecipe = 0;
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getBurnTime(null) > 0 && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
+		if ((world instanceof Level _levelFV1 ? (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getBurnTime(null, _levelFV1.fuelValues()) : 0) > 0 && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
 			{
 				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -29,25 +32,26 @@ public class GeneratorRefuelProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putDouble("burnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") + (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getBurnTime(null) / 4));
+					_blockEntity.getPersistentData().putDouble("burnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime")
+							+ (world instanceof Level _levelFV6 ? (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getBurnTime(null, _levelFV6.fuelValues()) : 0) / 4));
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-				int _slotid = 0;
-				ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-				_stk.shrink(1);
-				_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+			if (world instanceof ServerLevel _serverLevel) {
+				BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
+				if (_be instanceof Container _container) {
+					_container.getItem(0).shrink(1);
+				}
 			}
 		}
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
 		if (world instanceof ILevelExtension ext) {
-			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
 			if (itemHandler != null)
-				return itemHandler.getStackInSlot(slot);
+				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
 	}
@@ -55,7 +59,7 @@ public class GeneratorRefuelProcedure {
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
+			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
 	}
 }

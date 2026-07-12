@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:CoolantRod"
-      }
+      "CUSTOM:CoolantRod"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:CoolantRod"
-      },
-      {
-        "value": "CUSTOM:CoolantRod"
-      },
-      {
-        "value": "CUSTOM:CoolantRod"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      },
-      {
-        "value": "CUSTOM:AluminumPlate"
-      }
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:CoolantRod",
+      "CUSTOM:CoolantRod",
+      "CUSTOM:CoolantRod",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:AluminumPlate",
+      "CUSTOM:AluminumPlate"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CoolantRods"
-    },
+    "recipeReturnStack": "CUSTOM:CoolantRods",
     "name": "coolant_rods_recipe",
     "namespace": "mod"
   }

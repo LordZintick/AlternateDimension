@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.SoundType;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 
 public class GreenwoodSignBlock extends StandingSignBlock {
-	public GreenwoodSignBlock() {
-		super(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE, BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+	public GreenwoodSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE, properties.sound(SoundType.WOOD).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 }

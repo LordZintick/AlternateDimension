@@ -8,7 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
@@ -22,9 +22,9 @@ public class FinishPortalWandEffectsProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
 		if (world instanceof ServerLevel _level)
@@ -35,10 +35,10 @@ public class FinishPortalWandEffectsProcedure {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 1,
-						entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1);
+						entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1);
 			} else {
 				_level.playLocalSound(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 1),
-						entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1, false);
+						entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.portal.trigger")), SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
 		world.setBlock(BlockPos.containing(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 1,
@@ -59,10 +59,12 @@ public class FinishPortalWandEffectsProcedure {
 		}
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 2), entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ);
+			double _tx = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX;
+			double _ty = (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 2);
+			double _tz = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ;
+			_ent.teleportTo(_tx, _ty, _tz);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnX, (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnY + 2),
-						entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).spawnZ, _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 		}
 	}
 }

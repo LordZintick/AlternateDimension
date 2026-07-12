@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/blue_mushroom_block",
     "particle": "alternate_dimension:block/blue_mushroom_block"
-  },
-  "render_type": "solid"
+  }
 }

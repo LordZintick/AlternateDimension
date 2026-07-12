@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Osmium Heart",
@@ -16,9 +16,7 @@
     "modifiers": [
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "ENTITY_GRAVITY"
-        },
+        "attribute": "ENTITY_GRAVITY",
         "amount": 0.03,
         "operation": "ADD_VALUE"
       }

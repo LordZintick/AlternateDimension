@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:UraniumIngot"
-      }
+      "CUSTOM:UraniumIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      }
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:UraniumBlock"
-    },
+    "recipeReturnStack": "CUSTOM:UraniumBlock",
     "name": "uranium_block_compacting",
     "namespace": "mod"
   }

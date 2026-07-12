@@ -42,8 +42,8 @@ public class OpenNuclearReactorGUIProcedure {
 				}, _bpos);
 			}
 		} else {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Needs coolant rods on top and bottom to function!"), true);
+			if (entity instanceof ServerPlayer _player)
+				_player.sendSystemMessage(Component.literal("Needs coolant rods on top and bottom to function!"), true);
 		}
 	}
 }

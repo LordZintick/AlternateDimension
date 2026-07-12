@@ -1,12 +1,8 @@
 {
   "type": "alternate_dimension:imbunement_table_recipe",
   "ingredients": [
-    {
-      "item": "alternate_dimension:magic_dust_block"
-    },
-    {
-      "item": "alternate_dimension:light_blue_gummy_bear"
-    }
+    "alternate_dimension:magic_dust_block",
+    "alternate_dimension:light_blue_gummy_bear"
   ],
   "outputs": [
     {

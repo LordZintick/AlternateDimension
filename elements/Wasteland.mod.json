@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Wasteland",
-    "groundBlock": {
-      "value": "CUSTOM:ScorchedEarth"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:ScorchedEarth"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:ScorchedEarth",
+    "undergroundBlock": "CUSTOM:ScorchedEarth",
+    "underwaterBlock": "",
     "airColor": {
       "value": -7517,
       "falpha": 0.0
@@ -36,23 +30,13 @@
       "value": -6056587,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:alternate_dimension_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "LAVA"
-    },
+    "particleToSpawn": "LAVA",
     "particlesProbability": 0.19999999999999998,
     "rainingPossibility": 0.0,
     "temperature": 2.0,
@@ -87,18 +71,10 @@
     "vanillaTreeType": "Savanna trees",
     "treeType": 1,
     "minHeight": 10,
-    "treeStem": {
-      "value": "CUSTOM:ScorchedLog"
-    },
-    "treeBranch": {
-      "value": "Blocks.AIR"
-    },
-    "treeVines": {
-      "value": "Blocks.AIR"
-    },
-    "treeFruits": {
-      "value": "CUSTOM:DriedFruit"
-    },
+    "treeStem": "CUSTOM:ScorchedLog",
+    "treeBranch": "Blocks.AIR",
+    "treeVines": "Blocks.AIR",
+    "treeFruits": "CUSTOM:DriedFruit",
     "defaultFeatures": [
       "Caves"
     ],

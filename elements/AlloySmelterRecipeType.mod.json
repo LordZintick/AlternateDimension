@@ -1,17 +1,13 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "alloy_smelter_recipe_gui.png",
     "width": 176,
     "height": 92,
-    "icon": {
-      "value": "CUSTOM:AlloySmelter"
-    },
+    "icon": "CUSTOM:AlloySmelter",
     "craftingtables": [
-      {
-        "value": "CUSTOM:AlloySmelter"
-      }
+      "CUSTOM:AlloySmelter"
     ],
     "enableCraftingtable": true,
     "enableIntList": false,

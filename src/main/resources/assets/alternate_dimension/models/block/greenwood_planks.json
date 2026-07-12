@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/greenwood_planks",
     "particle": "alternate_dimension:block/greenwood_planks"
-  },
-  "render_type": "solid"
+  }
 }

@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:holystone_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:holystone_gear"
-    }
+    "a": "alternate_dimension:holystone_plate",
+    "b": "alternate_dimension:holystone_gear"
   },
   "result": {
     "id": "alternate_dimension:holystone_gearbox",

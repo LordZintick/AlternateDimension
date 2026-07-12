@@ -15,8 +15,8 @@ import net.minecraft.core.Direction;
 public class PlantStemBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-	public PlantStemBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STEM).strength(1.2f, 5f));
+	public PlantStemBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.STEM).strength(1.2f, 5f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
@@ -28,7 +28,10 @@ public class PlantStemBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(AXIS, context.getClickedFace().getAxis());
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(AXIS, context.getClickedFace().getAxis());
 	}
 
 	@Override
