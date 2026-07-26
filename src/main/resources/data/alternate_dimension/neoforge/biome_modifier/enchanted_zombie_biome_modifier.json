@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "alternate_dimension:enchanted_forest",
+  "biomes": "#alternate_dimension:is_familiar_realm",
   "spawners": {
     "type": "alternate_dimension:enchanted_zombie",
     "weight": 20,

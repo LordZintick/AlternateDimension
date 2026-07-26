@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "bcb",
-    "ded"
+    "aba",
+    "cdc",
+    "efe"
   ],
   "key": {
     "a": "alternate_dimension:magic_dust",
-    "b": "alternate_dimension:aluminum_ingot",
-    "c": "#alternate_dimension:crafting_tables",
-    "d": "#alternate_dimension:gems",
-    "e": "#alternate_dimension:gem_blocks"
+    "b": "alternate_dimension:activated_mana_stone",
+    "c": "alternate_dimension:aluminum_ingot",
+    "d": "#alternate_dimension:crafting_tables",
+    "e": "#alternate_dimension:gems",
+    "f": "#alternate_dimension:gem_blocks"
   },
   "result": {
     "id": "alternate_dimension:imbunement_table",

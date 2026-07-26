@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "running=true": {
+      "model": "alternate_dimension:block/mana_synthesizer_0"
+    },
+    "running=false": {
+      "model": "alternate_dimension:block/mana_synthesizer"
+    }
+  }
+}

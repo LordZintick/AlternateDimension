@@ -5,12 +5,14 @@ import com.github.lordzintick.item.ring.RingItem;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
+import com.lordkittycat.alternate_dimension.jei_recipes.EmptyIngredient;
 import com.lordkittycat.alternate_dimension.jei_recipes.ImbunementTableRecipeRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.core.Holder;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -39,12 +41,14 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
 
         rings.forEach(ring -> RingItem.RING_INGREDIENTS.forEach((ingredientID, effect) -> {
             Item ingredientItem = BuiltInRegistries.ITEM.getOrThrow(ResourceKey.create(BuiltInRegistries.ITEM.key(), ingredientID)).value();
-            ItemStack outputRing = ring.toStack();
-            outputRing.set(AlternateDimensionModComponents.RING_EFFECT, new RingEffectComponent(effect));
-            ringRecipes.add(new ImbunementTableRecipeRecipe(List.of(new ItemStackTemplate(outputRing.getItem())), NonNullList.of(
-                    Ingredient.of(),
+            ItemStackTemplate outputRing = new ItemStackTemplate(ring);
+            outputRing.apply(DataComponentPatch.builder()
+                            .set(AlternateDimensionModComponents.RING_EFFECT.get(), new RingEffectComponent(effect))
+                    .build());
+            ringRecipes.add(new ImbunementTableRecipeRecipe(List.of(outputRing), List.of(
+                    Ingredient.of(ring.get()),
                     Ingredient.of(ingredientItem),
-                    Ingredient.of(ring.get())
+                    EmptyIngredient.create()
             )));
         }));
 

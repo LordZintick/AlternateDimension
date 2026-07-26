@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:phosphorus"
+  ],
+  "integers": [
+    1,
+    2
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:phosphorium_ingot",
+      "count": 1
+    }
+  ]
+}

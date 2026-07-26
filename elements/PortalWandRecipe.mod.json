@@ -6,7 +6,7 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:MagicDust"
+      "CUSTOM:ActivatedManaStone"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,7 +16,7 @@
     "recipeSlots": [
       "",
       "",
-      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ActivatedManaStone",
       "",
       "CUSTOM:ToolRod",
       "",

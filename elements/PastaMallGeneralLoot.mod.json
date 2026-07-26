@@ -91,10 +91,10 @@
         "entries": [
           {
             "type": "item",
-            "item": "Items.BREAD",
-            "weight": 2,
-            "minCount": 2,
-            "maxCount": 5,
+            "item": "CUSTOM:BarleyBread",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -103,10 +103,58 @@
           },
           {
             "type": "item",
-            "item": "Items.BOWL",
+            "item": "CUSTOM:ScorchedBowl",
             "weight": 1,
             "minCount": 1,
-            "maxCount": 2,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:RedwoodBowl",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:PlantyBowl",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:AzureBowl",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:PineBowl",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -124,7 +172,7 @@
         "entries": [
           {
             "type": "item",
-            "item": "Items.IRON_NUGGET",
+            "item": "CUSTOM:AluminumNugget",
             "weight": 10,
             "minCount": 2,
             "maxCount": 8,
@@ -136,7 +184,7 @@
           },
           {
             "type": "item",
-            "item": "Items.GOLD_NUGGET",
+            "item": "CUSTOM:TitaniumNugget",
             "weight": 5,
             "minCount": 1,
             "maxCount": 4,
@@ -148,7 +196,7 @@
           },
           {
             "type": "item",
-            "item": "Items.DIAMOND",
+            "item": "CUSTOM:DormantManaStone",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 0.25,
+  "cookingtime": 10,
+  "ingredient": "alternate_dimension:corn",
+  "result": {
+    "id": "alternate_dimension:popcorn"
+  }
+}

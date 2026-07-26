@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north,type=top": {
+      "model": "alternate_dimension:block/item_elevator_0"
+    },
+    "facing=north,type=shaft": {
+      "model": "alternate_dimension:block/item_elevator_1"
+    },
+    "facing=north,type=bottom": {
+      "model": "alternate_dimension:block/item_elevator"
+    },
+    "facing=east,type=top": {
+      "model": "alternate_dimension:block/item_elevator_0",
+      "y": 90
+    },
+    "facing=east,type=shaft": {
+      "model": "alternate_dimension:block/item_elevator_1",
+      "y": 90
+    },
+    "facing=east,type=bottom": {
+      "model": "alternate_dimension:block/item_elevator",
+      "y": 90
+    },
+    "facing=south,type=top": {
+      "model": "alternate_dimension:block/item_elevator_0",
+      "y": 180
+    },
+    "facing=south,type=shaft": {
+      "model": "alternate_dimension:block/item_elevator_1",
+      "y": 180
+    },
+    "facing=south,type=bottom": {
+      "model": "alternate_dimension:block/item_elevator",
+      "y": 180
+    },
+    "facing=west,type=top": {
+      "model": "alternate_dimension:block/item_elevator_0",
+      "y": 270
+    },
+    "facing=west,type=shaft": {
+      "model": "alternate_dimension:block/item_elevator_1",
+      "y": 270
+    },
+    "facing=west,type=bottom": {
+      "model": "alternate_dimension:block/item_elevator",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:magical_casing"
+  },
+  "result": {
+    "id": "alternate_dimension:mana_tank",
+    "count": 1
+  }
+}

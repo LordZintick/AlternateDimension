@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aca",
+    "ba "
+  ],
+  "key": {
+    "a": "alternate_dimension:cloth",
+    "b": "alternate_dimension:aluminum_gear",
+    "c": "alternate_dimension:aluminum_nugget"
+  },
+  "result": {
+    "id": "alternate_dimension:drivetrain_belt",
+    "count": 4
+  }
+}

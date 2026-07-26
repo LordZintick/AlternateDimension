@@ -1,50 +1,50 @@
-/locate biome alternate_dimension:wasteland
-/tp @s 1788 79 -1275
-/locate biome alternate_dimension:wasteland
-/tp @s 181 70 -312
-/effect give Dev minecraft:night_vision infinite 255 true
-/meteor cooldown
-/meteor cooldown get
-/meteor pos
-/meteor spawn
-/meteor pos
-/meteor cooldown get
-/tp Dev 162 ~ -290
-/meteor cooldown
-/meteor cooldown get
-/setblock 158 65 -516 alternate_dimension:candyfloss_box{LootTable:"alternate_dimension:chests/waffle_house_loot"}
-/effect give Dev minecraft:night_vision infinite 255 true
-/effect clear Dev
-/time set day
-/gamemode survival
-/gamemode creative
-/summon alternate_dimension:spore_spreader
-/time set day
-/effect give Dev minecraft:night_vision infinite 255 true
-/time set 11000
-/execute in alternate_dimension:eleroth run time set 11000t
-/time query time
-/time of minecraft:overworld query
 /gamerule keep_inventory true
-/time query
-/time query time
-/time query gametime
-/time set minecraft:day
-/time set minecraft:midnight
-/time set minecraft:day
-/event time get
-/event type get
-/event start blood_moon 12000
-/time set minecraft:midnight
-/event time get
-/event start 1
-/event start e 1
-/event time get
-/event type get
-/data get entity Dev
+/data get block 223 65 -358
+/data get block 219 64 -358
+/data get block 218 64 -358
+/data get block 217 63 -362
+/data get block 217 64 -362
+/data get block 217 63 -362
 /time set day
-/time set 1000
-/time set minecraft:midnight
-/kill @e[type=!minecraft:player]
-/spawnpoint Dev ~ ~ ~
-/effect give Dev minecraft:saturation 20
+/data get block 217 62 -356
+/setblock ~ ~ ~ alternate_dimension:mana_provider[facing=up]
+/tp @n[type=item]
+/tp @n[type=item] ~ ~-3 ~
+/tp @n[type=item] ~ ~-1 ~
+/setblock ~ ~-1 ~ alternate_dimension:fuser[facing=east]
+/data get block 217 64 -361
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1}]}
+/data get block 217 64 -361
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:raw_quartz", count:1}]}
+/data get block 220 63 -362
+/data get block 220 63 -362\
+/data get block 220 63 -362
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}]}
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
+/data get block 220 63 -362
+/data get block 217 64 -361
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
+/data get block 217 64 -361
+/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
+/data get block 217 64 -361
+/data get block 220 63 -360
+/data merge block 220 63 -360 {NeoForgeData: {progress: 99d}}
+/data get block 220 63 -360
+/data merge block 220 63 -360 {NeoForgeData: {progress: 50d}}
+/data get block 220 63 -360
+/data get block 224 63 -361
+/time set day
+/data get block 220 64 -359
+/time set day
+/data get block 221 64 -359
+/data get block 222 65 -359
+/data get block 221 63 -359
+/fill 265 73 -358
+/fill 265 73 -358 256 73 -371 alternate_dimension:pure_bricks
+/setblock ~ ~ ~ alternate_dimension:pine_box{LootTable:"alternate_dimension:chests/kitchen_barrel_loot"}
+/setblock ~ ~ ~ alternate_dimension:pine_box{LootTable:"alternate_dimension:chests/pasta_mall_general_loot"}
+/tick sprint 60s
+/tick sprint 240s
+/fill 256 74 -358
+/fill 256 74 -358 265 74 -371 alternate_dimension:corrupt_brick_slab[type=bottom]

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:DormantManaStone"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:DormantManaStone",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ManaCrystal"
+    ],
+    "recipeReturnStack": "CUSTOM:ActivatedManaStone",
+    "name": "mana_stone_activation_recipe",
+    "namespace": "mod"
+  }
+}

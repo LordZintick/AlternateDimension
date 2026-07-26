@@ -38,7 +38,7 @@ vignette:false
 weatherRadius:5
 autoJump:false
 rotateWithMinecart:false
-operatorItemsTab:false
+operatorItemsTab:true
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -204,7 +204,7 @@ key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_music:0.5598591549295775
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

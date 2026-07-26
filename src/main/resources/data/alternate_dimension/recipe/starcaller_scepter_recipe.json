@@ -1,7 +1,7 @@
 {
   "type": "alternate_dimension:elemental_infuser_recipe_type",
   "ingredients": [
-    "alternate_dimension:portal_wand",
+    "alternate_dimension:graphite_rod",
     "alternate_dimension:fire_essence",
     "alternate_dimension:life_essence",
     "alternate_dimension:lightning_bottle",

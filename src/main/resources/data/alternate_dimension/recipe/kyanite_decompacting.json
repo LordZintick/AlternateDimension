@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:kyanite_block"
+  ],
+  "result": {
+    "id": "alternate_dimension:kyanite_crystal",
+    "count": 4
+  }
+}

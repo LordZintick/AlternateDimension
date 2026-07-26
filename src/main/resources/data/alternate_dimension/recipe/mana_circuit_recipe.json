@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:photolithographic_microfabricator_recipe_type",
+  "ingredients": [
+    "alternate_dimension:mana_crystal"
+  ],
+  "integers": [
+    2
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:mana_circuit",
+      "count": 1
+    }
+  ]
+}

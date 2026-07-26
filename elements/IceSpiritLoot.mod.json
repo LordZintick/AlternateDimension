@@ -34,18 +34,6 @@
         "entries": [
           {
             "type": "item",
-            "item": "CUSTOM:CoolantRod",
-            "weight": 1,
-            "minCount": 0,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
             "item": "CUSTOM:IceCreamBlock",
             "weight": 3,
             "minCount": 2,

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cda",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:drivetrain_belt",
+    "c": "alternate_dimension:importer",
+    "d": "alternate_dimension:machine_casing"
+  },
+  "result": {
+    "id": "alternate_dimension:item_elevator",
+    "count": 4
+  }
+}

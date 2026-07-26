@@ -6,7 +6,8 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:MinersPet"
+      "CUSTOM:MinersPet",
+      "CUSTOM:Phosphorus"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,

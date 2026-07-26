@@ -2,8 +2,12 @@
   "replace": false,
   "values": [
     "alternate_dimension:sapphire",
+    "alternate_dimension:tourmaline",
+    "alternate_dimension:jade",
     "alternate_dimension:ruby",
     "alternate_dimension:raw_quartz",
-    "alternate_dimension:topaz"
+    "alternate_dimension:topaz",
+    "alternate_dimension:onyx",
+    "alternate_dimension:kyanite_crystal"
   ]
 }

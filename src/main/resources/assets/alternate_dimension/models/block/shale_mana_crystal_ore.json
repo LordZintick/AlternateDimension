@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/shale_mana_crystal_ore",
+    "particle": "alternate_dimension:block/shale_mana_crystal_ore"
+  }
+}

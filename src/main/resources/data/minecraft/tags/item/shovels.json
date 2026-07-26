@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:mantle_shovel",
+    "alternate_dimension:holystone_shovel",
     "alternate_dimension:titanium_shovel",
     "alternate_dimension:planty_shovel",
     "alternate_dimension:veridium_shovel",
@@ -14,6 +15,7 @@
     "alternate_dimension:mythril_shovel",
     "alternate_dimension:mushy_shovel",
     "alternate_dimension:shroomium_shovel",
+    "alternate_dimension:evilstone_shovel",
     "alternate_dimension:aluminum_shovel"
   ]
 }

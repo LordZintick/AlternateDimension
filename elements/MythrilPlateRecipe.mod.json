@@ -2,13 +2,15 @@
   "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "ingot_presser_recipe_type",
+    "category": "compressor_recipe_type",
     "ingredients": [
       "CUSTOM:MythrilIngot"
     ],
-    "integers": [],
+    "integers": [
+      1
+    ],
     "strings": [],
-    "recipetype": "IngotPresserRecipeType",
+    "recipetype": "CompressorRecipeType",
     "results": [
       "CUSTOM:MythrilPlate"
     ],

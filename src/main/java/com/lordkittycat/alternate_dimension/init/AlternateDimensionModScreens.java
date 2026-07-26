@@ -14,23 +14,12 @@ import com.lordkittycat.alternate_dimension.client.gui.*;
 public class AlternateDimensionModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(AlternateDimensionModMenus.CIRCUIT_MAKER_GUI.get(), CircuitMakerGUIScreen::new);
-		event.register(AlternateDimensionModMenus.INGOT_PRESSER_GUI.get(), IngotPresserGUIScreen::new);
-		event.register(AlternateDimensionModMenus.GENERATOR_GUI.get(), GeneratorGUIScreen::new);
-		event.register(AlternateDimensionModMenus.BIOME_SELECTOR.get(), BiomeSelectorScreen::new);
 		event.register(AlternateDimensionModMenus.IMBUNEMENT_GUI.get(), ImbunementGUIScreen::new);
 		event.register(AlternateDimensionModMenus.INCINERATOR_GUI.get(), IncineratorGUIScreen::new);
-		event.register(AlternateDimensionModMenus.ELECTRIC_SMELTER_GUI.get(), ElectricSmelterGUIScreen::new);
-		event.register(AlternateDimensionModMenus.NUCLEAR_REACTOR_GUI.get(), NuclearReactorGUIScreen::new);
 		event.register(AlternateDimensionModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
-		event.register(AlternateDimensionModMenus.ALLOY_SMELTER_GUI.get(), AlloySmelterGUIScreen::new);
 		event.register(AlternateDimensionModMenus.CHEESY_BACKPACK_GUI.get(), CheesyBackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ENCHANTED_BACKPACK_GUI.get(), EnchantedBackpackGUIScreen::new);
-		event.register(AlternateDimensionModMenus.CRYSTAL_CHEST_GUI.get(), CrystalChestGUIScreen::new);
 		event.register(AlternateDimensionModMenus.INTRO_SCREEN.get(), IntroScreenScreen::new);
-		event.register(AlternateDimensionModMenus.PURIFIER_GUI.get(), PurifierGUIScreen::new);
-		event.register(AlternateDimensionModMenus.CORRUPTOR_GUI.get(), CorruptorGUIScreen::new);
-		event.register(AlternateDimensionModMenus.REFINERY_GUI.get(), RefineryGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ELEMENTAL_INSCRIBER_GUI.get(), ElementalInscriberGUIScreen::new);
 		event.register(AlternateDimensionModMenus.HINT_BOOK_GUI.get(), HintBookGUIScreen::new);
 		event.register(AlternateDimensionModMenus.WOODEN_BOX_GUI.get(), WoodenBoxGUIScreen::new);

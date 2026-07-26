@@ -1,7 +1,10 @@
 {
-  "type": "alternate_dimension:ingot_presser_recipe_type",
+  "type": "alternate_dimension:compressor_recipe_type",
   "ingredients": [
     "alternate_dimension:mythril_ingot"
+  ],
+  "integers": [
+    1
   ],
   "outputs": [
     {

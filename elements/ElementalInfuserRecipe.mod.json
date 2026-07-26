@@ -2,19 +2,17 @@
   "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "refinery_recipe_type",
+    "category": "fuser_recipe_type",
     "ingredients": [
       "TAG:mod:crafting_tables",
       "CUSTOM:ElementiumIngot"
     ],
     "integers": [
-      4,
+      1,
       1
     ],
-    "strings": [
-      "5"
-    ],
-    "recipetype": "RefineryRecipeType",
+    "strings": [],
+    "recipetype": "FuserRecipeType",
     "results": [
       "CUSTOM:ElementalInscriber"
     ],

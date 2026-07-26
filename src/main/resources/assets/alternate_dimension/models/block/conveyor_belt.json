@@ -1,0 +1,8 @@
+{
+  "parent": "alternate_dimension:custom/conveyor_belt",
+  "textures": {
+    "all": "alternate_dimension:block/conveyor_belt",
+    "particle": "alternate_dimension:block/conveyor_belt",
+    "0": "alternate_dimension:block/conveyor_belt"
+  }
+}

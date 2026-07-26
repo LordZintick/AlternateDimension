@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "alternate_dimension:item/incendiary_spider_spawn_egg_generated"
+  }
+}

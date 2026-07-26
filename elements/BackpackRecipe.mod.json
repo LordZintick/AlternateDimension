@@ -6,8 +6,9 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:TatteredLeather",
-      "TAG:mod:boxes"
+      "TAG:mod:boxes",
+      "CUSTOM:Cloth",
+      "CUSTOM:StrongThread"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,13 +17,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "CUSTOM:StrongThread",
-      "CUSTOM:TatteredLeather",
+      "CUSTOM:Cloth",
       "CUSTOM:StrongThread",
-      "CUSTOM:TatteredLeather",
+      "CUSTOM:Cloth",
       "TAG:mod:boxes",
-      "CUSTOM:TatteredLeather",
+      "CUSTOM:Cloth",
       "CUSTOM:StrongThread",
-      "CUSTOM:TatteredLeather",
+      "CUSTOM:Cloth",
       "CUSTOM:StrongThread"
     ],
     "recipeReturnStack": "CUSTOM:Backpack",

@@ -34,6 +34,10 @@ public class OnFogRenderedProcedure {
 				fogColor = 0xff0000;
 				fogRenderEvent.setNearPlaneDistance(35);
 				fogRenderEvent.setFarPlaneDistance(75);
+			} else if ((AlternateDimensionModVariables.WorldVariables.get(world).worldEventType).equals("blue_moon")) {
+				fogColor = 0x000bff;
+				fogRenderEvent.setNearPlaneDistance(55);
+				fogRenderEvent.setFarPlaneDistance(95);
 			}
 		}
 	}

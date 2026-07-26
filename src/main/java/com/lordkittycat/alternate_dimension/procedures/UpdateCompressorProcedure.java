@@ -1,0 +1,77 @@
+package com.lordkittycat.alternate_dimension.procedures;
+
+import net.neoforged.neoforge.transfer.item.ItemUtil;
+import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.ResourceHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.ArrayList;
+
+import com.lordkittycat.alternate_dimension.jei_recipes.CompressorRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModRecipeTypes;
+
+public class UpdateCompressorProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		ArrayList<Object> inputs = new ArrayList<>();
+		ArrayList<Object> ingredientCounts = new ArrayList<>();
+		ItemStack result = ItemStack.EMPTY;
+		result = (new Object() {
+			public ItemStack getResult() {
+				List<CompressorRecipeTypeRecipe> recipes = null;
+				if (world instanceof ServerLevel _lvl) {
+					recipes = _lvl.recipeAccess().recipeMap().byType(CompressorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				} else {
+					recipes = AlternateDimensionModRecipeTypes.recipes.byType(CompressorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+				}
+				for (CompressorRecipeTypeRecipe recipe : recipes) {
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						continue;
+					return recipe.getResultItems().get(0).copy();
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getResult()).copy();
+		{
+			List<CompressorRecipeTypeRecipe> recipes = null;
+			if (world instanceof ServerLevel _lvl) {
+				recipes = _lvl.recipeAccess().recipeMap().byType(CompressorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+			} else {
+				recipes = AlternateDimensionModRecipeTypes.recipes.byType(CompressorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+			}
+			for (CompressorRecipeTypeRecipe recipe : recipes) {
+				List<Ingredient> ingredients = recipe.getIngredients();
+				if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					continue;
+				List<ItemStack> reciperesult = recipe.getResultItems();
+				for (int num : recipe.integers()) {
+					double numberiterator = (double) num;
+					ingredientCounts.add(numberiterator);
+				}
+				break;
+			}
+		}
+		inputs.add(Direction.UP);
+		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, Direction.DOWN, result, 3, 1);
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
+			if (itemHandler != null)
+				return ItemUtil.getStack(itemHandler, slot);
+		}
+		return ItemStack.EMPTY;
+	}
+}

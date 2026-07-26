@@ -1,23 +1,14 @@
 {
-  "type": "alternate_dimension:refinery_recipe_type",
+  "type": "alternate_dimension:photolithographic_microfabricator_recipe_type",
   "ingredients": [
-    "alternate_dimension:elementium_fragment",
-    "alternate_dimension:omega_essence"
+    "alternate_dimension:elementium_fragment"
   ],
   "integers": [
-    16,
-    64
-  ],
-  "strings": [
-    "10"
+    8
   ],
   "outputs": [
     {
       "id": "alternate_dimension:elementium_ingot",
-      "count": 1
-    },
-    {
-      "id": "alternate_dimension:omega_essence",
       "count": 1
     }
   ]

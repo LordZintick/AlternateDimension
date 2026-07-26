@@ -37,7 +37,7 @@ public class WorldTickProcedure {
 			AlternateDimensionModVariables.WorldVariables.get(world).worldEventTime = AlternateDimensionModVariables.WorldVariables.get(world).worldEventTime - 1;
 			AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
 			if (AlternateDimensionModVariables.WorldVariables.get(world).worldEventTime <= 0) {
-				if ((AlternateDimensionModVariables.WorldVariables.get(world).worldEventType).equals("blood_moon")) {
+				if (AlternateDimensionModVariables.WorldVariables.get(world).worldEventType.contains("moon")) {
 					if (world instanceof ServerLevel _level) {
 						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("The moon has returned to normal...").withStyle(ChatFormatting.BOLD), false);
 					}
@@ -58,6 +58,12 @@ public class WorldTickProcedure {
 					AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
 					if (world instanceof ServerLevel _level) {
 						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("The blood moon is rising...").withColor(0xff0000).withStyle(ChatFormatting.BOLD), false);
+					}
+				} else if (eventrand == 1) {
+					AlternateDimensionModVariables.WorldVariables.get(world).worldEventType = "blue_moon";
+					AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
+					if (world instanceof ServerLevel _level) {
+						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("The enchanted blue moon is rising...").withColor(0x0000ff).withStyle(ChatFormatting.BOLD), false);
 					}
 				} else {
 					AlternateDimensionModVariables.WorldVariables.get(world).worldEventType = "";

@@ -83,6 +83,54 @@
         "directions": [
           "down"
         ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "alternate_dimension:pear_growth"
+          }
+        },
+        "probability": 0.2,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "directions": [
+          "down"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "alternate_dimension:lemon_growth"
+          }
+        },
+        "probability": 0.2,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "directions": [
+          "down"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "alternate_dimension:lime_growth"
+          }
+        },
+        "probability": 0.2,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "directions": [
+          "down"
+        ]
       }
     ]
   }

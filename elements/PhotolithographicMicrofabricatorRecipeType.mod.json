@@ -1,0 +1,40 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "photolithographic_microfabricator_recipe_gui.png",
+    "width": 74,
+    "height": 67,
+    "icon": "CUSTOM:PhotolithographicMicrofabricator",
+    "craftingtables": [
+      "CUSTOM:PhotolithographicMicrofabricator"
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": true,
+    "enableStringList": false,
+    "disableJeiBorder": true,
+    "title": "Photolithographic Microfabrication",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 7,
+        "y": 25,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 50,
+        "y": 26,
+        "slotid": 0
+      }
+    ],
+    "components": [],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

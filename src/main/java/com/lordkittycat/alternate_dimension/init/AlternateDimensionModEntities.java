@@ -48,15 +48,15 @@ public class AlternateDimensionModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<RedGummyBearEntity>> RED_GUMMY_BEAR = register("red_gummy_bear",
-			EntityType.Builder.<RedGummyBearEntity>of(RedGummyBearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<RedGummyBearEntity>of(RedGummyBearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1.2f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<BlueGummyBearEntity>> BLUE_GUMMY_BEAR = register("blue_gummy_bear",
-			EntityType.Builder.<BlueGummyBearEntity>of(BlueGummyBearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<BlueGummyBearEntity>of(BlueGummyBearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1.2f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<GreenGummyBearMobEntity>> GREEN_GUMMY_BEAR_MOB = register("green_gummy_bear_mob",
-			EntityType.Builder.<GreenGummyBearMobEntity>of(GreenGummyBearMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<GreenGummyBearMobEntity>of(GreenGummyBearMobEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1.2f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ElfEntity>> ELF = register("elf", EntityType.Builder.<ElfEntity>of(ElfEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
@@ -87,7 +87,7 @@ public class AlternateDimensionModEntities {
 
 					.sized(0.6f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<GingerbreadWarriorEntity>> GINGERBREAD_WARRIOR = register("gingerbread_warrior",
-			EntityType.Builder.<GingerbreadWarriorEntity>of(GingerbreadWarriorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<GingerbreadWarriorEntity>of(GingerbreadWarriorEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.4f, 0.9f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LifeSpiritEntity>> LIFE_SPIRIT = register("life_spirit",
@@ -171,7 +171,7 @@ public class AlternateDimensionModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<CandyflossChestBoatEntity>> CANDYFLOSS_CHEST_BOAT = register("candyfloss_chest_boat",
 			EntityType.Builder.<CandyflossChestBoatEntity>of(CandyflossChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<SporeSpreaderEntity>> SPORE_SPREADER = register("spore_spreader",
-			EntityType.Builder.<SporeSpreaderEntity>of(SporeSpreaderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<SporeSpreaderEntity>of(SporeSpreaderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.9f, 1.2f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FrostyZombieEntity>> FROSTY_ZOMBIE = register("frosty_zombie",
@@ -207,11 +207,27 @@ public class AlternateDimensionModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<EnchantedZombieEntity>> ENCHANTED_ZOMBIE = register("enchanted_zombie",
-			EntityType.Builder.<EnchantedZombieEntity>of(EnchantedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<EnchantedZombieEntity>of(EnchantedZombieEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MagmaticZombieEntity>> MAGMATIC_ZOMBIE = register("magmatic_zombie",
 			EntityType.Builder.<MagmaticZombieEntity>of(MagmaticZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SpiderHydraEntity>> SPIDER_HYDRA = register("spider_hydra",
+			EntityType.Builder.<SpiderHydraEntity>of(SpiderHydraEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1.2f, 0.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<IncendiarySpiderEntity>> INCENDIARY_SPIDER = register("incendiary_spider",
+			EntityType.Builder.<IncendiarySpiderEntity>of(IncendiarySpiderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(1.2f, 0.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<VenomousSpiderEntity>> VENOMOUS_SPIDER = register("venomous_spider",
+			EntityType.Builder.<VenomousSpiderEntity>of(VenomousSpiderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1.2f, 0.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<IronGiantEntity>> IRON_GIANT = register("iron_giant",
+			EntityType.Builder.<IronGiantEntity>of(IronGiantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
 
@@ -262,6 +278,10 @@ public class AlternateDimensionModEntities {
 		SpectralZombieEntity.init(event);
 		EnchantedZombieEntity.init(event);
 		MagmaticZombieEntity.init(event);
+		SpiderHydraEntity.init(event);
+		IncendiarySpiderEntity.init(event);
+		VenomousSpiderEntity.init(event);
+		IronGiantEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -305,5 +325,9 @@ public class AlternateDimensionModEntities {
 		event.put(SPECTRAL_ZOMBIE.get(), SpectralZombieEntity.createAttributes().build());
 		event.put(ENCHANTED_ZOMBIE.get(), EnchantedZombieEntity.createAttributes().build());
 		event.put(MAGMATIC_ZOMBIE.get(), MagmaticZombieEntity.createAttributes().build());
+		event.put(SPIDER_HYDRA.get(), SpiderHydraEntity.createAttributes().build());
+		event.put(INCENDIARY_SPIDER.get(), IncendiarySpiderEntity.createAttributes().build());
+		event.put(VENOMOUS_SPIDER.get(), VenomousSpiderEntity.createAttributes().build());
+		event.put(IRON_GIANT.get(), IronGiantEntity.createAttributes().build());
 	}
 }

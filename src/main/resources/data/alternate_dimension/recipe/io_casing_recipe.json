@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcd",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_nugget",
+    "b": "alternate_dimension:exporter",
+    "c": "alternate_dimension:machine_casing",
+    "d": "alternate_dimension:importer"
+  },
+  "result": {
+    "id": "alternate_dimension:io_casing",
+    "count": 1
+  }
+}

@@ -31,24 +31,26 @@ public class AlternateDimensionModModels {
 
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelmeteoroid.LAYER_LOCATION, Modelmeteoroid::createBodyLayer);
-		event.registerLayerDefinition(Modelgingerbread_warrior.LAYER_LOCATION, Modelgingerbread_warrior::createBodyLayer);
-		event.registerLayerDefinition(Modelzombie.LAYER_LOCATION, Modelzombie::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_chest.LAYER_LOCATION, Modelcrystal_chest::createBodyLayer);
 		event.registerLayerDefinition(Modelspore_spreader.LAYER_LOCATION, Modelspore_spreader::createBodyLayer);
-		event.registerLayerDefinition(Modelplayer_model.LAYER_LOCATION, Modelplayer_model::createBodyLayer);
-		event.registerLayerDefinition(Modelturtle.LAYER_LOCATION, Modelturtle::createBodyLayer);
+		event.registerLayerDefinition(Modelspider_hydra.LAYER_LOCATION, Modelspider_hydra::createBodyLayer);
 		event.registerLayerDefinition(Modelroman.LAYER_LOCATION, Modelroman::createBodyLayer);
 		event.registerLayerDefinition(Modelviking.LAYER_LOCATION, Modelviking::createBodyLayer);
 		event.registerLayerDefinition(Modelcat.LAYER_LOCATION, Modelcat::createBodyLayer);
 		event.registerLayerDefinition(Modelwolf.LAYER_LOCATION, Modelwolf::createBodyLayer);
 		event.registerLayerDefinition(Modelcow_fixed.LAYER_LOCATION, Modelcow_fixed::createBodyLayer);
+		event.registerLayerDefinition(Modelshroomite.LAYER_LOCATION, Modelshroomite::createBodyLayer);
+		event.registerLayerDefinition(Modelpossessed_armor.LAYER_LOCATION, Modelpossessed_armor::createBodyLayer);
+		event.registerLayerDefinition(Modelmeteoroid.LAYER_LOCATION, Modelmeteoroid::createBodyLayer);
+		event.registerLayerDefinition(Modelgingerbread_warrior.LAYER_LOCATION, Modelgingerbread_warrior::createBodyLayer);
+		event.registerLayerDefinition(Modelzombie.LAYER_LOCATION, Modelzombie::createBodyLayer);
+		event.registerLayerDefinition(Modelplayer_model.LAYER_LOCATION, Modelplayer_model::createBodyLayer);
+		event.registerLayerDefinition(Modelturtle.LAYER_LOCATION, Modelturtle::createBodyLayer);
+		event.registerLayerDefinition(Modelspider.LAYER_LOCATION, Modelspider::createBodyLayer);
 		event.registerLayerDefinition(Modelspirit.LAYER_LOCATION, Modelspirit::createBodyLayer);
 		event.registerLayerDefinition(Modelcandy_jetpack.LAYER_LOCATION, Modelcandy_jetpack::createBodyLayer);
-		event.registerLayerDefinition(Modelshroomite.LAYER_LOCATION, Modelshroomite::createBodyLayer);
 		event.registerLayerDefinition(Modelpolar_bear.LAYER_LOCATION, Modelpolar_bear::createBodyLayer);
 		event.registerLayerDefinition(Modelarrow_model.LAYER_LOCATION, Modelarrow_model::createBodyLayer);
-		event.registerLayerDefinition(Modelpossessed_armor.LAYER_LOCATION, Modelpossessed_armor::createBodyLayer);
 		event.registerLayerDefinition(PINE_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
 		event.registerLayerDefinition(PINE_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
 		event.registerLayerDefinition(GREENWOOD_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);

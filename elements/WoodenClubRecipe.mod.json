@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:ToolRod",
+      "TAG:mod:altdim_planks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "TAG:mod:altdim_planks",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:WoodenClub",
+    "name": "wooden_club_recipe",
+    "namespace": "mod"
+  }
+}

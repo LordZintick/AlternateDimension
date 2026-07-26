@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:redwooden_axe",
+    "alternate_dimension:holystone_axe",
     "alternate_dimension:shale_axe",
     "alternate_dimension:titanium_axe",
     "alternate_dimension:mantle_axe",
@@ -14,6 +15,7 @@
     "alternate_dimension:phosphorium_axe",
     "alternate_dimension:mushy_axe",
     "alternate_dimension:titanium_battleaxe",
+    "alternate_dimension:evilstone_axe",
     "alternate_dimension:pine_wooden_axe",
     "alternate_dimension:mythril_axe"
   ]

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:onyx_block"
+  ],
+  "result": {
+    "id": "alternate_dimension:onyx",
+    "count": 4
+  }
+}

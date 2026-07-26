@@ -95,7 +95,6 @@
     "stepSound": "",
     "raidCelebrationSound": "",
     "entityDataEntries": [],
-    "whenMobFalls": "MeteoroidSpawnMeteorite",
     "whenMobIsHurt": "MeteoroidSpawnMeteorite",
     "onRightClickedOn": "MeteoroidSpawnMeteorite",
     "onMobTickUpdate": "MeteoroidParticles",

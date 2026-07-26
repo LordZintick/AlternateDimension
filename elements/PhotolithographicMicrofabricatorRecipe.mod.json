@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:ManaCoil",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:MachineCasing",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:RawQuartz",
+      "CUSTOM:AluminumIngot"
+    ],
+    "recipeReturnStack": "CUSTOM:PhotolithographicMicrofabricator",
+    "name": "photolithographic_microfabricator_recipe",
+    "namespace": "mod"
+  }
+}

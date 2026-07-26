@@ -75,12 +75,6 @@ public class MeteoroidEntity extends Monster {
 	}
 
 	@Override
-	public boolean causeFallDamage(double l, float d, DamageSource source) {
-		MeteoroidSpawnMeteoriteProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
-		return super.causeFallDamage(l, d, source);
-	}
-
-	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
 		double x = this.getX();
 		double y = this.getY();

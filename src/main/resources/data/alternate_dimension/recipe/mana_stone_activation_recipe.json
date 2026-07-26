@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:mana_crystal",
+    "b": "alternate_dimension:magic_dust_block",
+    "c": "alternate_dimension:dormant_mana_stone"
+  },
+  "result": {
+    "id": "alternate_dimension:activated_mana_stone",
+    "count": 1
+  }
+}

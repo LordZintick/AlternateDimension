@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:ManaCoil",
+      "CUSTOM:MachineCasing",
+      "CUSTOM:ManaCoil",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:ManaCrystal"
+    ],
+    "recipeReturnStack": "CUSTOM:MagicalCasing",
+    "name": "magical_casing_recipe",
+    "namespace": "mod"
+  }
+}

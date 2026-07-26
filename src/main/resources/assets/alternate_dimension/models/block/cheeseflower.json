@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "alternate_dimension:block/cheeseflower",
+    "particle": "alternate_dimension:block/cheeseflower"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "alternate_dimension:block/magisters_bloom",
+    "particle": "alternate_dimension:block/magisters_bloom"
+  }
+}

@@ -2,25 +2,19 @@
   "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "refinery_recipe_type",
+    "category": "photolithographic_microfabricator_recipe_type",
     "ingredients": [
-      "CUSTOM:ElementiumFragment",
-      "CUSTOM:OmegaEssence"
+      "CUSTOM:ElementiumFragment"
     ],
     "integers": [
-      16,
-      64
+      8
     ],
-    "strings": [
-      "10"
-    ],
-    "recipetype": "RefineryRecipeType",
+    "strings": [],
+    "recipetype": "PhotolithographicMicrofabricatorRecipeType",
     "results": [
-      "CUSTOM:ElementiumIngot",
-      "CUSTOM:OmegaEssence"
+      "CUSTOM:ElementiumIngot"
     ],
     "resultCounts": [
-      1,
       1
     ],
     "count": 0

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bandage",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:life_essence",
+    "alternate_dimension:life_essence",
+    "alternate_dimension:life_essence",
+    "alternate_dimension:cloth"
+  ],
+  "result": {
+    "id": "alternate_dimension:crude_bandage",
+    "count": 2
+  }
+}

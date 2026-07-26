@@ -6,7 +6,7 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:MagicDust"
+      "CUSTOM:ActivatedManaStone"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,7 +15,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "CUSTOM:MagicDust",
-      "CUSTOM:MagicDust",
+      "CUSTOM:ActivatedManaStone",
       "CUSTOM:MagicDust",
       "CUSTOM:AluminumIngot",
       "TAG:mod:crafting_tables",

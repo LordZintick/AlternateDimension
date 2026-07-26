@@ -2,16 +2,15 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": {
-        "min": 0,
-        "max": 1
+      "rolls": {
+        "min": 1,
+        "max": 2
       },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:breadstick",
-          "weight": 15,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -24,22 +23,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:potato",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot",
-          "weight": 15,
+          "name": "alternate_dimension:barley_bread",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -53,7 +38,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:pasta",
-          "weight": 15,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -67,7 +52,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:salt",
-          "weight": 14,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -81,7 +66,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:breadstick_launcher",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",

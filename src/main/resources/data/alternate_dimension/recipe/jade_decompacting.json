@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:jade_block"
+  ],
+  "result": {
+    "id": "alternate_dimension:jade",
+    "count": 4
+  }
+}

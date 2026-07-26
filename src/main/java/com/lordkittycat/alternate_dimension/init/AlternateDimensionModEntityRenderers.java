@@ -74,5 +74,9 @@ public class AlternateDimensionModEntityRenderers {
 		event.registerEntityRenderer(AlternateDimensionModEntities.SPECTRAL_ZOMBIE.get(), SpectralZombieRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.ENCHANTED_ZOMBIE.get(), EnchantedZombieRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.MAGMATIC_ZOMBIE.get(), MagmaticZombieRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.SPIDER_HYDRA.get(), SpiderHydraRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.INCENDIARY_SPIDER.get(), IncendiarySpiderRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.VENOMOUS_SPIDER.get(), VenomousSpiderRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.IRON_GIANT.get(), IronGiantRenderer::new);
 	}
 }

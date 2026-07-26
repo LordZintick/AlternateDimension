@@ -16,7 +16,11 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import com.lordkittycat.alternate_dimension.jei_recipes.*;
+import com.lordkittycat.alternate_dimension.jei_recipes.PhotolithographicMicrofabricatorRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.ImbunementTableRecipeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.FuserRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.ElementalInfuserRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.CompressorRecipeTypeRecipe;
 
 @EventBusSubscriber
 public class AlternateDimensionModRecipeTypes {
@@ -30,38 +34,26 @@ public class AlternateDimensionModRecipeTypes {
 		event.enqueueWork(() -> {
 			RECIPE_TYPES.register(bus);
 			SERIALIZERS.register(bus);
-			RECIPE_TYPES.register("circuit_maker_recipe_type", () -> CircuitMakerRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("circuit_maker_recipe_type", () -> CircuitMakerRecipeTypeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("ingot_presser_recipe_type", () -> IngotPresserRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("ingot_presser_recipe_type", () -> IngotPresserRecipeTypeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("corruptor_recipe_type", () -> CorruptorRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("corruptor_recipe_type", () -> CorruptorRecipeTypeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("nuclear_reactor_recipe_type", () -> NuclearReactorRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("nuclear_reactor_recipe_type", () -> NuclearReactorRecipeTypeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("purifier_recipe_type", () -> PurifierRecipeTypeRecipe.SERIALIZER);
-			RECIPE_TYPES.register("refinery_recipe_type", () -> RefineryRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("refinery_recipe_type", () -> RefineryRecipeTypeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("fuser_recipe_type", () -> FuserRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("fuser_recipe_type", () -> FuserRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("photolithographic_microfabricator_recipe_type", () -> PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("photolithographic_microfabricator_recipe_type", () -> PhotolithographicMicrofabricatorRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.SERIALIZER);
 		});
 	}
 
 	@SubscribeEvent
 	public static void syncRecipes(OnDatapackSyncEvent event) {
-		event.sendRecipes(CircuitMakerRecipeTypeRecipe.Type.INSTANCE);
-		event.sendRecipes(IngotPresserRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(ImbunementTableRecipeRecipe.Type.INSTANCE);
-		event.sendRecipes(CorruptorRecipeTypeRecipe.Type.INSTANCE);
-		event.sendRecipes(NuclearReactorRecipeTypeRecipe.Type.INSTANCE);
-		event.sendRecipes(AlloySmelterRecipeTypeRecipe.Type.INSTANCE);
-		event.sendRecipes(PurifierRecipeTypeRecipe.Type.INSTANCE);
-		event.sendRecipes(RefineryRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(FuserRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(CompressorRecipeTypeRecipe.Type.INSTANCE);
 	}
 
 	@EventBusSubscriber(value = Dist.CLIENT)

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:ruby"
+  ],
+  "result": {
+    "id": "alternate_dimension:position_card",
+    "count": 1
+  }
+}

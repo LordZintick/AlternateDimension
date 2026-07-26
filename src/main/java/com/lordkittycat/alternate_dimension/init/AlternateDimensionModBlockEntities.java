@@ -22,29 +22,11 @@ import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 @EventBusSubscriber
 public class AlternateDimensionModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AlternateDimensionMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CircuitMakerBlockEntity>> CIRCUIT_MAKER = register("circuit_maker", AlternateDimensionModBlocks.CIRCUIT_MAKER, CircuitMakerBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IngotPresserBlockEntity>> INGOT_PRESSER = register("ingot_presser", AlternateDimensionModBlocks.INGOT_PRESSER, IngotPresserBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GeneratorBlockEntity>> GENERATOR = register("generator", AlternateDimensionModBlocks.GENERATOR, GeneratorBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarPanelBlockEntity>> SOLAR_PANEL = register("solar_panel", AlternateDimensionModBlocks.SOLAR_PANEL, SolarPanelBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BasicEnergyCableBlockEntity>> BASIC_ENERGY_CABLE = register("basic_energy_cable", AlternateDimensionModBlocks.BASIC_ENERGY_CABLE, BasicEnergyCableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ImbunementTableBlockEntity>> IMBUNEMENT_TABLE = register("imbunement_table", AlternateDimensionModBlocks.IMBUNEMENT_TABLE, ImbunementTableBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CorruptorBlockEntity>> CORRUPTOR = register("corruptor", AlternateDimensionModBlocks.CORRUPTOR, CorruptorBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ElectricSmelterBlockEntity>> ELECTRIC_SMELTER = register("electric_smelter", AlternateDimensionModBlocks.ELECTRIC_SMELTER, ElectricSmelterBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NuclearReactorBlockEntity>> NUCLEAR_REACTOR = register("nuclear_reactor", AlternateDimensionModBlocks.NUCLEAR_REACTOR, NuclearReactorBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AlloySmelterBlockEntity>> ALLOY_SMELTER = register("alloy_smelter", AlternateDimensionModBlocks.ALLOY_SMELTER, AlloySmelterBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PortalBlockBlockEntity>> PORTAL_BLOCK = register("portal_block", AlternateDimensionModBlocks.PORTAL_BLOCK, PortalBlockBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrystalChestBlockEntity>> CRYSTAL_CHEST = register("crystal_chest", AlternateDimensionModBlocks.CRYSTAL_CHEST, CrystalChestBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ShaleFurnaceBlockEntity>> SHALE_FURNACE = register("shale_furnace", AlternateDimensionModBlocks.SHALE_FURNACE, ShaleFurnaceBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MantleFurnaceBlockEntity>> MANTLE_FURNACE = register("mantle_furnace", AlternateDimensionModBlocks.MANTLE_FURNACE, MantleFurnaceBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<VeridiumFurnaceBlockEntity>> VERIDIUM_FURNACE = register("veridium_furnace", AlternateDimensionModBlocks.VERIDIUM_FURNACE, VeridiumFurnaceBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PurifierBlockEntity>> PURIFIER = register("purifier", AlternateDimensionModBlocks.PURIFIER, PurifierBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedCorruptorBlockEntity>> ADVANCED_CORRUPTOR = register("advanced_corruptor", AlternateDimensionModBlocks.ADVANCED_CORRUPTOR, AdvancedCorruptorBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedPurifierBlockEntity>> ADVANCED_PURIFIER = register("advanced_purifier", AlternateDimensionModBlocks.ADVANCED_PURIFIER, AdvancedPurifierBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedIngotPresserBlockEntity>> ADVANCED_INGOT_PRESSER = register("advanced_ingot_presser", AlternateDimensionModBlocks.ADVANCED_INGOT_PRESSER,
-			AdvancedIngotPresserBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedElectricSmelterBlockEntity>> ADVANCED_ELECTRIC_SMELTER = register("advanced_electric_smelter", AlternateDimensionModBlocks.ADVANCED_ELECTRIC_SMELTER,
-			AdvancedElectricSmelterBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RefineryControllerBlockEntity>> REFINERY_CONTROLLER = register("refinery_controller", AlternateDimensionModBlocks.REFINERY_CONTROLLER, RefineryControllerBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ElementalInscriberBlockEntity>> ELEMENTAL_INSCRIBER = register("elemental_inscriber", AlternateDimensionModBlocks.ELEMENTAL_INSCRIBER, ElementalInscriberBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ScorchedBoxBlockEntity>> SCORCHED_BOX = register("scorched_box", AlternateDimensionModBlocks.SCORCHED_BOX, ScorchedBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineBoxBlockEntity>> PINE_BOX = register("pine_box", AlternateDimensionModBlocks.PINE_BOX, PineBoxBlockEntity::new);
@@ -52,6 +34,14 @@ public class AlternateDimensionModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AzureBoxBlockEntity>> AZURE_BOX = register("azure_box", AlternateDimensionModBlocks.AZURE_BOX, AzureBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GreenwoodBoxBlockEntity>> GREENWOOD_BOX = register("greenwood_box", AlternateDimensionModBlocks.GREENWOOD_BOX, GreenwoodBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CandyflossBoxBlockEntity>> CANDYFLOSS_BOX = register("candyfloss_box", AlternateDimensionModBlocks.CANDYFLOSS_BOX, CandyflossBoxBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FuserBlockEntity>> FUSER = register("fuser", AlternateDimensionModBlocks.FUSER, FuserBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ManaProviderBlockEntity>> MANA_PROVIDER = register("mana_provider", AlternateDimensionModBlocks.MANA_PROVIDER, ManaProviderBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ManaTankBlockEntity>> MANA_TANK = register("mana_tank", AlternateDimensionModBlocks.MANA_TANK, ManaTankBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ManaSynthesizerBlockEntity>> MANA_SYNTHESIZER = register("mana_synthesizer", AlternateDimensionModBlocks.MANA_SYNTHESIZER, ManaSynthesizerBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ItemElevatorBlockEntity>> ITEM_ELEVATOR = register("item_elevator", AlternateDimensionModBlocks.ITEM_ELEVATOR, ItemElevatorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PhotolithographicMicrofabricatorBlockEntity>> PHOTOLITHOGRAPHIC_MICROFABRICATOR = register("photolithographic_microfabricator",
+			AlternateDimensionModBlocks.PHOTOLITHOGRAPHIC_MICROFABRICATOR, PhotolithographicMicrofabricatorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CompressorBlockEntity>> COMPRESSOR = register("compressor", AlternateDimensionModBlocks.COMPRESSOR, CompressorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -62,47 +52,28 @@ public class AlternateDimensionModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, GREENWOOD_BOX.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, SOLAR_PANEL.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, SOLAR_PANEL.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, GENERATOR.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, GENERATOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ADVANCED_PURIFIER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ADVANCED_PURIFIER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COMPRESSOR.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, COMPRESSOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, PHOTOLITHOGRAPHIC_MICROFABRICATOR.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, PHOTOLITHOGRAPHIC_MICROFABRICATOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, PORTAL_BLOCK.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, ELEMENTAL_INSCRIBER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, INGOT_PRESSER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, INGOT_PRESSER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, ITEM_ELEVATOR.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, VERIDIUM_FURNACE.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, CORRUPTOR.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, CORRUPTOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ADVANCED_ELECTRIC_SMELTER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ADVANCED_ELECTRIC_SMELTER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, CIRCUIT_MAKER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, CIRCUIT_MAKER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, MANA_TANK.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, MANA_TANK.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, AZURE_BOX.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, BASIC_ENERGY_CABLE.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, BASIC_ENERGY_CABLE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, MANA_PROVIDER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, FUSER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, FUSER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, SCORCHED_BOX.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ALLOY_SMELTER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ALLOY_SMELTER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, PINE_BOX.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, MANTLE_FURNACE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CANDYFLOSS_BOX.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, REDWOOD_BOX.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, IMBUNEMENT_TABLE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, SHALE_FURNACE.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, REFINERY_CONTROLLER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, REFINERY_CONTROLLER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, NUCLEAR_REACTOR.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, NUCLEAR_REACTOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ADVANCED_INGOT_PRESSER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ADVANCED_INGOT_PRESSER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, CRYSTAL_CHEST.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Item.BLOCK, PURIFIER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, PURIFIER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ADVANCED_CORRUPTOR.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ADVANCED_CORRUPTOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.Item.BLOCK, ELECTRIC_SMELTER.get(), WorldlyContainerWrapper::new);
-		event.registerBlockEntity(Capabilities.Energy.BLOCK, ELECTRIC_SMELTER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, MANA_SYNTHESIZER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, MANA_SYNTHESIZER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 	}
 }

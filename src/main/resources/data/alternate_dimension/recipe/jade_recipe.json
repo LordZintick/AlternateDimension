@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:raw_quartz",
+    "alternate_dimension:plant_matter"
+  ],
+  "integers": [
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:jade",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "spawners": {
+    "type": "alternate_dimension:incendiary_spider",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

@@ -4,7 +4,7 @@
   "definition": {
     "category": "elemental_infuser_recipe_type",
     "ingredients": [
-      "CUSTOM:PortalWand",
+      "CUSTOM:GraphiteRod",
       "CUSTOM:FireEssence",
       "CUSTOM:LifeEssence",
       "CUSTOM:LightningBottle",

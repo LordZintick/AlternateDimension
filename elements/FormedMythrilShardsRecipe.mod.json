@@ -1,28 +1,31 @@
 {
   "_fv": 89,
-  "_type": "jeirecipe",
+  "_type": "recipe",
   "definition": {
-    "category": "refinery_recipe_type",
-    "ingredients": [
-      "CUSTOM:AluminumIngot",
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mythril",
+    "unlockingItems": [
       "CUSTOM:MythrilShards"
     ],
-    "integers": [
-      1,
-      9
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards"
     ],
-    "strings": [
-      "6"
-    ],
-    "recipetype": "RefineryRecipeType",
-    "results": [
-      "CUSTOM:FormedMythrilShards",
-      "CUSTOM:AluminumNugget"
-    ],
-    "resultCounts": [
-      1,
-      2
-    ],
-    "count": 0
+    "recipeReturnStack": "CUSTOM:FormedMythrilShards",
+    "name": "formed_mythril_shards_recipe",
+    "namespace": "mod"
   }
 }

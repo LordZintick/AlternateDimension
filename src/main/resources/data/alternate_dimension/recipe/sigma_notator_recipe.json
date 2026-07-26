@@ -3,13 +3,14 @@
   "category": "equipment",
   "pattern": [
     "ab ",
-    "bbc",
+    "bcd",
     "ab "
   ],
   "key": {
     "a": "minecraft:black_dye",
     "b": "alternate_dimension:function_blaster",
-    "c": "alternate_dimension:term"
+    "c": "alternate_dimension:activated_mana_stone",
+    "d": "alternate_dimension:term"
   },
   "result": {
     "id": "alternate_dimension:sigma_notator",

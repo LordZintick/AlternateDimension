@@ -22,7 +22,7 @@ public class ImbunementGUIScreen extends AbstractContainerScreen<ImbunementGUIMe
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("alternate_dimension:textures/screens/imbunement_gui.png");
-	private static final Identifier IMAGE_0 = Identifier.parse("alternate_dimension:textures/screens/twoway_arrow.png");
+	private static final Identifier IMAGE_0 = Identifier.parse("alternate_dimension:textures/screens/twoway_arrow_purple.png");
 
 	public ImbunementGUIScreen(ImbunementGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text, 176, 163);

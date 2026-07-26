@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:RawQuartz",
+      "CUSTOM:ManaCrystal"
+    ],
+    "integers": [
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:Sapphire"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

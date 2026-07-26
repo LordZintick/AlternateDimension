@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/mana_tank",
+    "up": "alternate_dimension:block/mana_synthesizer_top",
+    "north": "alternate_dimension:block/mana_tank",
+    "east": "alternate_dimension:block/mana_tank",
+    "south": "alternate_dimension:block/mana_tank",
+    "west": "alternate_dimension:block/mana_tank",
+    "particle": "alternate_dimension:block/mana_tank"
+  }
+}

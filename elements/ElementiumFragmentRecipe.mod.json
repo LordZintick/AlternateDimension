@@ -2,25 +2,21 @@
   "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "refinery_recipe_type",
+    "category": "fuser_recipe_type",
     "ingredients": [
       "CUSTOM:OmegaEssence",
       "CUSTOM:MythrilIngot"
     ],
     "integers": [
-      32,
-      16
+      8,
+      1
     ],
-    "strings": [
-      "8"
-    ],
-    "recipetype": "RefineryRecipeType",
+    "strings": [],
+    "recipetype": "FuserRecipeType",
     "results": [
-      "CUSTOM:ElementiumFragment",
-      "CUSTOM:OmegaEssence"
+      "CUSTOM:ElementiumFragment"
     ],
     "resultCounts": [
-      1,
       1
     ],
     "count": 0

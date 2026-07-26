@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:mana_coil",
+    "c": "alternate_dimension:machine_casing",
+    "d": "alternate_dimension:raw_quartz"
+  },
+  "result": {
+    "id": "alternate_dimension:photolithographic_microfabricator",
+    "count": 1
+  }
+}

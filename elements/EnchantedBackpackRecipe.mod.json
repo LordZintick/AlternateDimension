@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       "CUSTOM:CheesyBackpack",
-      "CUSTOM:MagicDustBlock"
+      "CUSTOM:ActivatedManaStone"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -22,7 +22,7 @@
       "CUSTOM:CheesyBackpack",
       "CUSTOM:MagicDustBlock",
       "CUSTOM:MagicDustBlock",
-      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ActivatedManaStone",
       "CUSTOM:MagicDustBlock"
     ],
     "recipeReturnStack": "CUSTOM:EnchantedBackpack",

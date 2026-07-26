@@ -20,11 +20,7 @@ public class AlternateDimensionModJeiInformation implements IModPlugin {
 
 	@Override
 	public void registerRecipes(IRecipeRegistration registration) {
-		registration.addIngredientInfo(List.of(new ItemStack(AlternateDimensionModBlocks.GENERATOR.get()), new ItemStack(AlternateDimensionModBlocks.SOLAR_PANEL.get())), VanillaTypes.ITEM_STACK,
-				Component.translatable("jei.alternate_dimension.generator_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(AlternateDimensionModItems.LIGHTNING_BOTTLE.get()), new ItemStack(AlternateDimensionModBlocks.LIGHTNING_BLOCK.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.alternate_dimension.lightning_bottle_info"));
-		registration.addIngredientInfo(List.of(new ItemStack(AlternateDimensionModBlocks.COOLANT_RODS.get()), new ItemStack(AlternateDimensionModBlocks.NUCLEAR_REACTOR.get())), VanillaTypes.ITEM_STACK,
-				Component.translatable("jei.alternate_dimension.nuclear_reactor_info"));
 	}
 }

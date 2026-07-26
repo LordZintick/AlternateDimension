@@ -1,15 +1,12 @@
 {
-  "type": "alternate_dimension:refinery_recipe_type",
+  "type": "alternate_dimension:fuser_recipe_type",
   "ingredients": [
     "#alternate_dimension:crafting_tables",
     "alternate_dimension:elementium_ingot"
   ],
   "integers": [
-    4,
+    1,
     1
-  ],
-  "strings": [
-    "5"
   ],
   "outputs": [
     {

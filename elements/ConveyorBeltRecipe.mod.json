@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Cloth",
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:AluminumGear",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth",
+      "CUSTOM:Cloth"
+    ],
+    "recipeReturnStack": "CUSTOM:ConveyorBelt",
+    "name": "conveyor_belt_recipe",
+    "namespace": "mod"
+  }
+}

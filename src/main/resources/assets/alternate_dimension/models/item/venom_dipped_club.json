@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "alternate_dimension:item/venom_dipped_club"
+  }
+}

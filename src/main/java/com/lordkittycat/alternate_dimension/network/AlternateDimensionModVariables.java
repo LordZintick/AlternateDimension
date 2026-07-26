@@ -169,7 +169,7 @@ public class AlternateDimensionModVariables {
 			return instance;
 		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
-		public double meteorCooldown = 0;
+		public double meteorCooldown = 24000.0;
 		public Vec3 lastMeteorPos = Vec3.ZERO;
 		public String worldEventType = "\"\"";
 		public double worldEventTime = 0;

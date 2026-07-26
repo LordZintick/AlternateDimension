@@ -6,15 +6,15 @@
     "pools": [
       {
         "minrolls": 1,
-        "maxrolls": 1,
+        "maxrolls": 2,
         "minbonusrolls": 0,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
             "item": "CUSTOM:Breadstick",
-            "weight": 15,
+            "weight": 3,
             "minCount": 3,
             "maxCount": 8,
             "minEnchantmentLevel": 0,
@@ -25,20 +25,8 @@
           },
           {
             "type": "item",
-            "item": "Items.POTATO",
-            "weight": 15,
-            "minCount": 2,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": "Items.CARROT",
-            "weight": 15,
+            "item": "CUSTOM:BarleyBread",
+            "weight": 3,
             "minCount": 2,
             "maxCount": 5,
             "minEnchantmentLevel": 0,
@@ -50,7 +38,7 @@
           {
             "type": "item",
             "item": "CUSTOM:Pasta",
-            "weight": 15,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -62,7 +50,7 @@
           {
             "type": "item",
             "item": "CUSTOM:Salt",
-            "weight": 14,
+            "weight": 3,
             "minCount": 2,
             "maxCount": 4,
             "minEnchantmentLevel": 0,
@@ -74,7 +62,7 @@
           {
             "type": "item",
             "item": "CUSTOM:BreadstickLauncher",
-            "weight": 3,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

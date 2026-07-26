@@ -2,7 +2,11 @@
   "replace": false,
   "values": [
     "alternate_dimension:sapphire_block",
+    "alternate_dimension:tourmaline_block",
+    "alternate_dimension:jade_block",
+    "alternate_dimension:kyanite_block",
     "alternate_dimension:topaz_block",
-    "alternate_dimension:ruby_block"
+    "alternate_dimension:ruby_block",
+    "alternate_dimension:onyx_block"
   ]
 }

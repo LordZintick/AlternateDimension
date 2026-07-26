@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/mana_tank",
+    "particle": "alternate_dimension:block/mana_tank"
+  }
+}
