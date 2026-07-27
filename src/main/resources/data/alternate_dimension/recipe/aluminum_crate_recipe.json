@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_nugget",
+    "b": "#alternate_dimension:boxes"
+  },
+  "result": {
+    "id": "alternate_dimension:aluminum_crate",
+    "count": 1
+  }
+}

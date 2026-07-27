@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/inferno_lock_block",
+    "particle": "alternate_dimension:block/inferno_lock_block"
+  }
+}

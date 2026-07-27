@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "compressor_recipe_type",
+    "ingredients": [
+      "CUSTOM:TitaniumIngot"
+    ],
+    "integers": [
+      8
+    ],
+    "strings": [],
+    "recipetype": "CompressorRecipeType",
+    "results": [
+      "CUSTOM:Graphite"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}
