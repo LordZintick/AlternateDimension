@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "alternate_dimension:redwood_forest",
+    "alternate_dimension:highlands",
+    "alternate_dimension:frostbitten_plains"
+  ],
+  "spawners": {
+    "type": "alternate_dimension:permachill_zombie",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:compressor_recipe_type",
+  "ingredients": [
+    "alternate_dimension:titanium_ingot"
+  ],
+  "integers": [
+    8
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:graphite",
+      "count": 1
+    }
+  ]
+}

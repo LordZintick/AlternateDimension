@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "alternate_dimension:block/collector"
+    },
+    "facing=east": {
+      "model": "alternate_dimension:block/collector",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "alternate_dimension:block/collector",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alternate_dimension:block/collector",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "alternate_dimension:block/collector",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "alternate_dimension:block/collector",
+      "x": 90
+    }
+  }
+}

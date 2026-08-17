@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "alternate_dimension:verdant_cube",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 15,
+    "separation": 10,
+    "salt": 1078869836
+  }
+}

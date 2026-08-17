@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:mortar_and_pestle",
+    "alternate_dimension:corn"
+  ],
+  "result": {
+    "id": "alternate_dimension:popcorn_kernel",
+    "count": 16
+  }
+}
