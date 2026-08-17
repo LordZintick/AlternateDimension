@@ -6,6 +6,6 @@ import net.minecraft.world.level.block.Block;
 
 public class WaffleBlockBlock extends Block {
 	public WaffleBlockBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.WOOD).strength(2f));
+		super(properties.sound(SoundType.WOOD).strength(1f));
 	}
 }

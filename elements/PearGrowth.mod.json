@@ -84,7 +84,7 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "soundOnStep": "PLANT",
     "isCustomSoundType": false,
     "breakSound": "",

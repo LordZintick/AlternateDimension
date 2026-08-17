@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 public class LemonGrowthBlock extends Block {
 	public LemonGrowthBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).instabreak().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.GRASS).instabreak().noCollision().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

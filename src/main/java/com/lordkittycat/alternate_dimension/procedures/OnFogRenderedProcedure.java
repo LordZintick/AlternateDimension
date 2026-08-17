@@ -8,6 +8,8 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.util.Mth;
+import net.minecraft.resources.Identifier;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -19,14 +21,14 @@ public class OnFogRenderedProcedure {
 	@SubscribeEvent
 	public static void onSkyRendered(ViewportEvent.RenderFog event) {
 		Minecraft mc = Minecraft.getInstance();
-		execute(event, mc.player.level(), event);
+		execute(event, mc.player.level(), mc.player.getX(), mc.player.getY(), mc.player.getZ(), event);
 	}
 
-	public static void execute(LevelAccessor world, ViewportEvent.RenderFog fogRenderEvent) {
-		execute(null, world, fogRenderEvent);
+	public static void execute(LevelAccessor world, double x, double y, double z, ViewportEvent.RenderFog fogRenderEvent) {
+		execute(null, world, x, y, z, fogRenderEvent);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, ViewportEvent.RenderFog fogRenderEvent) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, ViewportEvent.RenderFog fogRenderEvent) {
 		if (fogRenderEvent == null)
 			return;
 		if (AlternateDimensionModVariables.WorldVariables.get(world).worldEventTime > 0) {
@@ -38,6 +40,12 @@ public class OnFogRenderedProcedure {
 				fogColor = 0x000bff;
 				fogRenderEvent.setNearPlaneDistance(55);
 				fogRenderEvent.setFarPlaneDistance(95);
+			}
+		} else {
+			if (world.getBiome(BlockPos.containing(x, y, z)).is(Identifier.parse("alternate_dimension:wasteland"))) {
+				fogColor = 0xc6ae84;
+				fogRenderEvent.setNearPlaneDistance(48);
+				fogRenderEvent.setFarPlaneDistance(96);
 			}
 		}
 	}

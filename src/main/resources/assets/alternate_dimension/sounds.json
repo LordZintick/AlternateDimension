@@ -62,23 +62,19 @@
   "alternate_dimension_music": {
     "sounds": [
       {
-        "name": "alternate_dimension:fading_away",
+        "name": "alternate_dimension:bgm_snow_theme_slowed_loop",
         "stream": true
       },
       {
-        "name": "alternate_dimension:fallen_hero",
+        "name": "alternate_dimension:prelude_in_f_minor",
         "stream": true
       },
       {
-        "name": "alternate_dimension:lost_ruins",
+        "name": "alternate_dimension:the_arplands_faded",
         "stream": true
       },
       {
-        "name": "alternate_dimension:outcast",
-        "stream": true
-      },
-      {
-        "name": "alternate_dimension:final_struggle",
+        "name": "alternate_dimension:exploration_theme",
         "stream": true
       }
     ]

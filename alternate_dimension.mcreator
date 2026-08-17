@@ -22506,6 +22506,18 @@
             "type": "fogRenderEvent"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -26490,11 +26502,10 @@
     {
       "name": "alternate_dimension_music",
       "files": [
-        "fading_away",
-        "fallen_hero",
-        "lost_ruins",
-        "outcast",
-        "final_struggle"
+        "bgm_snow_theme_slowed_loop",
+        "prelude_in_f_minor",
+        "the_arplands_faded",
+        "exploration_theme"
       ],
       "category": "music",
       "subtitle": ""
@@ -27403,6 +27414,7 @@
       "~TitaniumArmor@CUSTOM:TitaniumArmor.boots"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~WaffleBlock@CUSTOM:WaffleBlock",
       "~CandyflossBox@CUSTOM:CandyflossBox",
       "~CandyflossHangingSign@CUSTOM:CandyflossHangingSign",
       "~CandyflossHangingSign@CUSTOM:CandyflossHangingSign.wall",
@@ -27510,7 +27522,6 @@
       "~PlantStem@CUSTOM:PlantStem",
       "~PlantMatter@CUSTOM:PlantMatter",
       "~HeartOfNature@CUSTOM:HeartOfNature",
-      "~WaffleBlock@CUSTOM:WaffleBlock",
       "~CompressedBark@CUSTOM:CompressedBark",
       "~DriedFruit@CUSTOM:DriedFruit"
     ],
