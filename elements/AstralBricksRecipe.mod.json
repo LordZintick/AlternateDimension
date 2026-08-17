@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Stardust"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "CUSTOM:Stardust",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks"
+    ],
+    "recipeReturnStack": "CUSTOM:AstralBricks",
+    "name": "astral_bricks_recipe",
+    "namespace": "mod"
+  }
+}

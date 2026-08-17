@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "alternate_dimension:block/astral_bricks",
+    "bottom": "alternate_dimension:block/astral_bricks",
+    "top": "alternate_dimension:block/astral_bricks",
+    "side": "alternate_dimension:block/astral_bricks"
+  }
+}

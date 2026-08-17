@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:hallowed_essence",
+    "alternate_dimension:mana_coil"
+  ],
+  "integers": [
+    4,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:light_essence",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#minecraft:shovels",
+    "alternate_dimension:sulfur",
+    "alternate_dimension:sulfur",
+    "alternate_dimension:sulfur"
+  ],
+  "result": {
+    "id": "alternate_dimension:mini_instavator",
+    "count": 4
+  }
+}

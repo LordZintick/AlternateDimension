@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/dirt",
+    "up": "alternate_dimension:block/compressed_cobblestone",
+    "north": "alternate_dimension:block/gravestone",
+    "east": "alternate_dimension:block/gravestone",
+    "south": "alternate_dimension:block/gravestone",
+    "west": "alternate_dimension:block/gravestone",
+    "particle": "alternate_dimension:block/dirt"
+  }
+}

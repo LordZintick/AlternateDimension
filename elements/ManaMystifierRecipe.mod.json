@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:ManaCoil",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:ActivatedManaStone",
+      "CUSTOM:IOCasing",
+      "CUSTOM:Importer",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:ManaCoil",
+      "CUSTOM:AluminumIngot"
+    ],
+    "recipeReturnStack": "CUSTOM:ManaMystifier",
+    "name": "mana_mystifier_recipe",
+    "namespace": "mod"
+  }
+}

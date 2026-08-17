@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#minecraft:pickaxes",
+    "alternate_dimension:sulfur",
+    "alternate_dimension:sulfur",
+    "alternate_dimension:sulfur"
+  ],
+  "result": {
+    "id": "alternate_dimension:mini_instatunnel",
+    "count": 4
+  }
+}
