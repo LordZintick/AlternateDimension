@@ -7,6 +7,7 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
@@ -18,13 +19,11 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacementTypes;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.Identifier;
@@ -34,12 +33,14 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
+import com.lordkittycat.alternate_dimension.procedures.TransformIntoIronGiantProcedure;
 import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class CalcifiedZombieEntity extends Monster {
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(CalcifiedZombieEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(CalcifiedZombieEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Boolean> DATA_transforming = SynchedEntityData.defineId(CalcifiedZombieEntity.class, EntityDataSerializers.BOOLEAN);
 	public final AnimationState animationState0 = new AnimationState();
 
 	public CalcifiedZombieEntity(EntityType<CalcifiedZombieEntity> type, Level world) {
@@ -68,6 +69,7 @@ public class CalcifiedZombieEntity extends Monster {
 		super.defineSynchedData(builder);
 		builder.define(TEXTURE, "calcified");
 		builder.define(ANIM, 0);
+		builder.define(DATA_transforming, false);
 	}
 
 	public void setTexture(String texture) {
@@ -128,12 +130,29 @@ public class CalcifiedZombieEntity extends Monster {
 	public void addAdditionalSaveData(ValueOutput valueOutput) {
 		super.addAdditionalSaveData(valueOutput);
 		valueOutput.putString("Texture", this.getTexture());
+		valueOutput.putBoolean("Datatransforming", this.entityData.get(DATA_transforming));
 	}
 
 	@Override
 	public void readAdditionalSaveData(ValueInput valueInput) {
 		super.readAdditionalSaveData(valueInput);
 		this.setTexture(valueInput.getStringOr("Texture", "calcified"));
+		this.entityData.set(DATA_transforming, valueInput.getBooleanOr("Datatransforming", false));
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.SUCCESS;
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		TransformIntoIronGiantProcedure.execute(world, x, y, z, entity, itemstack);
+		return retval;
 	}
 
 	@Override

@@ -6,7 +6,7 @@ import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
 import com.lordkittycat.alternate_dimension.jei_recipes.EmptyIngredient;
-import com.lordkittycat.alternate_dimension.jei_recipes.ImbunementTableRecipeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.ManaMystifierRecipeTypeRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IRecipeRegistration;
@@ -36,7 +36,7 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        List<ImbunementTableRecipeRecipe> ringRecipes = new ArrayList<>();
+        List<ManaMystifierRecipeTypeRecipe> ringRecipes = new ArrayList<>();
         final List<DeferredItem<Item>> rings = List.of(AlternateDimensionModItems.WOODEN_RING, AlternateDimensionModItems.ALUMINUM_RING, AlternateDimensionModItems.TITANIUM_RING, AlternateDimensionModItems.MYTHRIL_RING);
 
         rings.forEach(ring -> RingItem.RING_INGREDIENTS.forEach((ingredientID, effect) -> {
@@ -45,13 +45,14 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
             outputRing.apply(DataComponentPatch.builder()
                             .set(AlternateDimensionModComponents.RING_EFFECT.get(), new RingEffectComponent(effect))
                     .build());
-            ringRecipes.add(new ImbunementTableRecipeRecipe(List.of(outputRing), List.of(
+            ringRecipes.add(new ManaMystifierRecipeTypeRecipe(List.of(outputRing), List.of(
                     Ingredient.of(ring.get()),
                     Ingredient.of(ingredientItem),
                     EmptyIngredient.create()
-            )));
+            ),
+            List.of(1, 1)));
         }));
 
-        registration.addRecipes(AlternateDimensionModJeiPlugin.ImbunementTableRecipe_Type, ringRecipes);
+        registration.addRecipes(AlternateDimensionModJeiPlugin.ManaMystifierRecipeType_Type, ringRecipes);
     }
 }

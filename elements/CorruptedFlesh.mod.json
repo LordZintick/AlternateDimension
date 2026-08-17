@@ -30,7 +30,9 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "May have side effects when fed to some mobs."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

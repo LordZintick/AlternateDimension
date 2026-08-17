@@ -94,33 +94,14 @@ public class AlternateDimensionModVariables {
 	public static void clonePlayer(PlayerEvent.Clone event) {
 		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 		PlayerVariables clone = new PlayerVariables();
-		clone.selectedBiome = original.selectedBiome;
-		clone.spawnX = original.spawnX;
-		clone.spawnZ = original.spawnZ;
-		clone.spawnY = original.spawnY;
-		clone.exitX = original.exitX;
-		clone.exitY = original.exitY;
-		clone.exitZ = original.exitZ;
-		clone.canEnterPortal = original.canEnterPortal;
 		clone.viking_reputation = original.viking_reputation;
 		clone.roman_reputation = original.roman_reputation;
 		clone.chosenPlanet = original.chosenPlanet;
 		clone.currentPlanet = original.currentPlanet;
-		clone.unlockedSpells = original.unlockedSpells;
-		clone.unlockedSpellNumber = original.unlockedSpellNumber;
 		clone.vanilla = original.vanilla;
 		clone.maxMana = original.maxMana;
 		if (!event.isWasDeath()) {
-			clone.charge = original.charge;
-			clone.prevPosX = original.prevPosX;
-			clone.prevPosZ = original.prevPosZ;
-			clone.jetpackEngine = original.jetpackEngine;
-			clone.jetpackHover = original.jetpackHover;
-			clone.jetpackOn = original.jetpackOn;
-			clone.burnTime = original.burnTime;
-			clone.selectedSpell = original.selectedSpell;
 			clone.mana = original.mana;
-			clone.selectedSpellName = original.selectedSpellName;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -212,14 +193,11 @@ public class AlternateDimensionModVariables {
 			return instance;
 		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
-		public boolean compressedBarkMineable = false;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			compressedBarkMineable = nbt.getBooleanOr("compressedBarkMineable", false);
 		}
 
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putBoolean("compressedBarkMineable", compressedBarkMineable);
 			return nbt;
 		}
 
@@ -283,89 +261,32 @@ public class AlternateDimensionModVariables {
 
 	public static class PlayerVariables implements ValueIOSerializable {
 		boolean _syncDirty = false;
-		public double charge = 0;
-		public double prevPosX = 0;
-		public double prevPosZ = 0;
-		public boolean jetpackEngine = false;
-		public boolean jetpackHover = false;
-		public boolean jetpackOn = false;
-		public String selectedBiome = "\"\"";
-		public double burnTime = 0;
-		public double spawnX = 0;
-		public double spawnZ = 0;
-		public double spawnY = 128.0;
-		public double exitX = 0;
-		public double exitY = 128.0;
-		public double exitZ = 0;
-		public boolean canEnterPortal = true;
 		public double viking_reputation = 0;
 		public double roman_reputation = 0;
 		public String chosenPlanet = "\"\"";
 		public String currentPlanet = "\"\"";
-		public String unlockedSpells = "\"\"";
-		public double selectedSpell = 0;
-		public double unlockedSpellNumber = 0;
 		public double mana = 100.0;
-		public String selectedSpellName = "\"\"";
 		public boolean vanilla = false;
 		public double maxMana = 0.0;
 
 		@Override
 		public void serialize(ValueOutput output) {
-			output.putDouble("charge", charge);
-			output.putDouble("prevPosX", prevPosX);
-			output.putDouble("prevPosZ", prevPosZ);
-			output.putBoolean("jetpackEngine", jetpackEngine);
-			output.putBoolean("jetpackHover", jetpackHover);
-			output.putBoolean("jetpackOn", jetpackOn);
-			output.putString("selectedBiome", selectedBiome);
-			output.putDouble("burnTime", burnTime);
-			output.putDouble("spawnX", spawnX);
-			output.putDouble("spawnZ", spawnZ);
-			output.putDouble("spawnY", spawnY);
-			output.putDouble("exitX", exitX);
-			output.putDouble("exitY", exitY);
-			output.putDouble("exitZ", exitZ);
-			output.putBoolean("canEnterPortal", canEnterPortal);
 			output.putDouble("viking_reputation", viking_reputation);
 			output.putDouble("roman_reputation", roman_reputation);
 			output.putString("chosenPlanet", chosenPlanet);
 			output.putString("currentPlanet", currentPlanet);
-			output.putString("unlockedSpells", unlockedSpells);
-			output.putDouble("selectedSpell", selectedSpell);
-			output.putDouble("unlockedSpellNumber", unlockedSpellNumber);
 			output.putDouble("mana", mana);
-			output.putString("selectedSpellName", selectedSpellName);
 			output.putBoolean("vanilla", vanilla);
 			output.putDouble("maxMana", maxMana);
 		}
 
 		@Override
 		public void deserialize(ValueInput input) {
-			charge = input.getDoubleOr("charge", 0);
-			prevPosX = input.getDoubleOr("prevPosX", 0);
-			prevPosZ = input.getDoubleOr("prevPosZ", 0);
-			jetpackEngine = input.getBooleanOr("jetpackEngine", false);
-			jetpackHover = input.getBooleanOr("jetpackHover", false);
-			jetpackOn = input.getBooleanOr("jetpackOn", false);
-			selectedBiome = input.getStringOr("selectedBiome", "");
-			burnTime = input.getDoubleOr("burnTime", 0);
-			spawnX = input.getDoubleOr("spawnX", 0);
-			spawnZ = input.getDoubleOr("spawnZ", 0);
-			spawnY = input.getDoubleOr("spawnY", 0);
-			exitX = input.getDoubleOr("exitX", 0);
-			exitY = input.getDoubleOr("exitY", 0);
-			exitZ = input.getDoubleOr("exitZ", 0);
-			canEnterPortal = input.getBooleanOr("canEnterPortal", false);
 			viking_reputation = input.getDoubleOr("viking_reputation", 0);
 			roman_reputation = input.getDoubleOr("roman_reputation", 0);
 			chosenPlanet = input.getStringOr("chosenPlanet", "");
 			currentPlanet = input.getStringOr("currentPlanet", "");
-			unlockedSpells = input.getStringOr("unlockedSpells", "");
-			selectedSpell = input.getDoubleOr("selectedSpell", 0);
-			unlockedSpellNumber = input.getDoubleOr("unlockedSpellNumber", 0);
 			mana = input.getDoubleOr("mana", 0);
-			selectedSpellName = input.getStringOr("selectedSpellName", "");
 			vanilla = input.getBooleanOr("vanilla", false);
 			maxMana = input.getDoubleOr("maxMana", 0);
 		}

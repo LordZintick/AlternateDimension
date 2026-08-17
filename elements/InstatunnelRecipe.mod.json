@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       "CUSTOM:MinersPet",
-      "CUSTOM:Phosphorus"
+      "CUSTOM:Sulfur"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,15 +15,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
       "TAG:minecraft:pickaxes",
       "CUSTOM:MinersPet",
       "TAG:minecraft:pickaxes",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus"
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur"
     ],
     "recipeReturnStack": "CUSTOM:Instatunnel",
     "name": "instatunnel_recipe",

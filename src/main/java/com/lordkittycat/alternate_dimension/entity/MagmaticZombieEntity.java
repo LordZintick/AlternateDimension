@@ -33,6 +33,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
+import com.lordkittycat.alternate_dimension.procedures.FireTrailProcedure;
 import com.lordkittycat.alternate_dimension.procedures.BurnEntityProcedure;
 import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
@@ -141,6 +142,12 @@ public class MagmaticZombieEntity extends Monster {
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(AlwaysProcedure.execute(), this.tickCount);
 		}
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		FireTrailProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

@@ -118,7 +118,7 @@ public class PhotolithographicMicrofabricatorBlockEntity extends RandomizableCon
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(10, 1, 1, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(10, 1, 5, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

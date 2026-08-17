@@ -1,4 +1,20 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "alternate_dimension:blocks/astral_bricks"
+  "random_sequence": "alternate_dimension:blocks/astral_bricks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:astral_bricks"
+        }
+      ]
+    }
+  ]
 }

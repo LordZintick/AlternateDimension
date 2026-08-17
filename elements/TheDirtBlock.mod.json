@@ -46,7 +46,7 @@
         "Grants the ability to place unlimited amounts of dirt."
       ]
     },
-    "hardness": 1.0,
+    "hardness": 0.2,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -58,7 +58,7 @@
       "CUSTOM:AlternateDimensionUtilities"
     ],
     "destroyTool": "shovel",
-    "customDrop": "",
+    "customDrop": "Blocks.AIR",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,

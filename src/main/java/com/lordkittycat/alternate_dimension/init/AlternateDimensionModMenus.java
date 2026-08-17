@@ -24,7 +24,6 @@ import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 public class AlternateDimensionModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, AlternateDimensionMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<ImbunementGUIMenu>> IMBUNEMENT_GUI = REGISTRY.register("imbunement_gui", () -> IMenuTypeExtension.create(ImbunementGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<IncineratorGUIMenu>> INCINERATOR_GUI = REGISTRY.register("incinerator_gui", () -> IMenuTypeExtension.create(IncineratorGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BackpackGUIMenu>> BACKPACK_GUI = REGISTRY.register("backpack_gui", () -> IMenuTypeExtension.create(BackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CheesyBackpackGUIMenu>> CHEESY_BACKPACK_GUI = REGISTRY.register("cheesy_backpack_gui", () -> IMenuTypeExtension.create(CheesyBackpackGUIMenu::new));
@@ -33,6 +32,10 @@ public class AlternateDimensionModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<ElementalInscriberGUIMenu>> ELEMENTAL_INSCRIBER_GUI = REGISTRY.register("elemental_inscriber_gui", () -> IMenuTypeExtension.create(ElementalInscriberGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HintBookGUIMenu>> HINT_BOOK_GUI = REGISTRY.register("hint_book_gui", () -> IMenuTypeExtension.create(HintBookGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WoodenBoxGUIMenu>> WOODEN_BOX_GUI = REGISTRY.register("wooden_box_gui", () -> IMenuTypeExtension.create(WoodenBoxGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MetalCrateGUIMenu>> METAL_CRATE_GUI = REGISTRY.register("metal_crate_gui", () -> IMenuTypeExtension.create(MetalCrateGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<EssencePouchGUIMenu>> ESSENCE_POUCH_GUI = REGISTRY.register("essence_pouch_gui", () -> IMenuTypeExtension.create(EssencePouchGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HuntersPouchGUIMenu>> HUNTERS_POUCH_GUI = REGISTRY.register("hunters_pouch_gui", () -> IMenuTypeExtension.create(HuntersPouchGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FruitPouchGUIMenu>> FRUIT_POUCH_GUI = REGISTRY.register("fruit_pouch_gui", () -> IMenuTypeExtension.create(FruitPouchGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -61,7 +61,7 @@ public class DarkWolfRenderer extends MobRenderer<DarkWolfEntity, LivingEntityRe
 
 	@Override
 	protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
-		poseStack.scale(2f, 2f, 2f);
+		poseStack.scale(1.5f, 1.5f, 1.5f);
 	}
 
 	public static final ContextKey<DarkWolfEntity> ENTITY_KEY = new ContextKey<>(Identifier.parse("alternate_dimension:dark_wolf_entity"));

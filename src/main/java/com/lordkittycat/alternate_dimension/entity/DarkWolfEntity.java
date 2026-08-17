@@ -133,7 +133,7 @@ public class DarkWolfEntity extends Monster {
 
 	@Override
 	public EntityDimensions getDefaultDimensions(Pose pose) {
-		return super.getDefaultDimensions(pose).scale(2f);
+		return super.getDefaultDimensions(pose).scale(1.5f);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {

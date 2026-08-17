@@ -9,7 +9,7 @@ entityShadows:true
 forceUnicodeFont:false
 japaneseGlyphVariants:false
 fov:1.0
-fovEffectScale:0.0
+fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
@@ -30,7 +30,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"false"
 cloudRange:128
-renderDistance:10
+renderDistance:8
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""
@@ -74,7 +74,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -92,10 +92,10 @@ mouseWheelSensitivity:1.0
 rawMouseInput:true
 allowCursorChanges:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 hideMatchedNames:true
 joinedFirstServer:false
-syncChunkWrites:true
+syncChunkWrites:false
 showAutosaveIndicator:true
 allowServerListing:true
 onlyShowSecureChat:false
@@ -167,10 +167,6 @@ key_key.debug.profilingChart:key.keyboard.1
 key_key.debug.fpsCharts:key.keyboard.2
 key_key.debug.networkCharts:key.keyboard.3
 key_key.debug.lightmapTexture:key.keyboard.4
-key_key.alternate_dimension.fuzzy_socks_activate_key:key.keyboard.b
-key_key.alternate_dimension.toggle_jetpack_engine:key.keyboard.g
-key_key.alternate_dimension.toggle_jetpack_hover:key.keyboard.h
-key_key.alternate_dimension.jetpack_activate_key:key.keyboard.space
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL_OR_COMMAND
 key_key.jei.focusSearch:key.keyboard.f:CONTROL_OR_COMMAND
 key_key.jei.previousPage:key.keyboard.unknown
@@ -204,7 +200,7 @@ key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 soundCategory_master:1.0
-soundCategory_music:0.5598591549295775
+soundCategory_music:0.5070422535211268
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

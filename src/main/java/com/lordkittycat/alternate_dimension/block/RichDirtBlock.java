@@ -15,7 +15,7 @@ import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure
 
 public class RichDirtBlock extends Block {
 	public RichDirtBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f));
+		super(properties.sound(SoundType.GRAVEL).strength(0.5f, 1f));
 	}
 
 	@Override

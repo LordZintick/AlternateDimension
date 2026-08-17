@@ -26,7 +26,7 @@
       null
     ],
     "growapableSpawnType": "Plains",
-    "growapableMaxHeight": 0,
+    "growapableMaxHeight": 3,
     "customBoundingBox": false,
     "disableOffset": false,
     "boundingBoxes": [
@@ -87,7 +87,7 @@
       "TAG:minecraft:dirt"
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 5,
     "generateFeature": true,
     "restrictionBiomes": [
       "#mod:is_familiar_realm"

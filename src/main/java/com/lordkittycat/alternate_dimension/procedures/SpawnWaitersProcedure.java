@@ -21,7 +21,7 @@ public class SpawnWaitersProcedure {
 		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(25 / 2d), e -> true).isEmpty()) {
 			if ((findEntityInWorldRange(world, Player.class, x, y, z, 25)) instanceof Player _plr2 && _plr2.gameMode() == GameType.SURVIVAL
 					|| (findEntityInWorldRange(world, Player.class, x, y, z, 25)) instanceof Player _plr4 && _plr4.gameMode() == GameType.ADVENTURE) {
-				for (int index2 = 0; index2 < Mth.nextInt(RandomSource.create(), 1, 4); index2++) {
+				for (int index61 = 0; index61 < Mth.nextInt(RandomSource.create(), 1, 4); index61++) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = AlternateDimensionModEntities.WAITER.get().spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -40, 40) / 10, y, z + Mth.nextInt(RandomSource.create(), -40, 40) / 10),
 								EntitySpawnReason.MOB_SUMMONED);

@@ -110,6 +110,7 @@
     "stepSound": "entity.zombie.step",
     "raidCelebrationSound": "",
     "entityDataEntries": [],
+    "onMobTickUpdate": "FireTrail",
     "onPlayerCollidesWith": "BurnEntity",
     "hasAI": true,
     "aiBase": "(none)",

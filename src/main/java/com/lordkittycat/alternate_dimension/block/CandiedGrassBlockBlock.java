@@ -15,7 +15,7 @@ import com.lordkittycat.alternate_dimension.procedures.TillIntoFarmlandProcedure
 
 public class CandiedGrassBlockBlock extends Block {
 	public CandiedGrassBlockBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.MOSS).strength(1f));
+		super(properties.sound(SoundType.MOSS).strength(0.6f, 1f));
 	}
 
 	@Override

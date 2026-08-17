@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": "CUSTOM:Pasta",
-            "weight": 5,
+            "weight": 2,
             "minCount": 2,
             "maxCount": 5,
             "minEnchantmentLevel": 0,
@@ -26,7 +26,7 @@
           {
             "type": "item",
             "item": "CUSTOM:Breadstick",
-            "weight": 5,
+            "weight": 2,
             "minCount": 3,
             "maxCount": 6,
             "minEnchantmentLevel": 0,
@@ -38,7 +38,7 @@
           {
             "type": "item",
             "item": "CUSTOM:Cheese",
-            "weight": 5,
+            "weight": 2,
             "minCount": 2,
             "maxCount": 5,
             "minEnchantmentLevel": 0,

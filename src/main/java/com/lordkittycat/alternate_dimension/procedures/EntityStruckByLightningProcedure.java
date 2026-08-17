@@ -14,6 +14,8 @@ import net.minecraft.resources.Identifier;
 
 import javax.annotation.Nullable;
 
+import com.lordkittycat.alternate_dimension.entity.ElectrifiedSpiderEntity;
+
 @EventBusSubscriber
 public class EntityStruckByLightningProcedure {
 	@SubscribeEvent
@@ -28,7 +30,7 @@ public class EntityStruckByLightningProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(Identifier.parse("alternate_dimension:prevents_lightning_damage")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(Identifier.parse("alternate_dimension:prevents_lightning_damage"))) || entity instanceof ElectrifiedSpiderEntity) {
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
 			}

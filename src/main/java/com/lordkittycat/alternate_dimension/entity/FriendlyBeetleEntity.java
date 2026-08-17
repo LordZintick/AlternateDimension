@@ -51,7 +51,6 @@ public class FriendlyBeetleEntity extends TamableAnimal {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		refreshDimensions();
 	}
 
 	@Override
@@ -186,11 +185,6 @@ public class FriendlyBeetleEntity extends TamableAnimal {
 	@Override
 	public boolean isFood(ItemStack stack) {
 		return false;
-	}
-
-	@Override
-	public EntityDimensions getDefaultDimensions(Pose pose) {
-		return super.getDefaultDimensions(pose).scale(1.5f);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {

@@ -2,6 +2,8 @@ package com.lordkittycat.alternate_dimension.block;
 
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -22,8 +24,15 @@ import java.util.List;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class TallWildBushBlock extends DoublePlantBlock {
+	private static final VoxelShape SHAPE = box(2, 0, 2, 14, 16, 14);
+
 	public TallWildBushBlock(BlockBehaviour.Properties properties) {
 		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollision().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE.move(state.getOffset(pos));
 	}
 
 	@Override

@@ -13,7 +13,7 @@
     "cookingTime": 10,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": "CUSTOM:Corn",
+    "smeltingInputStack": "CUSTOM:PopcornKernel",
     "smeltingReturnStack": "CUSTOM:Popcorn",
     "name": "popcorn_recipe",
     "namespace": "mod"

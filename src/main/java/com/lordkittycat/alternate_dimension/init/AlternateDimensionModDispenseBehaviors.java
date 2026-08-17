@@ -15,18 +15,18 @@ public class AlternateDimensionModDispenseBehaviors {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_CHEST_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_CHEST_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.CANDYFLOSS_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_CHEST_BOAT.get()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SCORCHED_BOAT.get()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SCORCHED_CHEST_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_CHEST_BOAT.get()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.REDWOOD_BOAT.get()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.REDWOOD_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_CHEST_BOAT.get()));
 			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.CANDYFLOSS_BOAT.get()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.CANDYFLOSS_CHEST_BOAT.get()));
 		});
 	}
 }

@@ -23,7 +23,7 @@ public class CrudeSalveItem extends Item {
 
 	@Override
 	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
-		return ItemUseAnimation.BUNDLE;
+		return ItemUseAnimation.BRUSH;
 	}
 
 	@Override
