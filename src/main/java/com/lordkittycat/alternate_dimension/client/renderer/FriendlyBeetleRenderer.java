@@ -44,7 +44,6 @@ public class FriendlyBeetleRenderer extends MobRenderer<FriendlyBeetleEntity, Li
 
 	@Override
 	protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
-		poseStack.scale(1.5f, 1.5f, 1.5f);
 		poseStack.scale(state.ageScale, state.ageScale, state.ageScale);
 	}
 

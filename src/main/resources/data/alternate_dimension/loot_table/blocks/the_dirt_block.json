@@ -1,20 +1,4 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "alternate_dimension:blocks/the_dirt_block",
-  "pools": [
-    {
-      "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "alternate_dimension:the_dirt_block"
-        }
-      ]
-    }
-  ]
+  "random_sequence": "alternate_dimension:blocks/the_dirt_block"
 }

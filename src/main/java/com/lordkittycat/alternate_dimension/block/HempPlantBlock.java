@@ -38,22 +38,20 @@ public class HempPlantBlock extends Block implements BonemealableBlock {
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public HempPlantBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).strength(0.05f, 0f).noCollision().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.GRASS).instabreak().noCollision().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(BLOCKSTATE, 0));
 	}
 
 	private Function<BlockState, VoxelShape> makeShapes() {
 		return this.getShapeForEachState(state -> {
 			if (state.getValue(BLOCKSTATE) == 1) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 7, 16);
 			} else if (state.getValue(BLOCKSTATE) == 2) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 11, 16);
 			} else if (state.getValue(BLOCKSTATE) == 3) {
-				return box(4, 4, 4, 12, 12, 12);
-			} else if (state.getValue(BLOCKSTATE) == 4) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 14, 16);
 			}
-			return box(4, 4, 4, 12, 12, 12);
+			return box(0, 0, 0, 16, 3, 16);
 		});
 	}
 

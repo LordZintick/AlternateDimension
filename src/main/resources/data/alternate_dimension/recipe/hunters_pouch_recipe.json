@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "alternate_dimension:tattered_leather",
+    "b": "alternate_dimension:backpack"
+  },
+  "result": {
+    "id": "alternate_dimension:hunters_pouch",
+    "count": 1
+  }
+}

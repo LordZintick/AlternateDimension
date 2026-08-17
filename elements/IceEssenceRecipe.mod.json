@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "TAG:mod:essences"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "TAG:mod:essences",
+      "TAG:mod:essences",
+      "TAG:mod:essences",
+      "TAG:mod:essences",
+      "CUSTOM:FrozenFlesh",
+      "TAG:mod:essences",
+      "TAG:mod:essences",
+      "TAG:mod:essences",
+      "TAG:mod:essences"
+    ],
+    "recipeReturnStack": "CUSTOM:IceEssence",
+    "name": "ice_essence_recipe",
+    "namespace": "mod"
+  }
+}

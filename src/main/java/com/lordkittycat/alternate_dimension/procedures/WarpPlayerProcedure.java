@@ -1,6 +1,5 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -13,8 +12,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
-
-import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class WarpPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -54,23 +51,8 @@ public class WarpPlayerProcedure {
 		if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "oneUse")) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		} else {
-			world.setBlock(BlockPos.containing(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetX"), getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetY"), getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetZ")),
-					AlternateDimensionModBlocks.PORTAL_BLOCK.get().defaultBlockState(), 3);
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetX"), getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetY"),
-						getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetZ"));
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putBoolean("oneUse", true);
-					_blockEntity.getPersistentData().putDouble("targetX", x);
-					_blockEntity.getPersistentData().putDouble("targetY", (y + 1));
-					_blockEntity.getPersistentData().putDouble("targetZ", z);
-					_blockEntity.getPersistentData().putString("owner", (getBlockNBTString(world, BlockPos.containing(x, y, z), "owner")));
-				}
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
+			PlacePortalProcedure.execute(world, getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetX"), getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetY"), getBlockNBTNumber(world, BlockPos.containing(x, y, z), "targetZ"),
+					entity, false, x, y, z);
 		}
 	}
 
@@ -86,12 +68,5 @@ public class WarpPlayerProcedure {
 		if (blockEntity != null)
 			return blockEntity.getPersistentData().getBooleanOr(tag, false);
 		return false;
-	}
-
-	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		if (blockEntity != null)
-			return blockEntity.getPersistentData().getStringOr(tag, "");
-		return "";
 	}
 }

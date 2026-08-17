@@ -1,50 +1,50 @@
-/gamerule keep_inventory true
-/data get block 223 65 -358
-/data get block 219 64 -358
-/data get block 218 64 -358
-/data get block 217 63 -362
-/data get block 217 64 -362
-/data get block 217 63 -362
-/time set day
-/data get block 217 62 -356
-/setblock ~ ~ ~ alternate_dimension:mana_provider[facing=up]
-/tp @n[type=item]
-/tp @n[type=item] ~ ~-3 ~
-/tp @n[type=item] ~ ~-1 ~
-/setblock ~ ~-1 ~ alternate_dimension:fuser[facing=east]
-/data get block 217 64 -361
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1}]}
-/data get block 217 64 -361
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:raw_quartz", count:1}]}
-/data get block 220 63 -362
-/data get block 220 63 -362\
-/data get block 220 63 -362
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}]}
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
-/data get block 220 63 -362
-/data get block 217 64 -361
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
-/data get block 217 64 -361
-/data merge block 217 64 -361 {Items:[{id:"alternate_dimension:aluminum_nugget", count:1, slot:0b}, {id:"alternate_dimension:raw_quartz", count:1, slot:1b}]}
-/data get block 217 64 -361
-/data get block 220 63 -360
-/data merge block 220 63 -360 {NeoForgeData: {progress: 99d}}
-/data get block 220 63 -360
-/data merge block 220 63 -360 {NeoForgeData: {progress: 50d}}
-/data get block 220 63 -360
-/data get block 224 63 -361
-/time set day
-/data get block 220 64 -359
-/time set day
-/data get block 221 64 -359
-/data get block 222 65 -359
-/data get block 221 63 -359
-/fill 265 73 -358
-/fill 265 73 -358 256 73 -371 alternate_dimension:pure_bricks
-/setblock ~ ~ ~ alternate_dimension:pine_box{LootTable:"alternate_dimension:chests/kitchen_barrel_loot"}
-/setblock ~ ~ ~ alternate_dimension:pine_box{LootTable:"alternate_dimension:chests/pasta_mall_general_loot"}
-/tick sprint 60s
-/tick sprint 240s
 /fill 256 74 -358
 /fill 256 74 -358 265 74 -371 alternate_dimension:corrupt_brick_slab[type=bottom]
+/fill -101 74 69
+/fill -101 74 69 -87 74 55 alternate_dimension:unbreakable_veridium_bricks
+/time set day
+/gamerule advance_time false
+/setblock ~ ~ ~ trial_spawner{normal_config:{spawn_potentials:[{data:{entity:{id:"alternate_dimension:overgrown_zombie"}},weight:1}]}} replace
+/kill @e[type=alternate_dimension:friendly_beetle]
+/fill -101 79 55
+/fill -101 79 55 -87 79 69 alternate_dimension:unbreakable_veridium_bricks
+/weather clear
+/gamerule advance_weather false
+/clone -87 74 55
+/clone -87 74 55 -101 79 69
+/clone -87 74 55 -101 79 69 -87 79 55 replace normal
+/clone -87 74 55 -101 79 69 -87 79 55 masked normal
+/clone -87 75 55
+/clone -87 75 55 -101 79 69 -87 79 55 replace normal
+/clone -87 75 55 -101 79 69 -87 80 55 replace normal
+/clone -87 75 55 -101 79 69 -101 80 55 replace normal
+/fill -86 80 55
+/fill -86 80 55 -73 84 69 air
+/fill -101 85 69
+/fill -101 85 69 -87 85 55 alternate_dimension:astral_bricks
+/gamerule advance_time true
+/gamerule advance_weather true
+/time set day
+/data get block -13 71 50
+/time set day
+/data get block -13 71 50
+/time set day
+/give Dev alternate_dimension:mana_meter
+/tp 34dc83bf-79dc-4835-baaf-6a1edecdb2fc ~ ~128 ~
+/tp @s ~ ~128 ~
+/gamerule keep_inventory false
+/data get block 4 66 4
+/locate biome alternate_dimension:candy_biome
+/tp @s 142 78 123
+/gamerule keep_inventory false
+/kill Dev
+/execute in alternate_dimension:eleroth run tp Dev ~ ~ ~
+/locate biome alternate_dimension:candy_biome
+/tp @s 124 71 130
+/kill Dev
+/data get entity Dev
+/gamerule command_block_output false
+/fill 146 70 159
+/fill 146 70 159 171 80 184
+/fill 146 70 159 171 80 184 minecraft:structure_void replace air
+/kill @s

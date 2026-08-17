@@ -1,8 +1,12 @@
 {
-  "type": "alternate_dimension:imbunement_table_recipe",
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
   "ingredients": [
-    "alternate_dimension:magic_dust_block",
-    "alternate_dimension:light_blue_gummy_bear"
+    "alternate_dimension:magic_dust",
+    "#minecraft:foot_armor"
+  ],
+  "integers": [
+    8,
+    1
   ],
   "outputs": [
     {

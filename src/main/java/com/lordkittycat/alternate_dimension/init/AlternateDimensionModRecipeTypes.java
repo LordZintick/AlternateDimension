@@ -17,7 +17,7 @@ import net.minecraft.world.item.crafting.RecipeMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.PhotolithographicMicrofabricatorRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.jei_recipes.ImbunementTableRecipeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.ManaMystifierRecipeTypeRecipe;
 import com.lordkittycat.alternate_dimension.jei_recipes.FuserRecipeTypeRecipe;
 import com.lordkittycat.alternate_dimension.jei_recipes.ElementalInfuserRecipeTypeRecipe;
 import com.lordkittycat.alternate_dimension.jei_recipes.CompressorRecipeTypeRecipe;
@@ -34,8 +34,6 @@ public class AlternateDimensionModRecipeTypes {
 		event.enqueueWork(() -> {
 			RECIPE_TYPES.register(bus);
 			SERIALIZERS.register(bus);
-			RECIPE_TYPES.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("fuser_recipe_type", () -> FuserRecipeTypeRecipe.Type.INSTANCE);
@@ -44,16 +42,18 @@ public class AlternateDimensionModRecipeTypes {
 			SERIALIZERS.register("photolithographic_microfabricator_recipe_type", () -> PhotolithographicMicrofabricatorRecipeTypeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.SERIALIZER);
 		});
 	}
 
 	@SubscribeEvent
 	public static void syncRecipes(OnDatapackSyncEvent event) {
-		event.sendRecipes(ImbunementTableRecipeRecipe.Type.INSTANCE);
 		event.sendRecipes(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(FuserRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(CompressorRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
 	}
 
 	@EventBusSubscriber(value = Dist.CLIENT)

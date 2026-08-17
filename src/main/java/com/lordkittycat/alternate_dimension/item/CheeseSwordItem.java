@@ -17,7 +17,7 @@ public class CheeseSwordItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL, 500, 5f, 0, 20, TagKey.create(Registries.ITEM, Identifier.parse("alternate_dimension:cheese_sword_repair_items")));
 
 	public CheeseSwordItem(Item.Properties properties) {
-		super(properties.sword(TOOL_MATERIAL, 2f, -2.3f));
+		super(properties.sword(TOOL_MATERIAL, 4f, -2.3f));
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
+import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -11,8 +12,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
-
-import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 
 public class SetHomePointProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -26,14 +25,9 @@ public class SetHomePointProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 50, 0, 0, 0, 1);
-		{
-			AlternateDimensionModVariables.PlayerVariables _vars = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES);
-			_vars.spawnX = x;
-			_vars.spawnY = y;
-			_vars.spawnZ = z;
-			_vars.markSyncDirty();
-		}
+			_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), (y + 1), (z + 0.5), 50, 0, 0, 0, 1);
+		if (entity instanceof ServerPlayer _serverPlayer)
+			_serverPlayer.setRespawnPosition(new ServerPlayer.RespawnConfig(LevelData.RespawnData.of(_serverPlayer.level().dimension(), BlockPos.containing(x + 0.5, y + 1, z + 0.5), _serverPlayer.getYRot(), _serverPlayer.getXRot()), true), false);
 		if (entity instanceof ServerPlayer _player)
 			_player.sendSystemMessage(Component.literal("Home Point Set!"), true);
 	}

@@ -17,7 +17,7 @@ public class SpawnCloudMobsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()) {
 			if (Mth.nextInt(RandomSource.create(), 0, 1) == 0) {
-				for (int index7 = 0; index7 < Mth.nextInt(RandomSource.create(), 1, 2); index7++) {
+				for (int index66 = 0; index66 < Mth.nextInt(RandomSource.create(), 1, 2); index66++) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = AlternateDimensionModEntities.CLOUD_KITTY.get().spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -20, 20) / 10, y + 25, z + Mth.nextInt(RandomSource.create(), -20, 20) / 10),
 								EntitySpawnReason.MOB_SUMMONED);
@@ -27,7 +27,7 @@ public class SpawnCloudMobsProcedure {
 					}
 				}
 			} else {
-				for (int index8 = 0; index8 < Mth.nextInt(RandomSource.create(), 1, 2); index8++) {
+				for (int index67 = 0; index67 < Mth.nextInt(RandomSource.create(), 1, 2); index67++) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = AlternateDimensionModEntities.CLOUDY_WOLF.get().spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -20, 20) / 10, y + 25, z + Mth.nextInt(RandomSource.create(), -20, 20) / 10),
 								EntitySpawnReason.MOB_SUMMONED);

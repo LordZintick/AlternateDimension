@@ -83,7 +83,7 @@
         ]
       },
       {
-        "minrolls": 0,
+        "minrolls": 1,
         "maxrolls": 2,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
@@ -92,6 +92,18 @@
           {
             "type": "item",
             "item": "CUSTOM:Salt",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:Sulfur",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

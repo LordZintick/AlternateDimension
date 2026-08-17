@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "spawners": {
+    "type": "alternate_dimension:electrified_spider",
+    "weight": 12,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

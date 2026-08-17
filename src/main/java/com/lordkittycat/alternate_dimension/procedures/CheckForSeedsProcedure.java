@@ -17,9 +17,9 @@ public class CheckForSeedsProcedure {
 			return false;
 		boolean found = false;
 		found = false;
-		if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> _resourceHandler) {
-			for (int _idx = 0; _idx < _resourceHandler.size(); _idx++) {
-				ItemStack itemstackiterator = ItemUtil.getStack(_resourceHandler, _idx);
+		if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> _resourceHandlerIter) {
+			for (int _idx = 0; _idx < _resourceHandlerIter.size(); _idx++) {
+				ItemStack itemstackiterator = ItemUtil.getStack(_resourceHandlerIter, _idx);
 				if (itemstackiterator.is(ItemTags.create(Identifier.parse("alternate_dimension:seeds")))) {
 					found = true;
 				}

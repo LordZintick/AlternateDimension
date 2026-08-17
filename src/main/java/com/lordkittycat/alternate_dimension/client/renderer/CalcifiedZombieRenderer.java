@@ -5,6 +5,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.context.ContextKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
@@ -16,6 +18,7 @@ import net.minecraft.client.animation.AnimationDefinition;
 
 import java.util.Map;
 
+import com.lordkittycat.alternate_dimension.procedures.IsCalcifiedZombieShakingProcedure;
 import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.entity.CalcifiedZombieEntity;
 import com.lordkittycat.alternate_dimension.client.model.animations.zombieAnimation;
@@ -44,6 +47,16 @@ public class CalcifiedZombieRenderer extends MobRenderer<CalcifiedZombieEntity, 
 		if (entity != null && entity.getTexture() != "calcified")
 			return Identifier.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
+	}
+
+	@Override
+	protected boolean isShaking(LivingEntityRenderState state) {
+		Entity entity = state.getRenderData(ENTITY_KEY);
+		Level world = entity.level();
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return IsCalcifiedZombieShakingProcedure.execute(entity);
 	}
 
 	private static final class AnimatedModel extends Modelzombie {

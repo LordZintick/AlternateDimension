@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:magic_dust",
+    "alternate_dimension:raw_quartz"
+  ],
+  "integers": [
+    2,
+    4
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:mana_crystal",
+      "count": 4
+    }
+  ]
+}

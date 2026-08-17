@@ -118,7 +118,7 @@ public class FuserBlockEntity extends RandomizableContainerBlockEntity implement
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(4, 1, 1, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(4, 1, 2, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

@@ -7,7 +7,7 @@
     "group": "",
     "unlockingItems": [
       "CUSTOM:MinersPet",
-      "CUSTOM:Phosphorus"
+      "CUSTOM:Sulfur"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,15 +15,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
       "TAG:minecraft:shovels",
       "CUSTOM:MinersPet",
       "TAG:minecraft:shovels",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus",
-      "CUSTOM:Phosphorus"
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur"
     ],
     "recipeReturnStack": "CUSTOM:Instavator",
     "name": "instavator_recipe",

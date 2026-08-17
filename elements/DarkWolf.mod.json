@@ -16,10 +16,10 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 2.0
+      "fixedValue": 1.5
     },
     "boundingBoxScale": {
-      "fixedValue": 2.0
+      "fixedValue": 1.5
     },
     "modelLayers": [
       {

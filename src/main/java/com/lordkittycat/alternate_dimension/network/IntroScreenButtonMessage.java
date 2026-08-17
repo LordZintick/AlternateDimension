@@ -50,7 +50,7 @@ public record IntroScreenButtonMessage(int buttonID, int x, int y, int z) implem
 			return;
 		if (buttonID == 0) {
 
-			SelectAltDimProcedure.execute(entity);
+			SelectAltDimProcedure.execute(world, entity);
 		}
 		if (buttonID == 1) {
 

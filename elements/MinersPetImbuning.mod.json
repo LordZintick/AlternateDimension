@@ -2,14 +2,17 @@
   "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "imbunement_table_recipe",
+    "category": "mana_mystifier_recipe_type",
     "ingredients": [
-      "CUSTOM:MagicDustBlock",
+      "CUSTOM:MagicDust",
       "TAG:minecraft:pickaxes"
     ],
-    "integers": [],
+    "integers": [
+      8,
+      1
+    ],
     "strings": [],
-    "recipetype": "ImbunementTableRecipe",
+    "recipetype": "ManaMystifierRecipeType",
     "results": [
       "CUSTOM:MinersPet"
     ],

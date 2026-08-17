@@ -38,7 +38,6 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> WAFFLE_BLOCK;
 	public static final DeferredBlock<Block> COOKIE_BLOCK;
 	public static final DeferredBlock<Block> CHEESE_BLOCK;
-	public static final DeferredBlock<Block> LIGHTNING_BLOCK;
 	public static final DeferredBlock<Block> BUSH_LEAVES;
 	public static final DeferredBlock<Block> PARMESAN_CHEESE_BLOCK;
 	public static final DeferredBlock<Block> HEMP_PLANT;
@@ -51,7 +50,6 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> SCORCHED_BRICK_STAIRS;
 	public static final DeferredBlock<Block> RESTLESS_BEETLE_NEST;
 	public static final DeferredBlock<Block> CLOUD_BLOCK;
-	public static final DeferredBlock<Block> IMBUNEMENT_TABLE;
 	public static final DeferredBlock<Block> HEART_OF_NATURE;
 	public static final DeferredBlock<Block> CLOUD_BRICKS;
 	public static final DeferredBlock<Block> CLOUD_BRICK_SLAB;
@@ -350,6 +348,20 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> CHEESEFLOWER;
 	public static final DeferredBlock<Block> LEMON_GROWTH;
 	public static final DeferredBlock<Block> LIME_GROWTH;
+	public static final DeferredBlock<Block> LOCK_BLOCK;
+	public static final DeferredBlock<Block> INFERNO_LOCK_BLOCK;
+	public static final DeferredBlock<Block> ASTRAL_BRICKS;
+	public static final DeferredBlock<Block> UNBREAKABLE_VERIDIUM_BRICKS;
+	public static final DeferredBlock<Block> UNBREAKABLE_PYRIC_BRICKS;
+	public static final DeferredBlock<Block> UNBREAKABLE_SHALE_BRICKS;
+	public static final DeferredBlock<Block> COLLECTOR;
+	public static final DeferredBlock<Block> ALUMINUM_CRATE;
+	public static final DeferredBlock<Block> ASTRAL_BRICK_SLAB;
+	public static final DeferredBlock<Block> ASTRAL_BRICK_STAIRS;
+	public static final DeferredBlock<Block> ASTRAL_BRICK_WALL;
+	public static final DeferredBlock<Block> PYROLITE_TORCH;
+	public static final DeferredBlock<Block> MANA_MYSTIFIER;
+	public static final DeferredBlock<Block> GRAVESTONE;
 	static {
 		TITANIUM_BLOCK = register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = register("scorched_earth", ScorchedEarthBlock::new);
@@ -364,7 +376,6 @@ public class AlternateDimensionModBlocks {
 		WAFFLE_BLOCK = register("waffle_block", WaffleBlockBlock::new);
 		COOKIE_BLOCK = register("cookie_block", CookieBlockBlock::new);
 		CHEESE_BLOCK = register("cheese_block", CheeseBlockBlock::new);
-		LIGHTNING_BLOCK = register("lightning_block", LightningBlockBlock::new);
 		BUSH_LEAVES = register("bush_leaves", BushLeavesBlock::new);
 		PARMESAN_CHEESE_BLOCK = register("parmesan_cheese_block", ParmesanCheeseBlockBlock::new);
 		HEMP_PLANT = register("hemp_plant", HempPlantBlock::new);
@@ -377,7 +388,6 @@ public class AlternateDimensionModBlocks {
 		SCORCHED_BRICK_STAIRS = register("scorched_brick_stairs", ScorchedBrickStairsBlock::new);
 		RESTLESS_BEETLE_NEST = register("restless_beetle_nest", RestlessBeetleNestBlock::new);
 		CLOUD_BLOCK = register("cloud_block", CloudBlockBlock::new);
-		IMBUNEMENT_TABLE = register("imbunement_table", ImbunementTableBlock::new);
 		HEART_OF_NATURE = register("heart_of_nature", HeartOfNatureBlock::new);
 		CLOUD_BRICKS = register("cloud_bricks", CloudBricksBlock::new);
 		CLOUD_BRICK_SLAB = register("cloud_brick_slab", CloudBrickSlabBlock::new);
@@ -676,6 +686,20 @@ public class AlternateDimensionModBlocks {
 		CHEESEFLOWER = register("cheeseflower", CheeseflowerBlock::new);
 		LEMON_GROWTH = register("lemon_growth", LemonGrowthBlock::new);
 		LIME_GROWTH = register("lime_growth", LimeGrowthBlock::new);
+		LOCK_BLOCK = register("lock_block", LockBlockBlock::new);
+		INFERNO_LOCK_BLOCK = register("inferno_lock_block", InfernoLockBlockBlock::new);
+		ASTRAL_BRICKS = register("astral_bricks", AstralBricksBlock::new);
+		UNBREAKABLE_VERIDIUM_BRICKS = register("unbreakable_veridium_bricks", UnbreakableVeridiumBricksBlock::new);
+		UNBREAKABLE_PYRIC_BRICKS = register("unbreakable_pyric_bricks", UnbreakablePyricBricksBlock::new);
+		UNBREAKABLE_SHALE_BRICKS = register("unbreakable_shale_bricks", UnbreakableShaleBricksBlock::new);
+		COLLECTOR = register("collector", CollectorBlock::new);
+		ALUMINUM_CRATE = register("aluminum_crate", AluminumCrateBlock::new);
+		ASTRAL_BRICK_SLAB = register("astral_brick_slab", AstralBrickSlabBlock::new);
+		ASTRAL_BRICK_STAIRS = register("astral_brick_stairs", AstralBrickStairsBlock::new);
+		ASTRAL_BRICK_WALL = register("astral_brick_wall", AstralBrickWallBlock::new);
+		PYROLITE_TORCH = register("pyrolite_torch", PyroliteTorchBlock::new);
+		MANA_MYSTIFIER = register("mana_mystifier", ManaMystifierBlock::new);
+		GRAVESTONE = register("gravestone", GravestoneBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -697,34 +721,34 @@ public class AlternateDimensionModBlocks {
 
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.SCORCHED_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.AZURE_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE);
-			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.AZURE_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.SCORCHED_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.SCORCHED_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.REDWOOD_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.PINE_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(AlternateDimensionModWoodTypes.GREENWOOD_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(AlternateDimensionModWoodTypes.CANDYFLOSS_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerSigns(BlockEntityTypeAddBlocksEvent event) {
-		event.modify(BlockEntityType.SIGN, SCORCHED_SIGN.get(), SCORCHED_WALL_SIGN.get());
-		event.modify(BlockEntityType.SIGN, CANDYFLOSS_SIGN.get(), CANDYFLOSS_WALL_SIGN.get());
-		event.modify(BlockEntityType.HANGING_SIGN, REDWOOD_HANGING_SIGN.get(), REDWOOD_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, AZURE_SIGN.get(), AZURE_WALL_SIGN.get());
-		event.modify(BlockEntityType.SIGN, REDWOOD_SIGN.get(), REDWOOD_WALL_SIGN.get());
-		event.modify(BlockEntityType.SIGN, GREENWOOD_SIGN.get(), GREENWOOD_WALL_SIGN.get());
-		event.modify(BlockEntityType.HANGING_SIGN, PINE_HANGING_SIGN.get(), PINE_WALL_HANGING_SIGN.get());
-		event.modify(BlockEntityType.SIGN, PINE_SIGN.get(), PINE_WALL_SIGN.get());
-		event.modify(BlockEntityType.HANGING_SIGN, CANDYFLOSS_HANGING_SIGN.get(), CANDYFLOSS_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, AZURE_HANGING_SIGN.get(), AZURE_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, SCORCHED_SIGN.get(), SCORCHED_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, SCORCHED_HANGING_SIGN.get(), SCORCHED_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, REDWOOD_SIGN.get(), REDWOOD_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, REDWOOD_HANGING_SIGN.get(), REDWOOD_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, PINE_SIGN.get(), PINE_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, PINE_HANGING_SIGN.get(), PINE_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, GREENWOOD_SIGN.get(), GREENWOOD_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, GREENWOOD_HANGING_SIGN.get(), GREENWOOD_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, CANDYFLOSS_SIGN.get(), CANDYFLOSS_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, CANDYFLOSS_HANGING_SIGN.get(), CANDYFLOSS_WALL_HANGING_SIGN.get());
 	}
 }

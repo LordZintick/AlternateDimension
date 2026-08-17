@@ -19,10 +19,7 @@ import net.minecraft.resources.Identifier;
 
 import java.util.function.Function;
 
-import com.lordkittycat.alternate_dimension.item.inventory.ItemIncineratorInventoryCapability;
-import com.lordkittycat.alternate_dimension.item.inventory.EnchantedBackpackInventoryCapability;
-import com.lordkittycat.alternate_dimension.item.inventory.CheesyBackpackInventoryCapability;
-import com.lordkittycat.alternate_dimension.item.inventory.BackpackInventoryCapability;
+import com.lordkittycat.alternate_dimension.item.inventory.*;
 import com.lordkittycat.alternate_dimension.item.*;
 import com.lordkittycat.alternate_dimension.block.TheDirtBlockBlock;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
@@ -72,10 +69,8 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> VARIABLE;
 	public static final DeferredItem<Item> FUNCTION_BLASTER;
 	public static final DeferredItem<Item> COOKIE_BLOCK;
-	public static final DeferredItem<Item> FUZZY_ARMOR_BOOTS;
 	public static final DeferredItem<Item> CHEESE_BLOCK;
 	public static final DeferredItem<Item> LIGHTNING_BOTTLE;
-	public static final DeferredItem<Item> LIGHTNING_BLOCK;
 	public static final DeferredItem<Item> BEETLE_ARMOR_HELMET;
 	public static final DeferredItem<Item> BEETLE_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> BEETLE_ARMOR_LEGGINGS;
@@ -95,8 +90,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> HEMP_SEEDS;
 	public static final DeferredItem<Item> HEMP;
 	public static final DeferredItem<Item> CHICKEN_PARMESAN;
-	public static final DeferredItem<Item> CHLORINE_RAPIER;
-	public static final DeferredItem<Item> SODIUM_RAPIER;
 	public static final DeferredItem<Item> RED_GUMMY_BEAR_SPAWN_EGG;
 	public static final DeferredItem<Item> RED_GUMMY_BEAR_ITEM;
 	public static final DeferredItem<Item> BLUE_GUMMY_BEAR_SPAWN_EGG;
@@ -126,7 +119,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CLOUD_KITTY_SPAWN_EGG;
 	public static final DeferredItem<Item> CLOUDY_WOLF_SPAWN_EGG;
 	public static final DeferredItem<Item> LIGHT_ESSENCE;
-	public static final DeferredItem<Item> IMBUNEMENT_TABLE;
 	public static final DeferredItem<Item> MAGIC_DUST;
 	public static final DeferredItem<Item> ITEM_INCINERATOR;
 	public static final DeferredItem<Item> ROCKET;
@@ -170,7 +162,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> FIRE_SPIRIT_SPAWN_EGG;
 	public static final DeferredItem<Item> ICE_SPIRIT_SPAWN_EGG;
 	public static final DeferredItem<Item> CANDY_SPIRIT_SPAWN_EGG;
-	public static final DeferredItem<Item> CANDY_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> METEOROID_SPAWN_EGG;
 	public static final DeferredItem<Item> BANANA;
 	public static final DeferredItem<Item> ELDERBERRY;
@@ -677,6 +668,34 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> HOLYSTONE_SHOVEL;
 	public static final DeferredItem<Item> HOLYSTONE_SWORD;
 	public static final DeferredItem<Item> HOLYSTONE_HOE;
+	public static final DeferredItem<Item> PERMACHILL_ZOMBIE_SPAWN_EGG;
+	public static final DeferredItem<Item> FROST_CORE;
+	public static final DeferredItem<Item> LOCK_BLOCK;
+	public static final DeferredItem<Item> KEY;
+	public static final DeferredItem<Item> INFERNO_KEY;
+	public static final DeferredItem<Item> INFERNO_LOCK_BLOCK;
+	public static final DeferredItem<Item> ASTRAL_BRICKS;
+	public static final DeferredItem<Item> UNBREAKABLE_VERIDIUM_BRICKS;
+	public static final DeferredItem<Item> UNBREAKABLE_PYRIC_BRICKS;
+	public static final DeferredItem<Item> UNBREAKABLE_SHALE_BRICKS;
+	public static final DeferredItem<Item> POPCORN_KERNEL;
+	public static final DeferredItem<Item> COLLECTOR;
+	public static final DeferredItem<Item> ALUMINUM_CRATE;
+	public static final DeferredItem<Item> ASTRAL_BRICK_SLAB;
+	public static final DeferredItem<Item> ASTRAL_BRICK_STAIRS;
+	public static final DeferredItem<Item> ASTRAL_BRICK_WALL;
+	public static final DeferredItem<Item> STARDUST;
+	public static final DeferredItem<Item> VERDANT_ZOMBIE_SPAWN_EGG;
+	public static final DeferredItem<Item> ESSENCE_POUCH;
+	public static final DeferredItem<Item> HUNTERS_POUCH;
+	public static final DeferredItem<Item> PYROLITE_TORCH;
+	public static final DeferredItem<Item> MANA_MYSTIFIER;
+	public static final DeferredItem<Item> MINI_INSTATUNNEL;
+	public static final DeferredItem<Item> MINI_INSTAVATOR;
+	public static final DeferredItem<Item> FRUIT_POUCH;
+	public static final DeferredItem<Item> ELECTRIFIED_SPIDER_SPAWN_EGG;
+	public static final DeferredItem<Item> STORM_ESSENCE;
+	public static final DeferredItem<Item> GRAVESTONE;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -720,10 +739,8 @@ public class AlternateDimensionModItems {
 		VARIABLE = register("variable", VariableItem::new);
 		FUNCTION_BLASTER = register("function_blaster", FunctionBlasterItem::new);
 		COOKIE_BLOCK = block(AlternateDimensionModBlocks.COOKIE_BLOCK);
-		FUZZY_ARMOR_BOOTS = register("fuzzy_armor_boots", FuzzyArmorItem.Boots::new);
 		CHEESE_BLOCK = block(AlternateDimensionModBlocks.CHEESE_BLOCK);
 		LIGHTNING_BOTTLE = register("lightning_bottle", LightningBottleItem::new);
-		LIGHTNING_BLOCK = block(AlternateDimensionModBlocks.LIGHTNING_BLOCK);
 		BEETLE_ARMOR_HELMET = register("beetle_armor_helmet", BeetleArmorItem.Helmet::new);
 		BEETLE_ARMOR_CHESTPLATE = register("beetle_armor_chestplate", BeetleArmorItem.Chestplate::new);
 		BEETLE_ARMOR_LEGGINGS = register("beetle_armor_leggings", BeetleArmorItem.Leggings::new);
@@ -743,8 +760,6 @@ public class AlternateDimensionModItems {
 		HEMP_SEEDS = register("hemp_seeds", HempSeedsItem::new);
 		HEMP = register("hemp", HempItem::new);
 		CHICKEN_PARMESAN = register("chicken_parmesan", ChickenParmesanItem::new);
-		CHLORINE_RAPIER = register("chlorine_rapier", ChlorineRapierItem::new);
-		SODIUM_RAPIER = register("sodium_rapier", SodiumRapierItem::new);
 		RED_GUMMY_BEAR_SPAWN_EGG = register("red_gummy_bear_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.RED_GUMMY_BEAR.get())));
 		RED_GUMMY_BEAR_ITEM = register("red_gummy_bear_item", RedGummyBearItemItem::new);
 		BLUE_GUMMY_BEAR_SPAWN_EGG = register("blue_gummy_bear_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.BLUE_GUMMY_BEAR.get())));
@@ -774,7 +789,6 @@ public class AlternateDimensionModItems {
 		CLOUD_KITTY_SPAWN_EGG = register("cloud_kitty_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.CLOUD_KITTY.get())));
 		CLOUDY_WOLF_SPAWN_EGG = register("cloudy_wolf_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.CLOUDY_WOLF.get())));
 		LIGHT_ESSENCE = register("light_essence", LightEssenceItem::new);
-		IMBUNEMENT_TABLE = block(AlternateDimensionModBlocks.IMBUNEMENT_TABLE);
 		MAGIC_DUST = register("magic_dust", MagicDustItem::new);
 		ITEM_INCINERATOR = register("item_incinerator", ItemIncineratorItem::new);
 		ROCKET = register("rocket", RocketItem::new);
@@ -818,7 +832,6 @@ public class AlternateDimensionModItems {
 		FIRE_SPIRIT_SPAWN_EGG = register("fire_spirit_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.FIRE_SPIRIT.get())));
 		ICE_SPIRIT_SPAWN_EGG = register("ice_spirit_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.ICE_SPIRIT.get())));
 		CANDY_SPIRIT_SPAWN_EGG = register("candy_spirit_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.CANDY_SPIRIT.get())));
-		CANDY_ARMOR_CHESTPLATE = register("candy_armor_chestplate", CandyArmorItem.Chestplate::new);
 		METEOROID_SPAWN_EGG = register("meteoroid_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.METEOROID.get())));
 		BANANA = register("banana", BananaItem::new);
 		ELDERBERRY = register("elderberry", ElderberryItem::new);
@@ -1325,6 +1338,34 @@ public class AlternateDimensionModItems {
 		HOLYSTONE_SHOVEL = register("holystone_shovel", HolystoneShovelItem::new);
 		HOLYSTONE_SWORD = register("holystone_sword", HolystoneSwordItem::new);
 		HOLYSTONE_HOE = register("holystone_hoe", HolystoneHoeItem::new);
+		PERMACHILL_ZOMBIE_SPAWN_EGG = register("permachill_zombie_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.PERMACHILL_ZOMBIE.get())));
+		FROST_CORE = register("frost_core", FrostCoreItem::new);
+		LOCK_BLOCK = block(AlternateDimensionModBlocks.LOCK_BLOCK);
+		KEY = register("key", KeyItem::new);
+		INFERNO_KEY = register("inferno_key", InfernoKeyItem::new);
+		INFERNO_LOCK_BLOCK = block(AlternateDimensionModBlocks.INFERNO_LOCK_BLOCK);
+		ASTRAL_BRICKS = block(AlternateDimensionModBlocks.ASTRAL_BRICKS);
+		UNBREAKABLE_VERIDIUM_BRICKS = block(AlternateDimensionModBlocks.UNBREAKABLE_VERIDIUM_BRICKS);
+		UNBREAKABLE_PYRIC_BRICKS = block(AlternateDimensionModBlocks.UNBREAKABLE_PYRIC_BRICKS);
+		UNBREAKABLE_SHALE_BRICKS = block(AlternateDimensionModBlocks.UNBREAKABLE_SHALE_BRICKS);
+		POPCORN_KERNEL = register("popcorn_kernel", PopcornKernelItem::new);
+		COLLECTOR = block(AlternateDimensionModBlocks.COLLECTOR);
+		ALUMINUM_CRATE = block(AlternateDimensionModBlocks.ALUMINUM_CRATE);
+		ASTRAL_BRICK_SLAB = block(AlternateDimensionModBlocks.ASTRAL_BRICK_SLAB);
+		ASTRAL_BRICK_STAIRS = block(AlternateDimensionModBlocks.ASTRAL_BRICK_STAIRS);
+		ASTRAL_BRICK_WALL = block(AlternateDimensionModBlocks.ASTRAL_BRICK_WALL);
+		STARDUST = register("stardust", StardustItem::new);
+		VERDANT_ZOMBIE_SPAWN_EGG = register("verdant_zombie_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.VERDANT_ZOMBIE.get())));
+		ESSENCE_POUCH = register("essence_pouch", EssencePouchItem::new);
+		HUNTERS_POUCH = register("hunters_pouch", HuntersPouchItem::new);
+		PYROLITE_TORCH = block(AlternateDimensionModBlocks.PYROLITE_TORCH);
+		MANA_MYSTIFIER = block(AlternateDimensionModBlocks.MANA_MYSTIFIER);
+		MINI_INSTATUNNEL = register("mini_instatunnel", MiniInstatunnelItem::new);
+		MINI_INSTAVATOR = register("mini_instavator", MiniInstavatorItem::new);
+		FRUIT_POUCH = register("fruit_pouch", FruitPouchItem::new);
+		ELECTRIFIED_SPIDER_SPAWN_EGG = register("electrified_spider_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.ELECTRIFIED_SPIDER.get())));
+		STORM_ESSENCE = register("storm_essence", StormEssenceItem::new);
+		GRAVESTONE = block(AlternateDimensionModBlocks.GRAVESTONE);
 	}
 
 	// Start of user code block custom items
@@ -1368,9 +1409,12 @@ public class AlternateDimensionModItems {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new ItemIncineratorInventoryCapability(access), ITEM_INCINERATOR.get());
-		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new EnchantedBackpackInventoryCapability(access), ENCHANTED_BACKPACK.get());
-		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new CheesyBackpackInventoryCapability(access), CHEESY_BACKPACK.get());
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new BackpackInventoryCapability(access), BACKPACK.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new CheesyBackpackInventoryCapability(access), CHEESY_BACKPACK.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new EnchantedBackpackInventoryCapability(access), ENCHANTED_BACKPACK.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new EssencePouchInventoryCapability(access), ESSENCE_POUCH.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new HuntersPouchInventoryCapability(access), HUNTERS_POUCH.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new FruitPouchInventoryCapability(access), FRUIT_POUCH.get());
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)

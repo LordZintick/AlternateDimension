@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "toast",
+  "definition": {
+    "title": "The Blue Moon is rising...",
+    "description": "Mobs become enchanted with starlight. Good Luck.",
+    "icon": "blue_moon",
+    "background": "",
+    "durationTime": 5000,
+    "titleColor": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "descriptionColor": {
+      "value": -16777053,
+      "falpha": 0.0
+    },
+    "drawShadows": false
+  }
+}

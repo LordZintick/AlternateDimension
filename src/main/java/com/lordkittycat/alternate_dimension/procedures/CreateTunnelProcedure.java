@@ -35,9 +35,9 @@ public class CreateTunnelProcedure {
 			}
 		}
 		itemstack.shrink(1);
-		for (int index13 = 0; index13 < 3; index13++) {
-			for (int index14 = 0; index14 < 3; index14++) {
-				for (int index15 = 0; index15 < 64; index15++) {
+		for (int index71 = 0; index71 < 3; index71++) {
+			for (int index72 = 0; index72 < 3; index72++) {
+				for (int index73 = 0; index73 < 64; index73++) {
 					current = (world.getBlockState(BlockPos.containing(x + xoff, y + yoff, z + zoff)));
 					if (current.is(BlockTags.create(Identifier.parse("alternate_dimension:miner_items_whitelist")))) {
 						{

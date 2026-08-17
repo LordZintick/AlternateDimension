@@ -8,7 +8,7 @@
         "type": "sprite",
         "data": {
           "sprite": "mana_bar.png",
-          "spritesCount": 19,
+          "spritesCount": 18,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetManaBarState"

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:mana_coil",
+    "c": "alternate_dimension:activated_mana_stone",
+    "d": "alternate_dimension:io_casing",
+    "e": "alternate_dimension:importer"
+  },
+  "result": {
+    "id": "alternate_dimension:mana_mystifier",
+    "count": 1
+  }
+}

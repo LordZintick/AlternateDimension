@@ -1,5 +1,7 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
+import net.minecraft.world.level.storage.LevelData;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -22,7 +24,7 @@ import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariabl
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
 public class SelectAltDimProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -57,5 +59,25 @@ public class SelectAltDimProcedure {
 				_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
 		}
+		{
+			Entity _ent = entity;
+			double _tx = 0;
+			double _ty = 129;
+			double _tz = 0;
+			_ent.teleportTo(_tx, _ty, _tz);
+			if (_ent instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
+		}
+		if (world instanceof ServerLevel _origLevel) {
+			LevelAccessor _switchworld6 = _origLevel.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth")));
+			if (_switchworld6 != null) {
+				worldSwitch6(world, entity);
+			}
+		}
+	}
+
+	private static void worldSwitch6(LevelAccessor world, Entity entity) {
+		if (entity instanceof ServerPlayer _serverPlayer)
+			_serverPlayer.setRespawnPosition(new ServerPlayer.RespawnConfig(LevelData.RespawnData.of(_serverPlayer.level().dimension(), new BlockPos(0, 129, 0), _serverPlayer.getYRot(), _serverPlayer.getXRot()), true), false);
 	}
 }

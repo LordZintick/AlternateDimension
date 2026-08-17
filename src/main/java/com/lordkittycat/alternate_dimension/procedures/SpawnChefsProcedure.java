@@ -16,7 +16,7 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 public class SpawnChefsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()) {
-			for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 1, 4); index3++) {
+			for (int index62 = 0; index62 < Mth.nextInt(RandomSource.create(), 1, 4); index62++) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = AlternateDimensionModEntities.CHEF.get().spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -40, 40) / 10, y, z + Mth.nextInt(RandomSource.create(), -40, 40) / 10),
 							EntitySpawnReason.MOB_SUMMONED);

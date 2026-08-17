@@ -40,11 +40,9 @@
     "customProperties": [],
     "name": "Astral Bricks",
     "specialInformation": {
-      "fixedValue": [
-        "Magical bricks infused with highly potent astral power, rendering them unbreakable by normal means."
-      ]
+      "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 2.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -53,15 +51,15 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "CUSTOM:AlternateDimensionWorld"
+      "CUSTOM:AlternateDimensionDecor"
     ],
-    "destroyTool": "Not specified",
-    "customDrop": "Blocks.AIR",
+    "destroyTool": "pickaxe",
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -99,7 +97,7 @@
     "luminance": {
       "fixedValue": 6.0
     },
-    "unbreakable": true,
+    "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "sensitiveToVibration": false,

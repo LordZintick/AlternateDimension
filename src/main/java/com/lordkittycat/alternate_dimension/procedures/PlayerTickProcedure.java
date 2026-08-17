@@ -5,17 +5,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
@@ -34,7 +29,6 @@ import io.netty.buffer.Unpooled;
 
 import com.lordkittycat.alternate_dimension.world.inventory.IntroScreenMenu;
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
-import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
 @EventBusSubscriber
 public class PlayerTickProcedure {
@@ -52,36 +46,7 @@ public class PlayerTickProcedure {
 			return;
 		double meteorX = 0;
 		double meteorZ = 0;
-		if (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).jetpackHover && entity.getDeltaMovement().y() < 0
-				&& (hasEntityInInventory(entity, new ItemStack(AlternateDimensionModItems.CANDY_CANE.get())) || entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).burnTime > 0)
-				&& entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).jetpackEngine
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == AlternateDimensionModItems.CANDY_ARMOR_CHESTPLATE.get()) {
-			if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.FLYING_SPEED))
-				_livingEntity4.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.7);
-			entity.fallDistance = 0;
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0, (entity.getDeltaMovement().z())));
-			if (hasEntityInInventory(entity, new ItemStack(AlternateDimensionModItems.CANDY_CANE.get())) && entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).burnTime <= 0) {
-				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(AlternateDimensionModItems.CANDY_CANE.get());
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-				}
-				{
-					AlternateDimensionModVariables.PlayerVariables _vars = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES);
-					_vars.burnTime = 20;
-					_vars.markSyncDirty();
-				}
-			} else {
-				{
-					AlternateDimensionModVariables.PlayerVariables _vars = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES);
-					_vars.burnTime = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).burnTime - 1;
-					_vars.markSyncDirty();
-				}
-			}
-		} else {
-			if (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.FLYING_SPEED))
-				_livingEntity11.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.1);
-		}
-		if ((entity.level().dimension()) == Level.OVERWORLD && (entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).chosenPlanet).equals("") && !(entity instanceof Player _plr15 && _plr15.containerMenu instanceof IntroScreenMenu)) {
+		if ((entity.level().dimension()) == Level.OVERWORLD && !(entity instanceof Player _plr3 && _plr3.containerMenu instanceof IntroScreenMenu)) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				_ent.openMenu(new MenuProvider() {
@@ -117,11 +82,5 @@ public class PlayerTickProcedure {
 			AlternateDimensionModVariables.WorldVariables.get(world).markSyncDirty();
 			SpawnMeteorProcedure.execute(world, meteorX, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) meteorX, (int) meteorZ), meteorZ);
 		}
-	}
-
-	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
-		if (entity instanceof Player player)
-			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
-		return false;
 	}
 }

@@ -73,8 +73,8 @@ public class BeetleQueenEntity extends Monster {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
+		this.goalSelector.addGoal(1, new SpawnBeetlesAbility(this));
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.goalSelector.addGoal(2, new SpawnBeetlesAbility(this));
 		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8));
 		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));

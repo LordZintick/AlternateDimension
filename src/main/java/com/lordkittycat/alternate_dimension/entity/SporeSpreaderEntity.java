@@ -9,7 +9,6 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -34,7 +33,7 @@ import com.lordkittycat.alternate_dimension.client.model.animations.spore_spread
 
 import com.github.lordzintick.entity.ai.SporeCloudAbility;
 
-public class SporeSpreaderEntity extends Monster {
+public class SporeSpreaderEntity extends PathfinderMob {
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SporeSpreaderEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(SporeSpreaderEntity.class, EntityDataSerializers.INT);
 	public final AnimationState animationState0 = new AnimationState();

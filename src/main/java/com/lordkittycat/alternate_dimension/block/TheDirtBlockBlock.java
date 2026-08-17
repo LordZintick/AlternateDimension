@@ -21,7 +21,7 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class TheDirtBlockBlock extends Block {
 	public TheDirtBlockBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
+		super(properties.sound(SoundType.GRAVEL).strength(0.2f, 10f).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

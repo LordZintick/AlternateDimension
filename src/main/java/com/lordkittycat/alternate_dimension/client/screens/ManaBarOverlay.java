@@ -38,7 +38,7 @@ public class ManaBarOverlay {
 		}
 		if (CheckHoldingWandProcedure.execute(entity)) {
 
-			event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, 4, 5, Mth.clamp((int) GetManaBarStateProcedure.execute(entity) * 10, 0, 192), 0, 10, 95, 202, 95);
+			event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, 4, 5, Mth.clamp((int) GetManaBarStateProcedure.execute(entity) * 11, 0, 191), 0, 11, 95, 202, 95);
 
 			event.getGuiGraphics().text(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.mana_bar.label_mana"), 17, 5, -9669147, true);
 		}

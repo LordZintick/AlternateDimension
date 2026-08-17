@@ -118,7 +118,7 @@ public class CompressorBlockEntity extends RandomizableContainerBlockEntity impl
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(6, 1, 1, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(6, 1, 3, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

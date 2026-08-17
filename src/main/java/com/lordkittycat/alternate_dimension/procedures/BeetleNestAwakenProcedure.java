@@ -42,7 +42,7 @@ public class BeetleNestAwakenProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CLOUD, x, y, z, 25, 1, 1, 1, 0.1);
-				for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 10, 25); index0++) {
+				for (int index59 = 0; index59 < Mth.nextInt(RandomSource.create(), 10, 25); index59++) {
 					SpawnRandomBeetleProcedure.execute(world, x + Mth.nextInt(RandomSource.create(), -5, 5) / 10, y, z + Mth.nextInt(RandomSource.create(), -5, 5) / 10);
 				}
 			}

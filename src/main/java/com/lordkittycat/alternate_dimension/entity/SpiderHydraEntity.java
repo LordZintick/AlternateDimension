@@ -87,7 +87,7 @@ public class SpiderHydraEntity extends Monster {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 1));
+		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.7));
 		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));

@@ -23,6 +23,12 @@
       "map": {
         "0": "minecraft:soul_torch"
       }
+    },
+    "pyrolite": {
+      "name": "pyrolite",
+      "map": {
+        "0": "pyrolite_torch"
+      }
     }
   }
 }

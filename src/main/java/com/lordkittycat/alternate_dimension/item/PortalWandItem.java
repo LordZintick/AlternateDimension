@@ -45,6 +45,7 @@ public class PortalWandItem extends Item {
 		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
 		componentConsumer.accept(Component.translatable("item.alternate_dimension.portal_wand.description_0"));
 		componentConsumer.accept(Component.translatable("item.alternate_dimension.portal_wand.description_1"));
+		componentConsumer.accept(Component.translatable("item.alternate_dimension.portal_wand.description_2"));
 	}
 
 	@Override

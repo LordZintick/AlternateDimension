@@ -16,7 +16,7 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 public class SpawnElvesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()) {
-			for (int index6 = 0; index6 < Mth.nextInt(RandomSource.create(), 1, 4); index6++) {
+			for (int index65 = 0; index65 < Mth.nextInt(RandomSource.create(), 1, 4); index65++) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = AlternateDimensionModEntities.ELF.get().spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -40, 40) / 10, y, z + Mth.nextInt(RandomSource.create(), -40, 40) / 10),
 							EntitySpawnReason.MOB_SUMMONED);

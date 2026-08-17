@@ -1,0 +1,46 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "mana_mystifier_recipe_gui.png",
+    "width": 73,
+    "height": 66,
+    "icon": "CUSTOM:ManaMystifier",
+    "craftingtables": [
+      "CUSTOM:ManaMystifier"
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": true,
+    "enableStringList": false,
+    "disableJeiBorder": true,
+    "title": "Mana Mystification",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 7,
+        "y": 7,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 7,
+        "y": 44,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 50,
+        "y": 26,
+        "slotid": 0
+      }
+    ],
+    "components": [],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

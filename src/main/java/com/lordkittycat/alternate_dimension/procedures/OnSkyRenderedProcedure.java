@@ -33,6 +33,8 @@ public class OnSkyRenderedProcedure {
 		if (AlternateDimensionModVariables.WorldVariables.get(world).worldEventTime > 0) {
 			if ((AlternateDimensionModVariables.WorldVariables.get(world).worldEventType).equals("blood_moon")) {
 				RenderUtils.renderCustomMoon(skyRenderEvent, Identifier.parse("alternate_dimension:textures/blood_moon.png"));
+			} else if ((AlternateDimensionModVariables.WorldVariables.get(world).worldEventType).equals("blue_moon")) {
+				RenderUtils.renderCustomMoon(skyRenderEvent, Identifier.parse("alternate_dimension:textures/blue_moon.png"));
 			}
 		}
 	}

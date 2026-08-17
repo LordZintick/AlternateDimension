@@ -35,6 +35,14 @@ public class TransformIntoIronGiantProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.FALLING_OBSIDIAN_TEAR, x, y, z, 50, 1, 2, 1, 0);
 			AlternateDimensionMod.queueServerWork(200, () -> {
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, (y + 4), z, 4, Level.ExplosionInteraction.TNT);
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, (y + 8), z, 4, Level.ExplosionInteraction.TNT);
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, x, (y + 12), z, 4, Level.ExplosionInteraction.TNT);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.end_portal.spawn")), SoundSource.HOSTILE, 1, 1);

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences",
+    "alternate_dimension:candybloom",
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences",
+    "#alternate_dimension:essences"
+  ],
+  "result": {
+    "id": "alternate_dimension:candy_essence",
+    "count": 8
+  }
+}
