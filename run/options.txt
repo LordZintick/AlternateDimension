@@ -2,7 +2,7 @@ version:4790
 ao:false
 biomeBlendRadius:2
 chunkSectionFadeInTime:0.75
-cutoutLeaves:false
+cutoutLeaves:true
 enableVsync:false
 entityDistanceScaling:1.0
 entityShadows:true
@@ -30,7 +30,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"false"
 cloudRange:128
-renderDistance:5
+renderDistance:32
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""

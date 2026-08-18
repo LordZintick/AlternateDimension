@@ -29993,7 +29993,11 @@
       "item.alternate_dimension.storm_essence": "Storm Essence",
       "item.alternate_dimension.storm_essence.description_0": "The essence of rare, powerful, stormy creatures - products of thunderous weather mixed with magic.",
       "item.alternate_dimension.gravestone": "Gravestone",
-      "item.alternate_dimension.portal_wand.description_2": "Use while holding a Position Card to create a portal to the position in the card."
+      "item.alternate_dimension.portal_wand.description_2": "Use while holding a Position Card to create a portal to the position in the card.",
+      "sound.alternate_dimension.the_arplands_faded": "LordZintick - The Arplands",
+      "sound.alternate_dimension.bgm_snow_theme_slowed_loop": "Cleyton Kauffman - Snow Theme",
+      "sound.alternate_dimension.prelude_in_f_minor": "Kristol - Prelude in F# Minor",
+      "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme"
     }
   },
   "metadata": {
@@ -30320,12 +30324,7 @@
       },
       {
         "name": "Global",
-        "children": [
-          {
-            "name": "Dimensions",
-            "children": []
-          }
-        ]
+        "children": []
       }
     ]
   },
@@ -30346,7 +30345,7 @@
       "jei"
     ],
     "currentGenerator": "neoforge-26.1.2",
-    "credits": "Music consists of Prelude in F# Minor by Kristol, Adventure Theme and Snow Theme by Cleyton Kauffman, and The Arplands by me, textures and models are either custom-made or modified vanilla textures and models.",
+    "credits": "Music consists of Prelude in F# Minor by Kristol, Exploration Theme and Snow Theme by Cleyton Kauffman, and The Arplands by me, textures and models are either custom-made or modified vanilla textures and models.",
     "modElementsPackage": "com.lordkittycat.alternate_dimension"
   },
   "mcreatorVersion": 202600233518
