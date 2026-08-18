@@ -470,7 +470,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> SHROOMIUM_HOE;
 	public static final DeferredItem<Item> PLANET_CORE;
 	public static final DeferredItem<Item> GRAPHITE_ROD;
-	public static final DeferredItem<Item> SCORCHED_BOW;
 	public static final DeferredItem<Item> VERIDIUM_MYTHRIL_ORE;
 	public static final DeferredItem<Item> SHALE_MYTHRIL_ORE;
 	public static final DeferredItem<Item> MANTLE_MYTHRIL_ORE;
@@ -1140,7 +1139,6 @@ public class AlternateDimensionModItems {
 		SHROOMIUM_HOE = register("shroomium_hoe", ShroomiumHoeItem::new);
 		PLANET_CORE = block(AlternateDimensionModBlocks.PLANET_CORE, new Item.Properties().rarity(Rarity.EPIC).fireResistant());
 		GRAPHITE_ROD = register("graphite_rod", GraphiteRodItem::new);
-		SCORCHED_BOW = register("scorched_bow", ScorchedBowItem::new);
 		VERIDIUM_MYTHRIL_ORE = block(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE);
 		SHALE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE);
 		MANTLE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE);
@@ -1422,8 +1420,6 @@ public class AlternateDimensionModItems {
 		@SubscribeEvent
 		public static void registerItemModelProperties(RegisterRangeSelectItemModelPropertyEvent event) {
 			event.register(Identifier.parse("alternate_dimension:banana/peeled"), BananaItem.PeeledProperty.MAP_CODEC);
-			event.register(Identifier.parse("alternate_dimension:scorched_bow/pull"), ScorchedBowItem.PullProperty.MAP_CODEC);
-			event.register(Identifier.parse("alternate_dimension:scorched_bow/pulling"), ScorchedBowItem.PullingProperty.MAP_CODEC);
 		}
 	}
 }

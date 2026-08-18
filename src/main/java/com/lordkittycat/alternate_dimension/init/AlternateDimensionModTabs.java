@@ -325,7 +325,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_SHOVEL.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_SWORD.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_WOODEN_HOE.get());
-				tabData.accept(AlternateDimensionModItems.SCORCHED_BOW.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_PICKAXE.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_AXE.get());
 				tabData.accept(AlternateDimensionModItems.PINE_WOODEN_SHOVEL.get());
