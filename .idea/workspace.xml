@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Various minor changes and fixes.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Deleted the scorched bow because it was causing problems." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787055418792</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- Deleted the scorched bow because it was causing problems.">
+      <option name="closed" value="true" />
+      <created>1787057748295</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1787057748295</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +282,8 @@
     <MESSAGE value="- Added many new materials and items, including Mana Stones, Mana Crystals, and tech components like Mana Coils and Circuits, importers, exporters, and drivetrain belts.&#10;- Completely deleted the old machine system and reimplemented a new, better, more user- and automation-friendly system based around &quot;mana.&quot;&#10;- Added two new structures to partly replace the deleted Pasta Mall.&#10;- Removed the Hexagem Complex and derivatives.&#10;- Made the recipes for the high-tier math weapons harder to get, requiring Aluminum and/or Mana Stones&#10;- Added physical blocks for Lemons and Limes, and made them and the Pear growth generate on Lush Forest trees and a new Fruit tree in the Fruity Gardens&#10;- Half-implemented the Blue Moon event - no special moon texture yet, but blue fog.&#10;- Buffed the portal wand recipe.&#10;- Added four new gems with their own gem blocks&#10;- Added the Iron Giant boss.&#10;- Added the Crude Salve and Crude Bandage&#10;- Added flesh drops for all the new zombie variants&#10;- Added two new flowers: the Cheeseflower and Magister's Bloom&#10;- Added Evilstone and Holystone tools, which give damage buffs to Hallowed and Void mobs, respectively.&#10;- Added three new spider variants: the Hydra, Venomous, and Incendiary spiders, each with their own special abilities.&#10;- Added the wooden club and a simple upgrade using venom glands, another new item.&#10;- Finally implemented a graphite rod recipe.&#10;- Added a Gem ore that drops a random gem, rather than the geodes (which were deleted)&#10;- Finally added a use for corn: Popcorn!&#10;- Many, many, many other minor fixes and changes." />
     <MESSAGE value="- Fixed a significant bug with gravestones and death.&#10;- Made some minor changes to creative tab icons.&#10;- Removed the choice for vanilla - AltDim mode is now the only mode." />
     <MESSAGE value="- Various minor changes and fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Various minor changes and fixes." />
+    <MESSAGE value="- Deleted the scorched bow because it was causing problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Deleted the scorched bow because it was causing problems." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
