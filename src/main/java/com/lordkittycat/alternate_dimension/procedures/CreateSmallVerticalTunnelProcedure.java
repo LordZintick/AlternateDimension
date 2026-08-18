@@ -20,7 +20,7 @@ public class CreateSmallVerticalTunnelProcedure {
 		}
 		itemstack.shrink(1);
 		yoff = 0;
-		for (int index237 = 0; index237 < 15; index237++) {
+		for (int _i1 = 0; _i1 < 15; _i1++) {
 			if ((world.getBlockState(BlockPos.containing(x, y + yoff, z))).is(BlockTags.create(Identifier.parse("alternate_dimension:miner_items_whitelist")))) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y + yoff, z);

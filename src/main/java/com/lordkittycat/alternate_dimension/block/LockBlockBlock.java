@@ -37,7 +37,7 @@ public class LockBlockBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		UnlockWithNormalKeyProcedure.execute(world, x, y, z, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = UnlockWithNormalKeyProcedure.execute(world, x, y, z, entity);
+		return result;
 	}
 }

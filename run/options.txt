@@ -2,7 +2,7 @@ version:4790
 ao:false
 biomeBlendRadius:2
 chunkSectionFadeInTime:0.75
-cutoutLeaves:true
+cutoutLeaves:false
 enableVsync:false
 entityDistanceScaling:1.0
 entityShadows:true
@@ -17,7 +17,7 @@ graphicsPreset:"custom"
 prioritizeChunkUpdates:0
 fullscreen:false
 exclusiveFullscreen:false
-gamma:1.0
+gamma:0.5
 guiScale:0
 maxAnisotropyBit:2
 textureFiltering:0
@@ -30,7 +30,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"false"
 cloudRange:128
-renderDistance:8
+renderDistance:5
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""
@@ -38,7 +38,7 @@ vignette:false
 weatherRadius:5
 autoJump:false
 rotateWithMinecart:false
-operatorItemsTab:true
+operatorItemsTab:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -47,10 +47,10 @@ discrete_mouse_scroll:false
 invertXMouse:false
 invertYMouse:false
 realmsNotifications:true
-showSubtitles:false
+showSubtitles:true
 directionalAudio:false
 touchscreen:false
-bobView:false
+bobView:true
 toggleCrouch:false
 toggleSprint:false
 toggleAttack:false
@@ -92,10 +92,10 @@ mouseWheelSensitivity:1.0
 rawMouseInput:true
 allowCursorChanges:true
 glDebugVerbosity:1
-skipMultiplayerWarning:true
+skipMultiplayerWarning:false
 hideMatchedNames:true
 joinedFirstServer:false
-syncChunkWrites:false
+syncChunkWrites:true
 showAutosaveIndicator:true
 allowServerListing:true
 onlyShowSecureChat:false
@@ -105,7 +105,7 @@ telemetryOptInExtra:false
 onboardAccessibility:false
 menuBackgroundBlurriness:5
 startedCleanly:true
-musicToast:"never"
+musicToast:"pause_and_toast"
 musicFrequency:"DEFAULT"
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right

@@ -28,7 +28,6 @@ public class AlternateDimensionModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<BackpackGUIMenu>> BACKPACK_GUI = REGISTRY.register("backpack_gui", () -> IMenuTypeExtension.create(BackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CheesyBackpackGUIMenu>> CHEESY_BACKPACK_GUI = REGISTRY.register("cheesy_backpack_gui", () -> IMenuTypeExtension.create(CheesyBackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<EnchantedBackpackGUIMenu>> ENCHANTED_BACKPACK_GUI = REGISTRY.register("enchanted_backpack_gui", () -> IMenuTypeExtension.create(EnchantedBackpackGUIMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<IntroScreenMenu>> INTRO_SCREEN = REGISTRY.register("intro_screen", () -> IMenuTypeExtension.create(IntroScreenMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ElementalInscriberGUIMenu>> ELEMENTAL_INSCRIBER_GUI = REGISTRY.register("elemental_inscriber_gui", () -> IMenuTypeExtension.create(ElementalInscriberGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HintBookGUIMenu>> HINT_BOOK_GUI = REGISTRY.register("hint_book_gui", () -> IMenuTypeExtension.create(HintBookGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WoodenBoxGUIMenu>> WOODEN_BOX_GUI = REGISTRY.register("wooden_box_gui", () -> IMenuTypeExtension.create(WoodenBoxGUIMenu::new));

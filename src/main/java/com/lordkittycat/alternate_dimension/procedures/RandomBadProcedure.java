@@ -31,7 +31,7 @@ public class RandomBadProcedure {
 			entity.push((Mth.nextInt(RandomSource.create(), -10, 10) / 10), (Mth.nextInt(RandomSource.create(), -10, 10) / 10), (Mth.nextInt(RandomSource.create(), -10, 10) / 10));
 		}
 		if (Mth.nextInt(RandomSource.create(), 0, 175) == 0) {
-			for (int index64 = 0; index64 < Mth.nextInt(RandomSource.create(), 3, 7); index64++) {
+			for (int _i1 = 0; _i1 < Mth.nextInt(RandomSource.create(), 3, 7); _i1++) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -50, 50) / 10, y + 3, z + Mth.nextInt(RandomSource.create(), -50, 50) / 10), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {

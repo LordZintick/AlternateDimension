@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 
 public class BananaBushelBlock extends Block {
 	public BananaBushelBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRASS).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.GRASS).instabreak().noCollision().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

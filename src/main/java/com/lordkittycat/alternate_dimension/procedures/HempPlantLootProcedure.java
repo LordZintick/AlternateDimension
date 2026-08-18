@@ -19,7 +19,7 @@ public class HempPlantLootProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else {
-			for (int index60 = 0; index60 < 2; index60++) {
+			for (int _i1 = 0; _i1 < 2; _i1++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(AlternateDimensionModItems.HEMP_SEEDS.get()));
 					entityToSpawn.setPickUpDelay(10);

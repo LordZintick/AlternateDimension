@@ -37,7 +37,7 @@ public class InfernoLockBlockBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		UnlockWithInfernoKeyProcedure.execute(world, x, y, z, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = UnlockWithInfernoKeyProcedure.execute(world, x, y, z, entity);
+		return result;
 	}
 }

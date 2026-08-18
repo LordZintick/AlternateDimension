@@ -42,7 +42,7 @@ public class ClaimGravestoneProcedure {
 				}
 			}
 			slot = 0;
-			for (int index512 = 0; index512 < 36; index512++) {
+			for (int _i1 = 0; _i1 < 36; _i1++) {
 				item = (extractFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot, 99, false)).copy();
 				if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> _resourceHandler) {
 					setStackInSlot(_resourceHandler, (int) slot, ItemResource.of(item), item.getCount());
@@ -50,7 +50,7 @@ public class ClaimGravestoneProcedure {
 				slot = slot + 1;
 			}
 			slot = 36;
-			for (int index513 = 0; index513 < 4; index513++) {
+			for (int _i1 = 0; _i1 < 4; _i1++) {
 				item = (extractFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot, 99, false)).copy();
 				if (entity instanceof LivingEntity _living) {
 					_living.setItemSlot(new Object() {

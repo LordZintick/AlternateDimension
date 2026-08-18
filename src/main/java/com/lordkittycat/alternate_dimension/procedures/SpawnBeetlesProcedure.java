@@ -15,7 +15,7 @@ public class SpawnBeetlesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(16 / 2d), e -> true).isEmpty()) {
 			if ((findEntityInWorldRange(world, Player.class, x, y, z, 16)) instanceof Player _plr2 && _plr2.gameMode() == GameType.SURVIVAL) {
-				for (int index63 = 0; index63 < Mth.nextInt(RandomSource.create(), 3, 7); index63++) {
+				for (int _i1 = 0; _i1 < Mth.nextInt(RandomSource.create(), 3, 7); _i1++) {
 					SpawnRandomBeetleProcedure.execute(world, x + Mth.nextInt(RandomSource.create(), -40, 40) / 10d, y, z + Mth.nextInt(RandomSource.create(), -40, 40) / 10d);
 				}
 			}

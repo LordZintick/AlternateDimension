@@ -25,7 +25,6 @@
       }
     ],
     "minecraft:visual/sky_color": -8126502,
-    "minecraft:visual/fog_color": 12638463,
     "minecraft:visual/water_fog_color": 329011
   },
   "spawners": {

@@ -18,7 +18,6 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.CHEESY_BACKPACK_GUI.get(), CheesyBackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ENCHANTED_BACKPACK_GUI.get(), EnchantedBackpackGUIScreen::new);
-		event.register(AlternateDimensionModMenus.INTRO_SCREEN.get(), IntroScreenScreen::new);
 		event.register(AlternateDimensionModMenus.ELEMENTAL_INSCRIBER_GUI.get(), ElementalInscriberGUIScreen::new);
 		event.register(AlternateDimensionModMenus.HINT_BOOK_GUI.get(), HintBookGUIScreen::new);
 		event.register(AlternateDimensionModMenus.WOODEN_BOX_GUI.get(), WoodenBoxGUIScreen::new);

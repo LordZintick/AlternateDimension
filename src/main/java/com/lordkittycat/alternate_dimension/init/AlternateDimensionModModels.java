@@ -31,8 +31,8 @@ public class AlternateDimensionModModels {
 
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelspore_spreader.LAYER_LOCATION, Modelspore_spreader::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_chest.LAYER_LOCATION, Modelcrystal_chest::createBodyLayer);
+		event.registerLayerDefinition(Modelspore_spreader.LAYER_LOCATION, Modelspore_spreader::createBodyLayer);
 		event.registerLayerDefinition(Modelspider_hydra.LAYER_LOCATION, Modelspider_hydra::createBodyLayer);
 		event.registerLayerDefinition(Modelroman.LAYER_LOCATION, Modelroman::createBodyLayer);
 		event.registerLayerDefinition(Modelviking.LAYER_LOCATION, Modelviking::createBodyLayer);

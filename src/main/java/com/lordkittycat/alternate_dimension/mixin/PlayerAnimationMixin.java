@@ -43,9 +43,7 @@ public abstract class PlayerAnimationMixin {
 		if (player == null)
 			return;
 		PlayerModel model = (PlayerModel) (Object) this;
-		Minecraft mc = Minecraft.getInstance();
-		CompoundTag playerData = player.getPersistentData();
-		if ((mc.player == player && mc.options.getCameraType().isFirstPerson() && !playerData.contains("setNullRender")) || (mc.player == player && !mc.options.getCameraType().isFirstPerson()) || mc.player != player)
+		if (!player.getPersistentData().contains("setNullRender"))
 			hideModelParts(model, false);
 		AlternateDimensionModPlayerAnimationAPI.PlayerAnimation animation = AlternateDimensionModPlayerAnimationAPI.active_animations.get(player);
 		if (animation == null)
@@ -82,7 +80,7 @@ public abstract class PlayerAnimationMixin {
 		if (playingAnimation.isEmpty()) {
 			return;
 		}
-		if (firstPerson)
+		if (firstPerson || data.contains("setNullRender"))
 			hideModelParts(model, true);
 		if (overrideAnimation) {
 			firstPerson = data.getBooleanOr("FirstPersonAnimation", false) && mc.options.getCameraType().isFirstPerson() && player == mc.player && (mc.screen == null || mc.screen instanceof ChatScreen);

@@ -34,7 +34,7 @@ public class SummonLightningLineProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("item.trident.thunder")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			for (int index77 = 0; index77 < 8; index77++) {
+			for (int _i1 = 0; _i1 < 8; _i1++) {
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
 					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x + (look.scale(dist)).x(), y + (look.scale(dist)).y(), z + (look.scale(dist)).z())));;
