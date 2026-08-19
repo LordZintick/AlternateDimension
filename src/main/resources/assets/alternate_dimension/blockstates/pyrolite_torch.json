@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "alternate_dimension:block/pyrolite_torch"
+    },
+    "facing=east": {
+      "model": "alternate_dimension:block/pyrolite_torch",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "alternate_dimension:block/pyrolite_torch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "alternate_dimension:block/pyrolite_torch",
+      "y": 270
     }
   }
 }

@@ -695,6 +695,8 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> ELECTRIFIED_SPIDER_SPAWN_EGG;
 	public static final DeferredItem<Item> STORM_ESSENCE;
 	public static final DeferredItem<Item> GRAVESTONE;
+	public static final DeferredItem<Item> ALUMINUM_STORAGE_MODULE;
+	public static final DeferredItem<Item> CRYONIC_SCIMITAR;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1364,6 +1366,8 @@ public class AlternateDimensionModItems {
 		ELECTRIFIED_SPIDER_SPAWN_EGG = register("electrified_spider_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.ELECTRIFIED_SPIDER.get())));
 		STORM_ESSENCE = register("storm_essence", StormEssenceItem::new);
 		GRAVESTONE = block(AlternateDimensionModBlocks.GRAVESTONE);
+		ALUMINUM_STORAGE_MODULE = register("aluminum_storage_module", AluminumStorageModuleItem::new);
+		CRYONIC_SCIMITAR = register("cryonic_scimitar", CryonicScimitarItem::new);
 	}
 
 	// Start of user code block custom items

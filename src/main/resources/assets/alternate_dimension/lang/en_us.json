@@ -1210,5 +1210,8 @@
   "sound.alternate_dimension.the_arplands_faded": "LordZintick - The Arplands",
   "sound.alternate_dimension.bgm_snow_theme_slowed_loop": "Cleyton Kauffman - Snow Theme",
   "sound.alternate_dimension.prelude_in_f_minor": "Kristol - Prelude in F# Minor",
-  "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme"
+  "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme",
+  "item.alternate_dimension.aluminum_storage_module": "Aluminum Storage Module",
+  "item.alternate_dimension.aluminum_storage_module.description_0": "Right-Click on a Box to instantly upgrade it to an Aluminum Crate whilst keeping the contents intact.",
+  "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar"
 }

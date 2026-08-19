@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "torch:pyrolite",
-    "rotationMode": 0,
+    "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -45,14 +45,13 @@
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "CUSTOM:AlternateDimensionMaterials",
-      "CUSTOM:AlternateDimensionDecor"
+      "CUSTOM:AlternateDimensionUtilities"
     ],
     "destroyTool": "Not specified",
     "customDrop": "",
@@ -122,7 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": "RequireSupportBelow",
+    "onNeighbourBlockChanges": "UpdateTorch",
+    "onBlockPlayedBy": "UpdateTorchPlacement",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

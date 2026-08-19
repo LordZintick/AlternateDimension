@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "minecraft:torch"
+      }
+    },
+    "pyrolite": {
+      "name": "pyrolite",
+      "map": {
+        "0": "pyrolite_torch"
+      }
+    },
+    "phosphorus": {
+      "name": "phosphorus",
+      "map": {
+        "0": "phosphorus_torch"
+      }
+    }
+  }
+}

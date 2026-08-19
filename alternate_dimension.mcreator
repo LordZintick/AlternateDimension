@@ -2877,7 +2877,7 @@
           "src/main/resources/assets/alternate_dimension/models/block/sky_stone.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "MeteoriteBlock",
@@ -2894,7 +2894,7 @@
           "src/main/resources/assets/alternate_dimension/models/item/meteorite_block.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "ScorchedBricks",
@@ -3450,7 +3450,7 @@
           "src/main/resources/assets/alternate_dimension/items/meteorite_dust.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "MeteoriteBlockLoot",
@@ -3463,7 +3463,7 @@
           "src/main/resources/data/alternate_dimension/loot_table/blocks/meteorite_block.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "MeteoriteBlockFromDust",
@@ -3477,7 +3477,7 @@
           "src/main/resources/data/alternate_dimension/advancement/recipes/meteorite_block_from_dust.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "MeteoriteDustFromBlock",
@@ -3491,7 +3491,7 @@
           "src/main/resources/data/alternate_dimension/advancement/recipes/meteorite_dust_from_block.json"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "ScorchedBricksRecipe",
@@ -6231,7 +6231,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/MeteoroidSpawnMeteoriteProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "Meteoroid",
@@ -6247,7 +6247,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/entity/MeteoroidEntity.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "MeteoroidParticles",
@@ -6278,7 +6278,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/MeteoroidParticlesProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "CalmOcean",
@@ -12285,7 +12285,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/SpawnMeteorProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "SpawnMeteorCommand",
@@ -12298,7 +12298,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/command/SpawnMeteorCommandCommand.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "VeridiumPhosphorusOre",
@@ -12487,7 +12487,8 @@
           "src/main/java/com/lordkittycat/alternate_dimension/block/PhosphorusTorchBlock.java",
           "src/main/resources/data/alternate_dimension/loot_table/blocks/phosphorus_torch.json",
           "src/main/resources/assets/alternate_dimension/models/item/phosphorus_torch.json",
-          "src/main/resources/assets/alternate_dimension/blockstates/phosphorus_torch.json"
+          "src/main/resources/assets/alternate_dimension/blockstates/phosphorus_torch.json",
+          "src/main/resources/assets/alternate_dimension/models/block/phosphorus_torch_0.json"
         ]
       },
       "path": "~/GeneralFeatures/Ores/Phosphorus"
@@ -21098,7 +21099,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/PrintMeteorCooldownProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "SetMeteorCooldown",
@@ -21125,7 +21126,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/SetMeteorCooldownProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "SpawnMeteorAt",
@@ -21148,7 +21149,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/SpawnMeteorAtProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "PrintLastMeteorPos",
@@ -21171,7 +21172,7 @@
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/PrintLastMeteorPosProcedure.java"
         ]
       },
-      "path": "~/GeneralFeatures/Meteors"
+      "path": "~/GeneralFeatures/Events/Meteors"
     },
     {
       "name": "WarriorsPetImbuning",
@@ -25655,7 +25656,7 @@
           "src/main/resources/assets/alternate_dimension/items/stardust.json"
         ]
       },
-      "path": "~/GeneralFeatures/Events/BlueMoon"
+      "path": "~/GeneralFeatures/Misc"
     },
     {
       "name": "AstralBricksRecipe",
@@ -25945,37 +25946,6 @@
         ]
       },
       "path": "~/GeneralFeatures/Elemental/Hallowed"
-    },
-    {
-      "name": "RequireSupportBelow",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "require_support_below",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/RequireSupportBelowProcedure.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/UtilProcedures"
     },
     {
       "name": "PyroliteTorch",
@@ -26601,6 +26571,208 @@
         ]
       },
       "path": "~/GeneralFeatures/GlobalTriggers"
+    },
+    {
+      "name": "UpdateTorch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_torch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateTorchProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "UpdateTorchPlacement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_torch_placement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateTorchPlacementProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/UtilProcedures"
+    },
+    {
+      "name": "AluminumStorageModuleUpgradeBox",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_storage_module_upgrade_box",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/AluminumStorageModuleUpgradeBoxProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "AluminumStorageModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_storage_module",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/AluminumStorageModuleItem.java",
+          "src/main/resources/assets/alternate_dimension/items/aluminum_storage_module.json",
+          "src/main/resources/assets/alternate_dimension/models/item/aluminum_storage_module.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "AluminumStorageModuleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminum_storage_module_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_storage_module_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/aluminum_storage_module_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ApplyCryonicScimitarEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_cryonic_scimitar_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/ApplyCryonicScimitarEffectsProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Weapons"
+    },
+    {
+      "name": "CryonicScimitar",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryonic_scimitar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/items/cryonic_scimitar.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/CryonicScimitarItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/cryonic_scimitar.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Weapons"
+    },
+    {
+      "name": "CryonicScimitarRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryonic_scimitar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/cryonic_scimitar_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/cryonic_scimitar_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Weapons"
     }
   ],
   "variable_elements": [
@@ -27730,6 +27902,7 @@
       "~TitaniumAxe@CUSTOM:TitaniumAxe"
     ],
     "ITEMS:minecraft:swords": [
+      "~CryonicScimitar@CUSTOM:CryonicScimitar",
       "~HolystoneSword@CUSTOM:HolystoneSword",
       "~EvilstoneSword@CUSTOM:EvilstoneSword",
       "~MantleSword@CUSTOM:MantleSword",
@@ -28298,7 +28471,6 @@
       "TatteredLeather",
       "PyroliteChunk",
       "Pyrobricks",
-      "PyroliteTorch",
       "ToolRod",
       "Cloth",
       "ScorchedBowl",
@@ -28384,7 +28556,6 @@
       "Sulfur",
       "Phosphorus",
       "PhosphoriumIngot",
-      "PhosphorusTorch",
       "HalloweenQuestDisc"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
@@ -28491,6 +28662,7 @@
       "BeetleSword",
       "BeetleArmor",
       "CandyCaneSword",
+      "CryonicScimitar",
       "BreadstickLauncher",
       "RomanSpear",
       "NightVisionArmor",
@@ -28530,6 +28702,8 @@
       "ManaMeter",
       "Spikes",
       "TheDirtBlock",
+      "PhosphorusTorch",
+      "PyroliteTorch",
       "Instatunnel",
       "MiniInstatunnel",
       "Instavator",
@@ -28551,6 +28725,7 @@
       "AzureBox",
       "GreenwoodBox",
       "CandyflossBox",
+      "AluminumStorageModule",
       "AluminumCrate",
       "ScorchedCraftingTable",
       "PineCraftingTable",
@@ -28567,8 +28742,6 @@
     ],
     "CUSTOM:AlternateDimensionDecor": [
       "AluminumChain",
-      "PyroliteTorch",
-      "PhosphorusTorch",
       "CompressedCobblestone",
       "CompressedCobblestoneSlab",
       "CompressedCobblestoneStairs",
@@ -29975,7 +30148,10 @@
       "sound.alternate_dimension.the_arplands_faded": "LordZintick - The Arplands",
       "sound.alternate_dimension.bgm_snow_theme_slowed_loop": "Cleyton Kauffman - Snow Theme",
       "sound.alternate_dimension.prelude_in_f_minor": "Kristol - Prelude in F# Minor",
-      "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme"
+      "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme",
+      "item.alternate_dimension.aluminum_storage_module": "Aluminum Storage Module",
+      "item.alternate_dimension.aluminum_storage_module.description_0": "Right-Click on a Box to instantly upgrade it to an Aluminum Crate whilst keeping the contents intact.",
+      "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar"
     }
   },
   "metadata": {
@@ -30119,10 +30295,6 @@
             ]
           },
           {
-            "name": "Meteors",
-            "children": []
-          },
-          {
             "name": "Ores",
             "children": [
               {
@@ -30242,7 +30414,7 @@
             "name": "Events",
             "children": [
               {
-                "name": "BlueMoon",
+                "name": "Meteors",
                 "children": []
               }
             ]
@@ -30309,7 +30481,7 @@
   "workspaceSettings": {
     "modid": "alternate_dimension",
     "modName": "AlternateDimension",
-    "version": "2.0.0dev8",
+    "version": "2.0.0dev9",
     "description": "A fun, in-progress mod.",
     "author": "LordZintick",
     "websiteURL": "https://modrinth.com/project/alternate-dimension",

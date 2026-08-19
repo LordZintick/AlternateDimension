@@ -10,11 +10,107 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "torch:phosphorus",
-    "rotationMode": 0,
+    "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [],
+    "states": [
+      {
+        "texture": "phosphorus_torch",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "wall_torch:phosphorus",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 4.0,
+            "mz": 13.0,
+            "Mx": 9.0,
+            "My": 12.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 7.0,
+            "my": 12.0,
+            "mz": 13.0,
+            "Mx": 9.0,
+            "My": 14.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 8.975,
+            "my": 10.975,
+            "mz": 11.975,
+            "Mx": 9.025,
+            "My": 15.025,
+            "Mz": 16.025,
+            "subtract": false
+          },
+          {
+            "mx": 6.975,
+            "my": 10.975,
+            "mz": 11.975,
+            "Mx": 7.025,
+            "My": 15.025,
+            "Mz": 16.025,
+            "subtract": false
+          },
+          {
+            "mx": 5.975,
+            "my": 10.975,
+            "mz": 12.975,
+            "Mx": 10.025,
+            "My": 15.025,
+            "Mz": 13.025,
+            "subtract": false
+          },
+          {
+            "mx": 5.975,
+            "my": 10.975,
+            "mz": 14.975,
+            "Mx": 10.025,
+            "My": 15.025,
+            "Mz": 15.025,
+            "subtract": false
+          },
+          {
+            "mx": 5.975,
+            "my": 11.975,
+            "mz": 11.975,
+            "Mx": 10.025,
+            "My": 12.025,
+            "Mz": 16.025,
+            "subtract": false
+          },
+          {
+            "mx": 5.975,
+            "my": 13.975,
+            "mz": 11.975,
+            "Mx": 10.025,
+            "My": 14.025,
+            "Mz": 16.025,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "name": "CUSTOM:wall",
+              "type": "logic"
+            },
+            "value": true
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "phosphorus_torch",
     "particleTexture": "",
@@ -37,7 +133,13 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "name": "CUSTOM:wall",
+        "type": "logic",
+        "value": false
+      }
+    ],
     "name": "Phosphorus Torch",
     "specialInformation": {
       "fixedValue": []
@@ -45,14 +147,13 @@
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "CUSTOM:AlternateDimensionMaterials",
-      "CUSTOM:AlternateDimensionDecor"
+      "CUSTOM:AlternateDimensionUtilities"
     ],
     "destroyTool": "Not specified",
     "customDrop": "",
@@ -122,7 +223,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": "RequireSupportBelow",
+    "onNeighbourBlockChanges": "UpdateTorch",
+    "onBlockPlayedBy": "UpdateTorchPlacement",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
