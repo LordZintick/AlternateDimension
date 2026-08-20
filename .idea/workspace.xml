@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Deleted the scorched bow because it was causing problems." />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787057784538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module.">
+      <option name="closed" value="true" />
+      <created>1787141489957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1787141489958</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +303,8 @@
     <MESSAGE value="- Fixed a significant bug with gravestones and death.&#10;- Made some minor changes to creative tab icons.&#10;- Removed the choice for vanilla - AltDim mode is now the only mode." />
     <MESSAGE value="- Various minor changes and fixes." />
     <MESSAGE value="- Deleted the scorched bow because it was causing problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Deleted the scorched bow because it was causing problems." />
+    <MESSAGE value="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

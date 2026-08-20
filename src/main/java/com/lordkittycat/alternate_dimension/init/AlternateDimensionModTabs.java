@@ -436,6 +436,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.BEETLE_ARMOR_LEGGINGS.get());
 				tabData.accept(AlternateDimensionModItems.BEETLE_ARMOR_BOOTS.get());
 				tabData.accept(AlternateDimensionModItems.CANDY_CANE_SWORD.get());
+				tabData.accept(AlternateDimensionModItems.CRYONIC_SCIMITAR.get());
 				tabData.accept(AlternateDimensionModItems.BREADSTICK_LAUNCHER.get());
 				tabData.accept(AlternateDimensionModItems.ROMAN_SPEAR.get());
 				tabData.accept(AlternateDimensionModItems.NIGHT_VISION_ARMOR_HELMET.get());
@@ -460,7 +461,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get());
 				tabData.accept(AlternateDimensionModItems.CANDYFLOSS_BOAT.get());
 				tabData.accept(AlternateDimensionModItems.CANDYFLOSS_CHEST_BOAT.get());
-				tabData.accept(AlternateDimensionModItems.CRYONIC_SCIMITAR.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_MATERIALS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_UTILITIES = REGISTRY.register("alternate_dimension_utilities",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_utilities")).icon(() -> new ItemStack(AlternateDimensionModItems.WRENCH.get())).displayItems((parameters, tabData) -> {
@@ -500,6 +500,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.AZURE_BOX.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.GREENWOOD_BOX.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.CANDYFLOSS_BOX.get().asItem());
+				tabData.accept(AlternateDimensionModItems.ALUMINUM_STORAGE_MODULE.get());
 				tabData.accept(AlternateDimensionModBlocks.ALUMINUM_CRATE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.SCORCHED_CRAFTING_TABLE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PINE_CRAFTING_TABLE.get().asItem());
@@ -513,7 +514,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_FURNACE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get().asItem());
 				tabData.accept(AlternateDimensionModItems.HINT_BOOK.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_STORAGE_MODULE.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_DECOR = REGISTRY.register("alternate_dimension_decor",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_decor")).icon(() -> new ItemStack(AlternateDimensionModBlocks.ASTRAL_BRICKS.get())).displayItems((parameters, tabData) -> {
