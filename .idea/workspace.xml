@@ -4,10 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module.">
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Ported the entire spell system from SpellCaster API, including the wands, scrolls, and defaults spells, but not the datapack loading, commands, or extra fireball functionality.&#10;- Finally fixed ring recipes!&#10;- Added the Viking Tower, Hollow Candy Cane, Machine Ruins, and Mushroom Cottage structures, further improving the structure variety in the mod.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/MagicManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/ScrollRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/SpellUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/WandRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/SpellAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/SpellLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/StringConvertable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/index" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/AluminumStorageModuleUpgradeBox.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/AluminumStorageModuleUpgradeBox.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DivineSmite.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/DivineSmite.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionDynamicRecipesJEIPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionDynamicRecipesJEIPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumStorageModuleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumStorageModuleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/AlternateDimensionModVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/AlternateDimensionModVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/AluminumStorageModuleUpgradeBoxProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/AluminumStorageModuleUpgradeBoxProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,25 +135,26 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;origin/dev01&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Development/MCreatorWorkspaces/alternate_dimension/src/main/resources/assets/alternate_dimension/textures/item&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/src/main/java/com/github/lordzintick&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick" />
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick\magic" />
       <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\item" />
       <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\block" />
       <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension" />
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets" />
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\java\com\lordkittycat\alternate_dimension\init" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.lordzintick.magic" />
       <recent name="com.github.lordzintick.entity.ai" />
       <recent name="com.github.lordzintick.menu" />
       <recent name="com.github.lordzintick.init" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.alternate_dimension [build]">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="alternate_dimension.main" />
@@ -276,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787141489958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Reorganized creative tabs.">
+      <option name="closed" value="true" />
+      <created>1787246217782</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1787246217782</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +346,8 @@
     <MESSAGE value="- Various minor changes and fixes." />
     <MESSAGE value="- Deleted the scorched bow because it was causing problems." />
     <MESSAGE value="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module." />
+    <MESSAGE value="- Reorganized creative tabs." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Reorganized creative tabs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

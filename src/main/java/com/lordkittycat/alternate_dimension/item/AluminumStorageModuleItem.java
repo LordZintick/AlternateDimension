@@ -25,10 +25,8 @@ public class AluminumStorageModuleItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		super.useOn(context);
-		AluminumStorageModuleUpgradeBoxProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()),
+		return AluminumStorageModuleUpgradeBoxProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()),
 				context.getItemInHand());
-		return InteractionResult.SUCCESS;
 	}
 
 	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {

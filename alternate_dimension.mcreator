@@ -26677,7 +26677,8 @@
         ],
         "files": [
           "src/main/java/com/lordkittycat/alternate_dimension/procedures/AluminumStorageModuleUpgradeBoxProcedure.java"
-        ]
+        ],
+        "return_type": "actionresulttype"
       },
       "path": "~/GeneralFeatures/Misc"
     },
@@ -26685,7 +26686,7 @@
       "name": "AluminumStorageModule",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "aluminum_storage_module",
       "metadata": {
         "files": [
@@ -26773,6 +26774,178 @@
         ]
       },
       "path": "~/GeneralFeatures/Weapons"
+    },
+    {
+      "name": "MushyGeneralLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushy_general_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/chests/mushy_gneral_loot.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "VikingTowerLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viking_tower_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/loot_table/chests/viking_tower_loot.json"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands"
+    },
+    {
+      "name": "PlayerEntityMixin",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "player_entity_mixin",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerEntityMixinMixin.java"
+        ]
+      },
+      "path": "~/GeneralFeatures"
+    },
+    {
+      "name": "ScreenHandlerMixin",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "screen_handler_mixin",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/mixin/ScreenHandlerMixinMixin.java"
+        ]
+      },
+      "path": "~/GeneralFeatures"
+    },
+    {
+      "name": "CommonVikingTower",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "common_viking_tower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure/common_viking_tower.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/common_viking_tower.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/common_viking_tower.json"
+        ]
+      },
+      "path": "~/BiomeContent/Highlands"
+    },
+    {
+      "name": "VikingTower",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viking_tower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure/viking_tower.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/viking_tower.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/viking_tower.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "VikingShip",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "viking_ship",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure/viking_ship.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/viking_ship.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/viking_ship.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "MushroomCottage",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_cottage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/mushroom_cottage.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure/mushroom_cottage.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/mushroom_cottage.json"
+        ]
+      },
+      "path": "~/BiomeContent/MushroomInfection"
+    },
+    {
+      "name": "MachineRuinsAlpha",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_ruins_alpha",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/machine_ruins_alpha.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure/machine_ruins_alpha.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/machine_ruins_alpha.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "HollowCandyCane",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hollow_candy_cane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/worldgen/structure/hollow_candy_cane.json",
+          "src/main/resources/data/alternate_dimension/worldgen/structure_set/hollow_candy_cane.json",
+          "src/main/resources/data/alternate_dimension/worldgen/template_pool/hollow_candy_cane.json"
+        ]
+      },
+      "path": "~/BiomeContent/CandiedPlain"
+    },
+    {
+      "name": "Wand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/wand.json",
+          "src/main/resources/assets/alternate_dimension/items/wand.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/WandItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "Scroll",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scroll",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/items/scroll.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ScrollItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/scroll.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
     }
   ],
   "variable_elements": [
@@ -26786,13 +26959,13 @@
       "name": "viking_reputation",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "-1.0"
     },
     {
       "name": "roman_reputation",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "-1.0"
     },
     {
       "name": "chosenPlanet",
@@ -27696,11 +27869,11 @@
       "CUSTOM:HallowedEssence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~AluminumCrate@CUSTOM:AluminumCrate",
       "~ManaMystifier@CUSTOM:ManaMystifier",
       "~AstralBrickWall@CUSTOM:AstralBrickWall",
       "~AstralBrickStairs@CUSTOM:AstralBrickStairs",
       "~AstralBrickSlab@CUSTOM:AstralBrickSlab",
-      "~AluminumCrate@CUSTOM:AluminumCrate",
       "~Collector@CUSTOM:Collector",
       "~AstralBricks@CUSTOM:AstralBricks",
       "~Compressor@CUSTOM:Compressor",
@@ -30076,7 +30249,7 @@
       "item.alternate_dimension.lime_growth": "Lime Growth",
       "item.alternate_dimension.iron_giant_spawn_egg": "The Iron Giant Spawn Egg",
       "entity.alternate_dimension.iron_giant": "The Iron Giant",
-      "death.attack.divine_smite": "%1$s was smitten with diving power",
+      "death.attack.divine_smite": "%1$s was smitten with divine power",
       "death.attack.divine_smite.player": "%1$s could not escape %2$s\u0027s divine judgement",
       "death.attack.divine_smite.item": "%1$s was smitten by %2$s using %3$s",
       "item.alternate_dimension.evilstone_pickaxe": "Evilstone Pickaxe",
@@ -30151,7 +30324,9 @@
       "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme",
       "item.alternate_dimension.aluminum_storage_module": "Aluminum Storage Module",
       "item.alternate_dimension.aluminum_storage_module.description_0": "Right-Click on a Box to instantly upgrade it to an Aluminum Crate whilst keeping the contents intact.",
-      "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar"
+      "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar",
+      "item.alternate_dimension.wand": "Wand",
+      "item.alternate_dimension.scroll": "Scroll"
     }
   },
   "metadata": {

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "alternate_dimension:machine_ruins_alpha",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 12,
+    "separation": 7,
+    "salt": 2101321135
+  }
+}

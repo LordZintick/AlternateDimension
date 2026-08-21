@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.util.ProblemReporter;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
@@ -18,7 +19,7 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class AluminumStorageModuleUpgradeBoxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, ItemStack itemstack) {
+	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, ItemStack itemstack) {
 		if (blockstate.is(BlockTags.create(Identifier.parse("alternate_dimension:boxes")))) {
 			itemstack.shrink(1);
 			{
@@ -57,6 +58,8 @@ public class AluminumStorageModuleUpgradeBoxProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.smithing_table.use")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
+			return InteractionResult.SUCCESS;
 		}
+		return InteractionResult.PASS;
 	}
 }

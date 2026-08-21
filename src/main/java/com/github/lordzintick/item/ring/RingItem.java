@@ -30,7 +30,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public abstract class RingItem extends Item {
-    public static final HashMap<Identifier, Holder<MobEffect>> RING_INGREDIENTS = new HashMap<>();
+    public static final HashMap<Identifier, Identifier> RING_INGREDIENTS = new HashMap<>();
 
     public RingItem(Properties properties) {
         super(properties);
@@ -85,12 +85,12 @@ public abstract class RingItem extends Item {
     }
 
     static {
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "light_blue_gummy_bear"), MobEffects.SPEED);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "green_gummy_bear"), MobEffects.JUMP_BOOST);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "blue_gummy_bear_item"), MobEffects.WATER_BREATHING);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "red_gummy_bear_item"), MobEffects.REGENERATION);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "orange_gummy_bear"), MobEffects.STRENGTH);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "yellow_gummy_bear"), MobEffects.HASTE);
-        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "graphite"), MobEffects.RESISTANCE);
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "light_blue_gummy_bear"), Identifier.withDefaultNamespace("speed"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "green_gummy_bear"), Identifier.withDefaultNamespace("jump_boost"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "blue_gummy_bear_item"), Identifier.withDefaultNamespace("water_breathing"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "red_gummy_bear_item"), Identifier.withDefaultNamespace("regeneration"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "orange_gummy_bear"), Identifier.withDefaultNamespace("strength"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "yellow_gummy_bear"), Identifier.withDefaultNamespace("haste"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "graphite"), Identifier.withDefaultNamespace("resistance"));
     }
 }

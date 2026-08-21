@@ -1138,7 +1138,7 @@
   "item.alternate_dimension.lime_growth": "Lime Growth",
   "item.alternate_dimension.iron_giant_spawn_egg": "The Iron Giant Spawn Egg",
   "entity.alternate_dimension.iron_giant": "The Iron Giant",
-  "death.attack.divine_smite": "%1$s was smitten with diving power",
+  "death.attack.divine_smite": "%1$s was smitten with divine power",
   "death.attack.divine_smite.player": "%1$s could not escape %2$s's divine judgement",
   "death.attack.divine_smite.item": "%1$s was smitten by %2$s using %3$s",
   "item.alternate_dimension.evilstone_pickaxe": "Evilstone Pickaxe",
@@ -1213,5 +1213,7 @@
   "sound.alternate_dimension.exploration_theme": "Cleyton Kauffman - Exploration Theme",
   "item.alternate_dimension.aluminum_storage_module": "Aluminum Storage Module",
   "item.alternate_dimension.aluminum_storage_module.description_0": "Right-Click on a Box to instantly upgrade it to an Aluminum Crate whilst keeping the contents intact.",
-  "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar"
+  "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar",
+  "item.alternate_dimension.wand": "Wand",
+  "item.alternate_dimension.scroll": "Scroll"
 }

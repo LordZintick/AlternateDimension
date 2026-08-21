@@ -697,6 +697,8 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> GRAVESTONE;
 	public static final DeferredItem<Item> ALUMINUM_STORAGE_MODULE;
 	public static final DeferredItem<Item> CRYONIC_SCIMITAR;
+	public static final DeferredItem<Item> WAND;
+	public static final DeferredItem<Item> SCROLL;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1368,6 +1370,8 @@ public class AlternateDimensionModItems {
 		GRAVESTONE = block(AlternateDimensionModBlocks.GRAVESTONE);
 		ALUMINUM_STORAGE_MODULE = register("aluminum_storage_module", AluminumStorageModuleItem::new);
 		CRYONIC_SCIMITAR = register("cryonic_scimitar", CryonicScimitarItem::new);
+		WAND = register("wand", WandItem::new);
+		SCROLL = register("scroll", ScrollItem::new);
 	}
 
 	// Start of user code block custom items

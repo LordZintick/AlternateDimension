@@ -1,0 +1,26 @@
+{
+  "_fv": 89,
+  "_type": "structure",
+  "definition": {
+    "structure": "mushroom_cottage",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "spacing": 7,
+    "separation": 4,
+    "restrictionBiomes": [
+      "CUSTOM:MushroomInfection"
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

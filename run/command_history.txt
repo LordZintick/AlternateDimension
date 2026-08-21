@@ -1,13 +1,3 @@
-/fill 256 74 -358
-/fill 256 74 -358 265 74 -371 alternate_dimension:corrupt_brick_slab[type=bottom]
-/fill -101 74 69
-/fill -101 74 69 -87 74 55 alternate_dimension:unbreakable_veridium_bricks
-/time set day
-/gamerule advance_time false
-/setblock ~ ~ ~ trial_spawner{normal_config:{spawn_potentials:[{data:{entity:{id:"alternate_dimension:overgrown_zombie"}},weight:1}]}} replace
-/kill @e[type=alternate_dimension:friendly_beetle]
-/fill -101 79 55
-/fill -101 79 55 -87 79 69 alternate_dimension:unbreakable_veridium_bricks
 /weather clear
 /gamerule advance_weather false
 /clone -87 74 55
@@ -48,3 +38,13 @@
 /fill 146 70 159 171 80 184
 /fill 146 70 159 171 80 184 minecraft:structure_void replace air
 /kill @s
+/effect give @a minecraft:night_vision infinite 255 true
+/data merge block ~ ~-1 ~ {LootTable:"alternate_dimension:chests/mushy_general_loot"}
+/tp Dev MrMunch
+/data merge block ~ ~-1 ~ {LootTable:"alternate_dimension:chests/viking_tower_loot"}
+/fill -1496 60 842
+/fill -1496 60 842 -1486 64 868
+/fill -1496 60 842 -1486 64 868 minecraft:structure_void replace air
+/fill -1496 60 842 -1486 64 868 minecraft:structure_void replace water
+/data get block -1483 64 794
+/weather clear

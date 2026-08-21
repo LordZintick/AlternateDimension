@@ -47,6 +47,9 @@ import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 import com.lordkittycat.alternate_dimension.init.*;
 
+import com.github.lordzintick.magic.loader.SpellLoader;
+import com.github.lordzintick.magic.SpellUtil;
+import com.github.lordzintick.init.AlternateDimensionModRecipes;
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 
 @Mod("alternate_dimension")
@@ -70,6 +73,9 @@ public class AlternateDimensionMod {
 		AlternateDimensionModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		AlternateDimensionModComponents.register(modEventBus);
+		AlternateDimensionModRecipes.register(modEventBus);
+		SpellLoader.SPELLS.addDefaults();
+		SpellLoader.SPELL_PROVIDERS.register(MODID, SpellUtil.class);
 		// End of user code block mod init
 	}
 
