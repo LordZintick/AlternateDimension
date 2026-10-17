@@ -33,7 +33,7 @@
     "creativeTabs": [
       "CUSTOM:AlternateDimensionWorld"
     ],
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 64,
     "toolType": 1.0,

@@ -1,14 +1,3 @@
-/weather clear
-/gamerule advance_weather false
-/clone -87 74 55
-/clone -87 74 55 -101 79 69
-/clone -87 74 55 -101 79 69 -87 79 55 replace normal
-/clone -87 74 55 -101 79 69 -87 79 55 masked normal
-/clone -87 75 55
-/clone -87 75 55 -101 79 69 -87 79 55 replace normal
-/clone -87 75 55 -101 79 69 -87 80 55 replace normal
-/clone -87 75 55 -101 79 69 -101 80 55 replace normal
-/fill -86 80 55
 /fill -86 80 55 -73 84 69 air
 /fill -101 85 69
 /fill -101 85 69 -87 85 55 alternate_dimension:astral_bricks
@@ -47,4 +36,15 @@
 /fill -1496 60 842 -1486 64 868 minecraft:structure_void replace air
 /fill -1496 60 842 -1486 64 868 minecraft:structure_void replace water
 /data get block -1483 64 794
+/weather clear
+/effect give @e[type=alternate_dimension:hero_zombrine] minecraft:glowing
+/effect give @e[type=alternate_dimension:hero_zombrine] minecraft:glowing infinite 255 true
+/tp @e[type=alternate_dimension:hero_zombrine] Dev
+/tp Dev ~ ~-4000 ~
+/tp Dev ~ ~-900 ~
+/gamerule random_tick_speed 200
+/gamerule random_tick_speed 3
+/tp Dev ~10000 ~ ~
+/data get block 10015 68 -402
+/time set day
 /weather clear

@@ -66,7 +66,7 @@
     "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ARTHROPOD",
-    "attackStrength": 3,
+    "attackStrength": 2,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,

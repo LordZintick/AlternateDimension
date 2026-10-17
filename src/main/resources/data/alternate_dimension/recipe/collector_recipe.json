@@ -3,12 +3,13 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "aba",
+    "abc",
     " a "
   ],
   "key": {
     "a": "alternate_dimension:aluminum_nugget",
-    "b": "alternate_dimension:io_casing"
+    "b": "alternate_dimension:machine_casing",
+    "c": "alternate_dimension:importer"
   },
   "result": {
     "id": "alternate_dimension:collector",

@@ -14,15 +14,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
       "CUSTOM:MagicalCasing",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot"
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget"
     ],
     "recipeReturnStack": "CUSTOM:ManaTank",
     "name": "mana_tank_recipe",

@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Grace",
+    "icon": "grace_effect",
+    "color": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": "ApplyInvulnerability",
+    "onExpired": "RemoveInvulnerability"
+  }
+}

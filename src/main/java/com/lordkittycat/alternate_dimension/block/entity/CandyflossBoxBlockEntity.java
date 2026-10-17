@@ -28,7 +28,7 @@ import com.lordkittycat.alternate_dimension.world.inventory.WoodenBoxGUIMenu;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class CandyflossBoxBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(14, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(27, ItemStack.EMPTY);
 
 	public CandyflossBoxBlockEntity(BlockPos position, BlockState state) {
 		super(AlternateDimensionModBlockEntities.CANDYFLOSS_BOX.get(), position, state);

@@ -68,9 +68,7 @@
     "treeVines": "",
     "treeFruits": "",
     "defaultFeatures": [
-      "Caves",
-      "TaigaLargeFerns",
-      "TaigaRocks"
+      "Caves"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

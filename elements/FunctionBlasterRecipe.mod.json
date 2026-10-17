@@ -14,15 +14,15 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "CUSTOM:MathWorkbook",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "CUSTOM:AluminumIngot",
       "CUSTOM:Variable",
       "CUSTOM:AluminumIngot",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "CUSTOM:MathWorkbook",
-      "Items.DYE#16"
+      "CUSTOM:MathEssence"
     ],
     "recipeReturnStack": "CUSTOM:FunctionBlaster",
     "name": "function_blaster_recipe",

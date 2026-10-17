@@ -29,7 +29,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.lordkittycat.alternate_dimension.procedures.PushEntitiesAwayProcedure;
-import com.lordkittycat.alternate_dimension.procedures.CheckForCloudProcedure;
+import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class CloudKittyEntity extends Monster {
@@ -137,7 +137,7 @@ public class CloudKittyEntity extends Monster {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return CheckForCloudProcedure.execute(world, x, y, z);
+			return AlwaysProcedure.execute();
 		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
@@ -146,7 +146,7 @@ public class CloudKittyEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 30);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.STEP_HEIGHT, 1);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.8);

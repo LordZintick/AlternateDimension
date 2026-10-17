@@ -6,7 +6,7 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "Items.DYE#16"
+      "CUSTOM:MathEssence"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -14,15 +14,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16"
+      "CUSTOM:MathEssence"
     ],
     "recipeReturnStack": "CUSTOM:Variable",
     "name": "variable_recipe",

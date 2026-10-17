@@ -21,7 +21,7 @@ import com.lordkittycat.alternate_dimension.procedures.GetBananaPeeledStateProce
 
 public class BananaItem extends Item {
 	public BananaItem(Item.Properties properties) {
-		super(properties.stacksTo(1));
+		super(properties.stacksTo(16));
 	}
 
 	@Override

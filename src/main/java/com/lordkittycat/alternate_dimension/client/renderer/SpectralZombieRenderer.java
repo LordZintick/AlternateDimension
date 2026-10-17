@@ -46,11 +46,6 @@ public class SpectralZombieRenderer extends MobRenderer<SpectralZombieEntity, Li
 		return entityTexture;
 	}
 
-	@Override
-	protected boolean isBodyVisible(LivingEntityRenderState state) {
-		return false;
-	}
-
 	private static final class AnimatedModel extends Modelzombie {
 		private final KeyframeAnimation keyframeAnimation0;
 		private final KeyframeAnimation keyframeAnimation1;

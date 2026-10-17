@@ -2,13 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "aba",
-    "b b",
-    "aba"
+    "aaa",
+    "a a",
+    "aaa"
   ],
   "key": {
-    "a": "alternate_dimension:veridium_cobble",
-    "b": "alternate_dimension:compressed_veridium_cobble"
+    "a": "alternate_dimension:veridium_cobble"
   },
   "result": {
     "id": "alternate_dimension:veridium_furnace",

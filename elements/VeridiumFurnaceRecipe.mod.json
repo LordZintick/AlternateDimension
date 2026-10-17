@@ -15,13 +15,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "CUSTOM:VeridiumCobble",
-      "CUSTOM:CompressedVeridiumCobble",
       "CUSTOM:VeridiumCobble",
-      "CUSTOM:CompressedVeridiumCobble",
+      "CUSTOM:VeridiumCobble",
+      "CUSTOM:VeridiumCobble",
       "",
-      "CUSTOM:CompressedVeridiumCobble",
       "CUSTOM:VeridiumCobble",
-      "CUSTOM:CompressedVeridiumCobble",
+      "CUSTOM:VeridiumCobble",
+      "CUSTOM:VeridiumCobble",
       "CUSTOM:VeridiumCobble"
     ],
     "recipeReturnStack": "CUSTOM:VeridiumFurnace",

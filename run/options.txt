@@ -30,7 +30,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"false"
 cloudRange:128
-renderDistance:32
+renderDistance:12
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""
@@ -38,7 +38,7 @@ vignette:false
 weatherRadius:5
 autoJump:false
 rotateWithMinecart:false
-operatorItemsTab:true
+operatorItemsTab:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -47,10 +47,10 @@ discrete_mouse_scroll:false
 invertXMouse:false
 invertYMouse:false
 realmsNotifications:true
-showSubtitles:true
+showSubtitles:false
 directionalAudio:false
 touchscreen:false
-bobView:true
+bobView:false
 toggleCrouch:false
 toggleSprint:false
 toggleAttack:false
@@ -64,7 +64,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:[]
+resourcePacks:["vanilla","mod_resources"]
 incompatibleResourcePacks:[]
 lastServer:localhost:25463
 lang:en_us
@@ -92,9 +92,9 @@ mouseWheelSensitivity:1.0
 rawMouseInput:true
 allowCursorChanges:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 hideMatchedNames:true
-joinedFirstServer:true
+joinedFirstServer:false
 syncChunkWrites:true
 showAutosaveIndicator:true
 allowServerListing:true
@@ -105,7 +105,7 @@ telemetryOptInExtra:false
 onboardAccessibility:false
 menuBackgroundBlurriness:5
 startedCleanly:true
-musicToast:"pause_and_toast"
+musicToast:"never"
 musicFrequency:"DEFAULT"
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right
@@ -200,7 +200,7 @@ key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 soundCategory_master:1.0
-soundCategory_music:0.5580985915492958
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

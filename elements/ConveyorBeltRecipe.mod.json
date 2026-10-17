@@ -3,10 +3,9 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 8,
+    "recipeRetstackSize": 16,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:Cloth",
       "CUSTOM:AluminumIngot"
     ],
     "cookingBookCategory": "MISC",

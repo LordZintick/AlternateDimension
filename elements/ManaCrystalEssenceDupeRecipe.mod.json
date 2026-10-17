@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:OreEssence"
+    ],
+    "integers": [
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:ManaCrystal"
+    ],
+    "resultCounts": [
+      2
+    ],
+    "count": 0
+  }
+}

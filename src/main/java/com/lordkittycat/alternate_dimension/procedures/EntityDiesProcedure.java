@@ -20,6 +20,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.tags.TagKey;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.Identifier;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -27,6 +33,7 @@ import javax.annotation.Nullable;
 
 import java.util.Comparator;
 
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
@@ -80,6 +87,85 @@ public class EntityDiesProcedure {
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).contains("_cow")) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.METALLIC_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:void_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.UMBRAL_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:hallowed_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.ANGELIC_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:life_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.VERDANT_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:fire_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.INFERNAL_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:ice_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.FROSTY_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:candy_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.SUPERSWEET_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.GUMMY_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("alternate_dimension:essence_mobs")))) {
+			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.ENCHANTED_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else {
+			if (Mth.nextInt(RandomSource.create(), 0, 6) <= 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(AlternateDimensionModItems.BASIC_GOODIE_BAG.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		}
 	}

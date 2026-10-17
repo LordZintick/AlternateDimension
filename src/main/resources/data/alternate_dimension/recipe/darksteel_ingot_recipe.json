@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:void_essence",
+    "b": "alternate_dimension:aluminum_ingot"
+  },
+  "result": {
+    "id": "alternate_dimension:darksteel_ingot",
+    "count": 1
+  }
+}

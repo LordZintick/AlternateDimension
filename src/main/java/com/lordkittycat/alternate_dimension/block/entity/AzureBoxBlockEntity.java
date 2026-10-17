@@ -28,7 +28,7 @@ import com.lordkittycat.alternate_dimension.world.inventory.WoodenBoxGUIMenu;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class AzureBoxBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(14, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(27, ItemStack.EMPTY);
 
 	public AzureBoxBlockEntity(BlockPos position, BlockState state) {
 		super(AlternateDimensionModBlockEntities.AZURE_BOX.get(), position, state);

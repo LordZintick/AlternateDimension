@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:stripped_solar_log"
+  },
+  "result": {
+    "id": "alternate_dimension:stripped_solar_wood",
+    "count": 3
+  }
+}

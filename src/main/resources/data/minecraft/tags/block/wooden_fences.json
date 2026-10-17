@@ -1,11 +1,14 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:willow_fence",
     "alternate_dimension:pine_fence",
     "alternate_dimension:redwood_fence",
+    "alternate_dimension:brimwood_fence",
     "alternate_dimension:scorched_fence",
     "alternate_dimension:azure_fence",
     "alternate_dimension:greenwood_fence",
+    "alternate_dimension:solar_fence",
     "alternate_dimension:candyfloss_fence"
   ]
 }

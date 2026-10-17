@@ -3,7 +3,7 @@
   "biomes": "#alternate_dimension:is_familiar_realm",
   "spawners": {
     "type": "alternate_dimension:enchanted_zombie",
-    "weight": 20,
+    "weight": 25,
     "minCount": 1,
     "maxCount": 4
   }

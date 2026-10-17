@@ -14,7 +14,7 @@
     "creativeTabs": [
       "CUSTOM:AlternateDimensionMaterials"
     ],
-    "stackSize": 1,
+    "stackSize": 32,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
@@ -48,7 +48,7 @@
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 0.5,
-    "eatResultItem": "Items.BOWL",
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat",

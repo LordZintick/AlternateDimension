@@ -38,25 +38,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "alternate_dimension:ice_essence",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 0,
-                "max": 2
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "random_sequence": "alternate_dimension:entities/frosty_zombie"

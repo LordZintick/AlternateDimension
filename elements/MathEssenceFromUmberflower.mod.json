@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Umberflower"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:Umberflower",
+      "",
+      "",
+      "CUSTOM:Umberflower",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:MathEssence",
+    "name": "math_essence_from_umberflower",
+    "namespace": "mod"
+  }
+}

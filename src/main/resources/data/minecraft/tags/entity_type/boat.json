@@ -2,9 +2,12 @@
   "replace": false,
   "values": [
     "alternate_dimension:candyfloss_boat",
+    "alternate_dimension:solar_boat",
     "alternate_dimension:scorched_boat",
     "alternate_dimension:greenwood_boat",
     "alternate_dimension:pine_boat",
+    "alternate_dimension:brimwood_boat",
+    "alternate_dimension:willow_boat",
     "alternate_dimension:azure_boat",
     "alternate_dimension:redwood_boat"
   ]

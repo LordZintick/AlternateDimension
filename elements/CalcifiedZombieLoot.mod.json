@@ -13,7 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": "CUSTOM:Shale",
+            "item": "CUSTOM:ShaleCobble",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -25,7 +25,7 @@
           },
           {
             "type": "item",
-            "item": "CUSTOM:PyreMantle",
+            "item": "CUSTOM:PyricCobble",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -37,7 +37,7 @@
           },
           {
             "type": "item",
-            "item": "CUSTOM:Veridium",
+            "item": "CUSTOM:VeridiumCobble",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -62,51 +62,6 @@
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          }
-        ]
-      },
-      {
-        "minrolls": 0,
-        "maxrolls": 1,
-        "minbonusrolls": 1,
-        "maxbonusrolls": 1,
-        "hasbonusrolls": false,
-        "entries": [
-          {
-            "type": "item",
-            "item": "Blocks.AIR",
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": "CUSTOM:RawAluminum",
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": "CUSTOM:RawQuartz",
-            "weight": 1,
-            "minCount": 2,
-            "maxCount": 4,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": true,

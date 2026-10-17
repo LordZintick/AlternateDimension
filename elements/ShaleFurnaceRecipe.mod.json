@@ -15,13 +15,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "CUSTOM:ShaleCobble",
-      "CUSTOM:CompressedShaleCobble",
       "CUSTOM:ShaleCobble",
-      "CUSTOM:CompressedShaleCobble",
+      "CUSTOM:ShaleCobble",
+      "CUSTOM:ShaleCobble",
       "",
-      "CUSTOM:CompressedShaleCobble",
       "CUSTOM:ShaleCobble",
-      "CUSTOM:CompressedShaleCobble",
+      "CUSTOM:ShaleCobble",
+      "CUSTOM:ShaleCobble",
       "CUSTOM:ShaleCobble"
     ],
     "recipeReturnStack": "CUSTOM:ShaleFurnace",

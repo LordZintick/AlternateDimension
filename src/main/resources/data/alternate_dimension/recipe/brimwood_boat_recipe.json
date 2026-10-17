@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:brimwood_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:brimwood_boat",
+    "count": 1
+  }
+}

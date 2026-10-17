@@ -4,12 +4,11 @@
   "pattern": [
     "aaa",
     "aba",
-    "aca"
+    "aaa"
   ],
   "key": {
     "a": "alternate_dimension:magic_dust_block",
-    "b": "alternate_dimension:cheesy_backpack",
-    "c": "alternate_dimension:activated_mana_stone"
+    "b": "alternate_dimension:cheesy_backpack"
   },
   "result": {
     "id": "alternate_dimension:enchanted_backpack",

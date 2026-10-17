@@ -24,7 +24,7 @@
       "CUSTOM:AluminumNugget",
       "CUSTOM:AluminumNugget"
     ],
-    "recipeReturnStack": "CUSTOM:AluminumCrate",
+    "recipeReturnStack": "CUSTOM:AluminumStorageModule",
     "name": "aluminum_storage_module_recipe",
     "namespace": "mod"
   }

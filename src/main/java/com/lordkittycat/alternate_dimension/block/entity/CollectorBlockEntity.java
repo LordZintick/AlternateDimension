@@ -5,13 +5,13 @@ import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.HolderLookup;
@@ -22,10 +22,13 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
+import io.netty.buffer.Unpooled;
+
+import com.lordkittycat.alternate_dimension.world.inventory.CollectorGUIMenu;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class CollectorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(1, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(10, ItemStack.EMPTY);
 
 	public CollectorBlockEntity(BlockPos position, BlockState state) {
 		super(AlternateDimensionModBlockEntities.COLLECTOR.get(), position, state);
@@ -76,7 +79,7 @@ public class CollectorBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return ChestMenu.threeRows(id, inventory);
+		return new CollectorGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

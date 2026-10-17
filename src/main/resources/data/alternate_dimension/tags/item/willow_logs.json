@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:willow_wood",
+    "alternate_dimension:stripped_willow_wood",
+    "alternate_dimension:willow_log",
+    "alternate_dimension:stripped_willow_log"
+  ]
+}

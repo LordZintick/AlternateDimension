@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:magic_dust",
     "alternate_dimension:frozen_flesh",
     "alternate_dimension:living_flesh",
     "alternate_dimension:calcinated_flesh",

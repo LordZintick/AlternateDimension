@@ -8,6 +8,15 @@
     },
     "alternate_dimension:redwood_leaves": {
       "chance": 0.3
+    },
+    "alternate_dimension:willow_leaves": {
+      "chance": 0.3
+    },
+    "alternate_dimension:brimwood_leaves": {
+      "chance": 0.3
+    },
+    "alternate_dimension:solar_leaves": {
+      "chance": 0.3
     }
   }
 }

@@ -7,7 +7,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class PopcornItem extends Item {
 	public PopcornItem(Item.Properties properties) {
-		super(properties.food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0.05f).alwaysEdible().build(), Consumables.defaultFood().consumeSeconds(0.25F).build()));
+		super(properties.food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.05f).build(), Consumables.defaultFood().consumeSeconds(0.25F).build()));
 	}
 
 	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {

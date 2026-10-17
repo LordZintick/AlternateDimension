@@ -28,7 +28,7 @@ import com.lordkittycat.alternate_dimension.world.inventory.WoodenBoxGUIMenu;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlockEntities;
 
 public class RedwoodBoxBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(14, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(27, ItemStack.EMPTY);
 
 	public RedwoodBoxBlockEntity(BlockPos position, BlockState state) {
 		super(AlternateDimensionModBlockEntities.REDWOOD_BOX.get(), position, state);

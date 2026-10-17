@@ -66,7 +66,7 @@
     "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEAD",
-    "attackStrength": 4,
+    "attackStrength": 3,
     "attackKnockback": 0.1,
     "knockbackResistance": 0.4,
     "movementSpeed": 0.2,

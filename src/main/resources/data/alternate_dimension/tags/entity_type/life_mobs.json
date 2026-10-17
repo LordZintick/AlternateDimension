@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:elf",
+    "alternate_dimension:life_spirit",
+    "alternate_dimension:verdant_zombie",
+    "alternate_dimension:overgrown_zombie",
+    "alternate_dimension:cactus_zombie",
+    "alternate_dimension:venomous_spider"
+  ]
+}

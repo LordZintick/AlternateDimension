@@ -6,8 +6,7 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:Backpack",
-      "CUSTOM:ParmesanCheeseBlock"
+      "CUSTOM:Backpack"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,15 +14,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:CheeseBlock",
-      "CUSTOM:ParmesanCheeseBlock",
-      "CUSTOM:CheeseBlock",
-      "CUSTOM:ParmesanCheeseBlock",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
       "CUSTOM:Backpack",
-      "CUSTOM:ParmesanCheeseBlock",
-      "CUSTOM:CheeseBlock",
-      "CUSTOM:ParmesanCheeseBlock",
-      "CUSTOM:CheeseBlock"
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese"
     ],
     "recipeReturnStack": "CUSTOM:CheesyBackpack",
     "name": "cheesy_backpack_recipe",

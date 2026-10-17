@@ -72,25 +72,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alternate_dimension:life_essence",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "alternate_dimension:weak_thread",
           "weight": 1,
           "functions": [

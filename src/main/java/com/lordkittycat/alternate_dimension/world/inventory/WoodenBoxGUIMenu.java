@@ -8,7 +8,10 @@ import net.neoforged.neoforge.transfer.item.ItemStacksResourceHandler;
 import net.neoforged.neoforge.transfer.item.ItemResource;
 import net.neoforged.neoforge.transfer.access.ItemAccess;
 import net.neoforged.neoforge.transfer.ResourceHandler;
+import net.neoforged.neoforge.event.entity.player.PlayerContainerEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -30,13 +33,16 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
+import com.lordkittycat.alternate_dimension.procedures.HandleBoxInteractionProcedure;
+import com.lordkittycat.alternate_dimension.procedures.CloseWoodenBoxProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModMenus;
 
+@EventBusSubscriber
 public class WoodenBoxGUIMenu extends AbstractContainerMenu implements AlternateDimensionModMenus.MenuAccessor {
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 15)
+			if (!this.containsKey(key) && this.size() >= 28)
 				return null;
 			return super.put(key, value);
 		}
@@ -56,7 +62,7 @@ public class WoodenBoxGUIMenu extends AbstractContainerMenu implements Alternate
 		super(AlternateDimensionModMenus.WOODEN_BOX_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStacksResourceHandler(14);
+		this.internal = new ItemStacksResourceHandler(27);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -93,81 +99,146 @@ public class WoodenBoxGUIMenu extends AbstractContainerMenu implements Alternate
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 26, 39) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 8, 20) {
 			private final int slot = 0;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 44, 39) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 26, 20) {
 			private final int slot = 1;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 62, 39) {
+		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 44, 20) {
 			private final int slot = 2;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(3, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 3, 80, 39) {
+		this.customSlots.put(3, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 3, 62, 20) {
 			private final int slot = 3;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(4, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 4, 98, 39) {
+		this.customSlots.put(4, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 4, 80, 20) {
 			private final int slot = 4;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(5, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 5, 116, 39) {
+		this.customSlots.put(5, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 5, 98, 20) {
 			private final int slot = 5;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(6, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 6, 134, 39) {
+		this.customSlots.put(6, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 6, 116, 20) {
 			private final int slot = 6;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(7, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 7, 26, 21) {
+		this.customSlots.put(7, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 7, 134, 20) {
 			private final int slot = 7;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(8, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 8, 44, 21) {
+		this.customSlots.put(8, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 8, 152, 20) {
 			private final int slot = 8;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(9, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 9, 62, 21) {
+		this.customSlots.put(9, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 9, 8, 38) {
 			private final int slot = 9;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(10, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 10, 80, 21) {
+		this.customSlots.put(10, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 10, 26, 38) {
 			private final int slot = 10;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(11, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 11, 98, 21) {
+		this.customSlots.put(11, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 11, 44, 38) {
 			private final int slot = 11;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(12, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 12, 116, 21) {
+		this.customSlots.put(12, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 12, 62, 38) {
 			private final int slot = 12;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
-		this.customSlots.put(13, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 13, 134, 21) {
+		this.customSlots.put(13, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 13, 80, 38) {
 			private final int slot = 13;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(14, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 14, 98, 38) {
+			private final int slot = 14;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(15, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 15, 116, 38) {
+			private final int slot = 15;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(16, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 16, 134, 38) {
+			private final int slot = 16;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(17, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 17, 152, 38) {
+			private final int slot = 17;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(18, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 18, 8, 56) {
+			private final int slot = 18;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(19, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 19, 26, 56) {
+			private final int slot = 19;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(20, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 20, 44, 56) {
+			private final int slot = 20;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(21, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 21, 62, 56) {
+			private final int slot = 21;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(22, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 22, 80, 56) {
+			private final int slot = 22;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(23, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 23, 98, 56) {
+			private final int slot = 23;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(24, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 24, 116, 56) {
+			private final int slot = 24;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(25, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 25, 134, 56) {
+			private final int slot = 25;
+			private int x = WoodenBoxGUIMenu.this.x;
+			private int y = WoodenBoxGUIMenu.this.y;
+		}));
+		this.customSlots.put(26, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 26, 152, 56) {
+			private final int slot = 26;
 			private int x = WoodenBoxGUIMenu.this.x;
 			private int y = WoodenBoxGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -17 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -1 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -17 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -1 + 142));
 	}
 
 	private void setItemInSlot(int index, ItemResource resource, int amount) {
@@ -206,16 +277,16 @@ public class WoodenBoxGUIMenu extends AbstractContainerMenu implements Alternate
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 14) {
-				if (!this.moveItemStackTo(itemstack1, 14, this.slots.size(), true))
+			if (index < 27) {
+				if (!this.moveItemStackTo(itemstack1, 27, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 14, false)) {
-				if (index < 14 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 14 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 27, false)) {
+				if (index < 27 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 27 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 14, 14 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 27, 27 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -295,6 +366,7 @@ public class WoodenBoxGUIMenu extends AbstractContainerMenu implements Alternate
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		CloseWoodenBoxProcedure.execute(world, x, y, z);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.size(); ++j) {
@@ -318,5 +390,17 @@ public class WoodenBoxGUIMenu extends AbstractContainerMenu implements Alternate
 	@Override
 	public Map<String, Object> getMenuState() {
 		return menuState;
+	}
+
+	@SubscribeEvent
+	public static void onContainerOpen(PlayerContainerEvent.Open event) {
+		Player entity = event.getEntity();
+		if (event.getContainer() instanceof WoodenBoxGUIMenu menu) {
+			Level world = menu.world;
+			double x = menu.x;
+			double y = menu.y;
+			double z = menu.z;
+			HandleBoxInteractionProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

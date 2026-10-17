@@ -33,7 +33,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.procedures.PushEntitiesAwayProcedure;
-import com.lordkittycat.alternate_dimension.procedures.CheckForCloudProcedure;
+import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
 public class CloudyWolfEntity extends Monster {
@@ -147,7 +147,7 @@ public class CloudyWolfEntity extends Monster {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return CheckForCloudProcedure.execute(world, x, y, z);
+			return AlwaysProcedure.execute();
 		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
@@ -155,8 +155,8 @@ public class CloudyWolfEntity extends Monster {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
 		builder = builder.add(Attributes.MAX_HEALTH, 30);
-		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ARMOR, 1);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.5);

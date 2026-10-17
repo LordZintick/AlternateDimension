@@ -24,7 +24,7 @@ public class WoodenBoxGUIScreen extends AbstractContainerScreen<WoodenBoxGUIMenu
 	private static final Identifier BACKGROUND = Identifier.parse("alternate_dimension:textures/screens/wooden_box_gui.png");
 
 	public WoodenBoxGUIScreen(WoodenBoxGUIMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text, 176, 148);
+		super(container, inventory, text, 176, 165);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
@@ -61,7 +61,7 @@ public class WoodenBoxGUIScreen extends AbstractContainerScreen<WoodenBoxGUIMenu
 
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.text(this.font, GetBlockNameProcedure.execute(world, x, y, z), 49, 5, -12829636, false);
+		guiGraphics.text(this.font, GetBlockNameProcedure.execute(world, x, y, z), 50, 5, -12829636, false);
 	}
 
 	@Override

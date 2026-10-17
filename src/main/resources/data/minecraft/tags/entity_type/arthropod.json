@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "alternate_dimension:incendiary_spider",
-    "alternate_dimension:electrified_spider",
     "alternate_dimension:venomous_spider",
+    "alternate_dimension:electrified_spider",
     "alternate_dimension:spider_hydra"
   ]
 }

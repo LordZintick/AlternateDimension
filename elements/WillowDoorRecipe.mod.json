@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_door",
+    "unlockingItems": [
+      "CUSTOM:WillowPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:WillowDoor",
+    "name": "willow_door_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:willow_log"
+  },
+  "result": {
+    "id": "alternate_dimension:willow_wood",
+    "count": 3
+  }
+}

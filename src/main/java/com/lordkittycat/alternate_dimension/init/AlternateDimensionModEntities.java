@@ -44,7 +44,7 @@ public class AlternateDimensionModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<BreadstickProjectileEntity>> BREADSTICK_PROJECTILE = register("breadstick_projectile",
 			EntityType.Builder.<BreadstickProjectileEntity>of(BreadstickProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ChefEntity>> CHEF = register("chef",
-			EntityType.Builder.<ChefEntity>of(ChefEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+			EntityType.Builder.<ChefEntity>of(ChefEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<RedGummyBearEntity>> RED_GUMMY_BEAR = register("red_gummy_bear",
@@ -207,7 +207,7 @@ public class AlternateDimensionModEntities {
 
 					.notInPeaceful().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<EnchantedZombieEntity>> ENCHANTED_ZOMBIE = register("enchanted_zombie",
-			EntityType.Builder.<EnchantedZombieEntity>of(EnchantedZombieEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<EnchantedZombieEntity>of(EnchantedZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MagmaticZombieEntity>> MAGMATIC_ZOMBIE = register("magmatic_zombie",
@@ -242,6 +242,102 @@ public class AlternateDimensionModEntities {
 			EntityType.Builder.<ElectrifiedSpiderEntity>of(ElectrifiedSpiderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.notInPeaceful().sized(1.2f, 0.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<WillowBoatEntity>> WILLOW_BOAT = register("willow_boat",
+			EntityType.Builder.<WillowBoatEntity>of(WillowBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<WillowChestBoatEntity>> WILLOW_CHEST_BOAT = register("willow_chest_boat",
+			EntityType.Builder.<WillowChestBoatEntity>of(WillowChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<AxiomorphEntity>> AXIOMORPH = register("axiomorph",
+			EntityType.Builder.<AxiomorphEntity>of(AxiomorphEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<HeroZombrineEntity>> HERO_ZOMBRINE = register("hero_zombrine",
+			EntityType.Builder.<HeroZombrineEntity>of(HeroZombrineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).fireImmune()
+
+					.notInPeaceful().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<MythrilCowEntity>> MYTHRIL_COW = register("mythril_cow",
+			EntityType.Builder.<MythrilCowEntity>of(MythrilCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AluminumCowEntity>> ALUMINUM_COW = register("aluminum_cow",
+			EntityType.Builder.<AluminumCowEntity>of(AluminumCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EvilstoneCowEntity>> EVILSTONE_COW = register("evilstone_cow",
+			EntityType.Builder.<EvilstoneCowEntity>of(EvilstoneCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ManaCrystalCowEntity>> MANA_CRYSTAL_COW = register("mana_crystal_cow",
+			EntityType.Builder.<ManaCrystalCowEntity>of(ManaCrystalCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TitaniumCowEntity>> TITANIUM_COW = register("titanium_cow",
+			EntityType.Builder.<TitaniumCowEntity>of(TitaniumCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<UraniumCowEntity>> URANIUM_COW = register("uranium_cow",
+			EntityType.Builder.<UraniumCowEntity>of(UraniumCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<QuartzCowEntity>> QUARTZ_COW = register("quartz_cow",
+			EntityType.Builder.<QuartzCowEntity>of(QuartzCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.8f, 1.2f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BrimwoodBoatEntity>> BRIMWOOD_BOAT = register("brimwood_boat",
+			EntityType.Builder.<BrimwoodBoatEntity>of(BrimwoodBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<BrimwoodChestBoatEntity>> BRIMWOOD_CHEST_BOAT = register("brimwood_chest_boat",
+			EntityType.Builder.<BrimwoodChestBoatEntity>of(BrimwoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<SolarBoatEntity>> SOLAR_BOAT = register("solar_boat",
+			EntityType.Builder.<SolarBoatEntity>of(SolarBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<SolarChestBoatEntity>> SOLAR_CHEST_BOAT = register("solar_chest_boat",
+			EntityType.Builder.<SolarChestBoatEntity>of(SolarChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<ArminioniteEntity>> ARMINIONITE = register("arminionite",
+			EntityType.Builder.<ArminioniteEntity>of(ArminioniteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SurvivalistEntity>> SURVIVALIST = register("survivalist",
+			EntityType.Builder.<SurvivalistEntity>of(SurvivalistEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.ridingOffset(-0.6f)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<FrostfireSteveEntity>> FROSTFIRE_STEVE = register("frostfire_steve", EntityType.Builder.<FrostfireSteveEntity>of(FrostfireSteveEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).notInPeaceful().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ManaCrystalProjectileEntity>> MANA_CRYSTAL_PROJECTILE = register("mana_crystal_projectile",
+			EntityType.Builder.<ManaCrystalProjectileEntity>of(ManaCrystalProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ManaNinjaEntity>> MANA_NINJA = register("mana_ninja",
+			EntityType.Builder.<ManaNinjaEntity>of(ManaNinjaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.ridingOffset(-0.6f)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SapphireChickenEntity>> SAPPHIRE_CHICKEN = register("sapphire_chicken",
+			EntityType.Builder.<SapphireChickenEntity>of(SapphireChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RubyChickenEntity>> RUBY_CHICKEN = register("ruby_chicken",
+			EntityType.Builder.<RubyChickenEntity>of(RubyChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TopazChickenEntity>> TOPAZ_CHICKEN = register("topaz_chicken",
+			EntityType.Builder.<TopazChickenEntity>of(TopazChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<OnyxChickenEntity>> ONYX_CHICKEN = register("onyx_chicken",
+			EntityType.Builder.<OnyxChickenEntity>of(OnyxChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<KyaniteChickenEntity>> KYANITE_CHICKEN = register("kyanite_chicken",
+			EntityType.Builder.<KyaniteChickenEntity>of(KyaniteChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<JadeChickenEntity>> JADE_CHICKEN = register("jade_chicken",
+			EntityType.Builder.<JadeChickenEntity>of(JadeChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TourmalineChickenEntity>> TOURMALINE_CHICKEN = register("tourmaline_chicken",
+			EntityType.Builder.<TourmalineChickenEntity>of(TourmalineChickenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.5f, 0.6f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -297,6 +393,26 @@ public class AlternateDimensionModEntities {
 		PermachillZombieEntity.init(event);
 		VerdantZombieEntity.init(event);
 		ElectrifiedSpiderEntity.init(event);
+		AxiomorphEntity.init(event);
+		HeroZombrineEntity.init(event);
+		MythrilCowEntity.init(event);
+		AluminumCowEntity.init(event);
+		EvilstoneCowEntity.init(event);
+		ManaCrystalCowEntity.init(event);
+		TitaniumCowEntity.init(event);
+		UraniumCowEntity.init(event);
+		QuartzCowEntity.init(event);
+		ArminioniteEntity.init(event);
+		SurvivalistEntity.init(event);
+		FrostfireSteveEntity.init(event);
+		ManaNinjaEntity.init(event);
+		SapphireChickenEntity.init(event);
+		RubyChickenEntity.init(event);
+		TopazChickenEntity.init(event);
+		OnyxChickenEntity.init(event);
+		KyaniteChickenEntity.init(event);
+		JadeChickenEntity.init(event);
+		TourmalineChickenEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -347,5 +463,25 @@ public class AlternateDimensionModEntities {
 		event.put(PERMACHILL_ZOMBIE.get(), PermachillZombieEntity.createAttributes().build());
 		event.put(VERDANT_ZOMBIE.get(), VerdantZombieEntity.createAttributes().build());
 		event.put(ELECTRIFIED_SPIDER.get(), ElectrifiedSpiderEntity.createAttributes().build());
+		event.put(AXIOMORPH.get(), AxiomorphEntity.createAttributes().build());
+		event.put(HERO_ZOMBRINE.get(), HeroZombrineEntity.createAttributes().build());
+		event.put(MYTHRIL_COW.get(), MythrilCowEntity.createAttributes().build());
+		event.put(ALUMINUM_COW.get(), AluminumCowEntity.createAttributes().build());
+		event.put(EVILSTONE_COW.get(), EvilstoneCowEntity.createAttributes().build());
+		event.put(MANA_CRYSTAL_COW.get(), ManaCrystalCowEntity.createAttributes().build());
+		event.put(TITANIUM_COW.get(), TitaniumCowEntity.createAttributes().build());
+		event.put(URANIUM_COW.get(), UraniumCowEntity.createAttributes().build());
+		event.put(QUARTZ_COW.get(), QuartzCowEntity.createAttributes().build());
+		event.put(ARMINIONITE.get(), ArminioniteEntity.createAttributes().build());
+		event.put(SURVIVALIST.get(), SurvivalistEntity.createAttributes().build());
+		event.put(FROSTFIRE_STEVE.get(), FrostfireSteveEntity.createAttributes().build());
+		event.put(MANA_NINJA.get(), ManaNinjaEntity.createAttributes().build());
+		event.put(SAPPHIRE_CHICKEN.get(), SapphireChickenEntity.createAttributes().build());
+		event.put(RUBY_CHICKEN.get(), RubyChickenEntity.createAttributes().build());
+		event.put(TOPAZ_CHICKEN.get(), TopazChickenEntity.createAttributes().build());
+		event.put(ONYX_CHICKEN.get(), OnyxChickenEntity.createAttributes().build());
+		event.put(KYANITE_CHICKEN.get(), KyaniteChickenEntity.createAttributes().build());
+		event.put(JADE_CHICKEN.get(), JadeChickenEntity.createAttributes().build());
+		event.put(TOURMALINE_CHICKEN.get(), TourmalineChickenEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "alternate_dimension:block/brimwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "alternate_dimension:block/brimwood_wood"
+    },
+    "axis=z": {
+      "model": "alternate_dimension:block/brimwood_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "alternate_dimension:block/willow_planks",
+    "particle": "alternate_dimension:block/willow_planks"
+  }
+}

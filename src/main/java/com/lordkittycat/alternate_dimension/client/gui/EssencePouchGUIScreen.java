@@ -23,7 +23,7 @@ public class EssencePouchGUIScreen extends AbstractContainerScreen<EssencePouchG
 	private static final Identifier BACKGROUND = Identifier.parse("alternate_dimension:textures/screens/essence_pouch_gui.png");
 
 	public EssencePouchGUIScreen(EssencePouchGUIMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text, 176, 137);
+		super(container, inventory, text, 196, 137);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
@@ -60,7 +60,7 @@ public class EssencePouchGUIScreen extends AbstractContainerScreen<EssencePouchG
 
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.text(this.font, Component.translatable("gui.alternate_dimension.essence_pouch_gui.label_backpack"), 55, 2, -12829636, false);
+		guiGraphics.text(this.font, Component.translatable("gui.alternate_dimension.essence_pouch_gui.label_backpack"), 65, 2, -12829636, false);
 	}
 
 	@Override

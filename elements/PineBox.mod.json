@@ -108,7 +108,7 @@
     "hasInventory": true,
     "guiBoundTo": "WoodenBoxGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 14,
+    "inventorySize": 27,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

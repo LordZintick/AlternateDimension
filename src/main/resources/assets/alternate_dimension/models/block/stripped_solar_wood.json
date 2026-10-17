@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/stripped_solar_log",
+    "particle": "alternate_dimension:block/stripped_solar_log"
+  }
+}

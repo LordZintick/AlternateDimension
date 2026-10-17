@@ -29,12 +29,13 @@ public class AlternateDimensionModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CheesyBackpackGUIMenu>> CHEESY_BACKPACK_GUI = REGISTRY.register("cheesy_backpack_gui", () -> IMenuTypeExtension.create(CheesyBackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<EnchantedBackpackGUIMenu>> ENCHANTED_BACKPACK_GUI = REGISTRY.register("enchanted_backpack_gui", () -> IMenuTypeExtension.create(EnchantedBackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ElementalInscriberGUIMenu>> ELEMENTAL_INSCRIBER_GUI = REGISTRY.register("elemental_inscriber_gui", () -> IMenuTypeExtension.create(ElementalInscriberGUIMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<HintBookGUIMenu>> HINT_BOOK_GUI = REGISTRY.register("hint_book_gui", () -> IMenuTypeExtension.create(HintBookGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WoodenBoxGUIMenu>> WOODEN_BOX_GUI = REGISTRY.register("wooden_box_gui", () -> IMenuTypeExtension.create(WoodenBoxGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<MetalCrateGUIMenu>> METAL_CRATE_GUI = REGISTRY.register("metal_crate_gui", () -> IMenuTypeExtension.create(MetalCrateGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<EssencePouchGUIMenu>> ESSENCE_POUCH_GUI = REGISTRY.register("essence_pouch_gui", () -> IMenuTypeExtension.create(EssencePouchGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<HuntersPouchGUIMenu>> HUNTERS_POUCH_GUI = REGISTRY.register("hunters_pouch_gui", () -> IMenuTypeExtension.create(HuntersPouchGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FruitPouchGUIMenu>> FRUIT_POUCH_GUI = REGISTRY.register("fruit_pouch_gui", () -> IMenuTypeExtension.create(FruitPouchGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ExtractorGUIMenu>> EXTRACTOR_GUI = REGISTRY.register("extractor_gui", () -> IMenuTypeExtension.create(ExtractorGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CollectorGUIMenu>> COLLECTOR_GUI = REGISTRY.register("collector_gui", () -> IMenuTypeExtension.create(CollectorGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

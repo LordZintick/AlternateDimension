@@ -261,8 +261,8 @@ public class AlternateDimensionModVariables {
 
 	public static class PlayerVariables implements ValueIOSerializable {
 		boolean _syncDirty = false;
-		public double viking_reputation = -1.0;
-		public double roman_reputation = -1.0;
+		public double viking_reputation = 0.0;
+		public double roman_reputation = 0.0;
 		public String chosenPlanet = "\"\"";
 		public String currentPlanet = "\"\"";
 		public double mana = 100.0;

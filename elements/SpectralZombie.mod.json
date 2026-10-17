@@ -7,7 +7,7 @@
     "mobModelName": "Modelzombie",
     "mobModelTexture": "spectral.png",
     "transparentModelCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "isShakingCondition": {
       "fixedValue": false
@@ -67,14 +67,14 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEAD",
     "attackStrength": 2,
-    "attackKnockback": 0.5,
+    "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.2,
     "stepHeight": 0.6,
     "armorBaseValue": 4.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 25,
+    "health": 20,
     "xpAmount": 5,
     "waterMob": false,
     "breatheUnderwater": {

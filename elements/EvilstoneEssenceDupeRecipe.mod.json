@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:EvilstoneGem",
+      "CUSTOM:OreEssence"
+    ],
+    "integers": [
+      1,
+      4
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:EvilstoneGem"
+    ],
+    "resultCounts": [
+      2
+    ],
+    "count": 0
+  }
+}

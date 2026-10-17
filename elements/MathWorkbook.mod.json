@@ -30,7 +30,9 @@
     "damageVsEntity": 0.0,
     "attackSpeed": 1.6,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A basic math workbook that shoots plus symbols to hurt enemies."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

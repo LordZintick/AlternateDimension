@@ -38,25 +38,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "alternate_dimension:life_essence",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 8
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "random_sequence": "alternate_dimension:entities/verdant_zombie"

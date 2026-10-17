@@ -16,14 +16,21 @@ import net.minecraft.core.BlockPos;
 
 import java.util.Optional;
 
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
+
 public class SwitchToDayTimeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack)) && !(world instanceof Level _lvl2 && _lvl2.isBrightOutside())) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack, 12000);
+				_player.getCooldowns().addCooldown(itemstack, 6000);
 			itemstack.shrink(1);
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(AlternateDimensionModItems.BIG_BOTTLE.get()).copy();
+				_setstack.setCount(1);
+				_player.getInventory().placeItemBackInInventory(_setstack);
+			}
 			if (world instanceof ServerLevel _level) {
 				ServerClockManager _clockManager = _level.getServer().clockManager();
 				Optional<Holder<WorldClock>> _clock = _level.dimensionType().defaultClock();

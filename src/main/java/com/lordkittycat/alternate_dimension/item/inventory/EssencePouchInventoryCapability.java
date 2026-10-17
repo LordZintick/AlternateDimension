@@ -25,7 +25,7 @@ public class EssencePouchInventoryCapability extends ItemAccessItemHandler {
 	}
 
 	public EssencePouchInventoryCapability(ItemAccess access) {
-		super(access, DataComponents.CONTAINER, 14);
+		super(access, DataComponents.CONTAINER, 20);
 	}
 
 	@Override

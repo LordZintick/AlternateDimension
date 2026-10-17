@@ -6,7 +6,7 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "Items.DYE#16"
+      "CUSTOM:MathEssence"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,13 +15,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16",
-      "Items.DYE#16",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
+      "CUSTOM:MathEssence",
+      "CUSTOM:MathEssence",
       "",
-      "Items.DYE#16",
+      "CUSTOM:MathEssence",
       ""
     ],
     "recipeReturnStack": "CUSTOM:Plus",

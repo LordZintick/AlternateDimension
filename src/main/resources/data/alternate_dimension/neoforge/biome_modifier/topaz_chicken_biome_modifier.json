@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "spawners": {
+    "type": "alternate_dimension:topaz_chicken",
+    "weight": 30,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

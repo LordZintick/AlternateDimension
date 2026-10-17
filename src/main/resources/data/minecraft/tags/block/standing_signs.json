@@ -1,9 +1,12 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:willow_sign",
+    "alternate_dimension:solar_sign",
     "alternate_dimension:redwood_sign",
     "alternate_dimension:scorched_sign",
     "alternate_dimension:azure_sign",
+    "alternate_dimension:brimwood_sign",
     "alternate_dimension:greenwood_sign",
     "alternate_dimension:candyfloss_sign",
     "alternate_dimension:pine_sign"

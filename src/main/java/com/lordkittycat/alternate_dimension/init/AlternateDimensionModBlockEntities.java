@@ -45,6 +45,8 @@ public class AlternateDimensionModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AluminumCrateBlockEntity>> ALUMINUM_CRATE = register("aluminum_crate", AlternateDimensionModBlocks.ALUMINUM_CRATE, AluminumCrateBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ManaMystifierBlockEntity>> MANA_MYSTIFIER = register("mana_mystifier", AlternateDimensionModBlocks.MANA_MYSTIFIER, ManaMystifierBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GravestoneBlockEntity>> GRAVESTONE = register("gravestone", AlternateDimensionModBlocks.GRAVESTONE, GravestoneBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ShroomyBoxBlockEntity>> SHROOMY_BOX = register("shroomy_box", AlternateDimensionModBlocks.SHROOMY_BOX, ShroomyBoxBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ExtractorBlockEntity>> EXTRACTOR = register("extractor", AlternateDimensionModBlocks.EXTRACTOR, ExtractorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -82,5 +84,7 @@ public class AlternateDimensionModBlockEntities {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, MANA_MYSTIFIER.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, MANA_MYSTIFIER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, GRAVESTONE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, SHROOMY_BOX.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, EXTRACTOR.get(), WorldlyContainerWrapper::new);
 	}
 }

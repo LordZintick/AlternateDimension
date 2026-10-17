@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_sign",
+    "unlockingItems": [
+      "CUSTOM:BrimwoodPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:BrimwoodPlanks",
+      "CUSTOM:BrimwoodPlanks",
+      "CUSTOM:BrimwoodPlanks",
+      "CUSTOM:BrimwoodPlanks",
+      "CUSTOM:BrimwoodPlanks",
+      "CUSTOM:BrimwoodPlanks",
+      "",
+      "CUSTOM:ToolRod",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:BrimwoodSign",
+    "name": "brimwood_sign_recipe",
+    "namespace": "mod"
+  }
+}

@@ -4,13 +4,13 @@ license="Creative Commons Attribution Share Alike 4.0"
 
 [[mods]]
 modId="alternate_dimension"
-version="2.0.0dev9"
+version="2.0.9p6"
 displayName="AlternateDimension"
 displayURL="https://modrinth.com/project/alternate-dimension"
 logoFile="logo.png"
 credits="Music consists of Prelude in F# Minor by Kristol, Exploration Theme and Snow Theme by Cleyton Kauffman, and The Arplands by me, textures and models are either custom-made or modified vanilla textures and models."
 authors="LordZintick"
-description="A fun, in-progress mod."
+description="Adventure through a fantastical new world filled with new items to find, structures and biomes to explore, enemies to fight, tools to craft, challenges to conquer, and bosses to defeat!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

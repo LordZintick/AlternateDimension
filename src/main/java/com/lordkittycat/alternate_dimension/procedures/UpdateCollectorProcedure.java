@@ -1,6 +1,5 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
-import net.neoforged.neoforge.transfer.transaction.Transaction;
 import net.neoforged.neoforge.transfer.item.ItemUtil;
 import net.neoforged.neoforge.transfer.item.ItemResource;
 import net.neoforged.neoforge.transfer.ResourceHandler;
@@ -10,28 +9,45 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import java.util.ArrayList;
+
 public class UpdateCollectorProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		double slot = 0;
-		ItemStack item = ItemStack.EMPTY;
-		ImportItemsFromConveyorProcedure.execute(world, x, y, z, getDirectionFromBlockState(blockstate), 0);
-		item = (extractFromBlockInventory(world, BlockPos.containing(x, y, z), 0, 1, true)).copy();
-		slot = 0;
-		while (!canInsertInBlockInventory(world, BlockPos.containing(x + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepX(), y + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepY(),
-				z + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepZ()), (int) slot, 1, item)) {
-			slot = slot + 1;
-			if (slot >= getBlockInventorySlotCount(world, BlockPos.containing(x + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepX(), y + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepY(),
-					z + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepZ()))) {
-				return;
-			}
+		double i = 0;
+		double outX = 0;
+		double outY = 0;
+		double outZ = 0;
+		ArrayList<Object> filter = new ArrayList<>();
+		for (int _i1 = 0; _i1 < 10; _i1++) {
+			filter.add((BuiltInRegistries.ITEM.getKey((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).copy()).getItem()).toString()));
+			i = i + 1;
 		}
-		insertInBlockInventory(world, BlockPos.containing(x + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepX(), y + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepY(),
-				z + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepZ()), (int) slot, 1, (extractFromBlockInventory(world, BlockPos.containing(x, y, z), 0, 1, false)), false);
+		outX = x + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepX();
+		outY = y + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepY();
+		outZ = z + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepZ();
+		if (world.getBlockEntity(new BlockPos((int) outX, (int) outY, (int) outZ)) == null) {
+			TeleportItemsFilteredProcedure.execute(world, filter, getBlockNBTLogic(world, BlockPos.containing(x, y, z), "blacklist_mode"), x + (getDirectionFromBlockState(blockstate)).getStepX(),
+					y + (getDirectionFromBlockState(blockstate)).getStepY(), z + (getDirectionFromBlockState(blockstate)).getStepZ(), outX, outY, outZ);
+		} else {
+			ImportItemsFromConveyorFilteredWirelessAutomaticProcedure.execute(world, x + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepX(), y + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepY(),
+					z + ((getDirectionFromBlockState(blockstate)).getOpposite()).getStepZ(), filter, getDirectionFromBlockState(blockstate), getBlockNBTLogic(world, BlockPos.containing(x, y, z), "blacklist_mode"), x, y, z);
+		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
+			if (itemHandler != null)
+				return ItemUtil.getStack(itemHandler, slot);
+		}
+		return ItemStack.EMPTY;
 	}
 
 	private static Direction getDirectionFromBlockState(BlockState blockState) {
@@ -42,57 +58,11 @@ public class UpdateCollectorProcedure {
 		return Direction.NORTH;
 	}
 
-	private static ItemStack extractFromBlockInventory(LevelAccessor world, BlockPos pos, int slotId, int amount, boolean simulate) {
-		if (world instanceof ILevelExtension ext) {
-			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
-			if (itemHandler != null && slotId >= 0 && slotId < itemHandler.size()) {
-				ItemResource extractedResource = itemHandler.getResource(slotId);
-				ItemStack extractedStack = ItemStack.EMPTY;
-				if (extractedResource.isEmpty() || amount < 0)
-					return extractedStack;
-				try (var tx = Transaction.openRoot()) {
-					int extracted = itemHandler.extract(slotId, extractedResource, amount, tx);
-					extractedStack = extractedResource.toStack(extracted);
-					if (!simulate)
-						tx.commit();
-				}
-				return extractedStack;
-			}
-		}
-		return ItemStack.EMPTY;
-	}
-
-	public static boolean canInsertInBlockInventory(LevelAccessor world, BlockPos pos, int slotId, int amount, ItemStack itemstack) {
-		if (world instanceof ILevelExtension ext) {
-			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
-			if (itemHandler != null && slotId >= 0 && slotId < itemHandler.size()) {
-				ItemStack inserted = itemstack.copy();
-				inserted.setCount(amount);
-				return ItemUtil.insertItemReturnRemaining(itemHandler, slotId, inserted, true, null).getCount() == 0;
-			}
-		}
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBooleanOr(tag, false);
 		return false;
-	}
-
-	private static int getBlockInventorySlotCount(LevelAccessor world, BlockPos pos) {
-		if (world instanceof ILevelExtension ext) {
-			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
-			if (itemHandler != null)
-				return itemHandler.size();
-		}
-		return 0;
-	}
-
-	private static int insertInBlockInventory(LevelAccessor world, BlockPos pos, int slotId, int amount, ItemStack itemstack, boolean simulate) {
-		if (world instanceof ILevelExtension ext) {
-			ResourceHandler<ItemResource> itemHandler = ext.getCapability(Capabilities.Item.BLOCK, pos, null);
-			if (itemHandler != null && slotId >= 0 && slotId < itemHandler.size()) {
-				ItemStack inserted = itemstack.copy();
-				inserted.setCount(amount);
-				return ItemUtil.insertItemReturnRemaining(itemHandler, slotId, inserted, simulate, null).getCount();
-			}
-		}
-		return itemstack.getCount();
 	}
 
 	private static Property<?> getPropertyByName(BlockState state, String name) {

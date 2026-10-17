@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Willow Boat",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "CUSTOM:AlternateDimensionEquipment"
+    ],
+    "entityTexture": "willow_boat",
+    "itemTexture": "willow_boat"
+  }
+}

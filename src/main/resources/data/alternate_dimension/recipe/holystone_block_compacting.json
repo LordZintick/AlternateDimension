@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:holystone_gem"
+  },
+  "result": {
+    "id": "alternate_dimension:holystone_block",
+    "count": 1
+  }
+}

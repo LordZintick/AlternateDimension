@@ -1,11 +1,8 @@
 package com.lordkittycat.alternate_dimension.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemUseAnimation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.*;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,6 +10,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+
+import java.util.function.Consumer;
 
 import com.lordkittycat.alternate_dimension.procedures.DamageHeldItemProcedure;
 import com.lordkittycat.alternate_dimension.entity.PlusProjectileEntity;
@@ -30,6 +30,12 @@ public class MathWorkbookItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 72000;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.alternate_dimension.math_workbook.description_0"));
 	}
 
 	@Override

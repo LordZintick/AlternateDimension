@@ -106,8 +106,9 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "openGUIOnRightClick": false,
-    "inventorySize": 1,
+    "guiBoundTo": "CollectorGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 10,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

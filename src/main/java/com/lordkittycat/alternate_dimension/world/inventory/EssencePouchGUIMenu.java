@@ -37,7 +37,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 15)
+			if (!this.containsKey(key) && this.size() >= 21)
 				return null;
 			return super.put(key, value);
 		}
@@ -57,7 +57,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 		super(AlternateDimensionModMenus.ESSENCE_POUCH_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStacksResourceHandler(14);
+		this.internal = new ItemStacksResourceHandler(20);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -94,7 +94,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 8, 15) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 6, 15) {
 			private final int slot = 0;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -104,7 +104,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.FIRE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 8, 33) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 6, 33) {
 			private final int slot = 1;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -114,7 +114,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.FIRE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 26, 15) {
+		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 24, 15) {
 			private final int slot = 2;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -124,7 +124,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.LIFE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 3, 26, 33) {
+		this.customSlots.put(3, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 3, 24, 33) {
 			private final int slot = 3;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -134,7 +134,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.LIFE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 4, 44, 15) {
+		this.customSlots.put(4, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 4, 42, 15) {
 			private final int slot = 4;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -144,7 +144,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.ICE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 5, 44, 33) {
+		this.customSlots.put(5, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 5, 42, 33) {
 			private final int slot = 5;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -154,7 +154,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.ICE_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 6, 62, 15) {
+		this.customSlots.put(6, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 6, 60, 15) {
 			private final int slot = 6;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -164,7 +164,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.CANDY_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 7, 62, 33) {
+		this.customSlots.put(7, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 7, 60, 33) {
 			private final int slot = 7;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -174,7 +174,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.CANDY_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 8, 80, 15) {
+		this.customSlots.put(8, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 8, 78, 15) {
 			private final int slot = 8;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -184,7 +184,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.HALLOWED_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 9, 80, 33) {
+		this.customSlots.put(9, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 9, 78, 33) {
 			private final int slot = 9;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -194,7 +194,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.HALLOWED_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(10, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 10, 98, 15) {
+		this.customSlots.put(10, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 10, 96, 15) {
 			private final int slot = 10;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -204,7 +204,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.VOID_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(11, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 11, 98, 33) {
+		this.customSlots.put(11, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 11, 96, 33) {
 			private final int slot = 11;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -214,7 +214,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.VOID_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(12, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 12, 134, 15) {
+		this.customSlots.put(12, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 12, 174, 15) {
 			private final int slot = 12;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -224,7 +224,7 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.OMEGA_ESSENCE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(13, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 13, 134, 33) {
+		this.customSlots.put(13, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 13, 174, 33) {
 			private final int slot = 13;
 			private int x = EssencePouchGUIMenu.this.x;
 			private int y = EssencePouchGUIMenu.this.y;
@@ -234,11 +234,71 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 				return AlternateDimensionModItems.OMEGA_ESSENCE.get() == stack.getItem();
 			}
 		}));
+		this.customSlots.put(14, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 14, 114, 15) {
+			private final int slot = 14;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.MATH_ESSENCE.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(15, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 15, 114, 33) {
+			private final int slot = 15;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.MATH_ESSENCE.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(16, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 16, 132, 15) {
+			private final int slot = 16;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.ORE_ESSENCE.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(17, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 17, 132, 33) {
+			private final int slot = 17;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.ORE_ESSENCE.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(18, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 18, 150, 15) {
+			private final int slot = 18;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.STORM_ESSENCE.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(19, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 19, 150, 33) {
+			private final int slot = 19;
+			private int x = EssencePouchGUIMenu.this.x;
+			private int y = EssencePouchGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return AlternateDimensionModItems.STORM_ESSENCE.get() == stack.getItem();
+			}
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -29 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 10 + 8 + sj * 18, -29 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -29 + 142));
+			this.addSlot(new Slot(inv, si, 10 + 8 + si * 18, -29 + 142));
 	}
 
 	private void setItemInSlot(int index, ItemResource resource, int amount) {
@@ -277,16 +337,16 @@ public class EssencePouchGUIMenu extends AbstractContainerMenu implements Altern
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 14) {
-				if (!this.moveItemStackTo(itemstack1, 14, this.slots.size(), true))
+			if (index < 20) {
+				if (!this.moveItemStackTo(itemstack1, 20, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 14, false)) {
-				if (index < 14 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 14 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 20, false)) {
+				if (index < 20 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 20 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 14, 14 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 20, 20 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

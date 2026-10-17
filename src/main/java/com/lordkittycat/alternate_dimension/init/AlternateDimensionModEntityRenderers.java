@@ -81,5 +81,32 @@ public class AlternateDimensionModEntityRenderers {
 		event.registerEntityRenderer(AlternateDimensionModEntities.PERMACHILL_ZOMBIE.get(), PermachillZombieRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.VERDANT_ZOMBIE.get(), VerdantZombieRenderer::new);
 		event.registerEntityRenderer(AlternateDimensionModEntities.ELECTRIFIED_SPIDER.get(), ElectrifiedSpiderRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.WILLOW_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.WILLOW_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.WILLOW_CHEST_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.WILLOW_CHEST_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.AXIOMORPH.get(), AxiomorphRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.HERO_ZOMBRINE.get(), HeroZombrineRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.MYTHRIL_COW.get(), MythrilCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.ALUMINUM_COW.get(), AluminumCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.EVILSTONE_COW.get(), EvilstoneCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.MANA_CRYSTAL_COW.get(), ManaCrystalCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.TITANIUM_COW.get(), TitaniumCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.URANIUM_COW.get(), UraniumCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.QUARTZ_COW.get(), QuartzCowRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.BRIMWOOD_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.BRIMWOOD_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.BRIMWOOD_CHEST_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.BRIMWOOD_CHEST_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.SOLAR_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.SOLAR_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.SOLAR_CHEST_BOAT.get(), context -> new BoatRenderer(context, AlternateDimensionModModels.SOLAR_CHEST_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(AlternateDimensionModEntities.ARMINIONITE.get(), ArminioniteRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.SURVIVALIST.get(), SurvivalistRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.FROSTFIRE_STEVE.get(), FrostfireSteveRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.MANA_CRYSTAL_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.MANA_NINJA.get(), ManaNinjaRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.SAPPHIRE_CHICKEN.get(), SapphireChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.RUBY_CHICKEN.get(), RubyChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.TOPAZ_CHICKEN.get(), TopazChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.ONYX_CHICKEN.get(), OnyxChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.KYANITE_CHICKEN.get(), KyaniteChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.JADE_CHICKEN.get(), JadeChickenRenderer::new);
+		event.registerEntityRenderer(AlternateDimensionModEntities.TOURMALINE_CHICKEN.get(), TourmalineChickenRenderer::new);
 	}
 }

@@ -30,7 +30,9 @@
     "damageVsEntity": 0.0,
     "attackSpeed": 1.6,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "A fully-automatic variable cannon."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

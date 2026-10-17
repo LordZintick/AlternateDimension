@@ -82,11 +82,11 @@ public class BreadstickProjectileEntity extends AbstractArrow implements ItemSup
 	}
 
 	public static BreadstickProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 0.5f, 2, 1);
+		return shoot(world, entity, source, 0.5f, 1, 0);
 	}
 
 	public static BreadstickProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 0.5f, 2, 1);
+		return shoot(world, entity, source, pullingPower * 0.5f, 1, 0);
 	}
 
 	public static BreadstickProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -108,8 +108,8 @@ public class BreadstickProjectileEntity extends AbstractArrow implements ItemSup
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.5f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(2);
-		entityarrow.setKnockback(1);
+		entityarrow.setBaseDamage(1);
+		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));

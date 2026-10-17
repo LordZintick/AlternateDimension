@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:solar_log",
+    "alternate_dimension:solar_wood",
+    "alternate_dimension:stripped_solar_log",
+    "alternate_dimension:stripped_solar_wood"
+  ]
+}

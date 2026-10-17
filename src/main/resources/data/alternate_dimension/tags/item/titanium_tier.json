@@ -10,6 +10,7 @@
       "required": false
     },
     "alternate_dimension:titanium_pickaxe",
+    "alternate_dimension:titanium_battleaxe",
     "alternate_dimension:titanium_shovel"
   ]
 }

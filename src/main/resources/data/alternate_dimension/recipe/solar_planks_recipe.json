@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "#alternate_dimension:solar_logs"
+  ],
+  "result": {
+    "id": "alternate_dimension:solar_planks",
+    "count": 4
+  }
+}

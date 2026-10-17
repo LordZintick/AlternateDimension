@@ -28,6 +28,12 @@ public class AlternateDimensionModModels {
 	public static final ModelLayerLocation GREENWOOD_CHEST_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:chest_boat/greenwood_chest_boat"), "main");
 	public static final ModelLayerLocation CANDYFLOSS_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:boat/candyfloss_boat"), "main");
 	public static final ModelLayerLocation CANDYFLOSS_CHEST_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:chest_boat/candyfloss_chest_boat"), "main");
+	public static final ModelLayerLocation WILLOW_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:boat/willow_boat"), "main");
+	public static final ModelLayerLocation WILLOW_CHEST_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:chest_boat/willow_chest_boat"), "main");
+	public static final ModelLayerLocation BRIMWOOD_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:boat/brimwood_boat"), "main");
+	public static final ModelLayerLocation BRIMWOOD_CHEST_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:chest_boat/brimwood_chest_boat"), "main");
+	public static final ModelLayerLocation SOLAR_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:boat/solar_boat"), "main");
+	public static final ModelLayerLocation SOLAR_CHEST_BOAT_LAYER_LOCATION = new ModelLayerLocation(Identifier.parse("alternate_dimension:chest_boat/solar_chest_boat"), "main");
 
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -63,5 +69,11 @@ public class AlternateDimensionModModels {
 		event.registerLayerDefinition(GREENWOOD_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
 		event.registerLayerDefinition(CANDYFLOSS_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
 		event.registerLayerDefinition(CANDYFLOSS_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
+		event.registerLayerDefinition(WILLOW_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
+		event.registerLayerDefinition(WILLOW_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
+		event.registerLayerDefinition(BRIMWOOD_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
+		event.registerLayerDefinition(BRIMWOOD_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
+		event.registerLayerDefinition(SOLAR_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
+		event.registerLayerDefinition(SOLAR_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
 	}
 }

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#alternate_dimension:is_familiar_realm",
+  "features": "alternate_dimension:solar_tree",
+  "step": "surface_structures"
+}

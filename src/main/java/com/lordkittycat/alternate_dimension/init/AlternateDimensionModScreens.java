@@ -19,12 +19,13 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.CHEESY_BACKPACK_GUI.get(), CheesyBackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ENCHANTED_BACKPACK_GUI.get(), EnchantedBackpackGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ELEMENTAL_INSCRIBER_GUI.get(), ElementalInscriberGUIScreen::new);
-		event.register(AlternateDimensionModMenus.HINT_BOOK_GUI.get(), HintBookGUIScreen::new);
 		event.register(AlternateDimensionModMenus.WOODEN_BOX_GUI.get(), WoodenBoxGUIScreen::new);
 		event.register(AlternateDimensionModMenus.METAL_CRATE_GUI.get(), MetalCrateGUIScreen::new);
 		event.register(AlternateDimensionModMenus.ESSENCE_POUCH_GUI.get(), EssencePouchGUIScreen::new);
 		event.register(AlternateDimensionModMenus.HUNTERS_POUCH_GUI.get(), HuntersPouchGUIScreen::new);
 		event.register(AlternateDimensionModMenus.FRUIT_POUCH_GUI.get(), FruitPouchGUIScreen::new);
+		event.register(AlternateDimensionModMenus.EXTRACTOR_GUI.get(), ExtractorGUIScreen::new);
+		event.register(AlternateDimensionModMenus.COLLECTOR_GUI.get(), CollectorGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

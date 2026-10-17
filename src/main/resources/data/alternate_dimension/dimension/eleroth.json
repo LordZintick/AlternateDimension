@@ -285,7 +285,7 @@
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "minecraft:stone"
+        "Name": "alternate_dimension:rich_dirt"
       },
       "default_fluid": {
         "Name": "minecraft:water",

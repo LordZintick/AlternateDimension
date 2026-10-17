@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:planks"
+    {
+      "id": "#alternate_dimension:altdim_planks",
+      "required": false
+    }
   ]
 }
