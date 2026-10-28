@@ -92,5 +92,6 @@ public abstract class RingItem extends Item {
         RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "orange_gummy_bear"), Identifier.withDefaultNamespace("strength"));
         RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "yellow_gummy_bear"), Identifier.withDefaultNamespace("haste"));
         RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "graphite"), Identifier.withDefaultNamespace("resistance"));
+        RING_INGREDIENTS.put(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "meteorite_dust"), Identifier.withDefaultNamespace("fire_resistance"));
     }
 }

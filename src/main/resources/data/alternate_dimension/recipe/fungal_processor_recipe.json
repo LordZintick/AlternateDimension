@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "fgh"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_nugget",
+    "b": "alternate_dimension:importer",
+    "c": "alternate_dimension:blue_mushroom_block",
+    "d": "alternate_dimension:machine_casing",
+    "e": "alternate_dimension:purple_mushroom_block",
+    "f": "alternate_dimension:green_mushroom_block",
+    "g": "alternate_dimension:block_of_shroomium",
+    "h": "alternate_dimension:yellow_mushroom_block"
+  },
+  "result": {
+    "id": "alternate_dimension:fungal_processor",
+    "count": 1
+  }
+}

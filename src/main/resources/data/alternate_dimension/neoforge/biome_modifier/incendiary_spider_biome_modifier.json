@@ -1,6 +1,9 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "#alternate_dimension:is_familiar_realm",
+  "biomes": [
+    "alternate_dimension:solar_fields",
+    "alternate_dimension:wasteland"
+  ],
   "spawners": {
     "type": "alternate_dimension:incendiary_spider",
     "weight": 20,

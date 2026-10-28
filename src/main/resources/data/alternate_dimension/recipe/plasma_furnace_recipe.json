@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:hydrogen_plasma_block",
+    "b": "alternate_dimension:liquid_plasma_bucket"
+  },
+  "result": {
+    "id": "alternate_dimension:plasma_furnace",
+    "count": 1
+  }
+}

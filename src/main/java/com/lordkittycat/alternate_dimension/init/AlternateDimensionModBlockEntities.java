@@ -47,6 +47,8 @@ public class AlternateDimensionModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GravestoneBlockEntity>> GRAVESTONE = register("gravestone", AlternateDimensionModBlocks.GRAVESTONE, GravestoneBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ShroomyBoxBlockEntity>> SHROOMY_BOX = register("shroomy_box", AlternateDimensionModBlocks.SHROOMY_BOX, ShroomyBoxBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ExtractorBlockEntity>> EXTRACTOR = register("extractor", AlternateDimensionModBlocks.EXTRACTOR, ExtractorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FungalProcessorBlockEntity>> FUNGAL_PROCESSOR = register("fungal_processor", AlternateDimensionModBlocks.FUNGAL_PROCESSOR, FungalProcessorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PlasmaFurnaceBlockEntity>> PLASMA_FURNACE = register("plasma_furnace", AlternateDimensionModBlocks.PLASMA_FURNACE, PlasmaFurnaceBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -86,5 +88,7 @@ public class AlternateDimensionModBlockEntities {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, GRAVESTONE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, SHROOMY_BOX.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, EXTRACTOR.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, FUNGAL_PROCESSOR.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, PLASMA_FURNACE.get(), WorldlyContainerWrapper::new);
 	}
 }

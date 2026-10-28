@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "neoforge:fluid_container",
+    "fluid": "alternate_dimension:liquid_mycelium",
+    "textures": {
+      "base": "item/bucket",
+      "fluid": "neoforge:item/mask/bucket_fluid"
+    }
+  }
+}

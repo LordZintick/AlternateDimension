@@ -19,71 +19,73 @@ public class ConfigureRandomEquipmentProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_head_armor")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.HEAD, itemstackiterator);
+		if (world instanceof ServerLevel) {
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_head_armor")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.HEAD, itemstackiterator);
+					}
 				}
 			}
-		}
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_body_armor")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.CHEST, itemstackiterator);
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_body_armor")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, itemstackiterator);
+					}
 				}
 			}
-		}
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_leg_armor")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.LEGS, itemstackiterator);
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_leg_armor")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.LEGS, itemstackiterator);
+					}
 				}
 			}
-		}
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_feet_armor")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.FEET, itemstackiterator);
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_feet_armor")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.FEET, itemstackiterator);
+					}
 				}
 			}
-		}
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_weapon")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack18 = itemstackiterator.copy();
-					_setstack18.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack18);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_weapon")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _entity) {
+						ItemStack _setstack18 = itemstackiterator.copy();
+						_setstack18.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack18);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 				}
 			}
-		}
-		if (!world.isClientSide() && world.getServer() != null) {
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
-					.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
-							Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_offhand")).toLowerCase(java.util.Locale.ENGLISH))))
-					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack22 = itemstackiterator.copy();
-					_setstack22.setCount(1);
-					_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack22);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+			if (!world.isClientSide() && world.getServer() != null) {
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(ResourceKey.create(Registries.LOOT_TABLE,
+								Identifier.parse((("alternate_dimension:entity/" + (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).replace("alternate_dimension:", "") + "_offhand")).toLowerCase(java.util.Locale.ENGLISH))))
+						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+					if (entity instanceof LivingEntity _entity) {
+						ItemStack _setstack22 = itemstackiterator.copy();
+						_setstack22.setCount(1);
+						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack22);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 				}
 			}
 		}

@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:fungal_processor_recipe_type",
+  "ingredients": [
+    "alternate_dimension:purple_mushroom"
+  ],
+  "integers": [
+    16
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:darksteel_ingot",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:solar_fields",
+  "features": "alternate_dimension:plasmolium_ore",
+  "step": "underground_ores"
+}

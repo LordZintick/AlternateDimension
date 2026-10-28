@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:magic_dust",
+    "b": "alternate_dimension:block_of_shroomium"
+  },
+  "result": {
+    "id": "alternate_dimension:mushroom_catalyst",
+    "count": 1
+  }
+}

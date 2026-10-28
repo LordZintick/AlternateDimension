@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "alternate_dimension:mana_coil",
+    "b": "alternate_dimension:mana_meter"
+  },
+  "result": {
+    "id": "alternate_dimension:mana_inserter",
+    "count": 1
+  }
+}

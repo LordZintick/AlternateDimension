@@ -32,7 +32,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
-import com.lordkittycat.alternate_dimension.procedures.PoisonAndNauseateEntityProcedure;
+import com.lordkittycat.alternate_dimension.procedures.ChanceApplyPoisonProcedure;
 import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
@@ -144,7 +144,7 @@ public class VenomousSpiderEntity extends Monster {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		PoisonAndNauseateEntityProcedure.execute(this);
+		ChanceApplyPoisonProcedure.execute(sourceentity);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {

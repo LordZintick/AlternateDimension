@@ -71,6 +71,8 @@ public class AlternateDimensionMod {
 		AlternateDimensionModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		AlternateDimensionModMobEffects.REGISTRY.register(modEventBus);
 		AlternateDimensionModMenus.REGISTRY.register(modEventBus);
+		AlternateDimensionModFluids.REGISTRY.register(modEventBus);
+		AlternateDimensionModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		AlternateDimensionModComponents.register(modEventBus);
 		AlternateDimensionModRecipes.register(modEventBus);

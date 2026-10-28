@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fungal_processor_recipe_type",
+    "ingredients": [
+      "CUSTOM:GreenMushroom"
+    ],
+    "integers": [
+      16
+    ],
+    "strings": [],
+    "recipetype": "FungalProcessorRecipeType",
+    "results": [
+      "CUSTOM:MythrilShards"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

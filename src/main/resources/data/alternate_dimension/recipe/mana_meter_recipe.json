@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    " a ",
-    "bcb",
-    "bdb"
+    "a",
+    "b"
   ],
   "key": {
     "a": "alternate_dimension:mana_coil",
-    "b": "alternate_dimension:aluminum_ingot",
-    "c": "alternate_dimension:mana_circuit",
-    "d": "alternate_dimension:mana_crystal"
+    "b": "alternate_dimension:aluminum_ingot"
   },
   "result": {
     "id": "alternate_dimension:mana_meter",

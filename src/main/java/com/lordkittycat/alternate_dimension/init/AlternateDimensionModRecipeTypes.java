@@ -16,11 +16,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import com.lordkittycat.alternate_dimension.jei_recipes.PhotolithographicMicrofabricatorRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.jei_recipes.ManaMystifierRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.jei_recipes.FuserRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.jei_recipes.ElementalInfuserRecipeTypeRecipe;
-import com.lordkittycat.alternate_dimension.jei_recipes.CompressorRecipeTypeRecipe;
+import com.lordkittycat.alternate_dimension.jei_recipes.*;
 
 @EventBusSubscriber
 public class AlternateDimensionModRecipeTypes {
@@ -44,6 +40,8 @@ public class AlternateDimensionModRecipeTypes {
 			SERIALIZERS.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.SERIALIZER);
 			RECIPE_TYPES.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("fungal_processor_recipe_type", () -> FungalProcessorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("fungal_processor_recipe_type", () -> FungalProcessorRecipeTypeRecipe.SERIALIZER);
 		});
 	}
 
@@ -54,6 +52,7 @@ public class AlternateDimensionModRecipeTypes {
 		event.sendRecipes(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(CompressorRecipeTypeRecipe.Type.INSTANCE);
 		event.sendRecipes(ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(FungalProcessorRecipeTypeRecipe.Type.INSTANCE);
 	}
 
 	@EventBusSubscriber(value = Dist.CLIENT)

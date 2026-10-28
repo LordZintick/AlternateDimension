@@ -419,6 +419,24 @@ public class AlternateDimensionModBlocks {
 	public static final DeferredBlock<Block> MYSTIC_SAPLING;
 	public static final DeferredBlock<Block> SHROOMY_BOX;
 	public static final DeferredBlock<Block> EXTRACTOR;
+	public static final DeferredBlock<Block> MUSHROOM_SOIL;
+	public static final DeferredBlock<Block> LIQUID_MYCELIUM;
+	public static final DeferredBlock<Block> PURPLE_MUSHROOM_BLOCK;
+	public static final DeferredBlock<Block> GREEN_MUSHROOM_BLOCK;
+	public static final DeferredBlock<Block> YELLOW_MUSHROOM_BLOCK;
+	public static final DeferredBlock<Block> PURPLE_MUSHROOM;
+	public static final DeferredBlock<Block> GREEN_MUSHROOM;
+	public static final DeferredBlock<Block> YELLOW_MUSHROOM;
+	public static final DeferredBlock<Block> SHROOMIA_PORTAL;
+	public static final DeferredBlock<Block> BLOCK_OF_SHROOMIUM;
+	public static final DeferredBlock<Block> FUNGAL_PROCESSOR;
+	public static final DeferredBlock<Block> HYDROGEN_PLASMA_BLOCK;
+	public static final DeferredBlock<Block> HELIUM_PLASMA_BLOCK;
+	public static final DeferredBlock<Block> LIQUID_PLASMA;
+	public static final DeferredBlock<Block> SOLARIA_PORTAL;
+	public static final DeferredBlock<Block> PLASMOLIUM_ORE;
+	public static final DeferredBlock<Block> PLASMA_FURNACE;
+	public static final DeferredBlock<Block> HYDROGEN_PLASMA_PYROLITE_ORE;
 	static {
 		TITANIUM_BLOCK = register("titanium_block", TitaniumBlockBlock::new);
 		SCORCHED_EARTH = register("scorched_earth", ScorchedEarthBlock::new);
@@ -814,6 +832,24 @@ public class AlternateDimensionModBlocks {
 		MYSTIC_SAPLING = register("mystic_sapling", MysticSaplingBlock::new);
 		SHROOMY_BOX = register("shroomy_box", ShroomyBoxBlock::new);
 		EXTRACTOR = register("extractor", ExtractorBlock::new);
+		MUSHROOM_SOIL = register("mushroom_soil", MushroomSoilBlock::new);
+		LIQUID_MYCELIUM = register("liquid_mycelium", LiquidMyceliumBlock::new);
+		PURPLE_MUSHROOM_BLOCK = register("purple_mushroom_block", PurpleMushroomBlockBlock::new);
+		GREEN_MUSHROOM_BLOCK = register("green_mushroom_block", GreenMushroomBlockBlock::new);
+		YELLOW_MUSHROOM_BLOCK = register("yellow_mushroom_block", YellowMushroomBlockBlock::new);
+		PURPLE_MUSHROOM = register("purple_mushroom", PurpleMushroomBlock::new);
+		GREEN_MUSHROOM = register("green_mushroom", GreenMushroomBlock::new);
+		YELLOW_MUSHROOM = register("yellow_mushroom", YellowMushroomBlock::new);
+		SHROOMIA_PORTAL = register("shroomia_portal", ShroomiaPortalBlock::new);
+		BLOCK_OF_SHROOMIUM = register("block_of_shroomium", BlockOfShroomiumBlock::new);
+		FUNGAL_PROCESSOR = register("fungal_processor", FungalProcessorBlock::new);
+		HYDROGEN_PLASMA_BLOCK = register("hydrogen_plasma_block", HydrogenPlasmaBlockBlock::new);
+		HELIUM_PLASMA_BLOCK = register("helium_plasma_block", HeliumPlasmaBlockBlock::new);
+		LIQUID_PLASMA = register("liquid_plasma", LiquidPlasmaBlock::new);
+		SOLARIA_PORTAL = register("solaria_portal", SolariaPortalBlock::new);
+		PLASMOLIUM_ORE = register("plasmolium_ore", PlasmoliumOreBlock::new);
+		PLASMA_FURNACE = register("plasma_furnace", PlasmaFurnaceBlock::new);
+		HYDROGEN_PLASMA_PYROLITE_ORE = register("hydrogen_plasma_pyrolite_ore", HydrogenPlasmaPyroliteOreBlock::new);
 	}
 
 	// Start of user code block custom blocks

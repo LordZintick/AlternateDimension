@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,running=true": {
+      "model": "alternate_dimension:block/fungal_processor_0"
+    },
+    "facing=north,running=false": {
+      "model": "alternate_dimension:block/fungal_processor"
+    },
+    "facing=east,running=true": {
+      "model": "alternate_dimension:block/fungal_processor_0",
+      "y": 90
+    },
+    "facing=east,running=false": {
+      "model": "alternate_dimension:block/fungal_processor",
+      "y": 90
+    },
+    "facing=south,running=true": {
+      "model": "alternate_dimension:block/fungal_processor_0",
+      "y": 180
+    },
+    "facing=south,running=false": {
+      "model": "alternate_dimension:block/fungal_processor",
+      "y": 180
+    },
+    "facing=west,running=true": {
+      "model": "alternate_dimension:block/fungal_processor_0",
+      "y": 270
+    },
+    "facing=west,running=false": {
+      "model": "alternate_dimension:block/fungal_processor",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:multi_shroomy_fields",
+  "features": "alternate_dimension:giant_green_mushroom",
+  "step": "surface_structures"
+}

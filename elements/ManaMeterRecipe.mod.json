@@ -15,14 +15,14 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
+      "",
+      "",
+      "",
       "CUSTOM:ManaCoil",
       "",
+      "",
       "CUSTOM:AluminumIngot",
-      "CUSTOM:ManaCircuit",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:AluminumIngot",
-      "CUSTOM:ManaCrystal",
-      "CUSTOM:AluminumIngot"
+      ""
     ],
     "recipeReturnStack": "CUSTOM:ManaMeter",
     "name": "mana_meter_recipe",

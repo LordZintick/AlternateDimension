@@ -128,7 +128,8 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
-      "CUSTOM:MushroomInfection"
+      "CUSTOM:MushroomInfection",
+      "CUSTOM:MultiShroomyFields"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

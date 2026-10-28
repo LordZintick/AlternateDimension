@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "alternate_dimension:scorched_earth",
+    "alternate_dimension:plasma_furnace",
     "alternate_dimension:veridium_wall",
     "alternate_dimension:veridium_aluminum_ore",
     "alternate_dimension:pyric_cobble_slab",
@@ -34,6 +35,7 @@
     "alternate_dimension:chiseled_shale_bricks",
     "alternate_dimension:verdant_lantern",
     "alternate_dimension:pyre_slab",
+    "alternate_dimension:block_of_shroomium",
     "alternate_dimension:shale_pyrolite_ore",
     "alternate_dimension:scorched_earth_stairs",
     "alternate_dimension:mana_synthesizer",
@@ -74,6 +76,7 @@
     "alternate_dimension:machine_casing",
     "alternate_dimension:corrupt_brick_wall",
     "alternate_dimension:cloud_brick_slab",
+    "alternate_dimension:plasmolium_ore",
     "alternate_dimension:shale_mythril_ore",
     "alternate_dimension:veridium_cobble_wall",
     "alternate_dimension:pyric_bricks_slab",
@@ -164,7 +167,9 @@
     "alternate_dimension:corrupt_door",
     "alternate_dimension:veridium",
     "alternate_dimension:pyric_bricks",
+    "alternate_dimension:hydrogen_plasma_pyrolite_ore",
     "alternate_dimension:kyanite_block",
-    "alternate_dimension:item_elevator"
+    "alternate_dimension:item_elevator",
+    "alternate_dimension:fungal_processor"
   ]
 }

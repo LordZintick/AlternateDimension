@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "alternate_dimension:block/solaria_portal_ew"
+    },
+    "axis=x": {
+      "model": "alternate_dimension:block/solaria_portal_ns"
+    }
+  }
+}

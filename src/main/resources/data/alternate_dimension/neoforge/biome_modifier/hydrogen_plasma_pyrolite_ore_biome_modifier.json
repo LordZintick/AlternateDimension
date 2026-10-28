@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "alternate_dimension:solar_fields",
+  "features": "alternate_dimension:hydrogen_plasma_pyrolite_ore",
+  "step": "underground_ores"
+}

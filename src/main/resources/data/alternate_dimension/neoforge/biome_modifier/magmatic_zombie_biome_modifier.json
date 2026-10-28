@@ -1,6 +1,9 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "alternate_dimension:wasteland",
+  "biomes": [
+    "alternate_dimension:wasteland",
+    "alternate_dimension:solar_fields"
+  ],
   "spawners": {
     "type": "alternate_dimension:magmatic_zombie",
     "weight": 20,

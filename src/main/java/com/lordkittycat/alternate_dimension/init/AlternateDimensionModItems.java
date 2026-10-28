@@ -3,6 +3,7 @@
  */
 package com.lordkittycat.alternate_dimension.init;
 
+import net.neoforged.neoforge.transfer.fluid.BucketResourceHandler;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -808,6 +809,36 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> DARKSTEEL_SHOVEL;
 	public static final DeferredItem<Item> DARKSTEEL_SWORD;
 	public static final DeferredItem<Item> DARKSTEEL_HOE;
+	public static final DeferredItem<Item> MUSHROOM_SOIL;
+	public static final DeferredItem<Item> LIQUID_MYCELIUM_BUCKET;
+	public static final DeferredItem<Item> PURPLE_MUSHROOM_BLOCK;
+	public static final DeferredItem<Item> GREEN_MUSHROOM_BLOCK;
+	public static final DeferredItem<Item> YELLOW_MUSHROOM_BLOCK;
+	public static final DeferredItem<Item> PURPLE_MUSHROOM;
+	public static final DeferredItem<Item> GREEN_MUSHROOM;
+	public static final DeferredItem<Item> YELLOW_MUSHROOM;
+	public static final DeferredItem<Item> BLOCK_OF_SHROOMIUM;
+	public static final DeferredItem<Item> MUSHROOM_CATALYST;
+	public static final DeferredItem<Item> FUNGAL_PROCESSOR;
+	public static final DeferredItem<Item> MANA_INSERTER;
+	public static final DeferredItem<Item> HYDROGEN_PLASMA_BLOCK;
+	public static final DeferredItem<Item> HELIUM_PLASMA_BLOCK;
+	public static final DeferredItem<Item> LIQUID_PLASMA_BUCKET;
+	public static final DeferredItem<Item> RAW_PLASMOLIUM;
+	public static final DeferredItem<Item> PLASMOLIUM_INGOT;
+	public static final DeferredItem<Item> PLASMOLIUM_PICKAXE;
+	public static final DeferredItem<Item> PLASMOLIUM_AXE;
+	public static final DeferredItem<Item> PLASMOLIUM_SHOVEL;
+	public static final DeferredItem<Item> PLASMOLIUM_SWORD;
+	public static final DeferredItem<Item> PLASMOLIUM_HOE;
+	public static final DeferredItem<Item> PLASMOLIUM_ORE;
+	public static final DeferredItem<Item> PLASMOLIUM_ARMOR_HELMET;
+	public static final DeferredItem<Item> PLASMOLIUM_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> PLASMOLIUM_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> PLASMOLIUM_ARMOR_BOOTS;
+	public static final DeferredItem<Item> PLASMA_FURNACE;
+	public static final DeferredItem<Item> HYDROGEN_PLASMA_PYROLITE_ORE;
+	public static final DeferredItem<Item> SUN_IDOL;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1589,6 +1620,36 @@ public class AlternateDimensionModItems {
 		DARKSTEEL_SHOVEL = register("darksteel_shovel", DarksteelShovelItem::new);
 		DARKSTEEL_SWORD = register("darksteel_sword", DarksteelSwordItem::new);
 		DARKSTEEL_HOE = register("darksteel_hoe", DarksteelHoeItem::new);
+		MUSHROOM_SOIL = block(AlternateDimensionModBlocks.MUSHROOM_SOIL);
+		LIQUID_MYCELIUM_BUCKET = register("liquid_mycelium_bucket", LiquidMyceliumItem::new);
+		PURPLE_MUSHROOM_BLOCK = block(AlternateDimensionModBlocks.PURPLE_MUSHROOM_BLOCK);
+		GREEN_MUSHROOM_BLOCK = block(AlternateDimensionModBlocks.GREEN_MUSHROOM_BLOCK);
+		YELLOW_MUSHROOM_BLOCK = block(AlternateDimensionModBlocks.YELLOW_MUSHROOM_BLOCK);
+		PURPLE_MUSHROOM = block(AlternateDimensionModBlocks.PURPLE_MUSHROOM);
+		GREEN_MUSHROOM = block(AlternateDimensionModBlocks.GREEN_MUSHROOM);
+		YELLOW_MUSHROOM = block(AlternateDimensionModBlocks.YELLOW_MUSHROOM);
+		BLOCK_OF_SHROOMIUM = block(AlternateDimensionModBlocks.BLOCK_OF_SHROOMIUM);
+		MUSHROOM_CATALYST = register("mushroom_catalyst", MushroomCatalystItem::new);
+		FUNGAL_PROCESSOR = block(AlternateDimensionModBlocks.FUNGAL_PROCESSOR);
+		MANA_INSERTER = register("mana_inserter", ManaInserterItem::new);
+		HYDROGEN_PLASMA_BLOCK = block(AlternateDimensionModBlocks.HYDROGEN_PLASMA_BLOCK);
+		HELIUM_PLASMA_BLOCK = block(AlternateDimensionModBlocks.HELIUM_PLASMA_BLOCK);
+		LIQUID_PLASMA_BUCKET = register("liquid_plasma_bucket", LiquidPlasmaItem::new);
+		RAW_PLASMOLIUM = register("raw_plasmolium", RawPlasmoliumItem::new);
+		PLASMOLIUM_INGOT = register("plasmolium_ingot", PlasmoliumIngotItem::new);
+		PLASMOLIUM_PICKAXE = register("plasmolium_pickaxe", PlasmoliumPickaxeItem::new);
+		PLASMOLIUM_AXE = register("plasmolium_axe", PlasmoliumAxeItem::new);
+		PLASMOLIUM_SHOVEL = register("plasmolium_shovel", PlasmoliumShovelItem::new);
+		PLASMOLIUM_SWORD = register("plasmolium_sword", PlasmoliumSwordItem::new);
+		PLASMOLIUM_HOE = register("plasmolium_hoe", PlasmoliumHoeItem::new);
+		PLASMOLIUM_ORE = block(AlternateDimensionModBlocks.PLASMOLIUM_ORE);
+		PLASMOLIUM_ARMOR_HELMET = register("plasmolium_armor_helmet", PlasmoliumArmorItem.Helmet::new);
+		PLASMOLIUM_ARMOR_CHESTPLATE = register("plasmolium_armor_chestplate", PlasmoliumArmorItem.Chestplate::new);
+		PLASMOLIUM_ARMOR_LEGGINGS = register("plasmolium_armor_leggings", PlasmoliumArmorItem.Leggings::new);
+		PLASMOLIUM_ARMOR_BOOTS = register("plasmolium_armor_boots", PlasmoliumArmorItem.Boots::new);
+		PLASMA_FURNACE = block(AlternateDimensionModBlocks.PLASMA_FURNACE);
+		HYDROGEN_PLASMA_PYROLITE_ORE = block(AlternateDimensionModBlocks.HYDROGEN_PLASMA_PYROLITE_ORE);
+		SUN_IDOL = register("sun_idol", SunIdolItem::new);
 	}
 
 	// Start of user code block custom items
@@ -1638,6 +1699,8 @@ public class AlternateDimensionModItems {
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new EssencePouchInventoryCapability(access), ESSENCE_POUCH.get());
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new HuntersPouchInventoryCapability(access), HUNTERS_POUCH.get());
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new FruitPouchInventoryCapability(access), FRUIT_POUCH.get());
+		event.registerItem(Capabilities.Fluid.ITEM, (stack, access) -> new BucketResourceHandler(access), LIQUID_MYCELIUM_BUCKET.get());
+		event.registerItem(Capabilities.Fluid.ITEM, (stack, access) -> new BucketResourceHandler(access), LIQUID_PLASMA_BUCKET.get());
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)

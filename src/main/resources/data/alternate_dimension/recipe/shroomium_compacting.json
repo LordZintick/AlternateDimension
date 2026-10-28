@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:shroomium_chunk"
+  },
+  "result": {
+    "id": "alternate_dimension:block_of_shroomium",
+    "count": 1
+  }
+}

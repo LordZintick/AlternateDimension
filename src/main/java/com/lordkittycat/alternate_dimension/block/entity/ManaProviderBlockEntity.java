@@ -81,7 +81,7 @@ public class ManaProviderBlockEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Mana Provider");
+		return Component.literal("Manantenna");
 	}
 
 	@Override

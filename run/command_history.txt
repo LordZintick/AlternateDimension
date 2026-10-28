@@ -1,5 +1,3 @@
-/fill -86 80 55 -73 84 69 air
-/fill -101 85 69
 /fill -101 85 69 -87 85 55 alternate_dimension:astral_bricks
 /gamerule advance_time true
 /gamerule advance_weather true
@@ -48,3 +46,5 @@
 /data get block 10015 68 -402
 /time set day
 /weather clear
+/event type get
+/event time get

@@ -25,6 +25,7 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 			PhotolithographicMicrofabricatorRecipeTypeRecipe.class);
 	public static IRecipeType<CompressorRecipeTypeRecipe> CompressorRecipeType_Type = IRecipeType.create(CompressorRecipeTypeRecipeCategory.UID, CompressorRecipeTypeRecipe.class);
 	public static IRecipeType<ManaMystifierRecipeTypeRecipe> ManaMystifierRecipeType_Type = IRecipeType.create(ManaMystifierRecipeTypeRecipeCategory.UID, ManaMystifierRecipeTypeRecipe.class);
+	public static IRecipeType<FungalProcessorRecipeTypeRecipe> FungalProcessorRecipeType_Type = IRecipeType.create(FungalProcessorRecipeTypeRecipeCategory.UID, FungalProcessorRecipeTypeRecipe.class);
 
 	@Override
 	public Identifier getPluginUid() {
@@ -38,6 +39,7 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addRecipeCategories(new PhotolithographicMicrofabricatorRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new CompressorRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new ManaMystifierRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new FungalProcessorRecipeTypeRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 	}
 
 	@Override
@@ -53,6 +55,8 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addRecipes(CompressorRecipeType_Type, CompressorRecipeTypeRecipes);
 		List<ManaMystifierRecipeTypeRecipe> ManaMystifierRecipeTypeRecipes = AlternateDimensionModRecipeTypes.recipes.byType(ManaMystifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(ManaMystifierRecipeType_Type, ManaMystifierRecipeTypeRecipes);
+		List<FungalProcessorRecipeTypeRecipe> FungalProcessorRecipeTypeRecipes = AlternateDimensionModRecipeTypes.recipes.byType(FungalProcessorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(FungalProcessorRecipeType_Type, FungalProcessorRecipeTypeRecipes);
 	}
 
 	@Override
@@ -62,5 +66,6 @@ public class AlternateDimensionModJeiPlugin implements IModPlugin {
 		registration.addCraftingStations(PhotolithographicMicrofabricatorRecipeType_Type, VanillaTypes.ITEM_STACK, List.of(new ItemStack(AlternateDimensionModBlocks.PHOTOLITHOGRAPHIC_MICROFABRICATOR.get().asItem())));
 		registration.addCraftingStations(CompressorRecipeType_Type, VanillaTypes.ITEM_STACK, List.of(new ItemStack(AlternateDimensionModBlocks.COMPRESSOR.get().asItem())));
 		registration.addCraftingStations(ManaMystifierRecipeType_Type, VanillaTypes.ITEM_STACK, List.of(new ItemStack(AlternateDimensionModBlocks.MANA_MYSTIFIER.get().asItem())));
+		registration.addCraftingStations(FungalProcessorRecipeType_Type, VanillaTypes.ITEM_STACK, List.of(new ItemStack(AlternateDimensionModBlocks.FUNGAL_PROCESSOR.get().asItem())));
 	}
 }

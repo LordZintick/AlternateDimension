@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "aaa",
+    " a ",
     "aba",
-    "aaa"
+    " a "
   ],
   "key": {
     "a": "alternate_dimension:shroomium_chunk",

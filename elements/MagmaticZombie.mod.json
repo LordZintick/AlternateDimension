@@ -131,7 +131,8 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
-      "CUSTOM:Wasteland"
+      "CUSTOM:Wasteland",
+      "CUSTOM:SolarFields"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

@@ -14,15 +14,15 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
+      "",
       "CUSTOM:ShroomiumChunk",
-      "CUSTOM:ShroomiumChunk",
-      "CUSTOM:ShroomiumChunk",
+      "",
       "CUSTOM:ShroomiumChunk",
       "CUSTOM:MushyShovel",
       "CUSTOM:ShroomiumChunk",
+      "",
       "CUSTOM:ShroomiumChunk",
-      "CUSTOM:ShroomiumChunk",
-      "CUSTOM:ShroomiumChunk"
+      ""
     ],
     "recipeReturnStack": "CUSTOM:ShroomiumShovel",
     "name": "shroomium_shovel_recipe",
