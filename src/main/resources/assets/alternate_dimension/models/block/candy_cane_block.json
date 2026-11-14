@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/candy_cane_block",
     "particle": "alternate_dimension:block/candy_cane_block"
-  },
-  "render_type": "solid"
+  }
 }

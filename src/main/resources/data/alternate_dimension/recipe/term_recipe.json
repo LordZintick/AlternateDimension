@@ -3,15 +3,10 @@
   "category": "misc",
   "pattern": [
     " a",
-    "b "
+    "a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:black_dye"
-    },
-    "b": {
-      "item": "alternate_dimension:variable"
-    }
+    "a": "alternate_dimension:variable"
   },
   "result": {
     "id": "alternate_dimension:term",

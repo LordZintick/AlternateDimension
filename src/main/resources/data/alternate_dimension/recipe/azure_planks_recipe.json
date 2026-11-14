@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "alternate_dimension:azure_logs"
-    }
+    "#alternate_dimension:azure_logs"
   ],
   "result": {
     "id": "alternate_dimension:azure_planks",

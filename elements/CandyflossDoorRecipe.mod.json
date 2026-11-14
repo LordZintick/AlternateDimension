@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_door",
+    "unlockingItems": [
+      "CUSTOM:CandyflossPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:CandyflossDoor",
+    "name": "candyfloss_door_recipe",
+    "namespace": "mod"
+  }
+}

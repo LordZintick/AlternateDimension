@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Veridium"
-      }
+      "CUSTOM:Veridium"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Veridium"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Veridium"
-      },
-      {
-        "value": "CUSTOM:Veridium"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:Veridium",
+      "",
+      "",
+      "CUSTOM:Veridium",
+      "CUSTOM:Veridium",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:VeridiumStairs"
-    },
+    "recipeReturnStack": "CUSTOM:VeridiumStairs",
     "name": "veridium_stairs_recipe",
     "namespace": "mod"
   }

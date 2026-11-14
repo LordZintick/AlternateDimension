@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:void_essence",
+    "alternate_dimension:big_bottle"
+  ],
+  "integers": [
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:bottled_moonlight",
+      "count": 1
+    }
+  ]
+}

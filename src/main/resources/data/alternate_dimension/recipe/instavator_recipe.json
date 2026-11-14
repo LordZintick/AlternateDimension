@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:sulfur",
+    "b": "#minecraft:shovels",
+    "c": "alternate_dimension:miners_pet"
+  },
+  "result": {
+    "id": "alternate_dimension:instavator",
+    "count": 1
+  }
+}

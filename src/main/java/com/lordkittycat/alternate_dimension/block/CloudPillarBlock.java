@@ -15,8 +15,8 @@ import net.minecraft.core.Direction;
 public class CloudPillarBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-	public CloudPillarBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f));
+	public CloudPillarBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOL).strength(1f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
@@ -28,7 +28,10 @@ public class CloudPillarBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(AXIS, context.getClickedFace().getAxis());
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(AXIS, context.getClickedFace().getAxis());
 	}
 
 	@Override

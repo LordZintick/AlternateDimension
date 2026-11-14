@@ -5,9 +5,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:shale_bricks"
-    }
+    "a": "alternate_dimension:shale_bricks"
   },
   "result": {
     "id": "alternate_dimension:shale_bricks_slab",

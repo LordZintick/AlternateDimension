@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "#alternate_dimension:bricks",
+    "b": "alternate_dimension:void_essence"
+  },
+  "result": {
+    "id": "alternate_dimension:corrupt_bricks",
+    "count": 8
+  }
+}

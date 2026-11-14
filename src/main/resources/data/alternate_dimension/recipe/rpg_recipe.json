@@ -6,18 +6,10 @@
     "d  "
   ],
   "key": {
-    "a": {
-      "tag": "minecraft:planks"
-    },
-    "b": {
-      "item": "alternate_dimension:aluminum_ingot"
-    },
-    "c": {
-      "item": "alternate_dimension:rocket"
-    },
-    "d": {
-      "item": "alternate_dimension:aluminum_nugget"
-    }
+    "a": "#alternate_dimension:altdim_planks",
+    "b": "alternate_dimension:aluminum_ingot",
+    "c": "alternate_dimension:rocket",
+    "d": "alternate_dimension:aluminum_nugget"
   },
   "result": {
     "id": "alternate_dimension:rpg",

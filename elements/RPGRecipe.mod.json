@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:AluminumIngot"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.PLANKS"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:Rocket"
-      },
-      {
-        "value": "CUSTOM:AluminumNugget"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "TAG:mod:altdim_planks",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:Rocket",
+      "CUSTOM:AluminumNugget",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RPG"
-    },
+    "recipeReturnStack": "CUSTOM:RPG",
     "name": "rpg_recipe",
     "namespace": "mod"
   }

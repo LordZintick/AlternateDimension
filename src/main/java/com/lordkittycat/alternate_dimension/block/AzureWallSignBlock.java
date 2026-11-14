@@ -9,8 +9,8 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class AzureWallSignBlock extends WallSignBlock {
-	public AzureWallSignBlock() {
-		super(AlternateDimensionModWoodTypes.AZURE_SIGN_WOOD_TYPE,
-				BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn().dropsLike(AlternateDimensionModBlocks.AZURE_SIGN.get()));
+	public AzureWallSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.AZURE_SIGN_WOOD_TYPE, properties.sound(SoundType.WOOD).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn()
+				.overrideLootTable(AlternateDimensionModBlocks.AZURE_SIGN.get().getLootTable()).overrideDescription(AlternateDimensionModBlocks.AZURE_SIGN.get().getDescriptionId()));
 	}
 }

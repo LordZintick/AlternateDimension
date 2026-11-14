@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,9 +7,7 @@
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {
-      "peeled": {
-        "name": "GetBananaPeeledState"
-      }
+      "peeled": "GetBananaPeeledState"
     },
     "states": [
       {
@@ -33,18 +31,14 @@
     "name": "Banana",
     "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionWorld"
-      }
+      "CUSTOM:AlternateDimensionWorld"
     ],
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 64,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -65,29 +59,21 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onFinishUsingItem": {
-      "name": "PeelBanana"
-    },
+    "onFinishUsingItem": "PeelBanana",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:PlusProjectile"
-    },
+    "projectile": "CUSTOM:PlusProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 8,
     "saturation": 0.6,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "alternate_dimension:holystone_gem",
+    "b": "alternate_dimension:aluminum_nugget"
+  },
+  "result": {
+    "id": "alternate_dimension:holystone_gear",
+    "count": 4
+  }
+}

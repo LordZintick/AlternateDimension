@@ -1,28 +1,22 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:IronDrill"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:IronDrill"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:DurableDrillHead"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:TitaniumPlate"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:DurableDrill"
-    },
+    "smithingInputStack": "CUSTOM:IronDrill",
+    "smithingInputAdditionStack": "CUSTOM:DurableDrillHead",
+    "smithingInputTemplateStack": "CUSTOM:TitaniumPlate",
+    "smithingReturnStack": "CUSTOM:DurableDrill",
     "name": "iron_drill_upgrade",
     "namespace": "mod"
   }

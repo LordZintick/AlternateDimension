@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "alternate_dimension:block/solar_planks",
+    "particle": "alternate_dimension:block/solar_planks"
+  }
+}

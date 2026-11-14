@@ -1,22 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
     "pools": [
       {
         "minrolls": 1,
-        "maxrolls": 1,
+        "maxrolls": 2,
         "minbonusrolls": 0,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Breadstick"
-            },
-            "weight": 15,
+            "item": "CUSTOM:Breadstick",
+            "weight": 3,
             "minCount": 3,
             "maxCount": 8,
             "minEnchantmentLevel": 0,
@@ -27,10 +25,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.POTATO"
-            },
-            "weight": 15,
+            "item": "CUSTOM:BarleyBread",
+            "weight": 3,
             "minCount": 2,
             "maxCount": 5,
             "minEnchantmentLevel": 0,
@@ -41,24 +37,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.CARROT"
-            },
-            "weight": 15,
-            "minCount": 2,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Pasta"
-            },
-            "weight": 15,
+            "item": "CUSTOM:Pasta",
+            "weight": 3,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -69,10 +49,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Salt"
-            },
-            "weight": 14,
+            "item": "CUSTOM:Salt",
+            "weight": 3,
             "minCount": 2,
             "maxCount": 4,
             "minEnchantmentLevel": 0,
@@ -83,10 +61,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BreadstickLauncher"
-            },
-            "weight": 3,
+            "item": "CUSTOM:BreadstickLauncher",
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

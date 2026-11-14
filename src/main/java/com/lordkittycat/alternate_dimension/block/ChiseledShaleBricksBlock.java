@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class ChiseledShaleBricksBlock extends Block {
-	public ChiseledShaleBricksBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(2f).requiresCorrectToolForDrops());
+	public ChiseledShaleBricksBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.BASALT).strength(2f).requiresCorrectToolForDrops());
 	}
 }

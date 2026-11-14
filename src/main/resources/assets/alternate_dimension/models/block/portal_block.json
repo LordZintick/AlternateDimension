@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/portal",
     "particle": "alternate_dimension:block/portal"
-  },
-  "render_type": "solid"
+  }
 }

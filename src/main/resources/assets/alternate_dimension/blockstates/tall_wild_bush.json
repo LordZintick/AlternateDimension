@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "alternate_dimension:block/tall_wild_bush"
+    },
+    "half=lower": {
+      "model": "alternate_dimension:block/tall_wild_bush_bottom"
+    }
+  }
+}

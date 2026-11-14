@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Life Spirit",
@@ -24,17 +24,14 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:spiritAnimation.idle"
-        },
+        "animation": "CUSTOM:spiritAnimation.idle",
         "speed": 1.0,
+        "condition": "Always",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:spiritAnimation.walk"
-        },
+        "animation": "CUSTOM:spiritAnimation.walk",
         "speed": 1.0,
         "walking": true,
         "amplitude": 1.0
@@ -55,37 +52,23 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMobs"
-      }
+      "CUSTOM:AlternateDimensionMobs"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 4,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.19999999999999998,
+    "movementSpeed": 0.15,
     "stepHeight": 0.6,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
@@ -119,24 +102,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "entity.blaze.ambient"
-    },
-    "hurtSound": {
-      "value": "entity.blaze.hurt"
-    },
-    "deathSound": {
-      "value": "entity.blaze.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "entity.blaze.ambient",
+    "hurtSound": "entity.blaze.hurt",
+    "deathSound": "entity.blaze.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -145,9 +116,7 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
@@ -158,9 +127,7 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
-      {
-        "value": "#mod:lush_forest_biomes"
-      }
+      "#mod:lush_forest_biomes"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

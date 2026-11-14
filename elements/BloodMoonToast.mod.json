@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "toast",
+  "definition": {
+    "title": "The Blood Moon is rising...",
+    "description": "Powerful undead rise. Good luck.",
+    "icon": "blood_moon",
+    "background": "",
+    "durationTime": 5000,
+    "titleColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "descriptionColor": {
+      "value": -5701632,
+      "falpha": 0.0
+    },
+    "drawShadows": false
+  }
+}

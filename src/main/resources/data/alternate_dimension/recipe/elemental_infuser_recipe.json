@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "#alternate_dimension:crafting_tables",
+    "alternate_dimension:elementium_ingot"
+  ],
+  "integers": [
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:elemental_inscriber",
+      "count": 1
+    }
+  ]
+}

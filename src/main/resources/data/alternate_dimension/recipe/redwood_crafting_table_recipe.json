@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:redwood_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:redwood_crafting_table",
+    "count": 1
+  }
+}

@@ -1,22 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
     "pools": [
       {
-        "minrolls": 3,
-        "maxrolls": 12,
-        "minbonusrolls": 0,
-        "maxbonusrolls": 3,
-        "hasbonusrolls": true,
+        "minrolls": 2,
+        "maxrolls": 4,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.ROTTEN_FLESH"
-            },
-            "weight": 1,
+            "item": "CUSTOM:WeakThread",
+            "weight": 2,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -27,51 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.BONE"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.STRING"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.FEATHER"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.GUNPOWDER"
-            },
+            "item": "CUSTOM:StrongThread",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -83,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.WHEAT_SEEDS"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -94,12 +46,76 @@
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
+          }
+        ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": "Blocks.AIR",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.REEDS"
-            },
+            "item": "CUSTOM:MinersPet",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:AdventurersPet",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:WarriorsPet",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          }
+        ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": "CUSTOM:Sulfur",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

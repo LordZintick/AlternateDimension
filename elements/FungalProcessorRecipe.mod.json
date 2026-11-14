@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:Importer",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:BlueMushroomBlock",
+      "CUSTOM:MachineCasing",
+      "CUSTOM:PurpleMushroomBlock",
+      "CUSTOM:GreenMushroomBlock",
+      "CUSTOM:BlockOfShroomium",
+      "CUSTOM:YellowMushroomBlock"
+    ],
+    "recipeReturnStack": "CUSTOM:FungalProcessor",
+    "name": "fungal_processor_recipe",
+    "namespace": "mod"
+  }
+}

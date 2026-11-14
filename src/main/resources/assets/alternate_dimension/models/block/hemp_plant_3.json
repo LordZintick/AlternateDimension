@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/hemp_4",
     "particle": "alternate_dimension:block/hemp_0"
-  },
-  "render_type": "cutout"
+  }
 }

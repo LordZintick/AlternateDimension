@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:sapphire"
-    }
+    "a": "alternate_dimension:sapphire"
   },
   "result": {
     "id": "alternate_dimension:sapphire_block",

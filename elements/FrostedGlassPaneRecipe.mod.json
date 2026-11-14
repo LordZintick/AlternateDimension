@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 16,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:FrostedGlass"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:FrostedGlass",
+      "CUSTOM:FrostedGlass",
+      "CUSTOM:FrostedGlass",
+      "CUSTOM:FrostedGlass",
+      "CUSTOM:FrostedGlass",
+      "CUSTOM:FrostedGlass"
+    ],
+    "recipeReturnStack": "CUSTOM:FrostedGlassPane",
+    "name": "frosted_glass_pane_recipe",
+    "namespace": "mod"
+  }
+}

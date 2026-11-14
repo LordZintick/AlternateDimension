@@ -7,12 +7,8 @@
     "b  "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:magic_dust_block"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "alternate_dimension:activated_mana_stone",
+    "b": "alternate_dimension:tool_rod"
   },
   "result": {
     "id": "alternate_dimension:portal_wand",

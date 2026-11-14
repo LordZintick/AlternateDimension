@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/veridium_pyrolite_ore",
+    "particle": "alternate_dimension:block/veridium_pyrolite_ore"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#alternate_dimension:ice_mobs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:life_mobs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:fire_mobs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:candy_mobs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:void_mobs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:hallowed_mobs",
+      "required": false
+    }
+  ]
+}

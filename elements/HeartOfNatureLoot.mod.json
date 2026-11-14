@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -9,14 +9,12 @@
         "maxrolls": 1,
         "minbonusrolls": 0,
         "maxbonusrolls": 1,
-        "hasbonusrolls": true,
+        "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.SAPLING#0"
-            },
-            "weight": 3,
+            "item": "CUSTOM:BarleySeeds",
+            "weight": 2,
             "minCount": 2,
             "maxCount": 4,
             "minEnchantmentLevel": 0,
@@ -27,12 +25,22 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LembasBreadBite"
-            },
+            "item": "CUSTOM:LembasBreadBite",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": true,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:HempSeeds",
+            "weight": 2,
+            "minCount": 2,
+            "maxCount": 4,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": true,

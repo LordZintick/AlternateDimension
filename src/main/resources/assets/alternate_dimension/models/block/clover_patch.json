@@ -4,6 +4,5 @@
     "all": "alternate_dimension:block/clover_patch_texture",
     "particle": "alternate_dimension:block/plant_stem_side",
     "0": "alternate_dimension:block/clover_patch_texture"
-  },
-  "render_type": "cutout"
+  }
 }

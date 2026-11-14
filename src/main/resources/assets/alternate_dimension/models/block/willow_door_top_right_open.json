@@ -1,0 +1,8 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "particle": "alternate_dimension:block/willow_door_bottom",
+    "bottom": "alternate_dimension:block/willow_door_bottom",
+    "top": "alternate_dimension:block/willow_door_top"
+  }
+}

@@ -1,24 +1,20 @@
 package com.lordkittycat.alternate_dimension.entity;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
@@ -28,7 +24,6 @@ import com.lordkittycat.alternate_dimension.procedures.ExplodeProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
-@OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class NSquaredProjectileEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(AlternateDimensionModItems.TERM.get());
 	private int knockback = 0;
@@ -40,17 +35,16 @@ public class NSquaredProjectileEntity extends AbstractArrow implements ItemSuppl
 	public NSquaredProjectileEntity(EntityType<? extends NSquaredProjectileEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, x, y, z, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
-			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
+			setKnockback(firedFromWeapon.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK)));
 	}
 
 	public NSquaredProjectileEntity(EntityType<? extends NSquaredProjectileEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, entity, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
-			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
+			setKnockback(firedFromWeapon.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK)));
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
 		return PROJECTILE_ITEM;
 	}
@@ -98,7 +92,7 @@ public class NSquaredProjectileEntity extends AbstractArrow implements ItemSuppl
 	@Override
 	public void tick() {
 		super.tick();
-		if (this.inGround)
+		if (this.isInGround())
 			this.discard();
 	}
 
@@ -118,7 +112,7 @@ public class NSquaredProjectileEntity extends AbstractArrow implements ItemSuppl
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.shulker.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.shulker.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -133,7 +127,7 @@ public class NSquaredProjectileEntity extends AbstractArrow implements ItemSuppl
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
-		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.shulker.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.shulker.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

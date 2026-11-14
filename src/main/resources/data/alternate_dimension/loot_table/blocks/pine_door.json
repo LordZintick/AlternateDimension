@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "alternate_dimension:blocks/pine_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:pine_door",
+          "conditions": [
+            {
+              "block": "alternate_dimension:pine_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

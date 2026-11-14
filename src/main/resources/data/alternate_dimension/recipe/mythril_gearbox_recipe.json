@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "alternate_dimension:mythril_plate",
+    "b": "alternate_dimension:mythril_gear"
+  },
+  "result": {
+    "id": "alternate_dimension:mythril_gearbox",
+    "count": 1
+  }
+}

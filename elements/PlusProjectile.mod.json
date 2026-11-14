@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:Plus"
-    },
+    "projectileItem": "CUSTOM:Plus",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
+    "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
     "disableDiscarding": false,
     "power": 1.0,
-    "damage": 0.0,
-    "knockback": 5,
+    "damage": 2.0,
+    "knockback": 2,
     "entityModel": "Default",
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsEntity": {
-      "name": "HurtMath"
-    }
+    "onHitsEntity": "HurtMath"
   }
 }

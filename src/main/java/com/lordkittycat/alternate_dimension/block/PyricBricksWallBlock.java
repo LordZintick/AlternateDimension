@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.WallBlock;
 
 public class PyricBricksWallBlock extends WallBlock {
-	public PyricBricksWallBlock() {
-		super(BlockBehaviour.Properties.of().strength(2f, 10f).requiresCorrectToolForDrops().forceSolidOn());
+	public PyricBricksWallBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(2f, 10f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 }

@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:redwood_log"
-    }
+    "a": "alternate_dimension:redwood_log"
   },
   "result": {
     "id": "alternate_dimension:redwood_wood",

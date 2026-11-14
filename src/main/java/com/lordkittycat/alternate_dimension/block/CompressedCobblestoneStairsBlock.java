@@ -5,8 +5,8 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.Blocks;
 
 public class CompressedCobblestoneStairsBlock extends StairBlock {
-	public CompressedCobblestoneStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().strength(3f, 15f).requiresCorrectToolForDrops());
+	public CompressedCobblestoneStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.strength(3f, 15f).requiresCorrectToolForDrops());
 	}
 
 	@Override

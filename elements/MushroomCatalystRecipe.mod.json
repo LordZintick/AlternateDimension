@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:BlueMushroom"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:BlockOfShroomium",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust"
+    ],
+    "recipeReturnStack": "CUSTOM:MushroomCatalyst",
+    "name": "mushroom_catalyst_recipe",
+    "namespace": "mod"
+  }
+}

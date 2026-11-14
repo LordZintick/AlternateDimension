@@ -1,30 +1,20 @@
 {
   "type": "minecraft:block",
+  "random_sequence": "alternate_dimension:blocks/blue_mushroom_block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "alternate_dimension:blue_mushroom",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
-            }
-          ]
+          "name": "alternate_dimension:blue_mushroom_block"
         }
       ]
     }
-  ],
-  "random_sequence": "alternate_dimension:blocks/blue_mushroom_block"
+  ]
 }

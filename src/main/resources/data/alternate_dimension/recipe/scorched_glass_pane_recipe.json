@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:scorched_glass"
+  },
+  "result": {
+    "id": "alternate_dimension:scorched_glass_pane",
+    "count": 16
+  }
+}

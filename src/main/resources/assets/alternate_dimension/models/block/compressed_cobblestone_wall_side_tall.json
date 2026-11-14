@@ -3,6 +3,5 @@
   "textures": {
     "wall": "alternate_dimension:block/compressed_cobblestone",
     "particle": "alternate_dimension:block/compressed_cobblestone"
-  },
-  "render_type": "solid"
+  }
 }

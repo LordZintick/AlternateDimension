@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "structure",
+  "definition": {
+    "structure": "viking_tower",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "spacing": 15,
+    "separation": 8,
+    "restrictionBiomes": [
+      "CUSTOM:Wasteland",
+      "CUSTOM:ThickForest",
+      "CUSTOM:CandyBiome",
+      "CUSTOM:FruityGardens",
+      "CUSTOM:EnchantedForest",
+      "CUSTOM:FrostbittenPlains",
+      "CUSTOM:MushroomInfection"
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

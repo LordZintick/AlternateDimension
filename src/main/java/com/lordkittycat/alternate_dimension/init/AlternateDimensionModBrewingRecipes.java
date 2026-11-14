@@ -1,11 +1,8 @@
 package com.lordkittycat.alternate_dimension.init;
 
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.component.DataComponents;
+import net.minecraft.resources.Identifier;
 
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.recipe.vanilla.IVanillaRecipeFactory;
@@ -20,8 +17,8 @@ import java.util.ArrayList;
 @JeiPlugin
 public class AlternateDimensionModBrewingRecipes implements IModPlugin {
 	@Override
-	public ResourceLocation getPluginUid() {
-		return ResourceLocation.parse("alternate_dimension:brewing_recipes");
+	public Identifier getPluginUid() {
+		return Identifier.parse("alternate_dimension:brewing_recipes");
 	}
 
 	@Override
@@ -32,22 +29,6 @@ public class AlternateDimensionModBrewingRecipes implements IModPlugin {
 		ItemStack potion2 = new ItemStack(Items.POTION);
 		List<ItemStack> ingredientStack = new ArrayList<>();
 		List<ItemStack> inputStack = new ArrayList<>();
-		ingredientStack.add(new ItemStack(Items.QUARTZ));
-		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.ACROBATIC_POTION.get())));
-		ingredientStack.clear();
-		ingredientStack.add(new ItemStack(AlternateDimensionModItems.CLOUD_CHARGE.get()));
-		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.LIGHT_FOOTED_POTION.get())));
-		ingredientStack.clear();
-		ingredientStack.add(new ItemStack(Items.STICK));
-		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.REACHING_POTION.get())));
-		ingredientStack.clear();
-		ingredientStack.add(new ItemStack(AlternateDimensionModItems.LIGHT_ESSENCE.get()));
-		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.AWKWARD));
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(AlternateDimensionModItems.BLESSED_POTION.get())));
-		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
 }

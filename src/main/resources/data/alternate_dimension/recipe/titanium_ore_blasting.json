@@ -3,9 +3,7 @@
   "category": "misc",
   "experience": 0.5,
   "cookingtime": 100,
-  "ingredient": {
-    "item": "alternate_dimension:raw_titanium"
-  },
+  "ingredient": "alternate_dimension:raw_titanium",
   "result": {
     "id": "alternate_dimension:titanium_ingot"
   }

@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:blue_mushroom"
-    }
+    "a": "alternate_dimension:blue_mushroom"
   },
   "result": {
     "id": "alternate_dimension:blue_mushroom_block",

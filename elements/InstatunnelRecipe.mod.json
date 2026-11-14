@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:MinersPet",
+      "CUSTOM:Sulfur"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "TAG:minecraft:pickaxes",
+      "CUSTOM:MinersPet",
+      "TAG:minecraft:pickaxes",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur",
+      "CUSTOM:Sulfur"
+    ],
+    "recipeReturnStack": "CUSTOM:Instatunnel",
+    "name": "instatunnel_recipe",
+    "namespace": "mod"
+  }
+}

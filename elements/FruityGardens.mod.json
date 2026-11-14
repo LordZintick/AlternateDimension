@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Fruity Gardens",
-    "groundBlock": {
-      "value": "Blocks.GRASS"
-    },
-    "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:LushGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "grassColor": {
       "value": -16724992,
       "falpha": 0.0
@@ -20,23 +14,13 @@
       "value": -16724992,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:fruity_gardens"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
+    "particleToSpawn": "EXPLOSION_NORMAL",
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
@@ -69,30 +53,20 @@
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 0,
+    "treeType": 1,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "CUSTOM:PlantStem",
+    "treeBranch": "CUSTOM:PlantMatter",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
-      "Caves",
-      "MeadowVegetation",
-      "PlainsTallGrass"
+      "Caves"
     ],
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "plains",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -107,80 +81,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

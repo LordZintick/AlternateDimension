@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "alternate_dimension:block/pure_bricks",
+    "particle": "alternate_dimension:block/pure_bricks"
+  }
+}

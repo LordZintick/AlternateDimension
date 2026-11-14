@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:ShroomiumChunk"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:ShroomiumChunk",
+      "",
+      "CUSTOM:ShroomiumChunk",
+      "CUSTOM:MushyAxe",
+      "CUSTOM:ShroomiumChunk",
+      "",
+      "CUSTOM:ShroomiumChunk",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:ShroomiumAxe",
+    "name": "shroomium_axe_recipe",
+    "namespace": "mod"
+  }
+}

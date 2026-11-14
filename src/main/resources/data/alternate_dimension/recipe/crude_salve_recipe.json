@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "salve",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:life_essence",
+    "alternate_dimension:life_essence",
+    "#alternate_dimension:bowls"
+  ],
+  "result": {
+    "id": "alternate_dimension:crude_salve",
+    "count": 1
+  }
+}

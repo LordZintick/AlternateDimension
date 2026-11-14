@@ -7,12 +7,8 @@
     "a a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:hardened_beetle_shell"
-    },
-    "b": {
-      "item": "alternate_dimension:ancient_dust"
-    }
+    "a": "alternate_dimension:hardened_beetle_shell",
+    "b": "alternate_dimension:ancient_dust"
   },
   "result": {
     "id": "alternate_dimension:beetle_armor_leggings",

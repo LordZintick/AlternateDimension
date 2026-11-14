@@ -3,37 +3,71 @@ package com.lordkittycat.alternate_dimension.entity;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacementTypes;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.Identifier;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import com.lordkittycat.alternate_dimension.procedures.AlwaysProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModEntities;
 
-public class ShroomiteEntity extends Monster {
+public class ShroomiteEntity extends PathfinderMob {
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ShroomiteEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(ShroomiteEntity.class, EntityDataSerializers.INT);
 	public final AnimationState animationState0 = new AnimationState();
 
 	public ShroomiteEntity(EntityType<ShroomiteEntity> type, Level world) {
 		super(type, world);
 		xpReward = 2;
 		setNoAi(false);
+	}
+
+	@Override
+	public void onSyncedDataUpdated(EntityDataAccessor<?> data) {
+		if (ANIM.equals(data)) {
+			switch (this.entityData.get(ANIM)) {
+				case -1 :
+					this.animationState0.stop();
+					break;
+				case 0 :
+					this.animationState0.start(this.tickCount);
+					break;
+			}
+		}
+		super.onSyncedDataUpdated(data);
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "shroomite_texture");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -47,26 +81,38 @@ public class ShroomiteEntity extends Monster {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.shroomlight.break"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.shroomlight.break"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.axolotl.death"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.axolotl.death"));
 	}
 
 	@Override
-	public boolean hurt(DamageSource damagesource, float amount) {
-		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
+	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		if (damagesource.getDirectEntity() instanceof AbstractThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
-		return super.hurt(damagesource, amount);
+		return super.hurtServer(level, damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(ValueOutput valueOutput) {
+		super.addAdditionalSaveData(valueOutput);
+		valueOutput.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(ValueInput valueInput) {
+		super.readAdditionalSaveData(valueInput);
+		this.setTexture(valueInput.getStringOr("Texture", "shroomite_texture"));
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(true, this.tickCount);
+			this.animationState0.animateWhen(AlwaysProcedure.execute(), this.tickCount);
 		}
 	}
 

@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "tag": "minecraft:planks"
-    }
+    "a": "#alternate_dimension:altdim_planks"
   },
   "result": {
     "id": "alternate_dimension:wooden_drill_head",

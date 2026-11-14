@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "bandage",
+    "unlockingItems": [
+      "CUSTOM:Cloth"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "CUSTOM:LifeEssence",
+      "CUSTOM:LifeEssence",
+      "",
+      "CUSTOM:LifeEssence",
+      "CUSTOM:Cloth",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:CrudeBandage",
+    "name": "crude_bandage_recipe",
+    "namespace": "mod"
+  }
+}

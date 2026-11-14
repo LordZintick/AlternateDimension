@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 public class PyricCobbleBlock extends Block {
-	public PyricCobbleBlock() {
-		super(BlockBehaviour.Properties.of().strength(2.2f, 10f).requiresCorrectToolForDrops());
+	public PyricCobbleBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(2.2f, 10f).requiresCorrectToolForDrops());
 	}
 }

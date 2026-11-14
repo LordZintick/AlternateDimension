@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:plant_matter",
+    "b": "alternate_dimension:phosphorus"
+  },
+  "result": {
+    "id": "alternate_dimension:verdant_lantern",
+    "count": 4
+  }
+}

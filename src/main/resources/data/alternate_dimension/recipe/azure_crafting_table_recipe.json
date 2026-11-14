@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:azure_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:azure_crafting_table",
+    "count": 1
+  }
+}

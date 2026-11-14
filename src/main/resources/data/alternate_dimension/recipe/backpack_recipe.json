@@ -7,15 +7,9 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:string"
-    },
-    "b": {
-      "item": "minecraft:leather"
-    },
-    "c": {
-      "item": "minecraft:chest"
-    }
+    "a": "alternate_dimension:strong_thread",
+    "b": "alternate_dimension:cloth",
+    "c": "#alternate_dimension:boxes"
   },
   "result": {
     "id": "alternate_dimension:backpack",

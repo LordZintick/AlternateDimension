@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/scorched_bush",
     "particle": "alternate_dimension:block/scorched_bush"
-  },
-  "render_type": "cutout"
+  }
 }

@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "boat",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
+      "CUSTOM:ScorchedPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:ScorchedPlanks",
+      "",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedBoat"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedBoat",
     "name": "scorched_boat_recipe",
     "namespace": "mod"
   }

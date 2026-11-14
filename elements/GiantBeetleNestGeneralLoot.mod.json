@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BeetleShell"
-            },
+            "item": "CUSTOM:BeetleShell",
             "weight": 20,
             "minCount": 2,
             "maxCount": 4,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ReinforcedBeetleShell"
-            },
+            "item": "CUSTOM:ReinforcedBeetleShell",
             "weight": 5,
             "minCount": 1,
             "maxCount": 2,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HardenedBeetleShell"
-            },
+            "item": "CUSTOM:HardenedBeetleShell",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AncientDust"
-            },
+            "item": "CUSTOM:AncientDust",
             "weight": 1,
             "minCount": 5,
             "maxCount": 10,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Rations"
-            },
+            "item": "CUSTOM:Rations",
             "weight": 1,
             "minCount": 2,
             "maxCount": 5,
@@ -93,7 +83,7 @@
         ]
       },
       {
-        "minrolls": 0,
+        "minrolls": 1,
         "maxrolls": 2,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
@@ -101,9 +91,19 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Salt"
-            },
+            "item": "CUSTOM:Salt",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": "CUSTOM:Sulfur",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

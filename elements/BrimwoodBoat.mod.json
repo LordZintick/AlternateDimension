@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Brimwood Boat",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "CUSTOM:AlternateDimensionEquipment"
+    ],
+    "entityTexture": "brimwood_boat",
+    "itemTexture": "brimwood_boat"
+  }
+}

@@ -3,9 +3,7 @@
   "category": "blocks",
   "experience": 1,
   "cookingtime": 100,
-  "ingredient": {
-    "item": "alternate_dimension:raw_evilstone"
-  },
+  "ingredient": "alternate_dimension:raw_evilstone",
   "result": {
     "id": "alternate_dimension:evilstone_gem"
   }

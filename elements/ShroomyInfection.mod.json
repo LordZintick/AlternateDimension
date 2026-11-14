@@ -1,0 +1,33 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Shroomy Infection",
+    "icon": "shroomy_infection",
+    "color": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "particle": "CLOUD",
+    "onAddedSound": "block.shroomlight.place",
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": "MOVEMENT_SPEED",
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": "ATTACK_DAMAGE",
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

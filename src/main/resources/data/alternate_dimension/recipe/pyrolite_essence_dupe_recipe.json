@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:pyrolite_chunk",
+    "alternate_dimension:ore_essence"
+  ],
+  "integers": [
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:pyrolite_chunk",
+      "count": 2
+    }
+  ]
+}

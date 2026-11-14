@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:brimwood_planks",
+    "b": "alternate_dimension:tool_rod"
+  },
+  "result": {
+    "id": "alternate_dimension:brimwood_fence",
+    "count": 3
+  }
+}

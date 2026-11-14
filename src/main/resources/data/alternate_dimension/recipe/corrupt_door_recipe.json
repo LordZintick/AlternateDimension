@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:corrupt_bricks"
+  },
+  "result": {
+    "id": "alternate_dimension:corrupt_door",
+    "count": 3
+  }
+}

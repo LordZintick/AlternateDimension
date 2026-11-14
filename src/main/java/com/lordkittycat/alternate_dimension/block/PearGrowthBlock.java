@@ -11,20 +11,21 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
 public class PearGrowthBlock extends Block {
-	public PearGrowthBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+	public PearGrowthBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GRASS).instabreak().noCollision().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightDampening(BlockState state) {
 		return 0;
 	}
 
@@ -34,7 +35,7 @@ public class PearGrowthBlock extends Block {
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
 		return ItemStack.EMPTY;
 	}
 }

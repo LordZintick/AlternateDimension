@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:titanium_ingot",
+    "alternate_dimension:titanium_ingot",
+    "#alternate_dimension:hammers",
+    "alternate_dimension:titanium_ingot",
+    "alternate_dimension:titanium_ingot"
+  ],
+  "result": {
+    "id": "alternate_dimension:titanium_plate",
+    "count": 1
+  }
+}

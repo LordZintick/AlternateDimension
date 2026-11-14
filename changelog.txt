@@ -1,0 +1,18 @@
+2.0.0 Dev version 8
+
+- Removed the Imbunement Table and re-added it as a proper machine: the Mana Mystifier.
+- Added the Pyrolite Torch as a more early-game-friendly light source.
+- Added the Verdant Zombie miniboss.
+- Added earlier-game "mini" variants of the instatunnel and instavator.
+- Added recipes to convert any essence into any other essence (excluding omega).
+- Added dedicated toasts for events.
+- Removed the Candy Jetpack and Fuzzy Socks, will be reimplemented better later.
+- Removed the Jumping, Cursed, Blessed, Immunity, Power, Reaching, and Magnetism effects for lack of use. Will be reimplemented later.
+- Merged many needless folders into the Misc folder.
+- Removed Sodium and Chloride for OPness and unobtainability.
+- Removed the Lightning Block and added the Electrified Spider and Storm Essence as a replacement; Storm Essence can be used in a Mana Mystifier to create a bottle of lightning.
+- Renamed Light Essence to Light Core and added a recipe from Hallowed Essence.
+- Added the Mega Donut structure.
+- Added the Fruit Pouch to hold fruits.
+- Removed much of the obsolete spawn-setting code to instead rely on the default spawn system, and added the Gravestone as a simple protector for items.
+- Various other minor fixes and changes.

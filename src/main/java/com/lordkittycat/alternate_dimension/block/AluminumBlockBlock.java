@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class AluminumBlockBlock extends Block {
-	public AluminumBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
+	public AluminumBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
 	}
 }

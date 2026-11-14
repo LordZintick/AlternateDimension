@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:HallowedEssence"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "CUSTOM:HallowedEssence",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks"
+    ],
+    "recipeReturnStack": "CUSTOM:PureBricks",
+    "name": "pure_bricks_recipe",
+    "namespace": "mod"
+  }
+}

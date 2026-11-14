@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/beetle_nest_restless",
     "particle": "alternate_dimension:block/beetle_nest_restless"
-  },
-  "render_type": "solid"
+  }
 }

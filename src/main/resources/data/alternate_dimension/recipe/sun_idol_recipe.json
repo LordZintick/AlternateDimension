@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:meteorite_dust",
+    "b": "alternate_dimension:holystone_gem",
+    "c": "alternate_dimension:light_essence"
+  },
+  "result": {
+    "id": "alternate_dimension:sun_idol",
+    "count": 1
+  }
+}

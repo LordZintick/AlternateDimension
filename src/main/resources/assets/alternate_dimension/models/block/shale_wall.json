@@ -3,6 +3,5 @@
   "textures": {
     "wall": "alternate_dimension:block/shale",
     "particle": "alternate_dimension:block/shale"
-  },
-  "render_type": "solid"
+  }
 }

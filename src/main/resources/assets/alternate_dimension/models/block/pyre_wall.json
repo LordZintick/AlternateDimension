@@ -3,6 +3,5 @@
   "textures": {
     "wall": "alternate_dimension:block/pyre_mantle",
     "particle": "alternate_dimension:block/pyre_mantle"
-  },
-  "render_type": "solid"
+  }
 }

@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Candied Plain",
-    "groundBlock": {
-      "value": "CUSTOM:Frosting"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:CookieBlock"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:CandiedGrassBlock",
+    "undergroundBlock": "CUSTOM:Frosting",
+    "underwaterBlock": "",
     "airColor": {
       "value": -417793,
       "falpha": 0.0
@@ -36,23 +30,13 @@
       "value": -3975425,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:new_candy_music"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "DRAGON_BREATH"
-    },
+    "particleToSpawn": "FALLING_OBSIDIAN_TEAR",
     "particlesProbability": 0.19999999999999998,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
@@ -87,23 +71,15 @@
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 5,
-    "treeStem": {
-      "value": "Blocks.LOG#0"
-    },
-    "treeBranch": {
-      "value": "Blocks.LEAVES#0"
-    },
-    "treeVines": {
-      "value": "Blocks.AIR"
-    },
-    "treeFruits": {
-      "value": "Blocks.AIR"
-    },
+    "treeStem": "Blocks.LOG#0",
+    "treeBranch": "Blocks.LEAVES#0",
+    "treeVines": "Blocks.AIR",
+    "treeFruits": "Blocks.AIR",
     "defaultFeatures": [
       "Caves"
     ],
-    "spawnStronghold": true,
-    "spawnMineshaft": true,
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -121,7 +97,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
+    "spawnRuinedPortal": "NONE",
     "spawnEntries": []
   }
 }

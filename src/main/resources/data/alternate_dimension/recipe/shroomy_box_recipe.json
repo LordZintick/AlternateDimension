@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:blue_mushroom_block"
+  },
+  "result": {
+    "id": "alternate_dimension:shroomy_box",
+    "count": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:PureBricks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:PureBricks",
+      "CUSTOM:PureBricks",
+      "CUSTOM:PureBricks",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:PureBrickSlab",
+    "name": "pure_brick_slab_recipe",
+    "namespace": "mod"
+  }
+}

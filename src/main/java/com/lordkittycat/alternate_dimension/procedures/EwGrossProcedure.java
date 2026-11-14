@@ -10,7 +10,7 @@ public class EwGrossProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, 4));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 600, 4));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 600, 2));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -18,6 +18,6 @@ public class EwGrossProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 600, 0));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 600, 2));
 	}
 }

@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/redwood_log",
     "west": "alternate_dimension:block/redwood_log",
     "particle": "alternate_dimension:block/redwood_log"
-  },
-  "render_type": "solid"
+  }
 }

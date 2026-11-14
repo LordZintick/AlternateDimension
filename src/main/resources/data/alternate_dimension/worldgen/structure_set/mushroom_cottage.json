@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "alternate_dimension:mushroom_cottage",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 4,
+    "salt": 1484229042
+  }
+}

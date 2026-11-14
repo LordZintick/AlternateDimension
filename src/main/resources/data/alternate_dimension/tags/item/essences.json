@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:fire_essence",
+    "alternate_dimension:ore_essence",
+    "alternate_dimension:ice_essence",
+    "alternate_dimension:void_essence",
+    "alternate_dimension:candy_essence",
+    "alternate_dimension:hallowed_essence",
+    "alternate_dimension:life_essence",
+    "alternate_dimension:storm_essence",
+    "alternate_dimension:math_essence"
+  ]
+}

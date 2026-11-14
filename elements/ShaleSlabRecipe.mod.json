@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:Shale"
-      }
+      "CUSTOM:Shale"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Shale"
-      },
-      {
-        "value": "CUSTOM:Shale"
-      },
-      {
-        "value": "CUSTOM:Shale"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:Shale",
+      "CUSTOM:Shale",
+      "CUSTOM:Shale",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ShaleSlab"
-    },
+    "recipeReturnStack": "CUSTOM:ShaleSlab",
     "name": "shale_slab_recipe",
     "namespace": "mod"
   }

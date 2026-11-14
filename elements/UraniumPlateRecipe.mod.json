@@ -1,20 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "ingot_presser_recipe_type",
+    "category": "compressor_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:UraniumIngot"
-      }
+      "CUSTOM:UraniumIngot"
     ],
-    "integers": [],
+    "integers": [
+      1
+    ],
     "strings": [],
-    "recipetype": "IngotPresserRecipeType",
+    "recipetype": "CompressorRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:UraniumPlate"
-      }
+      "CUSTOM:UraniumPlate"
     ],
     "resultCounts": [
       1

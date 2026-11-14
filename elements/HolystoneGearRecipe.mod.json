@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:HolystoneGem"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:HolystoneGem",
+      "",
+      "CUSTOM:HolystoneGem",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:HolystoneGem",
+      "",
+      "CUSTOM:HolystoneGem",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:HolystoneGear",
+    "name": "holystone_gear_recipe",
+    "namespace": "mod"
+  }
+}

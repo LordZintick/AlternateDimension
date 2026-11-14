@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": "alternate_dimension:kyanite_crystal",
+    "b": "alternate_dimension:mana_coil",
+    "c": "alternate_dimension:magical_casing",
+    "d": "alternate_dimension:mana_crystal"
+  },
+  "result": {
+    "id": "alternate_dimension:mana_synthesizer",
+    "count": 1
+  }
+}

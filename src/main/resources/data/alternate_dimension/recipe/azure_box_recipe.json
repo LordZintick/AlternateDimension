@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:azure_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:azure_box",
+    "count": 1
+  }
+}

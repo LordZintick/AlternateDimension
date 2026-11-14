@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:BlueMushroomBlock"
-      }
+      "CUSTOM:BlueMushroomBlock"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueMushroomBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BlueMushroomBlock"
-      },
-      {
-        "value": "CUSTOM:BlueMushroomBlock"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:BlueMushroomBlock",
+      "",
+      "",
+      "CUSTOM:BlueMushroomBlock",
+      "CUSTOM:BlueMushroomBlock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlueMushroomStairs"
-    },
+    "recipeReturnStack": "CUSTOM:BlueMushroomStairs",
     "name": "blue_mushroom_stairs_recipe",
     "namespace": "mod"
   }

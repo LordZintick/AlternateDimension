@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "alternate_dimension:wasteland",
+    "alternate_dimension:highlands",
+    "alternate_dimension:redwood_forest",
+    "alternate_dimension:frostbitten_plains"
+  ],
+  "spawners": {
+    "type": "alternate_dimension:frostfire_steve",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

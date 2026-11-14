@@ -1,0 +1,8 @@
+{
+  "parent": "alternate_dimension:custom/torch",
+  "textures": {
+    "all": "alternate_dimension:block/pyrolite_torch",
+    "particle": "alternate_dimension:block/pyrolite_torch",
+    "0": "alternate_dimension:block/pyrolite_torch"
+  }
+}

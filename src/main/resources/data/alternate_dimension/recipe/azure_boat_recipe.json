@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:azure_planks"
-    }
+    "a": "alternate_dimension:azure_planks"
   },
   "result": {
     "id": "alternate_dimension:azure_boat",

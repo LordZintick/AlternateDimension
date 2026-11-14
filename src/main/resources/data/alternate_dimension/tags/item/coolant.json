@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:water_bucket",
-    "alternate_dimension:coolant_rod"
+    "minecraft:water_bucket"
   ]
 }

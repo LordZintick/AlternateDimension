@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:Term"
-    },
+    "projectileItem": "CUSTOM:Term",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.shulker.shoot"
-    },
+    "actionSound": "entity.shulker.shoot",
     "igniteFire": false,
     "disableGravity": false,
     "disableDiscarding": false,
@@ -19,11 +15,7 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": {
-      "name": "Explode"
-    },
-    "onHitsEntity": {
-      "name": "Explode"
-    }
+    "onHitsBlock": "Explode",
+    "onHitsEntity": "Explode"
   }
 }

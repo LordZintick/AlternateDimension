@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Cloud Guardian Alpha",
@@ -16,10 +16,10 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 5.0
+      "fixedValue": 3.0
     },
     "boundingBoxScale": {
-      "fixedValue": 5.0
+      "fixedValue": 3.0
     },
     "modelLayers": [],
     "animations": [],
@@ -38,43 +38,29 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionMobs"
-      }
+      "CUSTOM:AlternateDimensionMobs"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 6,
-    "attackKnockback": 3.0,
-    "knockbackResistance": 0.9,
-    "movementSpeed": 0.4,
-    "stepHeight": 0.6,
-    "armorBaseValue": 1.0,
+    "attackStrength": 2,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.8,
+    "movementSpeed": 0.3,
+    "stepHeight": 1.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 32,
     "health": 30,
-    "xpAmount": 10,
+    "xpAmount": 5,
     "waterMob": false,
     "breatheUnderwater": {
       "fixedValue": false
@@ -102,28 +88,14 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "entity.cat.ambient"
-    },
-    "hurtSound": {
-      "value": "entity.cat.hurt"
-    },
-    "deathSound": {
-      "value": "entity.cat.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "entity.cat.ambient",
+    "hurtSound": "entity.cat.hurt",
+    "deathSound": "entity.cat.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
-    "whenMobDies": {
-      "name": "PushEntitiesAway"
-    },
+    "whenMobDies": "PushEntitiesAway",
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
@@ -131,25 +103,19 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "CheckForCloud"
-    },
-    "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "spawningCondition": "Always",
+    "spawningProbability": 30,
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Highlands"
-      }
+      "CUSTOM:Highlands"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

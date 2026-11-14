@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "wet=true": {
+      "model": "alternate_dimension:block/rich_farmland_0"
+    },
+    "wet=false": {
+      "model": "alternate_dimension:block/rich_farmland"
+    }
+  }
+}

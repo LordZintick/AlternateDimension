@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class CandyCaneBlockBlock extends Block {
-	public CandyCaneBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CALCITE).strength(2f));
+	public CandyCaneBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.CALCITE).strength(2f));
 	}
 }

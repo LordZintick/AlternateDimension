@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_fence",
+    "unlockingItems": [
+      "CUSTOM:CandyflossPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:CandyflossPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:CandyflossPlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:CandyflossFence",
+    "name": "candyfloss_fence_recipe",
+    "namespace": "mod"
+  }
+}

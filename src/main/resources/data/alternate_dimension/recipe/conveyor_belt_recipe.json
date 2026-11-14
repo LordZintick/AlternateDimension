@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:cloth",
+    "b": "alternate_dimension:aluminum_gear"
+  },
+  "result": {
+    "id": "alternate_dimension:conveyor_belt",
+    "count": 16
+  }
+}

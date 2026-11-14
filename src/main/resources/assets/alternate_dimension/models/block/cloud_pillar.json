@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/cloud_pillar_side",
     "west": "alternate_dimension:block/cloud_pillar_side",
     "particle": "alternate_dimension:block/cloud_pillar_top"
-  },
-  "render_type": "solid"
+  }
 }

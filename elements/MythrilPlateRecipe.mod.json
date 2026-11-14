@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "compressor_recipe_type",
+    "ingredients": [
+      "CUSTOM:MythrilIngot"
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "CompressorRecipeType",
+    "results": [
+      "CUSTOM:MythrilPlate"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

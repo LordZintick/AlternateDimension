@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:brimwood_log",
+    "alternate_dimension:stripped_brimwood_log",
+    "alternate_dimension:brimwood_wood",
+    "alternate_dimension:stripped_brimwood_wood"
+  ]
+}

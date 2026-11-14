@@ -2,7 +2,13 @@
   "replace": false,
   "values": [
     "alternate_dimension:scorched_pressure_plate",
+    "alternate_dimension:brimwood_pressure_plate",
     "alternate_dimension:redwood_pressure_plate",
-    "alternate_dimension:azure_pressure_plate"
+    "alternate_dimension:azure_pressure_plate",
+    "alternate_dimension:greenwood_pressure_plate",
+    "alternate_dimension:willow_pressure_plate",
+    "alternate_dimension:pine_pressure_plate",
+    "alternate_dimension:solar_pressure_plate",
+    "alternate_dimension:candyfloss_pressure_plate"
   ]
 }

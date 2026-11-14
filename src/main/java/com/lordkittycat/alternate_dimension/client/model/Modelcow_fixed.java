@@ -1,8 +1,8 @@
 package com.lordkittycat.alternate_dimension.client.model;
 
-import net.minecraft.world.entity.Entity;
 import net.minecraft.util.Mth;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -13,16 +13,13 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.EntityModel;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 // Made with Blockbench 5.1.2
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class Modelcow_fixed<T extends Entity> extends EntityModel<T> {
+public class Modelcow_fixed extends EntityModel<LivingEntityRenderState> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("alternate_dimension", "modelcow_fixed"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(Identifier.fromNamespaceAndPath("alternate_dimension", "modelcow_fixed"), "main");
 	public final ModelPart head;
 	public final ModelPart body;
 	public final ModelPart leg1;
@@ -31,6 +28,7 @@ public class Modelcow_fixed<T extends Entity> extends EntityModel<T> {
 	public final ModelPart leg4;
 
 	public Modelcow_fixed(ModelPart root) {
+		super(root);
 		this.head = root.getChild("head");
 		this.body = root.getChild("body");
 		this.leg1 = root.getChild("leg1");
@@ -56,17 +54,13 @@ public class Modelcow_fixed<T extends Entity> extends EntityModel<T> {
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
-	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
-		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		leg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		leg2.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		leg3.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-		leg4.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
-	}
+	public void setupAnim(LivingEntityRenderState state) {
+		float limbSwing = state.walkAnimationPos;
+		float limbSwingAmount = state.walkAnimationSpeed;
+		float ageInTicks = state.ageInTicks;
+		float netHeadYaw = state.yRot;
+		float headPitch = state.xRot;
 
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.head.xRot = headPitch / (180F / (float) Math.PI);
 		this.leg1.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;

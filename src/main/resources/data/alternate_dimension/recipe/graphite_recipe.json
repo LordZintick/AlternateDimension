@@ -1,9 +1,10 @@
 {
-  "type": "alternate_dimension:nuclear_reactor_recipe_type",
+  "type": "alternate_dimension:compressor_recipe_type",
   "ingredients": [
-    {
-      "item": "alternate_dimension:supercompressed_carbon"
-    }
+    "alternate_dimension:titanium_ingot"
+  ],
+  "integers": [
+    8
   ],
   "outputs": [
     {

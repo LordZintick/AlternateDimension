@@ -1,18 +1,19 @@
 package com.lordkittycat.alternate_dimension.procedures;
 
+import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
-
-import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 
 public class SetHomePointProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -20,21 +21,25 @@ public class SetHomePointProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, 1, 1, false);
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, x, y, z, 50, 0, 0, 0, 1);
-		{
-			AlternateDimensionModVariables.PlayerVariables _vars = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES);
-			_vars.spawnX = x;
-			_vars.spawnY = y;
-			_vars.spawnZ = z;
-			_vars.markSyncDirty();
+			_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), (y + 1), (z + 0.5), 50, 0, 0, 0, 1);
+		if (world instanceof ServerLevel _origLevel) {
+			LevelAccessor _switchworld3 = _origLevel.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth")));
+			if (_switchworld3 != null) {
+				worldSwitch3(_switchworld3, x, y, z, entity);
+			}
 		}
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal("Home Point Set!"), true);
+		if (entity instanceof ServerPlayer _player)
+			_player.sendSystemMessage(Component.literal("Home Point Set!"), true);
+	}
+
+	private static void worldSwitch3(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity instanceof ServerPlayer _serverPlayer)
+			_serverPlayer.setRespawnPosition(new ServerPlayer.RespawnConfig(LevelData.RespawnData.of(_serverPlayer.level().dimension(), BlockPos.containing(x + 0.5, y + 1, z + 0.5), _serverPlayer.getYRot(), _serverPlayer.getXRot()), true), false);
 	}
 }

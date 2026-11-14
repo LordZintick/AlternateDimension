@@ -9,8 +9,8 @@ import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 
 public class ScorchedWallHangingSignBlock extends WallHangingSignBlock {
-	public ScorchedWallHangingSignBlock() {
-		super(AlternateDimensionModWoodTypes.SCORCHED_HANGING_SIGN_WOOD_TYPE,
-				BlockBehaviour.Properties.of().sound(SoundType.HANGING_SIGN).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn().dropsLike(AlternateDimensionModBlocks.SCORCHED_HANGING_SIGN.get()));
+	public ScorchedWallHangingSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.SCORCHED_HANGING_SIGN_WOOD_TYPE, properties.sound(SoundType.HANGING_SIGN).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn()
+				.overrideLootTable(AlternateDimensionModBlocks.SCORCHED_HANGING_SIGN.get().getLootTable()).overrideDescription(AlternateDimensionModBlocks.SCORCHED_HANGING_SIGN.get().getDescriptionId()));
 	}
 }

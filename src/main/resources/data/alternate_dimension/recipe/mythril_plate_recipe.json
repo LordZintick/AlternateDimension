@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:compressor_recipe_type",
+  "ingredients": [
+    "alternate_dimension:mythril_ingot"
+  ],
+  "integers": [
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:mythril_plate",
+      "count": 1
+    }
+  ]
+}

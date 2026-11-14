@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      }
+      "TAG:mod:altdim_planks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:mod:metal_nuggets"
-      },
-      {
-        "value": "TAG:mod:metal_nuggets"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "TAG:mod:metal_nuggets",
+      "TAG:mod:metal_nuggets",
+      "",
+      "TAG:mod:altdim_planks",
+      "TAG:mod:altdim_planks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Spikes"
-    },
+    "recipeReturnStack": "CUSTOM:Spikes",
     "name": "spikes_recipe",
     "namespace": "mod"
   }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/pine_trapdoor",
+    "particle": "alternate_dimension:block/pine_trapdoor"
+  }
+}

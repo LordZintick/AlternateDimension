@@ -2,7 +2,7 @@
   "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "target": {
-      "Name": "minecraft:stone"
+      "Name": "alternate_dimension:rich_dirt"
     },
     "state": {
       "Name": "alternate_dimension:veridium"

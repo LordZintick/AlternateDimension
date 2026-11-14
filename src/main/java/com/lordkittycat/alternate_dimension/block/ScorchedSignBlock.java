@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.SoundType;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModWoodTypes;
 
 public class ScorchedSignBlock extends StandingSignBlock {
-	public ScorchedSignBlock() {
-		super(AlternateDimensionModWoodTypes.SCORCHED_SIGN_WOOD_TYPE, BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).noCollission().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+	public ScorchedSignBlock(BlockBehaviour.Properties properties) {
+		super(AlternateDimensionModWoodTypes.SCORCHED_SIGN_WOOD_TYPE, properties.sound(SoundType.WOOD).strength(1f).noCollision().ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 }

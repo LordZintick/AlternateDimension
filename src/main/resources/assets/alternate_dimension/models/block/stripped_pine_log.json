@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/stripped_pine_log_top",
+    "up": "alternate_dimension:block/stripped_pine_log_top",
+    "north": "alternate_dimension:block/stripped_pine_log",
+    "east": "alternate_dimension:block/stripped_pine_log",
+    "south": "alternate_dimension:block/stripped_pine_log",
+    "west": "alternate_dimension:block/stripped_pine_log",
+    "particle": "alternate_dimension:block/stripped_pine_log"
+  }
+}

@@ -1,58 +1,24 @@
 package com.lordkittycat.alternate_dimension.item;
 
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.tags.TagKey;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import com.lordkittycat.alternate_dimension.procedures.PlayDrillSoundProcedure;
 
-public class WoodenDrillItem extends PickaxeItem {
-	private static final Tier TOOL_TIER = new Tier() {
-		@Override
-		public int getUses() {
-			return 59;
-		}
+public class WoodenDrillItem extends Item {
+	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 4.5f, 0, 5, TagKey.create(Registries.ITEM, Identifier.parse("alternate_dimension:wooden_drill_repair_items")));
 
-		@Override
-		public float getSpeed() {
-			return 4.5f;
-		}
-
-		@Override
-		public float getAttackDamageBonus() {
-			return 0;
-		}
-
-		@Override
-		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_WOODEN_TOOL;
-		}
-
-		@Override
-		public int getEnchantmentValue() {
-			return 5;
-		}
-
-		@Override
-		public Ingredient getRepairIngredient() {
-			return Ingredient.of(ItemTags.create(ResourceLocation.parse("minecraft:planks")));
-		}
-	};
-
-	public WoodenDrillItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 1f, -2.4f)));
+	public WoodenDrillItem(Item.Properties properties) {
+		super(properties.pickaxe(TOOL_MATERIAL, 1f, -2.4f));
 	}
 
 	@Override

@@ -5,9 +5,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:cookie_block"
-    }
+    "a": "alternate_dimension:cookie_block"
   },
   "result": {
     "id": "minecraft:cookie",

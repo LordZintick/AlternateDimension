@@ -5,9 +5,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:veridium"
-    }
+    "a": "alternate_dimension:veridium"
   },
   "result": {
     "id": "alternate_dimension:veridium_slab",

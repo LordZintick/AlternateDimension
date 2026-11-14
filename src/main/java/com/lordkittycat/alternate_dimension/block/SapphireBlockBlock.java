@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class SapphireBlockBlock extends Block {
-	public SapphireBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 5f).requiresCorrectToolForDrops());
+	public SapphireBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.AMETHYST).strength(1.5f, 5f).requiresCorrectToolForDrops());
 	}
 }

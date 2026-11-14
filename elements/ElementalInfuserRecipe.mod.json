@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "TAG:mod:crafting_tables",
+      "CUSTOM:ElementiumIngot"
+    ],
+    "integers": [
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:ElementalInscriber"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

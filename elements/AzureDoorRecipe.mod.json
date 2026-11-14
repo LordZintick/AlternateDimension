@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "wooden_door",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AzurePlanks"
-      }
+      "CUSTOM:AzurePlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "REDSTONE",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": "CUSTOM:AzurePlanks"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:AzurePlanks",
+      "CUSTOM:AzurePlanks",
+      "",
+      "CUSTOM:AzurePlanks",
+      "CUSTOM:AzurePlanks",
+      "",
+      "CUSTOM:AzurePlanks",
+      "CUSTOM:AzurePlanks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AzureDoor"
-    },
+    "recipeReturnStack": "CUSTOM:AzureDoor",
     "name": "azure_door_recipe",
     "namespace": "mod"
   }

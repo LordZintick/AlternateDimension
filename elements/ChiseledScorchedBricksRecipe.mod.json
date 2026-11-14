@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedBricks"
-      }
+      "CUSTOM:ScorchedBricks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedBricks"
-      },
-      {
-        "value": "CUSTOM:ScorchedBricks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedBricks"
-      },
-      {
-        "value": "CUSTOM:ScorchedBricks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ScorchedBricks",
+      "CUSTOM:ScorchedBricks",
+      "",
+      "CUSTOM:ScorchedBricks",
+      "CUSTOM:ScorchedBricks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ChiseledScorchedBricks"
-    },
+    "recipeReturnStack": "CUSTOM:ChiseledScorchedBricks",
     "name": "chiseled_scorched_bricks_recipe",
     "namespace": "mod"
   }

@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:icy_shards"
-    }
+    "a": "alternate_dimension:icy_shards"
   },
   "result": {
     "id": "alternate_dimension:permafrost_block",

@@ -5,9 +5,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:plant_stem"
-    }
+    "a": "alternate_dimension:plant_stem"
   },
   "result": {
     "id": "alternate_dimension:plant_matter",

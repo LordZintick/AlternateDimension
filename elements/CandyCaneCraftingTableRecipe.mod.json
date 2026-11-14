@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:CandyCane"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:CandyCaneBlock",
+      "CUSTOM:CandyCaneBlock",
+      "",
+      "CUSTOM:CandyCaneBlock",
+      "CUSTOM:CandyCaneBlock",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:CandyCaneCraftingTable",
+    "name": "candy_cane_crafting_table_recipe",
+    "namespace": "mod"
+  }
+}

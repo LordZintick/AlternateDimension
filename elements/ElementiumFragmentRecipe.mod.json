@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:OmegaEssence",
+      "CUSTOM:MythrilIngot"
+    ],
+    "integers": [
+      8,
+      1
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:ElementiumFragment"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

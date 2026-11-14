@@ -1,0 +1,33 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Exporter",
+      "CUSTOM:Importer",
+      "CUSTOM:AluminumIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:Exporter",
+      "CUSTOM:MachineCasing",
+      "CUSTOM:Importer",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:AluminumNugget"
+    ],
+    "recipeReturnStack": "CUSTOM:IOCasing",
+    "name": "io_casing_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:MathWorkbook"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:MathWorkbook"
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:Variable"
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": "CUSTOM:MathWorkbook"
-      },
-      {
-        "value": "Items.DYE#16"
-      }
+      "CUSTOM:MathEssence",
+      "CUSTOM:MathWorkbook",
+      "CUSTOM:MathEssence",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:Variable",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:MathEssence",
+      "CUSTOM:MathWorkbook",
+      "CUSTOM:MathEssence"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FunctionBlaster"
-    },
+    "recipeReturnStack": "CUSTOM:FunctionBlaster",
     "name": "function_blaster_recipe",
     "namespace": "mod"
   }

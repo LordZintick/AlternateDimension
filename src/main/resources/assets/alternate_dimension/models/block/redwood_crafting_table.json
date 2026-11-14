@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/redwood_planks",
+    "up": "alternate_dimension:block/redwood_crafting_table_top",
+    "north": "alternate_dimension:block/redwood_crafting_table_side",
+    "east": "alternate_dimension:block/redwood_crafting_table_side",
+    "south": "alternate_dimension:block/redwood_crafting_table_side",
+    "west": "alternate_dimension:block/redwood_crafting_table_side",
+    "particle": "alternate_dimension:block/redwood_planks"
+  }
+}

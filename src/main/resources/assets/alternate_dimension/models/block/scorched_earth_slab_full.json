@@ -5,6 +5,5 @@
     "bottom": "minecraft:block/sandstone_bottom",
     "top": "minecraft:block/sandstone_bottom",
     "side": "minecraft:block/sandstone_bottom"
-  },
-  "render_type": "solid"
+  }
 }

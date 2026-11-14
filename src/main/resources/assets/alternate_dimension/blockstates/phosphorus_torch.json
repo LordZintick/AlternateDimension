@@ -1,7 +1,34 @@
 {
   "variants": {
-    "": {
+    "facing=north,wall=true": {
+      "model": "alternate_dimension:block/phosphorus_torch_0"
+    },
+    "facing=north,wall=false": {
       "model": "alternate_dimension:block/phosphorus_torch"
+    },
+    "facing=east,wall=true": {
+      "model": "alternate_dimension:block/phosphorus_torch_0",
+      "y": 90
+    },
+    "facing=east,wall=false": {
+      "model": "alternate_dimension:block/phosphorus_torch",
+      "y": 90
+    },
+    "facing=south,wall=true": {
+      "model": "alternate_dimension:block/phosphorus_torch_0",
+      "y": 180
+    },
+    "facing=south,wall=false": {
+      "model": "alternate_dimension:block/phosphorus_torch",
+      "y": 180
+    },
+    "facing=west,wall=true": {
+      "model": "alternate_dimension:block/phosphorus_torch_0",
+      "y": 270
+    },
+    "facing=west,wall=false": {
+      "model": "alternate_dimension:block/phosphorus_torch",
+      "y": 270
     }
   }
 }

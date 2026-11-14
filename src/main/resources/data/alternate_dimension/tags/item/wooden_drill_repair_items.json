@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#alternate_dimension:altdim_planks",
+      "required": false
+    }
+  ]
+}

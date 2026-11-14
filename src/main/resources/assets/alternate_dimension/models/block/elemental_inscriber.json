@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/elemental_inscriber_top",
+    "up": "alternate_dimension:block/elemental_inscriber_top",
+    "north": "alternate_dimension:block/elemental_inscriber_front",
+    "east": "alternate_dimension:block/elemental_inscriber_left",
+    "south": "alternate_dimension:block/elemental_inscriber_back",
+    "west": "alternate_dimension:block/elemental_inscriber_right",
+    "particle": "alternate_dimension:block/elemental_inscriber_top"
+  }
+}

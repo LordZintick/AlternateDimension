@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:frosting",
+    "alternate_dimension:enchanted_grass_block",
+    "alternate_dimension:candied_grass_block",
+    "alternate_dimension:lush_grass_block",
+    "alternate_dimension:frosted_grass_block",
     "alternate_dimension:glowing_mycelium"
   ]
 }

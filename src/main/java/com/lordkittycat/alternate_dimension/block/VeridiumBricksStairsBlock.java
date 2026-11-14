@@ -5,8 +5,8 @@ import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.Blocks;
 
 public class VeridiumBricksStairsBlock extends StairBlock {
-	public VeridiumBricksStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().strength(1.5f, 4f).requiresCorrectToolForDrops());
+	public VeridiumBricksStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.strength(1.5f, 4f).requiresCorrectToolForDrops());
 	}
 
 	@Override

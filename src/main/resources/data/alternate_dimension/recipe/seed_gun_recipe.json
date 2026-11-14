@@ -8,15 +8,9 @@
     " cb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:wheat_seeds"
-    },
-    "b": {
-      "tag": "minecraft:logs"
-    },
-    "c": {
-      "tag": "minecraft:planks"
-    }
+    "a": "#alternate_dimension:seeds",
+    "b": "#alternate_dimension:altdim_logs",
+    "c": "#alternate_dimension:altdim_planks"
   },
   "result": {
     "id": "alternate_dimension:seed_gun",

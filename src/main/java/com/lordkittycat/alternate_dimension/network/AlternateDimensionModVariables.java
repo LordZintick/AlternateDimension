@@ -7,25 +7,33 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.common.util.ValueIOSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.TagValueOutput;
+import net.minecraft.world.level.storage.TagValueInput;
+import net.minecraft.world.level.saveddata.SavedDataType;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.ProblemReporter;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.nbt.NbtOps;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.HolderLookup;
 
@@ -50,7 +58,7 @@ public class AlternateDimensionModVariables {
 			for (Entity entityiterator : player.level().players())
 				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
 					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayersInDimension(player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 		}
 	}
 
@@ -60,7 +68,7 @@ public class AlternateDimensionModVariables {
 			for (Entity entityiterator : player.level().players())
 				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
 					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayersInDimension(player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 		}
 	}
 
@@ -70,14 +78,14 @@ public class AlternateDimensionModVariables {
 			for (Entity entityiterator : player.level().players())
 				if (entityiterator != player && entityiterator instanceof ServerPlayer playeriterator)
 					PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(playeriterator.getData(PLAYER_VARIABLES), playeriterator.getId()));
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayersInDimension(player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 		}
 	}
 
 	@SubscribeEvent
 	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
 		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayersInDimension(player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
@@ -86,33 +94,14 @@ public class AlternateDimensionModVariables {
 	public static void clonePlayer(PlayerEvent.Clone event) {
 		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 		PlayerVariables clone = new PlayerVariables();
-		clone.selectedBiome = original.selectedBiome;
-		clone.spawnX = original.spawnX;
-		clone.spawnZ = original.spawnZ;
-		clone.spawnY = original.spawnY;
-		clone.exitX = original.exitX;
-		clone.exitY = original.exitY;
-		clone.exitZ = original.exitZ;
-		clone.canEnterPortal = original.canEnterPortal;
 		clone.viking_reputation = original.viking_reputation;
 		clone.roman_reputation = original.roman_reputation;
 		clone.chosenPlanet = original.chosenPlanet;
 		clone.currentPlanet = original.currentPlanet;
-		clone.unlockedSpells = original.unlockedSpells;
-		clone.unlockedSpellNumber = original.unlockedSpellNumber;
 		clone.vanilla = original.vanilla;
 		clone.maxMana = original.maxMana;
 		if (!event.isWasDeath()) {
-			clone.charge = original.charge;
-			clone.prevPosX = original.prevPosX;
-			clone.prevPosZ = original.prevPosZ;
-			clone.jetpackEngine = original.jetpackEngine;
-			clone.jetpackHover = original.jetpackHover;
-			clone.jetpackOn = original.jetpackOn;
-			clone.burnTime = original.burnTime;
-			clone.selectedSpell = original.selectedSpell;
 			clone.mana = original.mana;
-			clone.selectedSpellName = original.selectedSpellName;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -155,23 +144,29 @@ public class AlternateDimensionModVariables {
 	}
 
 	public static class WorldVariables extends SavedData {
-		public static final String DATA_NAME = "alternate_dimension_worldvars";
+		public static final SavedDataType<WorldVariables> TYPE = new SavedDataType<>(Identifier.parse("alternate_dimension:worldvars"), level -> new WorldVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
+			WorldVariables instance = new WorldVariables();
+			instance.read(tag, level.registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
-		public double meteorCooldown = 0;
-
-		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			WorldVariables data = new WorldVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
+		public double meteorCooldown = 24000.0;
+		public Vec3 lastMeteorPos = Vec3.ZERO;
+		public String worldEventType = "\"\"";
+		public double worldEventTime = 0;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			meteorCooldown = nbt.getDouble("meteorCooldown");
+			meteorCooldown = nbt.getDoubleOr("meteorCooldown", 0);
+			lastMeteorPos = Vec3.CODEC.parse(NbtOps.INSTANCE, nbt.get("lastMeteorPos")).result().orElse(Vec3.ZERO);
+			worldEventType = nbt.getStringOr("worldEventType", "");
+			worldEventTime = nbt.getDoubleOr("worldEventTime", 0);
 		}
 
-		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("meteorCooldown", meteorCooldown);
+			nbt.put("lastMeteorPos", Vec3.CODEC.encodeStart(NbtOps.INSTANCE, lastMeteorPos).result().orElseGet(CompoundTag::new));
+			nbt.putString("worldEventType", worldEventType);
+			nbt.putDouble("worldEventTime", worldEventTime);
 			return nbt;
 		}
 
@@ -184,7 +179,7 @@ public class AlternateDimensionModVariables {
 
 		public static WorldVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
+				return level.getDataStorage().computeIfAbsent(WorldVariables.TYPE);
 			} else {
 				return clientSide;
 			}
@@ -192,36 +187,30 @@ public class AlternateDimensionModVariables {
 	}
 
 	public static class MapVariables extends SavedData {
-		public static final String DATA_NAME = "alternate_dimension_mapvars";
+		public static final SavedDataType<MapVariables> TYPE = new SavedDataType<>(Identifier.parse("alternate_dimension:mapvars"), level -> new MapVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
+			MapVariables instance = new MapVariables();
+			instance.read(tag, level.registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
-		public boolean compressedBarkMineable = false;
-
-		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
-			MapVariables data = new MapVariables();
-			data.read(tag, lookupProvider);
-			return data;
-		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			compressedBarkMineable = nbt.getBoolean("compressedBarkMineable");
 		}
 
-		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putBoolean("compressedBarkMineable", compressedBarkMineable);
 			return nbt;
 		}
 
 		public void markSyncDirty() {
 			this.setDirty();
-			_syncDirty = true;
+			this._syncDirty = true;
 		}
 
 		static MapVariables clientSide = new MapVariables();
 
 		public static MapVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
+			if (world instanceof ServerLevelAccessor serverLevelAccessor) {
+				return serverLevelAccessor.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(MapVariables.TYPE);
 			} else {
 				return clientSide;
 			}
@@ -229,11 +218,13 @@ public class AlternateDimensionModVariables {
 	}
 
 	public record SavedDataSyncMessage(int dataType, SavedData data) implements CustomPacketPayload {
-		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "saved_data_sync"));
+		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "saved_data_sync"));
 		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
 			buffer.writeInt(message.dataType);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag(), buffer.registryAccess()));
+			if (message.data instanceof MapVariables mapVariables)
+				buffer.writeNbt(mapVariables.save(new CompoundTag(), buffer.registryAccess()));
+			else if (message.data instanceof WorldVariables worldVariables)
+				buffer.writeNbt(worldVariables.save(new CompoundTag(), buffer.registryAccess()));
 		}, (RegistryFriendlyByteBuf buffer) -> {
 			int dataType = buffer.readInt();
 			CompoundTag nbt = buffer.readNbt();
@@ -257,9 +248,9 @@ public class AlternateDimensionModVariables {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
 				context.enqueueWork(() -> {
 					if (message.dataType == 0)
-						MapVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+						MapVariables.clientSide.read(((MapVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
 					else
-						WorldVariables.clientSide.read(message.data.save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+						WorldVariables.clientSide.read(((WorldVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
@@ -268,95 +259,36 @@ public class AlternateDimensionModVariables {
 		}
 	}
 
-	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+	public static class PlayerVariables implements ValueIOSerializable {
 		boolean _syncDirty = false;
-		public double charge = 0;
-		public double prevPosX = 0;
-		public double prevPosZ = 0;
-		public boolean jetpackEngine = false;
-		public boolean jetpackHover = false;
-		public boolean jetpackOn = false;
-		public String selectedBiome = "\"\"";
-		public double burnTime = 0;
-		public double spawnX = 0;
-		public double spawnZ = 0;
-		public double spawnY = 128.0;
-		public double exitX = 0;
-		public double exitY = 128.0;
-		public double exitZ = 0;
-		public boolean canEnterPortal = true;
-		public double viking_reputation = 0;
-		public double roman_reputation = 0;
+		public double viking_reputation = 0.0;
+		public double roman_reputation = 0.0;
 		public String chosenPlanet = "\"\"";
 		public String currentPlanet = "\"\"";
-		public String unlockedSpells = "\"\"";
-		public double selectedSpell = 0;
-		public double unlockedSpellNumber = 0;
 		public double mana = 100.0;
-		public String selectedSpellName = "\"\"";
 		public boolean vanilla = false;
-		public double maxMana = 10.0;
+		public double maxMana = 0.0;
 
 		@Override
-		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
-			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("charge", charge);
-			nbt.putDouble("prevPosX", prevPosX);
-			nbt.putDouble("prevPosZ", prevPosZ);
-			nbt.putBoolean("jetpackEngine", jetpackEngine);
-			nbt.putBoolean("jetpackHover", jetpackHover);
-			nbt.putBoolean("jetpackOn", jetpackOn);
-			nbt.putString("selectedBiome", selectedBiome);
-			nbt.putDouble("burnTime", burnTime);
-			nbt.putDouble("spawnX", spawnX);
-			nbt.putDouble("spawnZ", spawnZ);
-			nbt.putDouble("spawnY", spawnY);
-			nbt.putDouble("exitX", exitX);
-			nbt.putDouble("exitY", exitY);
-			nbt.putDouble("exitZ", exitZ);
-			nbt.putBoolean("canEnterPortal", canEnterPortal);
-			nbt.putDouble("viking_reputation", viking_reputation);
-			nbt.putDouble("roman_reputation", roman_reputation);
-			nbt.putString("chosenPlanet", chosenPlanet);
-			nbt.putString("currentPlanet", currentPlanet);
-			nbt.putString("unlockedSpells", unlockedSpells);
-			nbt.putDouble("selectedSpell", selectedSpell);
-			nbt.putDouble("unlockedSpellNumber", unlockedSpellNumber);
-			nbt.putDouble("mana", mana);
-			nbt.putString("selectedSpellName", selectedSpellName);
-			nbt.putBoolean("vanilla", vanilla);
-			nbt.putDouble("maxMana", maxMana);
-			return nbt;
+		public void serialize(ValueOutput output) {
+			output.putDouble("viking_reputation", viking_reputation);
+			output.putDouble("roman_reputation", roman_reputation);
+			output.putString("chosenPlanet", chosenPlanet);
+			output.putString("currentPlanet", currentPlanet);
+			output.putDouble("mana", mana);
+			output.putBoolean("vanilla", vanilla);
+			output.putDouble("maxMana", maxMana);
 		}
 
 		@Override
-		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-			charge = nbt.getDouble("charge");
-			prevPosX = nbt.getDouble("prevPosX");
-			prevPosZ = nbt.getDouble("prevPosZ");
-			jetpackEngine = nbt.getBoolean("jetpackEngine");
-			jetpackHover = nbt.getBoolean("jetpackHover");
-			jetpackOn = nbt.getBoolean("jetpackOn");
-			selectedBiome = nbt.getString("selectedBiome");
-			burnTime = nbt.getDouble("burnTime");
-			spawnX = nbt.getDouble("spawnX");
-			spawnZ = nbt.getDouble("spawnZ");
-			spawnY = nbt.getDouble("spawnY");
-			exitX = nbt.getDouble("exitX");
-			exitY = nbt.getDouble("exitY");
-			exitZ = nbt.getDouble("exitZ");
-			canEnterPortal = nbt.getBoolean("canEnterPortal");
-			viking_reputation = nbt.getDouble("viking_reputation");
-			roman_reputation = nbt.getDouble("roman_reputation");
-			chosenPlanet = nbt.getString("chosenPlanet");
-			currentPlanet = nbt.getString("currentPlanet");
-			unlockedSpells = nbt.getString("unlockedSpells");
-			selectedSpell = nbt.getDouble("selectedSpell");
-			unlockedSpellNumber = nbt.getDouble("unlockedSpellNumber");
-			mana = nbt.getDouble("mana");
-			selectedSpellName = nbt.getString("selectedSpellName");
-			vanilla = nbt.getBoolean("vanilla");
-			maxMana = nbt.getDouble("maxMana");
+		public void deserialize(ValueInput input) {
+			viking_reputation = input.getDoubleOr("viking_reputation", 0);
+			roman_reputation = input.getDoubleOr("roman_reputation", 0);
+			chosenPlanet = input.getStringOr("chosenPlanet", "");
+			currentPlanet = input.getStringOr("currentPlanet", "");
+			mana = input.getDoubleOr("mana", 0);
+			vanilla = input.getBooleanOr("vanilla", false);
+			maxMana = input.getDoubleOr("maxMana", 0);
 		}
 
 		public void markSyncDirty() {
@@ -365,13 +297,15 @@ public class AlternateDimensionModVariables {
 	}
 
 	public record PlayerVariablesSyncMessage(PlayerVariables data, int player) implements CustomPacketPayload {
-		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(AlternateDimensionMod.MODID, "player_variables_sync"));
+		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "player_variables_sync"));
 		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
+			TagValueOutput output = TagValueOutput.createWithContext(ProblemReporter.DISCARDING, buffer.registryAccess());
+			message.data.serialize(output);
 			buffer.writeInt(message.player());
-			buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess()));
+			buffer.writeNbt(output.buildResult());
 		}, (RegistryFriendlyByteBuf buffer) -> {
 			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables(), buffer.readInt());
-			message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+			message.data.deserialize(TagValueInput.create(ProblemReporter.DISCARDING, buffer.registryAccess(), buffer.readNbt()));
 			return message;
 		});
 
@@ -386,7 +320,9 @@ public class AlternateDimensionModVariables {
 					Entity player = context.player().level().getEntity(message.player);
 					if (player == null)
 						return;
-					player.getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()));
+					TagValueOutput output = TagValueOutput.createWithContext(ProblemReporter.DISCARDING, context.player().registryAccess());
+					message.data.serialize(output);
+					player.getData(PLAYER_VARIABLES).deserialize(TagValueInput.create(ProblemReporter.DISCARDING, context.player().registryAccess(), output.buildResult()));
 				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;

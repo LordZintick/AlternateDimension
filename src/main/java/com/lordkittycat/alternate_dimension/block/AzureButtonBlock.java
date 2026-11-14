@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.ButtonBlock;
 
 public class AzureButtonBlock extends ButtonBlock {
-	public AzureButtonBlock() {
-		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(0.5f).noCollission().pushReaction(PushReaction.DESTROY));
+	public AzureButtonBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, 30, properties.sound(SoundType.WOOD).strength(0.5f).noCollision().pushReaction(PushReaction.DESTROY));
 	}
 }

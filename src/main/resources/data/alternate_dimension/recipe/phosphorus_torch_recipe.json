@@ -6,12 +6,8 @@
     "b"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:phosphorus"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "alternate_dimension:phosphorus",
+    "b": "alternate_dimension:tool_rod"
   },
   "result": {
     "id": "alternate_dimension:phosphorus_torch",

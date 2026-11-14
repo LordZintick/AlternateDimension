@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/server_station",
     "particle": "alternate_dimension:block/server_station"
-  },
-  "render_type": "solid"
+  }
 }

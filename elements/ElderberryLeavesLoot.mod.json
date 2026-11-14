@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Elderberry"
-            },
+            "item": "CUSTOM:Elderberry",
             "weight": 1,
             "minCount": 2,
             "maxCount": 3,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.SAPLING#0"
-            },
+            "item": "Blocks.SAPLING#0",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -50,9 +46,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,

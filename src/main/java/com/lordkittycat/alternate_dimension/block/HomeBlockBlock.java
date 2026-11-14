@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -16,8 +14,8 @@ import net.minecraft.core.BlockPos;
 import com.lordkittycat.alternate_dimension.procedures.SetHomePointProcedure;
 
 public class HomeBlockBlock extends Block {
-	public HomeBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(5f, 36000000f).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public HomeBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOD).strength(3f, 36000000f).lightLevel(blockstate -> 15).postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

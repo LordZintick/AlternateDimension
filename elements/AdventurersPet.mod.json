@@ -1,0 +1,79 @@
+{
+  "_fv": 89,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "adventurers_pet",
+    "customModelName": "Normal",
+    "guiTexture": "",
+    "customProperties": {},
+    "states": [],
+    "animations": [],
+    "name": "Adventurer's Pet",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "CUSTOM:AlternateDimensionEquipment"
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": "",
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 4.0,
+    "attackSpeed": 1.2,
+    "specialInformation": {
+      "fixedValue": [
+        "Your personal little adventuring friend!",
+        "Increses movement speed by 50% and step height by 1 when held."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 99,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": "CUSTOM:PlusProjectile",
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": "",
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": false,
+    "musicDiscMusic": "",
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": "MOVEMENT_SPEED",
+        "amount": 0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": "STEP_HEIGHT",
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

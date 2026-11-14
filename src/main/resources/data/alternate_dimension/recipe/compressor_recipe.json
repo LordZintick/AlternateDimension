@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_ingot",
+    "b": "alternate_dimension:importer",
+    "c": "alternate_dimension:drivetrain_belt",
+    "d": "alternate_dimension:machine_casing",
+    "e": "alternate_dimension:exporter"
+  },
+  "result": {
+    "id": "alternate_dimension:compressor",
+    "count": 1
+  }
+}

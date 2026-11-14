@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "alternate_dimension:block/redwood_leaves",
+    "particle": "alternate_dimension:block/redwood_leaves"
+  }
+}

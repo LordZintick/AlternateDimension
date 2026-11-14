@@ -5,21 +5,21 @@
   "projectBrowserState": {
     "expandedPaths": [
       "[, AlternateDimension]",
-      "[, AlternateDimension, Source (Gradle)]",
-      "[, AlternateDimension, Source (Gradle), D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com]",
-      "[, AlternateDimension, Source (Gradle), D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat]",
-      "[, AlternateDimension, Source (Gradle), D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat\\alternate_dimension]",
-      "[, AlternateDimension, Source (Gradle), D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat\\alternate_dimension, D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\src\\main\\java\\com\\lordkittycat\\alternate_dimension\\procedures]"
+      "[, AlternateDimension, Source (Gradle)]"
     ]
   },
   "leftDockState": {
     "dockSizes": {
-      "project_browser": 280
+      "project_browser": 280,
+      "local_history": 280
     }
+  },
+  "rightDockState": {
+    "dockSizes": {}
   },
   "bottomDockState": {
     "dockSizes": {
-      "console": 127,
+      "console": 226,
       "code_viewer": 300,
       "debugger": 300
     }

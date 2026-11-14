@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "wooden_sign",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      }
+      "CUSTOM:RedwoodPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": "CUSTOM:RedwoodPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "CUSTOM:RedwoodPlanks",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedwoodSign"
-    },
+    "recipeReturnStack": "CUSTOM:RedwoodSign",
     "name": "redwood_sign_recipe",
     "namespace": "mod"
   }

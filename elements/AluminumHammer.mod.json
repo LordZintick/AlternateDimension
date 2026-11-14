@@ -1,0 +1,46 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "aluminum_hammer",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Aluminum Hammer",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "CUSTOM:AlternateDimensionEquipment"
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 0.3,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      "CUSTOM:AluminumIngot"
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "default",
+        "attribute": "ATTACK_KNOCKBACK",
+        "amount": 0.35,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "onEntityHitWith": "PlayAnvilHitSound"
+  }
+}

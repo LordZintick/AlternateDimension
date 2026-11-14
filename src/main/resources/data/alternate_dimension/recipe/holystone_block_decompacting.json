@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:holystone_block"
+  ],
+  "result": {
+    "id": "alternate_dimension:holystone_gem",
+    "count": 9
+  }
+}

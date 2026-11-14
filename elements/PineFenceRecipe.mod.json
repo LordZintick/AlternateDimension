@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_fence",
+    "unlockingItems": [
+      "CUSTOM:PinePlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:PinePlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:PinePlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:PineFence",
+    "name": "pine_fence_recipe",
+    "namespace": "mod"
+  }
+}

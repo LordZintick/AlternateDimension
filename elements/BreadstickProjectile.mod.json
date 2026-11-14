@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:Breadstick"
-    },
+    "projectileItem": "CUSTOM:Breadstick",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
+    "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
     "disableDiscarding": false,
-    "power": 1.0,
-    "damage": 6.0,
-    "knockback": 1,
+    "power": 0.5,
+    "damage": 1.0,
+    "knockback": 0,
     "entityModel": "Default",
     "customModelTexture": "",
     "modelWidth": 0.5,

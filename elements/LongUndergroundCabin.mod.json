@@ -1,22 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "underground_house_long",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
-    "spacing": 10,
-    "separation": 5,
+    "spacing": 4,
+    "separation": 2,
     "restrictionBiomes": [
-      {
-        "value": "#mod:is_familiar_realm"
-      }
+      "#mod:is_familiar_realm"
     ],
-    "terrainAdaptation": "bury",
+    "terrainAdaptation": "none",
     "generationStep": "UNDERGROUND_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "useStartHeight": true,

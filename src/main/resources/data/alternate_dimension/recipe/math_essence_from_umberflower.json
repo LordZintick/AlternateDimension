@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:umberflower",
+    "alternate_dimension:umberflower"
+  ],
+  "result": {
+    "id": "alternate_dimension:math_essence",
+    "count": 1
+  }
+}

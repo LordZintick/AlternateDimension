@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "CUSTOM:AluminumIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:AluminumIngot",
+      "",
+      "CUSTOM:AluminumIngot",
+      "",
+      "CUSTOM:AluminumIngot",
+      "",
+      "CUSTOM:AluminumIngot",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AluminumGear"
-    },
+    "recipeReturnStack": "CUSTOM:AluminumGear",
     "name": "aluminum_gear_recipe",
     "namespace": "mod"
   }

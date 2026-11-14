@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "mythril_ingot",
+    "unlockingItems": [
+      "CUSTOM:MythrilShards"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": "CUSTOM:FormedMythrilShards",
+    "smeltingReturnStack": "CUSTOM:FiredMythrilIngot",
+    "name": "fired_mythril_ingot_recipe",
+    "namespace": "mod"
+  }
+}

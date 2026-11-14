@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:Salt"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Salt"
-      },
-      {
-        "value": "CUSTOM:Salt"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Salt"
-      },
-      {
-        "value": "CUSTOM:Salt"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:Salt",
+      "CUSTOM:Salt",
+      "",
+      "CUSTOM:Salt",
+      "CUSTOM:Salt",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SaltBlock"
-    },
+    "recipeReturnStack": "CUSTOM:SaltBlock",
     "name": "salt_block_from_salt",
     "namespace": "mod"
   }

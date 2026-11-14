@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alternate_dimension:block/pine_slab"
+    },
+    "type=top": {
+      "model": "alternate_dimension:block/pine_slab_top"
+    },
+    "type=double": {
+      "model": "alternate_dimension:block/pine_slab_full"
+    }
+  }
+}

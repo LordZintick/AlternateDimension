@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "alternate_dimension:block/pure_bricks",
+    "particle": "alternate_dimension:block/pure_bricks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "alternate_dimension:block/green_mushroom",
+    "particle": "alternate_dimension:block/green_mushroom"
+  }
+}

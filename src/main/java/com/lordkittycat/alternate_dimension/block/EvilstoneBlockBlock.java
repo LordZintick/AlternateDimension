@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class EvilstoneBlockBlock extends Block {
-	public EvilstoneBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f, 10f).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public EvilstoneBlockBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.METAL).strength(4f, 10f).requiresCorrectToolForDrops().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true));
 	}
 }

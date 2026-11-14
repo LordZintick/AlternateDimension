@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/pear_growth",
     "particle": "alternate_dimension:block/pear_growth"
-  },
-  "render_type": "cutout"
+  }
 }

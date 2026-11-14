@@ -3,9 +3,7 @@
   "category": "blocks",
   "experience": 1,
   "cookingtime": 100,
-  "ingredient": {
-    "item": "alternate_dimension:shroomium_ore"
-  },
+  "ingredient": "alternate_dimension:shroomium_ore",
   "result": {
     "id": "alternate_dimension:shroomium_chunk"
   }

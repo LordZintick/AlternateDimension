@@ -1,10 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "command",
   "definition": {
     "commandName": "meteor",
     "type": "STANDARD",
     "permissionLevel": "2",
-    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\">SpawnMeteor</field></block></next></block></xml>"
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">spawn</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">x</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">z</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SpawnMeteorAt</field></block></statement></block></statement><next><block type=\"call_procedure\"><field name=\"procedure\">SpawnMeteor</field></block></next></block></statement><next><block type=\"literal\"><field name=\"name\">cooldown</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">get</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">PrintMeteorCooldown</field></block></statement><next><block type=\"literal\"><field name=\"name\">set</field><statement name=\"args\"><block type=\"number_min\"><field name=\"name\">newTime</field><field name=\"min\">0</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SetMeteorCooldown</field></block></statement></block></statement></block></next></block></statement><next><block type=\"literal\"><field name=\"name\">pos</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">PrintLastMeteorPos</field></block></statement></block></next></block></next></block></next></block></xml>"
   }
 }

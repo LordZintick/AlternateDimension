@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:brimwood_button",
     "alternate_dimension:redwood_button",
+    "alternate_dimension:candyfloss_button",
+    "alternate_dimension:pine_button",
     "alternate_dimension:scorched_button",
-    "alternate_dimension:azure_button"
+    "alternate_dimension:azure_button",
+    "alternate_dimension:willow_button",
+    "alternate_dimension:solar_button",
+    "alternate_dimension:greenwood_button"
   ]
 }

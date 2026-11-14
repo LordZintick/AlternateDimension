@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bowl",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": "alternate_dimension:plant_matter"
+  },
+  "result": {
+    "id": "alternate_dimension:planty_bowl",
+    "count": 3
+  }
+}

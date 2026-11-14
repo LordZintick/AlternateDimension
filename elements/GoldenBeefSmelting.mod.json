@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "golden_steak",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:GoldenBeef"
-      }
+      "CUSTOM:GoldenBeef"
     ],
     "cookingBookCategory": "FOOD",
     "xpReward": 1.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:GoldenBeef"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:GoldenSteak"
-    },
+    "smeltingInputStack": "CUSTOM:GoldenBeef",
+    "smeltingReturnStack": "CUSTOM:GoldenSteak",
     "name": "golden_beef_smelting",
     "namespace": "mod"
   }

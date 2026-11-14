@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/cloud_bricks",
     "particle": "alternate_dimension:block/cloud_bricks"
-  },
-  "render_type": "solid"
+  }
 }

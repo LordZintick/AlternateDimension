@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:MythrilIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:MythrilPlate",
+      "CUSTOM:MythrilGear",
+      "",
+      "CUSTOM:MythrilGear",
+      "CUSTOM:MythrilPlate"
+    ],
+    "recipeReturnStack": "CUSTOM:MythrilGearbox",
+    "name": "mythril_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

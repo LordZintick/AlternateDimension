@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "wooden_stairs",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
+      "CUSTOM:ScorchedPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ScorchedPlanks",
+      "",
+      "",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedStairs"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedStairs",
     "name": "scorched_stairs_recipe",
     "namespace": "mod"
   }

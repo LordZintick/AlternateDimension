@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "alternate_dimension:mushroom_infection",
+    "alternate_dimension:multi_shroomy_fields"
+  ],
+  "spawners": {
+    "type": "alternate_dimension:spore_spreader",
+    "weight": 30,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

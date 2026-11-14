@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "alternate_dimension:mana_coil",
+    "b": "alternate_dimension:aluminum_ingot"
+  },
+  "result": {
+    "id": "alternate_dimension:mana_meter",
+    "count": 1
+  }
+}

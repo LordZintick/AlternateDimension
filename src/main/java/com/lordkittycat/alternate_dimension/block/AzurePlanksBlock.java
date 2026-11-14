@@ -10,8 +10,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class AzurePlanksBlock extends Block {
-	public AzurePlanksBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
+	public AzurePlanksBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

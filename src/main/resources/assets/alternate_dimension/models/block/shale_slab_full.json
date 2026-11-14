@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/shale",
     "top": "alternate_dimension:block/shale",
     "side": "alternate_dimension:block/shale"
-  },
-  "render_type": "solid"
+  }
 }

@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:stripped_azure_log"
-    }
+    "a": "alternate_dimension:stripped_azure_log"
   },
   "result": {
     "id": "alternate_dimension:stripped_azure_wood",

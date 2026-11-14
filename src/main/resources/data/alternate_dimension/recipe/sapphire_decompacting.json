@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:sapphire_block"
-    }
+    "alternate_dimension:sapphire_block"
   ],
   "result": {
     "id": "alternate_dimension:sapphire",

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:CorruptBricks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks"
+    ],
+    "recipeReturnStack": "CUSTOM:CorruptBrickWall",
+    "name": "corrupt_brick_wall_recipe",
+    "namespace": "mod"
+  }
+}

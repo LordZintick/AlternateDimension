@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "alternate_dimension:uranium_ingot",
-    "alternate_dimension:plutonium",
     "alternate_dimension:raw_uranium"
   ]
 }

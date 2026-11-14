@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:mortar_and_pestle"
-    },
-    {
-      "tag": "alternate_dimension:fruit"
-    }
+    "alternate_dimension:mortar_and_pestle",
+    "#alternate_dimension:fruit"
   ],
   "result": {
     "id": "alternate_dimension:fruit_paste",

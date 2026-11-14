@@ -1,20 +1,18 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "jeirecipe",
   "definition": {
-    "category": "nuclear_reactor_recipe_type",
+    "category": "compressor_recipe_type",
     "ingredients": [
-      {
-        "value": "CUSTOM:SupercompressedCarbon"
-      }
+      "CUSTOM:TitaniumIngot"
     ],
-    "integers": [],
+    "integers": [
+      8
+    ],
     "strings": [],
-    "recipetype": "NuclearReactorRecipeType",
+    "recipetype": "CompressorRecipeType",
     "results": [
-      {
-        "value": "CUSTOM:Graphite"
-      }
+      "CUSTOM:Graphite"
     ],
     "resultCounts": [
       1

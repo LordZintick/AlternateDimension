@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "alternate_dimension:compressed_mantle_cobble"
+  ],
+  "result": {
+    "id": "alternate_dimension:pyric_cobble",
+    "count": 9
+  }
+}

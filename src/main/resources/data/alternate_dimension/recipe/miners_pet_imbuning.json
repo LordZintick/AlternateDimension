@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:magic_dust",
+    "#minecraft:pickaxes"
+  ],
+  "integers": [
+    8,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:miners_pet",
+      "count": 1
+    }
+  ]
+}

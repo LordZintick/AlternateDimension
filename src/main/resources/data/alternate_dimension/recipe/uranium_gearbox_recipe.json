@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "alternate_dimension:uranium_plate",
+    "b": "alternate_dimension:uranium_gear"
+  },
+  "result": {
+    "id": "alternate_dimension:uranium_gearbox",
+    "count": 1
+  }
+}

@@ -14,10 +14,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             }
           ]
         },
@@ -95,29 +92,70 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bread",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bowl",
+          "name": "alternate_dimension:barley_bread",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 3
               }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:scorched_bowl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:redwood_bowl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:planty_bowl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:azure_bowl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:pine_bowl",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
             }
           ]
         }
@@ -131,7 +169,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_nugget",
+          "name": "alternate_dimension:aluminum_nugget",
           "weight": 10,
           "functions": [
             {
@@ -145,7 +183,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_nugget",
+          "name": "alternate_dimension:titanium_nugget",
           "weight": 5,
           "functions": [
             {
@@ -159,15 +197,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond",
+          "name": "alternate_dimension:dormant_mana_stone",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             }
           ]
         }

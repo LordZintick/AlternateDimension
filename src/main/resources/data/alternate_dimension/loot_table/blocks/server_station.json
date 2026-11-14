@@ -11,7 +11,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:pasta",
-          "weight": 1,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -30,7 +30,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:breadstick",
-          "weight": 1,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -49,13 +49,32 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:cheese",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:parmesan_cheese",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
               }
             },
             {

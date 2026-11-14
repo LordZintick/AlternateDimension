@@ -1,9 +1,14 @@
 package com.lordkittycat.alternate_dimension.item;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class AluminumNuggetItem extends Item {
-	public AluminumNuggetItem() {
-		super(new Item.Properties());
+	public AluminumNuggetItem(Item.Properties properties) {
+		super(properties);
+	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

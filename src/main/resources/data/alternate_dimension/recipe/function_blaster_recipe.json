@@ -3,19 +3,14 @@
   "category": "equipment",
   "pattern": [
     "aba",
-    "aca",
+    "cdc",
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:black_dye"
-    },
-    "b": {
-      "item": "alternate_dimension:math_workbook"
-    },
-    "c": {
-      "item": "alternate_dimension:variable"
-    }
+    "a": "alternate_dimension:math_essence",
+    "b": "alternate_dimension:math_workbook",
+    "c": "alternate_dimension:aluminum_ingot",
+    "d": "alternate_dimension:variable"
   },
   "result": {
     "id": "alternate_dimension:function_blaster",

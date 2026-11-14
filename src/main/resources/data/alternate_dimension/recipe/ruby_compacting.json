@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:ruby"
-    }
+    "a": "alternate_dimension:ruby"
   },
   "result": {
     "id": "alternate_dimension:ruby_block",

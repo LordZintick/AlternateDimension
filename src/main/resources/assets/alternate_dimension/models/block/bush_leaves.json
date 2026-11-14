@@ -3,6 +3,5 @@
   "textures": {
     "all": "minecraft:block/oak_leaves",
     "particle": "minecraft:block/oak_leaves"
-  },
-  "render_type": "cutout"
+  }
 }

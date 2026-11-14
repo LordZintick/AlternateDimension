@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:MathEssence"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#16"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#16"
-      }
+      "CUSTOM:MathEssence",
+      "",
+      "CUSTOM:MathEssence",
+      "",
+      "CUSTOM:MathEssence",
+      "",
+      "CUSTOM:MathEssence",
+      "",
+      "CUSTOM:MathEssence"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Variable"
-    },
+    "recipeReturnStack": "CUSTOM:Variable",
     "name": "variable_recipe",
     "namespace": "mod"
   }

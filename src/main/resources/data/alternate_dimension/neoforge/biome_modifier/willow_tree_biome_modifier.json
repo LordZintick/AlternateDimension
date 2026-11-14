@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "alternate_dimension:thick_forest",
+    "alternate_dimension:highlands",
+    "alternate_dimension:redwood_forest",
+    "alternate_dimension:fruity_gardens",
+    "alternate_dimension:calm_ocean",
+    "alternate_dimension:enchanted_forest"
+  ],
+  "features": "alternate_dimension:willow_tree",
+  "step": "surface_structures"
+}

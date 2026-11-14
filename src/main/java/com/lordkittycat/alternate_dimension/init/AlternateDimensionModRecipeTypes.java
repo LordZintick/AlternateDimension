@@ -1,14 +1,19 @@
 package com.lordkittycat.alternate_dimension.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.event.OnDatapackSyncEvent;
+import net.neoforged.neoforge.client.event.RecipesReceivedEvent;
+import net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent;
 import net.neoforged.fml.event.lifecycle.FMLConstructModEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.ModList;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.*;
@@ -17,6 +22,7 @@ import com.lordkittycat.alternate_dimension.jei_recipes.*;
 public class AlternateDimensionModRecipeTypes {
 	public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES = DeferredRegister.create(BuiltInRegistries.RECIPE_TYPE, "alternate_dimension");
 	public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, "alternate_dimension");
+	public static RecipeMap recipes = null;
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
@@ -24,18 +30,41 @@ public class AlternateDimensionModRecipeTypes {
 		event.enqueueWork(() -> {
 			RECIPE_TYPES.register(bus);
 			SERIALIZERS.register(bus);
-			RECIPE_TYPES.register("circuit_maker_recipe_type", () -> CircuitMakerRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("circuit_maker_recipe_type", () -> CircuitMakerRecipeTypeRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("ingot_presser_recipe_type", () -> IngotPresserRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("ingot_presser_recipe_type", () -> IngotPresserRecipeTypeRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("imbunement_table_recipe", () -> ImbunementTableRecipeRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("corruptor_recipe_type", () -> CorruptorRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("corruptor_recipe_type", () -> CorruptorRecipeTypeRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("nuclear_reactor_recipe_type", () -> NuclearReactorRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("nuclear_reactor_recipe_type", () -> NuclearReactorRecipeTypeRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Type.INSTANCE);
-			SERIALIZERS.register("alloy_smelter_recipe_type", () -> AlloySmelterRecipeTypeRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("elemental_infuser_recipe_type", () -> ElementalInfuserRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("fuser_recipe_type", () -> FuserRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("fuser_recipe_type", () -> FuserRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("photolithographic_microfabricator_recipe_type", () -> PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("photolithographic_microfabricator_recipe_type", () -> PhotolithographicMicrofabricatorRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("compressor_recipe_type", () -> CompressorRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("mana_mystifier_recipe_type", () -> ManaMystifierRecipeTypeRecipe.SERIALIZER);
+			RECIPE_TYPES.register("fungal_processor_recipe_type", () -> FungalProcessorRecipeTypeRecipe.Type.INSTANCE);
+			SERIALIZERS.register("fungal_processor_recipe_type", () -> FungalProcessorRecipeTypeRecipe.SERIALIZER);
 		});
+	}
+
+	@SubscribeEvent
+	public static void syncRecipes(OnDatapackSyncEvent event) {
+		event.sendRecipes(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(FuserRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(CompressorRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(ManaMystifierRecipeTypeRecipe.Type.INSTANCE);
+		event.sendRecipes(FungalProcessorRecipeTypeRecipe.Type.INSTANCE);
+	}
+
+	@EventBusSubscriber(value = Dist.CLIENT)
+	public static class RecipeReceiver {
+		@SubscribeEvent
+		public static void receiveRecipes(RecipesReceivedEvent event) {
+			recipes = event.getRecipeMap();
+		}
+
+		@SubscribeEvent
+		public static void clearRecipes(ClientPlayerNetworkEvent.LoggingOut event) {
+			recipes = null;
+		}
 	}
 }

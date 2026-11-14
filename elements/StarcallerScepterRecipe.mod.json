@@ -1,0 +1,30 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "elemental_infuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:GraphiteRod",
+      "CUSTOM:FireEssence",
+      "CUSTOM:LifeEssence",
+      "CUSTOM:LightningBottle",
+      "CUSTOM:CandyEssence"
+    ],
+    "integers": [
+      1,
+      8,
+      16,
+      16,
+      4
+    ],
+    "strings": [],
+    "recipetype": "ElementalInfuserRecipeType",
+    "results": [
+      "CUSTOM:StarcallerScepter"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

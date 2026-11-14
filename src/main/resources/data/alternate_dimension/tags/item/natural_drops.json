@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:magic_dust",
+    "alternate_dimension:frozen_flesh",
+    "alternate_dimension:living_flesh",
+    "alternate_dimension:calcinated_flesh",
+    "alternate_dimension:frost_core",
+    "alternate_dimension:venom_gland",
+    "alternate_dimension:golden_beef",
+    "alternate_dimension:ectoplasmic_flesh",
+    "alternate_dimension:corrupted_flesh",
+    "alternate_dimension:charred_flesh",
+    "alternate_dimension:sanguine_flesh",
+    "alternate_dimension:hallowed_flesh",
+    "alternate_dimension:gingerbread",
+    "alternate_dimension:enchanted_flesh",
+    "alternate_dimension:spiky_flesh",
+    "alternate_dimension:tattered_leather",
+    "alternate_dimension:stardust"
+  ]
+}

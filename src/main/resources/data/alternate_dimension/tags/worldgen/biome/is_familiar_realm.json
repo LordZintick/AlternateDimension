@@ -2,12 +2,12 @@
   "replace": false,
   "values": [
     "alternate_dimension:enchanted_forest",
+    "alternate_dimension:frostbitten_plains",
     "alternate_dimension:redwood_forest",
-    "alternate_dimension:ice_cream_hills",
-    "alternate_dimension:candy_forest",
     "alternate_dimension:fruity_gardens",
     "alternate_dimension:candy_biome",
     "alternate_dimension:calm_ocean",
+    "alternate_dimension:mushroom_infection",
     "alternate_dimension:highlands",
     "alternate_dimension:wasteland",
     "alternate_dimension:thick_forest"

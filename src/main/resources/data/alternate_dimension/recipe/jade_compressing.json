@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:jade"
+  },
+  "result": {
+    "id": "alternate_dimension:jade_block",
+    "count": 1
+  }
+}

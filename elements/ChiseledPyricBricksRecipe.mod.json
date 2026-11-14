@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:PyricBricks"
-      }
+      "CUSTOM:PyricBricks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PyricBricks"
-      },
-      {
-        "value": "CUSTOM:PyricBricks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PyricBricks"
-      },
-      {
-        "value": "CUSTOM:PyricBricks"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:PyricBricks",
+      "CUSTOM:PyricBricks",
+      "",
+      "CUSTOM:PyricBricks",
+      "CUSTOM:PyricBricks",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ChiseledPyricBricks"
-    },
+    "recipeReturnStack": "CUSTOM:ChiseledPyricBricks",
     "name": "chiseled_pyric_bricks_recipe",
     "namespace": "mod"
   }

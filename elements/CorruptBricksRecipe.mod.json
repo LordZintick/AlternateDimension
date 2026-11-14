@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:VoidEssence"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "CUSTOM:VoidEssence",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks",
+      "TAG:mod:bricks"
+    ],
+    "recipeReturnStack": "CUSTOM:CorruptBricks",
+    "name": "corrupt_bricks_recipe",
+    "namespace": "mod"
+  }
+}

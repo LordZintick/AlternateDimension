@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:photolithographic_microfabricator_recipe_type",
+  "ingredients": [
+    "alternate_dimension:tourmaline"
+  ],
+  "integers": [
+    4
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:exporter",
+      "count": 1
+    }
+  ]
+}

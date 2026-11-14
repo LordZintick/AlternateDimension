@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.client.screens;
 
-import org.checkerframework.checker.units.qual.h;
-
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -11,8 +9,9 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.Mth;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.client.Minecraft;
 
 import com.lordkittycat.alternate_dimension.procedures.GetManaBarStateProcedure;
@@ -20,7 +19,7 @@ import com.lordkittycat.alternate_dimension.procedures.CheckHoldingWandProcedure
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ManaBarOverlay {
-	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("alternate_dimension:textures/screens/mana_bar.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("alternate_dimension:textures/screens/mana_bar.png");
 
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
@@ -39,9 +38,9 @@ public class ManaBarOverlay {
 		}
 		if (CheckHoldingWandProcedure.execute(entity)) {
 
-			event.getGuiGraphics().blit(SPRITE_0, 4, 5, Mth.clamp((int) GetManaBarStateProcedure.execute(entity) * 10, 0, 192), 0, 10, 95, 202, 95);
+			event.getGuiGraphics().blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, 4, 5, Mth.clamp((int) GetManaBarStateProcedure.execute(entity) * 11, 0, 191), 0, 11, 95, 202, 95);
 
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.mana_bar.label_mana"), 17, 5, -9669147, true);
+			event.getGuiGraphics().text(Minecraft.getInstance().font, Component.translatable("gui.alternate_dimension.mana_bar.label_mana"), 17, 5, -9669147, true);
 		}
 	}
 }

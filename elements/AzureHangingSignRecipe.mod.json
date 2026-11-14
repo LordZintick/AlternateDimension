@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
     "group": "hanging_sign",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      }
+      "CUSTOM:StrippedAzureLog"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CHAIN"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CHAIN"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      },
-      {
-        "value": "CUSTOM:StrippedAzureLog"
-      }
+      "CUSTOM:AluminumChain",
+      "",
+      "CUSTOM:AluminumChain",
+      "CUSTOM:StrippedAzureLog",
+      "CUSTOM:StrippedAzureLog",
+      "CUSTOM:StrippedAzureLog",
+      "CUSTOM:StrippedAzureLog",
+      "CUSTOM:StrippedAzureLog",
+      "CUSTOM:StrippedAzureLog"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AzureHangingSign"
-    },
+    "recipeReturnStack": "CUSTOM:AzureHangingSign",
     "name": "azure_hanging_sign_recipe",
     "namespace": "mod"
   }

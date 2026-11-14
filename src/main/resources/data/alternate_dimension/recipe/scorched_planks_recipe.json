@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "alternate_dimension:scorched_logs"
-    }
+    "#alternate_dimension:scorched_logs"
   ],
   "result": {
     "id": "alternate_dimension:scorched_planks",

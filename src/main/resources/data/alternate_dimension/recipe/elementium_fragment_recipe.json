@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:omega_essence",
+    "alternate_dimension:mythril_ingot"
+  ],
+  "integers": [
+    8,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:elementium_fragment",
+      "count": 1
+    }
+  ]
+}

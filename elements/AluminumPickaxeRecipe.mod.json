@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      }
+      "CUSTOM:AluminumIngot"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": "CUSTOM:AluminumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:AluminumIngot",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AluminumPickaxe"
-    },
+    "recipeReturnStack": "CUSTOM:AluminumPickaxe",
     "name": "aluminum_pickaxe_recipe",
     "namespace": "mod"
   }

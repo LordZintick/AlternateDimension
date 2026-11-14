@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence_gate",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:tool_rod",
+    "b": "alternate_dimension:willow_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:willow_fence_gate",
+    "count": 1
+  }
+}

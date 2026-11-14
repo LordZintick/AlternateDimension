@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:EvilstonePlate",
+      "CUSTOM:EvilstoneGear"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:EvilstonePlate",
+      "CUSTOM:EvilstoneGear",
+      "",
+      "CUSTOM:EvilstoneGear",
+      "CUSTOM:EvilstonePlate"
+    ],
+    "recipeReturnStack": "CUSTOM:EvilstoneGearbox",
+    "name": "evilstone_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

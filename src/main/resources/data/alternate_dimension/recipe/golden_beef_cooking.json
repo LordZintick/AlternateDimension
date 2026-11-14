@@ -4,9 +4,7 @@
   "category": "food",
   "experience": 1,
   "cookingtime": 600,
-  "ingredient": {
-    "item": "alternate_dimension:golden_beef"
-  },
+  "ingredient": "alternate_dimension:golden_beef",
   "result": {
     "id": "alternate_dimension:golden_steak"
   }

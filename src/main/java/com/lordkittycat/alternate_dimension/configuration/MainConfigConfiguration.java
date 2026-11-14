@@ -7,13 +7,10 @@ import java.util.List;
 public class MainConfigConfiguration {
 	public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 	public static final ModConfigSpec SPEC;
-	public static final ModConfigSpec.ConfigValue<List<? extends String>> SPELL_POWERS;
-	public static final ModConfigSpec.ConfigValue<List<? extends String>> SPELL_MANA_COSTS;
+	public static final ModConfigSpec.ConfigValue<List<? extends String>> HINTS;
 	static {
-		BUILDER.push("magic");
-		SPELL_POWERS = BUILDER.comment("Spell Powers").defineList("spell_powers", List.of("fireball:1"), entry -> true);
-		SPELL_MANA_COSTS = BUILDER.comment("Spell Mana Costs").defineList("spell_mana_costs", List.of("fireball:10"), entry -> true);
-		BUILDER.pop();
+		HINTS = BUILDER.comment("The hints shown by the hint book").defineList("hints", List.of("The refinery requires\n two blocks to function:\n the base and the controller.",
+				"There are eight types\nof crafting tables:\nscorched, pine, redwood,\nazure, candy, planty, and mushy.", "Need storage? Try a box\nor a backpack!"), entry -> true);
 
 		SPEC = BUILDER.build();
 	}

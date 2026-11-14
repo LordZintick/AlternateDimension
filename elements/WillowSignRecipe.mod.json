@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_sign",
+    "unlockingItems": [
+      "CUSTOM:WillowPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "CUSTOM:WillowPlanks",
+      "",
+      "CUSTOM:ToolRod",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:WillowSign",
+    "name": "willow_sign_recipe",
+    "namespace": "mod"
+  }
+}

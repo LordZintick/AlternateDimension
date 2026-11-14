@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RichDirt",
+      "CUSTOM:IcyShards"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:IcyShards",
+      "",
+      "",
+      "CUSTOM:RichDirt",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:FrostedGrassBlock",
+    "name": "frosted_grass_block_recipe",
+    "namespace": "mod"
+  }
+}

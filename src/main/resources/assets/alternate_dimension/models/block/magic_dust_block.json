@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/magic_dust_block",
     "particle": "alternate_dimension:block/magic_dust_block"
-  },
-  "render_type": "solid"
+  }
 }

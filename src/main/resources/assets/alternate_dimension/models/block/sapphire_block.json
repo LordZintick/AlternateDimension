@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/sapphire_block",
     "particle": "alternate_dimension:block/sapphire_block"
-  },
-  "render_type": "solid"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Tourmaline"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:Tourmaline",
+      "CUSTOM:Tourmaline",
+      "",
+      "CUSTOM:Tourmaline",
+      "CUSTOM:Tourmaline",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:TourmalineBlock",
+    "name": "tourmaline_compressing",
+    "namespace": "mod"
+  }
+}

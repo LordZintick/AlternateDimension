@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": "alternate_dimension:pine_planks",
+    "b": "alternate_dimension:tool_rod"
+  },
+  "result": {
+    "id": "alternate_dimension:pine_wooden_shovel",
+    "count": 1
+  }
+}

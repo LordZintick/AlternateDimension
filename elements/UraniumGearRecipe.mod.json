@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:UraniumIngot"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:UraniumIngot",
+      "",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:UraniumIngot",
+      "",
+      "CUSTOM:UraniumIngot",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:UraniumGear"
-    },
+    "recipeReturnStack": "CUSTOM:UraniumGear",
     "name": "uranium_gear_recipe",
     "namespace": "mod"
   }

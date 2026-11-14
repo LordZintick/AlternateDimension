@@ -13,25 +13,25 @@ public class UpdateBlockShaperCasingProcedure {
 			BlockPos _pos = BlockPos.containing(x, y, z);
 			BlockState _bs = world.getBlockState(_pos);
 			if (_bs.getBlock().getStateDefinition().getProperty("north") instanceof BooleanProperty _booleanProp)
-				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + 0, y + 0, z + -1))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
-		}
-		{
-			BlockPos _pos = BlockPos.containing(x, y, z);
-			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("east") instanceof BooleanProperty _booleanProp)
-				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
-		}
-		{
-			BlockPos _pos = BlockPos.containing(x, y, z);
-			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("south") instanceof BooleanProperty _booleanProp)
 				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
 		}
 		{
 			BlockPos _pos = BlockPos.containing(x, y, z);
 			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("west") instanceof BooleanProperty _booleanProp)
+			if (_bs.getBlock().getStateDefinition().getProperty("east") instanceof BooleanProperty _booleanProp)
 				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + -1, y + 0, z + 0))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
+		}
+		{
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			if (_bs.getBlock().getStateDefinition().getProperty("south") instanceof BooleanProperty _booleanProp)
+				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + 0, y + 0, z + -1))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
+		}
+		{
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			if (_bs.getBlock().getStateDefinition().getProperty("west") instanceof BooleanProperty _booleanProp)
+				world.setBlock(_pos, _bs.setValue(_booleanProp, ((world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).getBlock() == AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get())), 3);
 		}
 	}
 }

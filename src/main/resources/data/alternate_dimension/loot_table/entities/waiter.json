@@ -11,7 +11,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:breadstick",
-          "weight": 25,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -25,7 +25,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:pasta",
-          "weight": 22,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -39,7 +39,7 @@
         {
           "type": "minecraft:item",
           "name": "alternate_dimension:cheese",
-          "weight": 18,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -57,10 +57,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             }
           ]
         }

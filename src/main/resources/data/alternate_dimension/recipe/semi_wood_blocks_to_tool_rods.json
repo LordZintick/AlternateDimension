@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tool_rod",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": "#alternate_dimension:semi_wood_blocks"
+  },
+  "result": {
+    "id": "alternate_dimension:tool_rod",
+    "count": 4
+  }
+}

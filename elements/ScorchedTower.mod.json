@@ -1,0 +1,75 @@
+{
+  "_fv": 89,
+  "_type": "structure",
+  "definition": {
+    "structure": "scorched_tower_base",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "spacing": 15,
+    "separation": 7,
+    "restrictionBiomes": [
+      "CUSTOM:Wasteland"
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 7,
+    "maxDistanceFromCenter": 116,
+    "jigsawPools": [
+      {
+        "poolName": "segments",
+        "fallbackPool": "alternate_dimension:scorched_tower_top",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "scorched_tower_segment_1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "scorched_tower_segment_2",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "scorched_tower_segment_3",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "scorched_tower_segment_4",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "scorched_tower_segment_5",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "top",
+        "fallbackPool": "alternate_dimension:scorched_tower_top",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "scorched_tower_top",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

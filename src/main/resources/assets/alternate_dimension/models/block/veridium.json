@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/veridium",
     "particle": "alternate_dimension:block/veridium"
-  },
-  "render_type": "solid"
+  }
 }

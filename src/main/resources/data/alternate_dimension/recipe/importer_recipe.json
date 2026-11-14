@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:photolithographic_microfabricator_recipe_type",
+  "ingredients": [
+    "alternate_dimension:kyanite_crystal"
+  ],
+  "integers": [
+    4
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:importer",
+      "count": 1
+    }
+  ]
+}

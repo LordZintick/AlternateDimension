@@ -4,7 +4,288 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes.">
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/block_of_shroomium.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/green_mushroom.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/helmetflower.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/plasmolium_ore.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/purple_mushroom.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/block/yellow_mushroom.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/green_mushroom.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/plasmolium_axe.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/plasmolium_shovel.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/purple_mushroom.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/item/raw_plasmolium.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mcreator/imageEditorMetadata/screen/fungal_processor_recipe_gui.png.imgmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/BlockOfShroomium.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/FungalProcessor.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/FungalProcessorRecipeType.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GiantBlueMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GiantGreenMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GiantPurpleMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GiantYellowMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GreenMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/GreenMushroomCompacting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/HeliumPlasmaBlock.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/HydrogenPlasmaPyroliteOre.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/HydrogenPlasmaPyroliteOreLoot.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/LiquidPlasma.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/MultiShroomyFields.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmaFurnaceRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumArmorChestplateRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumArmorHelmetRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumArmorLeggingsRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumAxeRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumBlasting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumHoe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumHoeRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumIngot.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumOre.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumPickaxe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumPickaxeRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumShovel.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumShovelRecipe.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PlasmoliumSword.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PurpleMushroomBlock.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PurpleMushroomCompacting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/PurpleMushroomsRefining.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/RawPlasmolium.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/ShroomiumCompacting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/SunIdol.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/UpdateFungalProcessor.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/YellowMushroom.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/YellowMushroomBlock.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/YellowMushroomCompacting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elements/YellowMushroomDecompacting.mod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/block/CustomPortalBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/BlockOfShroomiumBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/FungalProcessorBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/LiquidMyceliumBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/MushroomSoilBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/PlasmoliumOreBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/PurpleMushroomBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/PurpleMushroomBlockBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/ShroomiaPortalBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/SolariaPortalBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/YellowMushroomBlockBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/entity/FungalProcessorBlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/entity/PlasmaFurnaceBlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/fluid/LiquidPlasmaFluidExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/renderer/item/DarksteelArmorArmor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/fluid/LiquidMyceliumFluid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModFluidTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/LiquidMyceliumItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/LiquidPlasmaItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushroomCatalystItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumArmorItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumAxeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumIngotItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumPickaxeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/ActivateSolariaPortalProcedure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFungalProcessorProcedure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/world/teleporter/ShroomiaTeleporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/world/teleporter/SolariaTeleporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/fungal_processor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/green_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/green_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/hydrogen_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/hydrogen_plasma_pyrolite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/liquid_mycelium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/liquid_plasma.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/mushroom_soil.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/plasmolium_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/purple_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/purple_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/shroomia_portal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/blockstates/solaria_portal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/equipment/plasmolium_armor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/block_of_shroomium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/green_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/helium_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/hydrogen_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/hydrogen_plasma_pyrolite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushroom_soil.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasma_furnace.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_armor_chestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_armor_helmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_armor_leggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_axe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_sword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/sun_idol.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/yellow_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/yellow_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/block_of_shroomium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/fungal_processor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/green_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/helium_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/hydrogen_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/liquid_mycelium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/plasmolium_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/purple_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/shroomia_portal_ew.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/solaria_portal_ew.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/block/yellow_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/fungal_processor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/green_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/hydrogen_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/hydrogen_plasma_pyrolite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushroom_soil.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_armor_boots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_armor_chestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_armor_helmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_axe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_hoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/purple_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/sun_idol.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/yellow_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/yellow_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/block_of_shroomium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/fungal_processor_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/green_mushroom_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/helium_plasma_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/hydrogen_plasma_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/liquid_mycelium_flow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/liquid_mycelium_flow.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/liquid_mycelium_still.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/liquid_plasma.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/plasmolium_ore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/purple_mushroom_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/block/yellow_mushroom_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/earth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/green_mushroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mana_inserter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/plasmolium_body.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/plasmolium_hoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/plasmolium_pickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/plasmolium_shovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/raw_plasmolium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/sun_idol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/yellow_mushroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/screens/fungal_processor_recipe_gui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/fungal_processor_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushroom_catalyst_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_armor_boots_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_armor_helmet_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_armor_leggings_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_axe_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_sword_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/yellow_mushroom_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/yellow_mushroom_decompacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/dimension/shroomia.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/dimension_type/shroomia.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/dimension_type/solaria.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/block_of_shroomium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/fungal_processor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/green_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/helium_plasma_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/hydrogen_plasma_pyrolite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/purple_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/purple_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/yellow_mushroom_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/giant_yellow_mushroom_biome_modifier.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/hydrogen_plasma_pyrolite_ore_biome_modifier.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/blue_mushrooms_refining.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/fungal_processor_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/green_mushroom_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/green_mushroom_decompacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mana_inserter_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasma_furnace_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_armor_chestplate_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_blasting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_hoe_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_shovel_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_sword_recipe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/purple_mushroom_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/purple_mushrooms_refining.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/yellow_mushroom_compacting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_armor_repair_items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/biome/multi_shroomy_fields.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/giant_green_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/giant_yellow_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/hydrogen_plasma_pyrolite_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/configured_feature/plasmolium_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/giant_blue_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/giant_yellow_mushroom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/worldgen/placed_feature/plasmolium_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/overworld_carver_replaceables.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/replaceable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/colorPalettes" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/colorPalettes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/index" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumAxeRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumAxeRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumHoeRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumHoeRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumPickaxeRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumPickaxeRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumShovelRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumShovelRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumSwordRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumSwordRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ConfigureRandomEquipment.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ConfigureRandomEquipment.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IncendiarySpider.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/IncendiarySpider.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/MagmaticZombie.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/MagmaticZombie.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ManaMeterRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ManaMeterRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ManaProvider.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ManaProvider.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Shroomite.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Shroomite.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ShroomiumAxeRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumAxeRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ShroomiumHoeRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumHoeRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ShroomiumPickaxeRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumPickaxeRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ShroomiumShovelRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumShovelRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ShroomiumSwordRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ShroomiumSwordRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SkyStone.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SkyStone.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/SporeSpreader.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SporeSpreader.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/VenomousSpider.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/VenomousSpider.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei/recipe-category-sort-order.ini" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/jei/recipe-category-sort-order.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/entity/ManaProviderBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/block/entity/ManaProviderBlockEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/entity/VenomousSpiderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/entity/VenomousSpiderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlockEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlockEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModJeiPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModJeiPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModRecipeTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModRecipeTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/ConfigureRandomEquipmentProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/ConfigureRandomEquipmentProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/sky_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/blocks/sky_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/incendiary_spider_biome_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/incendiary_spider_biome_modifier.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/magmatic_zombie_biome_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/magmatic_zombie_biome_modifier.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/shroomite_biome_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/shroomite_biome_modifier.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/spore_spreader_biome_modifier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/neoforge/biome_modifier/spore_spreader_biome_modifier.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mana_meter_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mana_meter_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_axe_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_axe_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_hoe_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_hoe_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_pickaxe_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_pickaxe_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_shovel_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_shovel_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_sword_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_sword_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/axe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/needs_iron_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/block/needs_iron_tool.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/axes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/axes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/chest_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/chest_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/foot_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/foot_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/head_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/head_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/hoes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/hoes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/leg_armor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/leg_armor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/shovels.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/shovels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +309,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="alternate_dimension" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="alternate_dimension" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="alternate_dimension" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -38,41 +330,71 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Record" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev01" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LordZintick&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LordZintick/AlternateDimension.git&quot;,
+    &quot;accountId&quot;: &quot;a00449df-2184-4831-ae90-bcb26cb49337&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2yUqDnWwKsir2zf1WP7EYwyuddj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.crazycraft [createMcpToSrg].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Development/MCreatorWorkspaces/alternate_dimension/src/main/java/com/lordkittycat/alternate_dimension/init",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.crazycraft [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;origin/dev01&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/src/main/java/com/github/lordzintick&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\java\com\lordkittycat\alternate_dimension\init" />
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick" />
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick\magic" />
+      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\item" />
+      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\block" />
+      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.lordzintick.magic" />
+      <recent name="com.github.lordzintick.entity.ai" />
+      <recent name="com.github.lordzintick.menu" />
       <recent name="com.github.lordzintick.init" />
     </key>
   </component>
@@ -80,8 +402,8 @@
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,13 +412,43 @@
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="alternate_dimension [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.alternate_dimension [build]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -114,6 +466,177 @@
       <option name="presentableId" value="Default" />
       <updated>1749899385930</updated>
     </task>
+    <task id="LOCAL-00001" summary="- Finished implementing Hallowed one and made Void and Hallowed mobs attack each other.&#10;- Added some new Hallowed items.&#10;- Removed vanilla mobs &amp; structures from biome spawn lists.&#10;- Made Elves and Corrupted Elves attack each other.&#10;- Added the first five AltDim OST tracks: Fallen Hero, Lost Ruins, Outcast, Fading Away, and Final Struggle.&#10;- Converted more vanilla blocks/items to custom versions.&#10;- Added &amp; fixed custom crafting tables for different woods.&#10;- Added Romans, Vikings, their drops, and their reputation mechanic.&#10;- Added wooden tools for all wood types.&#10;- Added Phosphorium and Phosphorium Tools.&#10;- Rebalanced ore generation.&#10;- Added custom furnaces for each strata type.&#10;- Migrated glass and bowls over to custom ones.&#10;- Added new mobs and structures.&#10;- Tweaked recipes and loot tables to further migrate away from vanilla blocks and items.&#10;- Added more custom alternatives for vanilla stuff.&#10;- Added (buggy) aluminum buckets.&#10;- Added decorative platform blocks.&#10;- Added Beetle Queen and beetle variants, as well as the Scorched Tower.&#10;- Fixed many bugs">
+      <option name="closed" value="true" />
+      <created>1781991173438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781991173438</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Deleted Ice Cream Hills &amp; Candy Forest Biomes&#10;- Deleted Sugar Blocks and Chocolate Bar&#10;- Somewhat fixed the candy jetpack&#10;- Made some changes to worldgen&#10;- Fixed the Roman Spear&#10;- Added Shroomium Tools and made Shroomium Ore only breakable with mushy tools.&#10;- Added Graphite Rod.&#10;- Added Bow Utility procedures.&#10;- Added Planet Core.&#10;- Various minor changes and fixes.">
+      <option name="closed" value="true" />
+      <created>1782468961417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782468961417</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Did a full refactor after merging from remote dev.&#10;- Fully fixed Instatunnel and added Instavator.&#10;- Added textures for pulling stages of Scorched Bow.&#10;- Made Umberflower generate naturally, and made a recipe to convert it to black dye.&#10;- Added Possessed Armor entity.&#10;- Added stone-tier tools for shale, veridium, and mantle.&#10;- Made various changes and fixes after the first playtest.&#10;- Added the Greenwood wood set.">
+      <option name="closed" value="true" />
+      <created>1783084682781</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783084682781</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Added the Spore Spreader mob and Shroomy Infection effect.&#10;- Made rings dynamic rather than hardcoded and made a dynamic data component/recipe manager for them.&#10;- Fixed the spawning of many mobs and the Ability goals.&#10;- Various other minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1783265617436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783265617436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- Refactored workspace to 2026.2 and Minecraft Neoforge 26.1.2.&#10;- Added many zombie variants.&#10;- Added the Blood Moon and support for other world events.&#10;- Other various minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1783891576734</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783891576734</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Added many new materials and items, including Mana Stones, Mana Crystals, and tech components like Mana Coils and Circuits, importers, exporters, and drivetrain belts.&#10;- Completely deleted the old machine system and reimplemented a new, better, more user- and automation-friendly system based around &quot;mana.&quot;&#10;- Added two new structures to partly replace the deleted Pasta Mall.&#10;- Removed the Hexagem Complex and derivatives.&#10;- Made the recipes for the high-tier math weapons harder to get, requiring Aluminum and/or Mana Stones&#10;- Added physical blocks for Lemons and Limes, and made them and the Pear growth generate on Lush Forest trees and a new Fruit tree in the Fruity Gardens&#10;- Half-implemented the Blue Moon event - no special moon texture yet, but blue fog.&#10;- Buffed the portal wand recipe.&#10;- Added four new gems with their own gem blocks&#10;- Added the Iron Giant boss.&#10;- Added the Crude Salve and Crude Bandage&#10;- Added flesh drops for all the new zombie variants&#10;- Added two new flowers: the Cheeseflower and Magister's Bloom&#10;- Added Evilstone and Holystone tools, which give damage buffs to Hallowed and Void mobs, respectively.&#10;- Added three new spider variants: the Hydra, Venomous, and Incendiary spiders, each with their own special abilities.&#10;- Added the wooden club and a simple upgrade using venom glands, another new item.&#10;- Finally implemented a graphite rod recipe.&#10;- Added a Gem ore that drops a random gem, rather than the geodes (which were deleted)&#10;- Finally added a use for corn: Popcorn!&#10;- Many, many, many other minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1785073179667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1785073179667</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- Fixed a significant bug with gravestones and death.&#10;- Made some minor changes to creative tab icons.&#10;- Removed the choice for vanilla - AltDim mode is now the only mode.">
+      <option name="closed" value="true" />
+      <created>1787054416060</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1787054416060</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- Various minor changes and fixes.">
+      <option name="closed" value="true" />
+      <created>1787055418792</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1787055418792</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- Deleted the scorched bow because it was causing problems.">
+      <option name="closed" value="true" />
+      <created>1787057748295</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1787057748295</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- Deleted the scorched bow because it was causing problems.">
+      <option name="closed" value="true" />
+      <created>1787057784538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1787057784538</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module.">
+      <option name="closed" value="true" />
+      <created>1787141489957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1787141489958</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- Reorganized creative tabs.">
+      <option name="closed" value="true" />
+      <created>1787246217782</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1787246217782</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- Ported the entire spell system from SpellCaster API, including the wands, scrolls, and defaults spells, but not the datapack loading, commands, or extra firecharge functionality.&#10;- Finally fixed ring recipes!&#10;- Added the Viking Tower, Viking Ship, Hollow Candy Cane, Machine Ruins, and Mushroom Cottage structures, further improving the structure variety in the mod.&#10;- Fixed various other bugs and made other minor changes.">
+      <option name="closed" value="true" />
+      <created>1787339959297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1787339959297</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1792237606409</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1792237606409</updated>
+    </task>
+    <task id="LOCAL-00015" summary="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1792239592677</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1792239592677</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes.">
+      <option name="closed" value="true" />
+      <created>1792239605962</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1792239605962</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="- Finished implementing Hallowed one and made Void and Hallowed mobs attack each other.&#10;- Added some new Hallowed items.&#10;- Removed vanilla mobs &amp; structures from biome spawn lists.&#10;- Made Elves and Corrupted Elves attack each other.&#10;- Added the first five AltDim OST tracks: Fallen Hero, Lost Ruins, Outcast, Fading Away, and Final Struggle.&#10;- Converted more vanilla blocks/items to custom versions.&#10;- Added &amp; fixed custom crafting tables for different woods.&#10;- Added Romans, Vikings, their drops, and their reputation mechanic.&#10;- Added wooden tools for all wood types.&#10;- Added Phosphorium and Phosphorium Tools.&#10;- Rebalanced ore generation.&#10;- Added custom furnaces for each strata type.&#10;- Migrated glass and bowls over to custom ones.&#10;- Added new mobs and structures.&#10;- Tweaked recipes and loot tables to further migrate away from vanilla blocks and items.&#10;- Added more custom alternatives for vanilla stuff.&#10;- Added (buggy) aluminum buckets.&#10;- Added decorative platform blocks.&#10;- Added Beetle Queen and beetle variants, as well as the Scorched Tower.&#10;- Fixed many bugs" />
+    <MESSAGE value="- Deleted Ice Cream Hills &amp; Candy Forest Biomes&#10;- Deleted Sugar Blocks and Chocolate Bar&#10;- Somewhat fixed the candy jetpack&#10;- Made some changes to worldgen&#10;- Fixed the Roman Spear&#10;- Added Shroomium Tools and made Shroomium Ore only breakable with mushy tools.&#10;- Added Graphite Rod.&#10;- Added Bow Utility procedures.&#10;- Added Planet Core.&#10;- Various minor changes and fixes." />
+    <MESSAGE value="- Added Beetle Queen loot and upgraded Beetle Sword to a unique drop of her.&#10;- Added Mythril (ores, ingot, nugget, etc.) and a multi-step creation process for it.&#10;- Added Mythril and Phosphorium tools/armor." />
+    <MESSAGE value="- Did a full refactor after merging from remote dev.&#10;- Fully fixed Instatunnel and added Instavator.&#10;- Added textures for pulling stages of Scorched Bow.&#10;- Made Umberflower generate naturally, and made a recipe to convert it to black dye.&#10;- Added Possessed Armor entity.&#10;- Added stone-tier tools for shale, veridium, and mantle.&#10;- Made various changes and fixes after the first playtest.&#10;- Added the Greenwood wood set." />
+    <MESSAGE value="- Added the Spore Spreader mob and Shroomy Infection effect.&#10;- Made rings dynamic rather than hardcoded and made a dynamic data component/recipe manager for them.&#10;- Fixed the spawning of many mobs and the Ability goals.&#10;- Various other minor fixes and changes." />
+    <MESSAGE value="- Refactored workspace to 2026.2 and Minecraft Neoforge 26.1.2.&#10;- Added many zombie variants.&#10;- Added the Blood Moon and support for other world events.&#10;- Other various minor fixes and changes." />
+    <MESSAGE value="- Added many new materials and items, including Mana Stones, Mana Crystals, and tech components like Mana Coils and Circuits, importers, exporters, and drivetrain belts.&#10;- Completely deleted the old machine system and reimplemented a new, better, more user- and automation-friendly system based around &quot;mana.&quot;&#10;- Added two new structures to partly replace the deleted Pasta Mall.&#10;- Removed the Hexagem Complex and derivatives.&#10;- Made the recipes for the high-tier math weapons harder to get, requiring Aluminum and/or Mana Stones&#10;- Added physical blocks for Lemons and Limes, and made them and the Pear growth generate on Lush Forest trees and a new Fruit tree in the Fruity Gardens&#10;- Half-implemented the Blue Moon event - no special moon texture yet, but blue fog.&#10;- Buffed the portal wand recipe.&#10;- Added four new gems with their own gem blocks&#10;- Added the Iron Giant boss.&#10;- Added the Crude Salve and Crude Bandage&#10;- Added flesh drops for all the new zombie variants&#10;- Added two new flowers: the Cheeseflower and Magister's Bloom&#10;- Added Evilstone and Holystone tools, which give damage buffs to Hallowed and Void mobs, respectively.&#10;- Added three new spider variants: the Hydra, Venomous, and Incendiary spiders, each with their own special abilities.&#10;- Added the wooden club and a simple upgrade using venom glands, another new item.&#10;- Finally implemented a graphite rod recipe.&#10;- Added a Gem ore that drops a random gem, rather than the geodes (which were deleted)&#10;- Finally added a use for corn: Popcorn!&#10;- Many, many, many other minor fixes and changes." />
+    <MESSAGE value="- Fixed a significant bug with gravestones and death.&#10;- Made some minor changes to creative tab icons.&#10;- Removed the choice for vanilla - AltDim mode is now the only mode." />
+    <MESSAGE value="- Various minor changes and fixes." />
+    <MESSAGE value="- Deleted the scorched bow because it was causing problems." />
+    <MESSAGE value="- Added wall torch models and improved torch placement.&#10;- Reorganized some creative tabs.&#10;- Added the Cryonic Scimitar and Aluminum Storage Module." />
+    <MESSAGE value="- Reorganized creative tabs." />
+    <MESSAGE value="- Ported the entire spell system from SpellCaster API, including the wands, scrolls, and defaults spells, but not the datapack loading, commands, or extra firecharge functionality.&#10;- Finally fixed ring recipes!&#10;- Added the Viking Tower, Viking Ship, Hollow Candy Cane, Machine Ruins, and Mushroom Cottage structures, further improving the structure variety in the mod.&#10;- Fixed various other bugs and made other minor changes." />
+    <MESSAGE value="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes." />
+    <MESSAGE value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateMachineProcedure.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

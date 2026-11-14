@@ -5,26 +5,51 @@ package com.lordkittycat.alternate_dimension.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
-import com.lordkittycat.alternate_dimension.potion.*;
+import com.lordkittycat.alternate_dimension.procedures.RemoveInvulnerabilityProcedure;
+import com.lordkittycat.alternate_dimension.potion.ShroomyInfectionMobEffect;
+import com.lordkittycat.alternate_dimension.potion.LightFootedEffectMobEffect;
+import com.lordkittycat.alternate_dimension.potion.GraceEffectMobEffect;
+import com.lordkittycat.alternate_dimension.potion.BlindingLightMobEffect;
+import com.lordkittycat.alternate_dimension.potion.AcrobaticEffectMobEffect;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
+@EventBusSubscriber
 public class AlternateDimensionModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, AlternateDimensionMod.MODID);
-	public static final DeferredHolder<MobEffect, MobEffect> CHARGED = REGISTRY.register("charged", () -> new ChargedMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> ACROBATIC_EFFECT = REGISTRY.register("acrobatic_effect", () -> new AcrobaticEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> OSMIUM_HEART_EFFECT = REGISTRY.register("osmium_heart_effect", () -> new OsmiumHeartEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> HELIUM_HEART_EFFECT = REGISTRY.register("helium_heart_effect", () -> new HeliumHeartEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> LIGHT_FOOTED_EFFECT = REGISTRY.register("light_footed_effect", () -> new LightFootedEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> REACHING_EFFECT = REGISTRY.register("reaching_effect", () -> new ReachingEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> POWER_EFFECT = REGISTRY.register("power_effect", () -> new PowerEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> CURSED_EFFECT = REGISTRY.register("cursed_effect", () -> new CursedEffectMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> MAGNETISM = REGISTRY.register("magnetism", () -> new MagnetismMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> BLESSED = REGISTRY.register("blessed", () -> new BlessedMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> IMMUNITY = REGISTRY.register("immunity", () -> new ImmunityMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> JUMPY = REGISTRY.register("jumpy", () -> new JumpyMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> BLINDING_LIGHT = REGISTRY.register("blinding_light", () -> new BlindingLightMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ACROBATIC_EFFECT = REGISTRY.register("acrobatic_effect", AcrobaticEffectMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> LIGHT_FOOTED_EFFECT = REGISTRY.register("light_footed_effect", LightFootedEffectMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> BLINDING_LIGHT = REGISTRY.register("blinding_light", BlindingLightMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> SHROOMY_INFECTION = REGISTRY.register("shroomy_infection", ShroomyInfectionMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> GRACE_EFFECT = REGISTRY.register("grace_effect", GraceEffectMobEffect::new);
+
+	@SubscribeEvent
+	public static void onEffectRemoved(MobEffectEvent.Remove event) {
+		MobEffectInstance effectInstance = event.getEffectInstance();
+		if (effectInstance != null) {
+			expireEffects(event.getEntity(), effectInstance);
+		}
+	}
+
+	@SubscribeEvent
+	public static void onEffectExpired(MobEffectEvent.Expired event) {
+		MobEffectInstance effectInstance = event.getEffectInstance();
+		if (effectInstance != null) {
+			expireEffects(event.getEntity(), effectInstance);
+		}
+	}
+
+	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
+		if (effectInstance.is(GRACE_EFFECT)) {
+			RemoveInvulnerabilityProcedure.execute(entity);
+		}
+	}
 }

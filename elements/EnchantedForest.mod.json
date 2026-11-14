@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Enchanted Forest",
-    "groundBlock": {
-      "value": "Blocks.GRASS"
-    },
-    "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
-    },
-    "underwaterBlock": {
-      "value": ""
-    },
+    "groundBlock": "CUSTOM:EnchantedGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "airColor": {
       "value": -5798944,
       "falpha": 0.0
@@ -36,23 +30,13 @@
       "value": -11140134,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:enchanted_forest"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
+    "particleToSpawn": "EXPLOSION_NORMAL",
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
@@ -60,19 +44,19 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": 0.15,
+      "min": 0.13,
       "max": 0.2
     },
     "genHumidity": {
       "min": -0.05,
-      "max": 0.0
+      "max": 0.07
     },
     "genContinentalness": {
       "min": 0.075,
-      "max": 0.1
+      "max": 0.13
     },
     "genErosion": {
-      "min": 0.2,
+      "min": 0.18,
       "max": 0.25
     },
     "genWeirdness": {
@@ -87,28 +71,18 @@
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
-      "Caves",
-      "MeadowVegetation",
-      "PlainsTallGrass"
+      "Caves"
     ],
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "plains",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -123,89 +97,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "STANDARD",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityWitch"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

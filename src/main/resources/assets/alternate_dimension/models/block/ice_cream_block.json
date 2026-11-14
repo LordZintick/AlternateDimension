@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/ice_cream_block",
     "particle": "alternate_dimension:block/ice_cream_block"
-  },
-  "render_type": "solid"
+  }
 }

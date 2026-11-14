@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/stripped_azure_log",
     "particle": "alternate_dimension:block/stripped_azure_log"
-  },
-  "render_type": "solid"
+  }
 }

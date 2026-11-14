@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:TitaniumIngot"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:TitaniumIngot",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "",
+      "CUSTOM:ToolRod",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TitaniumShovel"
-    },
+    "recipeReturnStack": "CUSTOM:TitaniumShovel",
     "name": "titanium_shovel_recipe",
     "namespace": "mod"
   }

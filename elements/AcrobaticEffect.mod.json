@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Acrobatic",
@@ -16,9 +16,7 @@
     "modifiers": [
       {
         "equipmentSlot": "any",
-        "attribute": {
-          "value": "STEP_HEIGHT"
-        },
+        "attribute": "STEP_HEIGHT",
         "amount": 2.0,
         "operation": "ADD_VALUE"
       }

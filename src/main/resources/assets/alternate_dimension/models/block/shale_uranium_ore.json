@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/shale_uranium_ore",
     "particle": "alternate_dimension:block/shale_uranium_ore"
-  },
-  "render_type": "solid"
+  }
 }

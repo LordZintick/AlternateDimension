@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,10 +13,8 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Breadstick"
-            },
-            "weight": 25,
+            "item": "CUSTOM:Breadstick",
+            "weight": 3,
             "minCount": 2,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -27,10 +25,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Pasta"
-            },
-            "weight": 22,
+            "item": "CUSTOM:Pasta",
+            "weight": 3,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -41,10 +37,8 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Cheese"
-            },
-            "weight": 18,
+            "item": "CUSTOM:Cheese",
+            "weight": 3,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ParmesanCheese"
-            },
+            "item": "CUSTOM:ParmesanCheese",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

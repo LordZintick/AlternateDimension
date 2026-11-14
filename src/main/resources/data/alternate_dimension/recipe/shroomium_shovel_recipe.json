@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "alternate_dimension:shroomium_chunk",
+    "b": "alternate_dimension:mushy_shovel"
+  },
+  "result": {
+    "id": "alternate_dimension:shroomium_shovel",
+    "count": 1
+  }
+}

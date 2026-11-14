@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "mana_mystifier_recipe_type",
+    "ingredients": [
+      "CUSTOM:MagicDust",
+      "TAG:minecraft:swords"
+    ],
+    "integers": [
+      8,
+      1
+    ],
+    "strings": [],
+    "recipetype": "ManaMystifierRecipeType",
+    "results": [
+      "CUSTOM:WarriorsPet"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

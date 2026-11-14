@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:brimwood_planks"
+  },
+  "result": {
+    "id": "alternate_dimension:brimwood_stairs",
+    "count": 4
+  }
+}

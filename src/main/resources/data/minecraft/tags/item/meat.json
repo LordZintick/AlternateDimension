@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "alternate_dimension:golden_steak",
+    "alternate_dimension:cooked_metalmeat",
+    "alternate_dimension:raw_metalmeat",
     "alternate_dimension:golden_beef"
   ]
 }

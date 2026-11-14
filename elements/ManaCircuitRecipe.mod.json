@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "photolithographic_microfabricator_recipe_type",
+    "ingredients": [
+      "CUSTOM:ManaCrystal"
+    ],
+    "integers": [
+      2
+    ],
+    "strings": [],
+    "recipetype": "PhotolithographicMicrofabricatorRecipeType",
+    "results": [
+      "CUSTOM:ManaCircuit"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

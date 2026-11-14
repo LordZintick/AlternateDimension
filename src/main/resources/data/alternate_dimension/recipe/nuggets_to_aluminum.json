@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    },
-    {
-      "item": "alternate_dimension:aluminum_nugget"
-    }
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget",
+    "alternate_dimension:aluminum_nugget"
   ],
   "result": {
     "id": "alternate_dimension:aluminum_ingot",

@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "chest_boat",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:AzureBoat"
-      }
+      "CUSTOM:AzureBoat"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AzureBoat"
-      },
-      {
-        "value": "Blocks.CHEST"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:AzureBoat",
+      "TAG:mod:boxes",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AzureChestBoat"
-    },
+    "recipeReturnStack": "CUSTOM:AzureChestBoat",
     "name": "azure_chest_boat_recipe",
     "namespace": "mod"
   }

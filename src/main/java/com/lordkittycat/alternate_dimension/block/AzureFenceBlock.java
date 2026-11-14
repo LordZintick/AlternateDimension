@@ -10,8 +10,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class AzureFenceBlock extends FenceBlock {
-	public AzureFenceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+	public AzureFenceBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

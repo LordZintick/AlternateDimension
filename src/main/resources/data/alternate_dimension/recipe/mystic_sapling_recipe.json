@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": "alternate_dimension:magic_dust",
+    "b": "alternate_dimension:life_essence"
+  },
+  "result": {
+    "id": "alternate_dimension:mystic_sapling",
+    "count": 1
+  }
+}

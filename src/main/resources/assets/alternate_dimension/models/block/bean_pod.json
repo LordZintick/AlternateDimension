@@ -8,6 +8,5 @@
     "south": "alternate_dimension:block/bean_pod_side",
     "west": "alternate_dimension:block/bean_pod_side",
     "particle": "alternate_dimension:block/bean_pod_side"
-  },
-  "render_type": "solid"
+  }
 }

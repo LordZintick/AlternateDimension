@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_plate",
+    "b": "alternate_dimension:aluminum_gear"
+  },
+  "result": {
+    "id": "alternate_dimension:aluminum_gearbox",
+    "count": 1
+  }
+}

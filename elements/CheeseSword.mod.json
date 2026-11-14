@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -15,22 +15,18 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "efficiency": 5.0,
     "attackSpeed": 1.7000000000000002,
     "enchantability": 20,
-    "damageVsEntity": 3.0,
+    "damageVsEntity": 5.0,
     "usageCount": 500,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:Cheese"
-      }
+      "CUSTOM:Cheese"
     ],
     "immuneToFire": false,
     "blockDropsTier": "STONE",
@@ -38,8 +34,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "EatItem"
-    }
+    "onRightClickedInAir": "EatItem"
   }
 }

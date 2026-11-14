@@ -6,8 +6,8 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
 
 public class ScorchedEarthStairsBlock extends StairBlock {
-	public ScorchedEarthStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.TUFF).strength(1f, 2f).requiresCorrectToolForDrops());
+	public ScorchedEarthStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.sound(SoundType.TUFF).strength(1f, 2f).requiresCorrectToolForDrops());
 	}
 
 	@Override

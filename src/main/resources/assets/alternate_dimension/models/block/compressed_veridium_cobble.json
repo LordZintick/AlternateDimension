@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "alternate_dimension:block/veridium_cobble_compressed",
+    "particle": "alternate_dimension:block/veridium_cobble_compressed"
+  }
+}

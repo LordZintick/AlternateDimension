@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:evilstone_gem"
-    }
+    "a": "alternate_dimension:evilstone_gem"
   },
   "result": {
     "id": "alternate_dimension:evilstone_block",

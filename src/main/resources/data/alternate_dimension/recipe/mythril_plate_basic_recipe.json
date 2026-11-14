@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:mythril_ingot",
+    "alternate_dimension:mythril_ingot",
+    "#alternate_dimension:hammers",
+    "alternate_dimension:mythril_ingot",
+    "alternate_dimension:mythril_ingot"
+  ],
+  "result": {
+    "id": "alternate_dimension:mythril_plate",
+    "count": 1
+  }
+}

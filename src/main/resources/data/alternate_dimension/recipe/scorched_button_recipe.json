@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "alternate_dimension:scorched_planks"
-    }
+    "alternate_dimension:scorched_planks"
   ],
   "result": {
     "id": "alternate_dimension:scorched_button",

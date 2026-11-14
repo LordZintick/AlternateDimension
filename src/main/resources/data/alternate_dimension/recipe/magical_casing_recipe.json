@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:mana_crystal",
+    "b": "alternate_dimension:mana_coil",
+    "c": "alternate_dimension:machine_casing"
+  },
+  "result": {
+    "id": "alternate_dimension:magical_casing",
+    "count": 1
+  }
+}

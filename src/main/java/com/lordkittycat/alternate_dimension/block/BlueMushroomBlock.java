@@ -1,7 +1,5 @@
 package com.lordkittycat.alternate_dimension.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
@@ -17,8 +15,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class BlueMushroomBlock extends FlowerBlock {
-	public BlueMushroomBlock() {
-		super(MobEffects.GLOWING, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.FUNGUS).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 10).noCollission()
+	public BlueMushroomBlock(BlockBehaviour.Properties properties) {
+		super(MobEffects.GLOWING, 100, properties.mapColor(MapColor.PLANT).sound(SoundType.FUNGUS).instabreak().postProcess((bs, br, bp) -> bp).emissiveRendering((bs, br, bp) -> true).lightLevel(state -> 10).noCollision()
 				.offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 

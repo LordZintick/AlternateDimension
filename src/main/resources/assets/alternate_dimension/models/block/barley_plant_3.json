@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "alternate_dimension:block/barley_plant_5",
+    "particle": "alternate_dimension:block/barley_plant_1"
+  }
+}

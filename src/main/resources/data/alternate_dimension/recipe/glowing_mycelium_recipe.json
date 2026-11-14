@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "alternate_dimension:blue_mushroom",
+    "b": "alternate_dimension:rich_dirt"
+  },
+  "result": {
+    "id": "alternate_dimension:glowing_mycelium",
+    "count": 1
+  }
+}

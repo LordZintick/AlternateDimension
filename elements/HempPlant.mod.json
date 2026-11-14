@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "hemp_0",
@@ -28,12 +28,12 @@
         "hasCustomBoundingBox": true,
         "boundingBoxes": [
           {
-            "mx": 4.0,
-            "my": 4.0,
-            "mz": 4.0,
-            "Mx": 12.0,
-            "My": 12.0,
-            "Mz": 12.0,
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 7.0,
+            "Mz": 16.0,
             "subtract": false
           }
         ],
@@ -62,12 +62,12 @@
         "hasCustomBoundingBox": true,
         "boundingBoxes": [
           {
-            "mx": 4.0,
-            "my": 4.0,
-            "mz": 4.0,
-            "Mx": 12.0,
-            "My": 12.0,
-            "Mz": 12.0,
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 11.0,
+            "Mz": 16.0,
             "subtract": false
           }
         ],
@@ -96,12 +96,12 @@
         "hasCustomBoundingBox": true,
         "boundingBoxes": [
           {
-            "mx": 4.0,
-            "my": 4.0,
-            "mz": 4.0,
-            "Mx": 12.0,
-            "My": 12.0,
-            "Mz": 12.0,
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 14.0,
+            "Mz": 16.0,
             "subtract": false
           }
         ],
@@ -130,12 +130,12 @@
         "hasCustomBoundingBox": true,
         "boundingBoxes": [
           {
-            "mx": 4.0,
-            "my": 4.0,
-            "mz": 4.0,
-            "Mx": 12.0,
-            "My": 12.0,
-            "Mz": 12.0,
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
             "subtract": false
           }
         ],
@@ -165,12 +165,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
-        "my": 4.0,
-        "mz": 4.0,
-        "Mx": 12.0,
-        "My": 12.0,
-        "Mz": 12.0,
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 3.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
@@ -187,7 +187,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.05,
+    "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -197,9 +197,7 @@
     "immuneToFire": false,
     "creativeTabs": [],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -219,14 +217,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": "CUSTOM:HempSeeds"
-    },
+    "creativePickItem": "CUSTOM:HempSeeds",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "strippingResult": {
-      "value": ""
-    },
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -236,40 +230,22 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
+    "soundOnStep": "PLANT",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "PLANT"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
     "luminance": {
       "fixedValue": 0.0
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "placingCondition": {
-      "name": "CheckForDirt"
-    },
+    "placingCondition": "CheckForDirt",
     "isBonemealable": true,
-    "isBonemealTargetCondition": {
-      "name": "CheckGrowable"
-    },
-    "onBonemealSuccess": {
-      "name": "GrowHempPlant"
-    },
+    "isBonemealTargetCondition": "CheckGrowable",
+    "onBonemealSuccess": "GrowHempPlant",
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
     "vibrationSensitivityRadius": {
@@ -291,18 +267,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "GrowHempPlant"
-    },
-    "onDestroyedByPlayer": {
-      "name": "HempPlantLoot"
-    },
+    "onTickUpdate": "GrowHempPlant",
+    "onDestroyedByPlayer": "HempPlantLoot",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

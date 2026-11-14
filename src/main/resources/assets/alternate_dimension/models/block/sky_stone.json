@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/sky_stone",
     "particle": "alternate_dimension:block/sky_stone"
-  },
-  "render_type": "solid"
+  }
 }

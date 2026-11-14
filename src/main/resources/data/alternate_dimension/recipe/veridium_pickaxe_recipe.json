@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": "alternate_dimension:veridium_cobble",
+    "b": "alternate_dimension:tool_rod"
+  },
+  "result": {
+    "id": "alternate_dimension:veridium_pickaxe",
+    "count": 1
+  }
+}

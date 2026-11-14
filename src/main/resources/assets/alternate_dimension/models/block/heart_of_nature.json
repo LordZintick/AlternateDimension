@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/heart_of_nature",
     "particle": "alternate_dimension:block/heart_of_nature"
-  },
-  "render_type": "solid"
+  }
 }

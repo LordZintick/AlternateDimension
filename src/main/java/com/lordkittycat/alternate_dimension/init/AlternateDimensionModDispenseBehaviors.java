@@ -15,12 +15,24 @@ public class AlternateDimensionModDispenseBehaviors {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.AZURE_BOAT_TYPE.getValue()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.AZURE_CHEST_BOAT_TYPE.getValue(), true));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.SCORCHED_BOAT_TYPE.getValue()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.SCORCHED_CHEST_BOAT_TYPE.getValue(), true));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.REDWOOD_BOAT_TYPE.getValue()));
-			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModBoatTypes.REDWOOD_CHEST_BOAT_TYPE.getValue(), true));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.AZURE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.AZURE_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SCORCHED_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.SCORCHED_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SCORCHED_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.REDWOOD_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.REDWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.REDWOOD_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.PINE_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.PINE_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.GREENWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.GREENWOOD_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.CANDYFLOSS_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.CANDYFLOSS_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.CANDYFLOSS_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.WILLOW_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.WILLOW_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.WILLOW_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.WILLOW_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.BRIMWOOD_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.BRIMWOOD_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.BRIMWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.BRIMWOOD_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.SOLAR_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SOLAR_BOAT.get()));
+			DispenserBlock.registerBehavior(AlternateDimensionModItems.SOLAR_CHEST_BOAT.get(), new BoatDispenseItemBehavior(AlternateDimensionModEntities.SOLAR_CHEST_BOAT.get()));
 		});
 	}
 }

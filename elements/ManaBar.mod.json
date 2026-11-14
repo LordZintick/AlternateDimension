@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -8,7 +8,7 @@
         "type": "sprite",
         "data": {
           "sprite": "mana_bar.png",
-          "spritesCount": 19,
+          "spritesCount": 18,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "GetManaBarState"
@@ -40,9 +40,7 @@
     ],
     "baseTexture": "",
     "overlayTarget": "Ingame",
-    "displayCondition": {
-      "name": "CheckHoldingWand"
-    },
+    "displayCondition": "CheckHoldingWand",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

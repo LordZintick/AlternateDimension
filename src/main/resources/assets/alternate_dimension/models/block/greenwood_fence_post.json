@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "alternate_dimension:block/greenwood_planks",
+    "particle": "alternate_dimension:block/greenwood_planks"
+  }
+}

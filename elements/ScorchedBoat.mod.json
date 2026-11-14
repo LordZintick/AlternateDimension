@@ -1,13 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "specialentity",
   "definition": {
     "entityType": "Boat",
     "name": "Scorched Boat",
+    "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "entityTexture": "scorched_boat",
     "itemTexture": "scorched_boat"

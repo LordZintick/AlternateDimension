@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 2,
     "group": "wooden_trapdoor",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
+      "CUSTOM:ScorchedPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "REDSTONE",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedTrapdoor"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedTrapdoor",
     "name": "scorched_trapdoor_recipe",
     "namespace": "mod"
   }

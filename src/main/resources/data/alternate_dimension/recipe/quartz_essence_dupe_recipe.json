@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:raw_quartz",
+    "alternate_dimension:ore_essence"
+  ],
+  "integers": [
+    1,
+    2
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:raw_quartz",
+      "count": 2
+    }
+  ]
+}

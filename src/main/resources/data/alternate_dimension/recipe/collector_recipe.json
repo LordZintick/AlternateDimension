@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "abc",
+    " a "
+  ],
+  "key": {
+    "a": "alternate_dimension:aluminum_nugget",
+    "b": "alternate_dimension:machine_casing",
+    "c": "alternate_dimension:importer"
+  },
+  "result": {
+    "id": "alternate_dimension:collector",
+    "count": 1
+  }
+}

@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/shale_quartz_ore",
     "particle": "alternate_dimension:block/shale_quartz_ore"
-  },
-  "render_type": "solid"
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "alternate_dimension:plasmolium_ingot"
+  },
+  "result": {
+    "id": "alternate_dimension:plasmolium_armor_boots",
+    "count": 1
+  }
+}

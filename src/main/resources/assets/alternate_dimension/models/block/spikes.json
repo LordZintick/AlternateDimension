@@ -4,6 +4,5 @@
     "all": "alternate_dimension:block/spikes_texture",
     "particle": "alternate_dimension:block/spikes_texture",
     "1": "alternate_dimension:block/spikes_texture"
-  },
-  "render_type": "cutout"
+  }
 }

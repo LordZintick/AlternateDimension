@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "alternate_dimension:titanium_ingot"
+  },
+  "result": {
+    "id": "alternate_dimension:titanium_nugget",
+    "count": 9
+  }
+}

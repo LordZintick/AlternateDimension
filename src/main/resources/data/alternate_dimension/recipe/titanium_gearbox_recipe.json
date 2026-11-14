@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": "alternate_dimension:titanium_plate",
+    "b": "alternate_dimension:titanium_gear"
+  },
+  "result": {
+    "id": "alternate_dimension:titanium_gearbox",
+    "count": 1
+  }
+}

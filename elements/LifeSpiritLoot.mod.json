@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MagicDust"
-            },
+            "item": "CUSTOM:MagicDust",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -36,23 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.SAPLING#0"
-            },
-            "weight": 3,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:LembasBreadBite"
-            },
+            "item": "CUSTOM:LembasBreadBite",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -64,23 +46,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HempSeeds"
-            },
-            "weight": 4,
-            "minCount": 2,
-            "maxCount": 4,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": true,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.WHEAT_SEEDS"
-            },
+            "item": "CUSTOM:HempSeeds",
             "weight": 4,
             "minCount": 2,
             "maxCount": 4,
@@ -101,9 +67,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LifeEssence"
-            },
+            "item": "CUSTOM:LifeEssence",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,

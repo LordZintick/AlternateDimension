@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a ",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:pure_bricks"
+  },
+  "result": {
+    "id": "alternate_dimension:pure_brick_stairs",
+    "count": 4
+  }
+}

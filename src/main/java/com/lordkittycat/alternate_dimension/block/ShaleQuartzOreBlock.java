@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 
 public class ShaleQuartzOreBlock extends Block {
-	public ShaleQuartzOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(3f).requiresCorrectToolForDrops());
+	public ShaleQuartzOreBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.BASALT).strength(3f).requiresCorrectToolForDrops());
 	}
 }

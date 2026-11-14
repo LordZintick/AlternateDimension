@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/azure_planks",
     "particle": "alternate_dimension:block/azure_planks"
-  },
-  "render_type": "solid"
+  }
 }

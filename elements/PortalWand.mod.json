@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,21 +12,15 @@
     "name": "Portal Wand",
     "rarity": "UNCOMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      },
-      {
-        "value": "CUSTOM:AlternateDimensionUtilities"
-      }
+      "CUSTOM:AlternateDimensionEquipment",
+      "CUSTOM:AlternateDimensionUtilities"
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 72000,
+    "useDuration": 60,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
@@ -38,8 +32,9 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "Charge right-click for four seconds to warp back to your home point and creates a portal to return to where you were.",
-        "Shift-right-click on one of your portals to remove the portal"
+        "Charge right-click for three seconds to warp back to your home point and create a portal to return to where you were.",
+        "Shift-right-click on one of your portals to remove the portal",
+        "Use while holding a Position Card to create a portal to the position in the card."
       ]
     },
     "glowCondition": {
@@ -50,35 +45,23 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "StartPortalWandEffects"
-    },
-    "onRightClickedOnBlock": {
-      "name": "RemovePortal"
-    },
-    "onStoppedUsing": {
-      "name": "FinishPortalWandEffects"
-    },
+    "onRightClickedInAir": "StartPortalWandEffects",
+    "onRightClickedOnBlock": "RemovePortal",
+    "onFinishUsingItem": "FinishPortalWandEffects",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:PlusProjectile"
-    },
+    "projectile": "CUSTOM:PlusProjectile",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "spear",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,

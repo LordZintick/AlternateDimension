@@ -1,17 +1,11 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Redwood Forest",
-    "groundBlock": {
-      "value": "Blocks.DIRT#2"
-    },
-    "undergroundBlock": {
-      "value": "Blocks.DIRT#1"
-    },
-    "underwaterBlock": {
-      "value": "Blocks.GRAVEL"
-    },
+    "groundBlock": "CUSTOM:FrostedGrassBlock",
+    "undergroundBlock": "CUSTOM:RichDirt",
+    "underwaterBlock": "",
     "airColor": {
       "value": -16724839,
       "falpha": 0.0
@@ -28,23 +22,13 @@
       "value": -16724890,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": ""
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:redwood_forest"
-    },
-    "moodSound": {
-      "value": ""
-    },
+    "ambientSound": "",
+    "additionsSound": "",
+    "music": "CUSTOM:alternate_dimension_music",
+    "moodSound": "",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "SNOWFLAKE"
-    },
+    "particleToSpawn": "SNOWFLAKE",
     "particlesProbability": 0.1,
     "rainingPossibility": 0.30000000000000004,
     "temperature": 0.5,
@@ -79,28 +63,18 @@
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
-      "Caves",
-      "TaigaLargeFerns",
-      "TaigaRocks"
+      "Caves"
     ],
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "taiga",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -115,98 +89,7 @@
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "MOUNTAIN",
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityZombie"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySpider"
-        },
-        "minGroup": 2,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityWitch"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 5,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityCow"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityChicken"
-        },
-        "minGroup": 1,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 2,
-        "maxGroup": 6,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityStray"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 15,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
   }
 }

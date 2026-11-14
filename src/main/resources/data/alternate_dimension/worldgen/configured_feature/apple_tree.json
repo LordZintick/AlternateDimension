@@ -1,36 +1,38 @@
 {
   "type": "minecraft:tree",
   "config": {
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:grass_block"
-      }
-    },
-    "foliage_provider": {
-      "type": "minecraft:weighted_state_provider",
-      "entries": [
+    "below_trunk_provider": {
+      "type": "minecraft:rule_based_state_provider",
+      "rules": [
         {
-          "data": {
-            "Name": "minecraft:oak_leaves"
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_block_tag",
+              "tag": "minecraft:cannot_replace_below_tree_trunk"
+            }
           },
-          "weight": 3
-        },
-        {
-          "data": {
-            "Name": "alternate_dimension:apple_leaves"
-          },
-          "weight": 1
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "alternate_dimension:lush_grass_block"
+            }
+          }
         }
       ]
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "alternate_dimension:apple_leaves"
+      }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:oak_log"
+        "Name": "alternate_dimension:plant_stem"
       }
     },
-    "force_dirt": false,
     "ignore_vines": true,
     "foliage_placer": {
       "type": "minecraft:blob_foliage_placer",

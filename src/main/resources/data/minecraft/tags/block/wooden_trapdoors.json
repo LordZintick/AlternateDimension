@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:greenwood_trapdoor",
+    "alternate_dimension:willow_trapdoor",
     "alternate_dimension:redwood_trapdoor",
+    "alternate_dimension:brimwood_trapdoor",
+    "alternate_dimension:solar_trapdoor",
+    "alternate_dimension:candyfloss_trapdoor",
     "alternate_dimension:azure_trapdoor",
-    "alternate_dimension:scorched_trapdoor"
+    "alternate_dimension:scorched_trapdoor",
+    "alternate_dimension:pine_trapdoor"
   ]
 }

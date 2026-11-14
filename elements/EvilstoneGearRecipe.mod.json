@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:EvilstoneGem"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EvilstoneGem"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:EvilstoneGem",
+      "",
+      "CUSTOM:EvilstoneGem",
+      "CUSTOM:AluminumNugget",
+      "CUSTOM:EvilstoneGem",
+      "",
+      "CUSTOM:EvilstoneGem",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EvilstoneGear"
-    },
+    "recipeReturnStack": "CUSTOM:EvilstoneGear",
     "name": "evilstone_gear_recipe",
     "namespace": "mod"
   }

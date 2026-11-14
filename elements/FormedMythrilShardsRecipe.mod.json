@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mythril",
+    "unlockingItems": [
+      "CUSTOM:MythrilShards"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:TitaniumIngot",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards",
+      "CUSTOM:MythrilShards"
+    ],
+    "recipeReturnStack": "CUSTOM:FormedMythrilShards",
+    "name": "formed_mythril_shards_recipe",
+    "namespace": "mod"
+  }
+}

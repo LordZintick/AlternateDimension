@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -24,41 +25,39 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import java.util.function.Function;
+
 import com.lordkittycat.alternate_dimension.procedures.HempPlantLootProcedure;
 import com.lordkittycat.alternate_dimension.procedures.GrowHempPlantProcedure;
 import com.lordkittycat.alternate_dimension.procedures.CheckGrowableProcedure;
 import com.lordkittycat.alternate_dimension.procedures.CheckForDirtProcedure;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
-import com.google.common.collect.ImmutableMap;
-
 public class HempPlantBlock extends Block implements BonemealableBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
-	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
+	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
-	public HempPlantBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.05f, 0f).noCollission().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+	public HempPlantBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.GRASS).instabreak().noCollision().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(BLOCKSTATE, 0));
 	}
 
-	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+	private Function<BlockState, VoxelShape> makeShapes() {
 		return this.getShapeForEachState(state -> {
 			if (state.getValue(BLOCKSTATE) == 1) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 7, 16);
 			} else if (state.getValue(BLOCKSTATE) == 2) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 11, 16);
 			} else if (state.getValue(BLOCKSTATE) == 3) {
-				return box(4, 4, 4, 12, 12, 12);
-			} else if (state.getValue(BLOCKSTATE) == 4) {
-				return box(4, 4, 4, 12, 12, 12);
+				return box(0, 0, 0, 16, 14, 16);
 			}
-			return box(4, 4, 4, 12, 12, 12);
+			return box(0, 0, 0, 16, 3, 16);
 		});
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return shapes.get(state);
+		return shapes.apply(state);
 	}
 
 	@Override
@@ -74,7 +73,10 @@ public class HempPlantBlock extends Block implements BonemealableBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(BLOCKSTATE, 0);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(BLOCKSTATE, 0);
 	}
 
 	@Override
@@ -89,12 +91,12 @@ public class HempPlantBlock extends Block implements BonemealableBlock {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
-		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	public BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction facing, BlockPos facingPos, BlockState facingState, RandomSource random) {
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
 		return new ItemStack(AlternateDimensionModItems.HEMP_SEEDS.get());
 	}
 
@@ -105,8 +107,8 @@ public class HempPlantBlock extends Block implements BonemealableBlock {
 	}
 
 	@Override
-	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, ItemStack toolStack, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, toolStack, willHarvest, fluid);
 		HempPlantLootProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		return retval;
 	}

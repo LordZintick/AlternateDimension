@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "alternate_dimension:block/greenwood_planks",
+    "bottom": "alternate_dimension:block/greenwood_planks",
+    "top": "alternate_dimension:block/greenwood_planks",
+    "side": "alternate_dimension:block/greenwood_planks"
+  }
+}

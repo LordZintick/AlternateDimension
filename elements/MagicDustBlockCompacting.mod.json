@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:MagicDust"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      },
-      {
-        "value": "CUSTOM:MagicDust"
-      }
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MagicDustBlock"
-    },
+    "recipeReturnStack": "CUSTOM:MagicDustBlock",
     "name": "magic_dust_block_compacting",
     "namespace": "mod"
   }

@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "aero_shrine",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 5,
     "separation": 2,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Highlands"
-      }
+      "CUSTOM:Highlands"
     ],
     "terrainAdaptation": "none",
     "generationStep": "SURFACE_STRUCTURES",

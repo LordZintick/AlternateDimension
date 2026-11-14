@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:mythril_ingot",
+    "alternate_dimension:ore_essence"
+  ],
+  "integers": [
+    1,
+    8
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:mythril_ingot",
+      "count": 2
+    }
+  ]
+}

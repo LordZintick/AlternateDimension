@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/mana_tank",
+    "up": "alternate_dimension:block/mana_tank",
+    "north": "alternate_dimension:block/machine_side",
+    "east": "alternate_dimension:block/machine_side_input",
+    "south": "alternate_dimension:block/machine_side_output",
+    "west": "alternate_dimension:block/machine_side_input_secondary",
+    "particle": "alternate_dimension:block/mana_tank"
+  }
+}

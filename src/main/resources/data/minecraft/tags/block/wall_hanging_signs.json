@@ -2,7 +2,13 @@
   "replace": false,
   "values": [
     "alternate_dimension:redwood_wall_hanging_sign",
+    "alternate_dimension:candyfloss_wall_hanging_sign",
+    "alternate_dimension:greenwood_wall_hanging_sign",
+    "alternate_dimension:pine_wall_hanging_sign",
+    "alternate_dimension:brimwood_wall_hanging_sign",
     "alternate_dimension:scorched_wall_hanging_sign",
+    "alternate_dimension:solar_wall_hanging_sign",
+    "alternate_dimension:willow_wall_hanging_sign",
     "alternate_dimension:azure_wall_hanging_sign"
   ]
 }

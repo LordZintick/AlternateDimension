@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa",
+    " b",
+    " b"
+  ],
+  "key": {
+    "a": "alternate_dimension:plant_matter",
+    "b": "alternate_dimension:tool_rod"
+  },
+  "result": {
+    "id": "alternate_dimension:planty_hoe",
+    "count": 1
+  }
+}

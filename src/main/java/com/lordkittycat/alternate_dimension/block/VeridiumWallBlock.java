@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.WallBlock;
 
 public class VeridiumWallBlock extends WallBlock {
-	public VeridiumWallBlock() {
-		super(BlockBehaviour.Properties.of().strength(1.5f, 2f).requiresCorrectToolForDrops().forceSolidOn());
+	public VeridiumWallBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(1.5f, 2f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 }

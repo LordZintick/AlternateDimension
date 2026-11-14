@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:barley"
+  },
+  "result": {
+    "id": "alternate_dimension:barley_bread",
+    "count": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:TitaniumPlate",
+      "CUSTOM:TitaniumGear"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:TitaniumPlate",
+      "CUSTOM:TitaniumGear",
+      "",
+      "CUSTOM:TitaniumGear",
+      "CUSTOM:TitaniumPlate"
+    ],
+    "recipeReturnStack": "CUSTOM:TitaniumGearbox",
+    "name": "titanium_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

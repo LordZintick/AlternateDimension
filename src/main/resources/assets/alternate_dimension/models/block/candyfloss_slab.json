@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "alternate_dimension:block/candyfloss_planks",
+    "bottom": "alternate_dimension:block/candyfloss_planks",
+    "top": "alternate_dimension:block/candyfloss_planks",
+    "side": "alternate_dimension:block/candyfloss_planks"
+  }
+}

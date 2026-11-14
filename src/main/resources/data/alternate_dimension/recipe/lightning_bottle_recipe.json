@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:storm_essence",
+    "alternate_dimension:big_bottle"
+  ],
+  "integers": [
+    4,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:lightning_bottle",
+      "count": 1
+    }
+  ]
+}

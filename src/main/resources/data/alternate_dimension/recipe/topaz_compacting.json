@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:topaz"
-    }
+    "a": "alternate_dimension:topaz"
   },
   "result": {
     "id": "alternate_dimension:topaz_block",

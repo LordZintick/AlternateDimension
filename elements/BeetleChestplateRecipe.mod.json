@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      }
+      "CUSTOM:HardenedBeetleShell"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      },
-      {
-        "value": "CUSTOM:AncientDust"
-      },
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      },
-      {
-        "value": "CUSTOM:AncientDust"
-      },
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      },
-      {
-        "value": "CUSTOM:AncientDust"
-      },
-      {
-        "value": "CUSTOM:HardenedBeetleShell"
-      }
+      "CUSTOM:HardenedBeetleShell",
+      "",
+      "CUSTOM:HardenedBeetleShell",
+      "CUSTOM:AncientDust",
+      "CUSTOM:HardenedBeetleShell",
+      "CUSTOM:AncientDust",
+      "CUSTOM:HardenedBeetleShell",
+      "CUSTOM:AncientDust",
+      "CUSTOM:HardenedBeetleShell"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BeetleArmor.body"
-    },
+    "recipeReturnStack": "CUSTOM:BeetleArmor.body",
     "name": "beetle_chestplate_recipe",
     "namespace": "mod"
   }

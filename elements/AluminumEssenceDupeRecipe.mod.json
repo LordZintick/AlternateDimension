@@ -1,0 +1,24 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "fuser_recipe_type",
+    "ingredients": [
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:OreEssence"
+    ],
+    "integers": [
+      1,
+      2
+    ],
+    "strings": [],
+    "recipetype": "FuserRecipeType",
+    "results": [
+      "CUSTOM:AluminumIngot"
+    ],
+    "resultCounts": [
+      2
+    ],
+    "count": 0
+  }
+}

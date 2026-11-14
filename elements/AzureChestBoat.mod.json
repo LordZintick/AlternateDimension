@@ -1,13 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "specialentity",
   "definition": {
     "entityType": "ChestBoat",
     "name": "Azure Boat with Chest",
+    "rarity": "COMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "entityTexture": "azure_chest_boat",
     "itemTexture": "azure_chest_boat"

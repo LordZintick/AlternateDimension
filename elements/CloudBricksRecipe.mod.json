@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 4,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:CloudBlock"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": "CUSTOM:CloudBlock"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:CloudBlock",
+      "CUSTOM:CloudBlock",
+      "",
+      "CUSTOM:CloudBlock",
+      "CUSTOM:CloudBlock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CloudBricks"
-    },
+    "recipeReturnStack": "CUSTOM:CloudBricks",
     "name": "cloud_bricks_recipe",
     "namespace": "mod"
   }

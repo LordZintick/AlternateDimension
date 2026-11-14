@@ -3,7 +3,7 @@
   "biomes": "#alternate_dimension:is_familiar_realm",
   "spawners": {
     "type": "alternate_dimension:golden_cow",
-    "weight": 8,
+    "weight": 20,
     "minCount": 1,
     "maxCount": 2
   }

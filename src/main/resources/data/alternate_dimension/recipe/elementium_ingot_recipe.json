@@ -1,0 +1,15 @@
+{
+  "type": "alternate_dimension:photolithographic_microfabricator_recipe_type",
+  "ingredients": [
+    "alternate_dimension:elementium_fragment"
+  ],
+  "integers": [
+    8
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:elementium_ingot",
+      "count": 1
+    }
+  ]
+}

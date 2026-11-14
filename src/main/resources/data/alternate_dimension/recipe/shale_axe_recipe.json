@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa",
+    "ab",
+    " b"
+  ],
+  "key": {
+    "a": "alternate_dimension:shale_cobble",
+    "b": "alternate_dimension:tool_rod"
+  },
+  "result": {
+    "id": "alternate_dimension:shale_axe",
+    "count": 1
+  }
+}

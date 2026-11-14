@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/parmesan_cheese_block",
     "particle": "alternate_dimension:block/parmesan_cheese_block"
-  },
-  "render_type": "solid"
+  }
 }

@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 public class PyreMantleBlock extends Block {
-	public PyreMantleBlock() {
-		super(BlockBehaviour.Properties.of().strength(2f, 10f).requiresCorrectToolForDrops());
+	public PyreMantleBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(2f, 10f).requiresCorrectToolForDrops());
 	}
 }

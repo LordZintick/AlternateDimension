@@ -1,9 +1,13 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:wrench",
     "alternate_dimension:mortar_and_pestle",
     "alternate_dimension:item_incinerator",
+    "alternate_dimension:wooden_club",
     "alternate_dimension:rpg",
-    "alternate_dimension:math_workbook"
+    "alternate_dimension:venom_dipped_club",
+    "alternate_dimension:math_workbook",
+    "alternate_dimension:enchanted_helmet"
   ]
 }

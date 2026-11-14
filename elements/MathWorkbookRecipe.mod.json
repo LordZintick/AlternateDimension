@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "Items.DYE#16"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Plus"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.BOOK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Minus"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:Plus",
+      "",
+      "",
+      "CUSTOM:Cloth",
+      "",
+      "",
+      "CUSTOM:Minus",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MathWorkbook"
-    },
+    "recipeReturnStack": "CUSTOM:MathWorkbook",
     "name": "math_workbook_recipe",
     "namespace": "mod"
   }

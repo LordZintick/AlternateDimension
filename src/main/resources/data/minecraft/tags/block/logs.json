@@ -1,6 +1,35 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:compressed_bark"
+    "alternate_dimension:plant_stem",
+    "alternate_dimension:compressed_bark",
+    {
+      "id": "#alternate_dimension:azure_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:willow_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:redwood_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:brimwood_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:scorched_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:pine_logs",
+      "required": false
+    },
+    {
+      "id": "#alternate_dimension:solar_logs",
+      "required": false
+    }
   ]
 }

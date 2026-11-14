@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SlabBlock;
 
 public class CloudBrickSlabBlock extends SlabBlock {
-	public CloudBrickSlabBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f));
+	public CloudBrickSlabBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.WOOL).strength(1f));
 	}
 }

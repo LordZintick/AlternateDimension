@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.PressurePlateBlock;
 
 public class AzurePressurePlateBlock extends PressurePlateBlock {
-	public AzurePressurePlateBlock() {
-		super(BlockSetType.OAK, BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(0.5f).noCollission().pushReaction(PushReaction.DESTROY).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
+	public AzurePressurePlateBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, properties.sound(SoundType.WOOD).strength(0.5f).noCollision().pushReaction(PushReaction.DESTROY).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 }

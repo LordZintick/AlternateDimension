@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "alternate_dimension:block/energy_cable_basic",
-    "particle": "alternate_dimension:block/energy_cable_basic"
-  },
-  "render_type": "solid"
-}

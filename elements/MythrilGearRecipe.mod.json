@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:MythrilIngot"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:MythrilIngot",
+      "",
+      "CUSTOM:MythrilIngot",
+      "CUSTOM:TitaniumNugget",
+      "CUSTOM:MythrilIngot",
+      "",
+      "CUSTOM:MythrilIngot",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:MythrilGear",
+    "name": "mythril_gear_recipe",
+    "namespace": "mod"
+  }
+}

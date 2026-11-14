@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:mana_mystifier_recipe_type",
+  "ingredients": [
+    "alternate_dimension:magic_dust",
+    "#minecraft:foot_armor"
+  ],
+  "integers": [
+    8,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:adventurers_pet",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "alternate_dimension:block/candyfloss_planks",
+    "particle": "alternate_dimension:block/candyfloss_planks"
+  }
+}

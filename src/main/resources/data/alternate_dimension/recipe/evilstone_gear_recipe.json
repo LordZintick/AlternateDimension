@@ -3,13 +3,12 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "a a",
+    "aba",
     " a "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:evilstone_gem"
-    }
+    "a": "alternate_dimension:evilstone_gem",
+    "b": "alternate_dimension:aluminum_nugget"
   },
   "result": {
     "id": "alternate_dimension:evilstone_gear",

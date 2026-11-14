@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "photolithographic_microfabricator_recipe_type",
+    "ingredients": [
+      "CUSTOM:Tourmaline"
+    ],
+    "integers": [
+      4
+    ],
+    "strings": [],
+    "recipetype": "PhotolithographicMicrofabricatorRecipeType",
+    "results": [
+      "CUSTOM:Exporter"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

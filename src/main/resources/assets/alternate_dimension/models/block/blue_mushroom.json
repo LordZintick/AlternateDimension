@@ -3,6 +3,5 @@
   "textures": {
     "cross": "alternate_dimension:block/blue_mushroom",
     "particle": "alternate_dimension:block/blue_mushroom"
-  },
-  "render_type": "cutout"
+  }
 }

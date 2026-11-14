@@ -8,7 +8,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
@@ -19,13 +19,13 @@ import io.netty.buffer.Unpooled;
 import com.lordkittycat.alternate_dimension.world.inventory.IncineratorGUIMenu;
 
 public class ItemIncineratorItem extends Item {
-	public ItemIncineratorItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.UNCOMMON));
+	public ItemIncineratorItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.UNCOMMON).stacksTo(1).fireResistant());
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		InteractionResult ar = super.use(world, entity, hand);
 		if (entity instanceof ServerPlayer serverPlayer) {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
@@ -46,5 +46,9 @@ public class ItemIncineratorItem extends Item {
 			});
 		}
 		return ar;
+	}
+
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

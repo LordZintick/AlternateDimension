@@ -1,17 +1,16 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="Creative Commons Attribution-NonCommercial 3.0"
+license="Creative Commons Attribution Share Alike 4.0"
 
 [[mods]]
 modId="alternate_dimension"
-version="2.0.0dev"
+version="2.1.0a1"
 displayName="AlternateDimension"
 displayURL="https://modrinth.com/project/alternate-dimension"
 logoFile="logo.png"
-credits="Music by CC0 creators on OpenGameArt.org - HydroGene, Cleyton Kauffman, Centurion_of_War, celestialghost8, and Joth! Thank's for amazing music!"
+credits="Music consists of Prelude in F# Minor by Kristol, Exploration Theme and Snow Theme by Cleyton Kauffman, and The Arplands by me, textures and models are either custom-made or modified vanilla textures and models."
 authors="LordZintick"
-description="Delve into a familiar yet different dimension, filled with many new challenges and rewards. Explore, fight, craft, build, and enjoy an entirely new Minecraft experience!"
-enumExtensions="META-INF/enumextensions.json"
+description="Adventure through a fantastical new world filled with new items to find, structures and biomes to explore, enemies to fight, tools to craft, challenges to conquer, and bosses to defeat!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -25,14 +24,14 @@ enumExtensions="META-INF/enumextensions.json"
 [[dependencies.alternate_dimension]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.190,)"
+    versionRange="[26.1.2.95,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.alternate_dimension]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.1]"
+    versionRange="[26.1.2]"
     ordering="AFTER"
     side="BOTH"
 

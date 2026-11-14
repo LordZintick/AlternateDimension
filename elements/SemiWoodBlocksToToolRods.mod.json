@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "tool_rod",
+    "unlockingItems": [
+      "TAG:mod:semi_wood_blocks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "TAG:mod:semi_wood_blocks",
+      "",
+      "",
+      "TAG:mod:semi_wood_blocks",
+      "",
+      "",
+      "TAG:mod:semi_wood_blocks",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:ToolRod",
+    "name": "semi_wood_blocks_to_tool_rods",
+    "namespace": "mod"
+  }
+}

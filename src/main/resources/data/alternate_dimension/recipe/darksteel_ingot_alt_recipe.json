@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:void_essence"
+  ],
+  "integers": [
+    1,
+    4
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:darksteel_ingot",
+      "count": 1
+    }
+  ]
+}

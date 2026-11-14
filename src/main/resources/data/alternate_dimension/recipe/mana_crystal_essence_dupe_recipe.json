@@ -1,0 +1,17 @@
+{
+  "type": "alternate_dimension:fuser_recipe_type",
+  "ingredients": [
+    "alternate_dimension:mana_crystal",
+    "alternate_dimension:ore_essence"
+  ],
+  "integers": [
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "alternate_dimension:mana_crystal",
+      "count": 2
+    }
+  ]
+}

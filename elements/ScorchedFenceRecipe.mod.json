@@ -1,14 +1,12 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 3,
     "group": "wooden_fence",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
+      "CUSTOM:ScorchedPlanks"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -16,37 +14,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:ScorchedPlanks"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ScorchedPlanks",
+      "CUSTOM:ToolRod",
+      "CUSTOM:ScorchedPlanks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ScorchedFence"
-    },
+    "recipeReturnStack": "CUSTOM:ScorchedFence",
     "name": "scorched_fence_recipe",
     "namespace": "mod"
   }

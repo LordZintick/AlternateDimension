@@ -1,52 +1,85 @@
 package com.lordkittycat.alternate_dimension.client.renderer;
 
-import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.util.context.ContextKey;
+import net.minecraft.resources.Identifier;
+import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.client.model.HierarchicalModel;
+import net.minecraft.client.animation.KeyframeAnimation;
+import net.minecraft.client.animation.AnimationDefinition;
+
+import java.util.Map;
 
 import com.lordkittycat.alternate_dimension.entity.FireSpiritEntity;
 import com.lordkittycat.alternate_dimension.client.model.animations.spiritAnimation;
 import com.lordkittycat.alternate_dimension.client.model.Modelspirit;
 
-public class FireSpiritRenderer extends MobRenderer<FireSpiritEntity, Modelspirit<FireSpiritEntity>> {
-	private final ResourceLocation entityTexture = ResourceLocation.parse("alternate_dimension:textures/entities/fire_spirit_new.png");
+public class FireSpiritRenderer extends MobRenderer<FireSpiritEntity, LivingEntityRenderState, Modelspirit> {
+	private final Identifier entityTexture = Identifier.parse("alternate_dimension:textures/entities/fire_spirit_new.png");
 
 	public FireSpiritRenderer(EntityRendererProvider.Context context) {
 		super(context, new AnimatedModel(context.bakeLayer(Modelspirit.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(FireSpiritEntity entity) {
+	public LivingEntityRenderState createRenderState() {
+		return new LivingEntityRenderState();
+	}
+
+	@Override
+	public void extractRenderState(FireSpiritEntity entity, LivingEntityRenderState state, float partialTicks) {
+		super.extractRenderState(entity, state, partialTicks);
+	}
+
+	@Override
+	public Identifier getTextureLocation(LivingEntityRenderState state) {
+		FireSpiritEntity entity = (FireSpiritEntity) state.getRenderData(ENTITY_KEY);
+		if (entity != null && entity.getTexture() != "fire_spirit_new")
+			return Identifier.parse("alternate_dimension:textures/entities/" + entity.getTexture() + ".png");
 		return entityTexture;
 	}
 
-	private static final class AnimatedModel extends Modelspirit<FireSpiritEntity> {
-		private final ModelPart root;
-		private final HierarchicalModel animator = new HierarchicalModel<FireSpiritEntity>() {
-			@Override
-			public ModelPart root() {
-				return root;
-			}
-
-			@Override
-			public void setupAnim(FireSpiritEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, spiritAnimation.idle, ageInTicks, 1f);
-				this.animateWalk(spiritAnimation.walk, limbSwing, limbSwingAmount, 1f, 1f);
-			}
-		};
+	private static final class AnimatedModel extends Modelspirit {
+		private final KeyframeAnimation keyframeAnimation0;
+		private final KeyframeAnimation keyframeAnimation1;
 
 		public AnimatedModel(ModelPart root) {
 			super(root);
-			this.root = root;
+			this.keyframeAnimation0 = safeBake(spiritAnimation.idle);
+			this.keyframeAnimation1 = safeBake(spiritAnimation.walk);
+		}
+
+		private KeyframeAnimation safeBake(AnimationDefinition source) {
+			try {
+				return source.bake(root);
+			} catch (IllegalArgumentException e) {
+				return new AnimationDefinition(0, false, Map.of()).bake(root);
+			}
 		}
 
 		@Override
-		public void setupAnim(FireSpiritEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			animator.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
-			super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
+		public void setupAnim(LivingEntityRenderState state) {
+			this.root().getAllParts().forEach(ModelPart::resetPose);
+			FireSpiritEntity entity = state.getRenderData(ENTITY_KEY);
+			this.keyframeAnimation0.apply(entity.animationState0, state.ageInTicks, 1f);
+			this.keyframeAnimation1.applyWalk(state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
+			super.setupAnim(state);
+		}
+	}
+
+	public static final ContextKey<FireSpiritEntity> ENTITY_KEY = new ContextKey<>(Identifier.parse("alternate_dimension:fire_spirit_entity"));
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class EntityStateAdder {
+		@SubscribeEvent
+		private static void registerRenderStateModifiersEvent(RegisterRenderStateModifiersEvent event) {
+			event.registerEntityModifier(FireSpiritRenderer.class, (entity, state) -> state.setRenderData(ENTITY_KEY, entity));
 		}
 	}
 }

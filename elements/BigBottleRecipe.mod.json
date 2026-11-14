@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [
+      "TAG:mod:altdim_glass_blocks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "TAG:mod:altdim_glass_blocks",
+      "",
+      "TAG:mod:altdim_glass_blocks",
+      "",
+      "TAG:mod:altdim_glass_blocks",
+      "TAG:mod:altdim_glass_blocks",
+      "TAG:mod:altdim_glass_blocks",
+      "TAG:mod:altdim_glass_blocks"
+    ],
+    "recipeReturnStack": "CUSTOM:BigBottle",
+    "name": "big_bottle_recipe",
+    "namespace": "mod"
+  }
+}

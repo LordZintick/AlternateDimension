@@ -4,18 +4,13 @@
   "pattern": [
     " ab",
     "aca",
-    "ca "
+    "da "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:titanium_plate"
-    },
-    "b": {
-      "item": "alternate_dimension:durable_drill_head"
-    },
-    "c": {
-      "item": "alternate_dimension:titanium_gear"
-    }
+    "a": "alternate_dimension:titanium_plate",
+    "b": "alternate_dimension:durable_drill_head",
+    "c": "alternate_dimension:titanium_gearbox",
+    "d": "alternate_dimension:titanium_gear"
   },
   "result": {
     "id": "alternate_dimension:durable_drill",

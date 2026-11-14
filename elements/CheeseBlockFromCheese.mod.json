@@ -1,48 +1,30 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:Cheese"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Cheese"
-      },
-      {
-        "value": "CUSTOM:Cheese"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Cheese"
-      },
-      {
-        "value": "CUSTOM:Cheese"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      "",
+      "CUSTOM:Cheese",
+      "CUSTOM:Cheese",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CheeseBlock"
-    },
+    "recipeReturnStack": "CUSTOM:CheeseBlock",
     "name": "cheese_block_from_cheese",
     "namespace": "mod"
   }

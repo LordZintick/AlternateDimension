@@ -3,18 +3,14 @@
   "pools": [
     {
       "rolls": {
-        "min": 3,
-        "max": 12
-      },
-      "bonus_rolls": {
-        "min": 0,
-        "max": 3
+        "min": 2,
+        "max": 4
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:rotten_flesh",
-          "weight": 1,
+          "name": "alternate_dimension:weak_thread",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -27,49 +23,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:string",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:feather",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gunpowder",
+          "name": "alternate_dimension:strong_thread",
           "weight": 1,
           "functions": [
             {
@@ -83,7 +37,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:wheat_seeds",
+          "name": "alternate_dimension:magic_dust",
           "weight": 1,
           "functions": [
             {
@@ -94,10 +48,63 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:sugar_cane",
+          "name": "alternate_dimension:miners_pet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:adventurers_pet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:warriors_pet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:sulfur",
           "weight": 1,
           "functions": [
             {

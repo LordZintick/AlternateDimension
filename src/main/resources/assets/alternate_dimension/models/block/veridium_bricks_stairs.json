@@ -5,6 +5,5 @@
     "bottom": "alternate_dimension:block/veridium_bricks",
     "top": "alternate_dimension:block/veridium_bricks",
     "side": "alternate_dimension:block/veridium_bricks"
-  },
-  "render_type": "solid"
+  }
 }

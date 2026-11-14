@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/machine_side",
+    "up": "alternate_dimension:block/machine_side",
+    "north": "alternate_dimension:block/machine_side_input",
+    "east": "alternate_dimension:block/machine_side",
+    "south": "alternate_dimension:block/machine_side_output",
+    "west": "alternate_dimension:block/machine_side",
+    "particle": "alternate_dimension:block/machine_side"
+  }
+}

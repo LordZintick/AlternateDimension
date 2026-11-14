@@ -4,7 +4,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SlabBlock;
 
 public class PyreSlabBlock extends SlabBlock {
-	public PyreSlabBlock() {
-		super(BlockBehaviour.Properties.of().strength(2f, 10f).requiresCorrectToolForDrops());
+	public PyreSlabBlock(BlockBehaviour.Properties properties) {
+		super(properties.strength(2f, 10f).requiresCorrectToolForDrops());
 	}
 }

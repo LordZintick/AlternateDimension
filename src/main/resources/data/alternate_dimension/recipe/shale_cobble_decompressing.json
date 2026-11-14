@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "alternate_dimension:compressed_shale_cobble"
+  ],
+  "result": {
+    "id": "alternate_dimension:shale_cobble",
+    "count": 9
+  }
+}

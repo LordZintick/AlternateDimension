@@ -3,6 +3,5 @@
   "textures": {
     "all": "alternate_dimension:block/cheese_block",
     "particle": "alternate_dimension:block/cheese_block"
-  },
-  "render_type": "solid"
+  }
 }

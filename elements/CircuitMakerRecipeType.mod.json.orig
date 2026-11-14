@@ -1,0 +1,116 @@
+<<<<<<< HEAD
+{
+  "_fv": 85,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "circuit_maker_recipe_gui.png",
+    "width": 176,
+    "height": 97,
+    "icon": {
+      "value": "CUSTOM:CircuitMaker"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:CircuitMaker"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "disableJeiBorder": false,
+    "title": "Circuit Making",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 21,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 41,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 61,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 111,
+        "y": 41,
+        "slotid": 0
+      }
+    ],
+    "components": [],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
+||||||| (empty tree)
+=======
+{
+  "_fv": 85,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "circuit_maker_recipe_gui.png",
+    "width": 176,
+    "height": 97,
+    "icon": {
+      "value": "CUSTOM:CircuitMaker"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:CircuitMaker"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "disableJeiBorder": false,
+    "title": "Circuit Sandwiching",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 21,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 41,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 38,
+        "y": 61,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 111,
+        "y": 41,
+        "slotid": 0
+      }
+    ],
+    "components": [],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
+>>>>>>> ade9634 (- Refactored git repo to remove broken large files)

@@ -1,14 +1,10 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "Items.WHEAT_SEEDS"
-    },
+    "projectileItem": "Items.WHEAT_SEEDS",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.shulker.shoot"
-    },
+    "actionSound": "entity.shulker.shoot",
     "igniteFire": false,
     "disableGravity": false,
     "disableDiscarding": false,

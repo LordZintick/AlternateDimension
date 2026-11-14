@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:pine_door",
+    "alternate_dimension:candyfloss_door",
+    "alternate_dimension:greenwood_door",
+    "alternate_dimension:willow_door",
     "alternate_dimension:redwood_door",
     "alternate_dimension:azure_door",
-    "alternate_dimension:scorched_door"
+    "alternate_dimension:solar_door",
+    "alternate_dimension:scorched_door",
+    "alternate_dimension:brimwood_door"
   ]
 }

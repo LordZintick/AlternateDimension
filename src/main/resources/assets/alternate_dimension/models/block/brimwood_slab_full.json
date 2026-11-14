@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "alternate_dimension:block/brimwood_planks",
+    "bottom": "alternate_dimension:block/brimwood_planks",
+    "top": "alternate_dimension:block/brimwood_planks",
+    "side": "alternate_dimension:block/brimwood_planks"
+  }
+}

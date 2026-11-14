@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:YellowMushroom"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:YellowMushroom",
+      "CUSTOM:YellowMushroom",
+      "",
+      "CUSTOM:YellowMushroom",
+      "CUSTOM:YellowMushroom",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:YellowMushroomBlock",
+    "name": "yellow_mushroom_compacting",
+    "namespace": "mod"
+  }
+}

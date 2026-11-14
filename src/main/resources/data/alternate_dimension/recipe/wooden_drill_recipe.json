@@ -8,12 +8,8 @@
     "b  "
   ],
   "key": {
-    "a": {
-      "item": "alternate_dimension:wooden_drill_head"
-    },
-    "b": {
-      "tag": "minecraft:logs"
-    }
+    "a": "alternate_dimension:wooden_drill_head",
+    "b": "#alternate_dimension:altdim_logs"
   },
   "result": {
     "id": "alternate_dimension:wooden_drill",

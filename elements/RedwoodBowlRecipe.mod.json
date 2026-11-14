@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bowl",
+    "unlockingItems": [
+      "CUSTOM:RedwoodPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:RedwoodPlanks",
+      "",
+      "CUSTOM:RedwoodPlanks",
+      "",
+      "CUSTOM:RedwoodPlanks",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:RedwoodBowl",
+    "name": "redwood_bowl_recipe",
+    "namespace": "mod"
+  }
+}

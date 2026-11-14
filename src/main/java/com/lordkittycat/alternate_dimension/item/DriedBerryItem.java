@@ -1,17 +1,16 @@
 package com.lordkittycat.alternate_dimension.item;
 
+import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.LivingEntity;
 
 public class DriedBerryItem extends Item {
-	public DriedBerryItem() {
-		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.1f).build()));
+	public DriedBerryItem(Item.Properties properties) {
+		super(properties.food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.1f).build(), Consumables.defaultFood().consumeSeconds(1F).build()));
 	}
 
-	@Override
-	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 20;
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return slotChanged && !oldStack.equals(newStack);
 	}
 }

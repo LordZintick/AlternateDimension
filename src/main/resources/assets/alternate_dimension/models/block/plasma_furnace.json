@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alternate_dimension:block/liquid_plasma",
+    "up": "alternate_dimension:block/liquid_plasma",
+    "north": "alternate_dimension:block/liquid_plasma",
+    "east": "alternate_dimension:block/liquid_plasma",
+    "south": "alternate_dimension:block/liquid_plasma",
+    "west": "alternate_dimension:block/liquid_plasma",
+    "particle": "alternate_dimension:block/liquid_plasma"
+  }
+}

@@ -3,10 +3,32 @@
   "fallback": "alternate_dimension:giant_beetle_nest_side_end",
   "elements": [
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "alternate_dimension:giant_beetle_nest_horizontal_straight",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:giant_beetle_nest_turn_up",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "alternate_dimension:giant_beetle_nest_turn_down",
         "projection": "rigid",
         "processors": {
           "processors": []

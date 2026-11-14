@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "alternate_dimension:block/pine_planks",
+    "particle": "alternate_dimension:block/pine_planks"
+  }
+}

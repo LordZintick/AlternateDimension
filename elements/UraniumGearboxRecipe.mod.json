@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:UraniumGear"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:UraniumPlate",
+      "CUSTOM:UraniumGear",
+      "",
+      "CUSTOM:UraniumGear",
+      "CUSTOM:UraniumPlate"
+    ],
+    "recipeReturnStack": "CUSTOM:UraniumGearbox",
+    "name": "uranium_gearbox_recipe",
+    "namespace": "mod"
+  }
+}

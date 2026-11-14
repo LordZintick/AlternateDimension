@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:azure_leaves"
+    "alternate_dimension:willow_leaves",
+    "alternate_dimension:pine_leaves",
+    "alternate_dimension:brimwood_leaves",
+    "alternate_dimension:plant_matter",
+    "alternate_dimension:redwood_leaves",
+    "alternate_dimension:azure_leaves",
+    "alternate_dimension:solar_leaves"
   ]
 }

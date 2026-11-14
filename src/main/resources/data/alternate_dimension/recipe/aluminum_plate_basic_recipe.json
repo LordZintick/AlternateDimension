@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:aluminum_ingot",
+    "#alternate_dimension:hammers",
+    "alternate_dimension:aluminum_ingot",
+    "alternate_dimension:aluminum_ingot"
+  ],
+  "result": {
+    "id": "alternate_dimension:aluminum_plate",
+    "count": 1
+  }
+}

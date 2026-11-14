@@ -8,12 +8,8 @@
     "bbb"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:chain"
-    },
-    "b": {
-      "item": "alternate_dimension:stripped_azure_log"
-    }
+    "a": "alternate_dimension:aluminum_chain",
+    "b": "alternate_dimension:stripped_azure_log"
   },
   "result": {
     "id": "alternate_dimension:azure_hanging_sign",

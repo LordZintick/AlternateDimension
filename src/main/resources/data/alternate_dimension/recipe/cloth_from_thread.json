@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cloth",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "alternate_dimension:weak_thread"
+  },
+  "result": {
+    "id": "alternate_dimension:cloth",
+    "count": 1
+  }
+}

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:bowl"
-    }
+    "alternate_dimension:tool_rod",
+    "#alternate_dimension:bowls"
   ],
   "result": {
     "id": "alternate_dimension:mortar_and_pestle",

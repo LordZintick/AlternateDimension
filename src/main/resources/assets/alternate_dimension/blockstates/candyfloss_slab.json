@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "alternate_dimension:block/candyfloss_slab"
+    },
+    "type=top": {
+      "model": "alternate_dimension:block/candyfloss_slab_top"
+    },
+    "type=double": {
+      "model": "alternate_dimension:block/candyfloss_slab_full"
+    }
+  }
+}

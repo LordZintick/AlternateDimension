@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "alternate_dimension:hollow_candy_cane",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 5,
+    "separation": 2,
+    "salt": 453582785
+  }
+}

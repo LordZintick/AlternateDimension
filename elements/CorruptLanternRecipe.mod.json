@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Phosphorus",
+      "CUSTOM:CorruptBricks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks",
+      "CUSTOM:CorruptBricks"
+    ],
+    "recipeReturnStack": "CUSTOM:CorruptLantern",
+    "name": "corrupt_lantern_recipe",
+    "namespace": "mod"
+  }
+}

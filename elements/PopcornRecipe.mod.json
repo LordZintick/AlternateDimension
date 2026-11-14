@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Corn"
+    ],
+    "cookingBookCategory": "FOOD",
+    "xpReward": 0.25,
+    "cookingTime": 10,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": "CUSTOM:PopcornKernel",
+    "smeltingReturnStack": "CUSTOM:Popcorn",
+    "name": "popcorn_recipe",
+    "namespace": "mod"
+  }
+}

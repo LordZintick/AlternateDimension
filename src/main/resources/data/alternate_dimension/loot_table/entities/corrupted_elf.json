@@ -50,7 +50,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:amethyst_shard",
+          "name": "alternate_dimension:raw_quartz",
           "weight": 3,
           "functions": [
             {
@@ -64,7 +64,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:echo_shard",
+          "name": "alternate_dimension:evilstone_gem",
           "weight": 1,
           "functions": [
             {
@@ -78,7 +78,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
+          "name": "alternate_dimension:aluminum_ingot",
           "weight": 2,
           "functions": [
             {
@@ -97,8 +97,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:rotten_flesh",
-          "weight": 1,
+          "name": "alternate_dimension:weak_thread",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -106,6 +106,17 @@
                 "min": 2,
                 "max": 4
               }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alternate_dimension:strong_thread",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
             }
           ]
         }
@@ -119,15 +130,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bow",
+          "name": "alternate_dimension:phosphorium_ingot",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             },
             {
               "function": "minecraft:enchant_with_levels",
@@ -140,7 +148,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone",
+          "name": "alternate_dimension:phosphorus",
           "weight": 5,
           "functions": [
             {
@@ -164,10 +172,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             }
           ]
         },
@@ -177,10 +182,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
+              "count": 1
             }
           ]
         }

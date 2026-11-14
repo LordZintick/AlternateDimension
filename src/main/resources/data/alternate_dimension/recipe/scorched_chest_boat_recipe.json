@@ -3,12 +3,8 @@
   "group": "chest_boat",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "alternate_dimension:scorched_boat"
-    },
-    {
-      "item": "minecraft:chest"
-    }
+    "alternate_dimension:scorched_boat",
+    "#alternate_dimension:boxes"
   ],
   "result": {
     "id": "alternate_dimension:scorched_chest_boat",

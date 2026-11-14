@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -15,9 +15,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:AlternateDimensionEquipment"
-      }
+      "CUSTOM:AlternateDimensionEquipment"
     ],
     "efficiency": 15.0,
     "attackSpeed": 1.4000000000000001,
@@ -28,9 +26,7 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:TitaniumIngot"
-      }
+      "CUSTOM:TitaniumIngot"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
@@ -38,8 +34,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "PlayDrillSound"
-    }
+    "onBlockDestroyedWithTool": "PlayDrillSound"
   }
 }

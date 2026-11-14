@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:black_dye"
-    }
+    "a": "alternate_dimension:math_essence"
   },
   "result": {
     "id": "alternate_dimension:plus",

@@ -4,6 +4,5 @@
     "all": "alternate_dimension:block/phosphorus_torch",
     "particle": "alternate_dimension:block/phosphorus_torch",
     "0": "alternate_dimension:block/phosphorus_torch"
-  },
-  "render_type": "cutout"
+  }
 }

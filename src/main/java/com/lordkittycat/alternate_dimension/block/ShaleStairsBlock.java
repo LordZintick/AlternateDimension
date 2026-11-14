@@ -6,8 +6,8 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
 
 public class ShaleStairsBlock extends StairBlock {
-	public ShaleStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.BASALT).strength(1f).requiresCorrectToolForDrops());
+	public ShaleStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.sound(SoundType.BASALT).strength(1f).requiresCorrectToolForDrops());
 	}
 
 	@Override

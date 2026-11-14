@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mythril_ingot",
+    "unlockingItems": [
+      "CUSTOM:MythrilShards"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:FiredMythrilIngot",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock",
+      "CUSTOM:PermafrostBlock"
+    ],
+    "recipeReturnStack": "CUSTOM:MythrilIngot",
+    "name": "mythril_ingot_recipe",
+    "namespace": "mod"
+  }
+}

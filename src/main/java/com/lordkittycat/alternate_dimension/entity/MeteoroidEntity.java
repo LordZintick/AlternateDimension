@@ -4,10 +4,13 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
-import net.minecraft.world.entity.projectile.ThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
+import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -19,17 +22,40 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 
-import com.lordkittycat.alternate_dimension.procedures.NeverProcedure;
 import com.lordkittycat.alternate_dimension.procedures.MeteoroidSpawnMeteoriteProcedure;
 import com.lordkittycat.alternate_dimension.procedures.MeteoroidParticlesProcedure;
 
 public class MeteoroidEntity extends Monster {
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(MeteoroidEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(MeteoroidEntity.class, EntityDataSerializers.INT);
+
 	public MeteoroidEntity(EntityType<MeteoroidEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(TEXTURE, "meteoroid_texture");
+		builder.define(ANIM, 0);
+	}
+
+	public void setTexture(String texture) {
+		this.entityData.set(TEXTURE, texture);
+	}
+
+	public String getTexture() {
+		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -49,13 +75,7 @@ public class MeteoroidEntity extends Monster {
 	}
 
 	@Override
-	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		MeteoroidSpawnMeteoriteProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
-		return super.causeFallDamage(l, d, source);
-	}
-
-	@Override
-	public boolean hurt(DamageSource damagesource, float amount) {
+	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
@@ -63,15 +83,15 @@ public class MeteoroidEntity extends Monster {
 		Entity entity = this;
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
-		if (!NeverProcedure.execute())
-			return false;
+
+		MeteoroidSpawnMeteoriteProcedure.execute(world, x, y, z, entity);
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (damagesource.getDirectEntity() instanceof Player)
 			return false;
-		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
+		if (damagesource.getDirectEntity() instanceof AbstractThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
@@ -91,12 +111,39 @@ public class MeteoroidEntity extends Monster {
 			return false;
 		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
-		return super.hurt(damagesource, amount);
+		return super.hurtServer(level, damagesource, amount);
 	}
 
 	@Override
 	public boolean ignoreExplosion(Explosion explosion) {
 		return true;
+	}
+
+	@Override
+	public void addAdditionalSaveData(ValueOutput valueOutput) {
+		super.addAdditionalSaveData(valueOutput);
+		valueOutput.putString("Texture", this.getTexture());
+	}
+
+	@Override
+	public void readAdditionalSaveData(ValueInput valueInput) {
+		super.readAdditionalSaveData(valueInput);
+		this.setTexture(valueInput.getStringOr("Texture", "meteoroid_texture"));
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.SUCCESS;
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		MeteoroidSpawnMeteoriteProcedure.execute(world, x, y, z, entity);
+		return retval;
 	}
 
 	@Override
@@ -106,12 +153,18 @@ public class MeteoroidEntity extends Monster {
 	}
 
 	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		MeteoroidSpawnMeteoriteProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
 	public boolean canCollideWith(Entity entity) {
 		return true;
 	}
 
 	@Override
-	public boolean canBeCollidedWith() {
+	public boolean canBeCollidedWith(Entity sourceentity) {
 		return true;
 	}
 

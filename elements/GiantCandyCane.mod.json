@@ -1,20 +1,16 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "candy_cane",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 5,
     "separation": 2,
     "restrictionBiomes": [
-      {
-        "value": "#mod:candy_biome_biomes"
-      }
+      "#mod:candy_biome_biomes"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
