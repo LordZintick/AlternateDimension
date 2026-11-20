@@ -4,36 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added recipes to upgrade mini instaminers to the full versions.&#10;- Changed the mana costs of most machines.&#10;- FINALLY added a block of magic dust as a mana item that can be used to fuel machines.&#10;- Various other minor fixes and changes.">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AlternateDimension.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/AlternateDimension.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/index" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MainGuidebook.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ManaInserter.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ManaInserter.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateCompressor.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateCompressor.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateFuser.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateFuser.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateManaMystifier.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateManaMystifier.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdatePhotolithographicMicrofabricator.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdatePhotolithographicMicrofabricator.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/MainGuidebookBookClientEvents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/gui/MainGuidebookBookScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/event/MainGuidebookStartingBookEvents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MainGuidebookItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/main_guidebook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/main_guidebook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mana_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mana_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/natural_drops.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/natural_drops.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/generatorGradleCache" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/generatorGradleCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionModPlayerAnimationAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModModels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/CameraAccessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/EntityRenderDispatcherMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/EntityRendererMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/ItemInHandLayerMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/ItemInHandRendererMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/LevelRendererMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/LivingEntityRendererMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerAnimationMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerAnimationRendererMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/PlayPlayerAnimationMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +48,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="alternate_dimension" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="alternate_dimension" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="alternate_dimension" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -102,7 +81,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/LordZintick/AlternateDimension.git&quot;,
-    &quot;accountId&quot;: &quot;a00449df-2184-4831-ae90-bcb26cb49337&quot;
+    &quot;accountId&quot;: &quot;ec1a59a6-af4f-4e69-bf34-891a5d42df06&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -118,6 +97,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
     "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
@@ -127,11 +108,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "origin/dev01",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "gradle.sync.parallel.migration.suppressed": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/src/main/java/com/github/lordzintick",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -152,9 +140,9 @@
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <module name="AlternateDimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,9 +150,9 @@
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <module name="AlternateDimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />

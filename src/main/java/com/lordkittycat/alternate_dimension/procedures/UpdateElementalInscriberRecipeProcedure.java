@@ -23,6 +23,7 @@ import net.minecraft.core.BlockPos;
 
 import java.util.stream.Collectors;
 import java.util.List;
+import java.util.ArrayList;
 
 import com.lordkittycat.alternate_dimension.jei_recipes.ElementalInfuserRecipeTypeRecipe;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModRecipeTypes;
@@ -67,16 +68,16 @@ public class UpdateElementalInscriberRecipeProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (ElementalInfuserRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> ingredients = recipe.getIngredients();
-					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> _ingredients = recipe.getIngredients();
+					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
-					if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
+					if (!_ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
 						continue;
-					if (!ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
+					if (!_ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
 						continue;
-					if (!ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
+					if (!_ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
 						continue;
 					return recipe.getResultItems().get(0).copy();
 				}
@@ -92,21 +93,24 @@ public class UpdateElementalInscriberRecipeProcedure {
 				recipes = AlternateDimensionModRecipeTypes.recipes.byType(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 			}
 			for (ElementalInfuserRecipeTypeRecipe recipe : recipes) {
-				List<Ingredient> ingredients = recipe.getIngredients();
-				if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+				List<Ingredient> _ingredients = recipe.getIngredients();
+				List<Integer> _orderedCounts = new ArrayList<>();
+				if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 					continue;
-				if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+				if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 					continue;
-				if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
+				if (!_ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
 					continue;
-				if (!ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
+				if (!_ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
 					continue;
-				if (!ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
+				if (!_ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
 					continue;
+				boolean _shapeless = false;
 				List<ItemStack> reciperesult = recipe.getResultItems();
 				i = 0;
-				for (int num : recipe.integers()) {
-					double numberiterator = (double) num;
+				List<Integer> _ints15 = _shapeless ? _orderedCounts : recipe.integers();
+				for (int _num : _ints15) {
+					double numberiterator = (double) _num;
 					if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) i).getCount() < numberiterator) {
 						countCheck = false;
 						break;
@@ -175,21 +179,24 @@ public class UpdateElementalInscriberRecipeProcedure {
 						recipes = AlternateDimensionModRecipeTypes.recipes.byType(ElementalInfuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 					}
 					for (ElementalInfuserRecipeTypeRecipe recipe : recipes) {
-						List<Ingredient> ingredients = recipe.getIngredients();
-						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						List<Ingredient> _ingredients = recipe.getIngredients();
+						List<Integer> _orderedCounts = new ArrayList<>();
+						if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 							continue;
-						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+						if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 							continue;
-						if (!ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
+						if (!_ingredients.get(2).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy())))
 							continue;
-						if (!ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
+						if (!_ingredients.get(3).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy())))
 							continue;
-						if (!ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
+						if (!_ingredients.get(4).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy())))
 							continue;
+						boolean _shapeless = false;
 						List<ItemStack> reciperesult = recipe.getResultItems();
 						i = 0;
-						for (int num : recipe.integers()) {
-							double numberiterator = (double) num;
+						List<Integer> _ints48 = _shapeless ? _orderedCounts : recipe.integers();
+						for (int _num : _ints48) {
+							double numberiterator = (double) _num;
 							if (world instanceof ServerLevel _serverLevel) {
 								BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
 								if (_be instanceof Container _container) {
