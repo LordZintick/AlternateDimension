@@ -26820,23 +26820,6 @@
       "path": "~/GeneralFeatures/Misc"
     },
     {
-      "name": "MainGuidebook",
-      "type": "custombook",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_guidebook",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/main_guidebook.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/event/MainGuidebookStartingBookEvents.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/MainGuidebookItem.java",
-          "src/main/java/com/lordkittycat/alternate_dimension/client/MainGuidebookBookClientEvents.java",
-          "src/main/resources/assets/alternate_dimension/items/main_guidebook.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/MainGuidebookBookScreen.java"
-        ]
-      }
-    },
-    {
       "name": "WillowLog",
       "type": "block",
       "compiles": true,
@@ -32437,6 +32420,34 @@
         ]
       },
       "path": "~/World/Solaria"
+    },
+    {
+      "name": "InstatunnelUpgradeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instatunnel_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/instatunnel_upgrade_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/instatunnel_upgrade_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "InstavatorUpgradeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instavator_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/instavator_upgrade_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/instavator_upgrade_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
     }
   ],
   "variable_elements": [
@@ -33206,7 +33217,8 @@
       "CUSTOM:CandiedGrassBlock"
     ],
     "ITEMS:mod:mana_items": [
-      "CUSTOM:ManaCrystal"
+      "CUSTOM:ManaCrystal",
+      "CUSTOM:MagicDustBlock"
     ],
     "ITEMS:c:tools/wrenches": [
       "CUSTOM:Wrench"
@@ -33431,7 +33443,9 @@
       "CUSTOM:FrostCore",
       "CUSTOM:Stardust",
       "CUSTOM:TatteredLeather",
-      "CUSTOM:MagicDust"
+      "CUSTOM:MagicDust",
+      "CUSTOM:BlessedFlesh",
+      "CUSTOM:RawMetalmeat"
     ],
     "ITEMS:mod:essences": [
       "CUSTOM:LifeEssence",
@@ -34766,8 +34780,7 @@
       "MantleFurnace",
       "VeridiumFurnace",
       "PlasmaFurnace",
-      "BlockShaperCasing",
-      "MainGuidebook"
+      "BlockShaperCasing"
     ],
     "CUSTOM:AlternateDimensionDecor": [
       "AluminumChain",
@@ -36243,7 +36256,6 @@
       "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar",
       "item.alternate_dimension.wand": "Wand",
       "item.alternate_dimension.scroll": "Scroll",
-      "item.alternate_dimension.main_guidebook": "Enchanted Journal",
       "item.alternate_dimension.willow_log": "Willow Log",
       "item.alternate_dimension.willow_wood": "Willow Wood",
       "item.alternate_dimension.stripped_willow_log": "Stripped Willow Log",
@@ -36420,7 +36432,7 @@
       "item.alternate_dimension.mushroom_catalyst.description_0": "A mystic-infused mushroom amalgam that can be used to open a portal to another world...",
       "item.alternate_dimension.fungal_processor": "Fungal Processor",
       "item.alternate_dimension.mana_inserter.description_0": "A tool used to manually insert mana into blocks that need it without having to set up mana providers.",
-      "item.alternate_dimension.mana_inserter.description_1": "Consumes Mana Crystals from your off-hand.",
+      "item.alternate_dimension.mana_inserter.description_1": "Consumes Mana Crystals or Blocks of Magic Dust from your off-hand.",
       "item.alternate_dimension.mana_inserter": "Mana Inserter",
       "item.alternate_dimension.hydrogen_plasma_block": "Hydrogen Plasma Block",
       "item.alternate_dimension.helium_plasma_block": "Helium Plasma Block",
@@ -36445,7 +36457,8 @@
       "item.alternate_dimension.hydrogen_plasma_pyrolite_ore": "Hydrogen Plasma Pyrolite Ore",
       "item.alternate_dimension.sun_idol.description_1": "Used to activate a portal to Solaria (BRING FIRE RESISTANCE!).",
       "item.alternate_dimension.sun_idol.description_0": "A conglomeration of fire and light energies, coalesced into this high-density core of light.",
-      "item.alternate_dimension.sun_idol": "Idol of the Sun"
+      "item.alternate_dimension.sun_idol": "Idol of the Sun",
+      "block.alternate_dimension.shroomy_box": "Shroomy Box"
     }
   },
   "metadata": {
@@ -36810,7 +36823,7 @@
   "workspaceSettings": {
     "modid": "alternate_dimension",
     "modName": "AlternateDimension",
-    "version": "2.1.0a1",
+    "version": "2.1.0a2",
     "description": "Adventure through a fantastical new world filled with new items to find, structures and biomes to explore, enemies to fight, tools to craft, challenges to conquer, and bosses to defeat!",
     "author": "LordZintick",
     "websiteURL": "https://modrinth.com/project/alternate-dimension",

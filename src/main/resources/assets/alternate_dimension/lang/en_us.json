@@ -1213,7 +1213,6 @@
   "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar",
   "item.alternate_dimension.wand": "Wand",
   "item.alternate_dimension.scroll": "Scroll",
-  "item.alternate_dimension.main_guidebook": "Enchanted Journal",
   "item.alternate_dimension.willow_log": "Willow Log",
   "item.alternate_dimension.willow_wood": "Willow Wood",
   "item.alternate_dimension.stripped_willow_log": "Stripped Willow Log",
@@ -1390,7 +1389,7 @@
   "item.alternate_dimension.mushroom_catalyst.description_0": "A mystic-infused mushroom amalgam that can be used to open a portal to another world...",
   "item.alternate_dimension.fungal_processor": "Fungal Processor",
   "item.alternate_dimension.mana_inserter.description_0": "A tool used to manually insert mana into blocks that need it without having to set up mana providers.",
-  "item.alternate_dimension.mana_inserter.description_1": "Consumes Mana Crystals from your off-hand.",
+  "item.alternate_dimension.mana_inserter.description_1": "Consumes Mana Crystals or Blocks of Magic Dust from your off-hand.",
   "item.alternate_dimension.mana_inserter": "Mana Inserter",
   "item.alternate_dimension.hydrogen_plasma_block": "Hydrogen Plasma Block",
   "item.alternate_dimension.helium_plasma_block": "Helium Plasma Block",
@@ -1415,5 +1414,6 @@
   "item.alternate_dimension.hydrogen_plasma_pyrolite_ore": "Hydrogen Plasma Pyrolite Ore",
   "item.alternate_dimension.sun_idol.description_1": "Used to activate a portal to Solaria (BRING FIRE RESISTANCE!).",
   "item.alternate_dimension.sun_idol.description_0": "A conglomeration of fire and light energies, coalesced into this high-density core of light.",
-  "item.alternate_dimension.sun_idol": "Idol of the Sun"
+  "item.alternate_dimension.sun_idol": "Idol of the Sun",
+  "block.alternate_dimension.shroomy_box": "Shroomy Box"
 }

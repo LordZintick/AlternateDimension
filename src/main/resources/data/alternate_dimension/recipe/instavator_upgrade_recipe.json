@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:miners_pet",
+    "alternate_dimension:mini_instavator",
+    "alternate_dimension:mini_instavator"
+  ],
+  "result": {
+    "id": "alternate_dimension:instavator",
+    "count": 1
+  }
+}

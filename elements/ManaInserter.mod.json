@@ -32,7 +32,7 @@
     "specialInformation": {
       "fixedValue": [
         "A tool used to manually insert mana into blocks that need it without having to set up mana providers.",
-        "Consumes Mana Crystals from your off-hand."
+        "Consumes Mana Crystals or Blocks of Magic Dust from your off-hand."
       ]
     },
     "glowCondition": {

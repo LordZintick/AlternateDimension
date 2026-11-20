@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "alternate_dimension:miners_pet",
+    "alternate_dimension:mini_instatunnel",
+    "alternate_dimension:mini_instatunnel"
+  ],
+  "result": {
+    "id": "alternate_dimension:instatunnel",
+    "count": 1
+  }
+}
