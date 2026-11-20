@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "alternate_dimension:magic_dust_block",
     "alternate_dimension:mana_crystal"
   ]
 }

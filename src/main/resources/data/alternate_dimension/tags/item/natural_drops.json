@@ -5,6 +5,7 @@
     "alternate_dimension:frozen_flesh",
     "alternate_dimension:living_flesh",
     "alternate_dimension:calcinated_flesh",
+    "alternate_dimension:blessed_flesh",
     "alternate_dimension:frost_core",
     "alternate_dimension:venom_gland",
     "alternate_dimension:golden_beef",
@@ -17,6 +18,7 @@
     "alternate_dimension:enchanted_flesh",
     "alternate_dimension:spiky_flesh",
     "alternate_dimension:tattered_leather",
-    "alternate_dimension:stardust"
+    "alternate_dimension:stardust",
+    "alternate_dimension:raw_metalmeat"
   ]
 }

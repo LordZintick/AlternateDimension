@@ -700,7 +700,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CRYONIC_SCIMITAR;
 	public static final DeferredItem<Item> WAND;
 	public static final DeferredItem<Item> SCROLL;
-	public static final DeferredItem<Item> MAIN_GUIDEBOOK;
 	public static final DeferredItem<Item> WILLOW_LOG;
 	public static final DeferredItem<Item> WILLOW_WOOD;
 	public static final DeferredItem<Item> STRIPPED_WILLOW_LOG;
@@ -1511,7 +1510,6 @@ public class AlternateDimensionModItems {
 		CRYONIC_SCIMITAR = register("cryonic_scimitar", CryonicScimitarItem::new);
 		WAND = register("wand", WandItem::new);
 		SCROLL = register("scroll", ScrollItem::new);
-		MAIN_GUIDEBOOK = register("main_guidebook", MainGuidebookItem::new);
 		WILLOW_LOG = block(AlternateDimensionModBlocks.WILLOW_LOG);
 		WILLOW_WOOD = block(AlternateDimensionModBlocks.WILLOW_WOOD);
 		STRIPPED_WILLOW_LOG = block(AlternateDimensionModBlocks.STRIPPED_WILLOW_LOG);

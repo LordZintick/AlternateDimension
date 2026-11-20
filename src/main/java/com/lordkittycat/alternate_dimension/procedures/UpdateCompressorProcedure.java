@@ -63,7 +63,7 @@ public class UpdateCompressorProcedure {
 			}
 		}
 		inputs.add(Direction.UP);
-		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, Direction.DOWN, result, 3, 1);
+		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, Direction.DOWN, result, 1, 1);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {

@@ -114,7 +114,7 @@ public class UpdateFuserProcedure {
 		}
 		inputs.add(((getDirectionFromBlockState(blockstate)).getClockWise(Direction.Axis.Y)));
 		inputs.add(((getDirectionFromBlockState(blockstate)).getCounterClockWise(Direction.Axis.Y)));
-		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getOpposite(), result, 2, 1);
+		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getOpposite(), result, 1, 1);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {

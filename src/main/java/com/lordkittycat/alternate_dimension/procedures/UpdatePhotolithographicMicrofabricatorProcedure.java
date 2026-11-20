@@ -66,7 +66,7 @@ public class UpdatePhotolithographicMicrofabricatorProcedure {
 			}
 		}
 		inputs.add(((getDirectionFromBlockState(blockstate)).getClockWise(Direction.Axis.Y)));
-		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getCounterClockWise(Direction.Axis.Y), result, 5, 0.5);
+		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getCounterClockWise(Direction.Axis.Y), result, 2, 0.5);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
