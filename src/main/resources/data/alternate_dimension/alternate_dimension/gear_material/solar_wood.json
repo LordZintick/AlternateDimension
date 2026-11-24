@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.solar_wood",
+  "color": 11118919,
+  "durability_multiplier": 0.8,
+  "mining_speed": 2.0,
+  "repair_ingredient": "alternate_dimension:solar_planks",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.solar_wood",
+    "tint_with_material": true
+  }
+}

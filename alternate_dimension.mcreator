@@ -33117,6 +33117,7 @@
       "~CheeseSword@CUSTOM:Cheese"
     ],
     "ITEMS:alternate_dimension:wooden_drill_repair_items": [
+      "~WoodenDrill@Blocks.PLANKS",
       "TAG:mod:altdim_planks"
     ],
     "ITEMS:alternate_dimension:beetle_armor_repair_items": [
@@ -33257,18 +33258,7 @@
       "~YellowMushroomBlock@CUSTOM:YellowMushroomBlock",
       "~GreenMushroomBlock@CUSTOM:GreenMushroomBlock",
       "~PurpleMushroomBlock@CUSTOM:PurpleMushroomBlock",
-      "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
       "~ShroomyBox@CUSTOM:ShroomyBox",
-      "~CandyflossBox@CUSTOM:CandyflossBox",
-      "~GreenwoodBox@CUSTOM:GreenwoodBox",
-      "~AzureBox@CUSTOM:AzureBox",
-      "~RedwoodBox@CUSTOM:RedwoodBox",
-      "~PineBox@CUSTOM:PineBox",
-      "~ScorchedBox@CUSTOM:ScorchedBox",
-      "~StrippedSolarWood@CUSTOM:StrippedSolarWood",
-      "~StrippedSolarLog@CUSTOM:StrippedSolarLog",
-      "~StrippedBrimwoodWood@CUSTOM:StrippedBrimwoodWood",
-      "~StrippedBrimwoodLog@CUSTOM:StrippedBrimwoodLog",
       "~SolarHangingSign@CUSTOM:SolarHangingSign.wall",
       "~SolarHangingSign@CUSTOM:SolarHangingSign",
       "~SolarSign@CUSTOM:SolarSign.wall",
@@ -33282,6 +33272,8 @@
       "~SolarSlab@CUSTOM:SolarSlab",
       "~SolarStairs@CUSTOM:SolarStairs",
       "~SolarPlanks@CUSTOM:SolarPlanks",
+      "~StrippedSolarWood@CUSTOM:StrippedSolarWood",
+      "~StrippedSolarLog@CUSTOM:StrippedSolarLog",
       "~SolarWood@CUSTOM:SolarWood",
       "~SolarLog@CUSTOM:SolarLog",
       "~BrimwoodHangingSign@CUSTOM:BrimwoodHangingSign.wall",
@@ -33297,6 +33289,8 @@
       "~BrimwoodSlab@CUSTOM:BrimwoodSlab",
       "~BrimwoodStairs@CUSTOM:BrimwoodStairs",
       "~BrimwoodPlanks@CUSTOM:BrimwoodPlanks",
+      "~StrippedBrimwoodWood@CUSTOM:StrippedBrimwoodWood",
+      "~StrippedBrimwoodLog@CUSTOM:StrippedBrimwoodLog",
       "~BrimwoodWood@CUSTOM:BrimwoodWood",
       "~BrimwoodLog@CUSTOM:BrimwoodLog",
       "~WillowHangingSign@CUSTOM:WillowHangingSign.wall",
@@ -33316,6 +33310,7 @@
       "~StrippedWillowLog@CUSTOM:StrippedWillowLog",
       "~WillowWood@CUSTOM:WillowWood",
       "~WillowLog@CUSTOM:WillowLog",
+      "~CandyflossBox@CUSTOM:CandyflossBox",
       "~CandyflossHangingSign@CUSTOM:CandyflossHangingSign",
       "~CandyflossHangingSign@CUSTOM:CandyflossHangingSign.wall",
       "~CandyflossSign@CUSTOM:CandyflossSign",
@@ -33329,6 +33324,7 @@
       "~CandyflossSlab@CUSTOM:CandyflossSlab",
       "~CandyflossStairs@CUSTOM:CandyflossStairs",
       "~CandyflossPlanks@CUSTOM:CandyflossPlanks",
+      "~GreenwoodBox@CUSTOM:GreenwoodBox",
       "~GreenwoodHangingSign@CUSTOM:GreenwoodHangingSign.wall",
       "~GreenwoodHangingSign@CUSTOM:GreenwoodHangingSign",
       "~GreenwoodSign@CUSTOM:GreenwoodSign.wall",
@@ -33342,6 +33338,10 @@
       "~GreenwoodSlab@CUSTOM:GreenwoodSlab",
       "~GreenwoodStairs@CUSTOM:GreenwoodStairs",
       "~GreenwoodPlanks@CUSTOM:GreenwoodPlanks",
+      "~AzureBox@CUSTOM:AzureBox",
+      "~RedwoodBox@CUSTOM:RedwoodBox",
+      "~PineBox@CUSTOM:PineBox",
+      "~ScorchedBox@CUSTOM:ScorchedBox",
       "~PineHangingSign@CUSTOM:PineHangingSign",
       "~PineHangingSign@CUSTOM:PineHangingSign.wall",
       "~PineSign@CUSTOM:PineSign",
@@ -33361,6 +33361,7 @@
       "~PineLog@CUSTOM:PineLog",
       "~BlueMushroomStairs@CUSTOM:BlueMushroomStairs",
       "~BlueMushroomSlab@CUSTOM:BlueMushroomSlab",
+      "~BlueMushroomBlock@CUSTOM:BlueMushroomBlock",
       "~Spikes@CUSTOM:Spikes",
       "~RedwoodHangingSign@CUSTOM:RedwoodHangingSign",
       "~RedwoodHangingSign@CUSTOM:RedwoodHangingSign.wall",
@@ -33460,19 +33461,16 @@
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~HydrogenPlasmaPyroliteOre@CUSTOM:HydrogenPlasmaPyroliteOre",
-      "~PlasmaFurnace@CUSTOM:PlasmaFurnace",
       "~PlasmoliumOre@CUSTOM:PlasmoliumOre",
-      "~ManaProvider@CUSTOM:ManaProvider",
       "~FungalProcessor@CUSTOM:FungalProcessor",
       "~BlockOfShroomium@CUSTOM:BlockOfShroomium",
-      "~SkyStone@CUSTOM:SkyStone",
-      "~Collector@CUSTOM:Collector",
       "~Extractor@CUSTOM:Extractor",
-      "~AluminumCrate@CUSTOM:AluminumCrate",
       "~ManaMystifier@CUSTOM:ManaMystifier",
       "~AstralBrickWall@CUSTOM:AstralBrickWall",
       "~AstralBrickStairs@CUSTOM:AstralBrickStairs",
       "~AstralBrickSlab@CUSTOM:AstralBrickSlab",
+      "~AluminumCrate@CUSTOM:AluminumCrate",
+      "~Collector@CUSTOM:Collector",
       "~AstralBricks@CUSTOM:AstralBricks",
       "~Compressor@CUSTOM:Compressor",
       "~PhotolithographicMicrofabricator@CUSTOM:PhotolithographicMicrofabricator",
@@ -33482,6 +33480,7 @@
       "~ItemElevator@CUSTOM:ItemElevator",
       "~ManaSynthesizer@CUSTOM:ManaSynthesizer",
       "~ManaTank@CUSTOM:ManaTank",
+      "~ManaProvider@CUSTOM:ManaProvider",
       "~Fuser@CUSTOM:Fuser",
       "~MantleGemOre@CUSTOM:MantleGemOre",
       "~ShaleGemOre@CUSTOM:ShaleGemOre",
@@ -33616,6 +33615,7 @@
       "~ScorchedBrickSlab@CUSTOM:ScorchedBrickSlab",
       "~ScorchedBricks@CUSTOM:ScorchedBricks",
       "~MeteoriteBlock@CUSTOM:MeteoriteBlock",
+      "~SkyStone@CUSTOM:SkyStone",
       "~CookingCore@CUSTOM:CookingCore",
       "~ServerStation@CUSTOM:ServerStation",
       "~ParmesanCheeseBlock@CUSTOM:ParmesanCheeseBlock",
@@ -33626,9 +33626,139 @@
       "~BeetleNest@CUSTOM:BeetleNest",
       "~ScorchedEarth@CUSTOM:ScorchedEarth",
       "~TitaniumBlock@CUSTOM:TitaniumBlock",
+      "~PlasmaFurnace@CUSTOM:PlasmaFurnace",
       "CUSTOM:ShaleFurnace",
       "CUSTOM:MantleFurnace",
       "CUSTOM:VeridiumFurnace"
+    ],
+    "BLOCKS:mod:willow_logs": [
+      "CUSTOM:WillowLog",
+      "CUSTOM:WillowWood",
+      "CUSTOM:StrippedWillowLog",
+      "CUSTOM:StrippedWillowWood"
+    ],
+    "ITEMS:mod:willow_logs": [
+      "CUSTOM:WillowLog",
+      "CUSTOM:WillowWood",
+      "CUSTOM:StrippedWillowLog",
+      "CUSTOM:StrippedWillowWood"
+    ],
+    "BLOCKS:mod:brimwood_logs": [
+      "CUSTOM:BrimwoodLog",
+      "CUSTOM:BrimwoodWood",
+      "CUSTOM:StrippedBrimwoodLog",
+      "CUSTOM:StrippedBrimwoodWood"
+    ],
+    "ITEMS:mod:brimwood_logs": [
+      "CUSTOM:BrimwoodLog",
+      "CUSTOM:BrimwoodWood",
+      "CUSTOM:StrippedBrimwoodLog",
+      "CUSTOM:StrippedBrimwoodWood"
+    ],
+    "BLOCKS:mod:solar_logs": [
+      "CUSTOM:SolarLog",
+      "CUSTOM:SolarWood",
+      "CUSTOM:StrippedSolarLog",
+      "CUSTOM:StrippedSolarWood"
+    ],
+    "ITEMS:mod:solar_logs": [
+      "CUSTOM:SolarLog",
+      "CUSTOM:SolarWood",
+      "CUSTOM:StrippedSolarLog",
+      "CUSTOM:StrippedSolarWood"
+    ],
+    "ENTITIES:mod:candy_mobs": [
+      "CUSTOM:RedGummyBear",
+      "CUSTOM:BlueGummyBear",
+      "CUSTOM:GreenGummyBearMob",
+      "CUSTOM:GingerbreadWarrior",
+      "CUSTOM:CandySpirit"
+    ],
+    "ENTITIES:mod:fire_mobs": [
+      "CUSTOM:Beetle",
+      "CUSTOM:FireSpirit",
+      "CUSTOM:BeetleBrute",
+      "CUSTOM:BeetleChaser",
+      "CUSTOM:BeetleQueen",
+      "CUSTOM:MagmaticZombie",
+      "CUSTOM:IncendiarySpider"
+    ],
+    "ENTITIES:mod:ice_mobs": [
+      "CUSTOM:CloudKitty",
+      "CUSTOM:CloudyWolf",
+      "CUSTOM:SkyTurtle",
+      "CUSTOM:IceSpirit",
+      "CUSTOM:FrostyZombie",
+      "CUSTOM:PermachillZombie"
+    ],
+    "ENTITIES:mod:life_mobs": [
+      "CUSTOM:Elf",
+      "CUSTOM:LifeSpirit",
+      "CUSTOM:OvergrownZombie",
+      "CUSTOM:CactusZombie",
+      "CUSTOM:VenomousSpider",
+      "CUSTOM:VerdantZombie"
+    ],
+    "ENTITIES:mod:essence_mobs": [
+      "#mod:hallowed_mobs",
+      "#mod:void_mobs",
+      "#mod:fire_mobs",
+      "#mod:candy_mobs",
+      "#mod:ice_mobs",
+      "#mod:life_mobs"
+    ],
+    "ITEMS:alternate_dimension:aluminum_hammer_repair_items": [
+      "~AluminumHammer@CUSTOM:AluminumIngot"
+    ],
+    "ITEMS:mod:hammers": [
+      "CUSTOM:AluminumHammer"
+    ],
+    "ITEMS:alternate_dimension:darksteel_armor_repair_items": [
+      "~DarksteelArmor@CUSTOM:DarksteelIngot"
+    ],
+    "ITEMS:alternate_dimension:darksteel_pickaxe_repair_items": [
+      "~DarksteelPickaxe@CUSTOM:DarksteelIngot"
+    ],
+    "ITEMS:alternate_dimension:darksteel_axe_repair_items": [
+      "~DarksteelAxe@CUSTOM:DarksteelIngot"
+    ],
+    "ITEMS:alternate_dimension:darksteel_shovel_repair_items": [
+      "~DarksteelShovel@CUSTOM:DarksteelIngot"
+    ],
+    "ITEMS:alternate_dimension:darksteel_sword_repair_items": [
+      "~DarksteelSword@CUSTOM:DarksteelIngot"
+    ],
+    "ITEMS:alternate_dimension:darksteel_hoe_repair_items": [
+      "~DarksteelHoe@CUSTOM:DarksteelIngot"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~LiquidPlasma@CUSTOM:LiquidPlasma",
+      "~LiquidMycelium@CUSTOM:LiquidMycelium"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Solaria@CUSTOM:HeliumPlasmaBlock",
+      "~Solaria@CUSTOM:HydrogenPlasmaBlock",
+      "~Shroomia@CUSTOM:MushroomSoil",
+      "~Shroomia@CUSTOM:GlowingMycelium",
+      "~Shroomia@CUSTOM:RichDirt"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_pickaxe_repair_items": [
+      "~PlasmoliumPickaxe@CUSTOM:PlasmoliumIngot"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_axe_repair_items": [
+      "~PlasmoliumAxe@CUSTOM:PlasmoliumIngot"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_shovel_repair_items": [
+      "~PlasmoliumShovel@CUSTOM:PlasmoliumIngot"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_sword_repair_items": [
+      "~PlasmoliumSword@CUSTOM:PlasmoliumIngot"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_hoe_repair_items": [
+      "~PlasmoliumHoe@CUSTOM:PlasmoliumIngot"
+    ],
+    "ITEMS:alternate_dimension:plasmolium_armor_repair_items": [
+      "~PlasmoliumArmor@CUSTOM:PlasmoliumIngot"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~TitaniumBlock@CUSTOM:TitaniumBlock"
@@ -33637,7 +33767,6 @@
       "~PlasmoliumPickaxe@CUSTOM:PlasmoliumPickaxe",
       "~DarksteelPickaxe@CUSTOM:DarksteelPickaxe",
       "~AluminumHammer@CUSTOM:AluminumHammer",
-      "~ShroomiumPickaxe@CUSTOM:ShroomiumPickaxe",
       "~CandyflossPickaxe@CUSTOM:CandyflossPickaxe",
       "~HolystonePickaxe@CUSTOM:HolystonePickaxe",
       "~EvilstonePickaxe@CUSTOM:EvilstonePickaxe",
@@ -33646,6 +33775,7 @@
       "~VeridiumPickaxe@CUSTOM:VeridiumPickaxe",
       "~AzurePickaxe@CUSTOM:AzurePickaxe",
       "~MythrilPickaxe@CUSTOM:MythrilPickaxe",
+      "~ShroomiumPickaxe@CUSTOM:ShroomiumPickaxe",
       "~PhosphoriumPickaxe@CUSTOM:PhosphoriumPickaxe",
       "~MushyPickaxe@CUSTOM:MushyPickaxe",
       "~PlantyPickaxe@CUSTOM:PlantyPickaxe",
@@ -33661,7 +33791,6 @@
     "ITEMS:minecraft:axes": [
       "~PlasmoliumAxe@CUSTOM:PlasmoliumAxe",
       "~DarksteelAxe@CUSTOM:DarksteelAxe",
-      "~ShroomiumAxe@CUSTOM:ShroomiumAxe",
       "~CandyflossAxe@CUSTOM:CandyflossAxe",
       "~HolystoneAxe@CUSTOM:HolystoneAxe",
       "~EvilstoneAxe@CUSTOM:EvilstoneAxe",
@@ -33670,6 +33799,7 @@
       "~VeridiumAxe@CUSTOM:VeridiumAxe",
       "~AzureAxe@CUSTOM:AzureAxe",
       "~MythrilAxe@CUSTOM:MythrilAxe",
+      "~ShroomiumAxe@CUSTOM:ShroomiumAxe",
       "~PhosphoriumAxe@CUSTOM:PhosphoriumAxe",
       "~MushyAxe@CUSTOM:MushyAxe",
       "~PlantyAxe@CUSTOM:PlantyAxe",
@@ -33683,9 +33813,7 @@
     "ITEMS:minecraft:swords": [
       "~PlasmoliumSword@CUSTOM:PlasmoliumSword",
       "~DarksteelSword@CUSTOM:DarksteelSword",
-      "~ShroomiumSword@CUSTOM:ShroomiumSword",
       "~CandyflossSword@CUSTOM:CandyflossSword",
-      "~CandyCaneSword@CUSTOM:CandyCaneSword",
       "~CryonicScimitar@CUSTOM:CryonicScimitar",
       "~HolystoneSword@CUSTOM:HolystoneSword",
       "~EvilstoneSword@CUSTOM:EvilstoneSword",
@@ -33694,6 +33822,7 @@
       "~VeridiumSword@CUSTOM:VeridiumSword",
       "~AzureSword@CUSTOM:AzureSword",
       "~MythrilSword@CUSTOM:MythrilSword",
+      "~ShroomiumSword@CUSTOM:ShroomiumSword",
       "~PhosphoriumSword@CUSTOM:PhosphoriumSword",
       "~MushySword@CUSTOM:MushySword",
       "~PlantySword@CUSTOM:PlantySword",
@@ -33702,6 +33831,7 @@
       "~ScorchedWoodenSword@CUSTOM:ScorchedWoodenSword",
       "~RomanSpear@CUSTOM:RomanSpear",
       "~AluminumSword@CUSTOM:AluminumSword",
+      "~CandyCaneSword@CUSTOM:CandyCaneSword",
       "~BeetleSword@CUSTOM:BeetleSword",
       "~CheeseSword@CUSTOM:CheeseSword",
       "~TitaniumSword@CUSTOM:TitaniumSword"
@@ -33709,7 +33839,6 @@
     "ITEMS:minecraft:shovels": [
       "~PlasmoliumShovel@CUSTOM:PlasmoliumShovel",
       "~DarksteelShovel@CUSTOM:DarksteelShovel",
-      "~ShroomiumShovel@CUSTOM:ShroomiumShovel",
       "~CandyflossShovel@CUSTOM:CandyflossShovel",
       "~HolystoneShovel@CUSTOM:HolystoneShovel",
       "~EvilstoneShovel@CUSTOM:EvilstoneShovel",
@@ -33718,6 +33847,7 @@
       "~VeridiumShovel@CUSTOM:VeridiumShovel",
       "~AzureShovel@CUSTOM:AzureShovel",
       "~MythrilShovel@CUSTOM:MythrilShovel",
+      "~ShroomiumShovel@CUSTOM:ShroomiumShovel",
       "~PhosphoriumShovel@CUSTOM:PhosphoriumShovel",
       "~MushyShovel@CUSTOM:MushyShovel",
       "~PlantyShovel@CUSTOM:PlantyShovel",
@@ -33730,7 +33860,6 @@
     "ITEMS:minecraft:hoes": [
       "~PlasmoliumHoe@CUSTOM:PlasmoliumHoe",
       "~DarksteelHoe@CUSTOM:DarksteelHoe",
-      "~ShroomiumHoe@CUSTOM:ShroomiumHoe",
       "~CandyflossHoe@CUSTOM:CandyflossHoe",
       "~HolystoneHoe@CUSTOM:HolystoneHoe",
       "~EvilstoneHoe@CUSTOM:EvilstoneHoe",
@@ -33739,6 +33868,7 @@
       "~VeridiumHoe@CUSTOM:VeridiumHoe",
       "~AzureHoe@CUSTOM:AzureHoe",
       "~MythrilHoe@CUSTOM:MythrilHoe",
+      "~ShroomiumHoe@CUSTOM:ShroomiumHoe",
       "~PhosphoriumHoe@CUSTOM:PhosphoriumHoe",
       "~MushyHoe@CUSTOM:MushyHoe",
       "~PlantyHoe@CUSTOM:PlantyHoe",
@@ -33787,16 +33917,15 @@
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~EnchantedHelmet@CUSTOM:EnchantedHelmet",
-      "~MathWorkbook@CUSTOM:MathWorkbook",
       "~Wrench@CUSTOM:Wrench",
       "~VenomDippedClub@CUSTOM:VenomDippedClub",
       "~WoodenClub@CUSTOM:WoodenClub",
       "~MortarAndPestle@CUSTOM:MortarAndPestle",
       "~RPG@CUSTOM:RPG",
-      "~ItemIncinerator@CUSTOM:ItemIncinerator"
+      "~ItemIncinerator@CUSTOM:ItemIncinerator",
+      "~MathWorkbook@CUSTOM:MathWorkbook"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
-      "~GlowingMycelium@CUSTOM:GlowingMycelium",
       "~RichFarmland@CUSTOM:RichFarmland",
       "~TheDirtBlock@CUSTOM:TheDirtBlock",
       "~EnchantedGrassBlock@CUSTOM:EnchantedGrassBlock",
@@ -33805,6 +33934,7 @@
       "~LushGrassBlock@CUSTOM:LushGrassBlock",
       "~RichDirt@CUSTOM:RichDirt",
       "~PermafrostBlock@CUSTOM:PermafrostBlock",
+      "~GlowingMycelium@CUSTOM:GlowingMycelium",
       "~WhippedCreamBlock@CUSTOM:WhippedCreamBlock",
       "~IceCreamBlock@CUSTOM:IceCreamBlock",
       "~MagicDustBlock@CUSTOM:MagicDustBlock",
@@ -34081,155 +34211,26 @@
       "~PureDoor@CUSTOM:PureDoor"
     ],
     "ENTITIES:minecraft:undead": [
-      "~MagmaticZombie@CUSTOM:MagmaticZombie",
       "~HeroZombrine@CUSTOM:HeroZombrine",
-      "~EnchantedZombie@CUSTOM:EnchantedZombie",
-      "~FrostyZombie@CUSTOM:FrostyZombie",
-      "~OvergrownZombie@CUSTOM:OvergrownZombie",
-      "~CorruptedZombie@CUSTOM:CorruptedZombie",
-      "~CalcifiedZombie@CUSTOM:CalcifiedZombie",
-      "~CactusZombie@CUSTOM:CactusZombie",
-      "~BloodZombie@CUSTOM:BloodZombie",
-      "~PumpkinZombie@CUSTOM:PumpkinZombie",
-      "~SpectralZombie@CUSTOM:SpectralZombie",
       "~VerdantZombie@CUSTOM:VerdantZombie",
       "~PermachillZombie@CUSTOM:PermachillZombie",
-      "~IronGiant@CUSTOM:IronGiant"
+      "~IronGiant@CUSTOM:IronGiant",
+      "~MagmaticZombie@CUSTOM:MagmaticZombie",
+      "~EnchantedZombie@CUSTOM:EnchantedZombie",
+      "~SpectralZombie@CUSTOM:SpectralZombie",
+      "~PumpkinZombie@CUSTOM:PumpkinZombie",
+      "~BloodZombie@CUSTOM:BloodZombie",
+      "~CactusZombie@CUSTOM:CactusZombie",
+      "~CalcifiedZombie@CUSTOM:CalcifiedZombie",
+      "~CorruptedZombie@CUSTOM:CorruptedZombie",
+      "~OvergrownZombie@CUSTOM:OvergrownZombie",
+      "~FrostyZombie@CUSTOM:FrostyZombie"
     ],
     "ENTITIES:minecraft:arthropod": [
+      "~ElectrifiedSpider@CUSTOM:ElectrifiedSpider",
       "~VenomousSpider@CUSTOM:VenomousSpider",
       "~IncendiarySpider@CUSTOM:IncendiarySpider",
-      "~SpiderHydra@CUSTOM:SpiderHydra",
-      "~ElectrifiedSpider@CUSTOM:ElectrifiedSpider"
-    ],
-    "BLOCKS:mod:willow_logs": [
-      "CUSTOM:WillowLog",
-      "CUSTOM:WillowWood",
-      "CUSTOM:StrippedWillowLog",
-      "CUSTOM:StrippedWillowWood"
-    ],
-    "ITEMS:mod:willow_logs": [
-      "CUSTOM:WillowLog",
-      "CUSTOM:WillowWood",
-      "CUSTOM:StrippedWillowLog",
-      "CUSTOM:StrippedWillowWood"
-    ],
-    "BLOCKS:mod:brimwood_logs": [
-      "CUSTOM:BrimwoodLog",
-      "CUSTOM:BrimwoodWood",
-      "CUSTOM:StrippedBrimwoodLog",
-      "CUSTOM:StrippedBrimwoodWood"
-    ],
-    "ITEMS:mod:brimwood_logs": [
-      "CUSTOM:BrimwoodLog",
-      "CUSTOM:BrimwoodWood",
-      "CUSTOM:StrippedBrimwoodLog",
-      "CUSTOM:StrippedBrimwoodWood"
-    ],
-    "BLOCKS:mod:solar_logs": [
-      "CUSTOM:SolarLog",
-      "CUSTOM:SolarWood",
-      "CUSTOM:StrippedSolarLog",
-      "CUSTOM:StrippedSolarWood"
-    ],
-    "ITEMS:mod:solar_logs": [
-      "CUSTOM:SolarLog",
-      "CUSTOM:SolarWood",
-      "CUSTOM:StrippedSolarLog",
-      "CUSTOM:StrippedSolarWood"
-    ],
-    "ENTITIES:mod:candy_mobs": [
-      "CUSTOM:RedGummyBear",
-      "CUSTOM:BlueGummyBear",
-      "CUSTOM:GreenGummyBearMob",
-      "CUSTOM:GingerbreadWarrior",
-      "CUSTOM:CandySpirit"
-    ],
-    "ENTITIES:mod:fire_mobs": [
-      "CUSTOM:Beetle",
-      "CUSTOM:FireSpirit",
-      "CUSTOM:BeetleBrute",
-      "CUSTOM:BeetleChaser",
-      "CUSTOM:BeetleQueen",
-      "CUSTOM:MagmaticZombie",
-      "CUSTOM:IncendiarySpider"
-    ],
-    "ENTITIES:mod:ice_mobs": [
-      "CUSTOM:CloudKitty",
-      "CUSTOM:CloudyWolf",
-      "CUSTOM:SkyTurtle",
-      "CUSTOM:IceSpirit",
-      "CUSTOM:FrostyZombie",
-      "CUSTOM:PermachillZombie"
-    ],
-    "ENTITIES:mod:life_mobs": [
-      "CUSTOM:Elf",
-      "CUSTOM:LifeSpirit",
-      "CUSTOM:OvergrownZombie",
-      "CUSTOM:CactusZombie",
-      "CUSTOM:VenomousSpider",
-      "CUSTOM:VerdantZombie"
-    ],
-    "ENTITIES:mod:essence_mobs": [
-      "#mod:hallowed_mobs",
-      "#mod:void_mobs",
-      "#mod:fire_mobs",
-      "#mod:candy_mobs",
-      "#mod:ice_mobs",
-      "#mod:life_mobs"
-    ],
-    "ITEMS:alternate_dimension:aluminum_hammer_repair_items": [
-      "~AluminumHammer@CUSTOM:AluminumIngot"
-    ],
-    "ITEMS:mod:hammers": [
-      "CUSTOM:AluminumHammer"
-    ],
-    "ITEMS:alternate_dimension:darksteel_armor_repair_items": [
-      "~DarksteelArmor@CUSTOM:DarksteelIngot"
-    ],
-    "ITEMS:alternate_dimension:darksteel_pickaxe_repair_items": [
-      "~DarksteelPickaxe@CUSTOM:DarksteelIngot"
-    ],
-    "ITEMS:alternate_dimension:darksteel_axe_repair_items": [
-      "~DarksteelAxe@CUSTOM:DarksteelIngot"
-    ],
-    "ITEMS:alternate_dimension:darksteel_shovel_repair_items": [
-      "~DarksteelShovel@CUSTOM:DarksteelIngot"
-    ],
-    "ITEMS:alternate_dimension:darksteel_sword_repair_items": [
-      "~DarksteelSword@CUSTOM:DarksteelIngot"
-    ],
-    "ITEMS:alternate_dimension:darksteel_hoe_repair_items": [
-      "~DarksteelHoe@CUSTOM:DarksteelIngot"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~LiquidPlasma@CUSTOM:LiquidPlasma",
-      "~LiquidMycelium@CUSTOM:LiquidMycelium"
-    ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Solaria@CUSTOM:HeliumPlasmaBlock",
-      "~Solaria@CUSTOM:HydrogenPlasmaBlock",
-      "~Shroomia@CUSTOM:MushroomSoil",
-      "~Shroomia@CUSTOM:GlowingMycelium",
-      "~Shroomia@CUSTOM:RichDirt"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_pickaxe_repair_items": [
-      "~PlasmoliumPickaxe@CUSTOM:PlasmoliumIngot"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_axe_repair_items": [
-      "~PlasmoliumAxe@CUSTOM:PlasmoliumIngot"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_shovel_repair_items": [
-      "~PlasmoliumShovel@CUSTOM:PlasmoliumIngot"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_sword_repair_items": [
-      "~PlasmoliumSword@CUSTOM:PlasmoliumIngot"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_hoe_repair_items": [
-      "~PlasmoliumHoe@CUSTOM:PlasmoliumIngot"
-    ],
-    "ITEMS:alternate_dimension:plasmolium_armor_repair_items": [
-      "~PlasmoliumArmor@CUSTOM:PlasmoliumIngot"
+      "~SpiderHydra@CUSTOM:SpiderHydra"
     ]
   },
   "tab_element_order": {
@@ -34400,7 +34401,11 @@
       "UnbreakableVeridiumBricks",
       "UnbreakablePyricBricks",
       "UnbreakableShaleBricks",
-      "Gravestone"
+      "Gravestone",
+      "StrawberryBush",
+      "RaspberryBush",
+      "BlueberryBush",
+      "BlackberryBush"
     ],
     "CUSTOM:AlternateDimensionMaterials": [
       "RawAluminum",
@@ -36458,7 +36463,30 @@
       "item.alternate_dimension.sun_idol.description_1": "Used to activate a portal to Solaria (BRING FIRE RESISTANCE!).",
       "item.alternate_dimension.sun_idol.description_0": "A conglomeration of fire and light energies, coalesced into this high-density core of light.",
       "item.alternate_dimension.sun_idol": "Idol of the Sun",
-      "block.alternate_dimension.shroomy_box": "Shroomy Box"
+      "block.alternate_dimension.shroomy_box": "Shroomy Box",
+      "item.alternate_dimension.modular_item": "Modular Item",
+      "item.alternate_dimension.blueprint": "Gear Blueprint",
+      "item.alternate_dimension.part_format": "%1$s %2$s",
+      "tooltip.alternate_dimension.part_stats": "Base Durability: %1$s | Speed: %2$s | Mat. Mult: %3$s",
+      "tooltip.alternate_dimension.durability": "Durability: %1$s / %2$s",
+      "tooltip.alternate_dimension.mining_speed": "Mining Speed: %1$s",
+      "tooltip.alternate_dimension.traits_prefix": "Traits: ",
+      "tooltip.alternate_dimension.construction_header": "Construction:",
+      "tooltip.alternate_dimension.hold_shift": "Hold [Shift] for construction details",
+      "trait.alternate_dimension.edible": "Edible (+%1$s)",
+      "trait.alternate_dimension.fireproof": "Fireproof",
+      "trait.alternate_dimension.glider": "Glider",
+      "part.alternate_dimension.pickaxe_suffix": "Pickaxe",
+      "part.alternate_dimension.pickaxe_head": "Pickaxe Head",
+      "part.alternate_dimension.tool_rod": "Tool Rod",
+      "material.alternate_dimension.azure_wood": "Azure Wooden",
+      "material.alternate_dimension.scorched_wood": "Scorched Wooden",
+      "material.alternate_dimension.redwood_wood": "Redwooden",
+      "material.alternate_dimension.candyfloss_wood": "Candyfloss Wooden",
+      "material.alternate_dimension.greenwood_wood": "Greenwooden",
+      "material.alternate_dimension.pine_wood": "Pine Wooden",
+      "material.alternate_dimension.solar_wood": "Solar Wooden",
+      "material.alternate_dimension.willow_wood": "Willow Wooden"
     }
   },
   "metadata": {

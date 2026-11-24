@@ -1,0 +1,9 @@
+{
+  "part_item_name_key": "part.alternate_dimension.tool_rod",
+  "z_index": 0,
+  "is_handheld": true,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/stick",
+  "base_durability": 100,
+  "speed_multiplier": 1.0
+}

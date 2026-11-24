@@ -1,6 +1,6 @@
 /*
- *    MCreator note: This file will be REGENERATED on each build.
- */
+*    MCreator note: This file will be REGENERATED on each build.
+*/
 package com.lordkittycat.alternate_dimension.init;
 
 import net.neoforged.neoforge.transfer.fluid.BucketResourceHandler;
@@ -25,6 +25,8 @@ import com.lordkittycat.alternate_dimension.item.*;
 import com.lordkittycat.alternate_dimension.block.TheDirtBlockBlock;
 import com.lordkittycat.alternate_dimension.block.MysticSaplingBlock;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
+
+import com.github.lordzintick.modular.ModularItem;
 
 @EventBusSubscriber
 public class AlternateDimensionModItems {
@@ -1649,8 +1651,9 @@ public class AlternateDimensionModItems {
 		HYDROGEN_PLASMA_PYROLITE_ORE = block(AlternateDimensionModBlocks.HYDROGEN_PLASMA_PYROLITE_ORE);
 		SUN_IDOL = register("sun_idol", SunIdolItem::new);
 	}
-
 	// Start of user code block custom items
+	public static final DeferredItem<ModularItem> MODULAR_ITEM = register("modular_item", ModularItem::new);
+
 	// End of user code block custom items
 	private static <I extends Item> DeferredItem<I> register(String name, Function<Item.Properties, ? extends I> supplier) {
 		return REGISTRY.registerItem(name, supplier, Item.Properties::new);

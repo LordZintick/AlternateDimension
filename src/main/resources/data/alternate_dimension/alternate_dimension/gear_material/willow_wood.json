@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.willow_wood",
+  "color": 9798313,
+  "durability_multiplier": 0.8,
+  "mining_speed": 2.0,
+  "repair_ingredient": "alternate_dimension:willow_planks",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.willow_wood",
+    "tint_with_material": true
+  }
+}
