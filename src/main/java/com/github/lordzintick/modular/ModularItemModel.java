@@ -15,7 +15,6 @@ import net.minecraft.client.resources.model.ModelBaker;
 import net.minecraft.client.resources.model.ResolvedModel;
 import net.minecraft.client.resources.model.cuboid.CuboidFace;
 import net.minecraft.client.resources.model.cuboid.FaceBakery;
-import net.minecraft.client.resources.model.cuboid.ItemModelGenerator;
 import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.client.resources.model.sprite.MaterialBaker;
@@ -77,7 +76,7 @@ public class ModularItemModel implements ItemModel {
             return;
         }
 
-        var sortedParts = partsComp.sortedByZIndex();
+        var sortedParts = partsComp.materialsByZIndex();
         int count = sortedParts.size();
         boolean isHandheld = count > 1 && sortedParts.stream().anyMatch(e -> e.getKey().value().isHandheld());
 

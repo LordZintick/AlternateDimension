@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "alternate_dimension:titanium_plate",
-  "base": "alternate_dimension:iron_drill",
-  "addition": "alternate_dimension:durable_drill_head",
-  "result": {
-    "id": "alternate_dimension:durable_drill"
-  }
-}

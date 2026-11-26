@@ -59,8 +59,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CANDY_CANE_BLOCK;
 	public static final DeferredItem<Item> CANDY_CANE;
 	public static final DeferredItem<Item> WAFFLE_BLOCK;
-	public static final DeferredItem<Item> WOODEN_DRILL;
-	public static final DeferredItem<Item> WOODEN_DRILL_HEAD;
 	public static final DeferredItem<Item> SEED_GUN;
 	public static final DeferredItem<Item> VARIABLE;
 	public static final DeferredItem<Item> FUNCTION_BLASTER;
@@ -71,10 +69,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> BEETLE_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> BEETLE_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> BEETLE_ARMOR_BOOTS;
-	public static final DeferredItem<Item> IRON_DRILL;
-	public static final DeferredItem<Item> IRON_DRILL_HEAD;
-	public static final DeferredItem<Item> DURABLE_DRILL_HEAD;
-	public static final DeferredItem<Item> DURABLE_DRILL;
 	public static final DeferredItem<Item> BUSH_LEAVES;
 	public static final DeferredItem<Item> WAITER_SPAWN_EGG;
 	public static final DeferredItem<Item> BEETLE_SWORD;
@@ -697,7 +691,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> TOURMALINE_CHICKEN_SPAWN_EGG;
 	public static final DeferredItem<Item> RAW_METALMEAT;
 	public static final DeferredItem<Item> COOKED_METALMEAT;
-	public static final DeferredItem<Item> ALUMINUM_HAMMER;
 	public static final DeferredItem<Item> DARKSTEEL_INGOT;
 	public static final DeferredItem<Item> MUSHROOM_SOIL;
 	public static final DeferredItem<Item> LIQUID_MYCELIUM_BUCKET;
@@ -721,6 +714,9 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> HYDROGEN_PLASMA_PYROLITE_ORE;
 	public static final DeferredItem<Item> SUN_IDOL;
 	public static final DeferredItem<Item> STARTER_BLUEPRINT_BUNDLE;
+	public static final DeferredItem<Item> BASIC_REPAIR_KIT;
+	public static final DeferredItem<Item> REPAIR_KIT;
+	public static final DeferredItem<Item> MAGIC_REPAIR_KIT;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -749,8 +745,6 @@ public class AlternateDimensionModItems {
 		CANDY_CANE_BLOCK = block(AlternateDimensionModBlocks.CANDY_CANE_BLOCK);
 		CANDY_CANE = register("candy_cane", CandyCaneItem::new);
 		WAFFLE_BLOCK = block(AlternateDimensionModBlocks.WAFFLE_BLOCK);
-		WOODEN_DRILL = register("wooden_drill", WoodenDrillItem::new);
-		WOODEN_DRILL_HEAD = register("wooden_drill_head", WoodenDrillHeadItem::new);
 		SEED_GUN = register("seed_gun", SeedGunItem::new);
 		VARIABLE = register("variable", VariableItem::new);
 		FUNCTION_BLASTER = register("function_blaster", FunctionBlasterItem::new);
@@ -761,10 +755,6 @@ public class AlternateDimensionModItems {
 		BEETLE_ARMOR_CHESTPLATE = register("beetle_armor_chestplate", BeetleArmorItem.Chestplate::new);
 		BEETLE_ARMOR_LEGGINGS = register("beetle_armor_leggings", BeetleArmorItem.Leggings::new);
 		BEETLE_ARMOR_BOOTS = register("beetle_armor_boots", BeetleArmorItem.Boots::new);
-		IRON_DRILL = register("iron_drill", IronDrillItem::new);
-		IRON_DRILL_HEAD = register("iron_drill_head", IronDrillHeadItem::new);
-		DURABLE_DRILL_HEAD = register("durable_drill_head", DurableDrillHeadItem::new);
-		DURABLE_DRILL = register("durable_drill", DurableDrillItem::new);
 		BUSH_LEAVES = block(AlternateDimensionModBlocks.BUSH_LEAVES);
 		WAITER_SPAWN_EGG = register("waiter_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.WAITER.get())));
 		BEETLE_SWORD = register("beetle_sword", BeetleSwordItem::new);
@@ -1387,7 +1377,6 @@ public class AlternateDimensionModItems {
 		TOURMALINE_CHICKEN_SPAWN_EGG = register("tourmaline_chicken_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.TOURMALINE_CHICKEN.get())));
 		RAW_METALMEAT = register("raw_metalmeat", RawMetalmeatItem::new);
 		COOKED_METALMEAT = register("cooked_metalmeat", CookedMetalmeatItem::new);
-		ALUMINUM_HAMMER = register("aluminum_hammer", AluminumHammerItem::new);
 		DARKSTEEL_INGOT = register("darksteel_ingot", DarksteelIngotItem::new);
 		MUSHROOM_SOIL = block(AlternateDimensionModBlocks.MUSHROOM_SOIL);
 		LIQUID_MYCELIUM_BUCKET = register("liquid_mycelium_bucket", LiquidMyceliumItem::new);
@@ -1411,6 +1400,9 @@ public class AlternateDimensionModItems {
 		HYDROGEN_PLASMA_PYROLITE_ORE = block(AlternateDimensionModBlocks.HYDROGEN_PLASMA_PYROLITE_ORE);
 		SUN_IDOL = register("sun_idol", SunIdolItem::new);
 		STARTER_BLUEPRINT_BUNDLE = register("starter_blueprint_bundle", StarterBlueprintBundleItem::new);
+		BASIC_REPAIR_KIT = register("basic_repair_kit", BasicRepairKitItem::new);
+		REPAIR_KIT = register("repair_kit", RepairKitItem::new);
+		MAGIC_REPAIR_KIT = register("magic_repair_kit", MagicRepairKitItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<ModularItem> MODULAR_ITEM = register("modular_item", ModularItem::new);

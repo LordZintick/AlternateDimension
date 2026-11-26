@@ -5,10 +5,7 @@ import com.github.lordzintick.item.ring.RingItem;
 import com.github.lordzintick.magic.ScrollRecipe;
 import com.github.lordzintick.magic.WandRecipe;
 import com.github.lordzintick.magic.loader.SpellLoader;
-import com.github.lordzintick.modular.BlueprintDataComponent;
-import com.github.lordzintick.modular.GearMaterial;
-import com.github.lordzintick.modular.GearPartType;
-import com.github.lordzintick.modular.GearPartsComponent;
+import com.github.lordzintick.modular.*;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
@@ -18,35 +15,28 @@ import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.RecipeTypes;
 import mezz.jei.api.constants.VanillaTypes;
-import mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.ISubtypeRegistration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.Holder;
-import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.component.DataComponentPatch;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemStackTemplate;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.neoforged.neoforge.common.crafting.DataComponentIngredient;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @JeiPlugin
@@ -78,12 +68,33 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
                     GearPartsComponent parts = stack.get(AlternateDimensionModComponents.GEAR_PARTS.get());
                     if (parts == null || parts.parts().isEmpty()) return null;
 
-                    return parts.sortedByZIndex().stream()
+                    return parts.materialsByZIndex().stream()
                             .map(e -> e.getKey().unwrapKey().map(k -> k.identifier().toString()).orElse("?")
                                     + "=" + e.getValue().unwrapKey().map(k -> k.identifier().toString()).orElse("?"))
                             .collect(Collectors.joining(";"));
                 }
         );
+
+        List<Item> KIT_TIERS = List.of(
+                AlternateDimensionModItems.BASIC_REPAIR_KIT.get(),
+                AlternateDimensionModItems.REPAIR_KIT.get(),
+                AlternateDimensionModItems.MAGIC_REPAIR_KIT.get()
+        );
+
+        for (Item kitItem : KIT_TIERS) {
+            registration.registerSubtypeInterpreter(
+                    VanillaTypes.ITEM_STACK,
+                    kitItem,
+                    (stack, context) -> {
+                        RepairKitDataComponent data = stack.get(AlternateDimensionModComponents.REPAIR_KIT_DATA);
+                        if (data == null || data.isEmpty()) return "empty";
+                        return data.material()
+                                .flatMap(Holder::unwrapKey)
+                                .map(k -> k.identifier().toString())
+                                .orElse("filled");
+                    }
+            );
+        }
     }
 
     @Override
@@ -202,7 +213,8 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
                     ItemStack partOutput = new ItemStack(AlternateDimensionModItems.MODULAR_ITEM.get());
                     partOutput.set(
                             AlternateDimensionModComponents.GEAR_PARTS.get(),
-                            new GearPartsComponent(Map.of(partHolder, matHolder))
+                            new GearPartsComponent(Map.of(partHolder, new GearPartsComponent.GearPart(matHolder,
+                                    (int) (partHolder.value().baseDurability() * matHolder.value().durabilityMultiplier()))))
                     );
 
                     ShapelessRecipe shapelessRecipe = new ShapelessRecipe(
@@ -224,7 +236,73 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
             });
         }
 
-        LOGGER.info("Registering {} JEI modular recipes", jeiCraftingRecipes.size());
         registration.addRecipes(RecipeTypes.CRAFTING, jeiCraftingRecipes);
+
+        List<Item> KIT_TIERS = List.of(
+                AlternateDimensionModItems.BASIC_REPAIR_KIT.get(),
+                AlternateDimensionModItems.REPAIR_KIT.get(),
+                AlternateDimensionModItems.MAGIC_REPAIR_KIT.get()
+        );
+
+        for (Item kitItem : KIT_TIERS) {
+            Identifier kitId = BuiltInRegistries.ITEM.getKey(kitItem);
+
+            // Match an empty repair kit (strict = false so default empty component matches)
+            ItemStack emptyKitStack = new ItemStack(kitItem);
+            Ingredient emptyKitIngredient = DataComponentIngredient.of(
+                    false,
+                    AlternateDimensionModComponents.REPAIR_KIT_DATA,
+                    RepairKitDataComponent.EMPTY,
+                    kitItem
+            );
+
+            for (Holder.Reference<GearMaterial> matHolder : allMaterials) {
+                GearMaterial mat = matHolder.value();
+                Identifier matId = matHolder.key().identifier();
+
+                RepairKitDataComponent loadedData = new RepairKitDataComponent(Optional.of(matHolder), 1);
+                ItemStack filledKitStack = new ItemStack(kitItem);
+                filledKitStack.set(AlternateDimensionModComponents.REPAIR_KIT_DATA.get(), loadedData);
+
+                ShapelessRecipe fillRecipe = new ShapelessRecipe(
+                        new Recipe.CommonInfo(true),
+                        new CraftingRecipe.CraftingBookInfo(CraftingBookCategory.EQUIPMENT, "repair_kit_fill"),
+                        ItemStackTemplate.fromNonEmptyStack(filledKitStack),
+                        List.of(emptyKitIngredient, mat.ingredient())
+                );
+
+                ResourceKey<Recipe<?>> fillKey = ResourceKey.create(
+                        Registries.RECIPE,
+                        Identifier.fromNamespaceAndPath(
+                                AlternateDimensionMod.MODID,
+                                "jei_kit_fill_" + kitId.getPath() + "_" + matId.getNamespace() + "_" + matId.getPath()
+                        )
+                );
+                jeiCraftingRecipes.add(new RecipeHolder<>(fillKey, fillRecipe));
+
+                Ingredient filledKitIngredient = DataComponentIngredient.of(
+                        false,
+                        AlternateDimensionModComponents.REPAIR_KIT_DATA.get(),
+                        loadedData,
+                        kitItem
+                );
+
+                ShapelessRecipe emptyRecipe = new ShapelessRecipe(
+                        new Recipe.CommonInfo(true),
+                        new CraftingRecipe.CraftingBookInfo(CraftingBookCategory.EQUIPMENT, "repair_kit_empty"),
+                        ItemStackTemplate.fromNonEmptyStack(emptyKitStack),
+                        List.of(filledKitIngredient)
+                );
+
+                ResourceKey<Recipe<?>> emptyKey = ResourceKey.create(
+                        Registries.RECIPE,
+                        Identifier.fromNamespaceAndPath(
+                                AlternateDimensionMod.MODID,
+                                "jei_kit_empty_" + kitId.getPath() + "_" + matId.getNamespace() + "_" + matId.getPath()
+                        )
+                );
+                jeiCraftingRecipes.add(new RecipeHolder<>(emptyKey, emptyRecipe));
+            }
+        }
     }
 }

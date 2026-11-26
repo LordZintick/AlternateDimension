@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "repair_kit",
+    "unlockingItems": [
+      "CUSTOM:RepairKit",
+      "CUSTOM:ActivatedManaStone"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:ToolRod",
+      "",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:RepairKit",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:MagicDustBlock",
+      "CUSTOM:ActivatedManaStone",
+      "CUSTOM:MagicDustBlock"
+    ],
+    "recipeReturnStack": "CUSTOM:MagicRepairKit",
+    "name": "magic_repair_kit_recipe",
+    "namespace": "mod"
+  }
+}

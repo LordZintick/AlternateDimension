@@ -108,7 +108,8 @@ public class BlueprintPartRecipe extends CustomRecipe {
         }
 
         return matchedMaterial != null
-                ? Optional.of(new MatchResult(blueprint.partType(), matchedMaterial))
+                ? Optional.of(new MatchResult(blueprint.partType(), new GearPartsComponent.GearPart(matchedMaterial,
+                    (int) (blueprint.partType().value().baseDurability() * matchedMaterial.value().durabilityMultiplier()))))
                 : Optional.empty();
     }
 
@@ -117,5 +118,5 @@ public class BlueprintPartRecipe extends CustomRecipe {
         return AlternateDimensionModRecipeSerializers.BLUEPRINT_PART.get();
     }
 
-    private record MatchResult(Holder<GearPartType> partType, Holder<GearMaterial> material) {}
+    private record MatchResult(Holder<GearPartType> partType, GearPartsComponent.GearPart material) {}
 }

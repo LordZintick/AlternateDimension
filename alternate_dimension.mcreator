@@ -905,95 +905,6 @@
       "path": "~/World/Eleroth/CandiedPlain"
     },
     {
-      "name": "PlayDrillSound",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "play_drill_sound",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayDrillSoundProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "WoodenDrill",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_drill",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/items/wooden_drill.json",
-          "src/main/resources/assets/alternate_dimension/models/item/wooden_drill.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillItem.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "WoodenDrillHead",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_drill_head",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/wooden_drill_head.json",
-          "src/main/resources/assets/alternate_dimension/items/wooden_drill_head.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillHeadItem.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "WoodenDrillHeadRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_drill_head_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_head_recipe.json",
-          "src/main/resources/data/alternate_dimension/recipe/wooden_drill_head_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "WoodenDrillRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_drill_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/wooden_drill_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "SeedProjectile",
       "type": "projectile",
       "compiles": true,
@@ -1485,122 +1396,6 @@
       "path": "~/World/Eleroth/CandiedPlain"
     },
     {
-      "name": "IronDrill",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_drill",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/iron_drill.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillItem.java",
-          "src/main/resources/assets/alternate_dimension/items/iron_drill.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "IronDrillHead",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_drill_head",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/iron_drill_head.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillHeadItem.java",
-          "src/main/resources/assets/alternate_dimension/items/iron_drill_head.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "IronDrillHeadRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_drill_head_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_head_recipe.json",
-          "src/main/resources/data/alternate_dimension/recipe/iron_drill_head_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "IronDrillRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_drill_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/iron_drill_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "DurableDrillHead",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "durable_drill_head",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/items/durable_drill_head.json",
-          "src/main/resources/assets/alternate_dimension/models/item/durable_drill_head.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillHeadItem.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "DurableDrill",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "durable_drill",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/durable_drill.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillItem.java",
-          "src/main/resources/assets/alternate_dimension/items/durable_drill.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "DurableDrillHeadRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "durable_drill_head_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/durable_drill_head_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_head_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "DurableDrillRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "durable_drill_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/durable_drill_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "GiantCandyCane",
       "type": "structure",
       "compiles": true,
@@ -1805,34 +1600,6 @@
         ]
       },
       "path": "~/GeneralFeatures/UtilProcedures"
-    },
-    {
-      "name": "WoodenDrillUpgrade",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_drill_upgrade",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_upgrade.json",
-          "src/main/resources/data/alternate_dimension/recipe/wooden_drill_upgrade.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "IronDrillUpgrade",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_drill_upgrade",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_upgrade.json",
-          "src/main/resources/data/alternate_dimension/recipe/iron_drill_upgrade.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
     },
     {
       "name": "BreadstickProjectile",
@@ -27969,21 +27736,6 @@
       "path": "~/GeneralFeatures/UtilProcedures"
     },
     {
-      "name": "AluminumHammer",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aluminum_hammer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/aluminum_hammer.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/AluminumHammerItem.java",
-          "src/main/resources/assets/alternate_dimension/items/aluminum_hammer.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Ores/Aluminum"
-    },
-    {
       "name": "AluminumPlateBasicRecipe",
       "type": "recipe",
       "compiles": true,
@@ -29148,6 +28900,93 @@
         ]
       },
       "path": "~/GeneralFeatures/Ores/Phosphorus"
+    },
+    {
+      "name": "BasicRepairKit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "basic_repair_kit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/items/basic_repair_kit.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/BasicRepairKitItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/basic_repair_kit.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "RepairKit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "repair_kit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/repair_kit.json",
+          "src/main/resources/assets/alternate_dimension/items/repair_kit.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/RepairKitItem.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "MagicRepairKit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magic_repair_kit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/magic_repair_kit.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/MagicRepairKitItem.java",
+          "src/main/resources/assets/alternate_dimension/items/magic_repair_kit.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BasicRepairKitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_repair_kit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/basic_repair_kit_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/basic_repair_kit_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "RepairKitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_kit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/repair_kit_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/repair_kit_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "MagicRepairKitRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_repair_kit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/magic_repair_kit_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/magic_repair_kit_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
     }
   ],
   "variable_elements": [
@@ -29380,11 +29219,7 @@
       "~AzureLeaves@CUSTOM:AzureLeaves",
       "CUSTOM:AppleLeaves"
     ],
-    "ITEMS:mod:drills": [
-      "CUSTOM:WoodenDrill",
-      "CUSTOM:IronDrill",
-      "CUSTOM:DurableDrill"
-    ],
+    "ITEMS:mod:drills": [],
     "ITEMS:mod:jetpacks": [
       "CUSTOM:CandyArmor.body"
     ],
@@ -29428,7 +29263,6 @@
       "CUSTOM:MushroomInfection"
     ],
     "ITEMS:mod:titanium_tier": [
-      "CUSTOM:DurableDrill",
       "TAG:mod:mythril_tier"
     ],
     "BIOMES:mod:wasteland_biomes": [
@@ -29782,18 +29616,13 @@
       "~CheeseSword@CUSTOM:Cheese"
     ],
     "ITEMS:alternate_dimension:wooden_drill_repair_items": [
-      "~WoodenDrill@Blocks.PLANKS",
       "TAG:mod:altdim_planks"
     ],
     "ITEMS:alternate_dimension:beetle_armor_repair_items": [
       "~BeetleArmor@CUSTOM:BeetleShell"
     ],
-    "ITEMS:alternate_dimension:iron_drill_repair_items": [
-      "~IronDrill@CUSTOM:AluminumIngot"
-    ],
-    "ITEMS:alternate_dimension:durable_drill_repair_items": [
-      "~DurableDrill@CUSTOM:TitaniumIngot"
-    ],
+    "ITEMS:alternate_dimension:iron_drill_repair_items": [],
+    "ITEMS:alternate_dimension:durable_drill_repair_items": [],
     "ITEMS:alternate_dimension:beetle_sword_repair_items": [
       "~BeetleSword@CUSTOM:BeetleShell"
     ],
@@ -30302,12 +30131,8 @@
       "#mod:ice_mobs",
       "#mod:life_mobs"
     ],
-    "ITEMS:alternate_dimension:aluminum_hammer_repair_items": [
-      "~AluminumHammer@CUSTOM:AluminumIngot"
-    ],
-    "ITEMS:mod:hammers": [
-      "CUSTOM:AluminumHammer"
-    ],
+    "ITEMS:alternate_dimension:aluminum_hammer_repair_items": [],
+    "ITEMS:mod:hammers": [],
     "ITEMS:alternate_dimension:darksteel_armor_repair_items": [],
     "ITEMS:alternate_dimension:darksteel_pickaxe_repair_items": [],
     "ITEMS:alternate_dimension:darksteel_axe_repair_items": [],
@@ -30333,12 +30158,6 @@
     "ITEMS:alternate_dimension:plasmolium_armor_repair_items": [],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~TitaniumBlock@CUSTOM:TitaniumBlock"
-    ],
-    "ITEMS:minecraft:pickaxes": [
-      "~AluminumHammer@CUSTOM:AluminumHammer",
-      "~DurableDrill@CUSTOM:DurableDrill",
-      "~IronDrill@CUSTOM:IronDrill",
-      "~WoodenDrill@CUSTOM:WoodenDrill"
     ],
     "ITEMS:minecraft:swords": [
       "~CryonicScimitar@CUSTOM:CryonicScimitar",
@@ -30859,7 +30678,6 @@
       "AluminumGear",
       "AluminumPlate",
       "AluminumGearbox",
-      "IronDrillHead",
       "RawTitanium",
       "TitaniumIngot",
       "TitaniumNugget",
@@ -30867,7 +30685,6 @@
       "TitaniumGear",
       "TitaniumPlate",
       "TitaniumGearbox",
-      "DurableDrillHead",
       "RawEvilstone",
       "EvilstoneGem",
       "EvilstoneBlock",
@@ -30937,7 +30754,6 @@
       "AluminumRing",
       "TitaniumRing",
       "MythrilRing",
-      "WoodenDrillHead",
       "Hemp",
       "Barley",
       "BarleyBread",
@@ -31019,12 +30835,8 @@
       "HalloweenQuestDisc"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
-      "WoodenDrill",
       "WoodenClub",
       "VenomDippedClub",
-      "AluminumHammer",
-      "IronDrill",
-      "DurableDrill",
       "MathWorkbook",
       "FunctionBlaster",
       "SigmaNotator",
@@ -31086,6 +30898,9 @@
       "ManaMeter",
       "ManaInserter",
       "Spikes",
+      "BasicRepairKit",
+      "RepairKit",
+      "MagicRepairKit",
       "TheDirtBlock",
       "PhosphorusTorch",
       "PyroliteTorch",
@@ -31415,7 +31230,6 @@
       "item.alternate_dimension.uranium_ingot": "Uranium Ingot",
       "block.alternate_dimension.scorched_brick_stairs": "Scorched Brick Stairs",
       "subtitles.dark_realm": "",
-      "item.alternate_dimension.iron_drill_head": "Aluminum Drill Head",
       "item.alternate_dimension.beetle_armor_boots": "Beetle Tarsi",
       "item.alternate_dimension.portal_wand": "Portal Wand",
       "item.alternate_dimension.dark_wolf_spawn_egg": "Dark Wolf Spawn Egg",
@@ -31428,11 +31242,9 @@
       "block.alternate_dimension.sky_stone": "Sky Stone",
       "item.alternate_dimension.pasta": "Pasta",
       "block.alternate_dimension.server_station": "Server Station",
-      "item.alternate_dimension.iron_drill": "Aluminum Drill",
       "biome.alternate_dimension.wasteland": "Wasteland",
       "block.alternate_dimension.portal_block": "Portal Block",
       "item.alternate_dimension.waiter_spawn_egg": "Waiter Spawn Egg",
-      "item.alternate_dimension.durable_drill_head": "Durable Drill Head",
       "entity.alternate_dimension.sky_turtle": "Sky Turtle",
       "subtitles.gelatin_swamp": "",
       "item.alternate_dimension.term": "Term",
@@ -31445,7 +31257,6 @@
       "item.alternate_dimension.titanium_gear": "Titanium Gear",
       "item.alternate_dimension.cheese": "Cheese",
       "item.alternate_dimension.beetle_sword": "The Beetle Blade",
-      "item.alternate_dimension.durable_drill": "Durable Drill",
       "item.alternate_dimension.titanium_plate": "Titanium Plate",
       "item.alternate_dimension.rocket": "Rocket",
       "entity.alternate_dimension.dark_wolf": "Dark Wolf",
@@ -31582,8 +31393,6 @@
       "item.alternate_dimension.plus": "Plus",
       "item.alternate_dimension.beetle_sword.description_0": "A powerful relic created by a mythril sword swallowed by the beetle queen, infusing it with beetle power.",
       "item.alternate_dimension.chef_spawn_egg": "Chef Spawn Egg",
-      "item.alternate_dimension.wooden_drill_head": "Wooden Drill Head",
-      "item.alternate_dimension.wooden_drill": "Wooden Drill",
       "subtitles.redwood_forest": "",
       "item.alternate_dimension.cloudy_wolf_spawn_egg": "Cloud Guardian Beta Spawn Egg",
       "item.alternate_dimension.uranium_gear": "Uranium Gear",
@@ -32648,7 +32457,6 @@
       "item.alternate_dimension.raw_metalmeat.description_0": "Extremely tough and chewy, but highly iron-rich!",
       "item.alternate_dimension.cooked_metalmeat": "Cooked Metalmeat",
       "item.alternate_dimension.cooked_metalmeat.description_0": "Melted a bit so its less tough and easier to eat, and gives more regen when eaten, but not the most nutritious!",
-      "item.alternate_dimension.aluminum_hammer": "Aluminum Hammer",
       "item.alternate_dimension.darksteel_ingot": "Darksteel Ingot",
       "item.alternate_dimension.mushroom_soil": "Mushroom Soil",
       "fluid.alternate_dimension.liquid_mycelium": "Liquid Mycelium",
@@ -32727,7 +32535,7 @@
       "tooltip.alternate_dimension.material_hint": "Gear Material: %1$s [Hold Shift for stats]",
       "tooltip.alternate_dimension.material_header": "Gear Material (%1$s):",
       "tooltip.alternate_dimension.material_durability": "Durability Multiplier: %1$s",
-      "tooltip.alternate_dimension.material_speed": "Base Mining Speed: %1$s",
+      "tooltip.alternate_dimension.material_speed": "Power Factor: %1$s",
       "tooltip.alternate_dimension.allowed_parts": "Usable For: ",
       "prefix.alternate_dimension.lined": "%s-Lined",
       "part.alternate_dimension.armor_lining": "Armor Lining",
@@ -32740,7 +32548,7 @@
       "part.alternate_dimension.leggings_suffix": "Leggings",
       "part.alternate_dimension.boots_suffix": "Boots",
       "trait.alternate_dimension.candy": "§dCandy",
-      "part.category.alternate_dimension.main_parts": "§5Main Parts",
+      "part.category.alternate_dimension.main_parts": "§fMain Parts",
       "trait.alternate_dimension.sparking": "§cSparking",
       "item.alternate_dimension.starter_blueprint_bundle.description_0": "Open for some starter blueprints to get started making tools!",
       "item.alternate_dimension.starter_blueprint_bundle": "Starter Blueprint Bundle",
@@ -32789,7 +32597,21 @@
       "material.alternate_dimension.mythril": "Mythril",
       "trait.alternate_dimension.durable_1": "§8Durable I",
       "trait.alternate_dimension.durable_2": "§8Durable II",
-      "trait.alternate_dimension.durable_3": "§8Durable III"
+      "trait.alternate_dimension.durable_3": "§8Durable III",
+      "part.category.alternate_dimension.gem_setting": "§5Jewelry Setting",
+      "trait.alternate_dimension.regenerative": "§cRegenerative",
+      "item.alternate_dimension.repair_kit.filled_format": "%1$s %2$s",
+      "item.alternate_dimension.repair_kit.efficiency": "Repair Efficiency: %s%%",
+      "item.alternate_dimension.repair_kit.empty": "Empty (%1$s / %2$s)",
+      "item.alternate_dimension.repair_kit.stored": "Material: %1$s (%2$s / %3$s)",
+      "item.alternate_dimension.basic_repair_kit": "Basic Repair Kit",
+      "item.alternate_dimension.repair_kit": "Repair Kit",
+      "item.alternate_dimension.magic_repair_kit": "Magic Repair Kit",
+      "tooltip.alternate_dimension.repair_kit.efficiency": "Repair Efficiency: %s%%",
+      "tooltip.alternate_dimension.repair_kit.empty": "Empty (%1$s / %2$s)",
+      "toltip.alternate_dimension.repair_kit.stored": "Material: %1$s (%2$s / %3$s)",
+      "tooltip.alternate_dimension.repair_kit.stored": "Material: %1$s (%2$s / %3$s)",
+      "material.alternate_dimension.scorched_earth": "Scorched Earth"
     }
   },
   "metadata": {

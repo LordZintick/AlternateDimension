@@ -81,10 +81,8 @@ public class BuildCreativeModeTabsEventHook {
                 if (!part.allowsMaterial(matHolder)) continue;
 
                 ItemStack partStack = new ItemStack(AlternateDimensionModItems.MODULAR_ITEM.get());
-                partStack.set(
-                        AlternateDimensionModComponents.GEAR_PARTS.get(),
-                        new GearPartsComponent(Map.of(partHolder, matHolder))
-                );
+                ComponentMerger.applyMergedComponents(partStack, new GearPartsComponent(Map.of(partHolder,
+                        new GearPartsComponent.GearPart(matHolder, (int) (partHolder.value().baseDurability() * matHolder.value().durabilityMultiplier())))));
                 event.accept(partStack);
             }
         }

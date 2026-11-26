@@ -194,7 +194,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_GEAR.get());
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_PLATE.get());
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_GEARBOX.get());
-				tabData.accept(AlternateDimensionModItems.IRON_DRILL_HEAD.get());
 				tabData.accept(AlternateDimensionModItems.RAW_TITANIUM.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_NUGGET.get());
@@ -202,7 +201,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.TITANIUM_GEAR.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_PLATE.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_GEARBOX.get());
-				tabData.accept(AlternateDimensionModItems.DURABLE_DRILL_HEAD.get());
 				tabData.accept(AlternateDimensionModItems.RAW_EVILSTONE.get());
 				tabData.accept(AlternateDimensionModItems.EVILSTONE_GEM.get());
 				tabData.accept(AlternateDimensionModBlocks.EVILSTONE_BLOCK.get().asItem());
@@ -272,7 +270,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ALUMINUM_RING.get());
 				tabData.accept(AlternateDimensionModItems.TITANIUM_RING.get());
 				tabData.accept(AlternateDimensionModItems.MYTHRIL_RING.get());
-				tabData.accept(AlternateDimensionModItems.WOODEN_DRILL_HEAD.get());
 				tabData.accept(AlternateDimensionModItems.HEMP.get());
 				tabData.accept(AlternateDimensionModItems.BARLEY.get());
 				tabData.accept(AlternateDimensionModItems.BARLEY_BREAD.get());
@@ -355,12 +352,8 @@ public class AlternateDimensionModTabs {
 			}).withTabsBefore(ALTERNATE_DIMENSION_WORLD.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.BEETLE_SWORD.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(AlternateDimensionModItems.WOODEN_DRILL.get());
 				tabData.accept(AlternateDimensionModItems.WOODEN_CLUB.get());
 				tabData.accept(AlternateDimensionModItems.VENOM_DIPPED_CLUB.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_HAMMER.get());
-				tabData.accept(AlternateDimensionModItems.IRON_DRILL.get());
-				tabData.accept(AlternateDimensionModItems.DURABLE_DRILL.get());
 				tabData.accept(AlternateDimensionModItems.MATH_WORKBOOK.get());
 				tabData.accept(AlternateDimensionModItems.FUNCTION_BLASTER.get());
 				tabData.accept(AlternateDimensionModItems.SIGMA_NOTATOR.get());
@@ -426,6 +419,9 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.MANA_METER.get());
 				tabData.accept(AlternateDimensionModItems.MANA_INSERTER.get());
 				tabData.accept(AlternateDimensionModBlocks.SPIKES.get().asItem());
+				tabData.accept(AlternateDimensionModItems.BASIC_REPAIR_KIT.get());
+				tabData.accept(AlternateDimensionModItems.REPAIR_KIT.get());
+				tabData.accept(AlternateDimensionModItems.MAGIC_REPAIR_KIT.get());
 				tabData.accept(AlternateDimensionModBlocks.THE_DIRT_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PYROLITE_TORCH.get().asItem());

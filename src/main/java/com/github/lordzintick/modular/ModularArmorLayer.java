@@ -38,7 +38,7 @@ public class ModularArmorLayer<S extends HumanoidRenderState, M extends Humanoid
             M armorModel = armorModels.get(slot);
             boolean isLegs = (slot == EquipmentSlot.LEGS);
 
-            for (var partEntry : partsComp.sortedByZIndex()) {
+            for (var partEntry : partsComp.materialsByZIndex()) {
                 GearPartType part = partEntry.getKey().value();
                 GearMaterial mat = partEntry.getValue().value();
 

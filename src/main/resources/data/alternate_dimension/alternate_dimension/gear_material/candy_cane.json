@@ -19,25 +19,24 @@
     {
       "name": "part.category.alternate_dimension.tool_parts",
       "part_types": "#alternate_dimension:tool_parts",
-      "trait_descriptions": ["trait.alternate_dimension.candy_snack"],
+      "trait_descriptions": [
+        "trait.alternate_dimension.candy_snack"
+      ],
       "components": {
-        "alternate_dimension:durability_consumable": {
-          "durability_loss": 4,
-          "config": {
-            "consume_seconds": 0.4,
-            "consume_effects": [
-              {
-                "type": "apply_effects",
-                "effects": [
-                  {
-                    "id": "minecraft:speed",
-                    "amplifier": 1,
-                    "duration": 15
-                  }
-                ]
-              }
-            ]
-          }
+        "minecraft:consumable": {
+          "consume_seconds": 0.4,
+          "consume_effects": [
+            {
+              "type": "apply_effects",
+              "effects": [
+                {
+                  "id": "minecraft:speed",
+                  "amplifier": 1,
+                  "duration": 15
+                }
+              ]
+            }
+          ]
         },
         "minecraft:food": {
           "nutrition": 1,

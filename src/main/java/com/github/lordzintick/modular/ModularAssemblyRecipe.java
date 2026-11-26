@@ -57,6 +57,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
         result.remove(DataComponents.ATTRIBUTE_MODIFIERS);
         result.remove(DataComponents.EQUIPPABLE);
         result.remove(DataComponents.FOOD);
+        result.remove(DataComponents.ENCHANTMENTS);
         result.remove(DataComponents.DAMAGE_RESISTANT);
         result.remove(DataComponents.GLIDER);
         result.remove(AlternateDimensionModComponents.CURIO_SLOT);
@@ -66,7 +67,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
     }
 
     private Optional<AssemblyResult> mergeInputs(CraftingInput input, RegistryAccess registries) {
-        Map<Holder<GearPartType>, Holder<GearMaterial>> combinedMap = new LinkedHashMap<>();
+        Map<Holder<GearPartType>, GearPartsComponent.GearPart> combinedMap = new LinkedHashMap<>();
         ItemStack existingAssembledTool = null;
         int modularItemCount = 0;
 
@@ -117,7 +118,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
     }
 
     private record AssemblyResult(
-            Map<Holder<GearPartType>, Holder<GearMaterial>> combinedParts,
+            Map<Holder<GearPartType>, GearPartsComponent.GearPart> combinedParts,
             @Nullable ItemStack existingTool
     ) {}
 }

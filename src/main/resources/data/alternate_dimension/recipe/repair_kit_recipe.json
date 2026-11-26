@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "repair_kit",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": "alternate_dimension:tool_rod",
+    "b": "alternate_dimension:aluminum_ingot",
+    "c": "#alternate_dimension:gems"
+  },
+  "result": {
+    "id": "alternate_dimension:repair_kit",
+    "count": 1
+  }
+}

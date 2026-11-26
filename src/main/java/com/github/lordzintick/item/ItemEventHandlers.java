@@ -1,22 +1,12 @@
 package com.github.lordzintick.item;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
-import com.github.lordzintick.init.AlternateDimensionModRegistries;
 import com.github.lordzintick.modular.GearMaterial;
-import com.github.lordzintick.modular.GearPartType;
 import com.github.lordzintick.modular.GearPartsComponent;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
-import com.mojang.authlib.minecraft.client.MinecraftClient;
-import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -25,11 +15,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
-import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-
-import java.util.List;
-import java.util.Optional;
 
 @EventBusSubscriber(modid = AlternateDimensionMod.MODID)
 public class ItemEventHandlers {
@@ -41,8 +27,9 @@ public class ItemEventHandlers {
         Inventory inventory = player.getInventory();
         for (int slot = 0; slot < inventory.getContainerSize(); slot++) {
             ItemStack stack = inventory.getItem(slot);
+            if (stack.isEmpty()) continue;
 
-            if (!stack.isEmpty() && stack.has(AlternateDimensionModComponents.PHOTOSYNTHETIC)) {
+            if (stack.has(AlternateDimensionModComponents.PHOTOSYNTHETIC)) {
                 PhotosyntheticComponent data = stack.get(AlternateDimensionModComponents.PHOTOSYNTHETIC);
                 int maxDamage = stack.getMaxDamage();
                 int damage = stack.getDamageValue();
@@ -58,6 +45,10 @@ public class ItemEventHandlers {
                         stack.setDamageValue(damage - 1);
                     }
                 }
+            } else if (stack.has(AlternateDimensionModComponents.PERMANENT_EFFECTS)) {
+                PermanentEffectsComponent comp = stack.get(AlternateDimensionModComponents.PERMANENT_EFFECTS);
+                assert comp != null;
+                comp.apply(stack, player);
             }
         }
     }
@@ -76,11 +67,11 @@ public class ItemEventHandlers {
             return;
         }
 
-        GearMaterial primaryMaterial = partsComp.sortedByZIndex().stream()
+        GearMaterial primaryMaterial = partsComp.materialsByZIndex().stream()
                 .filter(e -> e.getKey().value().contributeMaterialName())
                 .map(e -> e.getValue().value())
                 .findFirst()
-                .orElseGet(() -> partsComp.sortedByZIndex().getLast().getValue().value());
+                .orElseGet(() -> partsComp.materialsByZIndex().getLast().getValue().value());
 
         if (!primaryMaterial.ingredient().test(right)) {
             return;

@@ -9,5 +9,25 @@
     "priority": 30,
     "translation_key": "material.alternate_dimension.jade",
     "tint_with_material": true
-  }
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.gem_setting",
+      "part_types": "#alternate_dimension:gem_settings",
+      "trait_descriptions": ["trait.alternate_dimension.regenerative"],
+      "components": {
+        "alternate_dimension:permanent_effects": {
+          "slot": "any",
+          "damage_chance": 0.8,
+          "effects": [
+            {
+              "id": "minecraft:regeneration",
+              "amplifier": 1,
+              "duration": 200
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

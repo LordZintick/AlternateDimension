@@ -33,7 +33,7 @@
         },
         {
           "blocks": "#minecraft:mineable/axe",
-          "speed": 1.0,
+          "speed": 2.0,
           "correct_for_drops": true
         }
       ]

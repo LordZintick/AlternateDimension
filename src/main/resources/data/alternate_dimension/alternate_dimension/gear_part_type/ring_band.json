@@ -25,6 +25,6 @@
     "material_cost": 3
   },
   "components": {
-    "alternate_dimension:curio_slot": "alternate_dimension:ring"
+    "alternate_dimension:curio_slot": "ring"
   }
 }

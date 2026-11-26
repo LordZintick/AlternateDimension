@@ -53,7 +53,7 @@ public class PlayerTickProcedure {
 		double meteorZ = 0;
 		if ((entity.level().dimension()) == Level.OVERWORLD) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(AlternateDimensionModMobEffects.GRACE_EFFECT, 24000, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(AlternateDimensionModMobEffects.GRACE_EFFECT, 12000, 0, false, false));
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(AlternateDimensionModItems.STARTER_BLUEPRINT_BUNDLE.get()).copy();
 				_setstack.setCount(1);

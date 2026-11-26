@@ -16,12 +16,13 @@
   "pattern": {
     "pattern": [
       " MM",
-      "MMM",
+      "MCM",
       "PM "
     ],
     "key": {
       "M": "alternate_dimension:aluminum_ingot",
-      "P": "alternate_dimension:phosphorus"
+      "P": "alternate_dimension:phosphorus",
+      "C": "alternate_dimension:cloth"
     },
     "material_cost": 6
   },

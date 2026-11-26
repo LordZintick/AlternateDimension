@@ -52,14 +52,4 @@ public record PartComponent(
         }
         return false;
     }
-
-    public void applyIfCorrect(ItemStack stack, List<Tool.Rule> toolRulesOut,
-                               Map<ComponentMerger.AttributeKey, ComponentMerger.AttributeAccumulator> attrGroupsOut, ItemEnchantments.Mutable enchantmentsOut,
-                               float combinedPower) {
-        GearPartsComponent partsComp = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
-        if (partsComp == null) return;
-        if (meetsPartTypes(partsComp)) {
-            ComponentMerger.applyPatchSafely(stack, dataComponentPatch, toolRulesOut, attrGroupsOut, enchantmentsOut, combinedPower);
-        }
-    }
 }

@@ -4,426 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system with a bunch of materials already defined for previously hardcoded tools.&#10;- Dynamic rendering, naming, and tooltip info.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/AlternateDimensionModClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/CuriosCompat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/DurabilityConsumableComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/PhotosyntheticComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/SparkingComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintCreationRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/MaterialOverlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorRenderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartTextureList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/equipment/modular_armor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment/humanoid/armor_empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment/humanoid_leggings/armor_empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/armor_boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/armor_chestplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/armor_helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/armor_leggings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/part_armor_lining.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor/armor_plating_l1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor/armor_plating_l2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/armor_piece.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/drill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/ring.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/aluminum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/blue_mushroom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candy_cane.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/cloth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/darksteel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/evilstone.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/graphite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/green_mushroom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/holystone.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/jade.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/kyanite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/mythril.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/onyx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/phosphorium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/plasmolium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/purple_mushroom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/pyre_mantle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/quartz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/ruby.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/sapphire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/shale.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/shroomium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/titanium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/topaz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/tourmaline.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/veridium.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/yellow_mushroom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/armor_lining.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/axe_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/battleaxe_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/boots_plating.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/chestplate_plating.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/grip.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hammer_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/helmet_plating.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hoe_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/leggings_plating.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_band.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_setting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/rod_cap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/shovel_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/sword_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/entities/player.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/slots/ring.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/blueprint_creation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/armor_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/core_tool_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/drill_base_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/gems.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/grip_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/head_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/jewelry_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/lining_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/metals.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/mushrooms.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/ring_settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_cap_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/soft_materials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/wood.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/armor_linings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/armor_platings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/main_parts.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/tool_parts.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/curios/tags/item/ring.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Client.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" beforeDir="false" afterPath="$PROJECT_DIR$/.eclipse/configurations/Server.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="2.1.0 Alpha 4: Tool System Improvements&#10;&#10;- Added repair kits to dynamically repair modular items and a whole modular durability system.&#10;- Various fixes and changes to improve UX.&#10;- Finished removing hardcoded tools completely. Everything is now part of the dynamic tool system.&#10;- Various other minor changes and fixes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/PermanentEffectsComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitDataComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitEmptyRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitFillRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitToolRepairRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/scorched_earth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_empty.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_fill.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_repair.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/stones.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/gem_settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/generatorGradleCache" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/generatorGradleCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AluminumSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzurePickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzurePickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/AzureSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/CandyCaneSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/CandyCaneSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushyShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushySword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MushySwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/MythrilSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PhosphoriumSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PineWoodenSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantyShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantySword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlantySwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/RedwoodenSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ScorchedWoodenSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/ShroomiumSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/SpawnMeteorCommand.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/SpawnMeteorCommand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumAxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumAxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumBattleaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumBattleaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumHoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumHoeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumPickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumPickaxeRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumShovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumShovelRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumSword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/TitaniumSwordRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/userSettings" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/userSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BackpackRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BackpackRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillHead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillHeadRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillHead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillHeadRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillUpgrade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlayDrillSound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillHead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillHeadRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillRecipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillUpgrade.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzurePickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzurePickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AzureSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyCaneSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyCaneSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CandyflossSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/CryonicScimitarRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CryonicScimitarRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DarksteelSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstonePickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstonePickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/EvilstoneSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystonePickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystonePickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/HolystoneSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantlePickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantlePickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MantleSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushyShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushySword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MushySwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MythrilSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PhosphoriumSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PineWoodenSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantyShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantySword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlantySwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlasmoliumSwordRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/AluminumHammer.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DurableDrill.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DurableDrillHead.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DurableDrillHeadRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/DurableDrillRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IronDrill.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IronDrillHead.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IronDrillHeadRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IronDrillRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/IronDrillUpgrade.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/PlayDrillSound.mod.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/elements/PlayerTick.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/PlayerTick.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/RedwoodenSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ScorchedWoodenSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShalePickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShalePickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShaleSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ShroomiumSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/SupersweetGoodieBagLoot.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SupersweetGoodieBagLoot.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/SurvivalistWeapons.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/SurvivalistWeapons.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumBattleaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumBattleaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/TitaniumSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ToolRod.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ToolRod.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumAxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumAxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumHoe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumHoeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumPickaxe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumPickaxeRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumShovel.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumShovelRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumSword.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/VeridiumSwordRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WaffleHouseLoot.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/WaffleHouseLoot.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcreator.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mcreator.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenDrill.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillHead.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillHeadRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillUpgrade.mod.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
@@ -438,659 +67,82 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipeSerializers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipeSerializers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/DurabilityConsumableComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPartRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPartRecipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ComponentMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ComponentMerger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItemModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionModPlayerAnimationAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModModels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModModels.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AzureAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AzureHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AzurePickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AzureShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AzureSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyCaneSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyflossAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyflossHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyflossPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyflossShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CandyflossSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DarksteelAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DarksteelHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DarksteelPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DarksteelShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DarksteelSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EvilstoneAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EvilstoneHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EvilstonePickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EvilstoneShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EvilstoneSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/HolystoneAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/HolystoneHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/HolystonePickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/HolystoneShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/HolystoneSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MantleAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MantleHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MantlePickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MantleShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MantleSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushyAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushyHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushyPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushyShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MushySwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PhosphoriumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PineWoodenAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PineWoodenHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PineWoodenPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PineWoodenShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PineWoodenSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlantyAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlantyHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlantyPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlantyShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlantySwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/PlasmoliumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RedwoodenAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RedwoodenHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RedwoodenPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RedwoodenShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RedwoodenSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedWoodenAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedWoodenHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedWoodenPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedWoodenShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScorchedWoodenSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShaleAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShaleHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShalePickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShaleShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShaleSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ShroomiumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumBattleaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/VeridiumAxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/VeridiumHoeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/VeridiumPickaxeItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/VeridiumShovelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/VeridiumSwordItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/CameraAccessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/EntityRenderDispatcherMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/EntityRendererMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/ItemInHandLayerMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/ItemInHandRendererMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/LevelRendererMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/LivingEntityRendererMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerAnimationMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerAnimationRendererMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/PlayPlayerAnimationMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumHammerItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillHeadItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillHeadItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillHeadItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayDrillSoundProcedure.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayerTickProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayerTickProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateElementalInscriberRecipeProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateElementalInscriberRecipeProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFungalProcessorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFungalProcessorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/azure_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/azure_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/azure_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/azure_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/azure_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candy_cane_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candyfloss_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candyfloss_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candyfloss_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candyfloss_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/candyfloss_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/darksteel_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/darksteel_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/darksteel_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/darksteel_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/darksteel_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/evilstone_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/evilstone_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/evilstone_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/evilstone_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/evilstone_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/holystone_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/holystone_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/holystone_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/holystone_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/holystone_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mantle_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mantle_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mantle_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mantle_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mantle_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushy_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mushy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/phosphorium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/phosphorium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/phosphorium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/phosphorium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/phosphorium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/pine_wooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/pine_wooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/pine_wooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/pine_wooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/pine_wooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/planty_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/planty_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/planty_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/planty_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/planty_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/plasmolium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/redwooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/redwooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/redwooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/redwooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/redwooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scorched_wooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scorched_wooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scorched_wooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scorched_wooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scorched_wooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shale_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shale_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shale_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shale_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shale_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shroomium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shroomium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shroomium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shroomium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/shroomium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_battleaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/veridium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/veridium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/veridium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/veridium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/veridium_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_hammer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/durable_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/durable_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/iron_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/iron_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wooden_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wooden_drill_head.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/azure_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/azure_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/azure_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/azure_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/azure_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candy_cane_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candyfloss_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candyfloss_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candyfloss_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candyfloss_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/candyfloss_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/darksteel_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/darksteel_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/darksteel_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/darksteel_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/darksteel_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/evilstone_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/evilstone_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/evilstone_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/evilstone_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/evilstone_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/holystone_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/holystone_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/holystone_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/holystone_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/holystone_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mantle_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mantle_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mantle_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mantle_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mantle_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushy_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushy_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushy_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushy_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mushy_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/phosphorium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/phosphorium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/phosphorium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/phosphorium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/phosphorium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/pine_wooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/pine_wooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/pine_wooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/pine_wooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/pine_wooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/planty_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/planty_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/planty_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/planty_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/planty_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/plasmolium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/redwooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/redwooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/redwooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/redwooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/redwooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scorched_wooden_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scorched_wooden_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scorched_wooden_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scorched_wooden_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scorched_wooden_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shale_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shale_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shale_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shale_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shale_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shroomium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shroomium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shroomium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shroomium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/shroomium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_battleaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/veridium_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/veridium_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/veridium_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/veridium_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/veridium_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/aluminum_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/aluminum_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/arminionite_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/arminionite_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/axiomorph_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/axiomorph_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_brute_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_brute_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_chaser_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_chaser_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_queen_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_queen_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/beetle_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/blood_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/blood_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/blue_gummy_bear_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/blue_gummy_bear_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cactus_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cactus_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/calcified_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/calcified_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/candy_spirit_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/candy_spirit_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/chef_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/chef_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cloud_kitty_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cloud_kitty_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cloudy_wolf_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/cloudy_wolf_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/corrupted_elf_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/corrupted_elf_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/corrupted_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/corrupted_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/dark_wolf_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/dark_wolf_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/electrified_spider_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/electrified_spider_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/elf_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/elf_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/enchanted_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/enchanted_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/evilstone_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/evilstone_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/fire_spirit_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/fire_spirit_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/frostfire_steve_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/frostfire_steve_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/frosty_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/frosty_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/gingerbread_warrior_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/gingerbread_warrior_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/golden_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/golden_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/green_gummy_bear_mob_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/green_gummy_bear_mob_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/hallowed_one_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/hallowed_one_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/hero_zombrine_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/hero_zombrine_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/ice_spirit_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/ice_spirit_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/incendiary_spider_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/incendiary_spider_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/iron_giant_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/iron_giant_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/jade_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/jade_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/kyanite_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/kyanite_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/life_spirit_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/life_spirit_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/magmatic_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/magmatic_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mana_crystal_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mana_crystal_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mana_ninja_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mana_ninja_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mythril_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/mythril_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/onyx_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/onyx_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/overgrown_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/overgrown_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/permachill_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/permachill_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/possessed_armor_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/possessed_armor_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/pumpkin_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/pumpkin_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/quartz_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/quartz_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/red_gummy_bear_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/red_gummy_bear_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/roman_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/roman_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/ruby_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/ruby_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/sapphire_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/sapphire_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/shroomite_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/shroomite_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/sky_turtle_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/sky_turtle_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spectral_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spectral_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spider_hydra_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spider_hydra_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spore_spreader_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/spore_spreader_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/survivalist_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/survivalist_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/titanium_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/titanium_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/topaz_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/topaz_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/tourmaline_chicken_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/tourmaline_chicken_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/uranium_cow_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/uranium_cow_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/venomous_spider_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/venomous_spider_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/verdant_zombie_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/verdant_zombie_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/viking_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/viking_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/waiter_spawn_egg_generated.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/item/waiter_spawn_egg_generated.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/azure_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/azure_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/azure_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/azure_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/azure_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candy_cane_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candyfloss_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candyfloss_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candyfloss_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candyfloss_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/candyfloss_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/darksteel_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/darksteel_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/darksteel_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/darksteel_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/darksteel_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/evilstone_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/evilstone_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/evilstone_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/evilstone_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/evilstone_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/holystone_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/holystone_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/holystone_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/holystone_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/holystone_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mantle_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mantle_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mantle_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mantle_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mantle_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushy_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushy_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushy_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushy_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mushy_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/phosphorium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/pine_wooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/pine_wooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/pine_wooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/pine_wooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/pine_wooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/planty_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/planty_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/planty_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/planty_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/planty_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/plasmolium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/redwooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/redwooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/redwooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/redwooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/redwooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/scorched_wooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/scorched_wooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/scorched_wooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/scorched_wooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/scorched_wooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shale_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shale_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shale_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shale_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shale_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/shroomium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_battleaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/veridium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/veridium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/veridium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/veridium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/veridium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/standard_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/standard_tool.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/azure_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/azure_wood.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_hammer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/durable_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/durable_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/iron_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/iron_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wooden_drill.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wooden_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_upgrade.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_upgrade.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candy_cane.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candy_cane.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candyfloss_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candyfloss_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/greenwood_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/greenwood_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/pine_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/pine_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/redwood_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/redwood_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/scorched_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/scorched_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/solar_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/solar_wood.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/willow_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/willow_wood.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/jade.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/jade.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/axe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/axe_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/battleaxe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/battleaxe_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_base.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hammer_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hammer_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hoe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hoe_head.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/pickaxe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/pickaxe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/tool_rod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/tool_rod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/chests/waffle_house_loot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/chests/waffle_house_loot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/entities/survivalist_weapon.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/entities/survivalist_weapon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/gameplay/supersweet_goodie_bag.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/loot_table/gameplay/supersweet_goodie_bag.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/azure_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/azure_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/azure_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/azure_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/azure_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candy_cane_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candyfloss_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candyfloss_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candyfloss_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candyfloss_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/candyfloss_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/cryonic_scimitar_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/cryonic_scimitar_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/darksteel_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/darksteel_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/darksteel_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/darksteel_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/darksteel_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/evilstone_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/evilstone_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/evilstone_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/evilstone_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/evilstone_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/holystone_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/holystone_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/holystone_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/holystone_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/holystone_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mantle_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mantle_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mantle_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mantle_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mantle_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mushy_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mushy_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mushy_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mushy_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mushy_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/phosphorium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/phosphorium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/phosphorium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/phosphorium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/phosphorium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/pine_wooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/pine_wooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/pine_wooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/pine_wooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/pine_wooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/planty_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/planty_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/planty_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/planty_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/planty_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/plasmolium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/redwooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/redwooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/redwooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/redwooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/redwooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/scorched_wooden_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/scorched_wooden_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/scorched_wooden_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/scorched_wooden_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/scorched_wooden_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shale_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shale_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shale_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shale_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shale_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/shroomium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_battleaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/veridium_axe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/veridium_hoe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/veridium_pickaxe_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/veridium_shovel_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/veridium_sword_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/tool_heads.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/tool_heads.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/candy_cane_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/candy_cane_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/darksteel_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/evilstone_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/holystone_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mushy_tools.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mushy_tools.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_tier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mythril_tier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/phosphorium_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/plasmolium_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/shroomium_sword_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_axe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_axe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_battleaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_battleaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_hoe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_hoe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_pickaxe_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_pickaxe_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_shovel_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_shovel_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_sword_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_sword_repair_items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_band.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_band.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/shovel_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/shovel_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/durable_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/durable_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_upgrade.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_head_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_upgrade.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/head_materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/head_materials.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_cap_materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_cap_materials.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hammer_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hammer_repair_items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/drills.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/drills.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/durable_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/durable_drill_repair_items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/hammers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/hammers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/iron_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/iron_drill_repair_items.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_tier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_tier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/axes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/hoes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/shovels.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/swords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/wooden_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/wooden_drill_repair_items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1137,8 +189,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1164,61 +216,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000002573080626" />
-      <entry key="MS500" value="1.0480955897677808" />
-      <entry key="S2" value="1.5259004160177403" />
-      <entry key="S5" value="2.278017876092475" />
-      <entry key="S10" value="3.132246715255378" />
-      <entry key="S30" value="5.213171262054453" />
-      <entry key="S60" value="6.866070961297788" />
-      <entry key="M2" value="8.466732987753574" />
-      <entry key="M5" value="13.616346432763631" />
-      <entry key="M10" value="29.155127162879463" />
-      <entry key="M15" value="48.75692069405104" />
-      <entry key="M30" value="105.87831689104006" />
-      <entry key="H1" value="189.50588466236613" />
-      <entry key="H2" value="327.85512224121896" />
-      <entry key="H4" value="572.9693025827517" />
-      <entry key="D1" value="1358.751205270861" />
-      <entry key="W1" value="1667.8373123729643" />
+      <entry key="MS100" value="1.0000000178411055" />
+      <entry key="MS500" value="1.044741642440778" />
+      <entry key="S2" value="1.7692089505693094" />
+      <entry key="S5" value="2.3640833673130173" />
+      <entry key="S10" value="2.6515927181046237" />
+      <entry key="S30" value="2.8763496105082536" />
+      <entry key="S60" value="2.9371844587604636" />
+      <entry key="M2" value="2.968491114282427" />
+      <entry key="M5" value="3.23686292807983" />
+      <entry key="M10" value="7.684266547480547" />
+      <entry key="M15" value="16.40344563131531" />
+      <entry key="M30" value="47.866286894147784" />
+      <entry key="H1" value="114.1838204905861" />
+      <entry key="H2" value="228.44054567081153" />
+      <entry key="H4" value="406.1381166862416" />
+      <entry key="D1" value="1544.3795649631106" />
+      <entry key="W1" value="2341.5114501111084" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.2219E-319" />
-      <entry key="S5" value="5.167108087358477E-128" />
-      <entry key="S10" value="5.146849334490059E-64" />
-      <entry key="S30" value="3.811646977205348E-21" />
-      <entry key="S60" value="2.5412789453414223E-10" />
-      <entry key="M2" value="7.658255671330562E-5" />
-      <entry key="M5" value="0.22596006391501106" />
-      <entry key="M10" value="4.85852316351135" />
-      <entry key="M15" value="15.235618133707176" />
-      <entry key="M30" value="53.37397556383405" />
-      <entry key="H1" value="111.46863168415686" />
-      <entry key="H2" value="205.9260116239153" />
-      <entry key="H4" value="393.08547119240205" />
-      <entry key="D1" value="1052.5863379957366" />
-      <entry key="W1" value="1319.0542863775836" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.501358068447008E-196" />
+      <entry key="S10" value="2.8239297930430667E-98" />
+      <entry key="S30" value="1.3848177948927496E-32" />
+      <entry key="S60" value="4.496180731664582E-16" />
+      <entry key="M2" value="8.956938185165878E-8" />
+      <entry key="M5" value="0.00931627469974418" />
+      <entry key="M10" value="0.4908563195868267" />
+      <entry key="M15" value="2.136496500608752" />
+      <entry key="M30" value="16.717624448201583" />
+      <entry key="H1" value="83.56958470020103" />
+      <entry key="H2" value="231.60612139181973" />
+      <entry key="H4" value="433.9985838854988" />
+      <entry key="D1" value="1348.8457009874098" />
+      <entry key="W1" value="1973.2965512651817" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9075193904533608" />
-      <entry key="MS500" value="1.028015576039197" />
-      <entry key="S2" value="1.5186248720129083" />
-      <entry key="S5" value="2.2735461225662883" />
-      <entry key="S10" value="3.1291113510806134" />
-      <entry key="S30" value="5.2114412149828775" />
-      <entry key="S60" value="6.86494476539669" />
-      <entry key="M2" value="8.466121706566751" />
-      <entry key="M5" value="13.840495571087686" />
-      <entry key="M10" value="33.99868939570732" />
-      <entry key="M15" value="63.96170122275757" />
-      <entry key="M30" value="159.19842039532944" />
-      <entry key="H1" value="300.9183781127558" />
-      <entry key="H2" value="533.729825523482" />
-      <entry key="H4" value="966.0064475534803" />
-      <entry key="D1" value="2411.3161253790713" />
-      <entry key="W1" value="2986.887764332533" />
+      <entry key="MS100" value="0.920187667387713" />
+      <entry key="MS500" value="1.0274499120853173" />
+      <entry key="S2" value="1.761310157633632" />
+      <entry key="S5" value="2.3597125320681775" />
+      <entry key="S10" value="2.649111427244019" />
+      <entry key="S30" value="2.8754450484975735" />
+      <entry key="S60" value="2.936721669254634" />
+      <entry key="M2" value="2.968257104068614" />
+      <entry key="M5" value="3.246029940541038" />
+      <entry key="M10" value="8.17380904558678" />
+      <entry key="M15" value="18.536276527184842" />
+      <entry key="M30" value="64.56944056185188" />
+      <entry key="H1" value="197.71620960992826" />
+      <entry key="H2" value="459.993841439723" />
+      <entry key="H4" value="840.0862971579152" />
+      <entry key="D1" value="2893.1983366327227" />
+      <entry key="W1" value="4314.802338785426" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -1248,7 +300,7 @@
     "git-widget-placeholder": "dynamic__tool__system",
     "gradle.sync.parallel.migration.suppressed": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material",
+    "last_opened_file_path": "/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/recipe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -1262,11 +314,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment" />
-      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data/curios" />
@@ -1520,7 +572,8 @@
     <MESSAGE value="- Ported the entire spell system from SpellCaster API, including the wands, scrolls, and defaults spells, but not the datapack loading, commands, or extra firecharge functionality.&#10;- Finally fixed ring recipes!&#10;- Added the Viking Tower, Viking Ship, Hollow Candy Cane, Machine Ruins, and Mushroom Cottage structures, further improving the structure variety in the mod.&#10;- Fixed various other bugs and made other minor changes." />
     <MESSAGE value="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes." />
     <MESSAGE value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
+    <MESSAGE value="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system.&#10;- Addition of gear materials for all wood types, mushrooms, metals, and alloys.&#10;- Addition of gear archetypes for tools armor, rings, and drills.&#10;- Addition of part types for all base tools, tool rods and rod caps, ring bands and settings, battleaxe heads, hammer heads, grips, armor plating, armor lining, and drill engines/heads.&#10;- Addition of Curios API as an (optional) dependency.&#10;- Addition of material and gear type tags for utility.&#10;- Dynamic rendering, naming, and tooltip info.&#10;- Armor rendering, Curios API support, and more!&#10;- Support for many dynamic features.&#10;- Removal of previously hardcoded tools, weapons, and armor.&#10;- This is just the beginning! More stuff and removals of previously hardcoded features to come, as well as integration with the ring system and spellcasting system.&#10;- Various other minor changes and fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system.&#10;- Addition of gear materials for all wood types, mushrooms, metals, and alloys.&#10;- Addition of gear archetypes for tools armor, rings, and drills.&#10;- Addition of part types for all base tools, tool rods and rod caps, ring bands and settings, battleaxe heads, hammer heads, grips, armor plating, armor lining, and drill engines/heads.&#10;- Addition of Curios API as an (optional) dependency.&#10;- Addition of material and gear type tags for utility.&#10;- Dynamic rendering, naming, and tooltip info.&#10;- Armor rendering, Curios API support, and more!&#10;- Support for many dynamic features.&#10;- Removal of previously hardcoded tools, weapons, and armor.&#10;- This is just the beginning! More stuff and removals of previously hardcoded features to come, as well as integration with the ring system and spellcasting system.&#10;- Various other minor changes and fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
