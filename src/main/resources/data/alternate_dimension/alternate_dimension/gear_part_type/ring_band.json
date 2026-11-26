@@ -1,0 +1,30 @@
+{
+  "part_item_name_key": "part.alternate_dimension.ring_band",
+  "z_index": 0,
+  "is_handheld": false,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/part_ring_band",
+  "base_durability": 120,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:jewelry_materials",
+  "name_affix": {
+    "position": "suffix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.ring_band_suffix",
+    "tint_with_material": false
+  },
+  "pattern": {
+    "pattern": [
+      " P ",
+      "P P",
+      " P "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth"
+    },
+    "material_cost": 3
+  },
+  "components": {
+    "alternate_dimension:curio_slot": "alternate_dimension:ring"
+  }
+}

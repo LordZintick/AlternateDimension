@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.onyx",
+  "color": 2894892,
+  "durability_multiplier": 1.0,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:onyx",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.onyx",
+    "tint_with_material": true
+  }
+}

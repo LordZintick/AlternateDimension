@@ -1,0 +1,24 @@
+{
+  "name_key": "material.alternate_dimension.mythril",
+  "color": 29777,
+  "durability_multiplier": 3.5,
+  "power_factor": 3.5,
+  "ingredient": "alternate_dimension:mythril_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.mythril",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.all_parts",
+      "trait_descriptions": ["trait.alternate_dimension.durable_3"],
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:unbreaking": 3
+        }
+      }
+    }
+  ]
+}

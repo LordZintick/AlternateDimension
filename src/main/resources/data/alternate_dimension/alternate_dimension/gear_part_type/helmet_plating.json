@@ -1,0 +1,43 @@
+{
+  "part_item_name_key": "part.alternate_dimension.helmet_plating",
+  "z_index": 1,
+  "is_handheld": false,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/armor_helmet",
+  "armor_texture": "alternate_dimension:textures/models/armor/armor_plating_l1.png",
+  "base_durability": 165,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:armor_materials",
+  "name_affix": {
+    "position": "suffix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.helmet_suffix",
+    "tint_with_material": false
+  },
+  "pattern": {
+    "pattern": [
+      "PPP",
+      "P P"
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth"
+    },
+    "material_cost": 5
+  },
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:item.armor.equip_iron",
+      "asset_id": "alternate_dimension:modular_armor"
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:armor",
+        "id": "alternate_dimension:helmet_armor",
+        "amount": 1.0,
+        "operation": "add_value",
+        "slot": "head"
+      }
+    ]
+  }
+}

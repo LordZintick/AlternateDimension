@@ -1,0 +1,29 @@
+{
+  "part_item_name_key": "part.alternate_dimension.rod_cap",
+  "z_index": 2,
+  "is_handheld": true,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_rod_cap",
+  "base_durability": 20,
+  "power_factor": 1.1,
+  "name_affix": {
+    "position": "prefix",
+    "priority": 10,
+    "translation_key": "part.alternate_dimension.rod_cap_prefix",
+    "tint_with_material": true,
+    "takes_material": true
+  },
+  "materials_allowed": "#alternate_dimension:rod_cap_materials",
+  "requires_any": ["alternate_dimension:tool_rod"],
+  "pattern": {
+    "pattern": [
+      " T",
+      " P"
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 1
+  }
+}

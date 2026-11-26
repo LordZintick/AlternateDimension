@@ -1,0 +1,49 @@
+{
+  "name_key": "material.alternate_dimension.candy_cane",
+  "color": 16711680,
+  "durability_multiplier": 0.5,
+  "power_factor": 0.8,
+  "ingredient": "alternate_dimension:candy_cane",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.candy_cane",
+    "tint_with_material": true
+  },
+  "overlays": [
+    {
+      "texture": "alternate_dimension:item/candy_cane_stripes"
+    }
+  ],
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.tool_parts",
+      "part_types": "#alternate_dimension:tool_parts",
+      "trait_descriptions": ["trait.alternate_dimension.candy_snack"],
+      "components": {
+        "alternate_dimension:durability_consumable": {
+          "durability_loss": 4,
+          "config": {
+            "consume_seconds": 0.4,
+            "consume_effects": [
+              {
+                "type": "apply_effects",
+                "effects": [
+                  {
+                    "id": "minecraft:speed",
+                    "amplifier": 1,
+                    "duration": 15
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "minecraft:food": {
+          "nutrition": 1,
+          "saturation": 0.05
+        }
+      }
+    }
+  ]
+}

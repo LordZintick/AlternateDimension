@@ -2,12 +2,42 @@
   "name_key": "material.alternate_dimension.candyfloss_wood",
   "color": 11093929,
   "durability_multiplier": 0.8,
-  "mining_speed": 2.0,
-  "repair_ingredient": "alternate_dimension:candyfloss_planks",
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:candyfloss_planks",
   "name_affix": {
     "position": "prefix",
     "priority": 30,
     "translation_key": "material.alternate_dimension.candyfloss_wood",
     "tint_with_material": true
-  }
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.main_parts",
+      "part_types": "#alternate_dimension:main_parts",
+      "trait_descriptions": ["trait.alternate_dimension.candy"],
+      "components": {
+        "alternate_dimension:durability_consumable": {
+          "durability_loss": 8,
+          "config": {
+            "consume_effects": [
+              {
+                "type": "apply_effects",
+                "effects": [
+                  {
+                    "id": "minecraft:speed",
+                    "amplifier": 1,
+                    "duration": 15
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "minecraft:food": {
+          "nutrition": 3,
+          "saturation": 0.2
+        }
+      }
+    }
+  ]
 }

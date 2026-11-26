@@ -2,8 +2,8 @@
   "name_key": "material.alternate_dimension.azure_wood",
   "color": 4681385,
   "durability_multiplier": 0.8,
-  "mining_speed": 2.0,
-  "repair_ingredient": "alternate_dimension:azure_planks",
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:azure_planks",
   "name_affix": {
     "position": "prefix",
     "priority": 30,

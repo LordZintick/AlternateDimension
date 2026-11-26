@@ -15,6 +15,7 @@ import net.minecraft.client.resources.model.ModelBaker;
 import net.minecraft.client.resources.model.ResolvedModel;
 import net.minecraft.client.resources.model.cuboid.CuboidFace;
 import net.minecraft.client.resources.model.cuboid.FaceBakery;
+import net.minecraft.client.resources.model.cuboid.ItemModelGenerator;
 import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.client.resources.model.sprite.MaterialBaker;
@@ -40,7 +41,8 @@ public class ModularItemModel implements ItemModel {
     private final Matrix4fc transformation;
     private final ModelBaker modelBaker;
     private final MaterialBaker materialBaker;
-    private final Map<List<Identifier>, CachedMesh> meshCache = new ConcurrentHashMap<>();
+    private record PartRenderSpec(Identifier maskTexture, List<Identifier> overlayTextures) {}
+    private final Map<List<PartRenderSpec>, CachedMesh> meshCache = new ConcurrentHashMap<>();
 
     private record CachedMesh(List<BakedQuad> quads, Vector3fc[] extents) {}
 
@@ -87,20 +89,46 @@ public class ModularItemModel implements ItemModel {
         }
 
         IntList tintLayers = layer.tintLayers();
-        List<Identifier> spriteKeys = new ArrayList<>(count);
+        List<PartRenderSpec> renderSpecs = new ArrayList<>(count);
 
         for (int index = 0; index != count; index++) {
             var entry = sortedParts.get(index);
-            Identifier texId = entry.getKey().value().texture();
-            int opaqueColor = ARGB.opaque(entry.getValue().value().color());
+            GearPartType part = entry.getKey().value();
+            GearMaterial mat = entry.getValue().value();
 
-            spriteKeys.add(texId);
-            tintLayers.add(opaqueColor);
-            state.appendModelIdentityElement(texId);
-            state.appendModelIdentityElement(opaqueColor);
+            Identifier maskTex = part.texture().map(
+                    id -> id,
+                    list -> {
+                        for (PartTexture texture : list.textures()) {
+                            if (texture.partTypes().stream().anyMatch(h -> partsComp.parts().containsKey(h))) {
+                                return texture.texture();
+                            }
+                        }
+                        return list.defaultTexture();
+                    }
+            );
+
+            int baseColor = ARGB.opaque(mat.color());
+
+            tintLayers.add(baseColor);
+            state.appendModelIdentityElement(maskTex);
+            state.appendModelIdentityElement(baseColor);
+
+            List<Identifier> overlayIds = new ArrayList<>(mat.overlays().size());
+            for (MaterialOverlay overlay : mat.overlays()) {
+                if (overlay.partTypes().isPresent() && overlay.partTypes().get().stream().noneMatch(h -> partsComp.parts().containsKey(h))) continue;
+
+                int overlayTint = ARGB.opaque(overlay.color().orElse(0xFFFFFF));
+                overlayIds.add(overlay.texture());
+                tintLayers.add(overlayTint);
+                state.appendModelIdentityElement(overlay.texture());
+                state.appendModelIdentityElement(overlayTint);
+            }
+
+            renderSpecs.add(new PartRenderSpec(maskTex, List.copyOf(overlayIds)));
         }
 
-        CachedMesh mesh = meshCache.computeIfAbsent(List.copyOf(spriteKeys), this::bakeLayeredMesh);
+        CachedMesh mesh = meshCache.computeIfAbsent(List.copyOf(renderSpecs), this::bakeLayeredMesh);
 
         ModelRenderProperties activeProps = isHandheld ? handheldProperties : standardProperties;
         activeProps.applyToLayer(layer, displayContext);
@@ -109,48 +137,111 @@ public class ModularItemModel implements ItemModel {
         layer.prepareQuadList().addAll(mesh.quads());
     }
 
-    private CachedMesh bakeLayeredMesh(List<Identifier> textureLocations) {
+    private CachedMesh bakeLayeredMesh(List<PartRenderSpec> specs) {
         List<BakedQuad> allQuads = new ArrayList<>();
-        int count = textureLocations.size();
-        CuboidFace.UVs fullUV = new CuboidFace.UVs(0.0f, 0.0f, 16.0f, 16.0f);
+        CuboidFace.UVs frontUV = new CuboidFace.UVs(0.0f, 0.0f, 16.0f, 16.0f);
+        CuboidFace.UVs backUV = new CuboidFace.UVs(16.0f, 0.0f, 0.0f, 16.0f);
 
-        for (int layerIndex = 0; layerIndex != count; layerIndex++) {
-            Identifier texId = textureLocations.get(layerIndex);
-            Material.Baked bakedMat = this.materialBaker.get(new Material(texId), texId::toString);
+        int currentTintIndex = 0;
 
-            // Slight Z offset per layer prevents Z-fighting on overlapping pixels
-            float zFront = 8.5f + (layerIndex * 0.03f);
-            float zBack = 7.5f - (layerIndex * 0.03f);
+        for (int partIndex = 0; partIndex != specs.size(); partIndex++) {
+            PartRenderSpec spec = specs.get(partIndex);
+            Identifier maskTexId = spec.maskTexture();
+            Material.Baked maskMat = this.materialBaker.get(new Material(maskTexId), maskTexId::toString);
+            var maskContents = maskMat.sprite().contents();
 
-            CuboidFace face = new CuboidFace(null, layerIndex, "", fullUV, Quadrant.R0);
+            float zFront = 8.5f + (partIndex * 0.06f);
+            float zBack = 7.5f - (partIndex * 0.06f);
 
-            // Front face (SOUTH)
+            int baseTintIndex = currentTintIndex++;
+            CuboidFace frontFace = new CuboidFace(null, baseTintIndex, "", frontUV, Quadrant.R0);
+            CuboidFace backFace = new CuboidFace(null, baseTintIndex, "", backUV, Quadrant.R0);
+
             allQuads.add(FaceBakery.bakeQuad(
-                    this.modelBaker,
-                    new Vector3f(0.0f, 0.0f, zFront),
-                    new Vector3f(16.0f, 16.0f, zFront),
-                    face,
-                    bakedMat,
-                    Direction.SOUTH,
-                    BlockModelRotation.IDENTITY,
-                    null,
-                    true,
-                    0
+                    this.modelBaker, new Vector3f(0.0f, 0.0f, zFront), new Vector3f(16.0f, 16.0f, zFront),
+                    frontFace, maskMat, Direction.SOUTH, BlockModelRotation.IDENTITY, null, true, 0
+            ));
+            allQuads.add(FaceBakery.bakeQuad(
+                    this.modelBaker, new Vector3f(0.0f, 0.0f, zBack), new Vector3f(16.0f, 16.0f, zBack),
+                    backFace, maskMat, Direction.NORTH, BlockModelRotation.IDENTITY, null, true, 0
             ));
 
-            // Back face (NORTH)
-            allQuads.add(FaceBakery.bakeQuad(
-                    this.modelBaker,
-                    new Vector3f(0.0f, 0.0f, zBack),
-                    new Vector3f(16.0f, 16.0f, zBack),
-                    face,
-                    bakedMat,
-                    Direction.NORTH,
-                    BlockModelRotation.IDENTITY,
-                    null,
-                    true,
-                    0
-            ));
+            int width = maskContents.width();
+            int height = maskContents.height();
+            float scaleX = 16.0f / width;
+            float scaleY = 16.0f / height;
+
+            for (int py = 0; py != height; py++) {
+                for (int px = 0; px != width; px++) {
+                    if (maskContents.isTransparent(0, px, py)) continue;
+
+                    float x0 = px * scaleX;
+                    float x1 = (px + 1) * scaleX;
+                    float y1 = 16.0f - (py * scaleY);
+                    float y0 = 16.0f - ((py + 1) * scaleY);
+
+                    CuboidFace.UVs pixelUV = new CuboidFace.UVs(x0, py * scaleY, x1, (py + 1) * scaleY);
+                    CuboidFace edgeFace = new CuboidFace(null, baseTintIndex, "", pixelUV, Quadrant.R0);
+
+                    if (py == 0 || maskContents.isTransparent(0, px, py - 1)) {
+                        allQuads.add(FaceBakery.bakeQuad(this.modelBaker, new Vector3f(x0, y1, zBack), new Vector3f(x1, y1, zFront), edgeFace, maskMat, Direction.UP, BlockModelRotation.IDENTITY, null, true, 0));
+                    }
+                    if (py == height - 1 || maskContents.isTransparent(0, px, py + 1)) {
+                        allQuads.add(FaceBakery.bakeQuad(this.modelBaker, new Vector3f(x0, y0, zBack), new Vector3f(x1, y0, zFront), edgeFace, maskMat, Direction.DOWN, BlockModelRotation.IDENTITY, null, true, 0));
+                    }
+                    if (px == 0 || maskContents.isTransparent(0, px - 1, py)) {
+                        allQuads.add(FaceBakery.bakeQuad(this.modelBaker, new Vector3f(x0, y0, zBack), new Vector3f(x0, y1, zFront), edgeFace, maskMat, Direction.WEST, BlockModelRotation.IDENTITY, null, true, 0));
+                    }
+                    if (px == width - 1 || maskContents.isTransparent(0, px + 1, py)) {
+                        allQuads.add(FaceBakery.bakeQuad(this.modelBaker, new Vector3f(x1, y0, zBack), new Vector3f(x1, y1, zFront), edgeFace, maskMat, Direction.EAST, BlockModelRotation.IDENTITY, null, true, 0));
+                    }
+                }
+            }
+
+            for (int ovIdx = 0; ovIdx != spec.overlayTextures().size(); ovIdx++) {
+                Identifier ovTexId = spec.overlayTextures().get(ovIdx);
+                Material.Baked ovMat = this.materialBaker.get(new Material(ovTexId), ovTexId::toString);
+                var ovContents = ovMat.sprite().contents();
+                int ovTintIndex = currentTintIndex++;
+
+                float ovZFront = zFront + ((ovIdx + 1) * 0.015f);
+                float ovZBack = zBack - ((ovIdx + 1) * 0.015f);
+
+                int ovW = ovContents.width();
+                int ovH = ovContents.height();
+                float ovScaleX = 16.0f / ovW;
+                float ovScaleY = 16.0f / ovH;
+
+                for (int py = 0; py != ovH; py++) {
+                    for (int px = 0; px != ovW; px++) {
+                        if (ovContents.isTransparent(0, px, py)) continue;
+
+                        int maskX = Math.min(width - 1, (px * width) / ovW);
+                        int maskY = Math.min(height - 1, (py * height) / ovH);
+                        if (maskContents.isTransparent(0, maskX, maskY)) continue;
+
+                        float x0 = px * ovScaleX;
+                        float x1 = (px + 1) * ovScaleX;
+                        float y1 = 16.0f - (py * ovScaleY);
+                        float y0 = 16.0f - ((py + 1) * ovScaleY);
+
+                        CuboidFace.UVs ovFrontUV = new CuboidFace.UVs(x0, py * ovScaleY, x1, (py + 1) * ovScaleY);
+                        CuboidFace.UVs ovBackUV = new CuboidFace.UVs(x1, py * ovScaleY, x0, (py + 1) * ovScaleY);
+
+                        CuboidFace ovFrontFace = new CuboidFace(null, ovTintIndex, "", ovFrontUV, Quadrant.R0);
+                        CuboidFace ovBackFace = new CuboidFace(null, ovTintIndex, "", ovBackUV, Quadrant.R0);
+
+                        allQuads.add(FaceBakery.bakeQuad(
+                                this.modelBaker, new Vector3f(x0, y0, ovZFront), new Vector3f(x1, y1, ovZFront),
+                                ovFrontFace, ovMat, Direction.SOUTH, BlockModelRotation.IDENTITY, null, true, 0
+                        ));
+                        allQuads.add(FaceBakery.bakeQuad(
+                                this.modelBaker, new Vector3f(x0, y0, ovZBack), new Vector3f(x1, y1, ovZBack),
+                                ovBackFace, ovMat, Direction.NORTH, BlockModelRotation.IDENTITY, null, true, 0
+                        ));
+                    }
+                }
+            }
         }
 
         List<BakedQuad> immutableQuads = List.copyOf(allQuads);

@@ -2,8 +2,8 @@
   "name_key": "material.alternate_dimension.scorched_wood",
   "color": 7500402,
   "durability_multiplier": 0.8,
-  "mining_speed": 2.0,
-  "repair_ingredient": "alternate_dimension:scorched_planks",
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:scorched_planks",
   "name_affix": {
     "position": "prefix",
     "priority": 30,

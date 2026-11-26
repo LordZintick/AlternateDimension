@@ -1,16 +1,10 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:titanium_sword",
     "alternate_dimension:durable_drill",
-    "alternate_dimension:titanium_axe",
-    "alternate_dimension:titanium_hoe",
     {
       "id": "#alternate_dimension:mythril_tier",
       "required": false
-    },
-    "alternate_dimension:titanium_pickaxe",
-    "alternate_dimension:titanium_battleaxe",
-    "alternate_dimension:titanium_shovel"
+    }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.pyre_mantle",
+  "color": 4002836,
+  "durability_multiplier": 1.1,
+  "power_factor": 1.5,
+  "ingredient": "alternate_dimension:pyric_cobble",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.pyre_mantle",
+    "tint_with_material": true
+  }
+}

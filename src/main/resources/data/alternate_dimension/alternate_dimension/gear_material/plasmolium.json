@@ -1,0 +1,26 @@
+{
+  "name_key": "material.alternate_dimension.plasmolium",
+  "color": 7536719,
+  "durability_multiplier": 1.75,
+  "power_factor": 2.5,
+  "ingredient": "alternate_dimension:plasmolium_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.plasmolium",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.tool_parts",
+      "part_types": "#alternate_dimension:tool_parts",
+      "trait_descriptions": ["trait.alternate_dimension.sparking"],
+      "components": {
+        "alternate_dimension:sparking": {
+          "chance": 1,
+          "time": 70
+        }
+      }
+    }
+  ]
+}

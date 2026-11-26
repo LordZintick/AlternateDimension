@@ -9,6 +9,8 @@ import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -31,6 +33,7 @@ import java.util.Set;
 
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModMobEffects;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 
 @EventBusSubscriber
 public class PlayerTickProcedure {
@@ -51,10 +54,15 @@ public class PlayerTickProcedure {
 		if ((entity.level().dimension()) == Level.OVERWORLD) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(AlternateDimensionModMobEffects.GRACE_EFFECT, 24000, 0, false, false));
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(AlternateDimensionModItems.STARTER_BLUEPRINT_BUNDLE.get()).copy();
+				_setstack.setCount(1);
+				_player.getInventory().placeItemBackInInventory(_setstack);
+			}
 			if (world instanceof ServerLevel _origLevel) {
-				LevelAccessor _switchworld8 = _origLevel.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth")));
-				if (_switchworld8 != null) {
-					worldSwitch8(_switchworld8, x, z, entity);
+				LevelAccessor _switchworld9 = _origLevel.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, Identifier.parse("alternate_dimension:eleroth")));
+				if (_switchworld9 != null) {
+					worldSwitch9(_switchworld9, x, z, entity);
 				}
 			}
 			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _serverLevel) {
@@ -89,7 +97,7 @@ public class PlayerTickProcedure {
 		}
 	}
 
-	private static void worldSwitch8(LevelAccessor world, double x, double z, Entity entity) {
+	private static void worldSwitch9(LevelAccessor world, double x, double z, Entity entity) {
 		if (entity instanceof ServerPlayer _serverPlayer)
 			_serverPlayer.setRespawnPosition(new ServerPlayer.RespawnConfig(
 					LevelData.RespawnData.of(_serverPlayer.level().dimension(), BlockPos.containing(0, Math.max(129, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0)), 0), _serverPlayer.getYRot(), _serverPlayer.getXRot()), true),

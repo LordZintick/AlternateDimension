@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.jade",
+  "color": 19456,
+  "durability_multiplier": 1.0,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:jade",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.jade",
+    "tint_with_material": true
+  }
+}

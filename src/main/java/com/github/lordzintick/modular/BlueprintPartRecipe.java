@@ -3,12 +3,12 @@ package com.github.lordzintick.modular;
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 import com.github.lordzintick.init.AlternateDimensionModRecipeSerializers;
 import com.github.lordzintick.init.AlternateDimensionModRegistries;
-import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.*;
-import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -21,17 +21,21 @@ import java.util.Map;
 import java.util.Optional;
 
 public class BlueprintPartRecipe extends CustomRecipe {
+    public static final BlueprintPartRecipe INSTANCE = new BlueprintPartRecipe();
+    public static final MapCodec<BlueprintPartRecipe> MAP_CODEC = MapCodec.unit(() -> INSTANCE);
+    public static final StreamCodec<RegistryFriendlyByteBuf, BlueprintPartRecipe> STREAM_CODEC = StreamCodec.unit(INSTANCE);
+
     private RegistryAccess registryAccess;
 
     @Override
     public boolean matches(CraftingInput input, Level level) {
         registryAccess = level.registryAccess();
-        return findMatch(input, level.registryAccess()).isPresent();
+        return findMatch(input, registryAccess).isPresent();
     }
 
     @Override
     public ItemStack assemble(CraftingInput input) {
-        HolderLookup.Provider registries = this.registryAccess != null
+        RegistryAccess registries = this.registryAccess != null
                 ? this.registryAccess
                 : (ServerLifecycleHooks.getCurrentServer() != null
                 ? ServerLifecycleHooks.getCurrentServer().registryAccess()
@@ -59,7 +63,7 @@ public class BlueprintPartRecipe extends CustomRecipe {
         return remaining;
     }
 
-    private Optional<MatchResult> findMatch(CraftingInput input, HolderLookup.Provider registries) {
+    private Optional<MatchResult> findMatch(CraftingInput input, RegistryAccess registries) {
         BlueprintDataComponent blueprint = null;
         List<ItemStack> materialStacks = new ArrayList<>();
 
@@ -80,15 +84,22 @@ public class BlueprintPartRecipe extends CustomRecipe {
             return Optional.empty();
         }
 
-        Registry<GearMaterial> materialRegistry = registries.getOrThrow(AlternateDimensionModRegistries.MATERIAL_KEY).value();
+        Registry<GearMaterial> materialRegistry = registries.lookupOrThrow(AlternateDimensionModRegistries.MATERIAL_KEY);
         Holder<GearMaterial> matchedMaterial = null;
 
         for (ItemStack matStack : materialStacks) {
             Optional<Holder.Reference<GearMaterial>> found = materialRegistry.listElements()
-                    .filter(holder -> holder.value().repairIngredient().test(matStack))
+                    .filter(holder -> holder.value().ingredient().test(matStack))
                     .findFirst();
 
-            if (found.isEmpty()) return Optional.empty();
+            if (found.isEmpty()) {
+                System.out.println("No material with ingredient found!");
+                return Optional.empty();
+            }
+            if (!blueprint.partType().value().allowsMaterial(found.get())) {
+                System.out.println("No allowed materials found!");
+                continue;
+            }
             if (matchedMaterial == null) {
                 matchedMaterial = found.get();
             } else if (!matchedMaterial.equals(found.get())) {

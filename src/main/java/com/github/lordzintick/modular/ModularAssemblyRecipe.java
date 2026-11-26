@@ -4,11 +4,14 @@ import com.github.lordzintick.init.AlternateDimensionModComponents;
 import com.github.lordzintick.init.AlternateDimensionModRecipeSerializers;
 import com.github.lordzintick.init.AlternateDimensionModRegistries;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.CraftingInput;
@@ -24,6 +27,9 @@ import java.util.Optional;
 import java.util.Set;
 
 public class ModularAssemblyRecipe extends CustomRecipe {
+    public static final ModularAssemblyRecipe INSTANCE = new ModularAssemblyRecipe();
+    public static final MapCodec<ModularAssemblyRecipe> MAP_CODEC = MapCodec.unit(() -> INSTANCE);
+    public static final StreamCodec<RegistryFriendlyByteBuf, ModularAssemblyRecipe> STREAM_CODEC = StreamCodec.unit(INSTANCE);
     private RegistryAccess registryAccess;
 
     @Override
@@ -34,7 +40,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
 
     @Override
     public ItemStack assemble(CraftingInput input) {
-        HolderLookup.Provider registries = this.registryAccess != null
+        RegistryAccess registries = this.registryAccess != null
                 ? this.registryAccess
                 : (ServerLifecycleHooks.getCurrentServer() != null
                 ? ServerLifecycleHooks.getCurrentServer().registryAccess()
@@ -47,19 +53,19 @@ public class ModularAssemblyRecipe extends CustomRecipe {
                 ? merged.get().existingTool().copyWithCount(1)
                 : new ItemStack(AlternateDimensionModItems.MODULAR_ITEM.get());
 
-        // Clear previously synthesized components before re-merging
         result.remove(DataComponents.TOOL);
         result.remove(DataComponents.ATTRIBUTE_MODIFIERS);
         result.remove(DataComponents.EQUIPPABLE);
         result.remove(DataComponents.FOOD);
         result.remove(DataComponents.DAMAGE_RESISTANT);
         result.remove(DataComponents.GLIDER);
+        result.remove(AlternateDimensionModComponents.CURIO_SLOT);
 
         ComponentMerger.applyMergedComponents(result, new GearPartsComponent(merged.get().combinedParts()));
         return result;
     }
 
-    private Optional<AssemblyResult> mergeInputs(CraftingInput input, HolderLookup.Provider registries) {
+    private Optional<AssemblyResult> mergeInputs(CraftingInput input, RegistryAccess registries) {
         Map<Holder<GearPartType>, Holder<GearMaterial>> combinedMap = new LinkedHashMap<>();
         ItemStack existingAssembledTool = null;
         int modularItemCount = 0;
@@ -92,13 +98,11 @@ public class ModularAssemblyRecipe extends CustomRecipe {
 
         Set<Holder<GearPartType>> presentPartTypes = combinedMap.keySet();
 
-        // 1. Validate part-level requires_any and incompatible_with rules
         if (!GearPartType.isValidPartCombination(presentPartTypes)) {
             return Optional.empty();
         }
 
-        // 2. Validate that the parts satisfy at least one GearArchetype
-        Registry<GearArchetype> archetypeRegistry = registries.getOrThrow(AlternateDimensionModRegistries.ARCHETYPE_KEY).value();
+        Registry<GearArchetype> archetypeRegistry = registries.lookupOrThrow(AlternateDimensionModRegistries.ARCHETYPE_KEY);
         boolean matchesArchetype = archetypeRegistry.listElements()
                 .anyMatch(holder -> holder.value().matches(presentPartTypes));
 

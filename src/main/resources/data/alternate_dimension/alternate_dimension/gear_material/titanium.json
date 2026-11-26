@@ -1,0 +1,24 @@
+{
+  "name_key": "material.alternate_dimension.titanium",
+  "color": 5592405,
+  "durability_multiplier": 2.0,
+  "power_factor": 2.5,
+  "ingredient": "alternate_dimension:titanium_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.titanium",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.all_parts",
+      "trait_descriptions": ["trait.alternate_dimension.durable_1"],
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:unbreaking": 1
+        }
+      }
+    }
+  ]
+}

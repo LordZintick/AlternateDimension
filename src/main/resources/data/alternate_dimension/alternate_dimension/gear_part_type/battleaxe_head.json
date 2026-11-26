@@ -1,0 +1,59 @@
+{
+  "part_item_name_key": "part.alternate_dimension.battleaxe_head",
+  "z_index": 1,
+  "is_handheld": true,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/tool_battleaxe",
+  "base_durability": 200,
+  "power_factor": 1.0,
+  "name_affix": {
+    "position": "suffix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.battleaxe_suffix",
+    "tint_with_material": false
+  },
+  "materials_allowed": "#alternate_dimension:head_materials",
+  "pattern": {
+    "pattern": [
+      "P P",
+      "PTP",
+      "   "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 4
+  },
+  "components": {
+    "minecraft:tool": {
+      "rules": [
+        {
+          "blocks": "#minecraft:incorrect_for_diamond_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:mineable/axe",
+          "speed": 0.5,
+          "correct_for_drops": true
+        }
+      ]
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "alternate_dimension:battleaxe_damage",
+        "amount": 8.0,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "alternate_dimension:battleaxe_speed",
+        "amount": -3.55,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+}

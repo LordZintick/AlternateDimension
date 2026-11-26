@@ -4,6 +4,19 @@
   "is_handheld": true,
   "contribute_material_name": false,
   "texture": "alternate_dimension:item/stick",
-  "base_durability": 100,
-  "speed_multiplier": 1.0
+  "base_durability": 40,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:rod_materials",
+  "pattern": {
+    "pattern": [
+      " T ",
+      " P ",
+      " P "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 2
+  }
 }

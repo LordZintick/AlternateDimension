@@ -1,5 +1,6 @@
 package com.github.lordzintick.init;
 
+import com.github.lordzintick.modular.BlueprintCreationRecipe;
 import com.github.lordzintick.modular.BlueprintPartRecipe;
 import com.github.lordzintick.modular.ModularAssemblyRecipe;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
@@ -17,14 +18,20 @@ public class AlternateDimensionModRecipeSerializers {
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<BlueprintPartRecipe>> BLUEPRINT_PART =
             RECIPE_SERIALIZERS.register("blueprint_part", () -> new RecipeSerializer<>(
-                    MapCodec.unit(BlueprintPartRecipe::new),
-                    StreamCodec.unit(new BlueprintPartRecipe())
+                    BlueprintPartRecipe.MAP_CODEC,
+                    BlueprintPartRecipe.STREAM_CODEC
             ));
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<ModularAssemblyRecipe>> MODULAR_ASSEMBLY =
             RECIPE_SERIALIZERS.register("modular_assembly", () -> new RecipeSerializer<>(
-                    MapCodec.unit(ModularAssemblyRecipe::new),
-                    StreamCodec.unit(new ModularAssemblyRecipe())
+                    ModularAssemblyRecipe.MAP_CODEC,
+                    ModularAssemblyRecipe.STREAM_CODEC
+            ));
+
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<BlueprintCreationRecipe>> BLUEPRINT_CREATION =
+            RECIPE_SERIALIZERS.register("blueprint_creation", () -> new RecipeSerializer<>(
+                    BlueprintCreationRecipe.MAP_CODEC,
+                    BlueprintCreationRecipe.STREAM_CODEC
             ));
 
     public static void register(IEventBus bus) {

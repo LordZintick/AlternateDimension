@@ -1,0 +1,30 @@
+{
+  "part_item_name_key": "part.alternate_dimension.ring_setting",
+  "z_index": 1,
+  "is_handheld": false,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_ring_setting",
+  "base_durability": 120,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:ring_settings",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "part.alternate_dimension.ring_setting_prefix",
+    "tint_with_material": true,
+    "takes_material": true
+  },
+  "requires_any": ["alternate_dimension:ring_band"],
+  "pattern": {
+    "pattern": [
+      " P ",
+      "PGP",
+      "   "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "G": "#alternate_dimension:gems"
+    },
+    "material_cost": 2
+  }
+}

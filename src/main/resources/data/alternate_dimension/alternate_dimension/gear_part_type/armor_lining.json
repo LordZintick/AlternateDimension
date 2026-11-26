@@ -1,0 +1,27 @@
+{
+  "part_item_name_key": "part.alternate_dimension.armor_lining",
+  "z_index": 0,
+  "is_handheld": false,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_armor_lining",
+  "base_durability": 10,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:lining_materials",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 20,
+    "translation_key": "prefix.alternate_dimension.lined",
+    "takes_material": true,
+    "tint_with_material": true
+  },
+  "pattern": {
+    "pattern": [
+      "P P",
+      " P "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth"
+    },
+    "material_cost": 1
+  }
+}

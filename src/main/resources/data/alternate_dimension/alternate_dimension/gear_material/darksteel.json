@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.darksteel",
+  "color": 2097216,
+  "durability_multiplier": 1.5,
+  "power_factor": 2.25,
+  "ingredient": "alternate_dimension:darksteel_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.darksteel",
+    "tint_with_material": true
+  }
+}

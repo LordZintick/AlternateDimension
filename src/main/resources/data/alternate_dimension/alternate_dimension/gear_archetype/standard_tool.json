@@ -1,6 +1,6 @@
 {
   "required_part_groups": [
-    "#yourmod:tool_heads",
-    "#yourmod:tool_rods"
+    "#alternate_dimension:tool_heads",
+    "#alternate_dimension:tool_rods"
   ]
 }

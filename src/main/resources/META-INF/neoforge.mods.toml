@@ -37,6 +37,12 @@ description="Adventure through a fantastical new world filled with new items to 
 
 
 [[dependencies.alternate_dimension]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.alternate_dimension]]
     modId="jei"
     type="optional"
     versionRange="[0,)"

@@ -1,22 +1,12 @@
 {
   "required": true,
   "package": "com.lordkittycat.alternate_dimension.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "mixins": [
     "PlayerEntityMixinMixin",
     "ScreenHandlerMixinMixin"
   ],
-  "client": [
-    "PlayerAnimationMixin",
-    "PlayerAnimationRendererMixin",
-    "ItemInHandLayerMixin",
-    "CameraAccessor",
-    "EntityRenderDispatcherMixin",
-    "LivingEntityRendererMixin",
-    "EntityRendererMixin",
-    "ItemInHandRendererMixin",
-    "LevelRendererMixin"
-  ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   },

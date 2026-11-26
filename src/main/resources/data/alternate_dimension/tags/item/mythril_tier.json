@@ -1,10 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "alternate_dimension:mythril_sword",
-    "alternate_dimension:mythril_pickaxe",
-    "alternate_dimension:mythril_shovel",
-    "alternate_dimension:mythril_axe",
-    "alternate_dimension:mythril_hoe"
-  ]
+  "values": []
 }

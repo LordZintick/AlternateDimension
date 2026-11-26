@@ -1,28 +1,9 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:candyfloss_pickaxe",
-    "alternate_dimension:phosphorium_pickaxe",
-    "alternate_dimension:aluminum_pickaxe",
     "alternate_dimension:durable_drill",
-    "alternate_dimension:evilstone_pickaxe",
-    "alternate_dimension:mantle_pickaxe",
-    "alternate_dimension:aluminum_hammer",
-    "alternate_dimension:azure_pickaxe",
-    "alternate_dimension:titanium_pickaxe",
-    "alternate_dimension:scorched_wooden_pickaxe",
-    "alternate_dimension:redwooden_pickaxe",
-    "alternate_dimension:shale_pickaxe",
-    "alternate_dimension:holystone_pickaxe",
     "alternate_dimension:wooden_drill",
-    "alternate_dimension:pine_wooden_pickaxe",
-    "alternate_dimension:mythril_pickaxe",
-    "alternate_dimension:iron_drill",
-    "alternate_dimension:plasmolium_pickaxe",
-    "alternate_dimension:darksteel_pickaxe",
-    "alternate_dimension:shroomium_pickaxe",
-    "alternate_dimension:veridium_pickaxe",
-    "alternate_dimension:mushy_pickaxe",
-    "alternate_dimension:planty_pickaxe"
+    "alternate_dimension:aluminum_hammer",
+    "alternate_dimension:iron_drill"
   ]
 }

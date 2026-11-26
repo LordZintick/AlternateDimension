@@ -3,8 +3,6 @@ package com.github.lordzintick.modular;
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -22,7 +20,7 @@ import java.util.function.Consumer;
 public class ModularItem extends Item {
 
     public ModularItem(Properties properties) {
-        super(properties);
+        super(properties.component(DataComponents.TOOLTIP_DISPLAY, new TooltipDisplay(false, new LinkedHashSet<>(Set.of(DataComponents.ATTRIBUTE_MODIFIERS)))));
     }
 
     @Override
@@ -32,7 +30,6 @@ public class ModularItem extends Item {
             return super.getName(stack);
         }
 
-        // Case 1: Standalone 1-part item (e.g., "Diamond Pickaxe Head")
         if (partsComp.parts().size() == 1) {
             var entry = partsComp.parts().entrySet().iterator().next();
             GearPartType part = entry.getKey().value();
@@ -40,10 +37,9 @@ public class ModularItem extends Item {
 
             Component matComp = Component.translatable(mat.nameKey()).withColor(mat.color());
             Component partComp = Component.translatable(part.partItemNameKey());
-            return Component.translatable("item.yourmod.part_format", matComp, partComp);
+            return Component.translatable("item.alternate_dimension.part_format", matComp, partComp);
         }
 
-        // Case 2: Assembled gear with priority-sorted prefixes and suffixes
         record ResolvedToken(int priority, Component text) {}
         List<ResolvedToken> prefixes = new ArrayList<>();
         List<ResolvedToken> suffixes = new ArrayList<>();
@@ -53,7 +49,6 @@ public class ModularItem extends Item {
             GearPartType part = entry.getKey().value();
             GearMaterial mat = entry.getValue().value();
 
-            // 1. Collect the Part's own affix (e.g., "Pickaxe" suffix, or "%s-Coated" prefix)
             part.nameAffix().ifPresent(affix -> {
                 Component matName = Component.translatable(mat.nameKey());
                 MutableComponent text = affix.takesMaterial()
@@ -71,7 +66,6 @@ public class ModularItem extends Item {
                 }
             });
 
-            // 2. If this part exposes its material's raw name (e.g., Pickaxe Head -> "Diamond"), collect Material affix
             if (part.contributeMaterialName()) {
                 mat.nameAffix().ifPresent(affix -> {
                     MutableComponent text = Component.translatable(affix.translationKey());
@@ -116,23 +110,22 @@ public class ModularItem extends Item {
 
         var sortedParts = partsComp.sortedByZIndex();
 
-        // Standalone Part Preview (1 Part)
         if (sortedParts.size() == 1) {
-            var entry = sortedParts.get(0);
+            var entry = sortedParts.getFirst();
             GearPartType part = entry.getKey().value();
             GearMaterial mat = entry.getValue().value();
 
-            tooltip.accept(Component.translatable("tooltip.yourmod.part_stats",
+            tooltip.accept(Component.translatable("tooltip.alternate_dimension.part_stats",
                     part.baseDurability(),
-                    String.format("%.1fx", part.speedMultiplier()),
+                    String.format("%.1fx", part.powerFactor()),
                     String.format("%.1fx", mat.durabilityMultiplier())
             ).withStyle(ChatFormatting.GRAY));
 
-            appendComponentTraits(part, mat, tooltip, true);
+            tooltip.accept(Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY));
+            appendComponentTraits(stack, mat, tooltip);
             return;
         }
 
-        // Assembled Gear Stat Summary
         int maxDamage = stack.getOrDefault(DataComponents.MAX_DAMAGE, 0);
         int currentDamage = stack.getOrDefault(DataComponents.DAMAGE, 0);
         if (maxDamage > 0) {
@@ -150,10 +143,12 @@ public class ModularItem extends Item {
                     .withStyle(ChatFormatting.DARK_AQUA));
         }
 
-        // Active Component Traits
-        appendAutoDetectedComponentLabels(stack, tooltip);
+        tooltip.accept(Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY));
+        for (var entry : sortedParts) {
+            GearMaterial mat = entry.getValue().value();
+            appendComponentTraits(stack, mat, tooltip);
+        }
 
-        // Construction Breakdown (Hold Shift)
         if (Minecraft.getInstance().hasShiftDown()) {
             tooltip.accept(Component.empty());
             tooltip.accept(Component.translatable("tooltip.alternate_dimension.construction_header").withStyle(ChatFormatting.GOLD));
@@ -170,7 +165,7 @@ public class ModularItem extends Item {
                         .append(Component.literal(": ").withStyle(ChatFormatting.DARK_GRAY))
                         .append(matLabel));
 
-                appendComponentTraits(part, mat, tooltip, false);
+                addPartTraits(stack, mat, part, tooltip);
             }
         } else {
             tooltip.accept(Component.translatable("tooltip.alternate_dimension.hold_shift")
@@ -178,47 +173,38 @@ public class ModularItem extends Item {
         }
     }
 
-    private void appendAutoDetectedComponentLabels(ItemStack stack, Consumer<Component> tooltip) {
-        List<Component> badges = new ArrayList<>();
-
-        FoodProperties food = stack.get(DataComponents.FOOD);
-        if (food != null) {
-            badges.add(Component.translatable("trait.alternate_dimension.edible", food.nutrition())
-                    .withStyle(ChatFormatting.GREEN));
-        }
-        if (stack.has(DataComponents.DAMAGE_RESISTANT)) {
-            badges.add(Component.translatable("trait.alternate_dimension.fireproof")
-                    .withStyle(ChatFormatting.GOLD));
-        }
-        if (stack.has(DataComponents.GLIDER)) {
-            badges.add(Component.translatable("trait.alternate_dimension.glider")
-                    .withStyle(ChatFormatting.AQUA));
-        }
-
-        if (!badges.isEmpty()) {
-            MutableComponent line = Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY);
-            for (int i = 0; i < badges.size(); i++) {
-                if (i > 0) line.append(Component.literal(", ").withStyle(ChatFormatting.GRAY));
-                line.append(badges.get(i));
-            }
-            tooltip.accept(line);
+    private void appendComponentTraits(
+            ItemStack stack,
+            GearMaterial mat,
+            Consumer<Component> tooltip
+    ) {
+        String indent = " • ";
+        for (Component entry : mat.traitDescriptions(stack, false)) {
+            tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
+                    .append(entry));
         }
     }
 
-    private void appendComponentTraits(
-            GearPartType part,
+    private void addPartTraits(
+            ItemStack stack,
             GearMaterial mat,
-            Consumer<Component> tooltip,
-            boolean isStandalonePart
+            GearPartType part,
+            Consumer<Component> tooltip
     ) {
-        String indent = isStandalonePart ? " " : "   ↳ ";
-        for (String descKey : mat.traitDescriptions()) {
-            tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
-                    .append(Component.translatable(descKey).withStyle(ChatFormatting.BLUE)));
+        MutableComponent line = Component.literal("  -> Contributes Traits: ").withStyle(ChatFormatting.ITALIC, ChatFormatting.DARK_GRAY);
+        List<Component> traits = mat.traitDescriptions(stack, false);
+        traits.addAll(part.traitDescriptions().stream()
+                .map(Component::translatable)
+                .toList());
+
+        for (int i = 0; i < traits.size(); i++) {
+            Component trait = traits.get(i);
+            if (i < traits.size() - 1) {
+                line.append(trait.copy().append(", "));
+            } else {
+                line.append(trait);
+            }
         }
-        for (String descKey : part.traitDescriptions()) {
-            tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
-                    .append(Component.translatable(descKey).withStyle(ChatFormatting.LIGHT_PURPLE)));
-        }
+        tooltip.accept(line);
     }
 }

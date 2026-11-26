@@ -1,10 +1,19 @@
 package com.github.lordzintick.modular;
 
+import com.github.lordzintick.init.AlternateDimensionModComponents;
+import com.github.lordzintick.init.AlternateDimensionModRegistries;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.HolderSet;
+import net.minecraft.core.RegistryCodecs;
 import net.minecraft.core.component.DataComponentPatch;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
+import oshi.util.tuples.Pair;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,20 +21,51 @@ public record GearMaterial(
         String nameKey,
         int color,
         float durabilityMultiplier,
-        float miningSpeed,
-        Ingredient repairIngredient,
+        float powerFactor,
+        Ingredient ingredient,
         Optional<NameAffix> nameAffix,
-        List<String> traitDescriptions,
-        DataComponentPatch components
+        List<PartComponent> components,
+        List<MaterialOverlay> overlays
 ) {
     public static final Codec<GearMaterial> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name_key").forGetter(GearMaterial::nameKey),
             Codec.INT.fieldOf("color").forGetter(GearMaterial::color),
             Codec.FLOAT.optionalFieldOf("durability_multiplier", 1.0f).forGetter(GearMaterial::durabilityMultiplier),
-            Codec.FLOAT.optionalFieldOf("mining_speed", 1.0f).forGetter(GearMaterial::miningSpeed),
-            Ingredient.CODEC.fieldOf("repair_ingredient").forGetter(GearMaterial::repairIngredient),
+            Codec.FLOAT.optionalFieldOf("power_factor", 1.0f).forGetter(GearMaterial::powerFactor),
+            Ingredient.CODEC.fieldOf("ingredient").forGetter(GearMaterial::ingredient),
             NameAffix.CODEC.optionalFieldOf("name_affix").forGetter(GearMaterial::nameAffix),
-            Codec.STRING.listOf().optionalFieldOf("trait_descriptions", List.of()).forGetter(GearMaterial::traitDescriptions),
-            DataComponentPatch.CODEC.optionalFieldOf("components", DataComponentPatch.EMPTY).forGetter(GearMaterial::components)
+            PartComponent.CODEC.listOf().optionalFieldOf("components", List.of()).forGetter(GearMaterial::components),
+            MaterialOverlay.CODEC.listOf().optionalFieldOf("overlays", List.of())
+                    .forGetter(GearMaterial::overlays)
     ).apply(instance, GearMaterial::new));
+
+    public List<Component> traitDescriptions(ItemStack stack, boolean categories) {
+        ArrayList<Component> traitDescriptions = new ArrayList<>();
+        GearPartsComponent gearParts = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
+        if (gearParts == null) {
+            for (PartComponent partComp : components) {
+                for (String descKey : partComp.traitDescriptions()) {
+                    if (categories) {
+                        traitDescriptions.add(Component.translatable(partComp.name()).append(" - ").append(Component.translatable(descKey)));
+                    } else {
+                        traitDescriptions.add(Component.translatable(descKey));
+                    }
+                }
+            }
+        } else {
+            for (PartComponent partComp : components) {
+                if (partComp.meetsPartTypes(gearParts)) {
+                    for (String descKey : partComp.traitDescriptions()) {
+                        if (categories) {
+                            traitDescriptions.add(Component.translatable(partComp.name()).append(" - ").append(Component.translatable(descKey)));
+                        } else {
+                            traitDescriptions.add(Component.translatable(descKey));
+                        }
+                    }
+                }
+            }
+        }
+
+        return traitDescriptions;
+    }
 }

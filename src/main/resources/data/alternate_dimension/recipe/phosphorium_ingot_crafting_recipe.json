@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "phosphorium",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "alternate_dimension:phosphorus",
+    "b": "alternate_dimension:aluminum_ingot"
+  },
+  "result": {
+    "id": "alternate_dimension:phosphorium_ingot",
+    "count": 1
+  }
+}
