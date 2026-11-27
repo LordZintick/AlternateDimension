@@ -9,15 +9,24 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.component.TooltipDisplay;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import java.util.function.Consumer;
+
 import com.lordkittycat.alternate_dimension.procedures.UpdateCompressorProcedure;
+import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 import com.lordkittycat.alternate_dimension.block.entity.CompressorBlockEntity;
 
 public class CompressorBlock extends Block implements EntityBlock {
@@ -99,5 +108,17 @@ public class CompressorBlock extends Block implements EntityBlock {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+
+	public static class Item extends BlockItem {
+		public Item(Item.Properties properties) {
+			super(AlternateDimensionModBlocks.COMPRESSOR.get(), properties);
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+			componentConsumer.accept(Component.translatable("block.alternate_dimension.compressor.description_0"));
+		}
 	}
 }

@@ -1,0 +1,18 @@
+{
+  "_fv": 89,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      "CUSTOM:ManaProvider",
+      "CUSTOM:ManaTank",
+      "CUSTOM:ManaSynthesizer"
+    ],
+    "information": [
+      "These are blocks used for the transport and storage of mana.",
+      "The synthesizer consumes certain magical items to produce mana in its internal buffer.",
+      "The tank stores mana within for later use.",
+      "The \"Manantenna\" transports mana wirelessly from a target position to the block it is attached to.",
+      "Right-click on the manantenna with a wrench and a position card in your offhand to set the target source position."
+    ]
+  }
+}

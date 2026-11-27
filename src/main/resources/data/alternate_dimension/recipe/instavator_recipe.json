@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "bcb",
-    "aaa"
+    "aba",
+    "aca",
+    "aba"
   ],
   "key": {
     "a": "alternate_dimension:sulfur",
-    "b": "#minecraft:shovels",
+    "b": "alternate_dimension:weak_thread",
     "c": "alternate_dimension:miners_pet"
   },
   "result": {

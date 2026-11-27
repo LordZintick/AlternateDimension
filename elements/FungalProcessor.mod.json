@@ -79,7 +79,9 @@
     ],
     "name": "Fungal Processor",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Operation Mana: 0"
+      ]
     },
     "hardness": 3.0,
     "resistance": 4.0,

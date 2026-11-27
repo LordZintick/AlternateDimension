@@ -416,6 +416,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.BASIC_REPAIR_KIT.get());
 				tabData.accept(AlternateDimensionModItems.REPAIR_KIT.get());
 				tabData.accept(AlternateDimensionModItems.MAGIC_REPAIR_KIT.get());
+				tabData.accept(AlternateDimensionModItems.STARTER_BLUEPRINT_BUNDLE.get());
 				tabData.accept(AlternateDimensionModBlocks.THE_DIRT_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PHOSPHORUS_TORCH.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PYROLITE_TORCH.get().asItem());
@@ -457,7 +458,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.VERIDIUM_FURNACE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.PLASMA_FURNACE.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.BLOCK_SHAPER_CASING.get().asItem());
-				tabData.accept(AlternateDimensionModItems.STARTER_BLUEPRINT_BUNDLE.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_EQUIPMENT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_DECOR = REGISTRY.register("alternate_dimension_decor",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_decor")).icon(() -> new ItemStack(AlternateDimensionModBlocks.ASTRAL_BRICKS.get())).displayItems((parameters, tabData) -> {

@@ -22,8 +22,7 @@ import java.util.function.Function;
 
 import com.lordkittycat.alternate_dimension.item.inventory.*;
 import com.lordkittycat.alternate_dimension.item.*;
-import com.lordkittycat.alternate_dimension.block.TheDirtBlockBlock;
-import com.lordkittycat.alternate_dimension.block.MysticSaplingBlock;
+import com.lordkittycat.alternate_dimension.block.*;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 import com.github.lordzintick.modular.blueprint.BlueprintItem;
@@ -1217,7 +1216,7 @@ public class AlternateDimensionModItems {
 		VERIDIUM_GEM_ORE = block(AlternateDimensionModBlocks.VERIDIUM_GEM_ORE);
 		SHALE_GEM_ORE = block(AlternateDimensionModBlocks.SHALE_GEM_ORE);
 		MANTLE_GEM_ORE = block(AlternateDimensionModBlocks.MANTLE_GEM_ORE);
-		FUSER = block(AlternateDimensionModBlocks.FUSER);
+		FUSER = register("fuser", FuserBlock.Item::new);
 		WRENCH = register("wrench", WrenchItem::new);
 		MANA_PROVIDER = block(AlternateDimensionModBlocks.MANA_PROVIDER);
 		POSITION_CARD = register("position_card", PositionCardItem::new);
@@ -1232,9 +1231,9 @@ public class AlternateDimensionModItems {
 		MANA_COIL = register("mana_coil", ManaCoilItem::new);
 		DRIVETRAIN_BELT = register("drivetrain_belt", DrivetrainBeltItem::new);
 		MAGICAL_CASING = block(AlternateDimensionModBlocks.MAGICAL_CASING);
-		PHOTOLITHOGRAPHIC_MICROFABRICATOR = block(AlternateDimensionModBlocks.PHOTOLITHOGRAPHIC_MICROFABRICATOR);
+		PHOTOLITHOGRAPHIC_MICROFABRICATOR = register("photolithographic_microfabricator", PhotolithographicMicrofabricatorBlock.Item::new);
 		MANA_CIRCUIT = register("mana_circuit", ManaCircuitItem::new);
-		COMPRESSOR = block(AlternateDimensionModBlocks.COMPRESSOR);
+		COMPRESSOR = register("compressor", CompressorBlock.Item::new);
 		MAGISTERS_BLOOM = block(AlternateDimensionModBlocks.MAGISTERS_BLOOM);
 		CHEESEFLOWER = block(AlternateDimensionModBlocks.CHEESEFLOWER);
 		IRON_GIANT_SPAWN_EGG = register("iron_giant_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.IRON_GIANT.get())));
@@ -1259,7 +1258,7 @@ public class AlternateDimensionModItems {
 		ESSENCE_POUCH = register("essence_pouch", EssencePouchItem::new);
 		HUNTERS_POUCH = register("hunters_pouch", HuntersPouchItem::new);
 		PYROLITE_TORCH = block(AlternateDimensionModBlocks.PYROLITE_TORCH);
-		MANA_MYSTIFIER = block(AlternateDimensionModBlocks.MANA_MYSTIFIER);
+		MANA_MYSTIFIER = register("mana_mystifier", ManaMystifierBlock.Item::new);
 		MINI_INSTATUNNEL = register("mini_instatunnel", MiniInstatunnelItem::new);
 		MINI_INSTAVATOR = register("mini_instavator", MiniInstavatorItem::new);
 		FRUIT_POUCH = register("fruit_pouch", FruitPouchItem::new);
@@ -1371,7 +1370,7 @@ public class AlternateDimensionModItems {
 		YELLOW_MUSHROOM = block(AlternateDimensionModBlocks.YELLOW_MUSHROOM);
 		BLOCK_OF_SHROOMIUM = block(AlternateDimensionModBlocks.BLOCK_OF_SHROOMIUM);
 		MUSHROOM_CATALYST = register("mushroom_catalyst", MushroomCatalystItem::new);
-		FUNGAL_PROCESSOR = block(AlternateDimensionModBlocks.FUNGAL_PROCESSOR);
+		FUNGAL_PROCESSOR = register("fungal_processor", FungalProcessorBlock.Item::new);
 		MANA_INSERTER = register("mana_inserter", ManaInserterItem::new);
 		HYDROGEN_PLASMA_BLOCK = block(AlternateDimensionModBlocks.HYDROGEN_PLASMA_BLOCK);
 		HELIUM_PLASMA_BLOCK = block(AlternateDimensionModBlocks.HELIUM_PLASMA_BLOCK);

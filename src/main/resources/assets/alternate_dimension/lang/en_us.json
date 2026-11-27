@@ -1442,5 +1442,12 @@
   "material.alternate_dimension.venom_gland": "Venom Gland",
   "material.alternate_dimension.venom": "Venom",
   "trait.alternate_dimension.venomous": "§2Venomous",
-  "trait.alternate_dimension.poisonous": "§2Poisonous"
+  "trait.alternate_dimension.poisonous": "§2Poisonous",
+  "jei.alternate_dimension.basic_machine_info": "These are mana machines.\nThey use mana to craft special items.\nMost take 1 mana per operation, some take none, some take 2, and a few take 3.",
+  "block.alternate_dimension.fuser.description_0": "Operation Mana: 1",
+  "block.alternate_dimension.photolithographic_microfabricator.description_0": "Operation Mana: 2",
+  "block.alternate_dimension.compressor.description_0": "Operation Mana: 1",
+  "block.alternate_dimension.mana_mystifier.description_0": "Operation Mana: 2",
+  "block.alternate_dimension.fungal_processor.description_0": "Operation Mana: 0",
+  "jei.alternate_dimension.mana_logistics_info": "These are blocks used for the transport and storage of mana.\nThe synthesizer consumes certain magical items to produce mana in its internal buffer.\nThe tank stores mana within for later use.\nThe \"Manantenna\" transports mana wirelessly from a target position to the block it is attached to.\nRight-click on the manantenna with a wrench and a position card in your offhand to set the target source position."
 }

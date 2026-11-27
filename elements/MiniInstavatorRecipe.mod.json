@@ -15,12 +15,12 @@
     "recipeShapeless": true,
     "recipeSlots": [
       "",
-      "",
-      "",
-      "TAG:minecraft:shovels",
       "CUSTOM:Sulfur",
       "",
-      "CUSTOM:Sulfur",
+      "",
+      "CUSTOM:StrongThread",
+      "",
+      "",
       "CUSTOM:Sulfur",
       ""
     ],

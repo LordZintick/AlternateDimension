@@ -1,0 +1,18 @@
+{
+  "_fv": 89,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      "CUSTOM:Fuser",
+      "CUSTOM:PhotolithographicMicrofabricator",
+      "CUSTOM:Compressor",
+      "CUSTOM:ManaMystifier",
+      "CUSTOM:FungalProcessor"
+    ],
+    "information": [
+      "These are mana machines.",
+      "They use mana to craft special items.",
+      "Most take 1 mana per operation, some take none, some take 2, and a few take 3."
+    ]
+  }
+}

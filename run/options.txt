@@ -15,7 +15,7 @@ glintSpeed:0.5
 glintStrength:0.75
 graphicsPreset:"custom"
 prioritizeChunkUpdates:0
-fullscreen:false
+fullscreen:true
 exclusiveFullscreen:false
 gamma:0.5
 guiScale:0
@@ -204,7 +204,7 @@ key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
-soundCategory_master:1.0
+soundCategory_master:0.0
 soundCategory_music:0.30809859154929575
 soundCategory_record:1.0
 soundCategory_weather:1.0
