@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes.">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/alternate_dimension.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/alternate_dimension.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/InstatunnelRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/InstatunnelRecipe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/InstatunnelRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/InstatunnelRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/InstavatorRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/InstavatorRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MiniInstatunnelRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/MiniInstatunnelRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MiniInstavatorRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/MiniInstavatorRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instatunnel_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instatunnel_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instavator_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instavator_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instatunnel_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instatunnel_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instavator_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instavator_recipe.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,34 +149,34 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
-    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
-    &quot;Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.alternate_dimension [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.crazycraft [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dynamic__tool__system&quot;,
-    &quot;gradle.sync.parallel.migration.suppressed&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "CidrDebugProfileConversion262": "true",
+    "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
+    "Gradle.alternate_dimension [build].executor": "Run",
+    "Gradle.crazycraft [createMcpToSrg].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "gradle.sync.parallel.migration.suppressed": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
@@ -212,9 +201,9 @@
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="AlternateDimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
+      <module name="alternate_dimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,9 +211,9 @@
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="AlternateDimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
+      <module name="alternate_dimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />

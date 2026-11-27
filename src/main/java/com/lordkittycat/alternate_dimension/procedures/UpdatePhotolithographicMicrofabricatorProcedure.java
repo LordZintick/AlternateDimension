@@ -38,8 +38,8 @@ public class UpdatePhotolithographicMicrofabricatorProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (PhotolithographicMicrofabricatorRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> _ingredients = recipe.getIngredients();
-					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
 					return recipe.getResultItems().get(0).copy();
 				}
@@ -54,15 +54,12 @@ public class UpdatePhotolithographicMicrofabricatorProcedure {
 				recipes = AlternateDimensionModRecipeTypes.recipes.byType(PhotolithographicMicrofabricatorRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 			}
 			for (PhotolithographicMicrofabricatorRecipeTypeRecipe recipe : recipes) {
-				List<Ingredient> _ingredients = recipe.getIngredients();
-				List<Integer> _orderedCounts = new ArrayList<>();
-				if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+				List<Ingredient> ingredients = recipe.getIngredients();
+				if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 					continue;
-				boolean _shapeless = false;
 				List<ItemStack> reciperesult = recipe.getResultItems();
-				List<Integer> _ints4 = _shapeless ? _orderedCounts : recipe.integers();
-				for (int _num : _ints4) {
-					double numberiterator = (double) _num;
+				for (int num : recipe.integers()) {
+					double numberiterator = (double) num;
 					ingredientCounts.add(numberiterator);
 				}
 				break;

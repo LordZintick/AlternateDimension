@@ -38,10 +38,10 @@ public class UpdateFuserProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(FuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (FuserRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> _ingredients = recipe.getIngredients();
-					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
 					return recipe.getResultItems().get(0).copy();
 				}
@@ -58,10 +58,10 @@ public class UpdateFuserProcedure {
 						recipes = AlternateDimensionModRecipeTypes.recipes.byType(FuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 					}
 					for (FuserRecipeTypeRecipe recipe : recipes) {
-						List<Ingredient> _ingredients = recipe.getIngredients();
-						if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+						List<Ingredient> ingredients = recipe.getIngredients();
+						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 							continue;
-						if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 							continue;
 						return recipe.getResultItems().get(0).copy();
 					}
@@ -76,17 +76,14 @@ public class UpdateFuserProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(FuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (FuserRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> _ingredients = recipe.getIngredients();
-					List<Integer> _orderedCounts = new ArrayList<>();
-					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
-					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					boolean _shapeless = false;
 					List<ItemStack> reciperesult = recipe.getResultItems();
-					List<Integer> _ints10 = _shapeless ? _orderedCounts : recipe.integers();
-					for (int _num : _ints10) {
-						double numberiterator = (double) _num;
+					for (int num : recipe.integers()) {
+						double numberiterator = (double) num;
 						ingredientCounts.add(numberiterator);
 					}
 					break;
@@ -101,17 +98,14 @@ public class UpdateFuserProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(FuserRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (FuserRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> _ingredients = recipe.getIngredients();
-					List<Integer> _orderedCounts = new ArrayList<>();
-					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> ingredients = recipe.getIngredients();
+					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
-					boolean _shapeless = false;
 					List<ItemStack> reciperesult = recipe.getResultItems();
-					List<Integer> _ints16 = _shapeless ? _orderedCounts : recipe.integers();
-					for (int _num : _ints16) {
-						double numberiterator = (double) _num;
+					for (int num : recipe.integers()) {
+						double numberiterator = (double) num;
 						ingredientCounts.add(numberiterator);
 					}
 					break;
