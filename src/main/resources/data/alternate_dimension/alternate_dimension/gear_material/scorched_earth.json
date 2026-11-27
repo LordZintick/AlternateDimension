@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.scorched_earth",
+  "color": 9207905,
+  "durability_multiplier": 0.7,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:scorched_earth",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.scorched_earth",
+    "tint_with_material": true
+  }
+}

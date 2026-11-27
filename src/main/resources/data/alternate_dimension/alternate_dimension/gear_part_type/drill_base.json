@@ -1,0 +1,55 @@
+{
+  "part_item_name_key": "part.alternate_dimension.drill_base",
+  "z_index": 0,
+  "is_handheld": true,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_drill_base",
+  "base_durability": 100,
+  "power_factor": 1.2,
+  "materials_allowed": "#alternate_dimension:drill_base_materials",
+  "pattern": {
+    "pattern": [
+      "MMM",
+      "MPM",
+      "CCC"
+    ],
+    "key": {
+      "M": "alternate_dimension:aluminum_ingot",
+      "P": "alternate_dimension:phosphorus",
+      "C": "alternate_dimension:cloth"
+    },
+    "material_cost": 8
+  },
+  "incompatible_with": ["alternate_dimension:tool_rod"],
+  "components": {
+    "minecraft:tool": {
+      "rules": [
+        {
+          "blocks": "#minecraft:incorrect_for_diamond_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:mineable/pickaxe",
+          "speed": 2.0,
+          "correct_for_drops": true
+        }
+      ]
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "alternate_dimension:drill_damage",
+        "amount": 2.0,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "alternate_dimension:drill_speed",
+        "amount": -2.5,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+}

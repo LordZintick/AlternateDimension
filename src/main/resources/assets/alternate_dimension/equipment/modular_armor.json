@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "alternate_dimension:armor_empty"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "alternate_dimension:armor_empty"
+      }
+    ]
+  }
+}

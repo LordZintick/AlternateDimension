@@ -1,0 +1,29 @@
+{
+  "part_item_name_key": "part.alternate_dimension.grip",
+  "z_index": 1,
+  "is_handheld": true,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_grip",
+  "base_durability": 10,
+  "power_factor": 1.5,
+  "name_affix": {
+    "position": "prefix",
+    "priority": 10,
+    "translation_key": "part.alternate_dimension.grip_prefix",
+    "tint_with_material": true,
+    "takes_material": true
+  },
+  "materials_allowed": "#alternate_dimension:grip_materials",
+  "requires_any": ["alternate_dimension:tool_rod"],
+  "pattern": {
+    "pattern": [
+      "PTP",
+      "   "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 1
+  }
+}

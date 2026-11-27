@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.cloth",
+  "color": 14405812,
+  "durability_multiplier": 0.8,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:cloth",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.cloth",
+    "tint_with_material": true
+  }
+}

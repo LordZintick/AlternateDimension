@@ -1,0 +1,28 @@
+{
+  "name_key": "material.alternate_dimension.greenwood_wood",
+  "color": 4696391,
+  "durability_multiplier": 0.8,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:greenwood_planks",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.greenwood_wood",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.main_parts",
+      "part_types": "#alternate_dimension:main_parts",
+      "trait_descriptions": ["tooltip.alternate_dimension.photosynthetic"],
+      "components": {
+        "alternate_dimension:photosynthetic": {
+          "factor": 0.05,
+          "requires_sky_view": true,
+          "min_time": 0,
+          "max_time": 12000
+        }
+      }
+    }
+  ]
+}

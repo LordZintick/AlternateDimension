@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "alternate_dimension:hunters_pouch",
+    "alternate_dimension:cheesy_backpack",
+    "alternate_dimension:enchanted_backpack",
+    "alternate_dimension:essence_pouch",
+    "alternate_dimension:backpack",
+    "alternate_dimension:fruit_pouch"
+  ]
+}

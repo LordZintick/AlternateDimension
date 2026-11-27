@@ -1,0 +1,31 @@
+{
+  "name_key": "material.alternate_dimension.aluminum",
+  "color": 11513775,
+  "durability_multiplier": 1.0,
+  "power_factor": 2.0,
+  "ingredient": "alternate_dimension:aluminum_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.aluminum",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.alternate_dimension.jetpack_thruster",
+      "part_types": ["alternate_dimension:jetpack_thruster"],
+      "trait_descriptions": ["trait.alternate_dimension.jetpack_thruster.t1"],
+      "components": {
+        "alternate_dimension:jetpack": {
+          "vertical_speed": 0.13,
+          "horizontal_speed": 0.035,
+          "hover_descent_speed": 0.02,
+          "fuel_tag": "alternate_dimension:fuels",
+          "fuel_per_item": 1600,
+          "fuel_capacity": 32000,
+          "fuel_usage": 2
+        }
+      }
+    }
+  ]
+}

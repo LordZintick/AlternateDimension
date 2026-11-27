@@ -1,0 +1,41 @@
+{
+  "name_key": "material.alternate_dimension.phosphorium",
+  "color": 15108746,
+  "durability_multiplier": 1.0,
+  "power_factor": 2.0,
+  "ingredient": "alternate_dimension:phosphorium_ingot",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.phosphorium",
+    "tint_with_material": true
+  },
+  "overlays": [
+    {
+      "texture": "alternate_dimension:item/lower_stripes",
+      "color": 12094182
+    },
+    {
+      "texture": "alternate_dimension:item/upper_stripes",
+      "color": 15132344
+    }
+  ],
+  "components": [
+    {
+      "name": "part.alternate_dimension.jetpack_thruster",
+      "part_types": ["alternate_dimension:jetpack_thruster"],
+      "trait_descriptions": ["trait.alternate_dimension.jetpack_thruster.t2"],
+      "components": {
+        "alternate_dimension:jetpack": {
+          "vertical_speed": 0.18,
+          "horizontal_speed": 0.055,
+          "hover_descent_speed": 0.01,
+          "fuel_tag": "alternate_dimension:fuels",
+          "fuel_per_item": 1800,
+          "fuel_capacity": 64000,
+          "fuel_usage": 3
+        }
+      }
+    }
+  ]
+}

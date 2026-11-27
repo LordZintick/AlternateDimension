@@ -16,13 +16,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "CUSTOM:Sulfur",
+      "CUSTOM:WeakThread",
       "CUSTOM:Sulfur",
       "CUSTOM:Sulfur",
-      "TAG:minecraft:shovels",
       "CUSTOM:MinersPet",
-      "TAG:minecraft:shovels",
       "CUSTOM:Sulfur",
       "CUSTOM:Sulfur",
+      "CUSTOM:WeakThread",
       "CUSTOM:Sulfur"
     ],
     "recipeReturnStack": "CUSTOM:Instavator",

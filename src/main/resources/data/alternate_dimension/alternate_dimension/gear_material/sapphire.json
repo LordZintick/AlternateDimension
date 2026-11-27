@@ -1,0 +1,32 @@
+{
+  "name_key": "material.alternate_dimension.sapphire",
+  "color": 166,
+  "durability_multiplier": 1.0,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:sapphire",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.sapphire",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.gem_setting",
+      "part_types": "#alternate_dimension:gem_settings",
+      "trait_descriptions": ["trait.alternate_dimension.hastening"],
+      "components": {
+        "alternate_dimension:permanent_effects": {
+          "slot": "any",
+          "damage_chance": 0.8,
+          "effects": [
+            {
+              "id": "minecraft:haste",
+              "amplifier": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

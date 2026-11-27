@@ -38,10 +38,10 @@ public class UpdateManaMystifierProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(ManaMystifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (ManaMystifierRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> ingredients = recipe.getIngredients();
-					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> _ingredients = recipe.getIngredients();
+					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
 					return recipe.getResultItems().get(0).copy();
 				}
@@ -58,10 +58,10 @@ public class UpdateManaMystifierProcedure {
 						recipes = AlternateDimensionModRecipeTypes.recipes.byType(ManaMystifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 					}
 					for (ManaMystifierRecipeTypeRecipe recipe : recipes) {
-						List<Ingredient> ingredients = recipe.getIngredients();
-						if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+						List<Ingredient> _ingredients = recipe.getIngredients();
+						if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 							continue;
-						if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+						if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 							continue;
 						return recipe.getResultItems().get(0).copy();
 					}
@@ -76,14 +76,17 @@ public class UpdateManaMystifierProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(ManaMystifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (ManaMystifierRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> ingredients = recipe.getIngredients();
-					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					List<Ingredient> _ingredients = recipe.getIngredients();
+					List<Integer> _orderedCounts = new ArrayList<>();
+					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
-					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
+					boolean _shapeless = false;
 					List<ItemStack> reciperesult = recipe.getResultItems();
-					for (int num : recipe.integers()) {
-						double numberiterator = (double) num;
+					List<Integer> _ints10 = _shapeless ? _orderedCounts : recipe.integers();
+					for (int _num : _ints10) {
+						double numberiterator = (double) _num;
 						ingredientCounts.add(numberiterator);
 					}
 					break;
@@ -98,14 +101,17 @@ public class UpdateManaMystifierProcedure {
 					recipes = AlternateDimensionModRecipeTypes.recipes.byType(ManaMystifierRecipeTypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 				}
 				for (ManaMystifierRecipeTypeRecipe recipe : recipes) {
-					List<Ingredient> ingredients = recipe.getIngredients();
-					if (!ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
+					List<Ingredient> _ingredients = recipe.getIngredients();
+					List<Integer> _orderedCounts = new ArrayList<>();
+					if (!_ingredients.get(0).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy())))
 						continue;
-					if (!ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
+					if (!_ingredients.get(1).test((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy())))
 						continue;
+					boolean _shapeless = false;
 					List<ItemStack> reciperesult = recipe.getResultItems();
-					for (int num : recipe.integers()) {
-						double numberiterator = (double) num;
+					List<Integer> _ints16 = _shapeless ? _orderedCounts : recipe.integers();
+					for (int _num : _ints16) {
+						double numberiterator = (double) _num;
 						ingredientCounts.add(numberiterator);
 					}
 					break;
@@ -114,7 +120,7 @@ public class UpdateManaMystifierProcedure {
 		}
 		inputs.add(((getDirectionFromBlockState(blockstate)).getClockWise(Direction.Axis.Y)));
 		inputs.add(((getDirectionFromBlockState(blockstate)).getCounterClockWise(Direction.Axis.Y)));
-		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getOpposite(), result, 3, 1);
+		UpdateMachineProcedure.execute(world, x, y, z, ingredientCounts, inputs, (getDirectionFromBlockState(blockstate)).getOpposite(), result, 2, 1);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {

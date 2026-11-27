@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.holystone",
+  "color": 14604383,
+  "durability_multiplier": 0.9,
+  "power_factor": 2.0,
+  "ingredient": "alternate_dimension:holystone_gem",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.holystone",
+    "tint_with_material": true
+  }
+}

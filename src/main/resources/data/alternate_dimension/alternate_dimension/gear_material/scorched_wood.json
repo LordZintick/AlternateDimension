@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.scorched_wood",
+  "color": 7500402,
+  "durability_multiplier": 0.8,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:scorched_planks",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.scorched_wood",
+    "tint_with_material": true
+  }
+}

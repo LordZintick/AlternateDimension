@@ -1,0 +1,59 @@
+{
+  "part_item_name_key": "part.alternate_dimension.pickaxe_head",
+  "z_index": 1,
+  "is_handheld": true,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/tool_pickaxe",
+  "base_durability": 100,
+  "power_factor": 1.0,
+  "name_affix": {
+    "position": "suffix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.pickaxe_suffix",
+    "tint_with_material": false
+  },
+  "materials_allowed": "#alternate_dimension:core_tool_materials",
+  "pattern": {
+    "pattern": [
+      "PPP",
+      " T ",
+      "   "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 3
+  },
+  "components": {
+    "minecraft:tool": {
+      "rules": [
+        {
+          "blocks": "#minecraft:incorrect_for_diamond_tool",
+          "correct_for_drops": false
+        },
+        {
+          "blocks": "#minecraft:mineable/pickaxe",
+          "speed": 3.0,
+          "correct_for_drops": true
+        }
+      ]
+    },
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "alternate_dimension:pickaxe_damage",
+        "amount": 3.0,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "alternate_dimension:pickaxe_speed",
+        "amount": -2.8,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "repair_kit",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": "alternate_dimension:tool_rod",
+    "b": "alternate_dimension:magic_dust_block",
+    "c": "alternate_dimension:repair_kit",
+    "d": "alternate_dimension:activated_mana_stone"
+  },
+  "result": {
+    "id": "alternate_dimension:magic_repair_kit",
+    "count": 1
+  }
+}

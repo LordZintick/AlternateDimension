@@ -36,6 +36,7 @@ public class AlternateDimensionModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<FruitPouchGUIMenu>> FRUIT_POUCH_GUI = REGISTRY.register("fruit_pouch_gui", () -> IMenuTypeExtension.create(FruitPouchGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ExtractorGUIMenu>> EXTRACTOR_GUI = REGISTRY.register("extractor_gui", () -> IMenuTypeExtension.create(ExtractorGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CollectorGUIMenu>> COLLECTOR_GUI = REGISTRY.register("collector_gui", () -> IMenuTypeExtension.create(CollectorGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ComboPouchGUIMenu>> COMBO_POUCH_GUI = REGISTRY.register("combo_pouch_gui", () -> IMenuTypeExtension.create(ComboPouchGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

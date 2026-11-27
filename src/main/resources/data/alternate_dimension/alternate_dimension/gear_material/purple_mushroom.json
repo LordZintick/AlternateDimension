@@ -1,0 +1,18 @@
+{
+  "name_key": "material.alternate_dimension.purple_mushroom",
+  "color": 6684825,
+  "durability_multiplier": 0.7,
+  "power_factor": 1.1,
+  "ingredient": "alternate_dimension:purple_mushroom",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.purple_mushroom",
+    "tint_with_material": true
+  },
+  "overlays": [
+    {
+      "texture": "alternate_dimension:item/mushroom_dots"
+    }
+  ]
+}

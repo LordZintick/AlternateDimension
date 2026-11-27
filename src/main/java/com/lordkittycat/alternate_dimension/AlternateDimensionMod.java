@@ -47,9 +47,9 @@ import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 import com.lordkittycat.alternate_dimension.init.*;
 
-import com.github.lordzintick.magic.loader.SpellLoader;
-import com.github.lordzintick.magic.SpellUtil;
-import com.github.lordzintick.init.AlternateDimensionModRecipes;
+import com.github.lordzintick.item.CuriosCompat;
+import com.github.lordzintick.init.AlternateDimensionModRegistries;
+import com.github.lordzintick.init.AlternateDimensionModRecipeSerializers;
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 
 @Mod("alternate_dimension")
@@ -62,6 +62,9 @@ public class AlternateDimensionMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		if (ModList.get().isLoaded("curios")) {
+			modEventBus.addListener(AlternateDimensionModCuriosCompat::registerCapabilities);
+		}
 		AlternateDimensionModSounds.REGISTRY.register(modEventBus);
 		AlternateDimensionModBlocks.REGISTRY.register(modEventBus);
 		AlternateDimensionModBlockEntities.REGISTRY.register(modEventBus);
@@ -75,9 +78,10 @@ public class AlternateDimensionMod {
 		AlternateDimensionModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		AlternateDimensionModComponents.register(modEventBus);
-		AlternateDimensionModRecipes.register(modEventBus);
-		SpellLoader.SPELLS.addDefaults();
-		SpellLoader.SPELL_PROVIDERS.register(MODID, SpellUtil.class);
+		modEventBus.addListener(AlternateDimensionModRegistries::registerDatapackRegistries);
+		modEventBus.addListener(AlternateDimensionModRegistries::registerNormalRegistries);
+		AlternateDimensionModRecipeSerializers.register(modEventBus);
+		CuriosCompat.init(modEventBus);
 		// End of user code block mod init
 	}
 

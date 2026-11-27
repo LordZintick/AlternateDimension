@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "phosphorium",
+    "unlockingItems": [
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:Phosphorus"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:AluminumIngot",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus",
+      "CUSTOM:Phosphorus"
+    ],
+    "recipeReturnStack": "CUSTOM:PhosphoriumIngot",
+    "name": "phosphorium_ingot_crafting_recipe",
+    "namespace": "mod"
+  }
+}

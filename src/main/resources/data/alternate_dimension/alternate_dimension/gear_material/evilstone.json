@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.evilstone",
+  "color": 12451840,
+  "durability_multiplier": 0.9,
+  "power_factor": 2.0,
+  "ingredient": "alternate_dimension:evilstone_gem",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.evilstone",
+    "tint_with_material": true
+  }
+}

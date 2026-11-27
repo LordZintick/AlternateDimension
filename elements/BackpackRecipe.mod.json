@@ -16,15 +16,15 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:StrongThread",
-      "CUSTOM:Cloth",
-      "CUSTOM:StrongThread",
+      "",
+      "",
+      "",
       "CUSTOM:Cloth",
       "TAG:mod:boxes",
-      "CUSTOM:Cloth",
+      "",
       "CUSTOM:StrongThread",
       "CUSTOM:Cloth",
-      "CUSTOM:StrongThread"
+      ""
     ],
     "recipeReturnStack": "CUSTOM:Backpack",
     "name": "backpack_recipe",

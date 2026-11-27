@@ -1,0 +1,44 @@
+{
+  "part_item_name_key": "part.alternate_dimension.jetpack_thruster",
+  "z_index": 2,
+  "is_handheld": false,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_jetpack_thruster",
+  "armor_texture": "alternate_dimension:textures/models/armor/jetpack_thruster.png",
+  "base_durability": 100,
+  "power_factor": 1.0,
+  "requires_any": "alternate_dimension:chestplate_plating",
+  "materials_allowed": "#alternate_dimension:thruster_materials",
+  "name_affix": {
+    "position": "suffix",
+    "priority": 15,
+    "translation_key": "part.alternate_dimension.jetpack_suffix",
+    "takes_material": false,
+    "tint_with_material": true
+  },
+  "pattern": {
+    "pattern": [
+      "A A",
+      "ACA",
+      "P P"
+    ],
+    "key": {
+      "A": "alternate_dimension:aluminum_ingot",
+      "P": "alternate_dimension:phosphorus",
+      "C": "alternate_dimension:cloth"
+    },
+    "material_cost": 5
+  },
+  "components": {
+    "alternate_dimension:jetpack": {
+      "vertical_speed": 0.13,
+      "horizontal_speed": 0.035,
+      "hover_descent_speed": 0.02,
+      "fuel_tag": "alternate_dimension:fuels",
+      "fuel_per_item": 1600,
+      "fuel_capacity": 32000,
+      "fuel_usage": 2
+    },
+    "alternate_dimension:jetpack_fuel": 0
+  }
+}

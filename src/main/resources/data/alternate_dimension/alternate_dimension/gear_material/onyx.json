@@ -1,0 +1,32 @@
+{
+  "name_key": "material.alternate_dimension.onyx",
+  "color": 2894892,
+  "durability_multiplier": 1.0,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:onyx",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.onyx",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.gem_setting",
+      "part_types": "#alternate_dimension:gem_settings",
+      "trait_descriptions": ["trait.alternate_dimension.exposure"],
+      "components": {
+        "alternate_dimension:permanent_effects": {
+          "slot": "any",
+          "damage_chance": 0.9,
+          "effects": [
+            {
+              "id": "minecraft:night_vision",
+              "amplifier": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

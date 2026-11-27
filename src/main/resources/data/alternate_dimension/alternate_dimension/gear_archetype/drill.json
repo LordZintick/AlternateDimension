@@ -1,0 +1,6 @@
+{
+  "required_part_groups": [
+    "alternate_dimension:drill_base",
+    "alternate_dimension:drill_head"
+  ]
+}

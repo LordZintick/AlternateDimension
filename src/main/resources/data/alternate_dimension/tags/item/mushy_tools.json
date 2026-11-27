@@ -1,15 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "alternate_dimension:mushy_sword",
-    "alternate_dimension:shroomium_sword",
-    "alternate_dimension:mushy_axe",
-    "alternate_dimension:shroomium_hoe",
-    "alternate_dimension:mushy_shovel",
-    "alternate_dimension:shroomium_axe",
-    "alternate_dimension:shroomium_shovel",
-    "alternate_dimension:shroomium_pickaxe",
-    "alternate_dimension:mushy_pickaxe",
-    "alternate_dimension:mushy_hoe"
-  ]
+  "values": []
 }

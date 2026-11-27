@@ -1,29 +1,9 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:redwooden_sword",
     "alternate_dimension:roman_spear",
-    "alternate_dimension:azure_sword",
-    "alternate_dimension:mythril_sword",
-    "alternate_dimension:mushy_sword",
-    "alternate_dimension:mantle_sword",
-    "alternate_dimension:phosphorium_sword",
-    "alternate_dimension:pine_wooden_sword",
-    "alternate_dimension:evilstone_sword",
-    "alternate_dimension:shale_sword",
-    "alternate_dimension:scorched_wooden_sword",
-    "alternate_dimension:titanium_sword",
-    "alternate_dimension:darksteel_sword",
-    "alternate_dimension:veridium_sword",
     "alternate_dimension:cheese_sword",
-    "alternate_dimension:plasmolium_sword",
-    "alternate_dimension:candy_cane_sword",
-    "alternate_dimension:shroomium_sword",
     "alternate_dimension:cryonic_scimitar",
-    "alternate_dimension:planty_sword",
-    "alternate_dimension:candyfloss_sword",
-    "alternate_dimension:holystone_sword",
-    "alternate_dimension:aluminum_sword",
     "alternate_dimension:beetle_sword"
   ]
 }

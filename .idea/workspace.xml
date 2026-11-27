@@ -4,36 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="- Added recipes to upgrade mini instaminers to the full versions.&#10;- Changed the mana costs of most machines.&#10;- FINALLY added a block of magic dust as a mana item that can be used to fuel machines.&#10;- Various other minor fixes and changes.">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/index" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/MainGuidebook.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/ManaInserter.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/ManaInserter.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateCompressor.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateCompressor.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateFuser.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateFuser.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdateManaMystifier.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdateManaMystifier.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/UpdatePhotolithographicMicrofabricator.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/UpdatePhotolithographicMicrofabricator.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/MainGuidebookBookClientEvents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/client/gui/MainGuidebookBookScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/event/MainGuidebookStartingBookEvents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/InstatunnelRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/InstatunnelRecipe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/InstatunnelRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/InstatunnelRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/InstavatorRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/InstavatorRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/MiniInstatunnelRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/MiniInstatunnelRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/MiniInstavatorRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/MiniInstavatorRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MainGuidebookItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateCompressorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateFuserProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdateManaMystifierProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/UpdatePhotolithographicMicrofabricatorProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/main_guidebook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/main_guidebook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mana_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/mana_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/natural_drops.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/natural_drops.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instatunnel_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instatunnel_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instavator_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/instavator_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instatunnel_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instatunnel_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instavator_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mini_instavator_recipe.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +65,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -102,9 +87,68 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/LordZintick/AlternateDimension.git&quot;,
-    &quot;accountId&quot;: &quot;a00449df-2184-4831-ae90-bcb26cb49337&quot;
+    &quot;accountId&quot;: &quot;ec1a59a6-af4f-4e69-bf34-891a5d42df06&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.024518345037454" />
+      <entry key="MS500" value="1.531477367362533" />
+      <entry key="S2" value="2.922346983940752" />
+      <entry key="S5" value="5.234812363273661" />
+      <entry key="S10" value="8.783976885597681" />
+      <entry key="S30" value="15.230090810562075" />
+      <entry key="S60" value="21.076190947352412" />
+      <entry key="M2" value="35.21467381336853" />
+      <entry key="M5" value="63.227979046049455" />
+      <entry key="M10" value="86.28732234490256" />
+      <entry key="M15" value="104.70510010298257" />
+      <entry key="M30" value="155.76865938386285" />
+      <entry key="H1" value="250.4377789057665" />
+      <entry key="H2" value="395.25254586026847" />
+      <entry key="H4" value="560.4401211708041" />
+      <entry key="D1" value="1644.209800836661" />
+      <entry key="W1" value="3111.9852535779305" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1343359951271036E-169" />
+      <entry key="S2" value="5.803439495133136E-43" />
+      <entry key="S5" value="1.278232890995706E-17" />
+      <entry key="S10" value="4.009687153374546E-9" />
+      <entry key="S30" value="0.005368057931183633" />
+      <entry key="S60" value="0.313603011007527" />
+      <entry key="M2" value="3.1476292756207127" />
+      <entry key="M5" value="15.890487818021015" />
+      <entry key="M10" value="32.228715062861916" />
+      <entry key="M15" value="47.21766780015928" />
+      <entry key="M30" value="93.54554429878846" />
+      <entry key="H1" value="181.8779752347095" />
+      <entry key="H2" value="314.8746979822688" />
+      <entry key="H4" value="473.5288081407597" />
+      <entry key="D1" value="1464.1296481168547" />
+      <entry key="W1" value="2692.101929419332" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9567161441040517" />
+      <entry key="MS500" value="1.513296782378402" />
+      <entry key="S2" value="2.9118916918800046" />
+      <entry key="S5" value="5.215020166815578" />
+      <entry key="S10" value="8.758020119266027" />
+      <entry key="S30" value="15.217161204752147" />
+      <entry key="S60" value="21.369422126666898" />
+      <entry key="M2" value="38.316415361032966" />
+      <entry key="M5" value="79.039887982324" />
+      <entry key="M10" value="118.43871639300113" />
+      <entry key="M15" value="151.8475170579338" />
+      <entry key="M30" value="249.23228186346714" />
+      <entry key="H1" value="432.22035099983634" />
+      <entry key="H2" value="710.0360518788854" />
+      <entry key="H4" value="1033.8994133656565" />
+      <entry key="D1" value="3108.307914325849" />
+      <entry key="W1" value="5804.079183414929" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -116,33 +160,49 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.alternate_dimension [build].executor": "Run",
-    "Gradle.crazycraft [createMcpToSrg].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "origin/dev01",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/src/main/java/com/github/lordzintick",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
+    &quot;Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.crazycraft [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dynamic__tool__system&quot;,
+    &quot;gradle.sync.parallel.migration.suppressed&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick" />
-      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\java\com\github\lordzintick\magic" />
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\item" />
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension\src\main\resources\assets\alternate_dimension\textures\block" />
-      <recent name="D:\Development\MCreatorWorkspaces\alternate_dimension" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/data/curios" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment/humanoid" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.lordzintick.modular" />
       <recent name="com.github.lordzintick.magic" />
       <recent name="com.github.lordzintick.entity.ai" />
       <recent name="com.github.lordzintick.menu" />
@@ -152,9 +212,9 @@
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <module name="AlternateDimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,9 +222,9 @@
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
-      <module name="alternate_dimension.main" />
-      <option name="PROGRAM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\classes\\java\\main;mcreator%%D:\\Development\\MCreator\\MCreatorWorkspaces\\alternate_dimension\\build\\resources\\main" />
+      <module name="AlternateDimension.main" />
+      <option name="PROGRAM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt -Dfml.modFolders=mcreator%%$PROJECT_DIR$/build/classes/java/main:mcreator%%$PROJECT_DIR$/build/resources/main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -388,7 +448,11 @@
     <MESSAGE value="- Ported the entire spell system from SpellCaster API, including the wands, scrolls, and defaults spells, but not the datapack loading, commands, or extra firecharge functionality.&#10;- Finally fixed ring recipes!&#10;- Added the Viking Tower, Viking Ship, Hollow Candy Cane, Machine Ruins, and Mushroom Cottage structures, further improving the structure variety in the mod.&#10;- Fixed various other bugs and made other minor changes." />
     <MESSAGE value="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes." />
     <MESSAGE value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
+    <MESSAGE value="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system.&#10;- Addition of gear materials for all wood types, mushrooms, metals, and alloys.&#10;- Addition of gear archetypes for tools armor, rings, and drills.&#10;- Addition of part types for all base tools, tool rods and rod caps, ring bands and settings, battleaxe heads, hammer heads, grips, armor plating, armor lining, and drill engines/heads.&#10;- Addition of Curios API as an (optional) dependency.&#10;- Addition of material and gear type tags for utility.&#10;- Dynamic rendering, naming, and tooltip info.&#10;- Armor rendering, Curios API support, and more!&#10;- Support for many dynamic features.&#10;- Removal of previously hardcoded tools, weapons, and armor.&#10;- This is just the beginning! More stuff and removals of previously hardcoded features to come, as well as integration with the ring system and spellcasting system.&#10;- Various other minor changes and fixes." />
+    <MESSAGE value="2.1.0 Alpha 4: Tool System Improvements&#10;&#10;- Added repair kits to dynamically repair modular items and a whole modular durability system.&#10;- Various fixes and changes to improve UX.&#10;- Changed many of the materials and added a new Scorched Earth material.&#10;- Finished removing hardcoded tools completely. Everything is now part of the dynamic tool system.&#10;- Made the basic backpack significantly cheaper to ACTUALLY fix the inventory system.&#10;- Halved the Grace time upon spawning to balance always getting it, even when respawning.&#10;- Various other minor changes and fixes." />
+    <MESSAGE value="Bumped the version to 2.1.0a4." />
+    <MESSAGE value="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

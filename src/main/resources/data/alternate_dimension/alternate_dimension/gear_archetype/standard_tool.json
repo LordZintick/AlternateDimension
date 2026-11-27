@@ -1,0 +1,6 @@
+{
+  "required_part_groups": [
+    "#alternate_dimension:tool_heads",
+    "#alternate_dimension:tool_rods"
+  ]
+}

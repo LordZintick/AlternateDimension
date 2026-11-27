@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:EssencePouch",
+      "CUSTOM:HuntersPouch"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:MagicDust",
+      "CUSTOM:HuntersPouch",
+      "CUSTOM:Cloth",
+      "CUSTOM:EssencePouch",
+      "",
+      "CUSTOM:StrongThread",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:ComboPouch",
+    "name": "combo_pouch_recipe",
+    "namespace": "mod"
+  }
+}

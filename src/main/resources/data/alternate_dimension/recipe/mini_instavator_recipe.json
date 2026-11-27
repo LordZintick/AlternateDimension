@@ -2,9 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "#minecraft:shovels",
     "alternate_dimension:sulfur",
-    "alternate_dimension:sulfur",
+    "alternate_dimension:strong_thread",
     "alternate_dimension:sulfur"
   ],
   "result": {

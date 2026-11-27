@@ -4,11 +4,11 @@
   "definition": {
     "category": "elemental_infuser_recipe_type",
     "ingredients": [
-      "CUSTOM:GraphiteRod",
+      "CUSTOM:ToolRod",
       "CUSTOM:FireEssence",
       "CUSTOM:LifeEssence",
-      "CUSTOM:LightningBottle",
-      "CUSTOM:CandyEssence"
+      "CUSTOM:StormEssence",
+      "CUSTOM:IceEssence"
     ],
     "integers": [
       1,

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "alternate_dimension:aluminum_plate",
-  "base": "alternate_dimension:wooden_drill",
-  "addition": "alternate_dimension:iron_drill_head",
-  "result": {
-    "id": "alternate_dimension:iron_drill"
-  }
-}

@@ -1,0 +1,32 @@
+{
+  "name_key": "material.alternate_dimension.ruby",
+  "color": 10027008,
+  "durability_multiplier": 1.0,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:ruby",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.ruby",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.category.alternate_dimension.ring_setting",
+      "part_types": ["alternate_dimension:ring_setting"],
+      "trait_descriptions": ["trait.alternate_dimension.healthy"],
+      "components": {
+        "alternate_dimension:permanent_effects": {
+          "slot": "any",
+          "damage_chance": 0.8,
+          "effects": [
+            {
+              "id": "minecraft:health_boost",
+              "amplifier": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

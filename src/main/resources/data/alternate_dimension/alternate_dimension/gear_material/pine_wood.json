@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.pine_wood",
+  "color": 7496015,
+  "durability_multiplier": 0.8,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:pine_planks",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.pine_wood",
+    "tint_with_material": true
+  }
+}

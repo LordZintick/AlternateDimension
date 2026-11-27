@@ -26,6 +26,7 @@ public class AlternateDimensionModScreens {
 		event.register(AlternateDimensionModMenus.FRUIT_POUCH_GUI.get(), FruitPouchGUIScreen::new);
 		event.register(AlternateDimensionModMenus.EXTRACTOR_GUI.get(), ExtractorGUIScreen::new);
 		event.register(AlternateDimensionModMenus.COLLECTOR_GUI.get(), CollectorGUIScreen::new);
+		event.register(AlternateDimensionModMenus.COMBO_POUCH_GUI.get(), ComboPouchGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

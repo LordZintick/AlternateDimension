@@ -1,0 +1,22 @@
+{
+  "part_item_name_key": "part.alternate_dimension.tool_rod",
+  "z_index": 0,
+  "is_handheld": true,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/stick",
+  "base_durability": 40,
+  "power_factor": 1.0,
+  "materials_allowed": "#alternate_dimension:rod_materials",
+  "pattern": {
+    "pattern": [
+      " T ",
+      " P ",
+      " P "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 2
+  }
+}
