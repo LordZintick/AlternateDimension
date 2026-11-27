@@ -1,0 +1,40 @@
+{
+  "name_key": "material.alternate_dimension.venom_gland",
+  "color": 39219,
+  "durability_multiplier": 0.5,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:venom_gland",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.venom",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.alternate_dimension.club_dipping",
+      "part_types": [
+        "alternate_dimension:club_dipping"
+      ],
+      "trait_descriptions": [
+        "trait.alternate_dimension.poisonous"
+      ],
+      "components": {
+        "alternate_dimension:hit_effects": {
+          "effects": [
+            {
+              "chance": 0.5,
+              "effects": [
+                {
+                  "id": "minecraft:poison",
+                  "amplifier": 0,
+                  "duration": 200
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

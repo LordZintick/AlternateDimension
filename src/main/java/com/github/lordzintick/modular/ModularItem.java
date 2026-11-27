@@ -1,18 +1,25 @@
 package com.github.lordzintick.modular;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
-import mezz.jei.api.helpers.IColorHelper;
+import com.github.lordzintick.item.PermanentCurioEffectsComponent;
+import com.github.lordzintick.item.jetpack.JetpackComponent;
+import com.github.lordzintick.item.jetpack.JetpackFuelComponent;
+import com.github.lordzintick.modular.parts.GearMaterial;
+import com.github.lordzintick.modular.parts.GearPartType;
+import com.github.lordzintick.modular.parts.GearPartsComponent;
+import com.github.lordzintick.modular.util.ComponentMerger;
+import com.github.lordzintick.modular.util.NameAffix;
+import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
+import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.ARGB;
-import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -23,18 +30,53 @@ import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import org.jspecify.annotations.Nullable;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
-public class ModularItem extends Item {
+public class ModularItem extends Item implements ICurioItem {
     public ModularItem(Properties properties) {
         super(properties
                 .component(DataComponents.TOOLTIP_DISPLAY, new TooltipDisplay(false, new LinkedHashSet<>(
                         Set.of(DataComponents.ATTRIBUTE_MODIFIERS, DataComponents.ENCHANTMENTS))))
                 .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, false));
+    }
+
+    public static Predicate<ItemStack> matches(ItemStack stack) {
+        return otherStack -> {
+            GearPartsComponent parts = otherStack.get(AlternateDimensionModComponents.GEAR_PARTS);
+            GearPartsComponent thisParts = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
+            if (thisParts == null || parts == null) return false;
+            List<GearPartType> otherPartList = parts.parts().keySet().stream().map(Holder::value).toList();
+            return thisParts.parts().keySet().stream()
+                    .allMatch(type -> otherPartList.contains(type.value()));
+        };
+    }
+
+    @Override
+    public void inventoryTick(ItemStack itemStack, ServerLevel level, Entity owner, @Nullable EquipmentSlot slot) {
+        GearPartsComponent gearParts = itemStack.get(AlternateDimensionModComponents.GEAR_PARTS);
+        if (gearParts == null || gearParts.parts().isEmpty()) {
+            itemStack.setCount(0);
+        }
+    }
+
+    @Override
+    public void curioTick(SlotContext slotContext, ItemStack stack) {
+        if (stack.has(AlternateDimensionModComponents.PERMANENT_EFFECTS)) {
+            PermanentCurioEffectsComponent comp = stack.get(AlternateDimensionModComponents.PERMANENT_EFFECTS);
+            assert comp != null;
+            comp.apply(stack, slotContext.entity());
+        }
+    }
+
+    @Override
+    public List<Component> getSlotsTooltip(List<Component> tooltips, TooltipContext context, ItemStack stack) {
+        return List.of();
     }
 
     @Override
@@ -64,6 +106,10 @@ public class ModularItem extends Item {
         GearPartsComponent partsComp = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
         if (partsComp != null) {
             partsComp.damageBy(stack, amount);
+
+            if (partsComp.parts().isEmpty()) {
+                stack.shrink(1);
+            }
         }
 
         return 0;
@@ -71,7 +117,9 @@ public class ModularItem extends Item {
 
     @Override
     public boolean isBarVisible(ItemStack stack) {
-        return stack.has(AlternateDimensionModComponents.GEAR_PARTS) && stack.get(AlternateDimensionModComponents.GEAR_PARTS).parts().size() > 1;
+        GearPartsComponent parts = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
+        return parts != null &&
+                (parts.parts().size() > 1 || parts.getTotalDurability() < parts.getTotalMaxDurability() - 1);
     }
 
     @Override
@@ -189,6 +237,13 @@ public class ModularItem extends Item {
         return fullName.getString().isEmpty() ? super.getName(stack) : fullName;
     }
 
+    private void showDurability(GearPartsComponent partsComp, Consumer<Component> tooltip) {
+        int maxDurability = partsComp.getTotalMaxDurability();
+        int durability = partsComp.getTotalDurability();
+        tooltip.accept(Component.translatable("tooltip.alternate_dimension.durability", durability, maxDurability)
+                .withStyle(ChatFormatting.GRAY));
+    }
+
     @Override
     public void appendHoverText(
             ItemStack stack,
@@ -213,15 +268,47 @@ public class ModularItem extends Item {
                     String.format("%.1fx", mat.durabilityMultiplier())
             ).withStyle(ChatFormatting.GRAY));
 
-            tooltip.accept(Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY));
-            appendComponentTraits(stack, mat, tooltip);
+            if (partsComp.getTotalDurability() < partsComp.getTotalMaxDurability()) {
+                showDurability(partsComp, tooltip);
+            }
+
+            addComponentTraits(stack, tooltip, sortedParts);
             return;
         }
 
-        int maxDurability = partsComp.getTotalMaxDurability();
-        int durability = partsComp.getTotalDurability();
-        tooltip.accept(Component.translatable("tooltip.alternate_dimension.durability", durability, maxDurability)
-                .withStyle(ChatFormatting.GRAY));
+        showDurability(partsComp, tooltip);
+
+        JetpackComponent jetpack = stack.get(AlternateDimensionModComponents.JETPACK);
+        if (jetpack != null) {
+            JetpackFuelComponent fuel = stack.get(AlternateDimensionModComponents.JETPACK_FUEL);
+            if (fuel != null) {
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_fuel", fuel.fuel(), jetpack.fuelCapacity())
+                        .withStyle(ChatFormatting.GRAY));
+            }
+
+            if (Minecraft.getInstance().hasAltDown()) {
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_stats_header")
+                        .withStyle(ChatFormatting.GRAY));
+
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_vertical_speed", jetpack.verticalSpeed())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_horizontal_speed", jetpack.horizontalSpeed())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_hover_speed", jetpack.hoverDescentSpeed())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_fuel_tag", jetpack.fuelTag().location().toString())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_fuel_capacity", jetpack.fuelCapacity())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_fuel_per_item", jetpack.fuelPerItem())
+                        .withStyle(ChatFormatting.GRAY));
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.jetpack_fuel_usage", jetpack.fuelUsage())
+                        .withStyle(ChatFormatting.GRAY));
+            } else {
+                tooltip.accept(Component.translatable("tooltip.alternate_dimension.hold_alt")
+                        .withStyle(ChatFormatting.DARK_GRAY));
+            }
+        }
 
         Tool toolComp = stack.get(DataComponents.TOOL);
         if (toolComp != null && !toolComp.rules().isEmpty()) {
@@ -233,11 +320,7 @@ public class ModularItem extends Item {
                     .withStyle(ChatFormatting.DARK_AQUA));
         }
 
-        tooltip.accept(Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY));
-        for (var entry : sortedParts) {
-            GearMaterial mat = entry.getValue().value();
-            appendComponentTraits(stack, mat, tooltip);
-        }
+        addComponentTraits(stack, tooltip, sortedParts);
 
         if (Minecraft.getInstance().hasShiftDown()) {
             tooltip.accept(Component.empty());
@@ -265,16 +348,23 @@ public class ModularItem extends Item {
         }
     }
 
-    private void appendComponentTraits(
+    private void addComponentTraits(
             ItemStack stack,
-            GearMaterial mat,
-            Consumer<Component> tooltip
+            Consumer<Component> tooltip,
+            List<GearPartsComponent.MaterialEntry> sortedParts
     ) {
+        tooltip.accept(Component.translatable("tooltip.alternate_dimension.traits_prefix").withStyle(ChatFormatting.GRAY));
         String indent = " • ";
-        for (Component entry : mat.traitDescriptions(stack, false)) {
-            tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
-                    .append(entry));
+        ArrayList<Component> traitDescriptions = new ArrayList<>(sortedParts.stream()
+                .flatMap(e -> e.getValue().value().traitDescriptions(stack, false).stream())
+                .toList());
+        if (traitDescriptions.isEmpty()) {
+            tooltip.accept(Component.translatable("tooltip.alternate_dimension.no_traits").withStyle(ChatFormatting.GRAY));
         }
+        traitDescriptions.forEach(desc -> {
+            tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
+                    .append(desc));
+        });
     }
 
     private void addPartTraits(

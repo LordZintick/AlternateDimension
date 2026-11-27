@@ -1,0 +1,31 @@
+{
+  "part_item_name_key": "part.alternate_dimension.club_dipping",
+  "z_index": 1,
+  "is_handheld": true,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/part_club_dipping",
+  "base_durability": 80,
+  "power_factor": 1.0,
+  "name_affix": {
+    "position": "prefix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.club_dipping_prefix",
+    "takes_material": true,
+    "tint_with_material": true
+  },
+  "requires_any": ["alternate_dimension:club_head"],
+  "materials_allowed": "#alternate_dimension:dipping_materials",
+  "pattern": {
+    "pattern": [
+      " PV",
+      " P ",
+      " T "
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod",
+      "V": "alternate_dimension:venom_gland"
+    },
+    "material_cost": 2
+  }
+}

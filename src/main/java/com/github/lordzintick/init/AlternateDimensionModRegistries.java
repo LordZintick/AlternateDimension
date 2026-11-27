@@ -1,15 +1,15 @@
 package com.github.lordzintick.init;
 
-import com.github.lordzintick.modular.GearArchetype;
-import com.github.lordzintick.modular.GearMaterial;
-import com.github.lordzintick.modular.GearPartType;
+import com.github.lordzintick.modular.parts.GearArchetype;
+import com.github.lordzintick.modular.parts.GearMaterial;
+import com.github.lordzintick.modular.parts.GearPartType;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.DataPackRegistryEvent;
+import net.neoforged.neoforge.registries.NewRegistryEvent;
+import net.neoforged.neoforge.registries.RegistryBuilder;
 
 public class AlternateDimensionModRegistries {
     public static final ResourceKey<Registry<GearMaterial>> MATERIAL_KEY =
@@ -23,5 +23,9 @@ public class AlternateDimensionModRegistries {
         event.dataPackRegistry(MATERIAL_KEY, GearMaterial.CODEC, GearMaterial.CODEC);
         event.dataPackRegistry(PART_TYPE_KEY, GearPartType.CODEC, GearPartType.CODEC);
         event.dataPackRegistry(ARCHETYPE_KEY, GearArchetype.CODEC, GearArchetype.CODEC);
+    }
+
+    public static void registerNormalRegistries(NewRegistryEvent event) {
+
     }
 }

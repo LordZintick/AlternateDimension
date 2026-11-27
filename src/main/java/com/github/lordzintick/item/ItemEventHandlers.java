@@ -1,8 +1,8 @@
 package com.github.lordzintick.item;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
-import com.github.lordzintick.modular.GearMaterial;
-import com.github.lordzintick.modular.GearPartsComponent;
+import com.github.lordzintick.modular.parts.GearMaterial;
+import com.github.lordzintick.modular.parts.GearPartsComponent;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import net.minecraft.core.component.DataComponents;
@@ -45,10 +45,6 @@ public class ItemEventHandlers {
                         stack.setDamageValue(damage - 1);
                     }
                 }
-            } else if (stack.has(AlternateDimensionModComponents.PERMANENT_EFFECTS)) {
-                PermanentEffectsComponent comp = stack.get(AlternateDimensionModComponents.PERMANENT_EFFECTS);
-                assert comp != null;
-                comp.apply(stack, player);
             }
         }
     }
@@ -111,6 +107,10 @@ public class ItemEventHandlers {
         if (stack == null) return;
         if (stack.has(AlternateDimensionModComponents.SPARKING)) {
             stack.get(AlternateDimensionModComponents.SPARKING).apply(entity);
+        }
+
+        if (stack.has(AlternateDimensionModComponents.HIT_EFFECTS)) {
+            stack.get(AlternateDimensionModComponents.HIT_EFFECTS).apply(entity, (LivingEntity) event.getSource().getDirectEntity());
         }
     }
 }

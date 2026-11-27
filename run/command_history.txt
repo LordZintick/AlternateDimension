@@ -1,4 +1,3 @@
-/kill Dev
 /execute in alternate_dimension:eleroth run tp Dev ~ ~ ~
 /locate biome alternate_dimension:candy_biome
 /tp @s 124 71 130
@@ -48,3 +47,4 @@
 /time set day
 /give Dev alternate_dimension:repair_kit
 /effect clear Dev
+/data get entity facdd771-e5f4-459c-af0d-8885d68efdad

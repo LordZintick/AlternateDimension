@@ -1,28 +1,31 @@
 package com.github.lordzintick.init;
 
-import com.github.lordzintick.modular.*;
+import com.github.lordzintick.modular.parts.GearMaterial;
+import com.github.lordzintick.modular.parts.GearPartType;
+import com.github.lordzintick.modular.rendering.ModularItemModel;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterItemModelsEvent;
+import net.neoforged.neoforge.client.event.ScreenEvent;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @EventBusSubscriber(modid = AlternateDimensionMod.MODID, value = Dist.CLIENT)
 public class ClientModEvents {

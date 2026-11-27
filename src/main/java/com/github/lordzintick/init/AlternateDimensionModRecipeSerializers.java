@@ -1,15 +1,16 @@
 package com.github.lordzintick.init;
 
+import com.github.lordzintick.item.jetpack.JetpackRefuelRecipe;
 import com.github.lordzintick.modular.*;
+import com.github.lordzintick.modular.blueprint.BlueprintCreationRecipe;
+import com.github.lordzintick.modular.blueprint.BlueprintPartRecipe;
+import com.github.lordzintick.modular.repair_kit.RepairKitEmptyRecipe;
+import com.github.lordzintick.modular.repair_kit.RepairKitFillRecipe;
+import com.github.lordzintick.modular.repair_kit.RepairKitToolRepairRecipe;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.RepairItemRecipe;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -51,6 +52,12 @@ public class AlternateDimensionModRecipeSerializers {
             RECIPE_SERIALIZERS.register("repair_kit_tool_repair", () -> new RecipeSerializer<>(
                     RepairKitToolRepairRecipe.MAP_CODEC,
                     RepairKitToolRepairRecipe.STREAM_CODEC
+            ));
+
+    public static final Supplier<RecipeSerializer<JetpackRefuelRecipe>> JETPACK_REFUEL =
+            RECIPE_SERIALIZERS.register("jetpack_refuel", () -> new RecipeSerializer<>(
+                    JetpackRefuelRecipe.MAP_CODEC,
+                    JetpackRefuelRecipe.STREAM_CODEC
             ));
 
     public static void register(IEventBus bus) {

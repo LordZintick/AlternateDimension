@@ -1,0 +1,46 @@
+{
+  "part_item_name_key": "part.alternate_dimension.club_head",
+  "z_index": 1,
+  "is_handheld": true,
+  "contribute_material_name": true,
+  "texture": "alternate_dimension:item/part_club_head",
+  "base_durability": 80,
+  "power_factor": 1.0,
+  "name_affix": {
+    "position": "suffix",
+    "priority": 100,
+    "translation_key": "part.alternate_dimension.club_suffix",
+    "tint_with_material": false
+  },
+  "materials_allowed": "#alternate_dimension:core_tool_materials",
+  "pattern": {
+    "pattern": [
+      "  P",
+      "  P",
+      " TP"
+    ],
+    "key": {
+      "P": "alternate_dimension:cloth",
+      "T": "alternate_dimension:tool_rod"
+    },
+    "material_cost": 2
+  },
+  "components": {
+    "minecraft:attribute_modifiers": [
+      {
+        "type": "minecraft:attack_damage",
+        "id": "alternate_dimension:club_damage",
+        "amount": 3.0,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "type": "minecraft:attack_speed",
+        "id": "alternate_dimension:club_speed",
+        "amount": -1.8,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  }
+}

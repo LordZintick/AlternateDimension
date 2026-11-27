@@ -12,6 +12,7 @@
     "translation_key": "part.alternate_dimension.drill_suffix",
     "tint_with_material": false
   },
+  "requires_any": ["alternate_dimension:drill_base"],
   "materials_allowed": "#alternate_dimension:head_materials",
   "pattern": {
     "pattern": [

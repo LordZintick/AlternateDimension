@@ -1,7 +1,7 @@
 package com.github.lordzintick.item;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
-import com.github.lordzintick.modular.GearPartsComponent;
+import com.github.lordzintick.modular.parts.GearPartsComponent;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
@@ -17,12 +17,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
-import top.theillusivec4.curios.api.CurioAttributeModifiers;
 import top.theillusivec4.curios.api.CuriosCapability;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurio;
 
-import java.util.Collections;
 import java.util.List;
 
 public class CuriosCompat {
@@ -39,7 +37,6 @@ public class CuriosCompat {
     }
 
     private record ModularCurioWrapper(ItemStack stack) implements ICurio {
-
         @Override
         public ItemStack getStack() {
             return stack;

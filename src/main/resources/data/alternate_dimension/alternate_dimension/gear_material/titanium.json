@@ -19,6 +19,22 @@
           "minecraft:unbreaking": 1
         }
       }
+    },
+    {
+      "name": "part.alternate_dimension.jetpack_thruster",
+      "part_types": ["alternate_dimension:jetpack_thruster"],
+      "trait_descriptions": ["trait.alternate_dimension.jetpack_thruster.t3"],
+      "components": {
+        "alternate_dimension:jetpack": {
+          "vertical_speed": 0.21,
+          "horizontal_speed": 0.075,
+          "hover_descent_speed": 0.005,
+          "fuel_tag": "alternate_dimension:fuels",
+          "fuel_per_item": 1800,
+          "fuel_capacity": 72000,
+          "fuel_usage": 3
+        }
+      }
     }
   ]
 }

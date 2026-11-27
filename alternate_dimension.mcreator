@@ -14889,21 +14889,6 @@
       "path": "~/World"
     },
     {
-      "name": "GraphiteRod",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "graphite_rod",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/graphite_rod.json",
-          "src/main/resources/assets/alternate_dimension/items/graphite_rod.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/GraphiteRodItem.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "GetBowPullingState",
       "type": "procedure",
       "compiles": true,
@@ -18130,122 +18115,6 @@
       "path": "~/GeneralFeatures/Misc"
     },
     {
-      "name": "WoodenRing",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "wooden_ring",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/items/wooden_ring.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/WoodenRingItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/wooden_ring.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "AluminumRing",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "aluminum_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/item/AluminumRingItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/aluminum_ring.json",
-          "src/main/resources/assets/alternate_dimension/items/aluminum_ring.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "TitaniumRing",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "titanium_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumRingItem.java",
-          "src/main/resources/assets/alternate_dimension/items/titanium_ring.json",
-          "src/main/resources/assets/alternate_dimension/models/item/titanium_ring.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "MythrilRing",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mythril_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/item/MythrilRingItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/mythril_ring.json",
-          "src/main/resources/assets/alternate_dimension/items/mythril_ring.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "WoodenRingRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_ring_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/wooden_ring_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/wooden_ring_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "AluminumRingRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aluminum_ring_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/aluminum_ring_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_ring_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "TitaniumRingRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titanium_ring_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/titanium_ring_recipe.json",
-          "src/main/resources/data/alternate_dimension/recipe/titanium_ring_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "MythrilRingRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mythril_ring_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/mythril_ring_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/mythril_ring_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "EnchantedGrassBlockLoot",
       "type": "loottable",
       "compiles": true,
@@ -19601,35 +19470,6 @@
       "path": "~/GeneralFeatures/Misc"
     },
     {
-      "name": "WoodenClub",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_club",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/wooden_club.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/WoodenClubItem.java",
-          "src/main/resources/assets/alternate_dimension/items/wooden_club.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Weapons"
-    },
-    {
-      "name": "WoodenClubRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wooden_club_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/advancement/recipes/wooden_club_recipe.json",
-          "src/main/resources/data/alternate_dimension/recipe/wooden_club_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Weapons"
-    },
-    {
       "name": "SpiderHydra",
       "type": "livingentity",
       "compiles": true,
@@ -19783,49 +19623,6 @@
         ]
       },
       "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "VenomDippedClub",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "venom_dipped_club",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/venom_dipped_club.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/VenomDippedClubItem.java",
-          "src/main/resources/assets/alternate_dimension/items/venom_dipped_club.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Weapons"
-    },
-    {
-      "name": "GraphiteRodRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "graphite_rod_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/graphite_rod_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/graphite_rod_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "VenomDippedClubRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "venom_dipped_club_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/recipe/venom_dipped_club_recipe.json",
-          "src/main/resources/data/alternate_dimension/advancement/recipes/venom_dipped_club_recipe.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Weapons"
     },
     {
       "name": "FormedMythrilShardsRecipe",
@@ -23734,32 +23531,6 @@
       "path": "~/World/Eleroth/Highlands"
     },
     {
-      "name": "PlayerEntityMixin",
-      "type": "mixin",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "player_entity_mixin",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerEntityMixinMixin.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "ScreenHandlerMixin",
-      "type": "mixin",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "screen_handler_mixin",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/mixin/ScreenHandlerMixinMixin.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "CommonVikingTower",
       "type": "structure",
       "compiles": true,
@@ -23848,36 +23619,6 @@
         ]
       },
       "path": "~/World/Eleroth/CandiedPlain"
-    },
-    {
-      "name": "Wand",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "wand",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/models/item/wand.json",
-          "src/main/resources/assets/alternate_dimension/items/wand.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/WandItem.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "Scroll",
-      "type": "item",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "scroll",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/alternate_dimension/items/scroll.json",
-          "src/main/java/com/lordkittycat/alternate_dimension/item/ScrollItem.java",
-          "src/main/resources/assets/alternate_dimension/models/item/scroll.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
     },
     {
       "name": "WillowLog",
@@ -28987,6 +28728,253 @@
         ]
       },
       "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BackpackSlot",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_slot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/curios/entities/backpack_slot.json",
+          "src/main/resources/data/alternate_dimension/curios/slots/backpack_slot.json",
+          "src/main/resources/data/curios/tags/item/backpack_slot.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "BackpackBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "CheesyBackpackBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesy_backpack_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "EnchantedBackpackBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_backpack_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "OpenCloseBackpack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_close_backpack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenCloseBackpackProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "OpenBackpackKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack_key",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/network/OpenBackpackKeyMessage.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "PouchSlot",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pouch_slot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/curios/entities/pouch_slot.json",
+          "src/main/resources/data/curios/tags/item/pouch_slot.json",
+          "src/main/resources/data/alternate_dimension/curios/slots/pouch_slot.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "EssencePouchBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "essence_pouch_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "HuntersPouchBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunters_pouch_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "FruitPouchBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruit_pouch_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "OpenClosePouch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_close_pouch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenClosePouchProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ComboPouchGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_pouch_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/world/inventory/ComboPouchGUIMenu.java",
+          "src/main/java/com/lordkittycat/alternate_dimension/client/gui/ComboPouchGUIScreen.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ComboPouch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_pouch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/items/combo_pouch.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/ComboPouchItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/combo_pouch.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/inventory/ComboPouchInventoryCapability.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ComboPouchRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_pouch_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/combo_pouch_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/combo_pouch_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "OpenPouchKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_pouch_key",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/network/OpenPouchKeyMessage.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ComboPouchBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_pouch_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GeneralFeatures/Misc"
     }
   ],
   "variable_elements": [
@@ -29054,6 +29042,12 @@
       "name": "worldEventTime",
       "type": "number",
       "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "lastPouchOpened",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
@@ -29591,12 +29585,7 @@
       "CUSTOM:PyricBricks",
       "CUSTOM:VeridiumBricks"
     ],
-    "ITEMS:mod:rings": [
-      "CUSTOM:WoodenRing",
-      "CUSTOM:AluminumRing",
-      "CUSTOM:TitaniumRing",
-      "CUSTOM:MythrilRing"
-    ],
+    "ITEMS:mod:rings": [],
     "ITEMS:mod:ring_ingredients": [
       "CUSTOM:LightBlueGummyBear",
       "CUSTOM:RedGummyBearItem",
@@ -30181,8 +30170,6 @@
     "ITEMS:minecraft:enchantable/durability": [
       "~EnchantedHelmet@CUSTOM:EnchantedHelmet",
       "~Wrench@CUSTOM:Wrench",
-      "~VenomDippedClub@CUSTOM:VenomDippedClub",
-      "~WoodenClub@CUSTOM:WoodenClub",
       "~MortarAndPestle@CUSTOM:MortarAndPestle",
       "~RPG@CUSTOM:RPG",
       "~ItemIncinerator@CUSTOM:ItemIncinerator",
@@ -30494,6 +30481,17 @@
       "~VenomousSpider@CUSTOM:VenomousSpider",
       "~IncendiarySpider@CUSTOM:IncendiarySpider",
       "~SpiderHydra@CUSTOM:SpiderHydra"
+    ],
+    "ITEMS:mod:fuels": [
+      "CUSTOM:PyroliteChunk"
+    ],
+    "ITEMS:mod:storage_items": [
+      "CUSTOM:Backpack",
+      "CUSTOM:CheesyBackpack",
+      "CUSTOM:EnchantedBackpack",
+      "CUSTOM:EssencePouch",
+      "CUSTOM:HuntersPouch",
+      "CUSTOM:FruitPouch"
     ]
   },
   "tab_element_order": {
@@ -30750,10 +30748,6 @@
       "RedwoodBowl",
       "PlantyBowl",
       "AzureBowl",
-      "WoodenRing",
-      "AluminumRing",
-      "TitaniumRing",
-      "MythrilRing",
       "Hemp",
       "Barley",
       "BarleyBread",
@@ -30816,7 +30810,6 @@
       "JadeBlock",
       "TourmalineBlock",
       "Graphite",
-      "GraphiteRod",
       "ShroomiumChunk",
       "BlockOfShroomium",
       "LifeEssence",
@@ -30835,8 +30828,6 @@
       "HalloweenQuestDisc"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
-      "WoodenClub",
-      "VenomDippedClub",
       "MathWorkbook",
       "FunctionBlaster",
       "SigmaNotator",
@@ -30863,6 +30854,7 @@
       "EssencePouch",
       "HuntersPouch",
       "FruitPouch",
+      "ComboPouch",
       "AzureBoat",
       "AzureChestBoat",
       "ScorchedBoat",
@@ -30901,6 +30893,7 @@
       "BasicRepairKit",
       "RepairKit",
       "MagicRepairKit",
+      "StarterBlueprintBundle",
       "TheDirtBlock",
       "PhosphorusTorch",
       "PyroliteTorch",
@@ -30941,8 +30934,7 @@
       "MantleFurnace",
       "VeridiumFurnace",
       "PlasmaFurnace",
-      "BlockShaperCasing",
-      "StarterBlueprintBundle"
+      "BlockShaperCasing"
     ],
     "CUSTOM:AlternateDimensionDecor": [
       "AluminumChain",
@@ -31724,7 +31716,6 @@
       "block.alternate_dimension.scorched_platform": "Scorched Platform",
       "block.alternate_dimension.cloud_platform": "Cloud Platform",
       "block.alternate_dimension.planet_core": "Planet Core",
-      "item.alternate_dimension.graphite_rod": "Graphite Rod",
       "item.alternate_dimension.beetle_sword.description_2": "Has a chance to summon a friendly beetle on hit.",
       "item.alternate_dimension.beetle_sword.description_1": "Grants the wielder increased speed, agility, and armor.",
       "block.alternate_dimension.veridium_mythril_ore": "Veridium Mythril Ore",
@@ -31846,10 +31837,6 @@
       "item.alternate_dimension.candyfloss_chest_boat": "Candyfloss Boat with Chest",
       "block.alternate_dimension.pure_door": "Pure Door",
       "block.alternate_dimension.corrupt_door": "Corrupt Door",
-      "item.alternate_dimension.wooden_ring": "Wooden Ring",
-      "item.alternate_dimension.aluminum_ring": "Aluminum Ring",
-      "item.alternate_dimension.titanium_ring": "Titanium Ring",
-      "item.alternate_dimension.mythril_ring": "Mythril Ring",
       "block.alternate_dimension.candyfloss_box": "Candyfloss Box",
       "effect.alternate_dimension.shroomy_infection": "Shroomy Infection",
       "item.alternate_dimension.spore_spreader_spawn_egg": "Spore Spreader Spawn Egg",
@@ -32196,7 +32183,6 @@
       "item.alternate_dimension.shale_mana_crystal_ore": "Shale Mana Crystal Ore",
       "item.alternate_dimension.mantle_mana_crystal_ore": "Mantle Mana Crystal Ore",
       "item.alternate_dimension.popcorn": "Popcorn",
-      "item.alternate_dimension.wooden_club": "Wooden Club",
       "entity.alternate_dimension.spider_hydra": "Spider Hydra",
       "item.alternate_dimension.spider_hydra_spawn_egg": "Spider Hydra Spawn Egg",
       "item.alternate_dimension.incendiary_spider_spawn_egg": "Incendiary Spider Spawn Egg",
@@ -32204,8 +32190,6 @@
       "entity.alternate_dimension.venomous_spider": "Venomous Spider",
       "item.alternate_dimension.venomous_spider_spawn_egg": "Venomous Spider Spawn Egg",
       "item.alternate_dimension.venom_gland": "Venom Gland",
-      "item.alternate_dimension.venom_dipped_club": "Venom-Dipped Club",
-      "item.alternate_dimension.venom_dipped_club.description_0": "Poisons enemies.",
       "item.alternate_dimension.conveyor_belt": "Conveyor Belt",
       "item.alternate_dimension.onyx": "Onyx",
       "item.alternate_dimension.kyanite_crystal": "Kyanite Crystal",
@@ -32312,8 +32296,6 @@
       "item.alternate_dimension.aluminum_storage_module": "Aluminum Storage Module",
       "item.alternate_dimension.aluminum_storage_module.description_0": "Right-Click on a Box to instantly upgrade it to an Aluminum Crate whilst keeping the contents intact.",
       "item.alternate_dimension.cryonic_scimitar": "Cryonic Scimitar",
-      "item.alternate_dimension.wand": "Wand",
-      "item.alternate_dimension.scroll": "Scroll",
       "item.alternate_dimension.willow_log": "Willow Log",
       "item.alternate_dimension.willow_wood": "Willow Wood",
       "item.alternate_dimension.stripped_willow_log": "Stripped Willow Log",
@@ -32611,13 +32593,61 @@
       "tooltip.alternate_dimension.repair_kit.empty": "Empty (%1$s / %2$s)",
       "toltip.alternate_dimension.repair_kit.stored": "Material: %1$s (%2$s / %3$s)",
       "tooltip.alternate_dimension.repair_kit.stored": "Material: %1$s (%2$s / %3$s)",
-      "material.alternate_dimension.scorched_earth": "Scorched Earth"
+      "material.alternate_dimension.scorched_earth": "Scorched Earth",
+      "key.alternate_dimension.jetpack_engine": "Toggle Jetpack Engine",
+      "key.alternate_dimension.jetpack_hover": "Toggle Jetpack Hover",
+      "message.alternate_dimension.jetpack.engine_on": "Jetpack Engine: §2ON",
+      "message.alternate_dimension.jetpack.engine_off": "Jetpack Engine: §4OFF",
+      "message.alternate_dimension.jetpack.hover_on": "Jetpack Hover: §2ON",
+      "message.alternate_dimension.jetpack.hover_off": "Jetpack Hover: §4OFF",
+      "part.alternate_dimension.jetpack_thruster": "Jetpack Thruster",
+      "part.alternate_dimension.jetpack_thruster_suffix": "Jetpack",
+      "trait.alternate_dimension.jetpack_thruster.t1": "§1Thruster T1",
+      "trait.alternate_dimension.jetpack_thruster.t2": "§5Thruster T2",
+      "trait.alternate_dimension.jetpack_thruster.t3": "§2Thruster T3",
+      "trait.alternate_dimension.jetpack_thruster.t4": "§6Thruster T4",
+      "part.alternate_dimension.jetpack_suffix": "Jetpack",
+      "tooltip.alternate_dimension.jetpack_fuel": "Jetpack Fuel: %1$s / %2$s",
+      "tooltip.alternate_dimension.hold_alt": "Hold [Alt] for Jetpack details",
+      "tooltip.alternate_dimension.jetpack_stats_header": "Jetpack Stats:",
+      "tooltip.alternate_dimension.jetpack_vertical_speed": "Vertical Speed: %s",
+      "tooltip.alternate_dimension.jetpack_horizontal_speed": "Horizontal Speed: %s",
+      "tooltip.alternate_dimension.jetpack_hover_speed": "Hover Power: %s",
+      "tooltip.alternate_dimension.jetpack_fuel_tag": "Fuel Type: %s",
+      "tooltip.alternate_dimension.jetpack_fuel_capacity": "Fuel Capacity: %s",
+      "tooltip.alternate_dimension.jetpack_fuel_per_item": "Fuel Per Item: %s",
+      "tooltip.alternate_dimension.jetpack_fuel_usage": "Fuel Usage: %s/tick",
+      "tooltip.alternate_dimension.no_traits": "(No Traits)",
+      "curios.identifier.backpack_slot": "Backpack",
+      "key.alternate_dimension.open_backpack_key": "Open/Close Backpack",
+      "curios.identifier.pouch_slot": "Pouch",
+      "gui.alternate_dimension.combo_pouch_gui.label_backpack": "Combo Pouch",
+      "item.alternate_dimension.combo_pouch": "Combo Pouch",
+      "item.alternate_dimension.combo_pouch.description_0": "A combination of the Hunter\u0027s and Essence pouches; stores all your mob drops!",
+      "key.alternate_dimension.open_pouch_key": "Open/Close Pouch",
+      "trait.alternate_dimension.deflective": "§5Deflective",
+      "trait.alternate_dimension.exposure": "§2Exposure",
+      "trait.alternate_dimension.quickening": "§6Quickening",
+      "trait.alternate_dimension.hastening": "§7Hastening",
+      "trait.alternate_dimension.power": "§ePower",
+      "trait.alternate_dimension.flame_defense": "§6Flame Defense",
+      "part.alternate_dimension.club_head": "Club Head",
+      "part.alternate_dimension.club_suffix": "Club",
+      "part.alternate_dimension.club_dipping": "Club Dipping",
+      "part.alternate_dimension.club_dipping_suffix": "%s-Dipped",
+      "part.alternate_dimension.club_dipping_prefix": "%s-Dipped",
+      "material.alternate_dimension.venom_gland": "Venom Gland",
+      "material.alternate_dimension.venom": "Venom",
+      "trait.alternate_dimension.venomous": "§2Venomous",
+      "trait.alternate_dimension.poisonous": "§2Poisonous"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModWoodTypes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModConfigs.java",
+      "src/main/resources/data/alternate_dimension/curios/entities/slots.json",
+      "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModCuriosCompat.java",
       "src/main/java/com/lordkittycat/alternate_dimension/client/AlternateDimensionModSkyboxRenderer.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModFluidTypes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModFluids.java",
@@ -32631,6 +32661,7 @@
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModRecipeTypes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/EmptyIngredient.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModJeiPlugin.java",
+      "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModKeyMappings.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMobEffects.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBrewingRecipes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java",

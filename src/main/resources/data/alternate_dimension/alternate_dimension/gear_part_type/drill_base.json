@@ -20,6 +20,7 @@
     },
     "material_cost": 8
   },
+  "incompatible_with": ["alternate_dimension:tool_rod"],
   "components": {
     "minecraft:tool": {
       "rules": [

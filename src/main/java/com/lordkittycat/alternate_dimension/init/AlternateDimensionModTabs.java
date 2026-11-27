@@ -266,10 +266,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.REDWOOD_BOWL.get());
 				tabData.accept(AlternateDimensionModItems.PLANTY_BOWL.get());
 				tabData.accept(AlternateDimensionModItems.AZURE_BOWL.get());
-				tabData.accept(AlternateDimensionModItems.WOODEN_RING.get());
-				tabData.accept(AlternateDimensionModItems.ALUMINUM_RING.get());
-				tabData.accept(AlternateDimensionModItems.TITANIUM_RING.get());
-				tabData.accept(AlternateDimensionModItems.MYTHRIL_RING.get());
 				tabData.accept(AlternateDimensionModItems.HEMP.get());
 				tabData.accept(AlternateDimensionModItems.BARLEY.get());
 				tabData.accept(AlternateDimensionModItems.BARLEY_BREAD.get());
@@ -332,7 +328,6 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModBlocks.JADE_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModBlocks.TOURMALINE_BLOCK.get().asItem());
 				tabData.accept(AlternateDimensionModItems.GRAPHITE.get());
-				tabData.accept(AlternateDimensionModItems.GRAPHITE_ROD.get());
 				tabData.accept(AlternateDimensionModItems.SHROOMIUM_CHUNK.get());
 				tabData.accept(AlternateDimensionModBlocks.BLOCK_OF_SHROOMIUM.get().asItem());
 				tabData.accept(AlternateDimensionModItems.LIFE_ESSENCE.get());
@@ -352,8 +347,6 @@ public class AlternateDimensionModTabs {
 			}).withTabsBefore(ALTERNATE_DIMENSION_WORLD.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.BEETLE_SWORD.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(AlternateDimensionModItems.WOODEN_CLUB.get());
-				tabData.accept(AlternateDimensionModItems.VENOM_DIPPED_CLUB.get());
 				tabData.accept(AlternateDimensionModItems.MATH_WORKBOOK.get());
 				tabData.accept(AlternateDimensionModItems.FUNCTION_BLASTER.get());
 				tabData.accept(AlternateDimensionModItems.SIGMA_NOTATOR.get());
@@ -383,6 +376,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.ESSENCE_POUCH.get());
 				tabData.accept(AlternateDimensionModItems.HUNTERS_POUCH.get());
 				tabData.accept(AlternateDimensionModItems.FRUIT_POUCH.get());
+				tabData.accept(AlternateDimensionModItems.COMBO_POUCH.get());
 				tabData.accept(AlternateDimensionModItems.AZURE_BOAT.get());
 				tabData.accept(AlternateDimensionModItems.AZURE_CHEST_BOAT.get());
 				tabData.accept(AlternateDimensionModItems.SCORCHED_BOAT.get());

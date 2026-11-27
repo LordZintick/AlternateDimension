@@ -3,17 +3,17 @@ package com.github.lordzintick.modular;
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 import com.github.lordzintick.init.AlternateDimensionModRecipeSerializers;
 import com.github.lordzintick.init.AlternateDimensionModRegistries;
+import com.github.lordzintick.modular.parts.GearArchetype;
+import com.github.lordzintick.modular.parts.GearPartType;
+import com.github.lordzintick.modular.parts.GearPartsComponent;
+import com.github.lordzintick.modular.util.ComponentMerger;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.mojang.serialization.MapCodec;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.Registry;
-import net.minecraft.core.RegistryAccess;
+import net.minecraft.core.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -66,10 +66,37 @@ public class ModularAssemblyRecipe extends CustomRecipe {
         return result;
     }
 
-    private Optional<AssemblyResult> mergeInputs(CraftingInput input, RegistryAccess registries) {
+    @Override
+    public NonNullList<ItemStack> getRemainingItems(CraftingInput input) {
+        NonNullList<ItemStack> remaining = super.getRemainingItems(input);
+
+        RegistryAccess registries = registryAccess;
+        if (registries == null) return remaining;
+
+        Optional<AssemblyResult> mergedOpt = mergeInputs(input, registries);
+        if (mergedOpt.isEmpty()) return remaining;
+
+        for (var refundEntry : mergedOpt.get().overriddenPartsBySlot().entrySet()) {
+            int slotIndex = refundEntry.getKey();
+            Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart> oldPart = refundEntry.getValue();
+
+            ItemStack refundedPartStack = new ItemStack(AlternateDimensionModItems.MODULAR_ITEM.get());
+            refundedPartStack.set(
+                    AlternateDimensionModComponents.GEAR_PARTS,
+                    new GearPartsComponent(Map.of(oldPart.getKey(), oldPart.getValue()))
+            );
+            remaining.set(slotIndex, refundedPartStack);
+        }
+
+        return remaining;
+    }
+
+    private Optional<AssemblyResult> mergeInputs(CraftingInput input, HolderLookup.Provider registries) {
         Map<Holder<GearPartType>, GearPartsComponent.GearPart> combinedMap = new LinkedHashMap<>();
         ItemStack existingAssembledTool = null;
         int modularItemCount = 0;
+
+        Map<Integer, Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart>> incomingSingleParts = new LinkedHashMap<>();
 
         for (int i = 0; i < input.size(); i++) {
             ItemStack stack = input.getItem(i);
@@ -77,7 +104,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
 
             if (!stack.is(AlternateDimensionModItems.MODULAR_ITEM.get())) return Optional.empty();
 
-            GearPartsComponent partsComp = stack.get(AlternateDimensionModComponents.GEAR_PARTS.get());
+            GearPartsComponent partsComp = stack.get(AlternateDimensionModComponents.GEAR_PARTS);
             if (partsComp == null || partsComp.parts().isEmpty()) return Optional.empty();
 
             modularItemCount++;
@@ -88,14 +115,30 @@ public class ModularAssemblyRecipe extends CustomRecipe {
                 combinedMap.putAll(partsComp.parts());
             } else {
                 var entry = partsComp.parts().entrySet().iterator().next();
-                if (existingAssembledTool == null && combinedMap.containsKey(entry.getKey())) {
+                // Forbid duplicate part types in the same crafting grid
+                if (incomingSingleParts.values().stream().anyMatch(e -> e.getKey().equals(entry.getKey()))) {
                     return Optional.empty();
                 }
-                combinedMap.put(entry.getKey(), entry.getValue());
+                incomingSingleParts.put(i, entry);
             }
         }
 
         if (modularItemCount < 2) return Optional.empty();
+
+        Map<Integer, Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart>> overriddenBySlot = new LinkedHashMap<>();
+        for (var slotEntry : incomingSingleParts.entrySet()) {
+            int slotIndex = slotEntry.getKey();
+            var incomingPart = slotEntry.getValue();
+
+            GearPartsComponent.GearPart replacedPart = combinedMap.put(incomingPart.getKey(), incomingPart.getValue());
+            if (replacedPart != null) {
+                if (replacedPart.material().is(incomingPart.getValue().material())
+                        && replacedPart.durability() >= incomingPart.getValue().durability()) {
+                    return Optional.empty();
+                }
+                overriddenBySlot.put(slotIndex, Map.entry(incomingPart.getKey(), replacedPart));
+            }
+        }
 
         Set<Holder<GearPartType>> presentPartTypes = combinedMap.keySet();
 
@@ -103,13 +146,13 @@ public class ModularAssemblyRecipe extends CustomRecipe {
             return Optional.empty();
         }
 
-        Registry<GearArchetype> archetypeRegistry = registries.lookupOrThrow(AlternateDimensionModRegistries.ARCHETYPE_KEY);
+        Registry<GearArchetype> archetypeRegistry = (Registry<GearArchetype>) registries.lookupOrThrow(AlternateDimensionModRegistries.ARCHETYPE_KEY);
         boolean matchesArchetype = archetypeRegistry.listElements()
                 .anyMatch(holder -> holder.value().matches(presentPartTypes));
 
         if (!matchesArchetype) return Optional.empty();
 
-        return Optional.of(new AssemblyResult(combinedMap, existingAssembledTool));
+        return Optional.of(new AssemblyResult(combinedMap, existingAssembledTool, overriddenBySlot));
     }
 
     @Override
@@ -119,6 +162,7 @@ public class ModularAssemblyRecipe extends CustomRecipe {
 
     private record AssemblyResult(
             Map<Holder<GearPartType>, GearPartsComponent.GearPart> combinedParts,
-            @Nullable ItemStack existingTool
+            @Nullable ItemStack existingTool,
+            Map<Integer, Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart>> overriddenPartsBySlot
     ) {}
 }

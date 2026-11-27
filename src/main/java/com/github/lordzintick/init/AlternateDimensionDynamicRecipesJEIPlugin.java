@@ -1,11 +1,10 @@
 package com.github.lordzintick.init;
 
-import com.github.lordzintick.item.ring.RingEffectComponent;
-import com.github.lordzintick.item.ring.RingItem;
-import com.github.lordzintick.magic.ScrollRecipe;
-import com.github.lordzintick.magic.WandRecipe;
-import com.github.lordzintick.magic.loader.SpellLoader;
-import com.github.lordzintick.modular.*;
+import com.github.lordzintick.modular.blueprint.BlueprintDataComponent;
+import com.github.lordzintick.modular.parts.GearMaterial;
+import com.github.lordzintick.modular.parts.GearPartType;
+import com.github.lordzintick.modular.parts.GearPartsComponent;
+import com.github.lordzintick.modular.repair_kit.RepairKitDataComponent;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModJeiPlugin;
@@ -99,53 +98,6 @@ public class AlternateDimensionDynamicRecipesJEIPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        List<ManaMystifierRecipeTypeRecipe> ringRecipes = new ArrayList<>();
-        List<RecipeHolder<CraftingRecipe>> wandAndScrollRecipes = new ArrayList<>();
-        final List<DeferredItem<Item>> rings = List.of(AlternateDimensionModItems.WOODEN_RING, AlternateDimensionModItems.ALUMINUM_RING, AlternateDimensionModItems.TITANIUM_RING, AlternateDimensionModItems.MYTHRIL_RING);
-
-        rings.forEach(ring -> RingItem.RING_INGREDIENTS.forEach((ingredientID, effectID) -> {
-            Item ingredientItem = BuiltInRegistries.ITEM.getOrThrow(ResourceKey.create(BuiltInRegistries.ITEM.key(), ingredientID)).value();
-            Holder<MobEffect> effect = BuiltInRegistries.MOB_EFFECT.getOrThrow(ResourceKey.create(BuiltInRegistries.MOB_EFFECT.key(), effectID));
-            ItemStackTemplate outputRing = new ItemStackTemplate(ring, DataComponentPatch.builder()
-                        .set(AlternateDimensionModComponents.RING_EFFECT.get(), new RingEffectComponent(effect))
-                    .build()
-            );
-            ringRecipes.add(new ManaMystifierRecipeTypeRecipe(List.of(outputRing), List.of(
-                    Ingredient.of(ring.get()),
-                    Ingredient.of(ingredientItem),
-                    EmptyIngredient.create()
-            ),
-            List.of(1, 1)));
-        }));
-
-        SpellLoader.SPELLS.forEach(spell -> {
-            List<Ingredient> wandIngredients = new ArrayList<>(spell.ingredients);
-            List<Ingredient> scrollIngredients = new ArrayList<>(spell.ingredients);
-            wandIngredients.add(Ingredient.of(AlternateDimensionModItems.TOOL_ROD));
-            scrollIngredients.add(Ingredient.of(AlternateDimensionModItems.CLOTH));
-
-            wandAndScrollRecipes.add(
-                    new RecipeHolder<>(ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(spell.id.getNamespace(), "wand_recipe_" + spell.id.getPath())),
-                            new ShapelessRecipe(new Recipe.CommonInfo(false),
-                                    new CraftingRecipe.CraftingBookInfo(CraftingBookCategory.EQUIPMENT, "wands"),
-                                    WandRecipe.createWandTemplate(spell.id),
-                                    wandIngredients
-                            )
-                    ));
-            wandAndScrollRecipes.add(
-                    new RecipeHolder<>(ResourceKey.create(Registries.RECIPE, Identifier.fromNamespaceAndPath(spell.id.getNamespace(), "scroll_recipe_" + spell.id.getPath())),
-                            new ShapelessRecipe(new Recipe.CommonInfo(false),
-                                    new CraftingRecipe.CraftingBookInfo(CraftingBookCategory.EQUIPMENT, "scrolls"),
-                                    ScrollRecipe.createScrollTemplate(spell.id),
-                                    scrollIngredients
-                            )
-                    )
-            );
-        });
-
-        registration.addRecipes(RecipeTypes.CRAFTING, wandAndScrollRecipes);
-        registration.addRecipes(AlternateDimensionModJeiPlugin.ManaMystifierRecipeType_Type, ringRecipes);
-
         ClientLevel level = Minecraft.getInstance().level;
         if (level == null) return;
 

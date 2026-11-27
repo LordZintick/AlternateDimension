@@ -2,8 +2,8 @@ package com.lordkittycat.alternate_dimension.procedures;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 import com.github.lordzintick.init.AlternateDimensionModRegistries;
-import com.github.lordzintick.modular.BlueprintDataComponent;
-import com.github.lordzintick.modular.GearPartType;
+import com.github.lordzintick.modular.blueprint.BlueprintDataComponent;
+import com.github.lordzintick.modular.parts.GearPartType;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import net.minecraft.core.Holder;

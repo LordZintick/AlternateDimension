@@ -135,7 +135,7 @@ key_key.swapOffhand:key.keyboard.f
 key_key.saveToolbarActivator:key.keyboard.c
 key_key.loadToolbarActivator:key.keyboard.x
 key_key.advancements:key.keyboard.l
-key_key.quickActions:key.keyboard.g
+key_key.quickActions:key.keyboard.unknown
 key_key.debug.overlay:key.keyboard.f3
 key_key.debug.modifier:key.keyboard.f3
 key_key.hotbar.1:key.keyboard.1
@@ -151,7 +151,7 @@ key_key.debug.reloadChunk:key.keyboard.a
 key_key.debug.showHitboxes:key.keyboard.b
 key_key.debug.clearChat:key.keyboard.d
 key_key.debug.crash:key.keyboard.c
-key_key.debug.showChunkBorders:key.keyboard.g
+key_key.debug.showChunkBorders:key.keyboard.unknown
 key_key.debug.showAdvancedTooltips:key.keyboard.h
 key_key.debug.copyRecreateCommand:key.keyboard.i
 key_key.debug.spectate:key.keyboard.n
@@ -167,7 +167,11 @@ key_key.debug.profilingChart:key.keyboard.1
 key_key.debug.fpsCharts:key.keyboard.2
 key_key.debug.networkCharts:key.keyboard.3
 key_key.debug.lightmapTexture:key.keyboard.4
-key_key.curios.open.desc:key.keyboard.g
+key_key.curios.open.desc:key.keyboard.unknown
+key_key.alternate_dimension.jetpack_engine:key.keyboard.g
+key_key.alternate_dimension.jetpack_hover:key.keyboard.h
+key_key.alternate_dimension.open_backpack_key:key.keyboard.b
+key_key.alternate_dimension.open_pouch_key:key.keyboard.n
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL_OR_COMMAND
 key_key.jei.focusSearch:key.keyboard.f:CONTROL_OR_COMMAND
 key_key.jei.previousPage:key.keyboard.unknown

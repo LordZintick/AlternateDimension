@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": "alternate_dimension:magic_dust",
+    "b": "alternate_dimension:hunters_pouch",
+    "c": "alternate_dimension:cloth",
+    "d": "alternate_dimension:essence_pouch",
+    "e": "alternate_dimension:strong_thread"
+  },
+  "result": {
+    "id": "alternate_dimension:combo_pouch",
+    "count": 1
+  }
+}

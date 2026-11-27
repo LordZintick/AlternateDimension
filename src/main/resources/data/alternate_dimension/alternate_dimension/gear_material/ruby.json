@@ -12,19 +12,20 @@
   },
   "components": [
     {
-      "name": "part.alternate_dimension.ring_setting",
+      "name": "part.category.alternate_dimension.ring_setting",
       "part_types": ["alternate_dimension:ring_setting"],
       "trait_descriptions": ["trait.alternate_dimension.healthy"],
       "components": {
-        "minecraft:attribute_modifiers": [
-          {
-            "type": "minecraft:max_health",
-            "id": "alternate_dimension:ring_health",
-            "amount": 2.0,
-            "operation": "add_value",
-            "slot": "any"
-          }
-        ]
+        "alternate_dimension:permanent_effects": {
+          "slot": "any",
+          "damage_chance": 0.8,
+          "effects": [
+            {
+              "id": "minecraft:health_boost",
+              "amplifier": 0
+            }
+          ]
+        }
       }
     }
   ]

@@ -1,6 +1,6 @@
 package com.lordkittycat.alternate_dimension.item;
 
-import com.github.lordzintick.modular.RepairKitItem;
+import com.github.lordzintick.modular.repair_kit.RepairKitItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 

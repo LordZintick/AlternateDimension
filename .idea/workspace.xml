@@ -4,55 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="2.1.0 Alpha 4: Tool System Improvements&#10;&#10;- Added repair kits to dynamically repair modular items and a whole modular durability system.&#10;- Various fixes and changes to improve UX.&#10;- Finished removing hardcoded tools completely. Everything is now part of the dynamic tool system.&#10;- Various other minor changes and fixes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/PermanentEffectsComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitDataComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitEmptyRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitFillRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitToolRepairRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/scorched_earth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_empty.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_fill.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/repair_kit_repair.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/stones.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/gem_settings.json" afterDir="false" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/RegistrationEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/HitEffectsComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackFlightHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackFuelComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackKeybinds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackRefuelRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackTogglePayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor/jetpack_thruster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/venom_gland.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/club_dipping.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/club_head.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/jetpack_thruster.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/jetpack_refuel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/dipping_materials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/thruster_materials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BackpackRecipe.png" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/modElementThumbnails/BackpackRecipe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillHead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillHeadRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/DurableDrillRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillHead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillHeadRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/IronDrillUpgrade.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/PlayDrillSound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillHead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillHeadRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillRecipe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mcreator/modElementThumbnails/WoodenDrillUpgrade.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/AluminumHammer.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DurableDrill.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DurableDrillHead.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DurableDrillHeadRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/DurableDrillRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IronDrill.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IronDrillHead.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IronDrillHeadRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IronDrillRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/IronDrillUpgrade.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlayDrillSound.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/PlayerTick.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/PlayerTick.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WoodenDrill.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillHead.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillHeadRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillRecipe.mod.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/WoodenDrillUpgrade.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/AluminumRing.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/AluminumRingRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/MythrilRing.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/MythrilRingRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/PlayerEntityMixin.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ScreenHandlerMixin.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Scroll.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/TitaniumRing.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/TitaniumRingRecipe.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Wand.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenRing.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/WoodenRingRecipe.mod.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
@@ -63,86 +46,109 @@
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/AlternateDimensionModClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/AlternateDimensionModClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionDynamicRecipesJEIPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionDynamicRecipesJEIPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipeSerializers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipeSerializers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRecipes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRegistries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModRegistries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/BuildCreativeModeTabsEventHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/DurabilityConsumableComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/CuriosCompat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/CuriosCompat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPartRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPartRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ComponentMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ComponentMerger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartsComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/PermanentEffectsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/PermanentCurioEffectsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingEffectComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ring/RingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/MagicManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/ScrollRecipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/SpellUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/WandRecipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/Spell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/SpellAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/SpellLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/magic/loader/StringConvertable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintCreationRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/blueprint/BlueprintCreationRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintDataComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/blueprint/BlueprintDataComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/blueprint/BlueprintItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPartRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/blueprint/BlueprintPartRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/BlueprintPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/blueprint/BlueprintPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ComponentMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/util/ComponentMerger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearArchetype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/GearArchetype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/GearMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/GearPartType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/GearPartsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/GearPartsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/MaterialOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/MaterialOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularArmorRenderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorRenderData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItemModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/NameAffix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/util/NameAffix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/PartComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/PartTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/PartTextureList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/PartTextureList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitDataComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/repair_kit/RepairKitDataComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitEmptyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/repair_kit/RepairKitEmptyRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitFillRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/repair_kit/RepairKitFillRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/repair_kit/RepairKitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/RepairKitToolRepairRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/repair_kit/RepairKitToolRepairRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMenus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMenus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModScreens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModScreens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumHammerItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillHeadItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/DurableDrillItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillHeadItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/IronDrillItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillHeadItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WoodenDrillItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayDrillSoundProcedure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayerTickProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/PlayerTickProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/AluminumRingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BasicRepairKitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BasicRepairKitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MagicRepairKitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MagicRepairKitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/MythrilRingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RepairKitItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/RepairKitItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/ScrollItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/TitaniumRingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WandItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/WoodenRingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/PlayerEntityMixinMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/mixin/ScreenHandlerMixinMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/AlternateDimensionModVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/AlternateDimensionModVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenStarterBlueprintBundleProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenStarterBlueprintBundleProcedure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_hammer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/durable_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/durable_drill_head.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/iron_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/iron_drill_head.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wooden_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wooden_drill_head.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/alternate_dimension.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/aluminum_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/mythril_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/scroll.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/titanium_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/items/wooden_ring.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_hammer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/durable_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/durable_drill_head.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/iron_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/iron_drill_head.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wooden_drill.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wooden_drill_head.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/durable_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/iron_drill_upgrade.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_drill_upgrade.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candy_cane.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candy_cane.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candyfloss_wood.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/candyfloss_wood.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/aluminum_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/mythril_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/scroll.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/titanium_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/models/item/wooden_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/aluminum_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/mythril_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/titanium_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/advancement/recipes/wooden_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/aluminum.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/aluminum.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/jade.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/jade.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/axe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/axe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/battleaxe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/battleaxe_head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/kyanite.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/kyanite.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/mythril.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/mythril.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/onyx.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/onyx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/phosphorium.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/phosphorium.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/quartz.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/quartz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/ruby.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/ruby.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/sapphire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/sapphire.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/titanium.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/titanium.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/topaz.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/topaz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/tourmaline.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/tourmaline.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_base.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_base.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/drill_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hammer_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hammer_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hoe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/hoe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/pickaxe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/pickaxe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_band.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/ring_band.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/shovel_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/shovel_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/durable_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/durable_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/iron_drill_upgrade.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_head_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_recipe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_drill_upgrade.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/head_materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/head_materials.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_cap_materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/rod_cap_materials.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hammer_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/aluminum_hammer_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/drills.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/drills.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/durable_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/durable_drill_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/hammers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/hammers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/iron_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/iron_drill_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_tier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/titanium_tier.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/wooden_drill_repair_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/wooden_drill_repair_items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/item/pickaxes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/aluminum_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/mythril_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/titanium_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/wooden_ring_recipe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/tool_heads.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/tool_heads.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/rings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/item/rings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,8 +195,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -216,61 +222,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000178411055" />
-      <entry key="MS500" value="1.044741642440778" />
-      <entry key="S2" value="1.7692089505693094" />
-      <entry key="S5" value="2.3640833673130173" />
-      <entry key="S10" value="2.6515927181046237" />
-      <entry key="S30" value="2.8763496105082536" />
-      <entry key="S60" value="2.9371844587604636" />
-      <entry key="M2" value="2.968491114282427" />
-      <entry key="M5" value="3.23686292807983" />
-      <entry key="M10" value="7.684266547480547" />
-      <entry key="M15" value="16.40344563131531" />
-      <entry key="M30" value="47.866286894147784" />
-      <entry key="H1" value="114.1838204905861" />
-      <entry key="H2" value="228.44054567081153" />
-      <entry key="H4" value="406.1381166862416" />
-      <entry key="D1" value="1544.3795649631106" />
-      <entry key="W1" value="2341.5114501111084" />
+      <entry key="MS100" value="2.19578619273356E-101" />
+      <entry key="MS500" value="7.384447547193365E-21" />
+      <entry key="S2" value="9.292179610197124E-6" />
+      <entry key="S5" value="0.011051864460277797" />
+      <entry key="S10" value="0.16280330166670567" />
+      <entry key="S30" value="1.6687876295785882" />
+      <entry key="S60" value="3.7564371942918124" />
+      <entry key="M2" value="6.585318132882445" />
+      <entry key="M5" value="11.349570148420865" />
+      <entry key="M10" value="20.986891932501855" />
+      <entry key="M15" value="34.85962982981088" />
+      <entry key="M30" value="81.48708141922513" />
+      <entry key="H1" value="173.7035932793932" />
+      <entry key="H2" value="315.92891853402944" />
+      <entry key="H4" value="477.8685182569953" />
+      <entry key="D1" value="1557.4704584313204" />
+      <entry key="W1" value="3022.1469754380832" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.501358068447008E-196" />
-      <entry key="S10" value="2.8239297930430667E-98" />
-      <entry key="S30" value="1.3848177948927496E-32" />
-      <entry key="S60" value="4.496180731664582E-16" />
-      <entry key="M2" value="8.956938185165878E-8" />
-      <entry key="M5" value="0.00931627469974418" />
-      <entry key="M10" value="0.4908563195868267" />
-      <entry key="M15" value="2.136496500608752" />
-      <entry key="M30" value="16.717624448201583" />
-      <entry key="H1" value="83.56958470020103" />
-      <entry key="H2" value="231.60612139181973" />
-      <entry key="H4" value="433.9985838854988" />
-      <entry key="D1" value="1348.8457009874098" />
-      <entry key="W1" value="1973.2965512651817" />
+      <entry key="MS100" value="1.000000616241851" />
+      <entry key="MS500" value="1.0572730454585595" />
+      <entry key="S2" value="1.503879339572243" />
+      <entry key="S5" value="2.18145043758871" />
+      <entry key="S10" value="3.5495534328821132" />
+      <entry key="S30" value="7.705821202902094" />
+      <entry key="S60" value="12.29758157041282" />
+      <entry key="M2" value="19.744238781669747" />
+      <entry key="M5" value="32.87444927422125" />
+      <entry key="M10" value="46.0801766193827" />
+      <entry key="M15" value="59.80188356347907" />
+      <entry key="M30" value="105.16665691545232" />
+      <entry key="H1" value="192.76715398710436" />
+      <entry key="H2" value="324.00650227121565" />
+      <entry key="H4" value="480.0880456757489" />
+      <entry key="D1" value="1467.0002570534168" />
+      <entry key="W1" value="2692.117526740385" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.920187667387713" />
-      <entry key="MS500" value="1.0274499120853173" />
-      <entry key="S2" value="1.761310157633632" />
-      <entry key="S5" value="2.3597125320681775" />
-      <entry key="S10" value="2.649111427244019" />
-      <entry key="S30" value="2.8754450484975735" />
-      <entry key="S60" value="2.936721669254634" />
-      <entry key="M2" value="2.968257104068614" />
-      <entry key="M5" value="3.246029940541038" />
-      <entry key="M10" value="8.17380904558678" />
-      <entry key="M15" value="18.536276527184842" />
-      <entry key="M30" value="64.56944056185188" />
-      <entry key="H1" value="197.71620960992826" />
-      <entry key="H2" value="459.993841439723" />
-      <entry key="H4" value="840.0862971579152" />
-      <entry key="D1" value="2893.1983366327227" />
-      <entry key="W1" value="4314.802338785426" />
+      <entry key="MS100" value="5.020099248208661E-4" />
+      <entry key="MS500" value="0.23534086111037086" />
+      <entry key="S2" value="1.0532533215013078" />
+      <entry key="S5" value="1.9118096217894152" />
+      <entry key="S10" value="3.4679597632911103" />
+      <entry key="S30" value="9.143519479173115" />
+      <entry key="S60" value="15.84129655209907" />
+      <entry key="M2" value="26.13997655943906" />
+      <entry key="M5" value="44.08689208636772" />
+      <entry key="M10" value="66.96785094797706" />
+      <entry key="M15" value="94.57349054785475" />
+      <entry key="M30" value="186.56507094911447" />
+      <entry key="H1" value="366.3712301452977" />
+      <entry key="H2" value="639.8423484202303" />
+      <entry key="H4" value="957.8864634545001" />
+      <entry key="D1" value="3024.439184785294" />
+      <entry key="W1" value="5714.256512042875" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -284,41 +290,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CidrDebugProfileConversion": "true",
-    "CidrDebugProfileConversion262": "true",
-    "Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor": "Run",
-    "Gradle.alternate_dimension [build].executor": "Run",
-    "Gradle.crazycraft [createMcpToSrg].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "dynamic__tool__system",
-    "gradle.sync.parallel.migration.suppressed": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/recipe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
+    &quot;Gradle.D:/Development/MCreatorWorkspaces/alternate_dimension [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.alternate_dimension [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.crazycraft [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dynamic__tool__system&quot;,
+    &quot;gradle.sync.parallel.migration.suppressed&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material" />
-      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
-      <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/entity/equipment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data/curios" />
@@ -573,7 +579,9 @@
     <MESSAGE value="- Added Math Essence and changed math material/weapon recipes accordingly&#10;- Removed the Hint Book and replaced it with a placeholder guidebook for later.&#10;- Added Aluminum, Titanium, Uranium, Evilstone, Mana Crystal, Quartz, and Mythril cows&#10;- Added the Axiomorph mob, a unique randomized mob.&#10;- Added the Willow (rare tree), Brimwood (creative-only), and Solar (rare tree) wood sets&#10;- Added Ore essence and duplication recipes for all ores using it.&#10;- Added the (mini?)boss HEROZOMBRINE&#10;- Added a couple of missing items, such as a Shroomy Box and Candyfloss tools.&#10;- Nerfed almost every mob in the game, especially Chefs and Waiters.&#10;- Removed the Electrified Spider's super-overpowered ability.&#10;- Finally fixed the aluminum storage module and added sound effects for opening/closing containers.&#10;- Added more slots to boxes (same as a normal chest now) and essence pouches (for the new essences).&#10;- Made mobs not drop any essences anymore, adding Goodie Bags as a replacement (see below)&#10;- Added Goodie Bags for each mob &quot;category&quot; (dark, light, ice, fire, life, candy, etc.), along with some generic ones, that drop from certain mobs and can be opened later to receive a bit of loot; this is an attempt to fix the inventory problem.&#10;- Made a new title that better fits the post-revamp state&#10;- Added the Extractor to complement the Collector, with a filter option and whitelist/blacklist option.&#10;- Added filter and whitelist/blacklist options for the Collector as well and made it so it can spit items directly onto conveyors rather than only into other machines - full automation is now possible!&#10;- Made a new panorama and title/icon for the new update!&#10;- Added darksteel (made using dark essence) and added it to Umbral goodie bag accordingly.&#10;- Added more metal cows and added gem chickens!&#10;- Various other minor fixes and changes." />
     <MESSAGE value="- Added the beginnings of many new dimensions, and finished Shroomia as a proof of concept.&#10;- Added new mushroom stuff: Purple, Green, and Yellow mushrooms, the Fungal Processor, a Block of Shroomium, and the Mushroom Catalyst.&#10;- Added the beginnings of Solaria, with Hydrogen and Helium Plasma blocks and Liquid Plasma fluid.&#10;- Added the Mana Inserter as an early-game alternative to an entire mana logistics system.&#10;- Added the Plasma Furnace, which smelts incredibly fast.&#10;- Added Plasmolium, a new ore found in Solaria&#10;- Added a recipe for a Fire Resistance ring to allow for going into Solaria.&#10;- Various other minor fixes and changes." />
     <MESSAGE value="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system.&#10;- Addition of gear materials for all wood types, mushrooms, metals, and alloys.&#10;- Addition of gear archetypes for tools armor, rings, and drills.&#10;- Addition of part types for all base tools, tool rods and rod caps, ring bands and settings, battleaxe heads, hammer heads, grips, armor plating, armor lining, and drill engines/heads.&#10;- Addition of Curios API as an (optional) dependency.&#10;- Addition of material and gear type tags for utility.&#10;- Dynamic rendering, naming, and tooltip info.&#10;- Armor rendering, Curios API support, and more!&#10;- Support for many dynamic features.&#10;- Removal of previously hardcoded tools, weapons, and armor.&#10;- This is just the beginning! More stuff and removals of previously hardcoded features to come, as well as integration with the ring system and spellcasting system.&#10;- Various other minor changes and fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="2.1.0 Alpha 3: DYNAMIC TOOL SYSTEM!&#10;&#10;- Continued working on the dynamic tool system - its practically finished! All the features are detailed below:&#10;- Blueprint and part crafting recipes, with JEI support.&#10;- Tool assembly recipes.&#10;- Incredibly dynamic material and gear type system.&#10;- Addition of gear materials for all wood types, mushrooms, metals, and alloys.&#10;- Addition of gear archetypes for tools armor, rings, and drills.&#10;- Addition of part types for all base tools, tool rods and rod caps, ring bands and settings, battleaxe heads, hammer heads, grips, armor plating, armor lining, and drill engines/heads.&#10;- Addition of Curios API as an (optional) dependency.&#10;- Addition of material and gear type tags for utility.&#10;- Dynamic rendering, naming, and tooltip info.&#10;- Armor rendering, Curios API support, and more!&#10;- Support for many dynamic features.&#10;- Removal of previously hardcoded tools, weapons, and armor.&#10;- This is just the beginning! More stuff and removals of previously hardcoded features to come, as well as integration with the ring system and spellcasting system.&#10;- Various other minor changes and fixes." />
+    <MESSAGE value="2.1.0 Alpha 4: Tool System Improvements&#10;&#10;- Added repair kits to dynamically repair modular items and a whole modular durability system.&#10;- Various fixes and changes to improve UX.&#10;- Changed many of the materials and added a new Scorched Earth material.&#10;- Finished removing hardcoded tools completely. Everything is now part of the dynamic tool system.&#10;- Made the basic backpack significantly cheaper to ACTUALLY fix the inventory system.&#10;- Halved the Grace time upon spawning to balance always getting it, even when respawning.&#10;- Various other minor changes and fixes." />
+    <MESSAGE value="Bumped the version to 2.1.0a4." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bumped the version to 2.1.0a4." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

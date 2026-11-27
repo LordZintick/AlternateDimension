@@ -26,8 +26,8 @@ import com.lordkittycat.alternate_dimension.block.TheDirtBlockBlock;
 import com.lordkittycat.alternate_dimension.block.MysticSaplingBlock;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
+import com.github.lordzintick.modular.blueprint.BlueprintItem;
 import com.github.lordzintick.modular.ModularItem;
-import com.github.lordzintick.modular.BlueprintItem;
 
 @EventBusSubscriber
 public class AlternateDimensionModItems {
@@ -413,7 +413,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> SCORCHED_PLATFORM;
 	public static final DeferredItem<Item> CLOUD_PLATFORM;
 	public static final DeferredItem<Item> PLANET_CORE;
-	public static final DeferredItem<Item> GRAPHITE_ROD;
 	public static final DeferredItem<Item> VERIDIUM_MYTHRIL_ORE;
 	public static final DeferredItem<Item> SHALE_MYTHRIL_ORE;
 	public static final DeferredItem<Item> MANTLE_MYTHRIL_ORE;
@@ -493,10 +492,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> CANDYFLOSS_CHEST_BOAT;
 	public static final DeferredItem<Item> PURE_DOOR;
 	public static final DeferredItem<Item> CORRUPT_DOOR;
-	public static final DeferredItem<Item> WOODEN_RING;
-	public static final DeferredItem<Item> ALUMINUM_RING;
-	public static final DeferredItem<Item> TITANIUM_RING;
-	public static final DeferredItem<Item> MYTHRIL_RING;
 	public static final DeferredItem<Item> CANDYFLOSS_BOX;
 	public static final DeferredItem<Item> SPORE_SPREADER_SPAWN_EGG;
 	public static final DeferredItem<Item> FROSTY_ZOMBIE_SPAWN_EGG;
@@ -528,12 +523,10 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> SHALE_MANA_CRYSTAL_ORE;
 	public static final DeferredItem<Item> MANTLE_MANA_CRYSTAL_ORE;
 	public static final DeferredItem<Item> POPCORN;
-	public static final DeferredItem<Item> WOODEN_CLUB;
 	public static final DeferredItem<Item> SPIDER_HYDRA_SPAWN_EGG;
 	public static final DeferredItem<Item> INCENDIARY_SPIDER_SPAWN_EGG;
 	public static final DeferredItem<Item> VENOMOUS_SPIDER_SPAWN_EGG;
 	public static final DeferredItem<Item> VENOM_GLAND;
-	public static final DeferredItem<Item> VENOM_DIPPED_CLUB;
 	public static final DeferredItem<Item> CONVEYOR_BELT;
 	public static final DeferredItem<Item> ONYX;
 	public static final DeferredItem<Item> KYANITE_CRYSTAL;
@@ -597,8 +590,6 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> GRAVESTONE;
 	public static final DeferredItem<Item> ALUMINUM_STORAGE_MODULE;
 	public static final DeferredItem<Item> CRYONIC_SCIMITAR;
-	public static final DeferredItem<Item> WAND;
-	public static final DeferredItem<Item> SCROLL;
 	public static final DeferredItem<Item> WILLOW_LOG;
 	public static final DeferredItem<Item> WILLOW_WOOD;
 	public static final DeferredItem<Item> STRIPPED_WILLOW_LOG;
@@ -717,6 +708,7 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> BASIC_REPAIR_KIT;
 	public static final DeferredItem<Item> REPAIR_KIT;
 	public static final DeferredItem<Item> MAGIC_REPAIR_KIT;
+	public static final DeferredItem<Item> COMBO_POUCH;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1099,7 +1091,6 @@ public class AlternateDimensionModItems {
 		SCORCHED_PLATFORM = block(AlternateDimensionModBlocks.SCORCHED_PLATFORM);
 		CLOUD_PLATFORM = block(AlternateDimensionModBlocks.CLOUD_PLATFORM);
 		PLANET_CORE = block(AlternateDimensionModBlocks.PLANET_CORE, new Item.Properties().rarity(Rarity.EPIC).fireResistant());
-		GRAPHITE_ROD = register("graphite_rod", GraphiteRodItem::new);
 		VERIDIUM_MYTHRIL_ORE = block(AlternateDimensionModBlocks.VERIDIUM_MYTHRIL_ORE);
 		SHALE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.SHALE_MYTHRIL_ORE);
 		MANTLE_MYTHRIL_ORE = block(AlternateDimensionModBlocks.MANTLE_MYTHRIL_ORE);
@@ -1179,10 +1170,6 @@ public class AlternateDimensionModItems {
 		CANDYFLOSS_CHEST_BOAT = register("candyfloss_chest_boat", properties -> new BoatItem(AlternateDimensionModEntities.CANDYFLOSS_CHEST_BOAT.get(), properties.stacksTo(1)));
 		PURE_DOOR = doubleBlock(AlternateDimensionModBlocks.PURE_DOOR);
 		CORRUPT_DOOR = doubleBlock(AlternateDimensionModBlocks.CORRUPT_DOOR);
-		WOODEN_RING = register("wooden_ring", WoodenRingItem::new);
-		ALUMINUM_RING = register("aluminum_ring", AluminumRingItem::new);
-		TITANIUM_RING = register("titanium_ring", TitaniumRingItem::new);
-		MYTHRIL_RING = register("mythril_ring", MythrilRingItem::new);
 		CANDYFLOSS_BOX = block(AlternateDimensionModBlocks.CANDYFLOSS_BOX);
 		SPORE_SPREADER_SPAWN_EGG = register("spore_spreader_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.SPORE_SPREADER.get())));
 		FROSTY_ZOMBIE_SPAWN_EGG = register("frosty_zombie_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.FROSTY_ZOMBIE.get())));
@@ -1214,12 +1201,10 @@ public class AlternateDimensionModItems {
 		SHALE_MANA_CRYSTAL_ORE = block(AlternateDimensionModBlocks.SHALE_MANA_CRYSTAL_ORE);
 		MANTLE_MANA_CRYSTAL_ORE = block(AlternateDimensionModBlocks.MANTLE_MANA_CRYSTAL_ORE);
 		POPCORN = register("popcorn", PopcornItem::new);
-		WOODEN_CLUB = register("wooden_club", WoodenClubItem::new);
 		SPIDER_HYDRA_SPAWN_EGG = register("spider_hydra_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.SPIDER_HYDRA.get())));
 		INCENDIARY_SPIDER_SPAWN_EGG = register("incendiary_spider_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.INCENDIARY_SPIDER.get())));
 		VENOMOUS_SPIDER_SPAWN_EGG = register("venomous_spider_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(AlternateDimensionModEntities.VENOMOUS_SPIDER.get())));
 		VENOM_GLAND = register("venom_gland", VenomGlandItem::new);
-		VENOM_DIPPED_CLUB = register("venom_dipped_club", VenomDippedClubItem::new);
 		CONVEYOR_BELT = block(AlternateDimensionModBlocks.CONVEYOR_BELT);
 		ONYX = register("onyx", OnyxItem::new);
 		KYANITE_CRYSTAL = register("kyanite_crystal", KyaniteCrystalItem::new);
@@ -1283,8 +1268,6 @@ public class AlternateDimensionModItems {
 		GRAVESTONE = block(AlternateDimensionModBlocks.GRAVESTONE);
 		ALUMINUM_STORAGE_MODULE = register("aluminum_storage_module", AluminumStorageModuleItem::new);
 		CRYONIC_SCIMITAR = register("cryonic_scimitar", CryonicScimitarItem::new);
-		WAND = register("wand", WandItem::new);
-		SCROLL = register("scroll", ScrollItem::new);
 		WILLOW_LOG = block(AlternateDimensionModBlocks.WILLOW_LOG);
 		WILLOW_WOOD = block(AlternateDimensionModBlocks.WILLOW_WOOD);
 		STRIPPED_WILLOW_LOG = block(AlternateDimensionModBlocks.STRIPPED_WILLOW_LOG);
@@ -1403,6 +1386,7 @@ public class AlternateDimensionModItems {
 		BASIC_REPAIR_KIT = register("basic_repair_kit", BasicRepairKitItem::new);
 		REPAIR_KIT = register("repair_kit", RepairKitItem::new);
 		MAGIC_REPAIR_KIT = register("magic_repair_kit", MagicRepairKitItem::new);
+		COMBO_POUCH = register("combo_pouch", ComboPouchItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<ModularItem> MODULAR_ITEM = register("modular_item", ModularItem::new);
@@ -1454,6 +1438,7 @@ public class AlternateDimensionModItems {
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new EssencePouchInventoryCapability(access), ESSENCE_POUCH.get());
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new HuntersPouchInventoryCapability(access), HUNTERS_POUCH.get());
 		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new FruitPouchInventoryCapability(access), FRUIT_POUCH.get());
+		event.registerItem(Capabilities.Item.ITEM, (stack, access) -> new ComboPouchInventoryCapability(access), COMBO_POUCH.get());
 		event.registerItem(Capabilities.Fluid.ITEM, (stack, access) -> new BucketResourceHandler(access), LIQUID_MYCELIUM_BUCKET.get());
 		event.registerItem(Capabilities.Fluid.ITEM, (stack, access) -> new BucketResourceHandler(access), LIQUID_PLASMA_BUCKET.get());
 	}
