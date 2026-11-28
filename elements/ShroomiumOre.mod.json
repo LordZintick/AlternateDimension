@@ -99,7 +99,6 @@
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "additionalHarvestCondition": "RequiresMushyTool",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

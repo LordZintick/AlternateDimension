@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "alternate_dimension:titanium_block"
+    "alternate_dimension:titanium_block",
+    "alternate_dimension:shale_mythril_ore",
+    "alternate_dimension:veridium_mythril_ore"
   ]
 }

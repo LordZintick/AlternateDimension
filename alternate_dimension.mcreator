@@ -29821,6 +29821,10 @@
       "CUSTOM:OreEssence"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~MantleMythrilOre@CUSTOM:MantleMythrilOre",
+      "~ShaleMythrilOre@CUSTOM:ShaleMythrilOre",
+      "~VeridiumMythrilOre@CUSTOM:VeridiumMythrilOre",
+      "~ShroomiumOre@CUSTOM:ShroomiumOre",
       "~HydrogenPlasmaPyroliteOre@CUSTOM:HydrogenPlasmaPyroliteOre",
       "~PlasmoliumOre@CUSTOM:PlasmoliumOre",
       "~FungalProcessor@CUSTOM:FungalProcessor",
@@ -29870,9 +29874,6 @@
       "~PureBrickSlab@CUSTOM:PureBrickSlab",
       "~PureBricks@CUSTOM:PureBricks",
       "~ElementalInscriber@CUSTOM:ElementalInscriber",
-      "~MantleMythrilOre@CUSTOM:MantleMythrilOre",
-      "~ShaleMythrilOre@CUSTOM:ShaleMythrilOre",
-      "~VeridiumMythrilOre@CUSTOM:VeridiumMythrilOre",
       "~AluminumChain@CUSTOM:AluminumChain",
       "~FrostedGlassPane@CUSTOM:FrostedGlassPane",
       "~CandiedGlassPane@CUSTOM:CandiedGlassPane",
@@ -29926,7 +29927,6 @@
       "~VeridiumAluminumOre@CUSTOM:VeridiumAluminumOre",
       "~Veridium@CUSTOM:Veridium",
       "~AluminumBlock@CUSTOM:AluminumBlock",
-      "~ShroomiumOre@CUSTOM:ShroomiumOre",
       "~ChiseledPyricBricks@CUSTOM:ChiseledPyricBricks",
       "~ChiseledShaleBricks@CUSTOM:ChiseledShaleBricks",
       "~PyricBricksWall@CUSTOM:PyricBricksWall",
@@ -30105,6 +30105,9 @@
       "CUSTOM:FruitPouch"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~MantleMythrilOre@CUSTOM:MantleMythrilOre",
+      "~ShaleMythrilOre@CUSTOM:ShaleMythrilOre",
+      "~VeridiumMythrilOre@CUSTOM:VeridiumMythrilOre",
       "~TitaniumBlock@CUSTOM:TitaniumBlock"
     ],
     "ITEMS:minecraft:enchantable/durability": [
