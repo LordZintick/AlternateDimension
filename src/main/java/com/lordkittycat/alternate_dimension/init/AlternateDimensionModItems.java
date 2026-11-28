@@ -708,6 +708,7 @@ public class AlternateDimensionModItems {
 	public static final DeferredItem<Item> REPAIR_KIT;
 	public static final DeferredItem<Item> MAGIC_REPAIR_KIT;
 	public static final DeferredItem<Item> COMBO_POUCH;
+	public static final DeferredItem<Item> ENCHANTED_LINEN;
 	static {
 		TITANIUM_INGOT = register("titanium_ingot", TitaniumIngotItem::new);
 		TITANIUM_BLOCK = block(AlternateDimensionModBlocks.TITANIUM_BLOCK);
@@ -1386,6 +1387,7 @@ public class AlternateDimensionModItems {
 		REPAIR_KIT = register("repair_kit", RepairKitItem::new);
 		MAGIC_REPAIR_KIT = register("magic_repair_kit", MagicRepairKitItem::new);
 		COMBO_POUCH = register("combo_pouch", ComboPouchItem::new);
+		ENCHANTED_LINEN = register("enchanted_linen", EnchantedLinenItem::new);
 	}
 	// Start of user code block custom items
 	public static final DeferredItem<ModularItem> MODULAR_ITEM = register("modular_item", ModularItem::new);

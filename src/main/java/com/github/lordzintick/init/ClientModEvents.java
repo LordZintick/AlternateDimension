@@ -1,5 +1,6 @@
 package com.github.lordzintick.init;
 
+import com.github.lordzintick.item.backpack.*;
 import com.github.lordzintick.modular.parts.GearMaterial;
 import com.github.lordzintick.modular.parts.GearPartType;
 import com.github.lordzintick.modular.rendering.ModularItemModel;
@@ -14,13 +15,13 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.RegisterItemModelsEvent;
-import net.neoforged.neoforge.client.event.ScreenEvent;
+import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
@@ -32,6 +33,26 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void onRegisterItemModels(RegisterItemModelsEvent event) {
         event.register(Identifier.fromNamespaceAndPath(AlternateDimensionMod.MODID, "modular_model"), ModularItemModel.Unbaked.MAP_CODEC);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
+        event.register(AlternateDimensionModMenus.BACKPACK.get(), BackpackScreen::new);
+    }
+
+    @SubscribeEvent
+    public static void onClientTick(ClientTickEvent.Post event) {
+        Minecraft mc = Minecraft.getInstance();
+        while (BackpackKeybinds.OPEN_BACKPACK_KEY.consumeClick()) {
+            if (mc.player != null && mc.player.getItemBySlot(EquipmentSlot.CHEST).has(AlternateDimensionModComponents.BACKPACK_INVENTORY)) {
+                ClientPacketDistributor.sendToServer(OpenBackpackPayload.INSTANCE);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onRegisterTooltipComponents(RegisterClientTooltipComponentFactoriesEvent event) {
+        event.register(BackpackTooltipComponent.class, ClientBackpackTooltip::new);
     }
 
     @SubscribeEvent

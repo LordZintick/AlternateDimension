@@ -29,7 +29,7 @@ public class CheesyBackpackItem extends Item {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Cheesy Backpack");
+					return Component.literal("Cheesy Satchel");
 				}
 
 				@Override

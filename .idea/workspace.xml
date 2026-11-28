@@ -4,10 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes.">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/alternate_dimension.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/alternate_dimension.main.iml" afterDir="false" />
+    <list default="true" id="d63c5b1c-e49b-4b76-859e-577c435bcbf8" name="Changes" comment="Alternate Dimension 2.1.1 - Backpacks and Bugfixes&#10;&#10;- Fixed a very bad bug with the backpack curio slots by just removing them.&#10;- Added Backpacks as a gear part that can be added to chestplates!&#10;- Added the Vest part, made from string materials, that can be made into armor with only an accessory - no need for a lining. BUT, there's less armor and durability in exchange. It is also cheaper to craft both the blueprint and the part.&#10;- Added Enchanted Linen as a second tier to Cloth-related things. Enchants items with Efficiency 2 and can be made into a bigger backpack!&#10;- Renamed the old backpacks to &quot;satchels;&quot; did not remove them because they are still useful.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModMenus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackInventoryComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackKeybinds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/BackpackTooltipComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/ClientBackpackTooltip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/backpack/OpenBackpackPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/util/SoundData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_archetype/vest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/enchanted_linen.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/strong_thread.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/backpack.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/vest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/backpack_materials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/string_materials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/armor_accessories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_part_type/chestplates.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/COMMIT_EDITMSG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/index" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" beforeDir="false" afterPath="$PROJECT_DIR$/.mcreator/localHistory/refs/heads/master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alternate_dimension.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/alternate_dimension.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/Backpack.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Backpack.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BackpackBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BackpackGUI.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BackpackGUI.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/BackpackRecipe.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/BackpackSlot.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/CheesyBackpack.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CheesyBackpack.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/CheesyBackpackBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/CheesyBackpackGUI.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/CheesyBackpackGUI.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/ComboPouchBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/EnchantedBackpack.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/EnchantedBackpack.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/EnchantedBackpackBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/EnchantedBackpackGUI.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/EnchantedBackpackGUI.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/EssencePouchBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/FruitPouchBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/HuntersPouchBauble.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/OpenBackpackKey.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/OpenCloseBackpack.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/OpenClosePouch.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/OpenPouchKey.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements/PouchSlot.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/AlternateDimensionModComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/ClientModEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/RegistrationEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/init/RegistrationEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/HitEffectsComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/HitEffectsComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/ItemEventHandlers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackTogglePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/item/jetpack/JetpackTogglePayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularAssemblyRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/ModularItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/PartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/parts/PartComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorRenderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/rendering/ModularArmorRenderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/util/ComponentMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lordzintick/modular/util/ComponentMerger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/AlternateDimensionMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModCuriosCompat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModKeyMappings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMobEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMobEffects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BackpackItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/BackpackItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CheesyBackpackItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/CheesyBackpackItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EnchantedBackpackItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/item/EnchantedBackpackItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/OpenBackpackKeyMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/network/OpenPouchKeyMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenCloseBackpackProcedure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenClosePouchProcedure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/cloth.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/cloth.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/venom_gland.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material/venom_gland.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/club_dipping.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/club_dipping.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/jetpack_thruster.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type/jetpack_thruster.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/entities/backpack_slot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/entities/pouch_slot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/entities/slots.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/slots/backpack_slot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/curios/slots/pouch_slot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe/backpack_recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/soft_materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material/soft_materials.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/curios/tags/item/backpack_slot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/curios/tags/item/pouch_slot.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +145,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,61 +172,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.024518345037454" />
-      <entry key="MS500" value="1.531477367362533" />
-      <entry key="S2" value="2.922346983940752" />
-      <entry key="S5" value="5.234812363273661" />
-      <entry key="S10" value="8.783976885597681" />
-      <entry key="S30" value="15.230090810562075" />
-      <entry key="S60" value="21.076190947352412" />
-      <entry key="M2" value="35.21467381336853" />
-      <entry key="M5" value="63.227979046049455" />
-      <entry key="M10" value="86.28732234490256" />
-      <entry key="M15" value="104.70510010298257" />
-      <entry key="M30" value="155.76865938386285" />
-      <entry key="H1" value="250.4377789057665" />
-      <entry key="H2" value="395.25254586026847" />
-      <entry key="H4" value="560.4401211708041" />
-      <entry key="D1" value="1644.209800836661" />
-      <entry key="W1" value="3111.9852535779305" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001175310813" />
+      <entry key="S10" value="1.000522709209137" />
+      <entry key="S30" value="1.2711916169579551" />
+      <entry key="S60" value="2.86204996562659" />
+      <entry key="M2" value="6.82739424325544" />
+      <entry key="M5" value="19.29291013714516" />
+      <entry key="M10" value="49.07518261922951" />
+      <entry key="M15" value="77.91431703589693" />
+      <entry key="M30" value="143.22572611792066" />
+      <entry key="H1" value="236.59061052398704" />
+      <entry key="H2" value="397.2977898648097" />
+      <entry key="H4" value="641.3556431404105" />
+      <entry key="D1" value="1903.172613388357" />
+      <entry key="W1" value="3520.197275175637" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.1343359951271036E-169" />
-      <entry key="S2" value="5.803439495133136E-43" />
-      <entry key="S5" value="1.278232890995706E-17" />
-      <entry key="S10" value="4.009687153374546E-9" />
-      <entry key="S30" value="0.005368057931183633" />
-      <entry key="S60" value="0.313603011007527" />
-      <entry key="M2" value="3.1476292756207127" />
-      <entry key="M5" value="15.890487818021015" />
-      <entry key="M10" value="32.228715062861916" />
-      <entry key="M15" value="47.21766780015928" />
-      <entry key="M30" value="93.54554429878846" />
-      <entry key="H1" value="181.8779752347095" />
-      <entry key="H2" value="314.8746979822688" />
-      <entry key="H4" value="473.5288081407597" />
-      <entry key="D1" value="1464.1296481168547" />
-      <entry key="W1" value="2692.101929419332" />
+      <entry key="MS500" value="5.366268572840324E-89" />
+      <entry key="S2" value="1.357577015033717E-22" />
+      <entry key="S5" value="4.621384143543586E-9" />
+      <entry key="S10" value="2.170244183872119E-4" />
+      <entry key="S30" value="0.4243726512223675" />
+      <entry key="S60" value="3.5186418588817987" />
+      <entry key="M2" value="11.248493276603083" />
+      <entry key="M5" value="24.94161652970513" />
+      <entry key="M10" value="35.912449950955164" />
+      <entry key="M15" value="43.847064373555995" />
+      <entry key="M30" value="68.27450224553554" />
+      <entry key="H1" value="126.70184143000553" />
+      <entry key="H2" value="253.60838671648852" />
+      <entry key="H4" value="463.00027116888907" />
+      <entry key="D1" value="1594.679130693345" />
+      <entry key="W1" value="2955.941400503152" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9567161441040517" />
-      <entry key="MS500" value="1.513296782378402" />
-      <entry key="S2" value="2.9118916918800046" />
-      <entry key="S5" value="5.215020166815578" />
-      <entry key="S10" value="8.758020119266027" />
-      <entry key="S30" value="15.217161204752147" />
-      <entry key="S60" value="21.369422126666898" />
-      <entry key="M2" value="38.316415361032966" />
-      <entry key="M5" value="79.039887982324" />
-      <entry key="M10" value="118.43871639300113" />
-      <entry key="M15" value="151.8475170579338" />
-      <entry key="M30" value="249.23228186346714" />
-      <entry key="H1" value="432.22035099983634" />
-      <entry key="H2" value="710.0360518788854" />
-      <entry key="H4" value="1033.8994133656565" />
-      <entry key="D1" value="3108.307914325849" />
-      <entry key="W1" value="5804.079183414929" />
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.9889709163809315" />
+      <entry key="S2" value="0.9972312513520695" />
+      <entry key="S5" value="0.9988917001704294" />
+      <entry key="S10" value="1.0001601979779366" />
+      <entry key="S30" value="1.679187365778849" />
+      <entry key="S60" value="6.312816540878205" />
+      <entry key="M2" value="17.96785597295314" />
+      <entry key="M5" value="44.13921856663975" />
+      <entry key="M10" value="84.91815431534617" />
+      <entry key="M15" value="121.70330012410324" />
+      <entry key="M30" value="211.45153196894572" />
+      <entry key="H1" value="363.2437248354684" />
+      <entry key="H2" value="650.850992065454" />
+      <entry key="H4" value="1104.3003013985372" />
+      <entry key="D1" value="3497.819166769871" />
+      <entry key="W1" value="6476.130123946678" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -165,7 +256,7 @@
     "git-widget-placeholder": "master",
     "gradle.sync.parallel.migration.suppressed": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ld/IdeaProjects/AlternateDimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type",
+    "last_opened_file_path": "D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -179,11 +270,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\resources\data\alternate_dimension\alternate_dimension\gear_material" />
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\resources\data\alternate_dimension\alternate_dimension\gear_archetype" />
+      <recent name="D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\src\main\resources\data\alternate_dimension\alternate_dimension\gear_part_type" />
       <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_part_type" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets/alternate_dimension/textures/models/armor" />
-      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/recipe" />
-      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/alternate_dimension/gear_material" />
-      <recent name="$PROJECT_DIR$/src/main/resources/data/alternate_dimension/tags/alternate_dimension/gear_material" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/data/curios" />
@@ -441,7 +532,8 @@
     <MESSAGE value="2.1.0 Alpha 4: Tool System Improvements&#10;&#10;- Added repair kits to dynamically repair modular items and a whole modular durability system.&#10;- Various fixes and changes to improve UX.&#10;- Changed many of the materials and added a new Scorched Earth material.&#10;- Finished removing hardcoded tools completely. Everything is now part of the dynamic tool system.&#10;- Made the basic backpack significantly cheaper to ACTUALLY fix the inventory system.&#10;- Halved the Grace time upon spawning to balance always getting it, even when respawning.&#10;- Various other minor changes and fixes." />
     <MESSAGE value="Bumped the version to 2.1.0a4." />
     <MESSAGE value="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alternate Dimension 2.1.0 Alpha 5 - Jetpacks!&#10;&#10;- Added the Jetpack Thrusters gear part type that you can attach to chestplates to fly! Support for different stats, fuel types, and fuel usage values, and uses a similar control scheme to Iron Jetpacks, with a separate engine and hover toggle.&#10;- Made more inventory improvements by adding a Backpack curio slot and a Pouch curio slot, with keybinds to open them. Also added Combo Pouch that is a combination of the Essence Pouch and Hunter's Pouch.&#10;- Removed the magic system (to be reimplemented later) and removed the now-part-of-the-tool-system effect rings.&#10;- Changed the ring effects of all gems to grant effects, and made many fixes and changes to the PermanentEffectsComponent (now known as PermanentCurioEffectsComponent).&#10;- Added club head and club dipping gear parts, and added a venom gland material as a test material for club dippings.&#10;- Removed hardcoded clubs and hardcoded graphite rods, in lieu of the dynamic ones.&#10;- Minor changes to some materials.&#10;- Various other minor changes and fixes." />
+    <MESSAGE value="Alternate Dimension 2.1.0&#10;&#10;- Bumped the version.&#10;- Regenerated the code.&#10;- Updated the splash texts.&#10;- Basically no other changes since alpha 6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alternate Dimension 2.1.0&#10;&#10;- Bumped the version.&#10;- Regenerated the code.&#10;- Updated the splash texts.&#10;- Basically no other changes since alpha 6." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

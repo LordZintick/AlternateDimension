@@ -29,7 +29,7 @@ public class EnchantedBackpackItem extends Item {
 			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Enchanted Backpack");
+					return Component.literal("Magic Satchel");
 				}
 
 				@Override

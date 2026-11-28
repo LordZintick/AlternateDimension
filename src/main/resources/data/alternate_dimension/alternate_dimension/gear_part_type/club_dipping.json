@@ -2,7 +2,7 @@
   "part_item_name_key": "part.alternate_dimension.club_dipping",
   "z_index": 1,
   "is_handheld": true,
-  "contribute_material_name": true,
+  "contribute_material_name": false,
   "texture": "alternate_dimension:item/part_club_dipping",
   "base_durability": 80,
   "power_factor": 1.0,

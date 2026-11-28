@@ -62,9 +62,6 @@ public class AlternateDimensionMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-		if (ModList.get().isLoaded("curios")) {
-			modEventBus.addListener(AlternateDimensionModCuriosCompat::registerCapabilities);
-		}
 		AlternateDimensionModSounds.REGISTRY.register(modEventBus);
 		AlternateDimensionModBlocks.REGISTRY.register(modEventBus);
 		AlternateDimensionModBlockEntities.REGISTRY.register(modEventBus);
@@ -78,6 +75,7 @@ public class AlternateDimensionMod {
 		AlternateDimensionModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		AlternateDimensionModComponents.register(modEventBus);
+		com.github.lordzintick.init.AlternateDimensionModMenus.register(modEventBus);
 		modEventBus.addListener(AlternateDimensionModRegistries::registerDatapackRegistries);
 		modEventBus.addListener(AlternateDimensionModRegistries::registerNormalRegistries);
 		AlternateDimensionModRecipeSerializers.register(modEventBus);

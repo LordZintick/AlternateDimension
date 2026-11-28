@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Incendiary",
+    "icon": "power_effect",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": "item.firecharge.use",
+    "isInstant": true,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": "ApplyFireFromAmplifier"
+  }
+}

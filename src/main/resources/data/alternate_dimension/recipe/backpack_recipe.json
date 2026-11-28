@@ -1,15 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "equipment",
-  "pattern": [
-    "ab",
-    "ca"
+  "ingredients": [
+    "alternate_dimension:cloth",
+    "#alternate_dimension:boxes",
+    "alternate_dimension:strong_thread",
+    "alternate_dimension:cloth"
   ],
-  "key": {
-    "a": "alternate_dimension:cloth",
-    "b": "#alternate_dimension:boxes",
-    "c": "alternate_dimension:strong_thread"
-  },
   "result": {
     "id": "alternate_dimension:backpack",
     "count": 1

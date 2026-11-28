@@ -13,10 +13,13 @@ import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
 import net.minecraft.client.renderer.rendertype.RenderType;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.ARGB;
 import net.minecraft.world.entity.EquipmentSlot;
 
+import java.util.Comparator;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -37,19 +40,33 @@ public class ModularArmorLayer<S extends HumanoidRenderState, M extends Humanoid
             EquipmentSlot slot = slotEntry.getKey();
             GearPartsComponent partsComp = slotEntry.getValue();
 
-            // Each slot has its own isolated Model instance inside ArmorModelSet—zero shared-state mutation!
             M armorModel = armorModels.get(slot);
             boolean isLegs = (slot == EquipmentSlot.LEGS);
 
-            for (var partEntry : partsComp.materialsByZIndex()) {
+            List<Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart>> sortedParts = partsComp.parts().entrySet()
+                    .stream()
+                    .sorted(Comparator
+                            .comparingInt((Map.Entry<Holder<GearPartType>, GearPartsComponent.GearPart> e) ->
+                                    getArmorZIndex(e.getKey().value()))
+                            .thenComparing(e -> e.getKey().getRegisteredName()))
+                    .toList();
+
+            int renderedLayerIndex = 0;
+            for (var partEntry : sortedParts) {
                 GearPartType part = partEntry.getKey().value();
-                GearMaterial mat = partEntry.getValue().value();
+                GearMaterial mat = partEntry.getValue().material().value();
 
                 Optional<Identifier> texOpt = isLegs ? part.armorLeggingsTexture() : part.armorTexture();
                 if (texOpt.isEmpty()) continue;
 
                 int argbColor = ARGB.opaque(mat.color());
                 RenderType renderType = RenderTypes.armorCutoutNoCull(texOpt.get());
+
+                poseStack.pushPose();
+                if (renderedLayerIndex > 0) {
+                    float scale = 1.0f + (renderedLayerIndex * 0.012f);
+                    poseStack.scale(scale, scale, scale);
+                }
 
                 collector.submitModel(
                         armorModel,
@@ -63,7 +80,14 @@ public class ModularArmorLayer<S extends HumanoidRenderState, M extends Humanoid
                         state.outlineColor,
                         null
                 );
+
+                poseStack.popPose();
+                renderedLayerIndex++;
             }
         }
+    }
+
+    private static int getArmorZIndex(GearPartType part) {
+        return part.zIndex();
     }
 }

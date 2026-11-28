@@ -15,11 +15,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import com.lordkittycat.alternate_dimension.procedures.RemoveInvulnerabilityProcedure;
-import com.lordkittycat.alternate_dimension.potion.ShroomyInfectionMobEffect;
-import com.lordkittycat.alternate_dimension.potion.LightFootedEffectMobEffect;
-import com.lordkittycat.alternate_dimension.potion.GraceEffectMobEffect;
-import com.lordkittycat.alternate_dimension.potion.BlindingLightMobEffect;
-import com.lordkittycat.alternate_dimension.potion.AcrobaticEffectMobEffect;
+import com.lordkittycat.alternate_dimension.potion.*;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 
 @EventBusSubscriber
@@ -30,6 +26,7 @@ public class AlternateDimensionModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> BLINDING_LIGHT = REGISTRY.register("blinding_light", BlindingLightMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> SHROOMY_INFECTION = REGISTRY.register("shroomy_infection", ShroomyInfectionMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> GRACE_EFFECT = REGISTRY.register("grace_effect", GraceEffectMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> INCENDIARY = REGISTRY.register("incendiary", IncendiaryMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

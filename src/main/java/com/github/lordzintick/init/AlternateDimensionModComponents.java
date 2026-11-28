@@ -4,6 +4,7 @@ import com.github.lordzintick.item.HitEffectsComponent;
 import com.github.lordzintick.item.PermanentCurioEffectsComponent;
 import com.github.lordzintick.item.PhotosyntheticComponent;
 import com.github.lordzintick.item.SparkingComponent;
+import com.github.lordzintick.item.backpack.BackpackInventoryComponent;
 import com.github.lordzintick.item.jetpack.JetpackComponent;
 import com.github.lordzintick.item.jetpack.JetpackFuelComponent;
 import com.github.lordzintick.modular.blueprint.BlueprintDataComponent;
@@ -34,6 +35,8 @@ public class AlternateDimensionModComponents {
             builder.persistent(JetpackComponent.CODEC).networkSynchronized(JetpackComponent.STREAM_CODEC));
     public static final Supplier<DataComponentType<JetpackFuelComponent>> JETPACK_FUEL = DATA_COMPONENTS.registerComponentType("jetpack_fuel", builder ->
             builder.persistent(JetpackFuelComponent.CODEC).networkSynchronized(JetpackFuelComponent.STREAM_CODEC));
+    public static final Supplier<DataComponentType<BackpackInventoryComponent>> BACKPACK_INVENTORY = DATA_COMPONENTS.registerComponentType("backpack", builder ->
+            builder.persistent(BackpackInventoryComponent.CODEC).networkSynchronized(BackpackInventoryComponent.STREAM_CODEC));
 
 
     public static final Supplier<DataComponentType<PhotosyntheticComponent>> PHOTOSYNTHETIC = DATA_COMPONENTS.registerComponentType("photosynthetic", builder ->
@@ -43,7 +46,7 @@ public class AlternateDimensionModComponents {
     public static final Supplier<DataComponentType<PermanentCurioEffectsComponent>> PERMANENT_EFFECTS = DATA_COMPONENTS.registerComponentType("permanent_effects", builder ->
             builder.persistent(PermanentCurioEffectsComponent.CODEC));
     public static final Supplier<DataComponentType<HitEffectsComponent>> HIT_EFFECTS = DATA_COMPONENTS.registerComponentType("hit_effects", builder ->
-            builder.persistent(HitEffectsComponent.CODEC));
+            builder.persistent(HitEffectsComponent.CODEC).networkSynchronized(HitEffectsComponent.STREAM_CODEC));
 
     public static void register(IEventBus eventBus) {
         DATA_COMPONENTS.register(eventBus);

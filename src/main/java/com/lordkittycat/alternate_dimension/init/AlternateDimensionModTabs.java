@@ -344,6 +344,7 @@ public class AlternateDimensionModTabs {
 				tabData.accept(AlternateDimensionModItems.PHOSPHORUS.get());
 				tabData.accept(AlternateDimensionModItems.PHOSPHORIUM_INGOT.get());
 				tabData.accept(AlternateDimensionModItems.HALLOWEEN_QUEST_DISC.get());
+				tabData.accept(AlternateDimensionModItems.ENCHANTED_LINEN.get());
 			}).withTabsBefore(ALTERNATE_DIMENSION_WORLD.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ALTERNATE_DIMENSION_EQUIPMENT = REGISTRY.register("alternate_dimension_equipment",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.alternate_dimension.alternate_dimension_equipment")).icon(() -> new ItemStack(AlternateDimensionModItems.BEETLE_SWORD.get())).displayItems((parameters, tabData) -> {

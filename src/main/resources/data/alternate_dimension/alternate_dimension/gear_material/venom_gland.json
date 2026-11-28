@@ -24,6 +24,9 @@
           "effects": [
             {
               "chance": 0.5,
+              "sound": {
+                "sound": "block.brewing_stand.brew"
+              },
               "effects": [
                 {
                   "id": "minecraft:poison",

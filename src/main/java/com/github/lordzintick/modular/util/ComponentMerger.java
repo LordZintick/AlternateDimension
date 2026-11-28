@@ -1,6 +1,8 @@
 package com.github.lordzintick.modular.util;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
+import com.github.lordzintick.item.HitEffectsComponent;
+import com.github.lordzintick.item.backpack.BackpackInventoryComponent;
 import com.github.lordzintick.modular.parts.GearMaterial;
 import com.github.lordzintick.modular.parts.GearPartType;
 import com.github.lordzintick.modular.parts.GearPartsComponent;
@@ -59,9 +61,11 @@ public class ComponentMerger {
             GearPartsComponent gearParts,
             List<ItemEnchantments> extraEnchantmentsToMerge
     ) {
-        stack.set(AlternateDimensionModComponents.GEAR_PARTS.get(), gearParts);
+        stack.set(AlternateDimensionModComponents.GEAR_PARTS, gearParts);
 
         ItemEnchantments existingEnchants = stack.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY);
+        BackpackInventoryComponent existingBackpack = stack.get(AlternateDimensionModComponents.BACKPACK_INVENTORY);
+
         clearSynthesizedComponents(stack);
 
         ItemEnchantments.Mutable mergedEnchants = new ItemEnchantments.Mutable(existingEnchants);
@@ -72,6 +76,8 @@ public class ComponentMerger {
         List<Tool.Rule> denialRules = new ArrayList<>();
         Map<HolderSet<Block>, Tool.Rule> positiveRules = new LinkedHashMap<>();
         Map<AttributeKey, AttributeAccumulator> attributeGroups = new LinkedHashMap<>();
+        List<HitEffectsComponent.HitEffect> mergedHitEffects = new ArrayList<>();
+        int[] maxBackpackSlots = new int[]{0};
 
         for (var entry : gearParts.materialsByZIndex()) {
             GearPartType part = entry.getKey().value();
@@ -85,16 +91,18 @@ public class ComponentMerger {
                     .findFirst();
 
             patchOpt.ifPresent(patch ->
-            applyPatchSafely(
-                    stack,
-                    patch,
-                    denialRules,
-                    positiveRules,
-                    attributeGroups,
-                    mergedEnchants,
-                    combinedPower,
-                    part.contributeMaterialName()
-            ));
+                    applyPatchSafely(
+                            stack,
+                            patch,
+                            denialRules,
+                            positiveRules,
+                            attributeGroups,
+                            mergedEnchants,
+                            mergedHitEffects,
+                            maxBackpackSlots,
+                            combinedPower,
+                            part.contributeMaterialName()
+                    ));
 
             applyPatchSafely(
                     stack,
@@ -103,8 +111,17 @@ public class ComponentMerger {
                     positiveRules,
                     attributeGroups,
                     mergedEnchants,
+                    mergedHitEffects,
+                    maxBackpackSlots,
                     combinedPower,
                     true
+            );
+        }
+
+        if (!mergedHitEffects.isEmpty()) {
+            stack.set(
+                    AlternateDimensionModComponents.HIT_EFFECTS.get(),
+                    new HitEffectsComponent(List.copyOf(mergedHitEffects))
             );
         }
 
@@ -131,6 +148,21 @@ public class ComponentMerger {
             stack.set(DataComponents.ATTRIBUTE_MODIFIERS, attrBuilder.build());
         }
 
+        if (maxBackpackSlots[0] > 0) {
+            int finalSlots = maxBackpackSlots[0];
+            List<ItemStack> preservedItems = List.of();
+            if (existingBackpack != null && !existingBackpack.items().isEmpty()) {
+                List<ItemStack> oldItems = existingBackpack.items();
+                preservedItems = oldItems.size() > finalSlots
+                        ? oldItems.subList(0, finalSlots)
+                        : oldItems;
+            }
+            stack.set(
+                    AlternateDimensionModComponents.BACKPACK_INVENTORY,
+                    new BackpackInventoryComponent(finalSlots, preservedItems)
+            );
+        }
+
         ItemEnchantments finalEnchants = mergedEnchants.toImmutable();
         if (!finalEnchants.isEmpty()) {
             stack.set(DataComponents.ENCHANTMENTS, finalEnchants);
@@ -148,6 +180,8 @@ public class ComponentMerger {
         stack.remove(DataComponents.MAX_DAMAGE);
         stack.remove(AlternateDimensionModComponents.CURIO_SLOT);
         stack.remove(AlternateDimensionModComponents.PERMANENT_EFFECTS);
+        stack.remove(AlternateDimensionModComponents.BACKPACK_INVENTORY);
+        stack.remove(AlternateDimensionModComponents.HIT_EFFECTS);
     }
 
     public static void applyPatchSafely(
@@ -157,6 +191,8 @@ public class ComponentMerger {
             Map<HolderSet<Block>, Tool.Rule> positiveRulesOut,
             Map<AttributeKey, AttributeAccumulator> attrGroupsOut,
             ItemEnchantments.Mutable enchantsOut,
+            List<HitEffectsComponent.HitEffect> hitEffectsOut,
+            int[] maxBackpackSlotsOut,
             float combinedPower,
             boolean allowTierDenialRules
     ) {
@@ -178,7 +214,6 @@ public class ComponentMerger {
                         float scaledSpeed = rule.speed().map(s -> s * combinedPower).orElse(combinedPower);
                         Tool.Rule newRule = new Tool.Rule(rule.blocks(), Optional.of(scaledSpeed), Optional.of(true));
 
-                        // Deduplicate identical block sets, keeping the faster mining speed
                         positiveRulesOut.merge(rule.blocks(), newRule, (existing, incoming) -> {
                             float existingSpeed = existing.speed().orElse(0.0f);
                             float incomingSpeed = incoming.speed().orElse(0.0f);
@@ -186,8 +221,10 @@ public class ComponentMerger {
                         });
                     }
                 }
-            } else if (type == DataComponents.ATTRIBUTE_MODIFIERS && value instanceof ItemAttributeModifiers mods) {
-                for (ItemAttributeModifiers.Entry modEntry : mods.modifiers()) {
+            } else if (type == DataComponents.ATTRIBUTE_MODIFIERS && value instanceof ItemAttributeModifiers(
+                    List<ItemAttributeModifiers.Entry> modifiers
+            )) {
+                for (ItemAttributeModifiers.Entry modEntry : modifiers) {
                     AttributeModifier mod = modEntry.modifier();
                     double amount = mod.amount();
 
@@ -202,15 +239,23 @@ public class ComponentMerger {
                 }
             } else if (type == DataComponents.ENCHANTMENTS && value instanceof ItemEnchantments patchEnchants) {
                 mergeEnchantments(enchantsOut, patchEnchants);
+            } else if (type == AlternateDimensionModComponents.BACKPACK_INVENTORY.get()
+                    && value instanceof BackpackInventoryComponent backpack) {
+                if (backpack.slots() > maxBackpackSlotsOut[0]) {
+                    maxBackpackSlotsOut[0] = backpack.slots();
+                }
+            } else if (type == AlternateDimensionModComponents.HIT_EFFECTS && value instanceof HitEffectsComponent(
+                    List<HitEffectsComponent.HitEffect> effects
+            )) {
+                hitEffectsOut.addAll(effects);
             } else {
                 setUnchecked(stack, type, value);
             }
         }
     }
-
     private static void mergeEnchantments(ItemEnchantments.Mutable target, ItemEnchantments source) {
         for (var entry : source.entrySet()) {
-            Holder<Enchantment> enchant = entry.getKey();
+            Holder enchant = entry.getKey();
             int incomingLevel = entry.getIntValue();
             int currentLevel = target.getLevel(enchant);
             if (incomingLevel > currentLevel) {

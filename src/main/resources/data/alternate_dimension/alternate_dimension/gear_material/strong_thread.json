@@ -1,0 +1,13 @@
+{
+  "name_key": "material.alternate_dimension.strong_thread",
+  "color": 13546883,
+  "durability_multiplier": 0.5,
+  "power_factor": 1.0,
+  "ingredient": "alternate_dimension:strong_thread",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.strong_thread",
+    "tint_with_material": true
+  }
+}

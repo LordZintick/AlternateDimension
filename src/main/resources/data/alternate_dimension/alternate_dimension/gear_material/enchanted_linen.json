@@ -1,0 +1,38 @@
+{
+  "name_key": "material.alternate_dimension.enchanted_linen",
+  "color": 11272436,
+  "durability_multiplier": 0.8,
+  "power_factor": 1.35,
+  "ingredient": "alternate_dimension:enchanted_linen",
+  "name_affix": {
+    "position": "prefix",
+    "priority": 30,
+    "translation_key": "material.alternate_dimension.enchanted_linen",
+    "tint_with_material": true
+  },
+  "components": [
+    {
+      "name": "part.alternate_dimension.backpack",
+      "part_types": [
+        "alternate_dimension:backpack"
+      ],
+      "trait_descriptions": [
+        "trait.alternate_dimension.med_backpack"
+      ],
+      "components": {
+        "alternate_dimension:backpack": {
+          "slots": 18
+        }
+      }
+    },
+    {
+      "name": "part.category.alternate_dimension.all_parts",
+      "trait_descriptions": ["trait.alternate_dimension.enchanted"],
+      "components": {
+        "minecraft:enchantments": {
+          "minecraft:efficiency": 2
+        }
+      }
+    }
+  ]
+}

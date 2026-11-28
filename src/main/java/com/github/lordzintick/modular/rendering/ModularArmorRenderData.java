@@ -30,7 +30,7 @@ public class ModularArmorRenderData {
                     }) {
                         ItemStack stack = entity.getItemBySlot(slot);
                         GearPartsComponent comp = stack.get(AlternateDimensionModComponents.GEAR_PARTS.get());
-                        if (comp != null && comp.parts().size() > 1) {
+                        if (comp != null && !comp.parts().isEmpty()) {
                             wornParts.put(slot, comp);
                         }
                     }

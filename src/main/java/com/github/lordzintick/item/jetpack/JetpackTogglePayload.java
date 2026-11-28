@@ -26,7 +26,7 @@ public record JetpackTogglePayload(boolean toggleHover) implements CustomPacketP
         return TYPE;
     }
 
-    public static void handleOnServer(JetpackTogglePayload payload, IPayloadContext context) {
+    public static void handleServer(JetpackTogglePayload payload, IPayloadContext context) {
         context.enqueueWork(() -> {
             if (!(context.player() instanceof ServerPlayer player)) return;
 

@@ -1,0 +1,36 @@
+{
+  "part_item_name_key": "part.alternate_dimension.backpack",
+  "z_index": 2,
+  "is_handheld": false,
+  "contribute_material_name": false,
+  "texture": "alternate_dimension:item/part_backpack",
+  "armor_texture": "alternate_dimension:textures/models/armor/backpack.png",
+  "base_durability": 100,
+  "power_factor": 1.0,
+  "requires_any": "#alternate_dimension:chestplates",
+  "materials_allowed": "#alternate_dimension:backpack_materials",
+  "incompatible_with": ["alternate_dimension:jetpack_thruster"],
+  "name_affix": {
+    "position": "suffix",
+    "priority": 15,
+    "translation_key": "part.alternate_dimension.backpack",
+    "takes_material": false,
+    "tint_with_material": true
+  },
+  "pattern": {
+    "pattern": [
+      "   ",
+      "SCS",
+      "CBC"
+    ],
+    "key": {
+      "C": "alternate_dimension:cloth",
+      "S": "alternate_dimension:strong_thread",
+      "B": "#alternate_dimension:boxes"
+    },
+    "material_cost": 6
+  },
+  "components": {
+    "alternate_dimension:backpack": {"slots": 9}
+  }
+}

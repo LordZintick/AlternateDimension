@@ -101,16 +101,19 @@ public class ItemEventHandlers {
 
     @SubscribeEvent
     public static void entityHitWithItem(LivingDamageEvent.Pre event) {
-        LivingEntity entity = event.getEntity();
+        LivingEntity target = event.getEntity();
+        if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
 
-        ItemStack stack = event.getSource().getWeaponItem();
-        if (stack == null) return;
-        if (stack.has(AlternateDimensionModComponents.SPARKING)) {
-            stack.get(AlternateDimensionModComponents.SPARKING).apply(entity);
+        ItemStack weapon = event.getSource().getWeaponItem();
+        if (weapon == null || weapon.isEmpty()) {
+            weapon = attacker.getMainHandItem();
+        }
+        if (weapon.has(AlternateDimensionModComponents.SPARKING)) {
+            weapon.get(AlternateDimensionModComponents.SPARKING).apply(target);
         }
 
-        if (stack.has(AlternateDimensionModComponents.HIT_EFFECTS)) {
-            stack.get(AlternateDimensionModComponents.HIT_EFFECTS).apply(entity, (LivingEntity) event.getSource().getDirectEntity());
+        if (weapon.has(AlternateDimensionModComponents.HIT_EFFECTS)) {
+            weapon.get(AlternateDimensionModComponents.HIT_EFFECTS).apply(target, (LivingEntity) event.getSource().getDirectEntity());
         }
     }
 }

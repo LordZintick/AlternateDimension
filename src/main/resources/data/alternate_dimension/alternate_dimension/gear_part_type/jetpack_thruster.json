@@ -7,8 +7,9 @@
   "armor_texture": "alternate_dimension:textures/models/armor/jetpack_thruster.png",
   "base_durability": 100,
   "power_factor": 1.0,
-  "requires_any": "alternate_dimension:chestplate_plating",
+  "requires_any": "#alternate_dimension:chestplates",
   "materials_allowed": "#alternate_dimension:thruster_materials",
+  "incompatible_with": ["alternate_dimension:backpack"],
   "name_affix": {
     "position": "suffix",
     "priority": 15,

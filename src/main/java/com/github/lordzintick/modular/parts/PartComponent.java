@@ -25,26 +25,8 @@ public record PartComponent(
             DataComponentPatch.CODEC.fieldOf("components").forGetter(PartComponent::dataComponentPatch)
     ).apply(instance, PartComponent::new));
 
-    public boolean meetsPartTypes(Set<Holder.Reference<GearPartType>> partsSet) {
-        if (partTypes.isEmpty()) return true;
-
-        for (Holder.Reference<GearPartType> part : partsSet) {
-            if (partTypes.get().contains(Holder.direct(part.value()))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     public boolean meetsPartTypes(GearPartsComponent partsComp) {
-        if (partTypes.isEmpty()) return true;
-        Set<Holder<GearPartType>> partsSet = partsComp.parts().keySet();
-
-        for (Holder<GearPartType> part : partsSet) {
-            if (partTypes.get().contains(part)) {
-                return true;
-            }
-        }
-        return false;
+        return partTypes.map(holders -> holders.stream()
+                .allMatch(part -> partsComp.parts().containsKey(part))).orElse(true);
     }
 }

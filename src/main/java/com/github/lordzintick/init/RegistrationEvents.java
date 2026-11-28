@@ -1,5 +1,6 @@
 package com.github.lordzintick.init;
 
+import com.github.lordzintick.item.backpack.OpenBackpackPayload;
 import com.github.lordzintick.item.jetpack.JetpackTogglePayload;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,6 +14,7 @@ public class RegistrationEvents {
     public static void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1");
 
-        registrar.playToServer(JetpackTogglePayload.TYPE, JetpackTogglePayload.STREAM_CODEC, JetpackTogglePayload::handleOnServer);
+        registrar.playToServer(JetpackTogglePayload.TYPE, JetpackTogglePayload.STREAM_CODEC, JetpackTogglePayload::handleServer);
+        registrar.playToServer(OpenBackpackPayload.TYPE, OpenBackpackPayload.STREAM_CODEC, OpenBackpackPayload::handleServer);
     }
 }

@@ -28730,185 +28730,6 @@
       "path": "~/GeneralFeatures/Misc"
     },
     {
-      "name": "BackpackSlot",
-      "type": "curiosslot",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "backpack_slot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/curios/tags/item/backpack_slot.json",
-          "src/main/resources/data/alternate_dimension/curios/entities/backpack_slot.json",
-          "src/main/resources/data/alternate_dimension/curios/slots/backpack_slot.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "BackpackBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "backpack_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "CheesyBackpackBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cheesy_backpack_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "EnchantedBackpackBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enchanted_backpack_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "OpenCloseBackpack",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_close_backpack",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenCloseBackpackProcedure.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "OpenBackpackKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_backpack_key",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/network/OpenBackpackKeyMessage.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "PouchSlot",
-      "type": "curiosslot",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pouch_slot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/alternate_dimension/curios/slots/pouch_slot.json",
-          "src/main/resources/data/alternate_dimension/curios/entities/pouch_slot.json",
-          "src/main/resources/data/curios/tags/item/pouch_slot.json"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "EssencePouchBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "essence_pouch_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "HuntersPouchBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hunters_pouch_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "FruitPouchBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fruit_pouch_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "OpenClosePouch",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_close_pouch",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/procedures/OpenClosePouchProcedure.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "ComboPouchGUI",
       "type": "gui",
       "compiles": true,
@@ -28953,30 +28774,6 @@
       "path": "~/GeneralFeatures/Misc"
     },
     {
-      "name": "OpenPouchKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_pouch_key",
-      "metadata": {
-        "files": [
-          "src/main/java/com/lordkittycat/alternate_dimension/network/OpenPouchKeyMessage.java"
-        ]
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
-      "name": "ComboPouchBauble",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "combo_pouch_bauble",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GeneralFeatures/Misc"
-    },
-    {
       "name": "BasicMachineInfo",
       "type": "jeiinformation",
       "compiles": true,
@@ -28997,6 +28794,71 @@
         "files": []
       },
       "path": "~/GeneralFeatures/Machinery"
+    },
+    {
+      "name": "EnchantedLinen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_linen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/alternate_dimension/models/item/enchanted_linen.json",
+          "src/main/java/com/lordkittycat/alternate_dimension/item/EnchantedLinenItem.java",
+          "src/main/resources/assets/alternate_dimension/items/enchanted_linen.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "EnchantedLinenRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_linen_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/advancement/recipes/enchanted_linen_recipe.json",
+          "src/main/resources/data/alternate_dimension/recipe/enchanted_linen_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "ApplyFireFromAmplifier",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_fire_from_amplifier",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amplifier",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/ApplyFireFromAmplifierProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "Incendiary",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incendiary",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/potion/IncendiaryMobEffect.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Misc"
     }
   ],
   "variable_elements": [
@@ -30847,7 +30709,8 @@
       "Sulfur",
       "Phosphorus",
       "PhosphoriumIngot",
-      "HalloweenQuestDisc"
+      "HalloweenQuestDisc",
+      "EnchantedLinen"
     ],
     "CUSTOM:AlternateDimensionEquipment": [
       "MathWorkbook",
@@ -31285,7 +31148,7 @@
       "entity.alternate_dimension.cloud_kitty": "Cloud Guardian Alpha",
       "item.alternate_dimension.meteorite_dust": "Meteorite Dust",
       "biome.alternate_dimension.highlands": "Highlands",
-      "gui.alternate_dimension.backpack_gui.label_backpack": "Backpack",
+      "gui.alternate_dimension.backpack_gui.label_backpack": "Satchel",
       "entity.alternate_dimension.red_gummy_bear": "Red Gummy Bear",
       "item.alternate_dimension.green_gummy_bear_mob_spawn_egg": "Green Gummy Bear Spawn Egg",
       "item.alternate_dimension.salt": "Salt",
@@ -31319,7 +31182,7 @@
       "item.alternate_dimension.hemp": "Hemp",
       "block.alternate_dimension.evilstone_block": "Block of Evilstone",
       "subtitles.redwood_forest_quiet": "",
-      "item.alternate_dimension.backpack": "Basic Backpack",
+      "item.alternate_dimension.backpack": "Satchel",
       "entity.alternate_dimension.green_gummy_bear_mob": "Green Gummy Bear",
       "subtitles.new_forest_music": "",
       "item.alternate_dimension.variable": "Variable",
@@ -31432,12 +31295,12 @@
       "subtitles.calm_ocean": "",
       "item.alternate_dimension.blackberry": "Blackberry",
       "block.alternate_dimension.blackberry_bush": "Blackberry Bush",
-      "gui.alternate_dimension.cheesy_backpack_gui.label_backpack": "Backpack",
+      "gui.alternate_dimension.cheesy_backpack_gui.label_backpack": "Satchel",
       "gui.alternate_dimension.cheesy_backpack_gui.label_cheesy": "Cheesy",
-      "item.alternate_dimension.cheesy_backpack": "Cheesy Backpack",
-      "gui.alternate_dimension.enchanted_backpack_gui.label_backpack": "Backpack",
+      "item.alternate_dimension.cheesy_backpack": "Cheesy Satchel",
+      "gui.alternate_dimension.enchanted_backpack_gui.label_backpack": "Satchel",
       "gui.alternate_dimension.enchanted_backpack_gui.label_enchanted": "Enchanted",
-      "item.alternate_dimension.enchanted_backpack": "Enchanted Backpack",
+      "item.alternate_dimension.enchanted_backpack": "Magic Satchel",
       "block.alternate_dimension.plant_matter": "Plant Matter",
       "block.alternate_dimension.plant_stem": "Plant Stem",
       "block.alternate_dimension.clover_patch": "Clover Patch",
@@ -32640,13 +32503,9 @@
       "tooltip.alternate_dimension.jetpack_fuel_per_item": "Fuel Per Item: %s",
       "tooltip.alternate_dimension.jetpack_fuel_usage": "Fuel Usage: %s/tick",
       "tooltip.alternate_dimension.no_traits": "(No Traits)",
-      "curios.identifier.backpack_slot": "Backpack",
-      "key.alternate_dimension.open_backpack_key": "Open/Close Backpack",
-      "curios.identifier.pouch_slot": "Pouch",
       "gui.alternate_dimension.combo_pouch_gui.label_backpack": "Combo Pouch",
       "item.alternate_dimension.combo_pouch": "Combo Pouch",
       "item.alternate_dimension.combo_pouch.description_0": "A combination of the Hunter\u0027s and Essence pouches; stores all your mob drops!",
-      "key.alternate_dimension.open_pouch_key": "Open/Close Pouch",
       "trait.alternate_dimension.deflective": "§5Deflective",
       "trait.alternate_dimension.exposure": "§2Exposure",
       "trait.alternate_dimension.quickening": "§6Quickening",
@@ -32668,15 +32527,24 @@
       "block.alternate_dimension.compressor.description_0": "Operation Mana: 1",
       "block.alternate_dimension.mana_mystifier.description_0": "Operation Mana: 2",
       "block.alternate_dimension.fungal_processor.description_0": "Operation Mana: 0",
-      "jei.alternate_dimension.mana_logistics_info": "These are blocks used for the transport and storage of mana.\nThe synthesizer consumes certain magical items to produce mana in its internal buffer.\nThe tank stores mana within for later use.\nThe \"Manantenna\" transports mana wirelessly from a target position to the block it is attached to.\nRight-click on the manantenna with a wrench and a position card in your offhand to set the target source position."
+      "jei.alternate_dimension.mana_logistics_info": "These are blocks used for the transport and storage of mana.\nThe synthesizer consumes certain magical items to produce mana in its internal buffer.\nThe tank stores mana within for later use.\nThe \"Manantenna\" transports mana wirelessly from a target position to the block it is attached to.\nRight-click on the manantenna with a wrench and a position card in your offhand to set the target source position.",
+      "tooltip.alternate_dimension.backpack_usage": "Backpack Fill: %1$s / %2$s slots",
+      "part.alternate_dimension.backpack": "Backpack",
+      "trait.alternate_dimension.small_backpack": "§1Backpack (Small)",
+      "part.alternate_dimension.vest": "Vest",
+      "material.alternate_dimension.strong_thread": "Strong Thread",
+      "tooltip.alternate_dimension.hold_ctl": "Hold [Control] for backpack details.",
+      "item.alternate_dimension.enchanted_linen": "Enchanted Linen",
+      "material.alternate_dimension.enchanted_linen": "Enchanted Linen",
+      "trait.alternate_dimension.med_backpack": "§5Backpack (Medium)",
+      "trait.alternate_dimension.enchanted": "§5Enchanted",
+      "effect.alternate_dimension.incendiary": "Incendiary"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModWoodTypes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModConfigs.java",
-      "src/main/resources/data/alternate_dimension/curios/entities/slots.json",
-      "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModCuriosCompat.java",
       "src/main/java/com/lordkittycat/alternate_dimension/client/AlternateDimensionModSkyboxRenderer.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModFluids.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModFluidTypes.java",
@@ -32691,7 +32559,6 @@
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModJeiPlugin.java",
       "src/main/java/com/lordkittycat/alternate_dimension/jei_recipes/EmptyIngredient.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModRecipeTypes.java",
-      "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModKeyMappings.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModMobEffects.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBrewingRecipes.java",
       "src/main/java/com/lordkittycat/alternate_dimension/init/AlternateDimensionModBlocks.java",

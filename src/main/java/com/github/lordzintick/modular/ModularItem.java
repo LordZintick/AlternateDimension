@@ -2,6 +2,8 @@ package com.github.lordzintick.modular;
 
 import com.github.lordzintick.init.AlternateDimensionModComponents;
 import com.github.lordzintick.item.PermanentCurioEffectsComponent;
+import com.github.lordzintick.item.backpack.BackpackInventoryComponent;
+import com.github.lordzintick.item.backpack.BackpackTooltipComponent;
 import com.github.lordzintick.item.jetpack.JetpackComponent;
 import com.github.lordzintick.item.jetpack.JetpackFuelComponent;
 import com.github.lordzintick.modular.parts.GearMaterial;
@@ -23,9 +25,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.tooltip.BundleTooltip;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.BundleContents;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.TooltipDisplay;
@@ -245,6 +251,17 @@ public class ModularItem extends Item implements ICurioItem {
     }
 
     @Override
+    public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
+        BackpackInventoryComponent backpack = stack.get(AlternateDimensionModComponents.BACKPACK_INVENTORY);
+        if (backpack == null || backpack.occupiedSlots() <= 0) return Optional.empty();
+        if (Minecraft.getInstance().hasControlDown()) {
+            return Optional.of(new BackpackTooltipComponent(backpack));
+        } else {
+            return Optional.empty();
+        }
+    }
+
+    @Override
     public void appendHoverText(
             ItemStack stack,
             TooltipContext context,
@@ -274,6 +291,12 @@ public class ModularItem extends Item implements ICurioItem {
 
             addComponentTraits(stack, tooltip, sortedParts);
             return;
+        }
+
+        BackpackInventoryComponent backpack = stack.get(AlternateDimensionModComponents.BACKPACK_INVENTORY);
+        if (backpack != null && !Minecraft.getInstance().hasControlDown()) {
+            tooltip.accept(Component.translatable("tooltip.alternate_dimension.hold_ctl")
+                    .withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         showDurability(partsComp, tooltip);
@@ -361,7 +384,9 @@ public class ModularItem extends Item implements ICurioItem {
         if (traitDescriptions.isEmpty()) {
             tooltip.accept(Component.translatable("tooltip.alternate_dimension.no_traits").withStyle(ChatFormatting.GRAY));
         }
+        Set<String> seenTraits = new HashSet<>();
         traitDescriptions.forEach(desc -> {
+            if (!seenTraits.add(desc.getString())) return;
             tooltip.accept(Component.literal(indent).withStyle(ChatFormatting.DARK_GRAY)
                     .append(desc));
         });
@@ -378,6 +403,10 @@ public class ModularItem extends Item implements ICurioItem {
         traits.addAll(part.traitDescriptions().stream()
                 .map(Component::translatable)
                 .toList());
+        Set<String> seenTraits = new HashSet<>();
+        traits = traits.stream()
+                .filter(comp -> seenTraits.add(comp.getString()))
+                .toList();
 
         for (int i = 0; i < traits.size(); i++) {
             Component trait = traits.get(i);
