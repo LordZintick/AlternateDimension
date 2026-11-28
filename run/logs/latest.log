@@ -1,95 +1,743 @@
-[27Nov2026 21:04:42.417] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 627ms
-[27Nov2026 21:04:42.437] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 11.0.15 (CLIENT in DEV)
-[27Nov2026 21:04:42.437] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\run
-[27Nov2026 21:04:42.517] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 109) in 35ms
-[27Nov2026 21:04:42.518] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
-[27Nov2026 21:04:42.519] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/11.0.15/b254aa4ec40828f8ce65411dcb7fb9f6ce008064/earlydisplay-11.0.15.jar
-[27Nov2026 21:04:42.520] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/11.0.15/69ddd98736a6b095783523404d1af8992842722/loader-11.0.15.jar
-[27Nov2026 21:04:42.526] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[27Nov2026 21:04:43.277] [ForkJoinPool.commonPool-worker-1/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
-[27Nov2026 21:04:43.381] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: AMD Radeon(TM) RX Vega 11 Graphics GL version 3.3.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
-[27Nov2026 21:04:43.456] [ForkJoinPool.commonPool-worker-1/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates mcreator%%D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\build\classes\java\main;mcreator%%D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\build\resources\main from env
-[27Nov2026 21:04:43.727] [ForkJoinPool.commonPool-worker-1/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[27Nov2026 21:04:43.730] [ForkJoinPool.commonPool-worker-1/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[28Nov2026 08:35:11.351] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 647ms
+[28Nov2026 08:35:11.374] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 11.0.15 (CLIENT in DEV)
+[28Nov2026 08:35:11.374] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\run
+[28Nov2026 08:35:11.471] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 3 early service jars (out of 117) in 49ms
+[28Nov2026 08:35:11.472] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[28Nov2026 08:35:11.474] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/11.0.15/b254aa4ec40828f8ce65411dcb7fb9f6ce008064/earlydisplay-11.0.15.jar
+[28Nov2026 08:35:11.476] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - mods/sodium-neoforge-0.9.2+mc26.1.2.jar
+[28Nov2026 08:35:11.477] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/11.0.15/69ddd98736a6b095783523404d1af8992842722/loader-11.0.15.jar
+[28Nov2026 08:35:11.490] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Running graphics bootstrap plugin sodium
+[28Nov2026 08:35:11.497] [main/INFO] [Sodium-GraphicsAdapterProbe/]: Searching for graphics cards...
+[28Nov2026 08:35:11.911] [main/INFO] [Sodium-GraphicsAdapterProbe/]: Found graphics adapter: AdapterInfo{vendor=AMD, description='AMD Radeon(TM) RX Vega 11 Graphics', adapterType=0x0000032B, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\u0399223.inf_amd64_afdf17d03cd73307\B396953\atig6pxx.dll', openglIcdVersion=31.0.21905.1001}
+[28Nov2026 08:35:11.917] [main/WARN] [Sodium-Workarounds/]: Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [AMD_GAME_OPTIMIZATION_BROKEN]
+[28Nov2026 08:35:11.918] [main/WARN] [Sodium-Workarounds/]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[28Nov2026 08:35:11.918] [main/INFO] [Sodium-AmdWorkarounds/]: Modifying process environment to apply workarounds for the AMD graphics driver...
+[28Nov2026 08:35:11.942] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[28Nov2026 08:35:12.477] [ForkJoinPool.commonPool-worker-2/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[28Nov2026 08:35:12.551] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: AMD Radeon(TM) RX Vega 11 Graphics GL version 3.3.0 Core Profile Context 23.11.1.231017, ATI Technologies Inc.
+[28Nov2026 08:35:12.619] [ForkJoinPool.commonPool-worker-2/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates mcreator%%D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\build\classes\java\main;mcreator%%D:\Development\MCreator\MCreatorWorkspaces\alternate_dimension\build\resources\main from env
+[28Nov2026 08:35:12.964] [ForkJoinPool.commonPool-worker-2/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 4 dependencies adding them to mods collection
+[28Nov2026 08:35:12.970] [ForkJoinPool.commonPool-worker-2/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
-		AlternateDimension 2.1.0 (alternate_dimension)
+		AlternateDimension 2.1.1 (alternate_dimension)
+		AppleSkin 3.0.9+mc26.1 (appleskin)
 		Curios API 15.0.0-beta.2+26.1.2 (curios)
+		Distant Horizons 3.3.3 (distanthorizons)
+		Jade 26.1.11+neoforge (jade)
 		Just Enough Items 29.6.2.38 (jei)
 		Minecraft 26.1.2 (minecraft)
+		Neat 26.1.2-48-NEOFORGE (neat)
 		NeoForge 26.1.2.95 (neoforge)
-[27Nov2026 21:04:44.293] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/41c4a3984a80f4679e759fb9f495587acc5cdac7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=FML Env=CLIENT
-[27Nov2026 21:04:44.337] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
-[27Nov2026 21:04:44.338] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.1.2.95/b2c6a32bb07fe4e8f919bfb76cf1645be0a17b48/neoforge-26.1.2.95-universal.jar > net.neoforged.neoforge-coremods-26.1.2.95.jar
-[27Nov2026 21:04:44.495] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+		Simple Voice Chat 2.6.24+26.1.2 (voicechat)
+		Sodium 0.9.2+mc26.1.2 (sodium)
+		Xaero's Minimap 26.5.0 (xaerominimap)
+		Xaero's World Map 1.46.0 (xaeroworldmap)
+		XaeroLib 1.7.3 (xaerolib)
+[28Nov2026 08:35:13.815] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.3+mixin.0.8.7/41c4a3984a80f4679e759fb9f495587acc5cdac7/sponge-mixin-0.17.3+mixin.0.8.7.jar Service=FML Env=CLIENT
+[28Nov2026 08:35:13.888] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[28Nov2026 08:35:13.889] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.1.2.95/b2c6a32bb07fe4e8f919bfb76cf1645be0a17b48/neoforge-26.1.2.95-universal.jar > net.neoforged.neoforge-coremods-26.1.2.95.jar
+[28Nov2026 08:35:14.107] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
  - alternate_dimension (composite(folder(D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/build/classes/java/main), folder(D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/build/resources/main)))
+ - appleskin (jar(mods/appleskin-neoforge-mc26.1-3.0.9.jar))
  - curios (jar(C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/top.theillusivec4.curios/curios-neoforge/15.0.0-beta.2+26.1.2/231161937c73eadc0313bff7abaa3486e0a89853/curios-neoforge-15.0.0-beta.2+26.1.2.jar))
+ - distanthorizons (jar(mods/DistantHorizons-3.3.3-26.1.2-fabric-neoforge.jar))
+ - jade (jar(mods/Jade-mc26.1-NeoForge-26.1.11.jar))
  - jei (jar(C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/mezz.jei/jei-26.1.2-neoforge/29.6.2.38/9fce98052b63b74fb7d89b14ab06f2e2b0a0697c/jei-26.1.2-neoforge-29.6.2.38.jar))
  - minecraft (composite(filtered(jar(D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/build/moddev/artifacts/minecraft-patched-26.1.2.95.jar)), filtered(jar(D:/Development/MCreator/MCreatorWorkspaces/alternate_dimension/build/moddev/artifacts/minecraft-patched-26.1.2.95.jar))))
  - mixinextras.neoforge (jar(C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.1.2.95/b2c6a32bb07fe4e8f919bfb76cf1645be0a17b48/neoforge-26.1.2.95-universal.jar > mixinextras-neoforge-0.5.4.jar))
+ - neat (jar(mods/Neat-26.1.2-48-NEOFORGE.jar))
  - neoforge (composite(filtered(jar(C:/Users/HappyMagician/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/26.1.2.95/b2c6a32bb07fe4e8f919bfb76cf1645be0a17b48/neoforge-26.1.2.95-universal.jar))))
  - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
-[27Nov2026 21:04:44.521] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 45ms
-[27Nov2026 21:04:44.641] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
-[27Nov2026 21:04:45.869] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
-[27Nov2026 21:04:47.173] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 294 Datafixer optimizations took 504 milliseconds
-[27Nov2026 21:04:47.364] [main/WARN] [oshi.util.platform.windows.PerfDataUtil/]: Failed to add PDH Counter: \Paging File(_Total)\% Usage, Error code: 0xC0000BB8
-[27Nov2026 21:04:47.364] [main/WARN] [oshi.util.platform.windows.PerfCounterQueryHandler/]: Failed to add counter for PDH counter: \Paging File(_Total)\% Usage
-[27Nov2026 21:04:47.365] [main/INFO] [oshi.util.platform.windows.PerfCounterQuery/]: Disabling further attempts to query Paging File.
-[27Nov2026 21:04:48.212] [main/WARN] [oshi.util.platform.windows.WmiQueryHandler/]: COM exception: Invalid Query: SELECT PERCENTUSAGE FROM Win32_PerfRawData_PerfOS_PagingFile
-[27Nov2026 21:04:54.301] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[27Nov2026 21:04:54.304] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[27Nov2026 21:04:54.308] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[27Nov2026 21:04:54.310] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[27Nov2026 21:04:54.312] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[27Nov2026 21:04:54.315] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [time, set, time] and [time, set, timemarker] with inputs: [0, 0s, 0d, 0t]
-[27Nov2026 21:04:54.318] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [time, set, timemarker] and [time, set, time] with inputs: [012]
-[27Nov2026 21:04:54.321] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [time, of, clock, set, time] and [time, of, clock, set, timemarker] with inputs: [0, 0s, 0d, 0t]
-[27Nov2026 21:04:54.323] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [time, of, clock, set, timemarker] and [time, of, clock, set, time] with inputs: [012]
-[27Nov2026 21:04:54.326] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
-[27Nov2026 21:04:54.419] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 26.1.2.95, for MC 26.1.2
-[27Nov2026 21:04:54.527] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[27Nov2026 21:04:54.532] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.381 milliseconds
-[27Nov2026 21:04:57.779] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[27Nov2026 21:04:57.811] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[27Nov2026 21:04:57.943] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.4.1+2
-[27Nov2026 21:04:58.153] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
-[27Nov2026 21:04:59.577] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/curios, mod/neoforge, mod/alternate_dimension, mod/jei
-[27Nov2026 21:05:00.596] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
-[27Nov2026 21:05:00.597] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
-[27Nov2026 21:05:00.787] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
-[27Nov2026 21:05:01.788] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/friendly_beetle_spawn_egg
-[27Nov2026 21:05:01.789] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_chestplate
-[27Nov2026 21:05:01.790] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_boots
-[27Nov2026 21:05:01.790] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_leggings
-[27Nov2026 21:05:02.205] [resourceLoad/WARN] [net.minecraft.client.resources.model.sprite.TextureSlots$Resolver/]: Unresolved texture references in minecraft:item/generated:
+ - sodium (jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar > net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.jar))
+ - voicechat (jar(mods/voicechat-neoforge-2.6.24+26.1.2.jar))
+ - xaerolib (jar(mods/xaerominimap-neoforge-26.1.2-26.5.0.jar > xaerolib-neoforge-26.1.2-1.7.3.jar))
+ - xaerominimap (jar(mods/xaerominimap-neoforge-26.1.2-26.5.0.jar))
+ - xaeroworldmap (jar(mods/xaeroworldmap-neoforge-26.1.2-1.46.0.jar))
+[28Nov2026 08:35:14.147] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 81ms
+[28Nov2026 08:35:14.258] [main/INFO] [net.neoforged.fml.loading.mixin.MixinFacade/]: Mixin config sodium-frapi.mixins.json from jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar) > jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar > net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.jar) not applied as required mod 'fabric_renderer_api_v1' is missing
+[28Nov2026 08:35:14.275] [main/INFO] [mixin/]: Compatibility level set to JAVA_25
+[28Nov2026 08:35:14.356] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 37 options available, 0 override(s) found
+[28Nov2026 08:35:14.361] [main/WARN] [mixin/]: Reference map 'xaerolib.refmap.json' for xaerolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2026 08:35:14.363] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2026 08:35:14.372] [main/WARN] [mixin/]: Reference map 'neat.refmap.json' for neat.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2026 08:35:14.380] [main/WARN] [mixin/]: Reference map 'xaeroworldmap.refmap.json' for xaeroworldmap.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2026 08:35:14.928] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinChunkGenerator] -> [net.minecraft.world.level.chunk.ChunkGenerator]...
+[28Nov2026 08:35:14.930] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinChunkMap] -> [net.minecraft.server.level.ChunkMap]...
+[28Nov2026 08:35:14.932] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinServerPlayer] -> [net.minecraft.server.level.ServerPlayer]...
+[28Nov2026 08:35:14.933] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinTFChunkGenerator] -> [net.minecraft.world.level.chunk.ChunkGenerator]...
+[28Nov2026 08:35:14.935] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinTracingExecutor] -> [net.minecraft.TracingExecutor]...
+[28Nov2026 08:35:14.936] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinUtilBackgroundThread] -> [net.minecraft.util.Util]...
+[28Nov2026 08:35:14.938] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.server.MixinLevelTicks] -> [net.minecraft.world.ticks.LevelTicks]...
+[28Nov2026 08:35:14.963] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinClientPacketListener] -> [net.minecraft.client.multiplayer.ClientPacketListener]...
+[28Nov2026 08:35:14.964] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinDebugScreenOverlay] -> [net.minecraft.client.gui.components.DebugScreenOverlay]...
+[28Nov2026 08:35:14.965] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinFogRenderer] -> [net.minecraft.client.renderer.fog.FogRenderer]...
+[28Nov2026 08:35:14.966] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinGameRenderer] -> [net.minecraft.client.renderer.GameRenderer]...
+[28Nov2026 08:35:14.969] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Skip DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinImmersivePortalsRenderStates] -> [qouteall.imm_ptl.core.render.context_management.RenderStates] due to DH logic.
+[28Nov2026 08:35:14.971] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Skip DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinIrisFrameBuffer] -> [net.irisshaders.iris.gl.framebuffer.GlFramebuffer] due to DH logic.
+[28Nov2026 08:35:14.972] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinLevelRenderer] -> [net.minecraft.client.renderer.LevelRenderer]...
+[28Nov2026 08:35:14.973] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinChunkSectionsToRender] -> [net.minecraft.client.renderer.chunk.ChunkSectionsToRender]...
+[28Nov2026 08:35:14.975] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinLightTexture] -> [net.minecraft.client.renderer.Lightmap]...
+[28Nov2026 08:35:14.976] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinMinecraft] -> [net.minecraft.client.Minecraft]...
+[28Nov2026 08:35:14.978] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinOptionsScreen] -> [net.minecraft.client.gui.screens.options.OptionsScreen]...
+[28Nov2026 08:35:14.979] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinSharedConstants] -> [net.minecraft.SharedConstants]...
+[28Nov2026 08:35:14.980] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinProjectionMatrixBuffer] -> [net.minecraft.client.renderer.ProjectionMatrixBuffer]...
+[28Nov2026 08:35:14.981] [main/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.commonMixins.AbstractDhMixinPlugin/]: Apply DH mixin [com.seibel.distanthorizons.neoforge.mixins.client.MixinMain] -> [net.minecraft.client.main.Main]...
+[28Nov2026 08:35:15.497] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[28Nov2026 08:35:16.026] [main/INFO] [DistantHorizons-SharedConstants/]: DH is setting Minecraft's SharedConstants.IS_RUNNING_IN_IDE to [false]
+[28Nov2026 08:35:18.302] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 294 Datafixer optimizations took 770 milliseconds
+[28Nov2026 08:35:18.375] [main/WARN] [oshi.util.platform.windows.PerfDataUtil/]: Failed to add PDH Counter: \Paging File(_Total)\% Usage, Error code: 0xC0000BB8
+[28Nov2026 08:35:18.375] [main/WARN] [oshi.util.platform.windows.PerfCounterQueryHandler/]: Failed to add counter for PDH counter: \Paging File(_Total)\% Usage
+[28Nov2026 08:35:18.375] [main/INFO] [oshi.util.platform.windows.PerfCounterQuery/]: Disabling further attempts to query Paging File.
+[28Nov2026 08:35:23.870] [main/WARN] [oshi.util.platform.windows.WmiQueryHandler/]: COM exception: Invalid Query: SELECT PERCENTUSAGE FROM Win32_PerfRawData_PerfOS_PagingFile
+[28Nov2026 08:35:30.624] [modloading-worker-0/INFO] [xaero.hud.minimap.MinimapLogs/]: Xaero's Minimap: World Map found!
+[28Nov2026 08:35:30.625] [modloading-worker-0/INFO] [xaero.hud.minimap.MinimapLogs/]: No Optifine!
+[28Nov2026 08:35:30.625] [modloading-worker-0/INFO] [xaero.hud.minimap.MinimapLogs/]: Xaero's Minimap: No Vivecraft!
+[28Nov2026 08:35:30.641] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering common data for channel xaerolib:main!
+[28Nov2026 08:35:30.652] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering client data for channel xaerolib:main!
+[28Nov2026 08:35:30.653] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 26.1.2.95, for MC 26.1.2
+[28Nov2026 08:35:30.662] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary common config for channel xaerolib:main!
+[28Nov2026 08:35:30.670] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading server config profiles for channel xaerolib:main!
+[28Nov2026 08:35:30.677] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary client config for channel xaerolib:main!
+[28Nov2026 08:35:30.685] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading client config profiles for channel xaerolib:main!
+[28Nov2026 08:35:30.692] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering common data for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.710] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering client data for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.722] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary common config for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.728] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading server config profiles for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.735] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[28Nov2026 08:35:30.737] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary client config for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.741] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 4.358 milliseconds
+[28Nov2026 08:35:30.746] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading client config profiles for channel xaeroworldmap:main!
+[28Nov2026 08:35:30.755] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering common data for channel xaerominimap:main!
+[28Nov2026 08:35:30.779] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering client data for channel xaerominimap:main!
+[28Nov2026 08:35:30.804] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary common config for channel xaerominimap:main!
+[28Nov2026 08:35:30.810] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading server config profiles for channel xaerominimap:main!
+[28Nov2026 08:35:30.818] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary client config for channel xaerominimap:main!
+[28Nov2026 08:35:30.825] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading client config profiles for channel xaerominimap:main!
+[28Nov2026 08:35:34.386] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[28Nov2026 08:35:34.414] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[28Nov2026 08:35:34.687] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.4.1+2
+[28Nov2026 08:35:34.950] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[28Nov2026 08:35:36.962] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 1/2!
+[28Nov2026 08:35:36.963] [modloading-worker-0/WARN] [voicechat/]: [voicechat/Voicechat] Running in debug mode - Don't leave this enabled in production!
+[28Nov2026 08:35:36.964] [modloading-worker-0/INFO] [voicechat/]: [voicechat/Voicechat] Compatibility version 20
+[28Nov2026 08:35:37.020] [modloading-worker-0/INFO] [voicechat/]: [voicechat/PluginManager] Loading plugins
+[28Nov2026 08:35:37.025] [modloading-worker-0/INFO] [voicechat/]: [voicechat/PluginManager] Loaded 0 plugin(s)
+[28Nov2026 08:35:37.026] [modloading-worker-0/INFO] [voicechat/]: [voicechat/PluginManager] Initializing plugins
+[28Nov2026 08:35:37.026] [modloading-worker-0/INFO] [voicechat/]: [voicechat/PluginManager] Initialized 0 plugin(s)
+[28Nov2026 08:35:37.041] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib client 1/3!
+[28Nov2026 08:35:37.042] [modloading-worker-0/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 1/3
+[28Nov2026 08:35:37.043] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading Xaero's World Map - Stage 1/3
+[28Nov2026 08:35:37.068] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Initializing Distant Horizons client, firing DhApiBeforeDhInitEvent...
+[28Nov2026 08:35:37.086] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Running library validation...
+[28Nov2026 08:35:37.111] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Initializing Opus
+[28Nov2026 08:35:37.127] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/neoforge/voicechat
+[28Nov2026 08:35:37.146] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Successfully initialized Opus
+[28Nov2026 08:35:37.147] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Initializing RNNoise
+[28Nov2026 08:35:37.166] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Successfully initialized RNNoise
+[28Nov2026 08:35:37.168] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Initializing Speex
+[28Nov2026 08:35:37.180] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Successfully initialized Speex
+[28Nov2026 08:35:37.181] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Initializing LAME
+[28Nov2026 08:35:37.194] [modloading-worker-0/INFO] [voicechat/]: [voicechat/NativeValidator] Successfully initialized LAME
+[28Nov2026 08:35:37.245] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Java.awt.headless set to true. Distant Horizons can correctly display error and info dialog windows.
+[28Nov2026 08:35:37.268] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Distant Horizons, Version: 3.3.3
+[28Nov2026 08:35:37.279] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [optifine]
+[28Nov2026 08:35:37.280] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [c2me]
+[28Nov2026 08:35:37.282] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [imm_ptl_core, immersive_portals, immersive_portals_core]
+[28Nov2026 08:35:37.283] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [chunky]
+[28Nov2026 08:35:37.284] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [iris]
+[28Nov2026 08:35:37.330] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.ConfigHandler/]: Initialising config for [DistantHorizons]
+[28Nov2026 08:35:37.592] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.ConfigHandler/]: [DistantHorizons] Config initialised
+[28Nov2026 08:35:37.645] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.eventHandlers.IgnoredDimensionCsvHandler/]: Dimension ignoring disabled, DH will render all dimensions.
+[28Nov2026 08:35:37.646] [modloading-worker-0/INFO] [com.seibel.distanthorizons.core.logging.DhLogger/]: Applying config to loggers
+[28Nov2026 08:35:37.647] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Garbage collectors: [G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+[28Nov2026 08:35:37.648] [modloading-worker-0/WARN] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Distant Horizons: G1 Garbage collector detected.
+This can cause FPS stuttering. 
+It's recommended to use a concurrent garbage collector 
+like ZGC (Java 21+) or Shenandoah (Java 8 through 17) 
+for a smoother experience. 
+This warning can be disabled in the DH config.
+[28Nov2026 08:35:37.659] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Explicit Garbage Collection: [Enabled]
+[28Nov2026 08:35:37.659] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Distant Horizons client Initialized.
+[28Nov2026 08:35:37.660] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Running Delayed setup...
+[28Nov2026 08:35:37.661] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.AbstractModInitializer/]: Delayed setup complete, firing DhApiAfterDhInitEvent event...
+[28Nov2026 08:35:37.685] [DH-PostClientInit Thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.wrappers.DependencySetup/]: Setting DH Rendering API to: [BLAZE_3D]...
+[28Nov2026 08:35:37.751] [DH-PostClientInit Thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.common.wrappers.DependencySetup/]: DH Rendering successfully bound to: [Blaze3D: OPEN_GL]...
+[28Nov2026 08:35:38.126] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [voicechat] Found status: OUTDATED Current: 2.6.24+26.1.2 Target: 2.6.27+26.1.2
+[28Nov2026 08:35:38.357] [modloading-worker-0/WARN] [xaero.lib.XaeroLib/]: io exception while checking patreon: Online mod data expired! Date: Thu Nov 26 13:14:01 EST 2026
+[28Nov2026 08:35:38.377] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: Loading Xaero's World Map - Stage 2/3
+[28Nov2026 08:35:39.763] [modloading-sync-worker/ERROR] [xaero.map.WorldMap/]: io exception while checking versions: Online mod data expired! Date: Thu Nov 26 13:14:01 EST 2026
+[28Nov2026 08:35:39.765] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: Registered player tracker system: map_synced
+[28Nov2026 08:35:39.769] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: Xaero's WorldMap Mod: Xaero's minimap found!
+[28Nov2026 08:35:39.773] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: Registered player tracker system: minimap_synced
+[28Nov2026 08:35:39.773] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: No Optifine!
+[28Nov2026 08:35:39.774] [modloading-sync-worker/INFO] [xaero.map.WorldMap/]: Xaero's World Map: No Vivecraft!
+[28Nov2026 08:35:39.774] [modloading-sync-worker/WARN] [net.neoforged.fml.DeferredWorkQueue/LOADING]: Mod 'xaeroworldmap' took 1.398 s to run a deferred task.
+[28Nov2026 08:35:39.774] [modloading-sync-worker/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 2/3
+[28Nov2026 08:35:40.761] [modloading-sync-worker/WARN] [xaero.hud.minimap.MinimapLogs/]: io exception while checking versions: Online mod data expired! Date: Thu Nov 26 13:14:01 EST 2026
+[28Nov2026 08:35:40.763] [modloading-sync-worker/INFO] [xaero.hud.minimap.MinimapLogs/]: Registered player tracker system: minimap_synced
+[28Nov2026 08:35:40.764] [modloading-sync-worker/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 2/2!
+[28Nov2026 08:35:40.765] [modloading-sync-worker/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib client 2/3!
+[28Nov2026 08:35:40.819] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: Start loading plugin from Jade: snownee.jade.addon.access.AccessibilityPlugin
+[28Nov2026 08:35:40.829] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: snownee.jade.addon.access.AccessibilityPlugin loaded: 9.953 ms
+[28Nov2026 08:35:40.831] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: Start loading plugin from Jade: snownee.jade.addon.core.CorePlugin
+[28Nov2026 08:35:40.837] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: snownee.jade.addon.core.CorePlugin loaded: 5.538 ms
+[28Nov2026 08:35:40.837] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: Start loading plugin from Jade: snownee.jade.addon.debug.DebugPlugin
+[28Nov2026 08:35:40.841] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: snownee.jade.addon.debug.DebugPlugin loaded: 3.943 ms
+[28Nov2026 08:35:40.843] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: Start loading plugin from Jade: snownee.jade.addon.universal.UniversalPlugin
+[28Nov2026 08:35:40.860] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: snownee.jade.addon.universal.UniversalPlugin loaded: 16.82 ms
+[28Nov2026 08:35:40.862] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: Start loading plugin from Jade: snownee.jade.addon.vanilla.VanillaPlugin
+[28Nov2026 08:35:40.885] [modloading-sync-worker/INFO] [snownee.jade.Jade/]: snownee.jade.addon.vanilla.VanillaPlugin loaded: 22.68 ms
+[28Nov2026 08:35:41.074] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/voicechat,voicechat_api, mod/jade, mod/appleskin, mod/distanthorizons, mod/jei, mod/xaerolib, mod/curios, mod/neat, mod/xaerominimap, mod/xaeroworldmap, mod/neoforge, mod/alternate_dimension
+[28Nov2026 08:35:41.343] [Render thread/INFO] [xaero.map.WorldMap/]: Loading Xaero's World Map - Stage 3/3
+[28Nov2026 08:35:41.347] [Render thread/INFO] [xaero.map.WorldMap/]: New world map region cache hash code: 919937463
+[28Nov2026 08:35:41.448] [Render thread/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 3/3
+[28Nov2026 08:35:41.448] [Render thread/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib client 3/3!
+[28Nov2026 08:35:41.602] [Render thread/INFO] [com.mojang.blaze3d.systems.RenderSystem/]: Thread[#3,Render thread,10,main]
+[28Nov2026 08:35:41.603] [Render thread/INFO] [com.mojang.blaze3d.systems.RenderSystem/]: OpenGL Vendor: ATI Technologies Inc.
+[28Nov2026 08:35:41.603] [Render thread/INFO] [com.mojang.blaze3d.systems.RenderSystem/]: OpenGL Renderer: AMD Radeon(TM) RX Vega 11 Graphics
+[28Nov2026 08:35:41.604] [Render thread/INFO] [com.mojang.blaze3d.systems.RenderSystem/]: OpenGL Version: 3.3.0 Core Profile Context 23.11.1.231017
+[28Nov2026 08:35:41.876] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[28Nov2026 08:35:41.892] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[28Nov2026 08:35:42.276] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[28Nov2026 08:35:43.230] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/friendly_beetle_spawn_egg
+[28Nov2026 08:35:43.232] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_chestplate
+[28Nov2026 08:35:43.233] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_boots
+[28Nov2026 08:35:43.234] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelDiscovery/]: Missing block model: alternate_dimension:item/night_vision_armor_leggings
+[28Nov2026 08:35:43.676] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.sprite.TextureSlots$Resolver/]: Unresolved texture references in minecraft:item/generated:
 	#particle-> #layer0
 
-[27Nov2026 21:05:02.205] [resourceLoad/WARN] [net.minecraft.client.resources.model.sprite.TextureSlots$Resolver/]: Unresolved texture references in minecraft:item/handheld:
+[28Nov2026 08:35:43.677] [Worker-Main-3/WARN] [net.minecraft.client.resources.model.sprite.TextureSlots$Resolver/]: Unresolved texture references in minecraft:item/handheld:
 	#particle-> #layer0
 
-[27Nov2026 21:05:02.365] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model minecraft:item/handheld:
+[28Nov2026 08:35:43.859] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model minecraft:item/handheld:
     particle
-[27Nov2026 21:05:02.365] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model minecraft:item/generated:
+[28Nov2026 08:35:43.859] [Worker-Main-2/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model minecraft:item/generated:
     particle
-[27Nov2026 21:05:02.687] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (High Definition Audio Device)
-[27Nov2026 21:05:02.690] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[27Nov2026 21:05:02.691] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[27Nov2026 21:05:02.702] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[27Nov2026 21:05:02.703] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[27Nov2026 21:05:02.721] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[27Nov2026 21:05:02.722] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[27Nov2026 21:05:02.724] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[27Nov2026 21:05:02.786] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[27Nov2026 21:05:02.787] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[27Nov2026 21:05:02.787] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[27Nov2026 21:05:02.789] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[27Nov2026 21:05:02.789] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/items.png-atlas
-[27Nov2026 21:05:02.871] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[27Nov2026 21:05:02.879] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[27Nov2026 21:05:02.880] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/signs.png-atlas
-[27Nov2026 21:05:02.881] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[27Nov2026 21:05:03.052] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[27Nov2026 21:05:03.179] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[27Nov2026 21:05:07.262] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[28Nov2026 08:35:44.128] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (High Definition Audio Device)
+[28Nov2026 08:35:44.132] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[28Nov2026 08:35:44.132] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[28Nov2026 08:35:44.147] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[28Nov2026 08:35:44.148] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[28Nov2026 08:35:44.166] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[28Nov2026 08:35:44.168] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[28Nov2026 08:35:44.170] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[28Nov2026 08:35:44.232] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[28Nov2026 08:35:44.233] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[28Nov2026 08:35:44.234] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[28Nov2026 08:35:44.236] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[28Nov2026 08:35:44.237] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/items.png-atlas
+[28Nov2026 08:35:44.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[28Nov2026 08:35:44.493] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[28Nov2026 08:35:44.495] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/signs.png-atlas
+[28Nov2026 08:35:44.496] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[28Nov2026 08:35:44.841] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[28Nov2026 08:35:44.986] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[28Nov2026 08:35:45.053] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.jar.updater.SelfUpdater/]: Checking for Distant Horizons [STABLE] update for MC [26.1.2]...
+[28Nov2026 08:35:45.534] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.jar.updater.SelfUpdater/]: Distant Horizons already up to date.
+[28Nov2026 08:35:49.906] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+alternate_dimension (version 2.1.0 -> 2.1.1)
+Things may not work well.
+[28Nov2026 08:35:49.977] [Render thread/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack black_icons, loading it automatically
+[28Nov2026 08:35:49.977] [Render thread/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack classic_icons, loading it automatically
+[28Nov2026 08:35:49.977] [Render thread/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack white_icons, loading it automatically
+[28Nov2026 08:35:52.272] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 2006 recipes
+[28Nov2026 08:35:52.290] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2051 advancements
+[28Nov2026 08:35:52.292] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[28Nov2026 08:35:52.346] [Render thread/INFO] [snownee.jade.Jade/]: LootTableMineableCollector took 5.757 ms
+[28Nov2026 08:35:52.454] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:aluminum_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.459] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:evilstone_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.459] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:holystone_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.461] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:mythril_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.463] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:titanium_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.463] [Render thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:uranium_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:35:52.535] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 26.1.2
+[28Nov2026 08:35:52.535] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[28Nov2026 08:35:52.723] [Server thread/INFO] [Curios API/]: Loaded 11 curio slots
+[28Nov2026 08:35:52.723] [Server thread/INFO] [Curios API/]: Loaded 1 curio entities
+[28Nov2026 08:35:52.728] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Started DhWorld of type [CLIENT_SERVER].
+[28Nov2026 08:35:53.460] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.610] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.743] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.803] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.893] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.894] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.894] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.895] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.896] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.898] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.900] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.902] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\overworld\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:53.991] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:53.993] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@minecraft:overworld}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\minecraft\overworld\data)]].
+[28Nov2026 08:35:54.185] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.309] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.450] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.532] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.561] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:54.561] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:54.561] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:overworld].
+[28Nov2026 08:35:54.614] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.616] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.617] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.619] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.620] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.621] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.624] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.626] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_nether\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:54.694] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:54.734] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_nether}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\minecraft\overworld\data;.\saves\Testing\dimensions\minecraft\the_nether\data)]].
+[28Nov2026 08:35:54.917] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.059] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.242] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.295] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:55.296] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:55.296] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:the_nether].
+[28Nov2026 08:35:55.300] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.385] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.386] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.387] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.388] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.389] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.390] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.393] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.394] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\eleroth\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.443] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:55.496] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\alternate_dimension\eleroth\data;.\saves\Testing\dimensions\minecraft\overworld\data;.\saves\Testing\dimensions\minecraft\the_nether\data)]].
+[28Nov2026 08:35:55.634] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.743] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.875] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:55.937] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.025] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.026] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.028] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.029] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.030] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.031] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.033] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.034] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\minecraft\the_end\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.098] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:56.130] [DH-Request Module Ticker [alternate_dimension:eleroth] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:56.130] [DH-Request Module Ticker [alternate_dimension:eleroth] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:56.130] [DH-Request Module Ticker [alternate_dimension:eleroth] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [alternate_dimension:eleroth].
+[28Nov2026 08:35:56.168] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_end}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\alternate_dimension\eleroth\data;.\saves\Testing\dimensions\minecraft\overworld\data;.\saves\Testing\dimensions\minecraft\the_nether\data;.\saves\Testing\dimensions\minecraft\the_end\data)]].
+[28Nov2026 08:35:56.310] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.417] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.542] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.625] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.695] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:56.695] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:56.695] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:the_end].
+[28Nov2026 08:35:56.751] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.753] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.755] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.757] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.758] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.760] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.763] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.764] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\shroomia\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:56.817] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:56.860] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\alternate_dimension\eleroth\data;.\saves\Testing\dimensions\minecraft\overworld\data;.\saves\Testing\dimensions\minecraft\the_nether\data;.\saves\Testing\dimensions\minecraft\the_end\data;.\saves\Testing\dimensions\alternate_dimension\shroomia\data)]].
+[28Nov2026 08:35:56.992] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.125] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.284] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.346] [DH-Request Module Ticker [alternate_dimension:shroomia] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:57.347] [DH-Request Module Ticker [alternate_dimension:shroomia] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:57.347] [DH-Request Module Ticker [alternate_dimension:shroomia] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [alternate_dimension:shroomia].
+[28Nov2026 08:35:57.360] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.493] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.494] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.495] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.496] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.497] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.498] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.499] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0100-sqlite-deleteLowDetailDataForRegen.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.500] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0110-sqlite-addApplyToParentIndex.sql], for repo: [.\saves\Testing\dimensions\alternate_dimension\solaria\data\DistantHorizons.sqlite]
+[28Nov2026 08:35:57.535] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[28Nov2026 08:35:57.555] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhClientServerLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}] at [[LocalSaveStructure@(.\saves\Testing\dimensions\alternate_dimension\eleroth\data;.\saves\Testing\dimensions\minecraft\overworld\data;.\saves\Testing\dimensions\alternate_dimension\solaria\data;.\saves\Testing\dimensions\minecraft\the_nether\data;.\saves\Testing\dimensions\minecraft\the_end\data;.\saves\Testing\dimensions\alternate_dimension\shroomia\data)]].
+[28Nov2026 08:35:57.561] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[28Nov2026 08:35:57.561] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[28Nov2026 08:35:57.573] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:overworld
+[28Nov2026 08:35:57.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_nether
+[28Nov2026 08:35:57.676] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:eleroth
+[28Nov2026 08:35:57.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_end
+[28Nov2026 08:35:57.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:shroomia
+[28Nov2026 08:35:57.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:solaria
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (eleroth): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (shroomia): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (solaria): All chunks are saved
+[28Nov2026 08:35:57.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[28Nov2026 08:35:57.918] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[28Nov2026 08:35:57.948] [Server thread/DEBUG] [voicechat/]: [voicechat/PluginManager] Using default voicechat socket implementation
+[28Nov2026 08:35:57.957] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat/Server] Voice chat server started at port 56071
+[28Nov2026 08:35:58.057] [DH-Request Module Ticker [alternate_dimension:solaria] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Creating world gen queue
+[28Nov2026 08:35:58.057] [DH-Request Module Ticker [alternate_dimension:solaria] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Created world gen queue
+[28Nov2026 08:35:58.058] [DH-Request Module Ticker [alternate_dimension:solaria] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [alternate_dimension:solaria].
+[28Nov2026 08:35:58.496] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 49 chunks for player spawn...
+[28Nov2026 08:35:58.496] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[28Nov2026 08:35:58.604] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[28Nov2026 08:35:59.073] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[28Nov2026 08:35:59.424] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 1864 ms
+[28Nov2026 08:36:00.288] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:b06dda38] logged in with entity id 36 at (33.007539244870976, 63.0, 189.40946792439757)
+[28Nov2026 08:36:00.441] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[28Nov2026 08:36:00.533] [Server thread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Setting default state of Dev: {disabled=false, disconnected=true, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:00.545] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.api.internal.ServerApi/]: Player [Dev] joined.
+[28Nov2026 08:36:00.590] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: Minimap required item set to nothing.
+[28Nov2026 08:36:00.591] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: New Xaero hud session initialized!
+[28Nov2026 08:36:00.628] [Render thread/INFO] [xaero.map.WorldMap/]: Fullscreen map required item set to nothing.
+[28Nov2026 08:36:00.649] [Render thread/INFO] [xaero.map.WorldMap/]: New world map session initialized!
+[28Nov2026 08:36:00.741] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[28Nov2026 08:36:00.744] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[28Nov2026 08:36:00.844] [Render thread/INFO] [ChunkBuilder/]: Started 2 worker threads
+[28Nov2026 08:36:00.939] [Render thread/INFO] [voicechat/]: [voicechat/ClientManager] Sending secret request to the server
+[28Nov2026 08:36:00.947] [Server thread/INFO] [voicechat/]: [voicechat/ServerVoiceEvents] Received secret request of Dev (20)
+[28Nov2026 08:36:00.948] [Server thread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Sending initial states to Dev
+[28Nov2026 08:36:00.948] [Server thread/DEBUG] [voicechat/]: [voicechat/ServerGroupManager] Synchronizing 0 groups with Dev
+[28Nov2026 08:36:00.948] [Server thread/DEBUG] [voicechat/]: [voicechat/ServerCategoryManager] Synchronizing 0 volume categories with Dev
+[28Nov2026 08:36:00.953] [Server thread/INFO] [voicechat/]: [voicechat/ServerVoiceEvents] Sent secret to Dev
+[28Nov2026 08:36:00.958] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[28Nov2026 08:36:00.976] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[28Nov2026 08:36:00.983] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 6.910 milliseconds
+[28Nov2026 08:36:00.983] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[28Nov2026 08:36:00.986] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.866 milliseconds
+[28Nov2026 08:36:00.989] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[28Nov2026 08:36:01.294] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 304.5 milliseconds
+[28Nov2026 08:36:01.295] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 305.8 milliseconds
+[28Nov2026 08:36:01.295] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[28Nov2026 08:36:01.296] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 938.1 microseconds
+[28Nov2026 08:36:01.297] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[28Nov2026 08:36:01.299] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.453 milliseconds
+[28Nov2026 08:36:01.321] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[28Nov2026 08:36:01.322] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 1.072 milliseconds
+[28Nov2026 08:36:01.355] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[28Nov2026 08:36:01.386] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 29.36 milliseconds
+[28Nov2026 08:36:01.395] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 39.61 milliseconds
+[28Nov2026 08:36:01.397] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[28Nov2026 08:36:01.403] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 5.501 milliseconds
+[28Nov2026 08:36:01.404] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[28Nov2026 08:36:01.406] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.711 milliseconds
+[28Nov2026 08:36:01.407] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[28Nov2026 08:36:01.432] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 24.79 milliseconds
+[28Nov2026 08:36:01.450] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[28Nov2026 08:36:01.451] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 760.9 microseconds
+[28Nov2026 08:36:01.453] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[28Nov2026 08:36:02.300] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 846.9 milliseconds
+[28Nov2026 08:36:02.396] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: alternate_dimension:dynamic_recipes_plugin took 95.55 milliseconds
+[28Nov2026 08:36:02.466] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 59.37 milliseconds
+[28Nov2026 08:36:02.467] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 1.014 seconds
+[28Nov2026 08:36:02.479] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[28Nov2026 08:36:02.483] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.288 milliseconds
+[28Nov2026 08:36:02.490] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[28Nov2026 08:36:02.492] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[28Nov2026 08:36:02.522] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:gui took 25.22 milliseconds
+[28Nov2026 08:36:02.523] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 30.79 milliseconds
+[28Nov2026 08:36:02.531] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[28Nov2026 08:36:02.535] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[28Nov2026 08:36:02.536] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[28Nov2026 08:36:02.615] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 79.11 milliseconds
+[28Nov2026 08:36:02.616] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[28Nov2026 08:36:02.693] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 2969 ingredients
+[28Nov2026 08:36:04.325] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 2969 ingredients
+[28Nov2026 08:36:04.326] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 1.710 seconds
+[28Nov2026 08:36:04.495] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 1.962 seconds
+[28Nov2026 08:36:04.495] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 1.963 seconds
+[28Nov2026 08:36:04.496] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 2.006 seconds
+[28Nov2026 08:36:04.496] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[28Nov2026 08:36:04.498] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 1.031 milliseconds
+[28Nov2026 08:36:04.498] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 3.540 seconds
+[28Nov2026 08:36:04.539] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
+[28Nov2026 08:36:04.568] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: Minimap updated server level id: 1494631791 for world ResourceKey[minecraft:dimension / alternate_dimension:eleroth]
+[28Nov2026 08:36:04.583] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 71 advancements
+[28Nov2026 08:36:04.647] [Render thread/INFO] [snownee.jade.Jade/]: Received config from the server: {}
+[28Nov2026 08:36:04.649] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Received 1 state(s)
+[28Nov2026 08:36:04.650] [Render thread/DEBUG] [voicechat/]: [voicechat/UsernameCache] Reduced cached usernames to save from 1 to 0
+[28Nov2026 08:36:04.652] [Render thread/DEBUG] [voicechat/]: [voicechat/UsernameCache] Saved username cache in 3ms
+[28Nov2026 08:36:04.662] [Render thread/INFO] [voicechat/]: [voicechat/ClientManager] Received secret
+[28Nov2026 08:36:04.665] [Render thread/INFO] [voicechat/]: [voicechat/ClientVoicechat] Connecting to voice chat server: '127.0.0.1:56071'
+[28Nov2026 08:36:04.668] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPluginManager] Using default voicechat client socket implementation
+[28Nov2026 08:36:04.677] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Simple Voice Chat] Press V to set up
+[28Nov2026 08:36:04.698] [VoiceChatAuthenticationThread/INFO] [voicechat/]: [voicechat/AuthThread] Trying to authenticate voice chat connection
+[28Nov2026 08:36:04.708] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat/ProcessThread] Successfully authenticated player 380df991-f603-344c-a090-369bad2a924a
+[28Nov2026 08:36:04.709] [VoiceChatConnectionThread/INFO] [voicechat/]: [voicechat/ClientVoicechatConnection] Server acknowledged authentication
+[28Nov2026 08:36:04.847] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:36:04.880] [Server thread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Got state of Dev: {disabled=true, disconnected=true, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:05.708] [VoiceChatAuthenticationThread/INFO] [voicechat/]: [voicechat/AuthThread] Trying to validate voice chat connection
+[28Nov2026 08:36:05.709] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat/ProcessThread] Successfully validated connection of player 380df991-f603-344c-a090-369bad2a924a
+[28Nov2026 08:36:05.710] [VoiceChatPacketProcessingThread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Set state of Dev to connected: {disabled=true, disconnected=false, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:05.713] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat/ProcessThread] Player Dev (380df991-f603-344c-a090-369bad2a924a) successfully connected to voice chat
+[28Nov2026 08:36:05.714] [VoiceChatConnectionThread/INFO] [voicechat/]: [voicechat/ClientVoicechatConnection] Server acknowledged connection check
+[28Nov2026 08:36:05.715] [VoiceChatConnectionThread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:36:05.754] [Server thread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Got state of Dev: {disabled=true, disconnected=false, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:05.888] [MicrophoneThread/DEBUG] [voicechat/]: [voicechat/OpenALVersion] OpenAL version: 1.1 ALSOFT 1.25.1
+[28Nov2026 08:36:05.983] [MicrophoneThread/INFO] [voicechat/]: [voicechat/ALMicrophone] Using stereo workaround for OpenAL microphones
+[28Nov2026 08:36:05.998] [MicrophoneThread/WARN] [voicechat/]: [voicechat/ALMicrophone] Failed to open microphone '', falling back to default microphone
+[28Nov2026 08:36:06.045] [MicrophoneThread/WARN] [voicechat/]: [voicechat/MicrophoneManager] Failed to use OpenAL microphone implementation
+de.maxhenkel.voicechat.voice.client.MicrophoneException: Failed to open microphone
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.microphone.ALMicrophone.tryOpenMic(ALMicrophone.java:140) ~[voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.microphone.ALMicrophone.openMic(ALMicrophone.java:133) ~[voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.microphone.ALMicrophone.open(ALMicrophone.java:40) ~[voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.microphone.MicrophoneManager.createALMicrophone(MicrophoneManager.java:40) ~[voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.microphone.MicrophoneManager.createMicrophone(MicrophoneManager.java:21) ~[voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.MicThread.getMic(MicThread.java:149) [voicechat-neoforge-2.6.24+26.1.2.jar:?]
+	at TRANSFORMER/voicechat@2.6.24+26.1.2/de.maxhenkel.voicechat.voice.client.MicThread.run(MicThread.java:70) [voicechat-neoforge-2.6.24+26.1.2.jar:?]
+[28Nov2026 08:36:06.049] [MicrophoneThread/WARN] [voicechat/]: [voicechat/MicrophoneManager] Falling back to Java microphone implementation
+[28Nov2026 08:36:06.668] [MicrophoneThread/WARN] [voicechat/]: [voicechat/JavaxMicrophone] Failed to open microphone '', falling back to default microphone
+[28Nov2026 08:36:07.046] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[28Nov2026 08:36:07.780] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Got state for Dev: {disabled=true, disconnected=true, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:07.817] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Got state for Dev: {disabled=true, disconnected=false, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:07.821] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Got state for Dev: {disabled=true, disconnected=false, uuid=380df991-f603-344c-a090-369bad2a924a, name=Dev, group=null}
+[28Nov2026 08:36:08.334] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: Reloading radar icon resources...
+[28Nov2026 08:36:08.370] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: Reloaded radar icon resources!
+[28Nov2026 08:36:08.994] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[28Nov2026 08:36:09.258] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Nov2026 08:36:09.399] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:overworld
+[28Nov2026 08:36:09.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_nether
+[28Nov2026 08:36:09.426] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:eleroth
+[28Nov2026 08:36:09.516] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_end
+[28Nov2026 08:36:09.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:shroomia
+[28Nov2026 08:36:09.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:solaria
+[28Nov2026 08:36:10.123] [IO-Worker-17/ERROR] [net.minecraft.world.level.storage.SavedDataStorage/]: Could not save data to data_attachments.dat
+java.nio.file.AccessDeniedException: .\saves\Testing\dimensions\alternate_dimension\shroomia\data\neoforge\data_attachments.dat1329785658037061022.neoforge-tmp -> .\saves\Testing\dimensions\alternate_dimension\shroomia\data\neoforge\data_attachments.dat
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:91) ~[?:?]
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:310) ~[?:?]
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287) ~[?:?]
+	at java.base/java.nio.file.Files.move(Files.java:1319) ~[?:?]
+	at TRANSFORMER/neoforge@26.1.2.95/net.neoforged.neoforge.common.IOUtilities.atomicWrite(IOUtilities.java:154) ~[neoforge-26.1.2.95-universal.jar:?]
+	at TRANSFORMER/neoforge@26.1.2.95/net.neoforged.neoforge.common.IOUtilities.writeNbtCompressed(IOUtilities.java:91) ~[neoforge-26.1.2.95-universal.jar:?]
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.storage.SavedDataStorage.tryWrite(SavedDataStorage.java:237) [minecraft-patched-26.1.2.95.jar:?]
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.storage.SavedDataStorage.lambda$scheduleSave$5(SavedDataStorage.java:199) [minecraft-patched-26.1.2.95.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?]
+[28Nov2026 08:36:10.417] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Distant Horizons: G1 Garbage collector detected.\nThis can cause FPS stuttering. \nIt's recommended to use a concurrent garbage collector \nlike ZGC (Java 21+) or Shenandoah (Java 8 through 17) \nfor a smoother experience. \nThis warning can be disabled in the DH config.
+[28Nov2026 08:36:10.856] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[28Nov2026 08:36:13.252] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 160!
+[28Nov2026 08:36:13.485] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 320!
+[28Nov2026 08:36:13.693] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 640!
+[28Nov2026 08:36:14.741] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 1280!
+[28Nov2026 08:39:36.324] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 160!
+[28Nov2026 08:39:36.327] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 320!
+[28Nov2026 08:39:36.327] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 640!
+[28Nov2026 08:39:36.327] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 1280!
+[28Nov2026 08:39:36.327] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 2560!
+[28Nov2026 08:39:36.337] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 5120!
+[28Nov2026 08:39:37.835] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Reloading!]
+[28Nov2026 08:39:37.841] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Reloading!
+[28Nov2026 08:39:40.898] [Server thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 2006 recipes
+[28Nov2026 08:39:40.931] [Server thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2051 advancements
+[28Nov2026 08:39:40.933] [Server thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[28Nov2026 08:39:41.063] [Server thread/INFO] [snownee.jade.Jade/]: LootTableMineableCollector took 13.26 ms
+[28Nov2026 08:39:41.072] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:aluminum_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.081] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:evilstone_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.083] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:holystone_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.085] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:mythril_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.089] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:titanium_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.090] [Server thread/WARN] [net.minecraft.world.item.crafting.RecipeManager/]: Recipe alternate_dimension:uranium_plate_basic_recipe can't be placed due to empty ingredients and will be ignored
+[28Nov2026 08:39:41.379] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3574ms or 71 ticks behind
+[28Nov2026 08:39:41.380] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Nov2026 08:39:41.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:overworld
+[28Nov2026 08:39:41.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_nether
+[28Nov2026 08:39:41.426] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:eleroth
+[28Nov2026 08:39:41.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_end
+[28Nov2026 08:39:41.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:shroomia
+[28Nov2026 08:39:41.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:solaria
+[28Nov2026 08:39:41.548] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[28Nov2026 08:39:41.548] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[28Nov2026 08:39:41.549] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[28Nov2026 08:39:41.559] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 10.53 milliseconds
+[28Nov2026 08:39:41.560] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[28Nov2026 08:39:41.560] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[28Nov2026 08:39:41.562] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 1.184 milliseconds
+[28Nov2026 08:39:41.562] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[28Nov2026 08:39:41.563] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.165 milliseconds
+[28Nov2026 08:39:41.563] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[28Nov2026 08:39:41.629] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 3 duplicate items were found in 'Operator Utilities' creative tab's: displayItems
+This may indicate that these types of item need a subtype interpreter added to JEI:
+[minecraft:test_block]
+[28Nov2026 08:39:41.693] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 129.5 milliseconds
+[28Nov2026 08:39:41.694] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 131.1 milliseconds
+[28Nov2026 08:39:41.694] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[28Nov2026 08:39:41.695] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 764.4 microseconds
+[28Nov2026 08:39:41.695] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[28Nov2026 08:39:41.696] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 946.4 microseconds
+[28Nov2026 08:39:41.697] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[28Nov2026 08:39:41.698] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 846.9 microseconds
+[28Nov2026 08:39:41.699] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[28Nov2026 08:39:41.702] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 2.942 milliseconds
+[28Nov2026 08:39:41.702] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[28Nov2026 08:39:41.703] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 790.5 microseconds
+[28Nov2026 08:39:41.703] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[28Nov2026 08:39:41.704] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 895.0 microseconds
+[28Nov2026 08:39:41.705] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[28Nov2026 08:39:41.707] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 1.248 milliseconds
+[28Nov2026 08:39:41.707] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[28Nov2026 08:39:41.708] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 907.5 microseconds
+[28Nov2026 08:39:41.716] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[28Nov2026 08:39:42.037] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 320.8 milliseconds
+[28Nov2026 08:39:42.072] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: alternate_dimension:dynamic_recipes_plugin took 33.74 milliseconds
+[28Nov2026 08:39:42.149] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 73.29 milliseconds
+[28Nov2026 08:39:42.149] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 432.2 milliseconds
+[28Nov2026 08:39:42.153] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[28Nov2026 08:39:42.155] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 1.480 milliseconds
+[28Nov2026 08:39:42.155] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[28Nov2026 08:39:42.155] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[28Nov2026 08:39:42.157] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 1.102 milliseconds
+[28Nov2026 08:39:42.157] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[28Nov2026 08:39:42.158] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[28Nov2026 08:39:42.158] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[28Nov2026 08:39:42.187] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 28.72 milliseconds
+[28Nov2026 08:39:42.187] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[28Nov2026 08:39:42.192] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3000 ingredients
+[28Nov2026 08:39:42.680] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3000 ingredients
+[28Nov2026 08:39:42.680] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 493.5 milliseconds
+[28Nov2026 08:39:42.692] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 534.9 milliseconds
+[28Nov2026 08:39:42.693] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 536.0 milliseconds
+[28Nov2026 08:39:42.693] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 537.6 milliseconds
+[28Nov2026 08:39:42.693] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[28Nov2026 08:39:42.694] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 893.1 microseconds
+[28Nov2026 08:39:42.694] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.135 seconds
+[28Nov2026 08:40:41.801] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 71 advancements
+[28Nov2026 08:40:46.734] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 2560!
+[28Nov2026 08:40:46.742] [Render thread/INFO] [xaero.lib.XaeroLib/]: Resized a dynamic immediate buffer to 5120!
+[28Nov2026 08:40:54.057] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has the following entity data: {components: {"minecraft:attribute_modifiers": [{amount: 6.0d, id: "alternate_dimension:axe_damage", slot: "mainhand", type: "minecraft:attack_damage", operation: "add_value"}, {amount: -3.2d, id: "alternate_dimension:axe_speed", slot: "mainhand", type: "minecraft:attack_speed", operation: "add_value"}], "minecraft:tool": {rules: [{blocks: "#minecraft:incorrect_for_diamond_tool", correct_for_drops: 0b}, {blocks: "#minecraft:mineable/axe", correct_for_drops: 1b, speed: 2.0f}]}, "alternate_dimension:gear_parts": {"alternate_dimension:axe_head": {material: "alternate_dimension:solar_wood", durability: 80}}}, count: 1, id: "alternate_dimension:modular_item"}
+[28Nov2026 08:40:55.741] [DH-World Gen Thread[3]/ERROR] [net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor/]: Failed to parse jigsaw replacement state 'alternate_diension:greenwood_slab[type=top]' at BlockPos{x=304, y=62, z=480}: Unknown block type 'alternate_diension:greenwood_slab' at position 0: <--[HERE]
+[28Nov2026 08:40:55.814] [DH-World Gen Thread[3]/ERROR] [net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor/]: Failed to parse jigsaw replacement state 'alternate_diension:greenwood_slab[type=top]' at BlockPos{x=304, y=62, z=480}: Unknown block type 'alternate_diension:greenwood_slab' at position 0: <--[HERE]
+[28Nov2026 08:43:33.937] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[28Nov2026 08:43:34.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[28Nov2026 08:43:34.558] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[28Nov2026 08:43:46.454] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Nov2026 08:43:46.525] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:overworld
+[28Nov2026 08:43:46.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_nether
+[28Nov2026 08:43:46.527] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:eleroth
+[28Nov2026 08:43:46.540] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_end
+[28Nov2026 08:43:46.541] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:shroomia
+[28Nov2026 08:43:46.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:solaria
+[28Nov2026 08:43:46.974] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.api.internal.ClientApi/]: Client on ClientOnly mode disconnecting.
+[28Nov2026 08:43:46.981] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:46.982] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:46.981] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:46.983] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:46.983] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:46.983] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [1] incomplete tasks.
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [1] incomplete tasks.
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:46.984] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:46.985] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}].
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_nether}].
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_end}].
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}].
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_nether}
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_end}
+[28Nov2026 08:43:46.987] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}
+[28Nov2026 08:43:47.004] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:overworld}].
+[28Nov2026 08:43:47.004] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:overworld}
+[28Nov2026 08:43:47.006] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing world gen queue
+[28Nov2026 08:43:47.008] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[28Nov2026 08:43:47.008] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[28Nov2026 08:43:47.008] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[28Nov2026 08:43:47.010] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [DhChunkGenerator]
+[28Nov2026 08:43:47.010] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.queues.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[28Nov2026 08:43:47.016] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}].
+[28Nov2026 08:43:47.016] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}
+[28Nov2026 08:43:47.061] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}].
+[28Nov2026 08:43:47.061] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}
+[28Nov2026 08:43:47.061] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [CLIENT_SERVER].
+[28Nov2026 08:43:47.065] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}].
+[28Nov2026 08:43:47.065] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}
+[28Nov2026 08:43:47.067] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_end}].
+[28Nov2026 08:43:47.067] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_nether}].
+[28Nov2026 08:43:47.067] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_end}
+[28Nov2026 08:43:47.067] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_nether}
+[28Nov2026 08:43:47.068] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:overworld}].
+[28Nov2026 08:43:47.069] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:overworld}
+[28Nov2026 08:43:47.069] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}].
+[28Nov2026 08:43:47.069] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}].
+[28Nov2026 08:43:47.070] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}
+[28Nov2026 08:43:47.070] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}
+[28Nov2026 08:43:47.070] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [CLIENT_SERVER].
+[28Nov2026 08:43:47.070] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [CLIENT_SERVER].
+[28Nov2026 08:43:47.071] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}].
+[28Nov2026 08:43:47.071] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:shroomia}
+[28Nov2026 08:43:47.072] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_end}].
+[28Nov2026 08:43:47.072] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_end}
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:the_nether}].
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@minecraft:overworld}].
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}].
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:the_nether}
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:eleroth}
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@minecraft:overworld}
+[28Nov2026 08:43:47.073] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}].
+[28Nov2026 08:43:47.074] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DhClientServerLevel for Wrapped{ServerLevel[Testing]@alternate_dimension:solaria}
+[28Nov2026 08:43:47.074] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [CLIENT_SERVER].
+[28Nov2026 08:43:47.074] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.util.threading.PriorityTaskPicker/]: Shutting down PriorityTaskPicker thread pool...
+[28Nov2026 08:43:47.221] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[28Nov2026 08:43:47.222] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[28Nov2026 08:43:47.225] [Server thread/DEBUG] [voicechat/]: [voicechat/PlayerStateManager] Removing state of Dev
+[28Nov2026 08:43:47.226] [Server thread/INFO] [voicechat/]: [voicechat/ServerVoiceEvents] Disconnecting client Dev
+[28Nov2026 08:43:47.226] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.api.internal.ServerApi/]: Player [Dev] disconnected.
+[28Nov2026 08:43:47.450] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[28Nov2026 08:43:47.484] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[28Nov2026 08:43:47.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[28Nov2026 08:43:47.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[28Nov2026 08:43:47.640] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:overworld
+[28Nov2026 08:43:47.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_nether
+[28Nov2026 08:43:47.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:eleroth
+[28Nov2026 08:43:48.161] [Render thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.repo.AbstractDhRepo/]: Closing all [6] databases...
+[28Nov2026 08:43:48.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/minecraft:the_end
+[28Nov2026 08:43:49.437] [Render thread/INFO] [xaero.hud.minimap.MinimapLogs/]: Xaero hud session finalized.
+[28Nov2026 08:43:49.437] [Render thread/INFO] [xaero.map.WorldMap/]: Finalizing world map session...
+[28Nov2026 08:43:49.479] [Thread-4/INFO] [xaero.map.WorldMap/]: World map cleaned normally!
+[28Nov2026 08:43:49.488] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:shroomia
+[28Nov2026 08:43:49.529] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Testing]'/alternate_dimension:solaria
+[28Nov2026 08:43:49.544] [Render thread/INFO] [xaero.map.WorldMap/]: World map session finalized.
+[28Nov2026 08:43:49.546] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[28Nov2026 08:43:49.546] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[28Nov2026 08:43:49.547] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[28Nov2026 08:43:49.550] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 3.583 milliseconds
+[28Nov2026 08:43:49.552] [Render thread/INFO] [voicechat/]: [voicechat/ClientVoicechat] Clearing audio channels
+[28Nov2026 08:43:49.561] [Render thread/INFO] [voicechat/]: [voicechat/ClientVoicechat] Stopping microphone thread
+[28Nov2026 08:43:49.571] [Render thread/INFO] [voicechat/]: [voicechat/ClientVoicechatConnection] Disconnecting voicechat
+[28Nov2026 08:43:49.572] [Render thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (eleroth): All chunks are saved
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (shroomia): All chunks are saved
+[28Nov2026 08:43:49.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (solaria): All chunks are saved
+[28Nov2026 08:43:49.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[28Nov2026 08:43:49.585] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:49.636] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:49.674] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:50.128] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:50.154] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:50.187] [Server thread/DEBUG] [voicechat/]: [voicechat/ClientPlayerStateManager] Sent own state to server: disabled=true
+[28Nov2026 08:43:50.265] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[28Nov2026 08:43:50.758] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

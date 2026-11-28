@@ -5,11 +5,7 @@
   "projectBrowserState": {
     "expandedPaths": [
       "[, AlternateDimension]",
-      "[, AlternateDimension, Source (Gradle)]",
-      "[, AlternateDimension, Source (Gradle), /home/ld/IdeaProjects/AlternateDimension/src/main/java/com]",
-      "[, AlternateDimension, Source (Gradle), /home/ld/IdeaProjects/AlternateDimension/src/main/java/com, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github]",
-      "[, AlternateDimension, Source (Gradle), /home/ld/IdeaProjects/AlternateDimension/src/main/java/com, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github/lordzintick]",
-      "[, AlternateDimension, Source (Gradle), /home/ld/IdeaProjects/AlternateDimension/src/main/java/com, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github/lordzintick, /home/ld/IdeaProjects/AlternateDimension/src/main/java/com/github/lordzintick/modular]"
+      "[, AlternateDimension, Source (Gradle)]"
     ]
   },
   "leftDockState": {
@@ -22,6 +18,7 @@
     "dockSizes": {}
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
       "console": 226,
       "code_viewer": 300,

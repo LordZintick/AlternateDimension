@@ -16,10 +16,12 @@ import com.mojang.authlib.minecraft.client.MinecraftClient;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderSet;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -36,6 +38,7 @@ import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import org.jspecify.annotations.Nullable;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
@@ -61,6 +64,21 @@ public class ModularItem extends Item implements ICurioItem {
             return thisParts.parts().keySet().stream()
                     .allMatch(type -> otherPartList.contains(type.value()));
         };
+    }
+
+    public static boolean isHoeTool(ItemStack stack) {
+        Tool tool = stack.get(DataComponents.TOOL);
+        if (tool == null) return false;
+
+        for (Tool.Rule rule : tool.rules()) {
+            if (rule.correctForDrops().orElse(true)) {
+                if (rule.blocks() instanceof HolderSet.Named<Block> named
+                        && named.key().equals(BlockTags.MINEABLE_WITH_HOE)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     @Override

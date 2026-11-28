@@ -13,6 +13,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.gamerules.GameRules;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -33,6 +34,7 @@ import javax.annotation.Nullable;
 
 import java.util.Comparator;
 
+import com.lordkittycat.alternate_dimension.network.AlternateDimensionModVariables;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModItems;
 import com.lordkittycat.alternate_dimension.init.AlternateDimensionModBlocks;
 import com.lordkittycat.alternate_dimension.AlternateDimensionMod;
@@ -55,38 +57,46 @@ public class EntityDiesProcedure {
 			return;
 		double i = 0;
 		if ((BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).equals("minecraft:player")) {
-			AlternateDimensionMod.queueServerWork(1, () -> {
-				{
-					final Vec3 _center = new Vec3(x, y, z);
-					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-						if (entityiterator instanceof ItemEntity) {
-							if (!entityiterator.level().isClientSide())
-								entityiterator.discard();
+			if (!(world instanceof ServerLevel _serverLevelGR1 && _serverLevelGR1.getGameRules().get(GameRules.KEEP_INVENTORY))) {
+				AlternateDimensionMod.queueServerWork(1, () -> {
+					{
+						final Vec3 _center = new Vec3(x, y, z);
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+							if (entityiterator instanceof ItemEntity) {
+								if (!entityiterator.level().isClientSide())
+									entityiterator.discard();
+							}
 						}
 					}
+				});
+				if (event instanceof ICancellableEvent _cancellable) {
+					_cancellable.setCanceled(true);
 				}
-			});
-			if (event instanceof ICancellableEvent _cancellable) {
-				_cancellable.setCanceled(true);
-			}
-			world.setBlock(BlockPos.containing(x, y, z), AlternateDimensionModBlocks.GRAVESTONE.get().defaultBlockState(), 3);
-			i = 0;
-			if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> _resourceHandlerIter) {
-				for (int _idx = 0; _idx < _resourceHandlerIter.size(); _idx++) {
-					ItemStack itemstackiterator = ItemUtil.getStack(_resourceHandlerIter, _idx);
-					insertInBlockInventory(world, BlockPos.containing(x, y, z), (int) i, itemstackiterator.getCount(), itemstackiterator, false);
-					i = i + 1;
+				{
+					AlternateDimensionModVariables.PlayerVariables _vars = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES);
+					_vars.lastDeathPos = new Vec3(x, y, z);
+					_vars.deathCount = entity.getData(AlternateDimensionModVariables.PLAYER_VARIABLES).deathCount + 1;
+					_vars.markSyncDirty();
 				}
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putString("owner", (entity.getStringUUID()));
+				world.setBlock(BlockPos.containing(x, y, z), AlternateDimensionModBlocks.GRAVESTONE.get().defaultBlockState(), 3);
+				i = 0;
+				if (entity.getCapability(Capabilities.Item.ENTITY, null) instanceof ResourceHandler<ItemResource> _resourceHandlerIter) {
+					for (int _idx = 0; _idx < _resourceHandlerIter.size(); _idx++) {
+						ItemStack itemstackiterator = ItemUtil.getStack(_resourceHandlerIter, _idx);
+						insertInBlockInventory(world, BlockPos.containing(x, y, z), (int) i, itemstackiterator.getCount(), itemstackiterator, false);
+						i = i + 1;
+					}
 				}
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putString("owner", (entity.getStringUUID()));
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 			}
 		} else if ((BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).contains("_cow")) {
 			if (Mth.nextInt(RandomSource.create(), 0, 4) <= 1) {

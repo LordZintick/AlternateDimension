@@ -16,6 +16,7 @@
     "isCuredbyHoney": false,
     "modifiers": [],
     "onStarted": "ApplyInvulnerability",
+    "onActiveTick": "ApplyInvulnerability",
     "onExpired": "RemoveInvulnerability"
   }
 }

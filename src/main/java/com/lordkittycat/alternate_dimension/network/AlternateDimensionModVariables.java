@@ -101,6 +101,8 @@ public class AlternateDimensionModVariables {
 		clone.vanilla = original.vanilla;
 		clone.maxMana = original.maxMana;
 		clone.lastPouchOpened = original.lastPouchOpened;
+		clone.lastDeathPos = original.lastDeathPos;
+		clone.deathCount = original.deathCount;
 		if (!event.isWasDeath()) {
 			clone.mana = original.mana;
 		}
@@ -270,6 +272,8 @@ public class AlternateDimensionModVariables {
 		public boolean vanilla = false;
 		public double maxMana = 0.0;
 		public double lastPouchOpened = 0;
+		public Vec3 lastDeathPos = Vec3.ZERO;
+		public double deathCount = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -281,6 +285,8 @@ public class AlternateDimensionModVariables {
 			output.putBoolean("vanilla", vanilla);
 			output.putDouble("maxMana", maxMana);
 			output.putDouble("lastPouchOpened", lastPouchOpened);
+			output.store("lastDeathPos", Vec3.CODEC, lastDeathPos);
+			output.putDouble("deathCount", deathCount);
 		}
 
 		@Override
@@ -293,6 +299,8 @@ public class AlternateDimensionModVariables {
 			vanilla = input.getBooleanOr("vanilla", false);
 			maxMana = input.getDoubleOr("maxMana", 0);
 			lastPouchOpened = input.getDoubleOr("lastPouchOpened", 0);
+			lastDeathPos = input.read("lastDeathPos", Vec3.CODEC).orElse(Vec3.ZERO);
+			deathCount = input.getDoubleOr("deathCount", 0);
 		}
 
 		public void markSyncDirty() {

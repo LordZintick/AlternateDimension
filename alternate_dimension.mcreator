@@ -15509,7 +15509,7 @@
       "name": "TillIntoFarmland",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "till_into_farmland",
       "metadata": {
         "dependencies": [
@@ -28859,6 +28859,58 @@
         ]
       },
       "path": "~/GeneralFeatures/Misc"
+    },
+    {
+      "name": "DeathPosCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "death_pos_card",
+      "metadata": {
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/item/DeathPosCardItem.java",
+          "src/main/resources/assets/alternate_dimension/models/item/death_pos_card.json",
+          "src/main/resources/assets/alternate_dimension/items/death_pos_card.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Machinery/UtilItems"
+    },
+    {
+      "name": "ConfigureDeathPosCard",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "configure_death_pos_card",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/com/lordkittycat/alternate_dimension/procedures/ConfigureDeathPosCardProcedure.java"
+        ]
+      },
+      "path": "~/GeneralFeatures/Machinery/UtilItems"
+    },
+    {
+      "name": "DeathPosCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_pos_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/alternate_dimension/recipe/death_pos_card_recipe.json",
+          "src/main/resources/data/alternate_dimension/advancement/recipes/death_pos_card_recipe.json"
+        ]
+      },
+      "path": "~/GeneralFeatures/Machinery/Recipes"
     }
   ],
   "variable_elements": [
@@ -28930,6 +28982,18 @@
     },
     {
       "name": "lastPouchOpened",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "lastDeathPos",
+      "type": "vector",
+      "scope": "player_persistent",
+      "value": "Vec3.ZERO"
+    },
+    {
+      "name": "deathCount",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -30058,8 +30122,8 @@
       "~CheeseSword@CUSTOM:CheeseSword"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
-      "~RichFarmland@CUSTOM:RichFarmland",
       "~TheDirtBlock@CUSTOM:TheDirtBlock",
+      "~RichFarmland@CUSTOM:RichFarmland",
       "~EnchantedGrassBlock@CUSTOM:EnchantedGrassBlock",
       "~FrostedGrassBlock@CUSTOM:FrostedGrassBlock",
       "~CandiedGrassBlock@CUSTOM:CandiedGrassBlock",
@@ -30819,7 +30883,8 @@
       "MantleFurnace",
       "VeridiumFurnace",
       "PlasmaFurnace",
-      "BlockShaperCasing"
+      "BlockShaperCasing",
+      "DeathPosCard"
     ],
     "CUSTOM:AlternateDimensionDecor": [
       "AluminumChain",
@@ -32144,8 +32209,8 @@
       "entity.alternate_dimension.verdant_zombie": "Verdant Zombie",
       "item.alternate_dimension.essence_pouch": "Essence Pouch",
       "gui.alternate_dimension.essence_pouch_gui.label_backpack": "Essence Pouch",
-      "item.alternate_dimension.essence_pouch.description_0": "A backpack dedicated to storing all your essences.",
-      "item.alternate_dimension.hunters_pouch.description_0": "A specialized backpack dedicated to storing most natural mob drops. (excluding essences)",
+      "item.alternate_dimension.essence_pouch.description_0": "A specialized stachel dedicated to storing all your essences.",
+      "item.alternate_dimension.hunters_pouch.description_0": "A specialized satchel dedicated to storing most natural mob drops. (excluding essences)",
       "item.alternate_dimension.hunters_pouch": "Hunter\u0027s Pouch",
       "gui.alternate_dimension.hunters_pouch_gui.label_backpack": "Hunter\u0027s Pouch",
       "gui.alternate_dimension.hunters_pouch_gui.label_cheesy": "Cheesy",
@@ -32165,7 +32230,7 @@
       "item.alternate_dimension.mini_instavator.description_1": "A cheaper, basic version of the real deal for starter miners.",
       "item.alternate_dimension.mini_instavator.description_0": "Blows out a small vertical tunnel whilst keeping all the ores.",
       "item.alternate_dimension.mini_instavator.description_2": "WARNING! Steve Mining Co. is not responsible for any fall damage casualties that result from the use of this item.",
-      "item.alternate_dimension.fruit_pouch.description_0": "A specialized backpack dedicated to storing all your various fruits.",
+      "item.alternate_dimension.fruit_pouch.description_0": "A specialized satchel dedicated to storing all your various fruits.",
       "item.alternate_dimension.fruit_pouch": "Fruit Pouch",
       "gui.alternate_dimension.fruit_pouch_gui.label_backpack": "Fruit Pouch",
       "item.alternate_dimension.electrified_spider_spawn_egg": "Electrified Spider Spawn Egg",
@@ -32173,7 +32238,7 @@
       "item.alternate_dimension.storm_essence": "Storm Essence",
       "item.alternate_dimension.storm_essence.description_0": "The essence of rare, powerful, stormy creatures - products of thunderous weather mixed with magic.",
       "item.alternate_dimension.gravestone": "Gravestone",
-      "item.alternate_dimension.portal_wand.description_2": "Use while holding a Position Card to create a portal to the position in the card.",
+      "item.alternate_dimension.portal_wand.description_2": "Use while holding a Position Card or Death Position Card to create a portal to the position in the card.",
       "sound.alternate_dimension.the_arplands_faded": "LordZintick - The Arplands",
       "sound.alternate_dimension.bgm_snow_theme_slowed_loop": "Cleyton Kauffman - Snow Theme",
       "sound.alternate_dimension.prelude_in_f_minor": "Kristol - Prelude in F# Minor",
@@ -32538,7 +32603,10 @@
       "material.alternate_dimension.enchanted_linen": "Enchanted Linen",
       "trait.alternate_dimension.med_backpack": "§5Backpack (Medium)",
       "trait.alternate_dimension.enchanted": "§5Enchanted",
-      "effect.alternate_dimension.incendiary": "Incendiary"
+      "effect.alternate_dimension.incendiary": "Incendiary",
+      "item.alternate_dimension.death_pos_card.description_0": "Right-Click on a block to set the position to that block.",
+      "item.alternate_dimension.death_pos_card": "Death Position Card",
+      "key.alternate_dimension.open_backpack": "Open/Close Backpack"
     }
   },
   "metadata": {

@@ -58,7 +58,7 @@
       "CUSTOM:AlternateDimensionUtilities"
     ],
     "destroyTool": "shovel",
-    "customDrop": "Blocks.AIR",
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,

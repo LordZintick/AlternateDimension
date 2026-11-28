@@ -31,7 +31,7 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
-        "A specialized backpack dedicated to storing most natural mob drops. (excluding essences)"
+        "A specialized satchel dedicated to storing most natural mob drops. (excluding essences)"
       ]
     },
     "glowCondition": {
